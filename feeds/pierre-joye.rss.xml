@@ -12,9 +12,9 @@ report any issue found to our &lt;a class="reference external" href="https://git
 Library has been released.  We have fixed some reported bugs and
 improved the build scripts (cmake and configure).&lt;/p&gt;
 &lt;p&gt;You can download the 2.1.0 version of GD Graphics Library from
-the &lt;a class="reference external" href="https://bitbucket.org/libgd/gd-libgd/downloads"&gt;gd-libgd project on bitbucket.org&lt;/a&gt;.&lt;/p&gt;
+the &lt;a class="reference external" href="https://github.com/libgd/libgd/releases"&gt;libgd project&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;We would like to invite everyone to update the new library and
-report any issue found to our &lt;a class="reference external" href="https://bitbucket.org/libgd/gd-libgd/issues"&gt;issue tracker&lt;/a&gt;. The 2.0 serie is not
+report any issue found to our &lt;a class="reference external" href="https://github.com/libgd/libgd/issues"&gt;issue tracker&lt;/a&gt;. The 2.0 serie is not
 maintained anymore. While 2.1.0 APIs is fully compatible with 2.0. However
 ABIs has been broken so a rebuild/link will be required.&lt;/p&gt;
 &lt;p&gt;The GD team will now focus mainly on gd 2.2 and no new features will be
