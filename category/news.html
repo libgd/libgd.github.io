@@ -25,7 +25,53 @@
 
             <aside id="featured" class="body">
                 <article>
-                    <h1 class="entry-title"><a href="/release-2.2.1.html">LibGD 2.2.1 release</a></h1>
+                    <h1 class="entry-title"><a href="/release-2.2.2.html">LibGD 2.2.2 release</a></h1>
+<footer class="post-info">
+        <abbr class="published" title="2016-06-25T00:00:00">
+                Sat 25 June 2016
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/pierre-joye.html">Pierre Joye</a>
+        </address>
+<p>In <a href="/category/news.html">News</a>.</p>
+
+</footer><!-- /.post-info --><p>Exactly a month after 2.2.1 we welcome the 2.2.2 release. An important
+milestone in the GD 2.2 series.</p>
+<p>Security related fixes:</p>
+<blockquote>
+<ul class="simple">
+<li>Integer Overflow in gdImagePaletteToTrueColor() resulting in heap overflow (CVE-2016-5767)</li>
+<li>#215 Stack overflow with gdImageFillToBorder (CVE-2015-8874)</li>
+<li>Integer Overflow in _gd2GetHeader() resulting in heap overflow (CVE-2016-5766)</li>
+<li>NULL Pointer Dereference at _gdScaleVert</li>
+<li>Integer Overflow in gdImagePaletteToTrueColor() in heap overflow</li>
+</ul>
+</blockquote>
+<p>We also like to mention to consider the GD and GD2 image formats only for development or testing
+purposes. We do plan to deprecate it in GD 2.3 and remove it in GD 3.0. Its existence is not justified
+anymore as other formats provide lossless storage for both palette and truecolor images in a much more
+efficient way.</p>
+<p>Numerous other fixes have been applied. The scale and rotation functions have been greatly improved as well.</p>
+<p>This is a recommended update.</p>
+<p>You can download the 2.2.2 version of GD Graphics Library from
+the <a class="reference external" href="https://github.com/libgd/libgd/releases/tag/gd-2.2.2">libgd project</a>.</p>
+<p>Full commits list since 2.2.1
+.. _libgd project: <a class="reference external" href="https://github.com/libgd/libgd/compare/gd-2.2.1...gd-2.2.2">https://github.com/libgd/libgd/compare/gd-2.2.1...gd-2.2.2</a></p>
+                </article>
+            </aside><!-- /#featured -->
+                <section id="content" class="body">
+                    <h1>Other articles</h1>
+                    <hr />
+                    <ol id="posts-list" class="hfeed">
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/release-2.2.1.html" rel="bookmark"
+                           title="Permalink to LibGD 2.2.1 release">LibGD 2.2.1 release</a></h1>
+                </header>
+
+                <div class="entry-content">
 <footer class="post-info">
         <abbr class="published" title="2016-05-20T00:00:00">
                 Fri 20 May 2016
@@ -36,17 +82,13 @@
         </address>
 <p>In <a href="/category/news.html">News</a>.</p>
 
-</footer><!-- /.post-info --><p>Hot on the tail of the 2.2.0 release, we've got 2.2.1 ready!  A security
+</footer><!-- /.post-info -->                <p>Hot on the tail of the 2.2.0 release, we've got 2.2.1 ready!  A security
 issue was mixed in the previous bug triaging but that's in here now.</p>
 <p>This is a recommended update.</p>
-<p>You can download the 2.2.1 version of GD Graphics Library from
-the <a class="reference external" href="https://github.com/libgd/libgd/releases/tag/gd-2.2.1">libgd project</a>.</p>
-                </article>
-            </aside><!-- /#featured -->
-                <section id="content" class="body">
-                    <h1>Other articles</h1>
-                    <hr />
-                    <ol id="posts-list" class="hfeed">
+<p>You can download the 2.2.1 version of GD Graphics Library ...</p>
+                <a class="readmore" href="/release-2.2.1.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
 
             <li><article class="hentry">
                 <header>
