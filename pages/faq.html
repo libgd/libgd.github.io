@@ -46,26 +46,26 @@ that GIF is not available.</p>
 <h2>How do I install gd on Linux?</h2>
 <p>Well, what do you really want?</p>
 <p>If you want gd for a PHP application, just do (for Fedora):</p>
-<div class="highlight"><pre>yum install php-gd
+<div class="highlight"><pre><span></span>yum install php-gd
 </pre></div>
 <p>Or, for Red Hat Enterprise Linux or CentOS:</p>
-<div class="highlight"><pre>up2date php-gd
+<div class="highlight"><pre><span></span>up2date php-gd
 </pre></div>
 <p>Then do:</p>
-<div class="highlight"><pre>service httpd restart
+<div class="highlight"><pre><span></span>service httpd restart
 </pre></div>
 <p>If your system is Debian based (Debian/Ubuntu/...) then you need to install <cite>php5-gd</cite> package:</p>
-<div class="highlight"><pre>apt-get install php5-gd
+<div class="highlight"><pre><span></span>apt-get install php5-gd
 </pre></div>
 <p>Other Linux distributions may have gd already compiled into PHP, or
 they may have a similar php-gd package that brings in PHP's gd
 module. PHP includes its own distribution of gd, you do not need mine.</p>
 <p>If you really want gd for C programming or some other language that
 has an extension built on top of my distribution of gd, do:</p>
-<div class="highlight"><pre>yum install gd-devel
+<div class="highlight"><pre><span></span>yum install gd-devel
 </pre></div>
 <p>or on Debian based systems do:</p>
-<div class="highlight"><pre>apt-get install libgd2-xpm-dev
+<div class="highlight"><pre><span></span>apt-get install libgd2-xpm-dev
 </pre></div>
 <p>Or the equivalent for your Linux distribution.</p>
 <p>Note: this might not install the latest, most-cutting edge version of
@@ -81,9 +81,9 @@ buffer, You are also responsible for freeing the buffer with your
 normal memory management functions.</p>
 <p>Of course, there is a gdImageCreateFromJpegPtr function available as
 well.  This particular example loads a PNG image.</p>
-<div class="highlight"><pre><span class="cp">#include &lt;sys/types.h&gt;</span>
-<span class="cp">#include &lt;sys/stat.h&gt;</span>
-<span class="cp">#include &lt;stdlib.h&gt;</span>
+<div class="highlight"><pre><span></span><span class="cp">#include</span> <span class="cpf">&lt;sys/types.h&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;sys/stat.h&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;stdlib.h&gt;</span><span class="cp"></span>
 
 <span class="n">gdImagePtr</span> <span class="nf">myLoadPng</span><span class="p">(</span><span class="kt">char</span> <span class="o">*</span><span class="n">filename</span><span class="p">)</span>
 <span class="p">{</span>
@@ -128,9 +128,9 @@ two CR/LF sequences, to directly return an image from a CGI program.</p>
 done with it, you must call gdFree to release it.</p>
 <p>Of course, there is a gdImageJpegPtr function available as well.  This
 particular example saves a PNG image.</p>
-<div class="highlight"><pre><span class="cp">#include &lt;sys/types.h&gt;</span>
-<span class="cp">#include &lt;sys/stat.h&gt;</span>
-<span class="cp">#include &lt;stdlib.h&gt;</span>
+<div class="highlight"><pre><span></span><span class="cp">#include</span> <span class="cpf">&lt;sys/types.h&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;sys/stat.h&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;stdlib.h&gt;</span><span class="cp"></span>
 
 <span class="kt">void</span> <span class="nf">mySavePng</span><span class="p">(</span><span class="kt">char</span> <span class="o">*</span><span class="n">filename</span><span class="p">,</span>
   <span class="n">gdImagePtr</span> <span class="n">im</span><span class="p">)</span>
