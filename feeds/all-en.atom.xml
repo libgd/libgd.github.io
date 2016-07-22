@@ -24,6 +24,7 @@ This flaw is caused by loading data from external sources (file, custom ctx, etc
 &lt;/ul&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;This is a recommended update.&lt;/p&gt;
+&lt;p&gt;On a sidenote, we have now a gitter channel if you have any questions or like to discuss with us,`gitter`_, in addition to our &amp;quot;#libgd&amp;quot; freenode channel.&lt;/p&gt;
 &lt;p&gt;You can download the 2.2.3 version of GD Graphics Library from
 the &lt;a class="reference external" href="https://github.com/libgd/libgd/releases/tag/gd-2.2.3"&gt;libgd project&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Check out the &lt;a class="reference external" href="https://github.com/libgd/libgd/compare/gd-2.2.2...gd-2.2.3"&gt;full commits list&lt;/a&gt; since the previous release.&lt;/p&gt;
