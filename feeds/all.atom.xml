@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>GD Graphics Library</title><link href="https://libgd.github.io/" rel="alternate"></link><link href="https://libgd.github.io/feeds/all.atom.xml" rel="self"></link><id>https://libgd.github.io/</id><updated>2016-07-22T00:00:00+02:00</updated><entry><title>LibGD 2.2.3 release</title><link href="https://libgd.github.io/release-2.2.3.html" rel="alternate"></link><published>2016-07-22T00:00:00+02:00</published><author><name>Pierre Joye</name></author><id>tag:libgd.github.io,2016-07-22:release-2.2.3.html</id><summary type="html">&lt;p&gt;We welcome the 2.2.2 release around a month after 2.2.2 (we are getting consistent). Another important
+<feed xmlns="http://www.w3.org/2005/Atom"><title>GD Graphics Library</title><link href="https://libgd.github.io/" rel="alternate"></link><link href="https://libgd.github.io/feeds/all.atom.xml" rel="self"></link><id>https://libgd.github.io/</id><updated>2016-07-22T00:00:00+02:00</updated><entry><title>LibGD 2.2.3 release</title><link href="https://libgd.github.io/release-2.2.3.html" rel="alternate"></link><published>2016-07-22T00:00:00+02:00</published><author><name>Pierre Joye</name></author><id>tag:libgd.github.io,2016-07-22:release-2.2.3.html</id><summary type="html">&lt;p&gt;We welcome the 2.2.3 release around a month after 2.2.2 (we are getting consistent). Another important
 milestone in the GD 2.2 series.&lt;/p&gt;
 &lt;p&gt;Security related fixes:
 This flaw is caused by loading data from external sources (file, custom ctx, etc) and are hard to validate before calling libgd APIs:&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;fix php bug 72339, Integer Overflow in _gd2GetHeader (CVE-2016-5766)&lt;/li&gt;
+&lt;li&gt;bug #247, A read out-of-bands was found in the parsing of TGA files (CVE-2016-6132)&lt;/li&gt;
 &lt;li&gt;bug #248, fix Out-Of-Bounds Read in read_image_tga&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/blockquote&gt;
