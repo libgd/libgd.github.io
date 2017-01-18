@@ -1,37 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>GD Graphics Library</title><link>https://libgd.github.io/</link><description></description><lastBuildDate>Fri, 22 Jul 2016 00:00:00 +0200</lastBuildDate><item><title>LibGD 2.2.3 release</title><link>https://libgd.github.io/release-2.2.3.html</link><description>&lt;p&gt;We welcome the 2.2.3 release around a month after 2.2.2 (we are getting consistent). Another important
+<rss version="2.0"><channel><title>GD Graphics Library - Pierre Joye</title><link>https://libgd.github.io/</link><description></description><lastBuildDate>Fri, 22 Jul 2016 00:00:00 +0200</lastBuildDate><item><title>LibGD 2.2.3 release</title><link>https://libgd.github.io/release-2.2.3.html</link><description>&lt;p&gt;We welcome the 2.2.3 release around a month after 2.2.2 (we are getting consistent). Another important
 milestone in the GD 2.2 series.&lt;/p&gt;
 &lt;p&gt;Security related fixes:
-This flaw is caused by loading data from external sources (file, custom ctx, etc) and are hard to validate before calling libgd APIs:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;ul class="simple"&gt;
-&lt;li&gt;fix php bug 72339, Integer Overflow in _gd2GetHeader (CVE-2016-5766)&lt;/li&gt;
-&lt;li&gt;bug #247, A read out-of-bands was found in the parsing of TGA files (CVE-2016-6132)&lt;/li&gt;
-&lt;li&gt;also bug #247, Buffer over-read issue when parsing crafted TGA file (CVE-2016-6214)&lt;/li&gt;
-&lt;li&gt;bug #248, fix Out-Of-Bounds Read in read_image_tga&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;Using application provided parameters, in these cases invalid data causes the issues:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;ul class="simple"&gt;
-&lt;li&gt;Integer overflow error within _gdContributionsAlloc() (CVE-2016-6207)&lt;/li&gt;
-&lt;li&gt;fix php bug 72494, invalid color index not handled, can lead to crash ( CVE-2016-6128)&lt;/li&gt;
-&lt;li&gt;improve color check for CropThreshold&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;Important update:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;ul class="simple"&gt;
-&lt;li&gt;gdImageCopyResampled has been improved. Better handling of images with alpha channel, also brings libgd in sync with php's bundled gd.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;This is a recommended update.&lt;/p&gt;
-&lt;p&gt;On a sidenote, we have now a gitter channel if you have any questions or like to discuss with us,
-&lt;a class="reference external" href="https://gitter.im/libgd/libgd"&gt;gitter&lt;/a&gt;, in addition to our &amp;quot;#libgd&amp;quot; freenode channel.&lt;/p&gt;
-&lt;p&gt;You can download the 2.2.3 version of GD Graphics Library from
-the &lt;a class="reference external" href="https://github.com/libgd/libgd/releases/tag/gd-2.2.3"&gt;libgd project&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Check out the &lt;a class="reference external" href="https://github.com/libgd/libgd/compare/gd-2.2.2...gd-2.2.3"&gt;full commits list&lt;/a&gt; since the previous release.&lt;/p&gt;
-</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Pierre Joye</dc:creator><pubDate>Fri, 22 Jul 2016 00:00:00 +0200</pubDate><guid isPermaLink="false">tag:libgd.github.io,2016-07-22:release-2.2.3.html</guid></item><item><title>LibGD 2.2.2 release</title><link>https://libgd.github.io/release-2.2.2.html</link><description>&lt;p&gt;Exactly a month after 2.2.1 we welcome the 2.2.2 release. An important
+This flaw is caused by loading data from external sources (file, custom ctx, etc) and are hard to validate before …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Pierre Joye</dc:creator><pubDate>Fri, 22 Jul 2016 00:00:00 +0200</pubDate><guid isPermaLink="false">tag:libgd.github.io,2016-07-22:/release-2.2.3.html</guid></item><item><title>LibGD 2.2.2 release</title><link>https://libgd.github.io/release-2.2.2.html</link><description>&lt;p&gt;Exactly a month after 2.2.1 we welcome the 2.2.2 release. An important
 milestone in the GD 2.2 series.&lt;/p&gt;
 &lt;p&gt;Security related fixes:&lt;/p&gt;
 &lt;blockquote&gt;
@@ -41,33 +12,14 @@ milestone in the GD 2.2 series.&lt;/p&gt;
 &lt;li&gt;NULL Pointer Dereference at _gdScaleVert&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;We also like to mention to consider the GD and GD2 image formats only for development or testing
-purposes. We do plan to deprecate it in GD 2.3 and remove it in GD 3.0. Its existence is not justified
-anymore as other formats provide lossless storage for both palette and truecolor images in a much more
-efficient way.&lt;/p&gt;
-&lt;p&gt;Numerous other fixes have been applied. The scale and rotation functions have been greatly improved as well.&lt;/p&gt;
-&lt;p&gt;This is a recommended update.&lt;/p&gt;
-&lt;p&gt;You can download the 2.2.2 version of GD Graphics Library from
-the &lt;a class="reference external" href="https://github.com/libgd/libgd/releases/tag/gd-2.2.2"&gt;libgd project&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Check out the &lt;a class="reference external" href="https://github.com/libgd/libgd/compare/gd-2.2.1...gd-2.2.2"&gt;full commits list&lt;/a&gt; since the previous release.&lt;/p&gt;
-</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Pierre Joye</dc:creator><pubDate>Sat, 25 Jun 2016 00:00:00 +0200</pubDate><guid isPermaLink="false">tag:libgd.github.io,2016-06-25:release-2.2.2.html</guid></item><item><title>LibGD 2.1.1 final release</title><link>https://libgd.github.io/release-2.1.1.html</link><description>&lt;p&gt;GD team proudly announces that the 2.1.1 version of GD Graphics
+&lt;p&gt;We also like …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Pierre Joye</dc:creator><pubDate>Sat, 25 Jun 2016 00:00:00 +0200</pubDate><guid isPermaLink="false">tag:libgd.github.io,2016-06-25:/release-2.2.2.html</guid></item><item><title>LibGD 2.1.1 final release</title><link>https://libgd.github.io/release-2.1.1.html</link><description>&lt;p&gt;GD team proudly announces that the 2.1.1 version of GD Graphics
 Library has been released.  We have fixed some reported bugs and
 improved the build scripts (cmake and configure). See the Changelog
 files for a full list with details or CVEs.&lt;/p&gt;
 &lt;p&gt;This is a recommended update.&lt;/p&gt;
-&lt;p&gt;You can download the 2.1.1 version of GD Graphics Library from
-the &lt;a class="reference external" href="https://github.com/libgd/libgd/releases"&gt;libgd project&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;We would like to invite everyone to update the new library and
-report any issue found to our &lt;a class="reference external" href="https://github.com/libgd/libgd/issues"&gt;issue tracker&lt;/a&gt;.&lt;/p&gt;
-</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Pierre Joye</dc:creator><pubDate>Wed, 14 Jan 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:libgd.github.io,2015-01-14:release-2.1.1.html</guid></item><item><title>LibGD 2.1.0 final release</title><link>https://libgd.github.io/release-2.1.0.html</link><description>&lt;p&gt;GD team proudly announces that the 2.1.0 version of GD Graphics
+&lt;p&gt;You can …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Pierre Joye</dc:creator><pubDate>Wed, 14 Jan 2015 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:libgd.github.io,2015-01-14:/release-2.1.1.html</guid></item><item><title>LibGD 2.1.0 final release</title><link>https://libgd.github.io/release-2.1.0.html</link><description>&lt;p&gt;GD team proudly announces that the 2.1.0 version of GD Graphics
 Library has been released.  We have fixed some reported bugs and
 improved the build scripts (cmake and configure).&lt;/p&gt;
 &lt;p&gt;You can download the 2.1.0 version of GD Graphics Library from
 the &lt;a class="reference external" href="https://github.com/libgd/libgd/releases"&gt;libgd project&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;We would like to invite everyone to update the new library and
-report any issue found to our &lt;a class="reference external" href="https://github.com/libgd/libgd/issues"&gt;issue tracker&lt;/a&gt;. The 2.0 serie is not
-maintained anymore. While 2.1.0 APIs is fully compatible with 2.0. However
-ABIs has been broken so a rebuild/link will be required.&lt;/p&gt;
-&lt;p&gt;The GD team will now focus mainly on gd 2.2 and no new features will be
-added to 2.1.&lt;/p&gt;
-</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Pierre Joye</dc:creator><pubDate>Fri, 24 May 2013 00:00:00 +0200</pubDate><guid isPermaLink="false">tag:libgd.github.io,2013-05-24:release-2.1.0.html</guid></item></channel></rss>
+&lt;p&gt;We would like …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Pierre Joye</dc:creator><pubDate>Fri, 24 May 2013 00:00:00 +0200</pubDate><guid isPermaLink="false">tag:libgd.github.io,2013-05-24:/release-2.1.0.html</guid></item></channel></rss>
