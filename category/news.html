@@ -26,7 +26,49 @@
 
             <aside id="featured" class="body">
                 <article>
-                    <h1 class="entry-title"><a href="https://libgd.github.io/release-2.2.3.html">LibGD 2.2.3 release</a></h1>
+                    <h1 class="entry-title"><a href="https://libgd.github.io/release-2.2.4.html">LibGD 2.2.3 release</a></h1>
+<footer class="post-info">
+        <abbr class="published" title="2017-01-18T00:00:00+01:00">
+                Wed 18 January 2017
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="https://libgd.github.io/author/ondrej-sury.html">Ondřej Surý</a>
+        </address>
+<p>In <a href="https://libgd.github.io/category/news.html">News</a>.</p>
+
+</footer><!-- /.post-info --><p>LibGD team is proud to announce the 2.2.4 release of libgd.</p>
+<p>Security related fixes:
+This flaw is caused by loading data from external sources (file, custom ctx, etc) and are hard to validate before calling libgd APIs:</p>
+<blockquote>
+<ul class="simple">
+<li>gdImageCreate() doesn't check for oversized images and as such is
+prone to DoS vulnerabilities. (CVE-2016-9317)</li>
+<li>double-free in gdImageWebPtr() (CVE-2016-6912)</li>
+<li>potential unsigned underflow in gd_interpolation.c</li>
+<li>DOS vulnerability in gdImageCreateFromGd2Ctx()</li>
+<li>Signed Integer Overflow gd_io.c</li>
+</ul>
+</blockquote>
+<p>For full list of changes, see <a class="reference external" href="https://github.com/libgd/libgd/blob/gd-2.2.4/CHANGELOG.md">CHANGELOG.md</a>.</p>
+<p>This is a recommended update.</p>
+<p>You can download the 2.2.4 version of GD Graphics Library from
+the <a class="reference external" href="https://github.com/libgd/libgd/releases/tag/gd-2.2.4">libgd project</a>.</p>
+<p>Check out the <a class="reference external" href="https://github.com/libgd/libgd/compare/gd-2.2.3...gd-2.2.4">full commits list</a> since the previous release.</p>
+                </article>
+            </aside><!-- /#featured -->
+                <section id="content" class="body">
+                    <h1>Other articles</h1>
+                    <hr />
+                    <ol id="posts-list" class="hfeed">
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="https://libgd.github.io/release-2.2.3.html" rel="bookmark"
+                           title="Permalink to LibGD 2.2.3 release">LibGD 2.2.3 release</a></h1>
+                </header>
+
+                <div class="entry-content">
 <footer class="post-info">
         <abbr class="published" title="2016-07-22T00:00:00+02:00">
                 Fri 22 July 2016
@@ -37,44 +79,13 @@
         </address>
 <p>In <a href="https://libgd.github.io/category/news.html">News</a>.</p>
 
-</footer><!-- /.post-info --><p>We welcome the 2.2.3 release around a month after 2.2.2 (we are getting consistent). Another important
+</footer><!-- /.post-info -->                <p>We welcome the 2.2.3 release around a month after 2.2.2 (we are getting consistent). Another important
 milestone in the GD 2.2 series.</p>
 <p>Security related fixes:
-This flaw is caused by loading data from external sources (file, custom ctx, etc) and are hard to validate before calling libgd APIs:</p>
-<blockquote>
-<ul class="simple">
-<li>fix php bug 72339, Integer Overflow in _gd2GetHeader (CVE-2016-5766)</li>
-<li>bug #247, A read out-of-bands was found in the parsing of TGA files (CVE-2016-6132)</li>
-<li>also bug #247, Buffer over-read issue when parsing crafted TGA file (CVE-2016-6214)</li>
-<li>bug #248, fix Out-Of-Bounds Read in read_image_tga</li>
-</ul>
-</blockquote>
-<p>Using application provided parameters, in these cases invalid data causes the issues:</p>
-<blockquote>
-<ul class="simple">
-<li>Integer overflow error within _gdContributionsAlloc() (CVE-2016-6207)</li>
-<li>fix php bug 72494, invalid color index not handled, can lead to crash ( CVE-2016-6128)</li>
-<li>improve color check for CropThreshold</li>
-</ul>
-</blockquote>
-<p>Important update:</p>
-<blockquote>
-<ul class="simple">
-<li>gdImageCopyResampled has been improved. Better handling of images with alpha channel, also brings libgd in sync with php's bundled gd.</li>
-</ul>
-</blockquote>
-<p>This is a recommended update.</p>
-<p>On a sidenote, we have now a gitter channel if you have any questions or like to discuss with us,
-<a class="reference external" href="https://gitter.im/libgd/libgd">gitter</a>, in addition to our &quot;#libgd&quot; freenode channel.</p>
-<p>You can download the 2.2.3 version of GD Graphics Library from
-the <a class="reference external" href="https://github.com/libgd/libgd/releases/tag/gd-2.2.3">libgd project</a>.</p>
-<p>Check out the <a class="reference external" href="https://github.com/libgd/libgd/compare/gd-2.2.2...gd-2.2.3">full commits list</a> since the previous release.</p>
-                </article>
-            </aside><!-- /#featured -->
-                <section id="content" class="body">
-                    <h1>Other articles</h1>
-                    <hr />
-                    <ol id="posts-list" class="hfeed">
+This flaw is caused by loading data from external sources (file, custom ctx, etc) and are hard to validate before ...</p>
+                <a class="readmore" href="https://libgd.github.io/release-2.2.3.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
 
             <li><article class="hentry">
                 <header>
@@ -99,11 +110,11 @@ milestone in the GD 2.2 series.</p>
 <blockquote>
 <ul class="simple">
 <li>Integer Overflow in gdImagePaletteToTrueColor() resulting in heap overflow (CVE-2016-5767)</li>
-<li>#215 Stack overflow with gdImageFillToBorder (CVE-2015-8874)</li>
+<li>#215 Stack overflow with gdImageFillToBorder (CVE-2015-8874, CVE-2016-9933)</li>
 <li>NULL Pointer Dereference at _gdScaleVert</li>
 </ul>
 </blockquote>
-<p>We also like to ...</p>
+<p>We also like ...</p>
                 <a class="readmore" href="https://libgd.github.io/release-2.2.2.html">read more</a>
                 </div><!-- /.entry-content -->
             </article></li>
