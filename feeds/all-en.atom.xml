@@ -42,7 +42,7 @@ This flaw is caused by loading data from external sources (file, custom ctx, etc
 &lt;blockquote&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;Integer overflow error within _gdContributionsAlloc() (CVE-2016-6207)&lt;/li&gt;
-&lt;li&gt;fix php bug 72494, invalid color index not handled, can lead to crash ( CVE-2016-6128)&lt;/li&gt;
+&lt;li&gt;fix php bug 72494, invalid color index not handled, can lead to crash (CVE-2016-6128)&lt;/li&gt;
 &lt;li&gt;improve color check for CropThreshold&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/blockquote&gt;
