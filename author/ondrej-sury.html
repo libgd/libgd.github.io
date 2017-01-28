@@ -45,9 +45,9 @@ This flaw is caused by loading data from external sources (file, custom ctx, etc
 <li>gdImageCreate() doesn't check for oversized images and as such is
 prone to DoS vulnerabilities. (CVE-2016-9317)</li>
 <li>double-free in gdImageWebPtr() (CVE-2016-6912)</li>
-<li>potential unsigned underflow in gd_interpolation.c</li>
-<li>DOS vulnerability in gdImageCreateFromGd2Ctx()</li>
-<li>Signed Integer Overflow gd_io.c</li>
+<li>potential unsigned underflow in gd_interpolation.c (CVE-2016-10166)</li>
+<li>DOS vulnerability in gdImageCreateFromGd2Ctx() (CVE-2016-10167)</li>
+<li>Signed Integer Overflow gd_io.c (CVE-2016-10168)</li>
 </ul>
 </blockquote>
 <p>For full list of changes, see <a class="reference external" href="https://github.com/libgd/libgd/blob/gd-2.2.4/CHANGELOG.md">CHANGELOG.md</a>.</p>
