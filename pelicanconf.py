@@ -33,4 +33,6 @@ STATIC_PATHS = ['manuals']
 
 DEFAULT_PAGINATION = 10
 
+READERS = {'html': None}
+
 THEME = 'libgd'
