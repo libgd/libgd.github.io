@@ -23,14 +23,14 @@ For full list of changes, see `CHANGELOG.md`_.
  
 This is a recommended update.
 
-You can download the 2.3.1 version of GD Graphics Library from
-the `libgd 2.3.1 release`_.
+You can download the 2.3.2 version of GD Graphics Library from
+the `libgd 2.3.2 release`_.
 
 You can read the `full commits list`_.
 
-.. _CHANGELOG.md: https://github.com/libgd/libgd/blob/gd-2.3.1/CHANGELOG.md
-.. _libgd 2.3.1 release: https://github.com/libgd/libgd/releases/tag/gd-2.3.1
-.. _full commits list: https://github.com/libgd/libgd/compare/gd-2.3.0...gd-2.3.1
+.. _CHANGELOG.md: https://github.com/libgd/libgd/blob/gd-2.3.2/CHANGELOG.md
+.. _libgd 2.3.2 release: https://github.com/libgd/libgd/releases/tag/gd-2.3.2
+.. _full commits list: https://github.com/libgd/libgd/compare/gd-2.3.1...gd-2.3.2
 .. _gitter: https://gitter.im/libgd/libgd
 .. _#494: https://github.com/libgd/libgd/issues/494
 .. _#395: https://github.com/libgd/libgd/issues/395
