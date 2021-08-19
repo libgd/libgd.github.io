@@ -30,13 +30,46 @@
 <h2>What is the GD library?</h2>
 <p>GD is an open source code library for the dynamic creation of images
 by programmers. GD is written in C, and &quot;wrappers&quot; are available for
-Perl, PHP and other languages. GD creates PNG, JPEG, GIF, WebP, XPM, BMP
-images, among other formats. GD is commonly used to generate charts,
-graphics, thumbnails, and most anything else, on the fly. While not
-restricted to use on the web, the most common applications of GD involve
-website development.</p>
+Perl, PHP, ruby and many other bindings.</p>
+<p>## Supported Image Formats</p>
+<p>GD has builtin support for:</p>
+<ul class="simple">
+<li><a class="reference external" href="https://en.wikipedia.org/wiki/BMP_file_format(builtin)">BMP</a> (builtin)</li>
+<li><a class="reference external" href="https://en.wikipedia.org/wiki/GIF">GIF</a> with animation support (builtin)</li>
+<li><a class="reference external" href="https://en.wikipedia.org/wiki/Truevision_TGA">TGA</a> (builtin)</li>
+<li><a class="reference external" href="https://en.wikipedia.org/wiki/Wireless_Application_Protocol_Bitmap_Format">WBMP</a> (builtin)</li>
+<li><a class="reference external" href="https://en.wikipedia.org/wiki/WebP">WebP</a> via <cite>libwebp</cite></li>
+<li><a class="reference external" href="https://en.wikipedia.org/wiki/Portable_Network_Graphics">PNG</a> via <cite>libpng</cite></li>
+<li><a class="reference external" href="https://en.wikipedia.org/wiki/JPEG">JPEG</a> using external library:
+- <a class="reference external" href="http://libjpeg-turbo.virtualgl.org/">libjpeg-turbo</a> (recommended)
+- <cite>libJpeg</cite>-
+- Does not include <a class="reference external" href="https://en.wikipedia.org/wiki/JPEG_2000">JPEG2000</a></li>
+<li><a class="reference external" href="https://en.wikipedia.org/wiki/AV1#AV1_Image_File_Format_(AVIF)">AVIF</a> via <a class="reference external" href="https://github.com/AOMediaCodec/libavif">libavif</a></li>
+<li><a class="reference external" href="https://en.wikipedia.org/wiki/High_Efficiency_Image_File_Format">HEIF</a> via <a class="reference external" href="https://github.com/strukturag/libheif/">libheif</a>
+- This includes <cite>AVIF</cite> read support if your system's <a class="reference external" href="https://github.com/strukturag/libheif/">libheif</a> has AV1 decoding.</li>
+<li><a class="reference external" href="https://en.wikipedia.org/wiki/Tagged_Image_File_Format">TIFF</a> via <a class="reference external" href="http://www.libtiff.org/">libtiff</a></li>
+<li><a class="reference external" href="https://en.wikipedia.org/wiki/X_PixMap">XPM</a> via <a class="reference external" href="http://xorg.freedesktop.org/">libXpm</a></li>
+</ul>
+<p>GD is commonly used to generate charts,  graphics, thumbnails, and most anything else, on the fly. It is lite weight
+and fits usages like web development, embemdedded, or any other usages you may need.</p>
+<p>It supports transparency, blending, images transformations and various filters. Its design allows the additions of custom
+features in a very friendly manner.</p>
 <p>The library was originally developed by <a class="reference external" href="http://www.boutell.com/">Thomas Boutell</a> and is now
-maintained by <a class="reference external" href="http://blog.thepimp.net/">Pierre Joye</a> under the umbrella of <a class="reference external" href="http://php.net/">PHP.net</a>.</p>
+maintained by <a class="reference external" href="https://github.com/pierrejoye">Pierre Joye</a> under the umbrella of <a class="reference external" href="http://php.net/">PHP.net</a>.</p>
+</div>
+<div class="section" id="support">
+<h2>Support</h2>
+<p>Support, discussions or feedback can be done using:</p>
+<ul class="simple">
+<li><a class="reference external" href="https://github.com/libgd/libgd/issues">github issues</a></li>
+<li><a class="reference external" href="https://github.com/libgd/libgd/discussions">github discussions</a></li>
+<li><a class="reference external" href="https://gitter.im/libgd/libgd">Gitter chat</a></li>
+<li><a class="reference external" href="http://news.php.net/php.gd.devel/">Mailing list</a></li>
+</ul>
+</div>
+<div class="section" id="contribute">
+<h2>Contribute</h2>
+<p>See <a class="reference external" href="https://github.com/libgd/libgd/blob/master/CONTRIBUTING.md">Contribute to LibGD</a>.</p>
 </div>
 
 </section>
@@ -55,7 +88,6 @@ maintained by <a class="reference external" href="http://blog.thepimp.net/">Pier
                             <li><a href="https://libgd.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
 
                             <li><a href="https://github.com/libgd/libgd">github</a></li>
-                            <li><a href="irc://irc.freenode.net/libgd">irc</a></li>
                             <li><a href="https://gitter.im/libgd/libgd">gitter</a></li>
                         </ul>
                 </div><!-- /.social -->
