@@ -40,7 +40,7 @@ It supports transparency, blending, images transformations and various filters. 
 features in a very friendly manner.
 
 The library was originally developed by `Thomas Boutell`_ and is now
-maintained by `Pierre Joye`_ under the umbrella of `PHP.net`_.
+maintained by `Pierre Joye`_ and many `valuable contributors`_, under the umbrella of `PHP.net`_.
 
 Support
 -------
@@ -59,6 +59,7 @@ See `Contribute to LibGD`_.
 
 .. _Thomas Boutell: http://www.boutell.com/
 .. _Pierre Joye: https://github.com/pierrejoye
+.. _valuable contributors: https://github.com/libgd/libgd/graphs/contributors
 .. _PHP.net: http://php.net/
 .. _BMP: https://en.wikipedia.org/wiki/BMP_file_format (builtin)
 .. _GIF: https://en.wikipedia.org/wiki/GIF
