@@ -23,7 +23,6 @@ LINKS =  (
 # Social widget
 SOCIAL = (#('You can add links in your config file', '#'),
           ('github', 'https://github.com/libgd/libgd'),
-          ('irc', 'irc://irc.freenode.net/libgd'),
           ('gitter', 'https://gitter.im/libgd/libgd'),
          )
 
