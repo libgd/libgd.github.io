@@ -24,9 +24,11 @@ GD has builtin support for:
 - `WebP`_ via `libwebp`
 - `PNG`_ via `libpng`
 - `JPEG`_ using external library:
+
   - `libjpeg-turbo`_ (recommended)
   - `libJpeg`-
   - Does not include `JPEG2000`_
+
 - `AVIF`_ via `libavif`_
 - `HEIF`_ via `libheif`_
   - This includes `AVIF` read support if your system's `libheif`_ has AV1 decoding.
@@ -56,6 +58,7 @@ Contribute
 ----------
 
 See `Contribute to LibGD`_.
+
 
 .. _Thomas Boutell: http://www.boutell.com/
 .. _Pierre Joye: https://github.com/pierrejoye
