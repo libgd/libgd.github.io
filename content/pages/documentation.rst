@@ -7,6 +7,7 @@ Documentation
 
 GD 2.3.x
 
+* `gd-2.3.3 <../manuals/2.3.3/>`_
 * `gd-2.3.2 <../manuals/2.3.2/>`_
 * `gd-2.3.1 <../manuals/2.3.1/>`_
 * `gd-2.3.0 <../manuals/2.3.0/>`_
