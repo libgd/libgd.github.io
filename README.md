@@ -24,9 +24,9 @@ versions introduce.  See the requirements.txt file for the current version.
 ## Release Process
 
 When making a new GD release, make sure to update:
-* content/release-<ver>.rst: Announce w/snippet from GD's CHANGELOG.md.
+* content/release-$VER.rst: Announce w/snippet from GD's CHANGELOG.md.
 * content/pages/documentation.rst: Link to new manual (see next).
-* content/manuals/<ver>/: Version specific manual (see below).
+* content/manuals/$VER/: Version specific manual (see below).
 
 All the indexes and such will automatically update after that.
 
@@ -35,6 +35,6 @@ All the indexes and such will automatically update after that.
 With a release tarball, run:
 
 ```sh
-$ gd-<ver>/docs/naturaldocs/run_docs.sh
-$ cp -a gd-<ver>/docs/naturaldocs/html/ content/manuals/<ver>/
+$ gd-$VER/docs/naturaldocs/run_docs.sh
+$ cp -a gd-$VER/docs/naturaldocs/html/ content/manuals/$VER/
 ```
