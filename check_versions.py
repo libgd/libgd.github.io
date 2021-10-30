@@ -1,9 +1,6 @@
 #!/usr/bin/env python
-# -*- coding: utf-8 -*- #
 
 """Make sure the installed versions all match what we need."""
-
-from __future__ import print_function
 
 import os
 import pkg_resources
