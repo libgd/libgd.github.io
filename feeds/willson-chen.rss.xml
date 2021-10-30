@@ -11,7 +11,7 @@
 &lt;li&gt;Double-free in gdImage*Ptr(). (CVE-2019-6978)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;For full …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Willson-chen</dc:creator><pubDate>Sat, 30 Jan 2021 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:libgd.github.io,2021-01-30:/release-2.3.1.html</guid><category>News</category></item><item><title>LibGD 2.3.0 release</title><link>https://libgd.github.io/release-2.3.0.html</link><description>&lt;p&gt;The LibGD team is proud to announce the 2.3.0 release of libgd.&lt;/p&gt;
+&lt;p&gt;For full …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Willson-chen</dc:creator><pubDate>Sat, 30 Jan 2021 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:libgd.github.io,2021-01-30:/release-2.3.1.html</guid></item><item><title>LibGD 2.3.0 release</title><link>https://libgd.github.io/release-2.3.0.html</link><description>&lt;p&gt;The LibGD team is proud to announce the 2.3.0 release of libgd.&lt;/p&gt;
 &lt;p&gt;Security related fixes:&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;ul class="simple"&gt;
@@ -23,4 +23,4 @@
 &lt;li&gt;Double-free in gdImage*Ptr(). (CVE-2019-6978)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;For full list of changes …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Willson-chen</dc:creator><pubDate>Sun, 22 Mar 2020 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:libgd.github.io,2020-03-22:/release-2.3.0.html</guid><category>News</category></item></channel></rss>
+&lt;p&gt;For full list of changes …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Willson-chen</dc:creator><pubDate>Sun, 22 Mar 2020 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:libgd.github.io,2020-03-22:/release-2.3.0.html</guid></item></channel></rss>

@@ -82,41 +82,41 @@ buffer, You are also responsible for freeing the buffer with your
 normal memory management functions.</p>
 <p>Of course, there is a gdImageCreateFromJpegPtr function available as
 well.  This particular example loads a PNG image.</p>
-<div class="highlight"><pre><span></span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;sys/types.h&gt;</span><span class="cp"></span>
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;sys/stat.h&gt;</span><span class="cp"></span>
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;stdlib.h&gt;</span><span class="cp"></span>
+<div class="highlight"><pre><span></span><span class="cp">#include</span> <span class="cpf">&lt;sys/types.h&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;sys/stat.h&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;stdlib.h&gt;</span><span class="cp"></span>
 
-<span class="n">gdImagePtr</span><span class="w"> </span><span class="nf">myLoadPng</span><span class="p">(</span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="n">filename</span><span class="p">)</span><span class="w"></span>
-<span class="p">{</span><span class="w"></span>
-<span class="w">  </span><span class="kt">FILE</span><span class="w"> </span><span class="o">*</span><span class="n">in</span><span class="p">;</span><span class="w"></span>
-<span class="w">  </span><span class="k">struct</span> <span class="nc">stat</span><span class="w"> </span><span class="n">stat_buf</span><span class="p">;</span><span class="w"></span>
-<span class="w">  </span><span class="n">gdImagePtr</span><span class="w"> </span><span class="n">im</span><span class="p">;</span><span class="w"></span>
-<span class="w">  </span><span class="n">in</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">fopen</span><span class="p">(</span><span class="s">&quot;myimage.png&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;rb&quot;</span><span class="p">);</span><span class="w"></span>
-<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">in</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">    </span><span class="cm">/* Error */</span><span class="w"></span>
-<span class="w">  </span><span class="p">}</span><span class="w"></span>
-<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">fstat</span><span class="p">(</span><span class="n">fileno</span><span class="p">(</span><span class="n">in</span><span class="p">),</span><span class="w"> </span><span class="o">&amp;</span><span class="n">stat_buf</span><span class="p">)</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">    </span><span class="cm">/* Error */</span><span class="w"></span>
-<span class="w">  </span><span class="p">}</span><span class="w"></span>
-<span class="w">  </span><span class="cm">/* Read the entire thing into a buffer</span>
-<span class="cm">    that we allocate */</span><span class="w"></span>
-<span class="w">  </span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="n">buffer</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">malloc</span><span class="p">(</span><span class="n">stat_buf</span><span class="p">.</span><span class="n">st_size</span><span class="p">);</span><span class="w"></span>
-<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">buffer</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">    </span><span class="cm">/* Error */</span><span class="w"></span>
-<span class="w">  </span><span class="p">}</span><span class="w"></span>
-<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">fread</span><span class="p">(</span><span class="n">buffer</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="n">stat_buf</span><span class="p">.</span><span class="n">st_size</span><span class="p">,</span><span class="w"> </span><span class="n">in</span><span class="p">)</span><span class="w"></span>
-<span class="w">    </span><span class="o">!=</span><span class="w"> </span><span class="n">stat_buf</span><span class="p">.</span><span class="n">st_size</span><span class="p">)</span><span class="w"></span>
-<span class="w">  </span><span class="p">{</span><span class="w"></span>
-<span class="w">    </span><span class="cm">/* Error */</span><span class="w"></span>
-<span class="w">  </span><span class="p">}</span><span class="w"></span>
-<span class="w">  </span><span class="n">im</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">gdImageCreateFromPngPtr</span><span class="p">(</span><span class="w"></span>
-<span class="w">    </span><span class="n">stat_buf</span><span class="p">.</span><span class="n">st_size</span><span class="p">,</span><span class="w"> </span><span class="n">buffer</span><span class="p">);</span><span class="w"></span>
-<span class="w">  </span><span class="cm">/* WE allocated the memory, WE free</span>
-<span class="cm">    it with our normal free function */</span><span class="w"></span>
-<span class="w">  </span><span class="n">free</span><span class="p">(</span><span class="n">buffer</span><span class="p">);</span><span class="w"></span>
-<span class="w">  </span><span class="n">fclose</span><span class="p">(</span><span class="n">in</span><span class="p">);</span><span class="w"></span>
-<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="n">im</span><span class="p">;</span><span class="w"></span>
-<span class="p">}</span><span class="w"></span>
+<span class="n">gdImagePtr</span> <span class="nf">myLoadPng</span><span class="p">(</span><span class="kt">char</span> <span class="o">*</span><span class="n">filename</span><span class="p">)</span>
+<span class="p">{</span>
+  <span class="kt">FILE</span> <span class="o">*</span><span class="n">in</span><span class="p">;</span>
+  <span class="k">struct</span> <span class="n">stat</span> <span class="n">stat_buf</span><span class="p">;</span>
+  <span class="n">gdImagePtr</span> <span class="n">im</span><span class="p">;</span>
+  <span class="n">in</span> <span class="o">=</span> <span class="n">fopen</span><span class="p">(</span><span class="s">&quot;myimage.png&quot;</span><span class="p">,</span> <span class="s">&quot;rb&quot;</span><span class="p">);</span>
+  <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">in</span><span class="p">)</span> <span class="p">{</span>
+    <span class="cm">/* Error */</span>
+  <span class="p">}</span>
+  <span class="k">if</span> <span class="p">(</span><span class="n">fstat</span><span class="p">(</span><span class="n">fileno</span><span class="p">(</span><span class="n">in</span><span class="p">),</span> <span class="o">&amp;</span><span class="n">stat_buf</span><span class="p">)</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+    <span class="cm">/* Error */</span>
+  <span class="p">}</span>
+  <span class="cm">/* Read the entire thing into a buffer</span>
+<span class="cm">    that we allocate */</span>
+  <span class="kt">char</span> <span class="o">*</span><span class="n">buffer</span> <span class="o">=</span> <span class="n">malloc</span><span class="p">(</span><span class="n">stat_buf</span><span class="p">.</span><span class="n">st_size</span><span class="p">);</span>
+  <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">buffer</span><span class="p">)</span> <span class="p">{</span>
+    <span class="cm">/* Error */</span>
+  <span class="p">}</span>
+  <span class="k">if</span> <span class="p">(</span><span class="n">fread</span><span class="p">(</span><span class="n">buffer</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">stat_buf</span><span class="p">.</span><span class="n">st_size</span><span class="p">,</span> <span class="n">in</span><span class="p">)</span>
+    <span class="o">!=</span> <span class="n">stat_buf</span><span class="p">.</span><span class="n">st_size</span><span class="p">)</span>
+  <span class="p">{</span>
+    <span class="cm">/* Error */</span>
+  <span class="p">}</span>
+  <span class="n">im</span> <span class="o">=</span> <span class="n">gdImageCreateFromPngPtr</span><span class="p">(</span>
+    <span class="n">stat_buf</span><span class="p">.</span><span class="n">st_size</span><span class="p">,</span> <span class="n">buffer</span><span class="p">);</span>
+  <span class="cm">/* WE allocated the memory, WE free</span>
+<span class="cm">    it with our normal free function */</span>
+  <span class="n">free</span><span class="p">(</span><span class="n">buffer</span><span class="p">);</span>
+  <span class="n">fclose</span><span class="p">(</span><span class="n">in</span><span class="p">);</span>
+  <span class="k">return</span> <span class="n">im</span><span class="p">;</span>
+<span class="p">}</span>
 </pre></div>
 </div>
 <div class="section" id="how-do-i-save-an-image-to-a-buffer-in-memory">
@@ -129,32 +129,32 @@ two CR/LF sequences, to directly return an image from a CGI program.</p>
 done with it, you must call gdFree to release it.</p>
 <p>Of course, there is a gdImageJpegPtr function available as well.  This
 particular example saves a PNG image.</p>
-<div class="highlight"><pre><span></span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;sys/types.h&gt;</span><span class="cp"></span>
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;sys/stat.h&gt;</span><span class="cp"></span>
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;stdlib.h&gt;</span><span class="cp"></span>
+<div class="highlight"><pre><span></span><span class="cp">#include</span> <span class="cpf">&lt;sys/types.h&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;sys/stat.h&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;stdlib.h&gt;</span><span class="cp"></span>
 
-<span class="kt">void</span><span class="w"> </span><span class="nf">mySavePng</span><span class="p">(</span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="n">filename</span><span class="p">,</span><span class="w"></span>
-<span class="w">  </span><span class="n">gdImagePtr</span><span class="w"> </span><span class="n">im</span><span class="p">)</span><span class="w"></span>
-<span class="p">{</span><span class="w"></span>
-<span class="w">  </span><span class="kt">FILE</span><span class="w"> </span><span class="o">*</span><span class="n">out</span><span class="p">;</span><span class="w"></span>
-<span class="w">  </span><span class="kt">int</span><span class="w"> </span><span class="n">size</span><span class="p">;</span><span class="w"></span>
-<span class="w">  </span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="n">data</span><span class="p">;</span><span class="w"></span>
-<span class="w">  </span><span class="n">out</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">fopen</span><span class="p">(</span><span class="s">&quot;filename, &quot;</span><span class="n">wb</span><span class="s">&quot;);</span>
-<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">out</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">    </span><span class="cm">/* Error */</span><span class="w"></span>
-<span class="w">  </span><span class="p">}</span><span class="w"></span>
-<span class="w">  </span><span class="n">data</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="p">)</span><span class="w"> </span><span class="n">gdImagePngPtr</span><span class="p">(</span><span class="n">im</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">size</span><span class="p">);</span><span class="w"></span>
-<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">data</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">    </span><span class="cm">/* Error */</span><span class="w"></span>
-<span class="w">  </span><span class="p">}</span><span class="w"></span>
-<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">fwrite</span><span class="p">(</span><span class="n">data</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="n">size</span><span class="p">,</span><span class="w"> </span><span class="n">out</span><span class="p">)</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="n">size</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">    </span><span class="cm">/* Error */</span><span class="w"></span>
-<span class="w">  </span><span class="p">}</span><span class="w"></span>
-<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">fclose</span><span class="p">(</span><span class="n">out</span><span class="p">)</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">    </span><span class="cm">/* Error */</span><span class="w"></span>
-<span class="w">  </span><span class="p">}</span><span class="w"></span>
-<span class="w">  </span><span class="n">gdFree</span><span class="p">(</span><span class="n">data</span><span class="p">);</span><span class="w"></span>
-<span class="p">}</span><span class="w"></span>
+<span class="kt">void</span> <span class="nf">mySavePng</span><span class="p">(</span><span class="kt">char</span> <span class="o">*</span><span class="n">filename</span><span class="p">,</span>
+  <span class="n">gdImagePtr</span> <span class="n">im</span><span class="p">)</span>
+<span class="p">{</span>
+  <span class="kt">FILE</span> <span class="o">*</span><span class="n">out</span><span class="p">;</span>
+  <span class="kt">int</span> <span class="n">size</span><span class="p">;</span>
+  <span class="kt">char</span> <span class="o">*</span><span class="n">data</span><span class="p">;</span>
+  <span class="n">out</span> <span class="o">=</span> <span class="n">fopen</span><span class="p">(</span><span class="s">&quot;filename, &quot;</span><span class="n">wb</span><span class="s">&quot;);</span>
+  <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">out</span><span class="p">)</span> <span class="p">{</span>
+    <span class="cm">/* Error */</span>
+  <span class="p">}</span>
+  <span class="n">data</span> <span class="o">=</span> <span class="p">(</span><span class="kt">char</span> <span class="o">*</span><span class="p">)</span> <span class="n">gdImagePngPtr</span><span class="p">(</span><span class="n">im</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">size</span><span class="p">);</span>
+  <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">data</span><span class="p">)</span> <span class="p">{</span>
+    <span class="cm">/* Error */</span>
+  <span class="p">}</span>
+  <span class="k">if</span> <span class="p">(</span><span class="n">fwrite</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">size</span><span class="p">,</span> <span class="n">out</span><span class="p">)</span> <span class="o">!=</span> <span class="n">size</span><span class="p">)</span> <span class="p">{</span>
+    <span class="cm">/* Error */</span>
+  <span class="p">}</span>
+  <span class="k">if</span> <span class="p">(</span><span class="n">fclose</span><span class="p">(</span><span class="n">out</span><span class="p">)</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+    <span class="cm">/* Error */</span>
+  <span class="p">}</span>
+  <span class="n">gdFree</span><span class="p">(</span><span class="n">data</span><span class="p">);</span>
+<span class="p">}</span>
 </pre></div>
 </div>
 <div class="section" id="why-doesn-t-my-gd-1-x-program-work-well-with-gd-2-x">
