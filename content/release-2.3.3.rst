@@ -1,4 +1,4 @@
-LibGD 2.3.3 Bugs fixes, improved MacOs, Windows builds support
+LibGD 2.3.3 Bugs fixes, improved macOS, Windows builds support
 ##############################################################
 
 :slug: release-2.3.3
@@ -12,7 +12,7 @@ dependencies is now well supported.
 
 In the process, we also added CI using github actions for Linux (x64, arm64/neon, gcc and clan), Windows 
 (x64, arm64, vc and mingw). We are looking for more supported platforms to add to our CI (BSD, all 
-architures, PowerPC, RiscV etc). If you have such systems and willing to let us run  run the github actions 
+architectures, PowerPC, RiscV etc). If you have such systems and willing to let us run  run the github actions 
 CI on it, please let us know, it will be much appreciated.
 
 Fixes:
@@ -57,4 +57,4 @@ Check out the `full commits list`_ since the previous release.
 .. _#331: https://github.com/libgd/libgd/issues/331
 .. _#320: https://github.com/libgd/libgd/issues/320
 .. _#249: https://github.com/libgd/libgd/issues/249
-.. _#93: https://github.com/libgd/libgd/issues/93  
+.. _#93: https://github.com/libgd/libgd/issues/93
