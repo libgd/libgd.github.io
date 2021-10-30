@@ -1,0 +1,29 @@
+# GitHub actions workflow.
+# https://help.github.com/en/actions/automating-your-workflow-with-github-actions/workflow-syntax-for-github-actions
+
+name: GitHub Pages
+
+on:
+  push:
+    branches: [master]
+
+jobs:
+  ghp-import:
+    runs-on: ubuntu-latest
+    env:
+      GIT_AUTHOR_NAME: github-actions[bot]
+      GIT_AUTHOR_EMAIL: github-actions[bot]@users.noreply.github.com
+    steps:
+    # Fetch the source and the latest gh-pages.
+    - uses: actions/checkout@v2
+    - run: git fetch origin gh-pages:refs/remotes/origin/gh-pages
+
+    # Account info from https://api.github.com/users/github-actions%5Bbot%5D
+    - run: git config --global user.name "github-actions[bot]"
+    - run: git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+    # Install tools & build & publish site.
+    - name: Install Pelican
+      run: pip install --user --requirement requirements.txt
+    - run: make publish
+    - run: make github

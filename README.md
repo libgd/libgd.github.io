@@ -8,8 +8,9 @@ The source is structured text under the content/ directory.
 The main branch (master) is where all changes must be applied (updates, news,
 announces or PRs).  This is your normal development & review cycle.
 
-Then you manually compile the site locally and push the output to the gh-pages
-branch.  Running `make github` in here can help automate that process.
+GitHub actions will automatically compile & push the output to the gh-pages
+branch.  The `make github` in here is used to automate that process.  You do
+not need to push to the gh-pages branch yourself.
 
 Those pages are then hosted using [Github Pages](https://pages.github.com/).
 
