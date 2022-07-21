@@ -11,4 +11,4 @@ The libgd.org has a new website.  We have built the new site in
 view the sources used to build this website in its own `git repository`_.
 
 .. _Pelican: http://getpelican.com
-.. _git repository: https://github.com/libgd/oldwebsite
+.. _git repository: https://github.com/libgd/libgd.github.io
