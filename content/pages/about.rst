@@ -60,7 +60,7 @@ Contribute
 See `Contribute to LibGD`_.
 
 
-.. _Thomas Boutell: http://www.boutell.com/
+.. _Thomas Boutell: https://boutell.dev/
 .. _Pierre Joye: https://github.com/pierrejoye
 .. _valuable contributors: https://github.com/libgd/libgd/graphs/contributors
 .. _PHP.net: http://php.net/
