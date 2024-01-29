@@ -63,15 +63,14 @@ See `Contribute to LibGD`_.
 .. _Thomas Boutell: https://boutell.dev/
 .. _Pierre Joye: https://github.com/pierrejoye
 .. _valuable contributors: https://github.com/libgd/libgd/graphs/contributors
-.. _PHP.net: http://php.net/
+.. _PHP.net: https://php.net/
 .. _BMP: https://en.wikipedia.org/wiki/BMP_file_format (builtin)
 .. _GIF: https://en.wikipedia.org/wiki/GIF
 .. _TGA: https://en.wikipedia.org/wiki/Truevision_TGA
 .. _WBMP: https://en.wikipedia.org/wiki/Wireless_Application_Protocol_Bitmap_Format
 .. _JPEG: https://en.wikipedia.org/wiki/JPEG
-.. _libjpeg-turbo: http://libjpeg-turbo.virtualgl.org/
-.. _libjpeg-turbo: http://libjpeg-turbo.virtualgl.org/
-.. _libJpeg: http://www.ijg.org/
+.. _libjpeg-turbo: https://libjpeg-turbo.virtualgl.org/
+.. _libJpeg: https://www.ijg.org/
 .. _JPEG2000: https://en.wikipedia.org/wiki/JPEG_2000
 .. _AVIF: https://en.wikipedia.org/wiki/AV1#AV1_Image_File_Format_(AVIF)
 .. _libavif: https://github.com/AOMediaCodec/libavif
@@ -85,9 +84,9 @@ See `Contribute to LibGD`_.
 .. _TIFF: https://en.wikipedia.org/wiki/Tagged_Image_File_Format
 .. _libtiff: http://www.libtiff.org/
 .. _XPM: https://en.wikipedia.org/wiki/X_PixMap
-.. _libXpm: http://xorg.freedesktop.org/
+.. _libXpm: https://gitlab.freedesktop.org/xorg/lib/libxpm
 .. _Github Issues: https://github.com/libgd/libgd/issues
 .. _Github Discussions: https://github.com/libgd/libgd/discussions
 .. _Gitter Chat: https://gitter.im/libgd/libgd
-.. _Mailing list: http://news.php.net/php.gd.devel/
+.. _Mailing list: https://news-web.php.net/php.gd.devel/
 .. _Contribute to LibGD: https://github.com/libgd/libgd/blob/master/CONTRIBUTING.md
