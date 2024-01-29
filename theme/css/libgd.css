@@ -1,0 +1,26 @@
+/*
+ * LibGD overrides.
+ */
+@import url("main.css");
+
+#banner nav {
+	margin: 2em auto 0 auto;
+}
+
+#banner nav a:link, #banner nav a:visited {
+	padding: 5px 1em;
+}
+
+#logomin {
+	float: right;
+}
+
+/* This is ~768px with 16pt font.  */
+@media only screen and (max-width: 50em) {
+#banner nav {
+	margin-top: 0;
+}
+#logomin {
+	width: 25%;
+}
+}
