@@ -24,3 +24,14 @@
 	width: 25%;
 }
 }
+
+/* Minor dark mode support.  */
+@media (prefers-color-scheme: dark) {
+body {
+	background-color: #aaa
+}
+
+#featured, #content {
+	background-color: #bbb
+}
+}
