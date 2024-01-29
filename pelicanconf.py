@@ -33,3 +33,4 @@ DEFAULT_PAGINATION = 10
 READERS = {'html': None}
 
 THEME = 'libgd'
+CSS_FILE = 'libgd.css'
