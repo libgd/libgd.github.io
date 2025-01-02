@@ -7,6 +7,10 @@ on:
   push:
     branches: [master]
 
+# We push new commits to the gh-pages branch.
+permissions:
+  contents: write
+
 jobs:
   ghp-import:
     runs-on: ubuntu-latest
