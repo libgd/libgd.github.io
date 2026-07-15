@@ -111,9 +111,14 @@ Data Fields</h2></td></tr>
 <tr class="separator:a74a7016a09fc0b28b6ef9b438ab11838"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2d592406c2cef51ae12c60006e5180ea" id="r_a2d592406c2cef51ae12c60006e5180ea"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgdPngInfo.html#a2d592406c2cef51ae12c60006e5180ea">decoded_truecolor</a></td></tr>
 <tr class="separator:a2d592406c2cef51ae12c60006e5180ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90c5a04b4ccee4889c6da3b1b162e00c" id="r_a90c5a04b4ccee4889c6da3b1b162e00c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgdPngInfo.html#a90c5a04b4ccee4889c6da3b1b162e00c">resolution_x</a></td></tr>
+<tr class="separator:a90c5a04b4ccee4889c6da3b1b162e00c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac968caec6025eabb575fd08e580d85c" id="r_aac968caec6025eabb575fd08e580d85c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgdPngInfo.html#aac968caec6025eabb575fd08e580d85c">resolution_y</a></td></tr>
+<tr class="separator:aac968caec6025eabb575fd08e580d85c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Basic information read from a PNG stream. </p>
+<p>PNG stores physical pixel density in the pHYs chunk as two raw pixels-per-unit values plus a unit flag. When physical_unit is PNG_RESOLUTION_METER, x_pixels_per_unit and y_pixels_per_unit are pixels per meter and resolution_x/resolution_y contain the converted DPI values. When physical_unit is PNG_RESOLUTION_UNKNOWN, the raw values describe pixel aspect ratio only and resolution_x/resolution_y remain -1. </p>
 </div><h2 class="groupheader">Field Documentation</h2>
 <a id="a2001e3b18a37ece4efa850a51370892c" name="a2001e3b18a37ece4efa850a51370892c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2001e3b18a37ece4efa850a51370892c">&#9670;&#160;</a></span>bit_depth</h2>
@@ -261,7 +266,37 @@ Data Fields</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>PNG physical unit specifier, or -1 if not available. </p>
+<p>pHYs unit flag: PNG_RESOLUTION_UNKNOWN, PNG_RESOLUTION_METER, or -1. </p>
+
+</div>
+</div>
+<a id="a90c5a04b4ccee4889c6da3b1b162e00c" name="a90c5a04b4ccee4889c6da3b1b162e00c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a90c5a04b4ccee4889c6da3b1b162e00c">&#9670;&#160;</a></span>resolution_x</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int gdPngInfo::resolution_x</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Horizontal DPI converted from meter pHYs, or -1 if not available. </p>
+
+</div>
+</div>
+<a id="aac968caec6025eabb575fd08e580d85c" name="aac968caec6025eabb575fd08e580d85c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac968caec6025eabb575fd08e580d85c">&#9670;&#160;</a></span>resolution_y</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int gdPngInfo::resolution_y</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Vertical DPI converted from meter pHYs, or -1 if not available. </p>
 
 </div>
 </div>
@@ -306,7 +341,7 @@ Data Fields</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Horizontal pixels-per-unit value, or -1 if not available. </p>
+<p>Raw pHYs horizontal pixels per unit, or -1 if not available. </p>
 
 </div>
 </div>
@@ -321,7 +356,7 @@ Data Fields</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Vertical pixels-per-unit value, or -1 if not available. </p>
+<p>Raw pHYs vertical pixels per unit, or -1 if not available. </p>
 
 </div>
 </div>
