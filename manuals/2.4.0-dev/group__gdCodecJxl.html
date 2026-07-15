@@ -225,8 +225,8 @@ Data Structures</h2></td></tr>
 <div class="line">  exit(1);</div>
 <div class="line">}</div>
 <div class="line"> </div>
-<div class="line">gdImageFilledRectangle(first, 0, 0, 31, 23, gdTrueColor(255, 0, 0));</div>
-<div class="line">gdImageFilledRectangle(second, 0, 0, 31, 23, gdTrueColor(0, 0, 255));</div>
+<div class="line"><a class="code hl_function" href="group__PixelDraw.html#ga1e534e750e1b336b8961a62ebec88511">gdImageFilledRectangle</a>(first, 0, 0, 31, 23, gdTrueColor(255, 0, 0));</div>
+<div class="line"><a class="code hl_function" href="group__PixelDraw.html#ga1e534e750e1b336b8961a62ebec88511">gdImageFilledRectangle</a>(second, 0, 0, 31, 23, gdTrueColor(0, 0, 255));</div>
 <div class="line"> </div>
 <div class="line">anim = <a class="code hl_function" href="group__gdCodecJxl.html#ga3367bca026ab1f58a95750c87e4270b5">gdImageJxlAnimBeginPtr</a>(32, 24, 1, 0.0f, 7);</div>
 <div class="line"><span class="keywordflow">if</span> (anim == NULL) {</div>
@@ -246,6 +246,7 @@ Data Structures</h2></td></tr>
 <div class="line">gdFree(data);</div>
 <div class="line">gdImageDestroy(first);</div>
 <div class="line">gdImageDestroy(second);</div>
+<div class="ttc" id="agroup__PixelDraw_html_ga1e534e750e1b336b8961a62ebec88511"><div class="ttname"><a href="group__PixelDraw.html#ga1e534e750e1b336b8961a62ebec88511">gdImageFilledRectangle</a></div><div class="ttdeci">void gdImageFilledRectangle(gdImagePtr im, int x1, int y1, int x2, int y2, int color)</div><div class="ttdoc">Draws a filled rectangle.</div><div class="ttdef"><b>Definition</b> gd.c:2403</div></div>
 <div class="ttc" id="agroup__gdCodecJxl_html_ga07e296fbd25d73572b6afbb00a1de581"><div class="ttname"><a href="group__gdCodecJxl.html#ga07e296fbd25d73572b6afbb00a1de581">gdImageJxlAnimEndPtr</a></div><div class="ttdeci">void * gdImageJxlAnimEndPtr(gdJxlAnimPtr anim, int *size)</div><div class="ttdoc">Finish a JPEG XL memory animation writer and return the encoded buffer.</div><div class="ttdef"><b>Definition</b> gd_jxl.c:1497</div></div>
 <div class="ttc" id="agroup__gdCodecJxl_html_ga189a92ebddbcb0d64361a48af0e2350f"><div class="ttname"><a href="group__gdCodecJxl.html#ga189a92ebddbcb0d64361a48af0e2350f">gdJxlAnimPtr</a></div><div class="ttdeci">struct gdJxlAnim * gdJxlAnimPtr</div><div class="ttdoc">Opaque JPEG XL animation writer handle.</div><div class="ttdef"><b>Definition</b> gd.h:2696</div></div>
 <div class="ttc" id="agroup__gdCodecJxl_html_ga274a88b73135a721bab455b860a143cf"><div class="ttname"><a href="group__gdCodecJxl.html#ga274a88b73135a721bab455b860a143cf">gdImageJxlAnimReaderDestroy</a></div><div class="ttdeci">void gdImageJxlAnimReaderDestroy(gdJxlAnimReaderPtr reader)</div><div class="ttdoc">Destroy a JPEG XL animation reader.</div><div class="ttdef"><b>Definition</b> gd_jxl.c:1435</div></div>
@@ -383,7 +384,7 @@ Data Structures</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Create a truecolor image from a JPEG XL stdio file. </p>
-<p><a class="el" href="group__gdCodecJxl.html#gab5cbaa90c9a768a592b48e163a01563a" title="Create a truecolor image from a JPEG XL stdio file.">gdImageCreateFromJxl()</a> does not close inFile. The returned image is caller-owned and must be destroyed with gdImageDestroy().</p>
+<p><a class="el" href="group__gdCodecJxl.html#gab5cbaa90c9a768a592b48e163a01563a" title="Create a truecolor image from a JPEG XL stdio file.">gdImageCreateFromJxl()</a> does not close inFile. The returned image is caller-owned and must be destroyed with gdImageDestroy.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">inFile</td><td>Pointer to the input FILE stream.</td></tr>
@@ -411,7 +412,7 @@ Data Structures</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Create a truecolor image from JPEG XL data read through a gdIOCtx. </p>
-<p><a class="el" href="group__gdCodecJxl.html#ga5ec53436947b0da67bb2efe54e561ea7" title="Create a truecolor image from JPEG XL data read through a gdIOCtx.">gdImageCreateFromJxlCtx()</a> does not close infile. The returned image is caller-owned and must be destroyed with gdImageDestroy().</p>
+<p><a class="el" href="group__gdCodecJxl.html#ga5ec53436947b0da67bb2efe54e561ea7" title="Create a truecolor image from JPEG XL data read through a gdIOCtx.">gdImageCreateFromJxlCtx()</a> does not close infile. The returned image is caller-owned and must be destroyed with gdImageDestroy.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">infile</td><td>Pointer to the gdIOCtx input context.</td></tr>
@@ -449,7 +450,7 @@ Data Structures</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Create a truecolor image from a JPEG XL memory buffer. </p>
-<p>The data buffer is borrowed for the duration of the call. The returned image is caller-owned and must be destroyed with gdImageDestroy().</p>
+<p>The data buffer is borrowed for the duration of the call. The returned image is caller-owned and must be destroyed with gdImageDestroy.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">size</td><td>Size of the JPEG XL memory buffer in bytes. </td></tr>
@@ -1557,7 +1558,7 @@ Data Structures</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Read the next raw JPEG XL animation frame rectangle. </p>
-<p>The returned image is a caller-owned truecolor frame rectangle and must be destroyed with gdImageDestroy().</p>
+<p>The returned image is a caller-owned truecolor frame rectangle and must be destroyed with gdImageDestroy.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">reader</td><td>Raw-frame JPEG XL animation reader handle. </td></tr>
@@ -1596,7 +1597,7 @@ Data Structures</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Read the next coalesced JPEG XL animation image. </p>
-<p>The returned image is a caller-owned truecolor full-canvas image and must be destroyed with gdImageDestroy().</p>
+<p>The returned image is a caller-owned truecolor full-canvas image and must be destroyed with gdImageDestroy.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">reader</td><td>Coalesced JPEG XL animation reader handle. </td></tr>
@@ -1641,7 +1642,7 @@ Data Structures</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Read the next coalesced JPEG XL animation image through an output parameter. </p>
-<p>When image is not NULL and the function succeeds, *image receives a caller-owned truecolor full-canvas image that must be destroyed with gdImageDestroy().</p>
+<p>When image is not NULL and the function succeeds, *image receives a caller-owned truecolor full-canvas image that must be destroyed with gdImageDestroy.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">reader</td><td>Coalesced JPEG XL animation reader handle. </td></tr>

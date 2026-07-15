@@ -71,24 +71,17 @@ $(function() {
 
 <div class="header">
   <div class="summary">
-<a href="#define-members">Macros</a> &#124;
+<a href="#nested-classes">Data Structures</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">Font Text Rendering, FreeType 2</div></div>
 </div><!--header-->
 <div class="contents">
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:ga844628693245c14ebaf73fd839033fbf" id="r_ga844628693245c14ebaf73fd839033fbf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__freetypefont.html#ga844628693245c14ebaf73fd839033fbf">gdFTEX_Unicode</a>&#160;&#160;&#160;0</td></tr>
-<tr class="separator:ga844628693245c14ebaf73fd839033fbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad2c4c3ada3b9b5811741ff618e32281f" id="r_gad2c4c3ada3b9b5811741ff618e32281f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__freetypefont.html#gad2c4c3ada3b9b5811741ff618e32281f">gdFTEX_Shift_JIS</a>&#160;&#160;&#160;1</td></tr>
-<tr class="separator:gad2c4c3ada3b9b5811741ff618e32281f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga6fe8f63547be904352cdb0ea5e445bb2" id="r_ga6fe8f63547be904352cdb0ea5e445bb2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__freetypefont.html#ga6fe8f63547be904352cdb0ea5e445bb2">gdFTEX_Big5</a>&#160;&#160;&#160;2</td></tr>
-<tr class="separator:ga6fe8f63547be904352cdb0ea5e445bb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab3c08044d0c1d2f28ce8f3767109acda" id="r_gab3c08044d0c1d2f28ce8f3767109acda"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__freetypefont.html#gab3c08044d0c1d2f28ce8f3767109acda">gdFTEX_Adobe_Custom</a>&#160;&#160;&#160;3</td></tr>
-<tr class="separator:gab3c08044d0c1d2f28ce8f3767109acda"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad441e55e0c3d57c873293ee4bef3fdb7" id="r_gad441e55e0c3d57c873293ee4bef3fdb7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__freetypefont.html#gad441e55e0c3d57c873293ee4bef3fdb7">gdFTEX_MacRoman</a>&#160;&#160;&#160;<a class="el" href="group__freetypefont.html#gab3c08044d0c1d2f28ce8f3767109acda">gdFTEX_Adobe_Custom</a></td></tr>
-<tr class="separator:gad441e55e0c3d57c873293ee4bef3fdb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Data Structures</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgdFTStringExtra.html">gdFTStringExtra</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure for passing additional parameters to FreeType 2 string rendering functions.  <a href="structgdFTStringExtra.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
@@ -110,9 +103,43 @@ Functions</h2></td></tr>
 <tr class="memitem:gabf622c7453347c95a400520fa0a96a46" id="r_gabf622c7453347c95a400520fa0a96a46"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__freetypefont.html#gabf622c7453347c95a400520fa0a96a46">gdFTUseFontConfig</a> (int flag)</td></tr>
 <tr class="memdesc:gabf622c7453347c95a400520fa0a96a46"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable or disable fontconfig by default.  <br /></td></tr>
 <tr class="separator:gabf622c7453347c95a400520fa0a96a46"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad4789279db4d95a376c0eb896b578f32" id="r_gad4789279db4d95a376c0eb896b578f32"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__freetypefont.html#gad4789279db4d95a376c0eb896b578f32">gdImageStringFTEx</a> (gdImagePtr im, int *brect, int fg, const char *fontlist, double ptsize, double angle, int x, int y, const char *string, gdFTStringExtraPtr strex)</td></tr>
+<tr class="memitem:gad4789279db4d95a376c0eb896b578f32" id="r_gad4789279db4d95a376c0eb896b578f32"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__freetypefont.html#gad4789279db4d95a376c0eb896b578f32">gdImageStringFTEx</a> (gdImagePtr im, int *brect, int fg, const char *fontlist, double ptsize, double angle, int x, int y, const char *string, <a class="el" href="structgdFTStringExtra.html">gdFTStringExtraPtr</a> strex)</td></tr>
 <tr class="memdesc:gad4789279db4d95a376c0eb896b578f32"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws a string using FreeType 2 fonts with additional parameters.  <br /></td></tr>
 <tr class="separator:gad4789279db4d95a376c0eb896b578f32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader">gdFTStringExtra option flags</h2></td></tr>
+<tr><td class="ititle" colspan="2"><p>These flags are combined in <a class="el" href="structgdFTStringExtra.html#af88e07f75c672f5986e9710b63ff7b55">gdFTStringExtra::flags</a> and used by <a class="el" href="group__freetypefont.html#gad4789279db4d95a376c0eb896b578f32">gdImageStringFTEx</a>. </p>
+</td></tr>
+<tr class="memitem:gafa9b1cf42e8a9df54733816ce17a186a" id="r_gafa9b1cf42e8a9df54733816ce17a186a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__freetypefont.html#gafa9b1cf42e8a9df54733816ce17a186a">gdFTEX_LINESPACE</a>&#160;&#160;&#160;1</td></tr>
+<tr class="separator:gafa9b1cf42e8a9df54733816ce17a186a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga35d81eee66150f8b76a1e20294f483b9" id="r_ga35d81eee66150f8b76a1e20294f483b9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__freetypefont.html#ga35d81eee66150f8b76a1e20294f483b9">gdFTEX_CHARMAP</a>&#160;&#160;&#160;2</td></tr>
+<tr class="separator:ga35d81eee66150f8b76a1e20294f483b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8978dab302ba1b7a6aedd7f6ccaddcdd" id="r_ga8978dab302ba1b7a6aedd7f6ccaddcdd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__freetypefont.html#ga8978dab302ba1b7a6aedd7f6ccaddcdd">gdFTEX_RESOLUTION</a>&#160;&#160;&#160;4</td></tr>
+<tr class="separator:ga8978dab302ba1b7a6aedd7f6ccaddcdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafc469e1eb2653f6f9843eab17efd677b" id="r_gafc469e1eb2653f6f9843eab17efd677b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__freetypefont.html#gafc469e1eb2653f6f9843eab17efd677b">gdFTEX_DISABLE_KERNING</a>&#160;&#160;&#160;8</td></tr>
+<tr class="separator:gafc469e1eb2653f6f9843eab17efd677b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab2765919011da8fea49f97bece3ebfba" id="r_gab2765919011da8fea49f97bece3ebfba"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__freetypefont.html#gab2765919011da8fea49f97bece3ebfba">gdFTEX_XSHOW</a>&#160;&#160;&#160;16</td></tr>
+<tr class="separator:gab2765919011da8fea49f97bece3ebfba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae9585c8d536ced5cccb08d8f4512542a" id="r_gae9585c8d536ced5cccb08d8f4512542a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__freetypefont.html#gae9585c8d536ced5cccb08d8f4512542a">gdFTEX_FONTPATHNAME</a>&#160;&#160;&#160;32</td></tr>
+<tr class="separator:gae9585c8d536ced5cccb08d8f4512542a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafa044d13549ea08842e4d4a34ca3e44e" id="r_gafa044d13549ea08842e4d4a34ca3e44e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__freetypefont.html#gafa044d13549ea08842e4d4a34ca3e44e">gdFTEX_FONTCONFIG</a>&#160;&#160;&#160;64</td></tr>
+<tr class="separator:gafa044d13549ea08842e4d4a34ca3e44e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3029ac19798cce8fd1a4dd2f2bcff928" id="r_ga3029ac19798cce8fd1a4dd2f2bcff928"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__freetypefont.html#ga3029ac19798cce8fd1a4dd2f2bcff928">gdFTEX_RETURNFONTPATHNAME</a>&#160;&#160;&#160;128</td></tr>
+<tr class="separator:ga3029ac19798cce8fd1a4dd2f2bcff928"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader">gdFTStringExtra character map values</h2></td></tr>
+<tr><td class="ititle" colspan="2"><p>These are not option flags. Set one value in <a class="el" href="structgdFTStringExtra.html#ac53c36eb957b8d532687e0444cb8604a">gdFTStringExtra::charmap</a> when <a class="el" href="structgdFTStringExtra.html#af88e07f75c672f5986e9710b63ff7b55">gdFTStringExtra::flags</a> includes <a class="el" href="group__freetypefont.html#ga35d81eee66150f8b76a1e20294f483b9">gdFTEX_CHARMAP</a>. Without <a class="el" href="group__freetypefont.html#ga35d81eee66150f8b76a1e20294f483b9">gdFTEX_CHARMAP</a>, GD prefers Unicode. </p>
+</td></tr>
+<tr class="memitem:ga844628693245c14ebaf73fd839033fbf" id="r_ga844628693245c14ebaf73fd839033fbf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__freetypefont.html#ga844628693245c14ebaf73fd839033fbf">gdFTEX_Unicode</a>&#160;&#160;&#160;0</td></tr>
+<tr class="separator:ga844628693245c14ebaf73fd839033fbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad2c4c3ada3b9b5811741ff618e32281f" id="r_gad2c4c3ada3b9b5811741ff618e32281f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__freetypefont.html#gad2c4c3ada3b9b5811741ff618e32281f">gdFTEX_Shift_JIS</a>&#160;&#160;&#160;1</td></tr>
+<tr class="separator:gad2c4c3ada3b9b5811741ff618e32281f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6fe8f63547be904352cdb0ea5e445bb2" id="r_ga6fe8f63547be904352cdb0ea5e445bb2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__freetypefont.html#ga6fe8f63547be904352cdb0ea5e445bb2">gdFTEX_Big5</a>&#160;&#160;&#160;2</td></tr>
+<tr class="separator:ga6fe8f63547be904352cdb0ea5e445bb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab3c08044d0c1d2f28ce8f3767109acda" id="r_gab3c08044d0c1d2f28ce8f3767109acda"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__freetypefont.html#gab3c08044d0c1d2f28ce8f3767109acda">gdFTEX_Adobe_Custom</a>&#160;&#160;&#160;3</td></tr>
+<tr class="separator:gab3c08044d0c1d2f28ce8f3767109acda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad441e55e0c3d57c873293ee4bef3fdb7" id="r_gad441e55e0c3d57c873293ee4bef3fdb7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__freetypefont.html#gad441e55e0c3d57c873293ee4bef3fdb7">gdFTEX_MacRoman</a>&#160;&#160;&#160;<a class="el" href="group__freetypefont.html#gab3c08044d0c1d2f28ce8f3767109acda">gdFTEX_Adobe_Custom</a></td></tr>
+<tr class="separator:gad441e55e0c3d57c873293ee4bef3fdb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <h2 class="groupheader">Macro Definition Documentation</h2>
@@ -127,7 +154,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Adobe Custom character map </p>
+<p>Prefer an Adobe Custom character map. GD may fall back to Apple Roman when no Adobe Custom map is available. </p>
 
 </div>
 </div>
@@ -142,7 +169,82 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Big5 character map </p>
+<p>Prefer a Big5 character map. </p>
+
+</div>
+</div>
+<a id="ga35d81eee66150f8b76a1e20294f483b9" name="ga35d81eee66150f8b76a1e20294f483b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga35d81eee66150f8b76a1e20294f483b9">&#9670;&#160;</a></span>gdFTEX_CHARMAP</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define gdFTEX_CHARMAP&#160;&#160;&#160;2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Use <a class="el" href="structgdFTStringExtra.html#ac53c36eb957b8d532687e0444cb8604a">gdFTStringExtra::charmap</a> as the preferred FreeType character map. If the requested map is not available, GD attempts compatible fallback maps where possible. </p>
+
+</div>
+</div>
+<a id="gafc469e1eb2653f6f9843eab17efd677b" name="gafc469e1eb2653f6f9843eab17efd677b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gafc469e1eb2653f6f9843eab17efd677b">&#9670;&#160;</a></span>gdFTEX_DISABLE_KERNING</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define gdFTEX_DISABLE_KERNING&#160;&#160;&#160;8</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Disable FreeType kerning adjustments between consecutive glyphs. </p>
+
+</div>
+</div>
+<a id="gafa044d13549ea08842e4d4a34ca3e44e" name="gafa044d13549ea08842e4d4a34ca3e44e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gafa044d13549ea08842e4d4a34ca3e44e">&#9670;&#160;</a></span>gdFTEX_FONTCONFIG</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define gdFTEX_FONTCONFIG&#160;&#160;&#160;64</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Interpret the fontlist argument as a fontconfig pattern for this call. This is not needed when fontconfig has already been enabled by default with <a class="el" href="group__freetypefont.html#gabf622c7453347c95a400520fa0a96a46" title="Enable or disable fontconfig by default.">gdFTUseFontConfig()</a>. </p>
+
+</div>
+</div>
+<a id="gae9585c8d536ced5cccb08d8f4512542a" name="gae9585c8d536ced5cccb08d8f4512542a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae9585c8d536ced5cccb08d8f4512542a">&#9670;&#160;</a></span>gdFTEX_FONTPATHNAME</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define gdFTEX_FONTPATHNAME&#160;&#160;&#160;32</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Interpret the fontlist argument as a full or partial font file path, even when fontconfig has been enabled by default with <a class="el" href="group__freetypefont.html#gabf622c7453347c95a400520fa0a96a46" title="Enable or disable fontconfig by default.">gdFTUseFontConfig()</a>. </p>
+
+</div>
+</div>
+<a id="gafa9b1cf42e8a9df54733816ce17a186a" name="gafa9b1cf42e8a9df54733816ce17a186a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gafa9b1cf42e8a9df54733816ce17a186a">&#9670;&#160;</a></span>gdFTEX_LINESPACE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define gdFTEX_LINESPACE&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Use <a class="el" href="structgdFTStringExtra.html#aced11f2ba0af633f9c162f6b89f309d0">gdFTStringExtra::linespacing</a> for newline-separated text. The value is a multiple of the font height; without this flag, the default line spacing is 1.05. </p>
 
 </div>
 </div>
@@ -161,6 +263,36 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="ga8978dab302ba1b7a6aedd7f6ccaddcdd" name="ga8978dab302ba1b7a6aedd7f6ccaddcdd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8978dab302ba1b7a6aedd7f6ccaddcdd">&#9670;&#160;</a></span>gdFTEX_RESOLUTION</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define gdFTEX_RESOLUTION&#160;&#160;&#160;4</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Use <a class="el" href="structgdFTStringExtra.html#a48e3e88ea2a3b0f7754271f8125800da">gdFTStringExtra::hdpi</a> and <a class="el" href="structgdFTStringExtra.html#a0cbef63a4c6bf337f027d35cc5151aa5">gdFTStringExtra::vdpi</a> as the FreeType rendering resolution. Without this flag, GD uses <code>GD_RESOLUTION</code> for both axes. </p>
+
+</div>
+</div>
+<a id="ga3029ac19798cce8fd1a4dd2f2bcff928" name="ga3029ac19798cce8fd1a4dd2f2bcff928"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3029ac19798cce8fd1a4dd2f2bcff928">&#9670;&#160;</a></span>gdFTEX_RETURNFONTPATHNAME</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define gdFTEX_RETURNFONTPATHNAME&#160;&#160;&#160;128</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Return a gd-allocated copy of the actual font file path used in <a class="el" href="structgdFTStringExtra.html#a58c9dddba9fa8e50f7bee880a93a4137">gdFTStringExtra::fontpath</a>. This is useful when fontconfig selects the font. The caller must free that string with gdFree(). </p>
+
+</div>
+</div>
 <a id="gad2c4c3ada3b9b5811741ff618e32281f" name="gad2c4c3ada3b9b5811741ff618e32281f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gad2c4c3ada3b9b5811741ff618e32281f">&#9670;&#160;</a></span>gdFTEX_Shift_JIS</h2>
 
@@ -172,7 +304,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Shift_JIS character map </p>
+<p>Prefer a Shift_JIS character map. </p>
 
 </div>
 </div>
@@ -187,7 +319,22 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Unicode character map </p>
+<p>Prefer a Unicode character map. GD may fall back to symbol or Adobe maps when no Unicode map is available. </p>
+
+</div>
+</div>
+<a id="gab2765919011da8fea49f97bece3ebfba" name="gab2765919011da8fea49f97bece3ebfba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab2765919011da8fea49f97bece3ebfba">&#9670;&#160;</a></span>gdFTEX_XSHOW</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define gdFTEX_XSHOW&#160;&#160;&#160;16</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Return a gd-allocated xshow advance string in <a class="el" href="structgdFTStringExtra.html#a76214fb9617da90bbc94d90733d4aff9">gdFTStringExtra::xshow</a>. The caller must free that string with gdFree(). </p>
 
 </div>
 </div>
@@ -272,7 +419,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Enable or disable fontconfig by default. </p>
-<p>If flag is nonzero, the fontlist parameter to gdImageStringFT and gdImageStringFTEx shall be assumed to be a fontconfig font pattern if fontconfig was compiled into gd. This function returns zero if fontconfig is not available, nonzero otherwise. If GD is built without libfontconfig support, this function is a NOP.</p>
+<p>If flag is nonzero, the fontlist parameter to gdImageStringFT and <a class="el" href="group__freetypefont.html#gad4789279db4d95a376c0eb896b578f32">gdImageStringFTEx</a> shall be assumed to be a fontconfig font pattern if fontconfig was compiled into gd. This function returns zero if fontconfig is not available, nonzero otherwise. If GD is built without libfontconfig support, this function is a NOP.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">flag</td><td>Zero to disable, nonzero to enable.</td></tr>
@@ -434,7 +581,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">gdFTStringExtraPtr&#160;</td>
+          <td class="paramtype"><a class="el" href="structgdFTStringExtra.html">gdFTStringExtraPtr</a>&#160;</td>
           <td class="paramname"><em>strex</em>&#160;</td>
         </tr>
         <tr>

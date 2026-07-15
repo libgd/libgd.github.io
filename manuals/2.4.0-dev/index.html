@@ -98,35 +98,36 @@ gd basics: using gd in your program:</h1>
 <div class="line">    <span class="comment">/* Declare the image _/ gdImagePtr im; /_ Declare output files */</span></div>
 <div class="line">    FILE *pngout, _jpegout; /_ Declare color indexes */ <span class="keywordtype">int</span> black; <span class="keywordtype">int</span> white;</div>
 <div class="line"> </div>
-<div class="line">    <span class="comment">/* Allocate the image: 64 pixels across by 64 pixels tall */</span> im =</div>
+<div class="line">    <span class="comment">/* Allocate the image: 64 pixels across by 64 pixels tall */</span> <a class="code hl_namespace" href="namespaceim.html">im</a> =</div>
 <div class="line">    gdImageCreate(64, 64);</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">/* Allocate the color black (red, green and blue all minimum). Since this is</span></div>
 <div class="line"><span class="comment">    the first color in a new image, it will be the background color. */</span> black =</div>
-<div class="line">    gdImageColorAllocate(im, 0, 0, 0);</div>
+<div class="line">    gdImageColorAllocate(<a class="code hl_namespace" href="namespaceim.html">im</a>, 0, 0, 0);</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">/* Allocate the color white (red, green and blue all maximum). */</span> white =</div>
-<div class="line">    gdImageColorAllocate(im, 255, 255, 255);</div>
+<div class="line">    gdImageColorAllocate(<a class="code hl_namespace" href="namespaceim.html">im</a>, 255, 255, 255);</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">/* Draw a line from the upper left to the lower right, using white color</span></div>
 <div class="line"><span class="comment">    index. */</span> </div>
-<div class="line">    gdImageLine(im, 0, 0, 63, 63, white);</div>
+<div class="line">    gdImageLine(<a class="code hl_namespace" href="namespaceim.html">im</a>, 0, 0, 63, 63, white);</div>
 <div class="line">    <span class="comment">/* Open a file for writing. &quot;wb&quot; means &quot;write binary&quot;, important under MSDOS,</span></div>
 <div class="line"><span class="comment">    harmless under Unix. */</span> </div>
 <div class="line">    pngout = fopen(<span class="stringliteral">&quot;test.png&quot;</span>, <span class="stringliteral">&quot;wb&quot;</span>);</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">/* Do the same for a JPEG-format file. */</span> jpegout = fopen(<span class="stringliteral">&quot;test.jpg&quot;</span>, <span class="stringliteral">&quot;wb&quot;</span>);</div>
-<div class="line">    <span class="comment">/* Output the image to the disk file in PNG format. */</span> <a class="code hl_function" href="group__gdCodecPng.html#ga6c0d7100c26b0ae131fd6546e15b210a">gdImagePng</a>(im, pngout);</div>
+<div class="line">    <span class="comment">/* Output the image to the disk file in PNG format. */</span> <a class="code hl_function" href="group__gdCodecPng.html#ga6c0d7100c26b0ae131fd6546e15b210a">gdImagePng</a>(<a class="code hl_namespace" href="namespaceim.html">im</a>, pngout);</div>
 <div class="line">    <span class="comment">/* Output the same image in JPEG format, using the default JPEG quality</span></div>
 <div class="line"><span class="comment">    setting. */</span> </div>
-<div class="line">    <a class="code hl_function" href="group__gdCodecJpeg.html#gab5c46bbf22d6dd69a0b7722b327935aa">gdImageJpeg</a>(im, jpegout, -1);</div>
+<div class="line">    <a class="code hl_function" href="group__gdCodecJpeg.html#gab5c46bbf22d6dd69a0b7722b327935aa">gdImageJpeg</a>(<a class="code hl_namespace" href="namespaceim.html">im</a>, jpegout, -1);</div>
 <div class="line">    <span class="comment">/* Close the files. */</span> </div>
 <div class="line">    fclose(pngout); fclose(jpegout);</div>
 <div class="line">    <span class="comment">/* Destroy the image in memory. */</span> </div>
-<div class="line">    gdImageDestroy(im);</div>
+<div class="line">    gdImageDestroy(<a class="code hl_namespace" href="namespaceim.html">im</a>);</div>
 <div class="line">}</div>
-<div class="ttc" id="agroup__gdCodecJpeg_html_gab5c46bbf22d6dd69a0b7722b327935aa"><div class="ttname"><a href="group__gdCodecJpeg.html#gab5c46bbf22d6dd69a0b7722b327935aa">gdImageJpeg</a></div><div class="ttdeci">void gdImageJpeg(gdImagePtr im, FILE *out, int quality)</div><div class="ttdoc">Write an image as JPEG data to a stdio file.</div><div class="ttdef"><b>Definition</b> gd_jpeg.c:1820</div></div>
-<div class="ttc" id="agroup__gdCodecPng_html_ga6c0d7100c26b0ae131fd6546e15b210a"><div class="ttname"><a href="group__gdCodecPng.html#ga6c0d7100c26b0ae131fd6546e15b210a">gdImagePng</a></div><div class="ttdeci">void gdImagePng(gdImagePtr im, FILE *out)</div><div class="ttdoc">Write an image as PNG data to a stdio file.</div><div class="ttdef"><b>Definition</b> gd_png.c:1868</div></div>
+<div class="ttc" id="agroup__gdCodecJpeg_html_gab5c46bbf22d6dd69a0b7722b327935aa"><div class="ttname"><a href="group__gdCodecJpeg.html#gab5c46bbf22d6dd69a0b7722b327935aa">gdImageJpeg</a></div><div class="ttdeci">void gdImageJpeg(gdImagePtr im, FILE *out, int quality)</div><div class="ttdoc">Write an image as JPEG data to a stdio file.</div><div class="ttdef"><b>Definition</b> gd_jpeg.c:1771</div></div>
+<div class="ttc" id="agroup__gdCodecPng_html_ga6c0d7100c26b0ae131fd6546e15b210a"><div class="ttname"><a href="group__gdCodecPng.html#ga6c0d7100c26b0ae131fd6546e15b210a">gdImagePng</a></div><div class="ttdeci">void gdImagePng(gdImagePtr im, FILE *out)</div><div class="ttdoc">Write an image as PNG data to a stdio file.</div><div class="ttdef"><b>Definition</b> gd_png.c:1797</div></div>
+<div class="ttc" id="anamespaceim_html"><div class="ttname"><a href="namespaceim.html">im</a></div><div class="ttdoc">Write an image as JPEG data to a gdIOCtx.</div></div>
 </div><!-- fragment --> </div></div><!-- PageDoc -->
 </div><!-- contents -->
 <!-- start footer part -->

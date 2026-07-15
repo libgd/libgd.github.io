@@ -272,11 +272,11 @@ Data Structures</h2></td></tr>
 <div class="line">}</div>
 <div class="line"> </div>
 <div class="line"><a class="code hl_function" href="group__gdCodecTiff.html#gafc12a9bfcd64c61a2d998aa55b697e42">gdTiffReadClose</a>(reader);</div>
-<div class="ttc" id="agroup__gdCodecTiff_html_ga13711a136fea91da21e85e85e290e18c"><div class="ttname"><a href="group__gdCodecTiff.html#ga13711a136fea91da21e85e85e290e18c">gdTiffReadGetInfo</a></div><div class="ttdeci">int gdTiffReadGetInfo(gdTiffReadPtr tiff, gdTiffInfo *info)</div><div class="ttdoc">Get TIFF file information from a reader.</div><div class="ttdef"><b>Definition</b> gd_tiff.c:2342</div></div>
+<div class="ttc" id="agroup__gdCodecTiff_html_ga13711a136fea91da21e85e85e290e18c"><div class="ttname"><a href="group__gdCodecTiff.html#ga13711a136fea91da21e85e85e290e18c">gdTiffReadGetInfo</a></div><div class="ttdeci">int gdTiffReadGetInfo(gdTiffReadPtr tiff, gdTiffInfo *info)</div><div class="ttdoc">Get TIFF file information from a reader.</div><div class="ttdef"><b>Definition</b> gd_tiff.c:2315</div></div>
 <div class="ttc" id="agroup__gdCodecTiff_html_ga689957796d91d08eea7eb092caee7add"><div class="ttname"><a href="group__gdCodecTiff.html#ga689957796d91d08eea7eb092caee7add">gdTiffReadPtr</a></div><div class="ttdeci">struct gdTiffReadStruct * gdTiffReadPtr</div><div class="ttdoc">Opaque TIFF multi-page reader handle.</div><div class="ttdef"><b>Definition</b> gd.h:3615</div></div>
-<div class="ttc" id="agroup__gdCodecTiff_html_ga6f6205329b44f34f6dbd8f0dcac7f0bc"><div class="ttname"><a href="group__gdCodecTiff.html#ga6f6205329b44f34f6dbd8f0dcac7f0bc">gdTiffReadNextImage</a></div><div class="ttdeci">int gdTiffReadNextImage(gdTiffReadPtr tiff, gdTiffPageInfo *info, gdImagePtr *image)</div><div class="ttdoc">Read the next TIFF page image.</div><div class="ttdef"><b>Definition</b> gd_tiff.c:2351</div></div>
-<div class="ttc" id="agroup__gdCodecTiff_html_gace1cc826074b39a7500a8ceaacb92532"><div class="ttname"><a href="group__gdCodecTiff.html#gace1cc826074b39a7500a8ceaacb92532">gdTiffReadOpen</a></div><div class="ttdeci">gdTiffReadPtr gdTiffReadOpen(FILE *fd)</div><div class="ttdoc">Open a TIFF multi-page reader from a stdio file.</div><div class="ttdef"><b>Definition</b> gd_tiff.c:2314</div></div>
-<div class="ttc" id="agroup__gdCodecTiff_html_gafc12a9bfcd64c61a2d998aa55b697e42"><div class="ttname"><a href="group__gdCodecTiff.html#gafc12a9bfcd64c61a2d998aa55b697e42">gdTiffReadClose</a></div><div class="ttdeci">void gdTiffReadClose(gdTiffReadPtr tiff)</div><div class="ttdoc">Close a TIFF multi-page reader.</div><div class="ttdef"><b>Definition</b> gd_tiff.c:2336</div></div>
+<div class="ttc" id="agroup__gdCodecTiff_html_ga6f6205329b44f34f6dbd8f0dcac7f0bc"><div class="ttname"><a href="group__gdCodecTiff.html#ga6f6205329b44f34f6dbd8f0dcac7f0bc">gdTiffReadNextImage</a></div><div class="ttdeci">int gdTiffReadNextImage(gdTiffReadPtr tiff, gdTiffPageInfo *info, gdImagePtr *image)</div><div class="ttdoc">Read the next TIFF page image.</div><div class="ttdef"><b>Definition</b> gd_tiff.c:2324</div></div>
+<div class="ttc" id="agroup__gdCodecTiff_html_gace1cc826074b39a7500a8ceaacb92532"><div class="ttname"><a href="group__gdCodecTiff.html#gace1cc826074b39a7500a8ceaacb92532">gdTiffReadOpen</a></div><div class="ttdeci">gdTiffReadPtr gdTiffReadOpen(FILE *fd)</div><div class="ttdoc">Open a TIFF multi-page reader from a stdio file.</div><div class="ttdef"><b>Definition</b> gd_tiff.c:2287</div></div>
+<div class="ttc" id="agroup__gdCodecTiff_html_gafc12a9bfcd64c61a2d998aa55b697e42"><div class="ttname"><a href="group__gdCodecTiff.html#gafc12a9bfcd64c61a2d998aa55b697e42">gdTiffReadClose</a></div><div class="ttdeci">void gdTiffReadClose(gdTiffReadPtr tiff)</div><div class="ttdoc">Close a TIFF multi-page reader.</div><div class="ttdef"><b>Definition</b> gd_tiff.c:2309</div></div>
 <div class="ttc" id="astructgdTiffInfo_html"><div class="ttname"><a href="structgdTiffInfo.html">gdTiffInfo</a></div><div class="ttdoc">TIFF file information from the first page and container.</div><div class="ttdef"><b>Definition</b> gd.h:3620</div></div>
 <div class="ttc" id="astructgdTiffInfo_html_a29dab1b546fccac9fd1d3a9044cdad3f"><div class="ttname"><a href="structgdTiffInfo.html#a29dab1b546fccac9fd1d3a9044cdad3f">gdTiffInfo::pageCount</a></div><div class="ttdeci">int pageCount</div><div class="ttdef"><b>Definition</b> gd.h:3623</div></div>
 <div class="ttc" id="astructgdTiffInfo_html_a43341597ce4600665b54ccbec433841d"><div class="ttname"><a href="structgdTiffInfo.html#a43341597ce4600665b54ccbec433841d">gdTiffInfo::height</a></div><div class="ttdeci">int height</div><div class="ttdef"><b>Definition</b> gd.h:3622</div></div>
@@ -759,7 +759,7 @@ Data Structures</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Create an image from a TIFF stdio file. </p>
-<p><a class="el" href="group__gdCodecTiff.html#gaa788f9a3026447f18ae890df7acc186d" title="Create an image from a TIFF stdio file.">gdImageCreateFromTiff()</a> does not close inFile. The returned image is caller-owned and must be destroyed with gdImageDestroy().</p>
+<p><a class="el" href="group__gdCodecTiff.html#gaa788f9a3026447f18ae890df7acc186d" title="Create an image from a TIFF stdio file.">gdImageCreateFromTiff()</a> does not close inFile. The returned image is caller-owned and must be destroyed with gdImageDestroy.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">inFile</td><td>Pointer to the input FILE stream.</td></tr>
@@ -787,7 +787,7 @@ Data Structures</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Create an image from TIFF data read through a gdIOCtx. </p>
-<p><a class="el" href="group__gdCodecTiff.html#ga6d7b440358e1435e4034508098e0c7c5" title="Create an image from TIFF data read through a gdIOCtx.">gdImageCreateFromTiffCtx()</a> does not close infile. The returned image is caller-owned and must be destroyed with gdImageDestroy().</p>
+<p><a class="el" href="group__gdCodecTiff.html#ga6d7b440358e1435e4034508098e0c7c5" title="Create an image from TIFF data read through a gdIOCtx.">gdImageCreateFromTiffCtx()</a> does not close infile. The returned image is caller-owned and must be destroyed with gdImageDestroy.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">infile</td><td>Pointer to the gdIOCtx input context.</td></tr>
@@ -825,7 +825,7 @@ Data Structures</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Create an image from a TIFF memory buffer. </p>
-<p>The data buffer is borrowed for the duration of the call. The returned image is caller-owned and must be destroyed with gdImageDestroy().</p>
+<p>The data buffer is borrowed for the duration of the call. The returned image is caller-owned and must be destroyed with gdImageDestroy.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">size</td><td>Size of the TIFF memory buffer in bytes. </td></tr>
@@ -1144,7 +1144,7 @@ Data Structures</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Read the next TIFF page image. </p>
-<p>When image is not NULL and the function returns 1, *image receives a caller-owned gd image that must be destroyed with gdImageDestroy(). Passing NULL for image advances the reader without returning the decoded image.</p>
+<p>When image is not NULL and the function returns 1, *image receives a caller-owned gd image that must be destroyed with gdImageDestroy. Passing NULL for image advances the reader without returning the decoded image.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">tiff</td><td>TIFF reader handle. </td></tr>

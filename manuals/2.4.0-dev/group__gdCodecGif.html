@@ -202,27 +202,27 @@ typedef struct gdGifReadStruct *&#160;</td><td class="memItemRight" valign="bott
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>GIF image and animation reading and writing support. </p>
 <p>GIF support reads single images as palette-based gd images and writes palette-based GIF data, quantizing truecolor input when needed. Animated GIF support includes a reader for raw frames or composited images and a legacy begin/add/end writer API.</p>
-<div class="fragment"><div class="line">gdImagePtr im;</div>
+<div class="fragment"><div class="line">gdImagePtr <a class="code hl_namespace" href="namespaceim.html">im</a>;</div>
 <div class="line">gdImagePtr prev = NULL;</div>
 <div class="line">FILE *out;</div>
 <div class="line"><span class="keywordtype">int</span> i;</div>
 <div class="line"> </div>
-<div class="line">im = gdImageCreate(100, 100);</div>
-<div class="line"><span class="keywordflow">if</span> (im == NULL) {</div>
+<div class="line"><a class="code hl_namespace" href="namespaceim.html">im</a> = gdImageCreate(100, 100);</div>
+<div class="line"><span class="keywordflow">if</span> (<a class="code hl_namespace" href="namespaceim.html">im</a> == NULL) {</div>
 <div class="line">  fprintf(stderr, <span class="stringliteral">&quot;Unable to create image\n&quot;</span>);</div>
 <div class="line">  exit(1);</div>
 <div class="line">}</div>
 <div class="line"> </div>
-<div class="line">gdImageColorAllocate(im, 255, 255, 255);</div>
+<div class="line">gdImageColorAllocate(<a class="code hl_namespace" href="namespaceim.html">im</a>, 255, 255, 255);</div>
 <div class="line"> </div>
 <div class="line">out = fopen(<span class="stringliteral">&quot;anim.gif&quot;</span>, <span class="stringliteral">&quot;wb&quot;</span>);</div>
 <div class="line"><span class="keywordflow">if</span> (out == NULL) {</div>
 <div class="line">   fprintf(stderr, <span class="stringliteral">&quot;Unable to open output file\n&quot;</span>);</div>
-<div class="line">   gdImageDestroy(im);</div>
+<div class="line">   gdImageDestroy(<a class="code hl_namespace" href="namespaceim.html">im</a>);</div>
 <div class="line">   exit(1);</div>
 <div class="line">}</div>
 <div class="line"> </div>
-<div class="line"><a class="code hl_function" href="group__gdCodecGif.html#gaa3d518989e8d92ab51000a712dffe296">gdImageGifAnimBegin</a>(im, out, 1, -1);</div>
+<div class="line"><a class="code hl_function" href="group__gdCodecGif.html#gaa3d518989e8d92ab51000a712dffe296">gdImageGifAnimBegin</a>(<a class="code hl_namespace" href="namespaceim.html">im</a>, out, 1, -1);</div>
 <div class="line"><span class="keywordflow">for</span> (i = 0; i &lt; 20; i++) {</div>
 <div class="line">  gdImagePtr frame;</div>
 <div class="line">  <span class="keywordtype">int</span> color;</div>
@@ -233,7 +233,7 @@ typedef struct gdGifReadStruct *&#160;</td><td class="memItemRight" valign="bott
 <div class="line">  }</div>
 <div class="line">  gdImageColorAllocate(frame, 255, 255, 255);</div>
 <div class="line">  color = gdImageColorAllocate(frame, i * 10, 0, 255 - i * 10);</div>
-<div class="line">  gdImageFilledRectangle(frame, 10 + i, 10 + i, 40 + i, 40 + i, color);</div>
+<div class="line">  <a class="code hl_function" href="group__PixelDraw.html#ga1e534e750e1b336b8961a62ebec88511">gdImageFilledRectangle</a>(frame, 10 + i, 10 + i, 40 + i, 40 + i, color);</div>
 <div class="line">  <a class="code hl_function" href="group__gdCodecGif.html#ga2e148e2db8436ec36fddbff373c03722">gdImageGifAnimAdd</a>(frame, out, 1, 0, 0, 10, <a class="code hl_define" href="group__gdCodecGif.html#gac18746b0418770fe93e3ecee1a897254">GD_GIF_DISPOSAL_NONE</a>, prev);</div>
 <div class="line">  <span class="keywordflow">if</span> (prev != NULL) {</div>
 <div class="line">    gdImageDestroy(prev);</div>
@@ -245,11 +245,13 @@ typedef struct gdGifReadStruct *&#160;</td><td class="memItemRight" valign="bott
 <div class="line">}</div>
 <div class="line"><a class="code hl_function" href="group__gdCodecGif.html#gafca3c519ebe519709e78142141142b9a">gdImageGifAnimEnd</a>(out);</div>
 <div class="line">fclose(out);</div>
-<div class="line">gdImageDestroy(im);</div>
+<div class="line">gdImageDestroy(<a class="code hl_namespace" href="namespaceim.html">im</a>);</div>
+<div class="ttc" id="agroup__PixelDraw_html_ga1e534e750e1b336b8961a62ebec88511"><div class="ttname"><a href="group__PixelDraw.html#ga1e534e750e1b336b8961a62ebec88511">gdImageFilledRectangle</a></div><div class="ttdeci">void gdImageFilledRectangle(gdImagePtr im, int x1, int y1, int x2, int y2, int color)</div><div class="ttdoc">Draws a filled rectangle.</div><div class="ttdef"><b>Definition</b> gd.c:2403</div></div>
 <div class="ttc" id="agroup__gdCodecGif_html_ga2e148e2db8436ec36fddbff373c03722"><div class="ttname"><a href="group__gdCodecGif.html#ga2e148e2db8436ec36fddbff373c03722">gdImageGifAnimAdd</a></div><div class="ttdeci">void gdImageGifAnimAdd(gdImagePtr im, FILE *outFile, int LocalCM, int LeftOfs, int TopOfs, int Delay, int Disposal, gdImagePtr previm)</div><div class="ttdoc">Add a frame to a GIF animation written to a stdio file.</div><div class="ttdef"><b>Definition</b> gd_gif_out.c:275</div></div>
 <div class="ttc" id="agroup__gdCodecGif_html_gaa3d518989e8d92ab51000a712dffe296"><div class="ttname"><a href="group__gdCodecGif.html#gaa3d518989e8d92ab51000a712dffe296">gdImageGifAnimBegin</a></div><div class="ttdeci">void gdImageGifAnimBegin(gdImagePtr im, FILE *outFile, int GlobalCM, int Loops)</div><div class="ttdoc">Begin writing a GIF animation to a stdio file.</div><div class="ttdef"><b>Definition</b> gd_gif_out.c:183</div></div>
 <div class="ttc" id="agroup__gdCodecGif_html_gac18746b0418770fe93e3ecee1a897254"><div class="ttname"><a href="group__gdCodecGif.html#gac18746b0418770fe93e3ecee1a897254">GD_GIF_DISPOSAL_NONE</a></div><div class="ttdeci">#define GD_GIF_DISPOSAL_NONE</div><div class="ttdef"><b>Definition</b> gd.h:1534</div></div>
 <div class="ttc" id="agroup__gdCodecGif_html_gafca3c519ebe519709e78142141142b9a"><div class="ttname"><a href="group__gdCodecGif.html#gafca3c519ebe519709e78142141142b9a">gdImageGifAnimEnd</a></div><div class="ttdeci">void gdImageGifAnimEnd(FILE *outFile)</div><div class="ttdoc">Finish writing a GIF animation to a stdio file.</div><div class="ttdef"><b>Definition</b> gd_gif_out.c:505</div></div>
+<div class="ttc" id="anamespaceim_html"><div class="ttname"><a href="namespaceim.html">im</a></div><div class="ttdoc">Write an image as JPEG data to a gdIOCtx.</div></div>
 </div><!-- fragment --> <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="gac18746b0418770fe93e3ecee1a897254" name="gac18746b0418770fe93e3ecee1a897254"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gac18746b0418770fe93e3ecee1a897254">&#9670;&#160;</a></span>GD_GIF_DISPOSAL_NONE</h2>

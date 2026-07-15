@@ -100,7 +100,7 @@ Collaboration diagram for XBM:</div>
 <p>Read and write X11 bitmap images. </p>
 <p>XBM support reads X11 bitmap data from an open stdio stream and writes XBM text to a gd IO context. XBM images are 1-bit images stored as C source-style data, and gd maps them to palette images when reading. The reader returns a new image owned by the caller; the writer borrows both the image and output context for the duration of the call.</p>
 <div class="fragment"><div class="line">FILE *in;</div>
-<div class="line">gdImagePtr im;</div>
+<div class="line">gdImagePtr <a class="code hl_namespace" href="namespaceim.html">im</a>;</div>
 <div class="line">gdIOCtxPtr out;</div>
 <div class="line"> </div>
 <div class="line">in = fopen(<span class="stringliteral">&quot;icon.xbm&quot;</span>, <span class="stringliteral">&quot;rb&quot;</span>);</div>
@@ -108,23 +108,24 @@ Collaboration diagram for XBM:</div>
 <div class="line">    <span class="keywordflow">return</span> 1;</div>
 <div class="line">}</div>
 <div class="line"> </div>
-<div class="line">im = <a class="code hl_function" href="group__gdCodecXbm.html#ga7156052934b5151ec2dfaa9c4a6336be">gdImageCreateFromXbm</a>(in);</div>
+<div class="line"><a class="code hl_namespace" href="namespaceim.html">im</a> = <a class="code hl_function" href="group__gdCodecXbm.html#ga7156052934b5151ec2dfaa9c4a6336be">gdImageCreateFromXbm</a>(in);</div>
 <div class="line">fclose(in);</div>
-<div class="line"><span class="keywordflow">if</span> (im == NULL) {</div>
+<div class="line"><span class="keywordflow">if</span> (<a class="code hl_namespace" href="namespaceim.html">im</a> == NULL) {</div>
 <div class="line">    <span class="keywordflow">return</span> 1;</div>
 <div class="line">}</div>
 <div class="line"> </div>
 <div class="line">out = gdNewFileCtx(stdout);</div>
 <div class="line"><span class="keywordflow">if</span> (out == NULL) {</div>
-<div class="line">    gdImageDestroy(im);</div>
+<div class="line">    gdImageDestroy(<a class="code hl_namespace" href="namespaceim.html">im</a>);</div>
 <div class="line">    <span class="keywordflow">return</span> 1;</div>
 <div class="line">}</div>
 <div class="line"> </div>
-<div class="line"><a class="code hl_function" href="group__gdCodecXbm.html#ga11e12a462a82029442d81c31b97f4150">gdImageXbmCtx</a>(im, <span class="stringliteral">&quot;icon.xbm&quot;</span>, 1, out);</div>
+<div class="line"><a class="code hl_function" href="group__gdCodecXbm.html#ga11e12a462a82029442d81c31b97f4150">gdImageXbmCtx</a>(<a class="code hl_namespace" href="namespaceim.html">im</a>, <span class="stringliteral">&quot;icon.xbm&quot;</span>, 1, out);</div>
 <div class="line">out-&gt;gd_free(out);</div>
-<div class="line">gdImageDestroy(im);</div>
+<div class="line">gdImageDestroy(<a class="code hl_namespace" href="namespaceim.html">im</a>);</div>
 <div class="ttc" id="agroup__gdCodecXbm_html_ga11e12a462a82029442d81c31b97f4150"><div class="ttname"><a href="group__gdCodecXbm.html#ga11e12a462a82029442d81c31b97f4150">gdImageXbmCtx</a></div><div class="ttdeci">void gdImageXbmCtx(gdImagePtr image, char *file_name, int fg, gdIOCtxPtr out)</div><div class="ttdoc">Write an image to an IO context in X11 bitmap format.</div></div>
-<div class="ttc" id="agroup__gdCodecXbm_html_ga7156052934b5151ec2dfaa9c4a6336be"><div class="ttname"><a href="group__gdCodecXbm.html#ga7156052934b5151ec2dfaa9c4a6336be">gdImageCreateFromXbm</a></div><div class="ttdeci">gdImagePtr gdImageCreateFromXbm(FILE *in)</div><div class="ttdoc">Create an image from XBM data in a stdio stream.</div><div class="ttdef"><b>Definition</b> gd_xbm.c:62</div></div>
+<div class="ttc" id="agroup__gdCodecXbm_html_ga7156052934b5151ec2dfaa9c4a6336be"><div class="ttname"><a href="group__gdCodecXbm.html#ga7156052934b5151ec2dfaa9c4a6336be">gdImageCreateFromXbm</a></div><div class="ttdeci">gdImagePtr gdImageCreateFromXbm(FILE *in)</div><div class="ttdoc">Create an image from XBM data in a stdio stream.</div><div class="ttdef"><b>Definition</b> gd_xbm.c:23</div></div>
+<div class="ttc" id="anamespaceim_html"><div class="ttname"><a href="namespaceim.html">im</a></div><div class="ttdoc">Write an image as JPEG data to a gdIOCtx.</div></div>
 </div><!-- fragment --> <h2 class="groupheader">Function Documentation</h2>
 <a id="ga7156052934b5151ec2dfaa9c4a6336be" name="ga7156052934b5151ec2dfaa9c4a6336be"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga7156052934b5151ec2dfaa9c4a6336be">&#9670;&#160;</a></span>gdImageCreateFromXbm()</h2>
@@ -143,7 +144,7 @@ Collaboration diagram for XBM:</div>
 </div><div class="memdoc">
 
 <p>Create an image from XBM data in a stdio stream. </p>
-<p><a class="el" href="group__gdCodecXbm.html#ga7156052934b5151ec2dfaa9c4a6336be" title="Create an image from XBM data in a stdio stream.">gdImageCreateFromXbm()</a> rewinds in before reading and does not close it. X11 XBM data with char arrays and X10 XBM data with short arrays are supported. On success, the returned image is owned by the caller and must be destroyed with gdImageDestroy().</p>
+<p><a class="el" href="group__gdCodecXbm.html#ga7156052934b5151ec2dfaa9c4a6336be" title="Create an image from XBM data in a stdio stream.">gdImageCreateFromXbm()</a> rewinds in before reading and does not close it. X11 XBM data with char arrays and X10 XBM data with short arrays are supported. On success, the returned image is owned by the caller and must be destroyed with gdImageDestroy.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">in</td><td>Pointer to the input FILE stream. </td></tr>

@@ -159,7 +159,7 @@ typedef const char *&#160;</td><td class="memItemRight" valign="bottom"><b>gdHei
 <p>Read and write High Efficiency Image File Format images. </p>
 <p>HEIF support reads HEIF-family files from stdio streams, memory buffers, or gd IO contexts and returns truecolor images. The reader accepts AVIF, MIF1, HEIC, and HEIX brands and decodes the primary image. HEIF writing accepts truecolor images and can write to stdio streams, memory buffers, or gd IO contexts with explicit codec, quality, lossless, and chroma-subsampling options.</p>
 <div class="fragment"><div class="line">FILE *in;</div>
-<div class="line">gdImagePtr im;</div>
+<div class="line">gdImagePtr <a class="code hl_namespace" href="namespaceim.html">im</a>;</div>
 <div class="line"><a class="code hl_struct" href="structgdHeifWriteOptions.html">gdHeifWriteOptions</a> options;</div>
 <div class="line"><span class="keywordtype">void</span> *data;</div>
 <div class="line"><span class="keywordtype">int</span> size;</div>
@@ -169,9 +169,9 @@ typedef const char *&#160;</td><td class="memItemRight" valign="bottom"><b>gdHei
 <div class="line">    <span class="keywordflow">return</span> 1;</div>
 <div class="line">}</div>
 <div class="line"> </div>
-<div class="line">im = <a class="code hl_function" href="group__gdCodecHeif.html#ga07e813fe37c0e435860f5a37217d9dc4">gdImageCreateFromHeif</a>(in);</div>
+<div class="line"><a class="code hl_namespace" href="namespaceim.html">im</a> = <a class="code hl_function" href="group__gdCodecHeif.html#ga07e813fe37c0e435860f5a37217d9dc4">gdImageCreateFromHeif</a>(in);</div>
 <div class="line">fclose(in);</div>
-<div class="line"><span class="keywordflow">if</span> (im == NULL) {</div>
+<div class="line"><span class="keywordflow">if</span> (<a class="code hl_namespace" href="namespaceim.html">im</a> == NULL) {</div>
 <div class="line">    <span class="keywordflow">return</span> 1;</div>
 <div class="line">}</div>
 <div class="line"> </div>
@@ -180,17 +180,18 @@ typedef const char *&#160;</td><td class="memItemRight" valign="bottom"><b>gdHei
 <div class="line">options.<a class="code hl_variable" href="structgdHeifWriteOptions.html#a8bcd537040be297e6ba26775d61e28dd">codec</a> = <a class="code hl_enumvalue" href="group__gdCodecHeif.html#gga9d8ee353405301c19f7d56cd3a9c2bd2a0082054068b059f84d9ce34444323ad3">GD_HEIF_CODEC_HEVC</a>;</div>
 <div class="line">options.<a class="code hl_variable" href="structgdHeifWriteOptions.html#ade2224e8159265bad76b201884347901">chroma</a> = <a class="code hl_define" href="group__gdCodecHeif.html#ga95e79d9e318972dae03476f097c063a0">GD_HEIF_CHROMA_444</a>;</div>
 <div class="line"> </div>
-<div class="line">data = <a class="code hl_function" href="group__gdCodecHeif.html#ga8b771679059d69c9333285f181d2a5e9">gdImageHeifPtrWithOptions</a>(im, &amp;size, &amp;options);</div>
+<div class="line">data = <a class="code hl_function" href="group__gdCodecHeif.html#ga8b771679059d69c9333285f181d2a5e9">gdImageHeifPtrWithOptions</a>(<a class="code hl_namespace" href="namespaceim.html">im</a>, &amp;size, &amp;options);</div>
 <div class="line"><span class="keywordflow">if</span> (data != NULL) {</div>
 <div class="line">    gdFree(data);</div>
 <div class="line">}</div>
 <div class="line"> </div>
-<div class="line">gdImageDestroy(im);</div>
+<div class="line">gdImageDestroy(<a class="code hl_namespace" href="namespaceim.html">im</a>);</div>
 <div class="ttc" id="agroup__gdCodecHeif_html_ga07e813fe37c0e435860f5a37217d9dc4"><div class="ttname"><a href="group__gdCodecHeif.html#ga07e813fe37c0e435860f5a37217d9dc4">gdImageCreateFromHeif</a></div><div class="ttdeci">gdImagePtr gdImageCreateFromHeif(FILE *inFile)</div><div class="ttdoc">Create a truecolor image from HEIF data in a stdio stream.</div><div class="ttdef"><b>Definition</b> gd_heif.c:539</div></div>
 <div class="ttc" id="agroup__gdCodecHeif_html_ga8b771679059d69c9333285f181d2a5e9"><div class="ttname"><a href="group__gdCodecHeif.html#ga8b771679059d69c9333285f181d2a5e9">gdImageHeifPtrWithOptions</a></div><div class="ttdeci">void * gdImageHeifPtrWithOptions(gdImagePtr im, int *size, const gdHeifWriteOptions *options)</div><div class="ttdoc">Encode a truecolor image as HEIF data in memory using write options.</div><div class="ttdef"><b>Definition</b> gd_heif.c:592</div></div>
 <div class="ttc" id="agroup__gdCodecHeif_html_ga95e79d9e318972dae03476f097c063a0"><div class="ttname"><a href="group__gdCodecHeif.html#ga95e79d9e318972dae03476f097c063a0">GD_HEIF_CHROMA_444</a></div><div class="ttdeci">#define GD_HEIF_CHROMA_444</div><div class="ttdef"><b>Definition</b> gd.h:3099</div></div>
 <div class="ttc" id="agroup__gdCodecHeif_html_gad2940fd244db4d6b66d2c1055fd5d7be"><div class="ttname"><a href="group__gdCodecHeif.html#gad2940fd244db4d6b66d2c1055fd5d7be">gdHeifWriteOptionsInit</a></div><div class="ttdeci">void gdHeifWriteOptionsInit(gdHeifWriteOptions *options)</div><div class="ttdoc">Initialize HEIF write options with gd defaults.</div><div class="ttdef"><b>Definition</b> gd_heif.c:529</div></div>
 <div class="ttc" id="agroup__gdCodecHeif_html_gga9d8ee353405301c19f7d56cd3a9c2bd2a0082054068b059f84d9ce34444323ad3"><div class="ttname"><a href="group__gdCodecHeif.html#gga9d8ee353405301c19f7d56cd3a9c2bd2a0082054068b059f84d9ce34444323ad3">GD_HEIF_CODEC_HEVC</a></div><div class="ttdeci">@ GD_HEIF_CODEC_HEVC</div><div class="ttdef"><b>Definition</b> gd.h:3087</div></div>
+<div class="ttc" id="anamespaceim_html"><div class="ttname"><a href="namespaceim.html">im</a></div><div class="ttdoc">Write an image as JPEG data to a gdIOCtx.</div></div>
 <div class="ttc" id="astructgdHeifWriteOptions_html"><div class="ttname"><a href="structgdHeifWriteOptions.html">gdHeifWriteOptions</a></div><div class="ttdoc">HEIF encoder options used by gdImageHeifPtrWithOptions().</div><div class="ttdef"><b>Definition</b> gd.h:3108</div></div>
 <div class="ttc" id="astructgdHeifWriteOptions_html_a8bcd537040be297e6ba26775d61e28dd"><div class="ttname"><a href="structgdHeifWriteOptions.html#a8bcd537040be297e6ba26775d61e28dd">gdHeifWriteOptions::codec</a></div><div class="ttdeci">gdHeifCodec codec</div><div class="ttdef"><b>Definition</b> gd.h:3112</div></div>
 <div class="ttc" id="astructgdHeifWriteOptions_html_ab7e1241490d27fe2ca88d129fe9f2085"><div class="ttname"><a href="structgdHeifWriteOptions.html#ab7e1241490d27fe2ca88d129fe9f2085">gdHeifWriteOptions::quality</a></div><div class="ttdeci">int quality</div><div class="ttdef"><b>Definition</b> gd.h:3110</div></div>
@@ -338,7 +339,7 @@ typedef const char *&#160;</td><td class="memItemRight" valign="bottom"><b>gdHei
 </div><div class="memdoc">
 
 <p>Create a truecolor image from HEIF data in a stdio stream. </p>
-<p><a class="el" href="group__gdCodecHeif.html#ga07e813fe37c0e435860f5a37217d9dc4" title="Create a truecolor image from HEIF data in a stdio stream.">gdImageCreateFromHeif()</a> does not close inFile. It decodes the primary image and returns a new truecolor image. On success, the returned image is owned by the caller and must be destroyed with gdImageDestroy().</p>
+<p><a class="el" href="group__gdCodecHeif.html#ga07e813fe37c0e435860f5a37217d9dc4" title="Create a truecolor image from HEIF data in a stdio stream.">gdImageCreateFromHeif()</a> does not close inFile. It decodes the primary image and returns a new truecolor image. On success, the returned image is owned by the caller and must be destroyed with gdImageDestroy.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">inFile</td><td>Pointer to the input FILE stream. </td></tr>
@@ -366,7 +367,7 @@ typedef const char *&#160;</td><td class="memItemRight" valign="bottom"><b>gdHei
 </div><div class="memdoc">
 
 <p>Create a truecolor image from HEIF data in an IO context. </p>
-<p><a class="el" href="group__gdCodecHeif.html#gadd5615ee8e1c4eb4938275e53f6e3459" title="Create a truecolor image from HEIF data in an IO context.">gdImageCreateFromHeifCtx()</a> reads from infile without closing it. It decodes the primary image and returns a new truecolor image. On success, the returned image is owned by the caller and must be destroyed with gdImageDestroy().</p>
+<p><a class="el" href="group__gdCodecHeif.html#gadd5615ee8e1c4eb4938275e53f6e3459" title="Create a truecolor image from HEIF data in an IO context.">gdImageCreateFromHeifCtx()</a> reads from infile without closing it. It decodes the primary image and returns a new truecolor image. On success, the returned image is owned by the caller and must be destroyed with gdImageDestroy.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">infile</td><td>The input IO context. </td></tr>
@@ -404,7 +405,7 @@ typedef const char *&#160;</td><td class="memItemRight" valign="bottom"><b>gdHei
 </div><div class="memdoc">
 
 <p>Create a truecolor image from HEIF data in memory. </p>
-<p><a class="el" href="group__gdCodecHeif.html#gad8b9666aeb16977b1f3dc7ce22ac2007" title="Create a truecolor image from HEIF data in memory.">gdImageCreateFromHeifPtr()</a> reads size bytes from data without taking ownership of the buffer. It decodes the primary image and returns a new truecolor image. On success, the returned image is owned by the caller and must be destroyed with gdImageDestroy().</p>
+<p><a class="el" href="group__gdCodecHeif.html#gad8b9666aeb16977b1f3dc7ce22ac2007" title="Create a truecolor image from HEIF data in memory.">gdImageCreateFromHeifPtr()</a> reads size bytes from data without taking ownership of the buffer. It decodes the primary image and returns a new truecolor image. On success, the returned image is owned by the caller and must be destroyed with gdImageDestroy.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">size</td><td>Size of data in bytes. </td></tr>
@@ -449,7 +450,7 @@ typedef const char *&#160;</td><td class="memItemRight" valign="bottom"><b>gdHei
 </div><div class="memdoc">
 
 <p>Create a truecolor image from HEIF data in memory using read options. </p>
-<p><a class="el" href="group__gdCodecHeif.html#ga41fe5505d0d7be67579da351e07d3cdd" title="Create a truecolor image from HEIF data in memory using read options.">gdImageCreateFromHeifPtrWithOptions()</a> reads size bytes from data without taking ownership of the buffer. It borrows options for the duration of the call; pass NULL for gd defaults. On success, the returned image is owned by the caller and must be destroyed with gdImageDestroy().</p>
+<p><a class="el" href="group__gdCodecHeif.html#ga41fe5505d0d7be67579da351e07d3cdd" title="Create a truecolor image from HEIF data in memory using read options.">gdImageCreateFromHeifPtrWithOptions()</a> reads size bytes from data without taking ownership of the buffer. It borrows options for the duration of the call; pass NULL for gd defaults. On success, the returned image is owned by the caller and must be destroyed with gdImageDestroy.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">size</td><td>Size of data in bytes. </td></tr>

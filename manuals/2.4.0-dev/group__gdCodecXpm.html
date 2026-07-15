@@ -77,15 +77,16 @@ $(function() {
 <tr class="heading"><td colspan="2"><h2 class="groupheader">XPM Reading</h2></td></tr>
 <tr><td class="ititle" colspan="2"><p>Read X PixMap images.</p>
 <p>XPM support reads X PixMap files through libXpm and returns palette images. Unlike most gd image readers, the XPM API takes a filename string rather than a FILE pointer, memory buffer, or gd IO context. The returned image is owned by the caller. gd does not provide an XPM writer.</p>
-<div class="fragment"><div class="line">gdImagePtr im;</div>
+<div class="fragment"><div class="line">gdImagePtr <a class="code hl_namespace" href="namespaceim.html">im</a>;</div>
 <div class="line"> </div>
-<div class="line">im = <a class="code hl_function" href="group__gdCodecXpm.html#ga7d872f2ce5159346208ee958dfba7398">gdImageCreateFromXpm</a>(<span class="stringliteral">&quot;icon.xpm&quot;</span>);</div>
-<div class="line"><span class="keywordflow">if</span> (im == NULL) {</div>
+<div class="line"><a class="code hl_namespace" href="namespaceim.html">im</a> = <a class="code hl_function" href="group__gdCodecXpm.html#ga7d872f2ce5159346208ee958dfba7398">gdImageCreateFromXpm</a>(<span class="stringliteral">&quot;icon.xpm&quot;</span>);</div>
+<div class="line"><span class="keywordflow">if</span> (<a class="code hl_namespace" href="namespaceim.html">im</a> == NULL) {</div>
 <div class="line">    <span class="keywordflow">return</span> 1;</div>
 <div class="line">}</div>
 <div class="line"> </div>
-<div class="line">gdImageDestroy(im);</div>
+<div class="line">gdImageDestroy(<a class="code hl_namespace" href="namespaceim.html">im</a>);</div>
 <div class="ttc" id="agroup__gdCodecXpm_html_ga7d872f2ce5159346208ee958dfba7398"><div class="ttname"><a href="group__gdCodecXpm.html#ga7d872f2ce5159346208ee958dfba7398">gdImageCreateFromXpm</a></div><div class="ttdeci">gdImagePtr gdImageCreateFromXpm(char *filename)</div><div class="ttdoc">Create a palette image from an XPM file.</div><div class="ttdef"><b>Definition</b> gdxpm.c:27</div></div>
+<div class="ttc" id="anamespaceim_html"><div class="ttname"><a href="namespaceim.html">im</a></div><div class="ttdoc">Write an image as JPEG data to a gdIOCtx.</div></div>
 </div><!-- fragment --> </td></tr>
 <tr class="memitem:ga7d872f2ce5159346208ee958dfba7398" id="r_ga7d872f2ce5159346208ee958dfba7398"><td class="memItemLeft" align="right" valign="top">gdImagePtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gdCodecXpm.html#ga7d872f2ce5159346208ee958dfba7398">gdImageCreateFromXpm</a> (char *filename)</td></tr>
 <tr class="memdesc:ga7d872f2ce5159346208ee958dfba7398"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a palette image from an XPM file.  <br /></td></tr>
@@ -110,7 +111,7 @@ $(function() {
 </div><div class="memdoc">
 
 <p>Create a palette image from an XPM file. </p>
-<p><a class="el" href="group__gdCodecXpm.html#ga7d872f2ce5159346208ee958dfba7398" title="Create a palette image from an XPM file.">gdImageCreateFromXpm()</a> reads filename directly through libXpm. The input is a filename, not an open FILE stream. On success, the returned image is owned by the caller and must be destroyed with gdImageDestroy().</p>
+<p><a class="el" href="group__gdCodecXpm.html#ga7d872f2ce5159346208ee958dfba7398" title="Create a palette image from an XPM file.">gdImageCreateFromXpm()</a> reads filename directly through libXpm. The input is a filename, not an open FILE stream. On success, the returned image is owned by the caller and must be destroyed with gdImageDestroy.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">filename</td><td>Path to the XPM file to read. </td></tr>

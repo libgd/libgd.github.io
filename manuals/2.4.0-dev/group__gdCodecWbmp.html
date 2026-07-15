@@ -114,34 +114,36 @@ Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Wireless Bitmap reading and writing support. </p>
 <p>WBMP support reads Wireless Bitmap Type 0 images into palette-based gd images with white and black colors. WBMP output writes a 1-bit image: pixels whose color matches the foreground color parameter are written as black, and all other pixels are written as white.</p>
-<div class="fragment"><div class="line">gdImagePtr im, roundtrip;</div>
+<div class="fragment"><div class="line">gdImagePtr <a class="code hl_namespace" href="namespaceim.html">im</a>, roundtrip;</div>
 <div class="line"><span class="keywordtype">int</span> white, black;</div>
 <div class="line"><span class="keywordtype">void</span> *data;</div>
 <div class="line"><span class="keywordtype">int</span> size;</div>
 <div class="line"> </div>
-<div class="line">im = gdImageCreate(100, 100);</div>
-<div class="line"><span class="keywordflow">if</span> (im == NULL) {</div>
+<div class="line"><a class="code hl_namespace" href="namespaceim.html">im</a> = gdImageCreate(100, 100);</div>
+<div class="line"><span class="keywordflow">if</span> (<a class="code hl_namespace" href="namespaceim.html">im</a> == NULL) {</div>
 <div class="line">  exit(1);</div>
 <div class="line">}</div>
 <div class="line"> </div>
-<div class="line">white = gdImageColorAllocate(im, 255, 255, 255);</div>
-<div class="line">black = gdImageColorAllocate(im, 0, 0, 0);</div>
-<div class="line">gdImageFilledRectangle(im, 0, 0, 99, 99, white);</div>
-<div class="line"><a class="code hl_function" href="group__PixelDraw.html#ga084f5a75d82c7ae9126fb0846051802e">gdImageRectangle</a>(im, 20, 20, 79, 79, black);</div>
+<div class="line">white = gdImageColorAllocate(<a class="code hl_namespace" href="namespaceim.html">im</a>, 255, 255, 255);</div>
+<div class="line">black = gdImageColorAllocate(<a class="code hl_namespace" href="namespaceim.html">im</a>, 0, 0, 0);</div>
+<div class="line"><a class="code hl_function" href="group__PixelDraw.html#ga1e534e750e1b336b8961a62ebec88511">gdImageFilledRectangle</a>(<a class="code hl_namespace" href="namespaceim.html">im</a>, 0, 0, 99, 99, white);</div>
+<div class="line"><a class="code hl_function" href="group__PixelDraw.html#ga084f5a75d82c7ae9126fb0846051802e">gdImageRectangle</a>(<a class="code hl_namespace" href="namespaceim.html">im</a>, 20, 20, 79, 79, black);</div>
 <div class="line"> </div>
-<div class="line">data = <a class="code hl_function" href="group__gdCodecWbmp.html#ga158cc58c5301a2ea3afb0960ec221e13">gdImageWBMPPtr</a>(im, &amp;size, black);</div>
+<div class="line">data = <a class="code hl_function" href="group__gdCodecWbmp.html#ga158cc58c5301a2ea3afb0960ec221e13">gdImageWBMPPtr</a>(<a class="code hl_namespace" href="namespaceim.html">im</a>, &amp;size, black);</div>
 <div class="line"><span class="keywordflow">if</span> (data == NULL) {</div>
-<div class="line">  gdImageDestroy(im);</div>
+<div class="line">  gdImageDestroy(<a class="code hl_namespace" href="namespaceim.html">im</a>);</div>
 <div class="line">  exit(1);</div>
 <div class="line">}</div>
 <div class="line"> </div>
 <div class="line">roundtrip = <a class="code hl_function" href="group__gdCodecWbmp.html#gacb019fbd4aefb152838ff6d62ac894ce">gdImageCreateFromWBMPPtr</a>(size, data);</div>
 <div class="line">gdFree(data);</div>
 <div class="line">gdImageDestroy(roundtrip);</div>
-<div class="line">gdImageDestroy(im);</div>
-<div class="ttc" id="agroup__PixelDraw_html_ga084f5a75d82c7ae9126fb0846051802e"><div class="ttname"><a href="group__PixelDraw.html#ga084f5a75d82c7ae9126fb0846051802e">gdImageRectangle</a></div><div class="ttdeci">void gdImageRectangle(gdImagePtr im, int x1, int y1, int x2, int y2, int color)</div><div class="ttdoc">Draws a rectangle.</div><div class="ttdef"><b>Definition</b> gd.c:2290</div></div>
-<div class="ttc" id="agroup__gdCodecWbmp_html_ga158cc58c5301a2ea3afb0960ec221e13"><div class="ttname"><a href="group__gdCodecWbmp.html#ga158cc58c5301a2ea3afb0960ec221e13">gdImageWBMPPtr</a></div><div class="ttdeci">void * gdImageWBMPPtr(gdImagePtr im, int *size, int fg)</div><div class="ttdoc">Write an image as WBMP data to a newly allocated memory buffer.</div><div class="ttdef"><b>Definition</b> gd_wbmp.c:275</div></div>
-<div class="ttc" id="agroup__gdCodecWbmp_html_gacb019fbd4aefb152838ff6d62ac894ce"><div class="ttname"><a href="group__gdCodecWbmp.html#gacb019fbd4aefb152838ff6d62ac894ce">gdImageCreateFromWBMPPtr</a></div><div class="ttdeci">gdImagePtr gdImageCreateFromWBMPPtr(int size, void *data)</div><div class="ttdoc">Create an image from a WBMP memory buffer.</div><div class="ttdef"><b>Definition</b> gd_wbmp.c:248</div></div>
+<div class="line">gdImageDestroy(<a class="code hl_namespace" href="namespaceim.html">im</a>);</div>
+<div class="ttc" id="agroup__PixelDraw_html_ga084f5a75d82c7ae9126fb0846051802e"><div class="ttname"><a href="group__PixelDraw.html#ga084f5a75d82c7ae9126fb0846051802e">gdImageRectangle</a></div><div class="ttdeci">void gdImageRectangle(gdImagePtr im, int x1, int y1, int x2, int y2, int color)</div><div class="ttdoc">Draws a rectangle.</div><div class="ttdef"><b>Definition</b> gd.c:2239</div></div>
+<div class="ttc" id="agroup__PixelDraw_html_ga1e534e750e1b336b8961a62ebec88511"><div class="ttname"><a href="group__PixelDraw.html#ga1e534e750e1b336b8961a62ebec88511">gdImageFilledRectangle</a></div><div class="ttdeci">void gdImageFilledRectangle(gdImagePtr im, int x1, int y1, int x2, int y2, int color)</div><div class="ttdoc">Draws a filled rectangle.</div><div class="ttdef"><b>Definition</b> gd.c:2403</div></div>
+<div class="ttc" id="agroup__gdCodecWbmp_html_ga158cc58c5301a2ea3afb0960ec221e13"><div class="ttname"><a href="group__gdCodecWbmp.html#ga158cc58c5301a2ea3afb0960ec221e13">gdImageWBMPPtr</a></div><div class="ttdeci">void * gdImageWBMPPtr(gdImagePtr im, int *size, int fg)</div><div class="ttdoc">Write an image as WBMP data to a newly allocated memory buffer.</div><div class="ttdef"><b>Definition</b> gd_wbmp.c:198</div></div>
+<div class="ttc" id="agroup__gdCodecWbmp_html_gacb019fbd4aefb152838ff6d62ac894ce"><div class="ttname"><a href="group__gdCodecWbmp.html#gacb019fbd4aefb152838ff6d62ac894ce">gdImageCreateFromWBMPPtr</a></div><div class="ttdeci">gdImagePtr gdImageCreateFromWBMPPtr(int size, void *data)</div><div class="ttdoc">Create an image from a WBMP memory buffer.</div><div class="ttdef"><b>Definition</b> gd_wbmp.c:177</div></div>
+<div class="ttc" id="anamespaceim_html"><div class="ttname"><a href="namespaceim.html">im</a></div><div class="ttdoc">Write an image as JPEG data to a gdIOCtx.</div></div>
 </div><!-- fragment --> <h2 class="groupheader">Function Documentation</h2>
 <a id="gaa9b59263323e905963582787e738d5b2" name="gaa9b59263323e905963582787e738d5b2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gaa9b59263323e905963582787e738d5b2">&#9670;&#160;</a></span>gdImageCreateFromWBMP()</h2>
@@ -160,7 +162,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Create an image from a WBMP stdio file. </p>
-<p><a class="el" href="group__gdCodecWbmp.html#gaa9b59263323e905963582787e738d5b2" title="Create an image from a WBMP stdio file.">gdImageCreateFromWBMP()</a> does not close inFile. The returned image is caller-owned and must be destroyed with gdImageDestroy().</p>
+<p><a class="el" href="group__gdCodecWbmp.html#gaa9b59263323e905963582787e738d5b2" title="Create an image from a WBMP stdio file.">gdImageCreateFromWBMP()</a> does not close inFile. The returned image is caller-owned and must be destroyed with gdImageDestroy.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">inFile</td><td>Pointer to the input FILE stream.</td></tr>
@@ -188,7 +190,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Create an image from WBMP data read through a gdIOCtx. </p>
-<p><a class="el" href="group__gdCodecWbmp.html#ga25eaf9f4623c470cb781042eefb26d86" title="Create an image from WBMP data read through a gdIOCtx.">gdImageCreateFromWBMPCtx()</a> does not close infile. The returned image is caller-owned and must be destroyed with gdImageDestroy().</p>
+<p><a class="el" href="group__gdCodecWbmp.html#ga25eaf9f4623c470cb781042eefb26d86" title="Create an image from WBMP data read through a gdIOCtx.">gdImageCreateFromWBMPCtx()</a> does not close infile. The returned image is caller-owned and must be destroyed with gdImageDestroy.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">infile</td><td>Pointer to the gdIOCtx input context.</td></tr>
@@ -226,7 +228,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Create an image from a WBMP memory buffer. </p>
-<p>The data buffer is borrowed for the duration of the call. The returned image is caller-owned and must be destroyed with gdImageDestroy().</p>
+<p>The data buffer is borrowed for the duration of the call. The returned image is caller-owned and must be destroyed with gdImageDestroy.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">size</td><td>Size of the WBMP memory buffer in bytes. </td></tr>

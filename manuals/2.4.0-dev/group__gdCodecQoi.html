@@ -151,33 +151,35 @@ Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>QOI image reading and writing support. </p>
 <p>QOI support reads images as truecolor RGBA gd images with alpha saving enabled. QOI output writes RGBA data for both truecolor and palette images; palette images are expanded through their color table. The colorspace value controls the QOI header colorspace flag and does not transform pixel data.</p>
-<div class="fragment"><div class="line">gdImagePtr im;</div>
+<div class="fragment"><div class="line">gdImagePtr <a class="code hl_namespace" href="namespaceim.html">im</a>;</div>
 <div class="line"><span class="keywordtype">int</span> black, white;</div>
 <div class="line">FILE *out;</div>
 <div class="line"> </div>
-<div class="line">im = gdImageCreateTrueColor(100, 100);</div>
-<div class="line"><span class="keywordflow">if</span> (im == NULL) {</div>
+<div class="line"><a class="code hl_namespace" href="namespaceim.html">im</a> = gdImageCreateTrueColor(100, 100);</div>
+<div class="line"><span class="keywordflow">if</span> (<a class="code hl_namespace" href="namespaceim.html">im</a> == NULL) {</div>
 <div class="line">  fprintf(stderr, <span class="stringliteral">&quot;Unable to create image\n&quot;</span>);</div>
 <div class="line">  exit(1);</div>
 <div class="line">}</div>
 <div class="line"> </div>
 <div class="line">white = gdTrueColor(255, 255, 255);</div>
 <div class="line">black = gdTrueColor(0, 0, 0);</div>
-<div class="line">gdImageFilledRectangle(im, 0, 0, 99, 99, white);</div>
-<div class="line"><a class="code hl_function" href="group__PixelDraw.html#ga084f5a75d82c7ae9126fb0846051802e">gdImageRectangle</a>(im, 0, 0, 99, 99, black);</div>
+<div class="line"><a class="code hl_function" href="group__PixelDraw.html#ga1e534e750e1b336b8961a62ebec88511">gdImageFilledRectangle</a>(<a class="code hl_namespace" href="namespaceim.html">im</a>, 0, 0, 99, 99, white);</div>
+<div class="line"><a class="code hl_function" href="group__PixelDraw.html#ga084f5a75d82c7ae9126fb0846051802e">gdImageRectangle</a>(<a class="code hl_namespace" href="namespaceim.html">im</a>, 0, 0, 99, 99, black);</div>
 <div class="line"> </div>
 <div class="line">out = fopen(<span class="stringliteral">&quot;rect.qoi&quot;</span>, <span class="stringliteral">&quot;wb&quot;</span>);</div>
 <div class="line"><span class="keywordflow">if</span> (out == NULL) {</div>
 <div class="line">   fprintf(stderr, <span class="stringliteral">&quot;Unable to open output file\n&quot;</span>);</div>
-<div class="line">   gdImageDestroy(im);</div>
+<div class="line">   gdImageDestroy(<a class="code hl_namespace" href="namespaceim.html">im</a>);</div>
 <div class="line">   exit(1);</div>
 <div class="line">}</div>
 <div class="line"> </div>
-<div class="line"><a class="code hl_function" href="group__gdCodecQoi.html#ga2d8cd709cd02dabee4e19d19d8b06e8f">gdImageQoi</a>(im, out);</div>
+<div class="line"><a class="code hl_function" href="group__gdCodecQoi.html#ga2d8cd709cd02dabee4e19d19d8b06e8f">gdImageQoi</a>(<a class="code hl_namespace" href="namespaceim.html">im</a>, out);</div>
 <div class="line">fclose(out);</div>
-<div class="line">gdImageDestroy(im);</div>
-<div class="ttc" id="agroup__PixelDraw_html_ga084f5a75d82c7ae9126fb0846051802e"><div class="ttname"><a href="group__PixelDraw.html#ga084f5a75d82c7ae9126fb0846051802e">gdImageRectangle</a></div><div class="ttdeci">void gdImageRectangle(gdImagePtr im, int x1, int y1, int x2, int y2, int color)</div><div class="ttdoc">Draws a rectangle.</div><div class="ttdef"><b>Definition</b> gd.c:2290</div></div>
+<div class="line">gdImageDestroy(<a class="code hl_namespace" href="namespaceim.html">im</a>);</div>
+<div class="ttc" id="agroup__PixelDraw_html_ga084f5a75d82c7ae9126fb0846051802e"><div class="ttname"><a href="group__PixelDraw.html#ga084f5a75d82c7ae9126fb0846051802e">gdImageRectangle</a></div><div class="ttdeci">void gdImageRectangle(gdImagePtr im, int x1, int y1, int x2, int y2, int color)</div><div class="ttdoc">Draws a rectangle.</div><div class="ttdef"><b>Definition</b> gd.c:2239</div></div>
+<div class="ttc" id="agroup__PixelDraw_html_ga1e534e750e1b336b8961a62ebec88511"><div class="ttname"><a href="group__PixelDraw.html#ga1e534e750e1b336b8961a62ebec88511">gdImageFilledRectangle</a></div><div class="ttdeci">void gdImageFilledRectangle(gdImagePtr im, int x1, int y1, int x2, int y2, int color)</div><div class="ttdoc">Draws a filled rectangle.</div><div class="ttdef"><b>Definition</b> gd.c:2403</div></div>
 <div class="ttc" id="agroup__gdCodecQoi_html_ga2d8cd709cd02dabee4e19d19d8b06e8f"><div class="ttname"><a href="group__gdCodecQoi.html#ga2d8cd709cd02dabee4e19d19d8b06e8f">gdImageQoi</a></div><div class="ttdeci">void gdImageQoi(gdImagePtr im, FILE *out)</div><div class="ttdoc">Write an image as QOI data to a stdio file.</div><div class="ttdef"><b>Definition</b> gd_qoi.c:279</div></div>
+<div class="ttc" id="anamespaceim_html"><div class="ttname"><a href="namespaceim.html">im</a></div><div class="ttdoc">Write an image as JPEG data to a gdIOCtx.</div></div>
 </div><!-- fragment --> <h2 class="groupheader">Enumeration Type Documentation</h2>
 <a id="ga99fb83031ce9923c84392b4e92f956b5" name="ga99fb83031ce9923c84392b4e92f956b5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga99fb83031ce9923c84392b4e92f956b5">&#9670;&#160;</a></span>anonymous enum</h2>

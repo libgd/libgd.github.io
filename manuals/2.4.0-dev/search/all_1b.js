@@ -7,5 +7,6 @@ var searchData=
   ['xbm_4',['XBM',['../group__gdCodecXbm.html',1,'']]],
   ['xl_5',['JPEG XL',['../group__gdCodecJxl.html',1,'']]],
   ['xpm_6',['XPM',['../group__gdCodecXpm.html',1,'']]],
-  ['xresolution_7',['xresolution',['../structgdTiffInfo.html#af17754158a3c13cdb71fa5a4ac0df57e',1,'gdTiffInfo::xResolution'],['../structgdTiffPageInfo.html#a341e678a11a2b783e249c8b16e53c99f',1,'gdTiffPageInfo::xResolution'],['../structgdTiffWriteOptions.html#a2009ddc96aa3af2459e3033b168d4074',1,'gdTiffWriteOptions::xResolution']]]
+  ['xresolution_7',['xresolution',['../structgdTiffInfo.html#af17754158a3c13cdb71fa5a4ac0df57e',1,'gdTiffInfo::xResolution'],['../structgdTiffPageInfo.html#a341e678a11a2b783e249c8b16e53c99f',1,'gdTiffPageInfo::xResolution'],['../structgdTiffWriteOptions.html#a2009ddc96aa3af2459e3033b168d4074',1,'gdTiffWriteOptions::xResolution']]],
+  ['xshow_8',['xshow',['../structgdFTStringExtra.html#a76214fb9617da90bbc94d90733d4aff9',1,'gdFTStringExtra']]]
 ];
