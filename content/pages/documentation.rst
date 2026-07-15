@@ -4,6 +4,9 @@ Documentation
 :date: 2017-08-30
 :title: Docs
 :slug: docs
+GD 2.4.x (preview)
+
+* `gd-2.4.0-dev <../manuals/2.4.0-dev/>`_
 
 GD 2.3.x
 
