@@ -8,6 +8,7 @@ var searchData=
   ['and_20image_20properties_5',['Clone, copy and image properties',['../group__cloneandcopy.html',1,'']]],
   ['and_20rotate_6',['Transform, scale and rotate',['../group__TransformScaleRotate.html',1,'']]],
   ['animated_7',['animated',['../structgdJxlInfo.html#a872a8dbfc7319675be746400edc0eb60',1,'gdJxlInfo']]],
-  ['arc_20drawing_20pixel_20operations_8',['lines, ellipses, polygons and Arc Drawing pixel operations',['../group__PixelDraw.html',1,'']]],
-  ['avif_9',['AVIF',['../group__gdCodecAvif.html',1,'']]]
+  ['apis_8',['Image File Convenience APIs',['../group__gdImageFileIO.html',1,'']]],
+  ['arc_20drawing_20pixel_20operations_9',['lines, ellipses, polygons and Arc Drawing pixel operations',['../group__PixelDraw.html',1,'']]],
+  ['avif_10',['AVIF',['../group__gdCodecAvif.html',1,'']]]
 ];

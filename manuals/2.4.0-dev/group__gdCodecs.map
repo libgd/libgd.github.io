@@ -1,18 +1,19 @@
 <map id="Codecs" name="Codecs">
 <area shape="rect" id="Node000010" href="$group__gdCodecAvif.html" title="Read and write AV1 Image File Format images." alt="" coords="139,5,189,31"/>
-<area shape="rect" id="Node000012" href="$group__gdCodecBmp.html" title="Read and write Microsoft Windows bitmap images." alt="" coords="139,55,189,80"/>
-<area shape="rect" id="Node000014" href="$group__gdCodecGd.html" title="Read and write libgd&#39;s native .gd image format." alt="" coords="143,104,185,129"/>
-<area shape="rect" id="Node000015" href="$group__gdCodecGd2.html" title="Read and write libgd&#39;s chunked native .gd2 image format." alt="" coords="139,153,189,179"/>
+<area shape="rect" id="Node000013" href="$group__gdCodecBmp.html" title="Read and write Microsoft Windows bitmap images." alt="" coords="139,55,189,80"/>
+<area shape="rect" id="Node000015" href="$group__gdCodecGd.html" title="Read and write libgd&#39;s native .gd image format." alt="" coords="143,104,185,129"/>
+<area shape="rect" id="Node000016" href="$group__gdCodecGd2.html" title="Read and write libgd&#39;s chunked native .gd2 image format." alt="" coords="139,153,189,179"/>
 <area shape="rect" id="Node000004" href="$group__gdCodecGif.html" title="GIF image and animation reading and writing support." alt="" coords="142,203,186,228"/>
 <area shape="rect" id="Node000009" href="$group__gdCodecHeif.html" title="Read and write High Efficiency Image File Format images." alt="" coords="138,252,190,277"/>
 <area shape="rect" id="Node000006" href="$group__gdCodecJpeg.html" title="JPEG image reading and writing support." alt="" coords="138,301,190,327"/>
 <area shape="rect" id="Node000008" href="$group__gdCodecJxl.html" title="JPEG XL image reading, writing, and animation support." alt="" coords="128,351,200,376"/>
 <area shape="rect" id="Node000002" href="$group__gdCodecPng.html" title="PNG image reading and writing support." alt="" coords="139,400,189,425"/>
 <area shape="rect" id="Node000003" href="$group__gdCodecQoi.html" title="QOI image reading and writing support." alt="" coords="141,449,187,475"/>
-<area shape="rect" id="Node000011" href="$group__gdCodecTiff.html" title="TIFF image reading, writing, and multi&#45;page support." alt="" coords="139,499,189,524"/>
-<area shape="rect" id="Node000013" href="$group__gdCodecUhdr.html" title="Read, transform, and write UltraHDR JPEG images." alt="" coords="123,548,205,573"/>
-<area shape="rect" id="Node000005" href="$group__gdCodecWbmp.html" title="Wireless Bitmap reading and writing support." alt="" coords="132,597,196,623"/>
-<area shape="rect" id="Node000007" href="$group__gdCodecWebp.html" title="WebP image reading, writing and animations support." alt="" coords="135,647,193,672"/>
-<area shape="rect" id="Node000016" href="$group__gdCodecXbm.html" title="Read and write X11 bitmap images." alt="" coords="138,696,190,721"/>
-<area shape="rect" id="Node000001" title="Image codec support for reading and writing various file formats." alt="" coords="5,351,75,376"/>
+<area shape="rect" id="Node000012" href="$group__gdCodecTga.html" title="Read Truevision TGA images." alt="" coords="139,499,189,524"/>
+<area shape="rect" id="Node000011" href="$group__gdCodecTiff.html" title="TIFF image reading, writing, and multi&#45;page support." alt="" coords="139,548,189,573"/>
+<area shape="rect" id="Node000014" href="$group__gdCodecUhdr.html" title="Read, transform, and write UltraHDR JPEG images." alt="" coords="123,597,205,623"/>
+<area shape="rect" id="Node000005" href="$group__gdCodecWbmp.html" title="Wireless Bitmap reading and writing support." alt="" coords="132,647,196,672"/>
+<area shape="rect" id="Node000007" href="$group__gdCodecWebp.html" title="WebP image reading, writing and animations support." alt="" coords="135,696,193,721"/>
+<area shape="rect" id="Node000017" href="$group__gdCodecXbm.html" title="Read and write X11 bitmap images." alt="" coords="138,745,190,771"/>
+<area shape="rect" id="Node000001" title="Image codec support for reading and writing various file formats." alt="" coords="5,376,75,401"/>
 </map>

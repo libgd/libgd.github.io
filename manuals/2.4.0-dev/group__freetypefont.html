@@ -593,22 +593,53 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Draws a string using FreeType 2 fonts with additional parameters. </p>
+<p><a class="el" href="group__freetypefont.html#gad4789279db4d95a376c0eb896b578f32" title="Draws a string using FreeType 2 fonts with additional parameters.">gdImageStringFTEx()</a> extends <a class="el" href="group__freetypefont.html#ga8f8b45d264fd98a8dab09a3535b0e1f4">gdImageStringFT</a> by accepting an optional <a class="el" href="structgdFTStringExtra.html">gdFTStringExtra</a> structure. Pass NULL for strex to use the same behavior as <a class="el" href="group__freetypefont.html#ga8f8b45d264fd98a8dab09a3535b0e1f4" title="Render an UTF-8 string onto a gd image.">gdImageStringFT()</a>.</p>
+<p>The <a class="el" href="structgdFTStringExtra.html#af88e07f75c672f5986e9710b63ff7b55">gdFTStringExtra::flags</a> field controls which extra fields are used:</p><ul>
+<li><a class="el" href="group__freetypefont.html#gafa9b1cf42e8a9df54733816ce17a186a">gdFTEX_LINESPACE</a> uses <a class="el" href="structgdFTStringExtra.html#aced11f2ba0af633f9c162f6b89f309d0">gdFTStringExtra::linespacing</a> for multiline text. The value is expressed as a multiple of the font height; 1.0 is the minimum spacing that normally prevents lines from colliding. Without this flag, or when strex is NULL, line spacing defaults to 1.05. <div class="fragment"><div class="line">strex.flags |= <a class="code hl_define" href="group__freetypefont.html#gafa9b1cf42e8a9df54733816ce17a186a">gdFTEX_LINESPACE</a>;</div>
+<div class="line">strex.linespacing = 1.2;</div>
+<div class="ttc" id="agroup__freetypefont_html_gafa9b1cf42e8a9df54733816ce17a186a"><div class="ttname"><a href="group__freetypefont.html#gafa9b1cf42e8a9df54733816ce17a186a">gdFTEX_LINESPACE</a></div><div class="ttdeci">#define gdFTEX_LINESPACE</div><div class="ttdef"><b>Definition</b> gd.h:6132</div></div>
+</div><!-- fragment --></li>
+<li><a class="el" href="group__freetypefont.html#ga35d81eee66150f8b76a1e20294f483b9">gdFTEX_CHARMAP</a> uses <a class="el" href="structgdFTStringExtra.html#ac53c36eb957b8d532687e0444cb8604a">gdFTStringExtra::charmap</a> as the preferred character map. Valid values are <a class="el" href="group__freetypefont.html#ga844628693245c14ebaf73fd839033fbf">gdFTEX_Unicode</a>, <a class="el" href="group__freetypefont.html#gad2c4c3ada3b9b5811741ff618e32281f">gdFTEX_Shift_JIS</a>, <a class="el" href="group__freetypefont.html#ga6fe8f63547be904352cdb0ea5e445bb2">gdFTEX_Big5</a>, and <a class="el" href="group__freetypefont.html#gab3c08044d0c1d2f28ce8f3767109acda">gdFTEX_Adobe_Custom</a>. Without this flag, GD tries Unicode first. If the preferred map is unavailable, GD attempts compatible fallback maps where possible. <div class="fragment"><div class="line">strex.flags |= <a class="code hl_define" href="group__freetypefont.html#ga35d81eee66150f8b76a1e20294f483b9">gdFTEX_CHARMAP</a>;</div>
+<div class="line">strex.charmap = <a class="code hl_define" href="group__freetypefont.html#ga844628693245c14ebaf73fd839033fbf">gdFTEX_Unicode</a>;</div>
+<div class="ttc" id="agroup__freetypefont_html_ga35d81eee66150f8b76a1e20294f483b9"><div class="ttname"><a href="group__freetypefont.html#ga35d81eee66150f8b76a1e20294f483b9">gdFTEX_CHARMAP</a></div><div class="ttdeci">#define gdFTEX_CHARMAP</div><div class="ttdef"><b>Definition</b> gd.h:6136</div></div>
+<div class="ttc" id="agroup__freetypefont_html_ga844628693245c14ebaf73fd839033fbf"><div class="ttname"><a href="group__freetypefont.html#ga844628693245c14ebaf73fd839033fbf">gdFTEX_Unicode</a></div><div class="ttdeci">#define gdFTEX_Unicode</div><div class="ttdef"><b>Definition</b> gd.h:6189</div></div>
+</div><!-- fragment --></li>
+<li><a class="el" href="group__freetypefont.html#ga8978dab302ba1b7a6aedd7f6ccaddcdd">gdFTEX_RESOLUTION</a> uses <a class="el" href="structgdFTStringExtra.html#a48e3e88ea2a3b0f7754271f8125800da">gdFTStringExtra::hdpi</a> and <a class="el" href="structgdFTStringExtra.html#a0cbef63a4c6bf337f027d35cc5151aa5">gdFTStringExtra::vdpi</a> as the FreeType rendering resolution in dots per inch. Without this flag, GD uses its default screen resolution. <div class="fragment"><div class="line">strex.flags |= <a class="code hl_define" href="group__freetypefont.html#ga8978dab302ba1b7a6aedd7f6ccaddcdd">gdFTEX_RESOLUTION</a>;</div>
+<div class="line">strex.hdpi = 300;</div>
+<div class="line">strex.vdpi = 300;</div>
+<div class="ttc" id="agroup__freetypefont_html_ga8978dab302ba1b7a6aedd7f6ccaddcdd"><div class="ttname"><a href="group__freetypefont.html#ga8978dab302ba1b7a6aedd7f6ccaddcdd">gdFTEX_RESOLUTION</a></div><div class="ttdeci">#define gdFTEX_RESOLUTION</div><div class="ttdef"><b>Definition</b> gd.h:6140</div></div>
+</div><!-- fragment --></li>
+<li><a class="el" href="group__freetypefont.html#gafc469e1eb2653f6f9843eab17efd677b">gdFTEX_DISABLE_KERNING</a> disables FreeType kerning adjustments between consecutive glyphs. <div class="fragment"><div class="line">strex.flags |= <a class="code hl_define" href="group__freetypefont.html#gafc469e1eb2653f6f9843eab17efd677b">gdFTEX_DISABLE_KERNING</a>;</div>
+<div class="ttc" id="agroup__freetypefont_html_gafc469e1eb2653f6f9843eab17efd677b"><div class="ttname"><a href="group__freetypefont.html#gafc469e1eb2653f6f9843eab17efd677b">gdFTEX_DISABLE_KERNING</a></div><div class="ttdeci">#define gdFTEX_DISABLE_KERNING</div><div class="ttdef"><b>Definition</b> gd.h:6144</div></div>
+</div><!-- fragment --></li>
+<li><a class="el" href="group__freetypefont.html#gab2765919011da8fea49f97bece3ebfba">gdFTEX_XSHOW</a> returns a gd-allocated string of character advance values in <a class="el" href="structgdFTStringExtra.html#a76214fb9617da90bbc94d90733d4aff9">gdFTStringExtra::xshow</a>. The caller must free this string with gdFree(). <div class="fragment"><div class="line">strex.flags |= <a class="code hl_define" href="group__freetypefont.html#gab2765919011da8fea49f97bece3ebfba">gdFTEX_XSHOW</a>;</div>
+<div class="ttc" id="agroup__freetypefont_html_gab2765919011da8fea49f97bece3ebfba"><div class="ttname"><a href="group__freetypefont.html#gab2765919011da8fea49f97bece3ebfba">gdFTEX_XSHOW</a></div><div class="ttdeci">#define gdFTEX_XSHOW</div><div class="ttdef"><b>Definition</b> gd.h:6146</div></div>
+</div><!-- fragment --></li>
+<li><a class="el" href="group__freetypefont.html#ga3029ac19798cce8fd1a4dd2f2bcff928">gdFTEX_RETURNFONTPATHNAME</a> returns a gd-allocated copy of the actual font file path used in <a class="el" href="structgdFTStringExtra.html#a58c9dddba9fa8e50f7bee880a93a4137">gdFTStringExtra::fontpath</a>. The caller must free this string with gdFree(). <div class="fragment"><div class="line">strex.flags |= <a class="code hl_define" href="group__freetypefont.html#ga3029ac19798cce8fd1a4dd2f2bcff928">gdFTEX_RETURNFONTPATHNAME</a>;</div>
+<div class="ttc" id="agroup__freetypefont_html_ga3029ac19798cce8fd1a4dd2f2bcff928"><div class="ttname"><a href="group__freetypefont.html#ga3029ac19798cce8fd1a4dd2f2bcff928">gdFTEX_RETURNFONTPATHNAME</a></div><div class="ttdeci">#define gdFTEX_RETURNFONTPATHNAME</div><div class="ttdef"><b>Definition</b> gd.h:6157</div></div>
+</div><!-- fragment --></li>
+</ul>
+<p>Font selection normally treats fontlist as a semicolon-delimited list of font file names. When GD is built with fontconfig, <a class="el" href="group__freetypefont.html#gafa044d13549ea08842e4d4a34ca3e44e">gdFTEX_FONTCONFIG</a> makes fontlist a fontconfig pattern for this call, and <a class="el" href="group__freetypefont.html#gabf622c7453347c95a400520fa0a96a46" title="Enable or disable fontconfig by default.">gdFTUseFontConfig()</a> can make fontconfig patterns the default. If fontconfig has been enabled by default, <a class="el" href="group__freetypefont.html#gae9585c8d536ced5cccb08d8f4512542a">gdFTEX_FONTPATHNAME</a> forces fontlist to be interpreted as font path names for this call. </p><div class="fragment"><div class="line">strex.flags |= <a class="code hl_define" href="group__freetypefont.html#gafa044d13549ea08842e4d4a34ca3e44e">gdFTEX_FONTCONFIG</a>;</div>
+<div class="line">strex.flags |= <a class="code hl_define" href="group__freetypefont.html#gae9585c8d536ced5cccb08d8f4512542a">gdFTEX_FONTPATHNAME</a>;</div>
+<div class="ttc" id="agroup__freetypefont_html_gae9585c8d536ced5cccb08d8f4512542a"><div class="ttname"><a href="group__freetypefont.html#gae9585c8d536ced5cccb08d8f4512542a">gdFTEX_FONTPATHNAME</a></div><div class="ttdeci">#define gdFTEX_FONTPATHNAME</div><div class="ttdef"><b>Definition</b> gd.h:6149</div></div>
+<div class="ttc" id="agroup__freetypefont_html_gafa044d13549ea08842e4d4a34ca3e44e"><div class="ttname"><a href="group__freetypefont.html#gafa044d13549ea08842e4d4a34ca3e44e">gdFTEX_FONTCONFIG</a></div><div class="ttdeci">#define gdFTEX_FONTCONFIG</div><div class="ttdef"><b>Definition</b> gd.h:6153</div></div>
+</div><!-- fragment --><p>If brect is not NULL, it must point to an array of 8 integers. On success, GD fills it with the lower-left, lower-right, upper-right, and upper-left corners of the rendered text bounding rectangle. Passing NULL for im computes the bounding rectangle without drawing.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">im</td><td>The image to draw onto. </td></tr>
-    <tr><td class="paramname">brect</td><td>The bounding rectangle as array of 8 integers where each pair represents the x- and y-coordinate of a point. The points specify the lower left, lower right, upper right and upper left corner. </td></tr>
-    <tr><td class="paramname">fg</td><td>The font color. </td></tr>
-    <tr><td class="paramname">fontlist</td><td>The semicolon delimited list of font filenames to look for. </td></tr>
-    <tr><td class="paramname">ptsize</td><td>The height of the font in typographical points (pt). </td></tr>
-    <tr><td class="paramname">angle</td><td>The angle in radian to rotate the font counter-clockwise. </td></tr>
-    <tr><td class="paramname">x</td><td>The x-coordinate of the basepoint (roughly the lower left corner) of the first letter. </td></tr>
-    <tr><td class="paramname">y</td><td>The y-coordinate of the basepoint (roughly the lower left corner) of the first letter. </td></tr>
+    <tr><td class="paramname">im</td><td>The image to draw onto, or NULL to compute brect only. </td></tr>
+    <tr><td class="paramname">brect</td><td>Optional output array of 8 integers receiving the text bounding rectangle. </td></tr>
+    <tr><td class="paramname">fg</td><td>The font color. Negative values select monochrome rendering using -fg as the color. </td></tr>
+    <tr><td class="paramname">fontlist</td><td>The semicolon-delimited list of font file names, or a fontconfig pattern when fontconfig mode is active. </td></tr>
+    <tr><td class="paramname">ptsize</td><td>The height of the font in typographical points. </td></tr>
+    <tr><td class="paramname">angle</td><td>The angle in radians to rotate the font counter-clockwise. </td></tr>
+    <tr><td class="paramname">x</td><td>The x-coordinate of the baseline starting point. </td></tr>
+    <tr><td class="paramname">y</td><td>The y-coordinate of the baseline starting point. </td></tr>
     <tr><td class="paramname">string</td><td>The string to render. </td></tr>
-    <tr><td class="paramname">strex</td><td>A pointer to a &lt;gdFTStringExtra&gt; structure containing additional parameters for rendering the string.</td></tr>
+    <tr><td class="paramname">strex</td><td>Optional pointer to a <a class="el" href="structgdFTStringExtra.html" title="Structure for passing additional parameters to FreeType 2 string rendering functions.">gdFTStringExtra</a> structure containing additional rendering options, or NULL.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>A pointer to a string containing an error message if an error occurred, or NULL if the operation was successful. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>NULL on success, or a pointer to a static error message on failure. </dd></dl>
 
 </div>
 </div>
