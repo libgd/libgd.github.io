@@ -10,7 +10,7 @@ var searchData=
   ['png_7',['PNG',['../group__gdCodecPng.html',1,'']]],
   ['polygons_20and_20arc_20drawing_20pixel_20operations_8',['lines, ellipses, polygons and Arc Drawing pixel operations',['../group__PixelDraw.html',1,'']]],
   ['program_3a_9',['gd basics: using gd in your program:',['../index.html#autotoc_md2',1,'']]],
-  ['progressive_10',['progressive',['../structgdJpegInfo.html#a131a9ed4e1dece14eadeb501c8fb26d9',1,'gdJpegInfo::progressive'],['../structgdJpegWriteOptions.html#acbc4630f5ee8f675b99c74904bcb9e3a',1,'gdJpegWriteOptions::progressive']]],
+  ['progressive_10',['progressive',['../structgdJpegWriteOptions.html#acbc4630f5ee8f675b99c74904bcb9e3a',1,'gdJpegWriteOptions::progressive'],['../structgdJpegInfo.html#a131a9ed4e1dece14eadeb501c8fb26d9',1,'gdJpegInfo::progressive']]],
   ['properties_11',['Clone, copy and image properties',['../group__cloneandcopy.html',1,'']]],
-  ['provider_5fcode_12',['provider_code',['../structgdTextError.html#ab65a08a0bd306247493640490ffe7f75',1,'gdTextError']]]
+  ['provider_5fcode_12',['provider_code',['../structgdTextError.html#ab65a08a0bd306247493640490ffe7f75',1,'gdTextError::provider_code'],['../structgdUhdrError.html#ab8dfbe465b045590e4a2f4c488e796d3',1,'gdUhdrError::provider_code']]]
 ];

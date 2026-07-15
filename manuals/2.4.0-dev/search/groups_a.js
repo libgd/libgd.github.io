@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['lines_20ellipses_20polygons_20and_20arc_20drawing_20pixel_20operations_0',['lines, ellipses, polygons and Arc Drawing pixel operations',['../group__PixelDraw.html',1,'']]]
+  ['jpeg_0',['JPEG',['../group__gdCodecJpeg.html',1,'']]],
+  ['jpeg_20xl_1',['JPEG XL',['../group__gdCodecJxl.html',1,'']]]
 ];

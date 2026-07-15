@@ -1,13 +1,16 @@
 <map id="Codecs" name="Codecs">
-<area shape="rect" id="Node000009" href="$group__gdCodecAvif.html" title="Read and write AV1 Image File Format images." alt="" coords="133,5,184,31"/>
-<area shape="rect" id="Node000004" href="$group__gdCodecGif.html" title="GIF image and animation reading and writing support." alt="" coords="137,55,181,80"/>
-<area shape="rect" id="Node000006" href="$group__gdCodecJpeg.html" title="JPEG image reading and writing support." alt="" coords="133,104,185,129"/>
-<area shape="rect" id="Node000008" href="$group__gdCodecJxl.html" title="JPEG XL image reading, writing, and animation support." alt="" coords="123,153,195,179"/>
-<area shape="rect" id="Node000002" href="$group__gdCodecPng.html" title="PNG image reading and writing support." alt="" coords="133,203,184,228"/>
-<area shape="rect" id="Node000003" href="$group__gdCodecQoi.html" title="QOI image reading and writing support." alt="" coords="135,252,182,277"/>
-<area shape="rect" id="Node000010" href="$group__gdCodecTiff.html" title="TIFF image reading, writing, and multi&#45;page support." alt="" coords="133,301,184,327"/>
-<area shape="rect" id="Node000005" href="$group__gdCodecWbmp.html" title="Wireless Bitmap reading and writing support." alt="" coords="127,351,191,376"/>
-<area shape="rect" id="Node000007" href="$group__gdCodecWebp.html" title="WebP image reading and writing support." alt="" coords="129,400,188,425"/>
-<area shape="rect" id="Node000011" href="$group__gdCodecXbm.html" title="Read and write X11 bitmap images." alt="" coords="133,449,185,475"/>
-<area shape="rect" id="Node000001" title="Image codec support for reading and writing various file formats." alt="" coords="5,228,75,253"/>
+<area shape="rect" id="Node000010" href="$group__gdCodecAvif.html" title="Read and write AV1 Image File Format images." alt="" coords="139,5,189,31"/>
+<area shape="rect" id="Node000004" href="$group__gdCodecGif.html" title="GIF image and animation reading and writing support." alt="" coords="142,55,186,80"/>
+<area shape="rect" id="Node000009" href="$group__gdCodecHeif.html" title="Read and write High Efficiency Image File Format images." alt="" coords="138,104,190,129"/>
+<area shape="rect" id="Node000006" href="$group__gdCodecJpeg.html" title="JPEG image reading and writing support." alt="" coords="138,153,190,179"/>
+<area shape="rect" id="Node000008" href="$group__gdCodecJxl.html" title="JPEG XL image reading, writing, and animation support." alt="" coords="128,203,200,228"/>
+<area shape="rect" id="Node000002" href="$group__gdCodecPng.html" title="PNG image reading and writing support." alt="" coords="139,252,189,277"/>
+<area shape="rect" id="Node000003" href="$group__gdCodecQoi.html" title="QOI image reading and writing support." alt="" coords="141,301,187,327"/>
+<area shape="rect" id="Node000011" href="$group__gdCodecTiff.html" title="TIFF image reading, writing, and multi&#45;page support." alt="" coords="139,351,189,376"/>
+<area shape="rect" id="Node000012" href="$group__gdCodecUhdr.html" title="Read, transform, and write UltraHDR JPEG images." alt="" coords="123,400,205,425"/>
+<area shape="rect" id="Node000005" href="$group__gdCodecWbmp.html" title="Wireless Bitmap reading and writing support." alt="" coords="132,449,196,475"/>
+<area shape="rect" id="Node000007" href="$group__gdCodecWebp.html" title="WebP image reading and writing support." alt="" coords="135,499,193,524"/>
+<area shape="rect" id="Node000013" href="$group__gdCodecXbm.html" title="Read and write X11 bitmap images." alt="" coords="138,548,190,573"/>
+<area shape="rect" id="Node000014" href="$group__gdCodecXpm.html" title="Read X PixMap images." alt="" coords="139,597,189,623"/>
+<area shape="rect" id="Node000001" title="Image codec support for reading and writing various file formats." alt="" coords="5,301,75,327"/>
 </map>

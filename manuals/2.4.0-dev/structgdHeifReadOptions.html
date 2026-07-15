@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>LibGd: gdUhdrError Struct Reference</title>
+<title>LibGd: gdHeifReadOptions Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -72,69 +72,52 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-attribs">Data Fields</a>  </div>
-  <div class="headertitle"><div class="title">gdUhdrError Struct Reference<div class="ingroups"><a class="el" href="group__gdCodecs.html">Codecs</a> &raquo; <a class="el" href="group__gdCodecUhdr.html">UltraHDR</a></div></div></div>
+  <div class="headertitle"><div class="title">gdHeifReadOptions Struct Reference<div class="ingroups"><a class="el" href="group__gdCodecs.html">Codecs</a> &raquo; <a class="el" href="group__gdCodecHeif.html">HEIF</a></div></div></div>
 </div><!--header-->
 <div class="contents">
 
-<p>Structured error details for UltraHDR APIs.  
- <a href="structgdUhdrError.html#details">More...</a></p>
+<p>HEIF decoder options used by <a class="el" href="group__gdCodecHeif.html#ga41fe5505d0d7be67579da351e07d3cdd" title="Create a truecolor image from HEIF data in memory using read options.">gdImageCreateFromHeifPtrWithOptions()</a>.  
+ <a href="structgdHeifReadOptions.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="gd_8h_source.html">gd.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:a49f415ea1fd37263a7de59fe31c0b021" id="r_a49f415ea1fd37263a7de59fe31c0b021"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgdUhdrError.html#a49f415ea1fd37263a7de59fe31c0b021">code</a></td></tr>
-<tr class="separator:a49f415ea1fd37263a7de59fe31c0b021"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab8dfbe465b045590e4a2f4c488e796d3" id="r_ab8dfbe465b045590e4a2f4c488e796d3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgdUhdrError.html#ab8dfbe465b045590e4a2f4c488e796d3">provider_code</a></td></tr>
-<tr class="separator:ab8dfbe465b045590e4a2f4c488e796d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6b02fafb2fcc28da0db02da1c0a0398a" id="r_a6b02fafb2fcc28da0db02da1c0a0398a"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgdUhdrError.html#a6b02fafb2fcc28da0db02da1c0a0398a">message</a> [128]</td></tr>
-<tr class="separator:a6b02fafb2fcc28da0db02da1c0a0398a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab40e9e7abce311b1e4f0f39020ef27a6" id="r_ab40e9e7abce311b1e4f0f39020ef27a6"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgdHeifReadOptions.html#ab40e9e7abce311b1e4f0f39020ef27a6">struct_size</a></td></tr>
+<tr class="separator:ab40e9e7abce311b1e4f0f39020ef27a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6dcf618c257f506eb70808baea62b15e" id="r_a6dcf618c257f506eb70808baea62b15e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgdHeifReadOptions.html#a6dcf618c257f506eb70808baea62b15e">ignore_transformations</a></td></tr>
+<tr class="separator:a6dcf618c257f506eb70808baea62b15e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Structured error details for UltraHDR APIs. </p>
+<div class="textblock"><p>HEIF decoder options used by <a class="el" href="group__gdCodecHeif.html#ga41fe5505d0d7be67579da351e07d3cdd" title="Create a truecolor image from HEIF data in memory using read options.">gdImageCreateFromHeifPtrWithOptions()</a>. </p>
 </div><h2 class="groupheader">Field Documentation</h2>
-<a id="a49f415ea1fd37263a7de59fe31c0b021" name="a49f415ea1fd37263a7de59fe31c0b021"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a49f415ea1fd37263a7de59fe31c0b021">&#9670;&#160;</a></span>code</h2>
+<a id="a6dcf618c257f506eb70808baea62b15e" name="a6dcf618c257f506eb70808baea62b15e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6dcf618c257f506eb70808baea62b15e">&#9670;&#160;</a></span>ignore_transformations</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int gdUhdrError::code</td>
+          <td class="memname">int gdHeifReadOptions::ignore_transformations</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>libgd UltraHDR status code, one of the GD_UHDR_* values. </p>
+<p>Nonzero to ignore HEIF image transformations while decoding. </p>
 
 </div>
 </div>
-<a id="a6b02fafb2fcc28da0db02da1c0a0398a" name="a6b02fafb2fcc28da0db02da1c0a0398a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6b02fafb2fcc28da0db02da1c0a0398a">&#9670;&#160;</a></span>message</h2>
+<a id="ab40e9e7abce311b1e4f0f39020ef27a6" name="ab40e9e7abce311b1e4f0f39020ef27a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab40e9e7abce311b1e4f0f39020ef27a6">&#9670;&#160;</a></span>struct_size</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">char gdUhdrError::message[128]</td>
+          <td class="memname">size_t gdHeifReadOptions::struct_size</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Optional human-readable error detail. </p>
-
-</div>
-</div>
-<a id="ab8dfbe465b045590e4a2f4c488e796d3" name="ab8dfbe465b045590e4a2f4c488e796d3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab8dfbe465b045590e4a2f4c488e796d3">&#9670;&#160;</a></span>provider_code</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int gdUhdrError::provider_code</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Underlying libultrahdr provider error code, if any. </p>
+<p>Size of this structure; set by <a class="el" href="group__gdCodecHeif.html#ga5b3c728ad7b1fd69a7d596ffd22c8285" title="Initialize HEIF read options with gd defaults.">gdHeifReadOptionsInit()</a>. </p>
 
 </div>
 </div>
