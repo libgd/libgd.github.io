@@ -1,4 +1,13 @@
 var searchData=
 [
-  ['fit_0',['fit',['../structgdScaleOptions.html#ab41273858a919bd577a5bebef3302e48',1,'gdScaleOptions']]]
+  ['canvasheight_0',['canvasHeight',['../structgdWebpWriteOptions.html#a238ca6c61f63cd3d84ed77b44e1c4314',1,'gdWebpWriteOptions']]],
+  ['canvaswidth_1',['canvasWidth',['../structgdWebpWriteOptions.html#a4b6023a786dc7ee3a47bbda76625f1f0',1,'gdWebpWriteOptions']]],
+  ['code_2',['code',['../structgdTextError.html#a3dfe0c6710e7eb7a091cbcfc05c2dc8f',1,'gdTextError']]],
+  ['color_3',['color',['../structgdAutoCropOptions.html#a92b0b93df656cf96398b85b7442ee237',1,'gdAutoCropOptions']]],
+  ['color_5fspace_4',['color_space',['../structgdJpegInfo.html#ab40379ccdac8ee58f2f2d91ee896d837',1,'gdJpegInfo']]],
+  ['color_5ftype_5',['color_type',['../structgdPngInfo.html#a77347318006fbef9560c9827d1186e45',1,'gdPngInfo']]],
+  ['complete_6',['complete',['../structgdWebpFrameInfo.html#a596873c3ba0cc5de288c8b5b692e45f9',1,'gdWebpFrameInfo']]],
+  ['components_7',['components',['../structgdJpegInfo.html#a2fc4877256abc49368a758f9e8496522',1,'gdJpegInfo']]],
+  ['compression_5flevel_8',['compression_level',['../structgdPngWriteOptions.html#a3ce845ef00d09212a476693f6d6d4abe',1,'gdPngWriteOptions']]],
+  ['compression_5fstrategy_9',['compression_strategy',['../structgdPngWriteOptions.html#a1fbfdf3e3547bad7907a6ff96d1c78a5',1,'gdPngWriteOptions']]]
 ];

@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['background_5fcolor_0',['background_color',['../structgdScaleOptions.html#ac697b78f3d996e784ec565cc4b2d1278',1,'gdScaleOptions']]]
+  ['allowmixed_0',['allowMixed',['../structgdWebpWriteOptions.html#a4575d6b1b52f2f0bd942bdf20c17a948',1,'gdWebpWriteOptions']]],
+  ['animated_1',['animated',['../structgdJxlInfo.html#a872a8dbfc7319675be746400edc0eb60',1,'gdJxlInfo']]]
 ];

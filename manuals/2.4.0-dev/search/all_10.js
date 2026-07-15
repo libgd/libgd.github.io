@@ -1,8 +1,8 @@
 var searchData=
 [
-  ['pixel_20operations_0',['pixel operations',['../group__PixelDraw.html',1,'lines, ellipses, polygons and Arc Drawing pixel operations'],['../group__Per.html',1,'Pixel Operations']]],
-  ['polygons_20and_20arc_20drawing_20pixel_20operations_1',['lines, ellipses, polygons and Arc Drawing pixel operations',['../group__PixelDraw.html',1,'']]],
-  ['program_3a_2',['gd basics: using gd in your program:',['../index.html#autotoc_md2',1,'']]],
-  ['properties_3',['Clone, copy and image properties',['../group__cloneandcopy.html',1,'']]],
-  ['provider_5fcode_4',['provider_code',['../structgdTextError.html#ab65a08a0bd306247493640490ffe7f75',1,'gdTextError']]]
+  ['message_0',['message',['../structgdTextError.html#a69b02f333d6d9809a2dc4ca45d4671f2',1,'gdTextError']]],
+  ['metadata_1',['metadata',['../structgdPngWriteOptions.html#a6204af257d5aa4e5a4f21144fc2deeed',1,'gdPngWriteOptions::metadata'],['../structgdPngInfo.html#a74a7016a09fc0b28b6ef9b438ab11838',1,'gdPngInfo::metadata'],['../structgdJpegWriteOptions.html#a7aad1e0e243742b25017c70e25aa1652',1,'gdJpegWriteOptions::metadata']]],
+  ['method_2',['method',['../structgdWebpWriteOptions.html#a590cad17759b353846b74cf5952ea6ce',1,'gdWebpWriteOptions']]],
+  ['minimizesize_3',['minimizeSize',['../structgdWebpWriteOptions.html#a29a137e63f88d6a14828aacb55251133',1,'gdWebpWriteOptions']]],
+  ['mode_4',['mode',['../structgdAutoCropOptions.html#aebf305dce867d6ac2e40b5b6e1ba5c79',1,'gdAutoCropOptions']]]
 ];

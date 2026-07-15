@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['scale_20and_20rotate_0',['Transform, scale and rotate',['../group__TransformScaleRotate.html',1,'']]]
+  ['qoi_0',['QOI',['../group__gdCodecQoi.html',1,'']]],
+  ['quantization_1',['Quantization',['../group__Color.html',1,'']]]
 ];
