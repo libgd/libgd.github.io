@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['reserved_5fdouble_0',['reserved_double',['../structgdTextOptions.html#a83a1222ca899782a50d99384e9477a10',1,'gdTextOptions']]],
-  ['reserved_5fflags_1',['reserved_flags',['../structgdTextOptions.html#ad3fe2b8ef2add55dbb425a47f678309b',1,'gdTextOptions']]]
+  ['quality_0',['quality',['../structgdJpegWriteOptions.html#ac887d4af2cdac9f55cdd13f1d2e4e580',1,'gdJpegWriteOptions::quality'],['../structgdWebpWriteOptions.html#a5a1dfd514ac47cab6b519be98c6d7fda',1,'gdWebpWriteOptions::quality']]]
 ];

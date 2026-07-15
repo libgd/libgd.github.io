@@ -4,7 +4,9 @@ var searchData=
   ['backgroundcolor_1',['backgroundcolor',['../structgdWebpInfo.html#ac29513e9443a09128a535055ea15e8fe',1,'gdWebpInfo::backgroundColor'],['../structgdWebpWriteOptions.html#af4838aede64969b1761cf8cec62f3492',1,'gdWebpWriteOptions::backgroundColor']]],
   ['backgroundindex_2',['backgroundIndex',['../structgdGifInfo.html#a6c28e1b96a295d5159c3d58f67ca2372',1,'gdGifInfo']]],
   ['bit_5fdepth_3',['bit_depth',['../structgdPngInfo.html#a2001e3b18a37ece4efa850a51370892c',1,'gdPngInfo']]],
-  ['bits_5fper_5fsample_4',['bits_per_sample',['../structgdJpegInfo.html#a0994d2e31904b4d51ad35951efb7adf4',1,'gdJpegInfo']]],
-  ['blend_5',['blend',['../structgdWebpFrameInfo.html#afe84d6223b9a3543eb949fd97d355ed4',1,'gdWebpFrameInfo']]],
-  ['blend_5fmode_6',['blend_mode',['../structgdJxlFrameInfo.html#a558c35f03fd1c40f87f80b319936913f',1,'gdJxlFrameInfo']]]
+  ['bitdepth_4',['bitDepth',['../structgdTiffWriteOptions.html#abfac846efc707b219687588334c2d8ee',1,'gdTiffWriteOptions']]],
+  ['bits_5fper_5fsample_5',['bits_per_sample',['../structgdJpegInfo.html#a0994d2e31904b4d51ad35951efb7adf4',1,'gdJpegInfo']]],
+  ['bitspersample_6',['bitspersample',['../structgdTiffInfo.html#a1e60592b5008a8e59184109b65c9adbd',1,'gdTiffInfo::bitsPerSample'],['../structgdTiffPageInfo.html#afdec5f860aebd1b6281058aad7ac90dc',1,'gdTiffPageInfo::bitsPerSample']]],
+  ['blend_7',['blend',['../structgdWebpFrameInfo.html#afe84d6223b9a3543eb949fd97d355ed4',1,'gdWebpFrameInfo']]],
+  ['blend_5fmode_8',['blend_mode',['../structgdJxlFrameInfo.html#a558c35f03fd1c40f87f80b319936913f',1,'gdJxlFrameInfo']]]
 ];

@@ -19,8 +19,11 @@ var searchData=
   ['gdtexterror_16',['gdTextError',['../structgdTextError.html',1,'']]],
   ['gdtextextents_17',['gdTextExtents',['../structgdTextExtents.html',1,'']]],
   ['gdtextoptions_18',['gdTextOptions',['../structgdTextOptions.html',1,'']]],
-  ['gduhdrerror_19',['gdUhdrError',['../structgdUhdrError.html',1,'']]],
-  ['gdwebpframeinfo_20',['gdWebpFrameInfo',['../structgdWebpFrameInfo.html',1,'']]],
-  ['gdwebpinfo_21',['gdWebpInfo',['../structgdWebpInfo.html',1,'']]],
-  ['gdwebpwriteoptions_22',['gdWebpWriteOptions',['../structgdWebpWriteOptions.html',1,'']]]
+  ['gdtiffinfo_19',['gdTiffInfo',['../structgdTiffInfo.html',1,'']]],
+  ['gdtiffpageinfo_20',['gdTiffPageInfo',['../structgdTiffPageInfo.html',1,'']]],
+  ['gdtiffwriteoptions_21',['gdTiffWriteOptions',['../structgdTiffWriteOptions.html',1,'']]],
+  ['gduhdrerror_22',['gdUhdrError',['../structgdUhdrError.html',1,'']]],
+  ['gdwebpframeinfo_23',['gdWebpFrameInfo',['../structgdWebpFrameInfo.html',1,'']]],
+  ['gdwebpinfo_24',['gdWebpInfo',['../structgdWebpInfo.html',1,'']]],
+  ['gdwebpwriteoptions_25',['gdWebpWriteOptions',['../structgdWebpWriteOptions.html',1,'']]]
 ];

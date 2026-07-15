@@ -4,6 +4,7 @@
 <area shape="rect" id="Node000007" href="$group__gdCodecJxl.html" title="JPEG XL image reading, writing, and animation support." alt="" coords="123,104,195,129"/>
 <area shape="rect" id="Node000002" href="$group__gdCodecPng.html" title="PNG image reading and writing support." alt="" coords="133,153,184,179"/>
 <area shape="rect" id="Node000003" href="$group__gdCodecQoi.html" title="QOI image reading and writing support." alt="" coords="135,203,182,228"/>
-<area shape="rect" id="Node000006" href="$group__gdCodecWebp.html" title="WebP image reading and writing support." alt="" coords="129,252,188,277"/>
-<area shape="rect" id="Node000001" title="Image codec support for reading and writing various file formats." alt="" coords="5,129,75,155"/>
+<area shape="rect" id="Node000008" href="$group__gdCodecTiff.html" title="TIFF image reading, writing, and multi&#45;page support." alt="" coords="133,252,184,277"/>
+<area shape="rect" id="Node000006" href="$group__gdCodecWebp.html" title="WebP image reading and writing support." alt="" coords="129,301,188,327"/>
+<area shape="rect" id="Node000001" title="Image codec support for reading and writing various file formats." alt="" coords="5,153,75,179"/>
 </map>

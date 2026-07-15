@@ -19,6 +19,8 @@ var searchData=
   ['gdrectf_16',['gdRectF',['../group__Vector2D.html#ga5d63bb7ed5a33b1f4be59f13b6b05330',1,'gd_vector2d.h']]],
   ['gdrectfptr_17',['gdRectFPtr',['../group__Vector2D.html#gad87481036273a657698ed88a57f5e375',1,'gd_vector2d.h']]],
   ['gdrectptr_18',['gdRectPtr',['../group__PixelDraw.html#ga28f3fe82b4806fe16159bb3fd34cf655',1,'gd.h']]],
-  ['gdwebpreadptr_19',['gdWebpReadPtr',['../group__gdCodecWebp.html#ga29a075f6a4a8ddeaf7c210278114868f',1,'gd.h']]],
-  ['gdwebpwriteptr_20',['gdWebpWritePtr',['../group__gdCodecWebp.html#ga5e9acb9c417bb09250425db7c2fdbef0',1,'gd.h']]]
+  ['gdtiffreadptr_19',['gdTiffReadPtr',['../group__gdCodecTiff.html#ga689957796d91d08eea7eb092caee7add',1,'gd.h']]],
+  ['gdtiffwriteptr_20',['gdTiffWritePtr',['../group__gdCodecTiff.html#ga852f6882fe45d3a8fee12540009e57ee',1,'gd.h']]],
+  ['gdwebpreadptr_21',['gdWebpReadPtr',['../group__gdCodecWebp.html#ga29a075f6a4a8ddeaf7c210278114868f',1,'gd.h']]],
+  ['gdwebpwriteptr_22',['gdWebpWritePtr',['../group__gdCodecWebp.html#ga5e9acb9c417bb09250425db7c2fdbef0',1,'gd.h']]]
 ];

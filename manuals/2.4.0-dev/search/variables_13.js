@@ -6,6 +6,5 @@ var searchData=
   ['y_5fdensity_3',['y_density',['../structgdJpegInfo.html#a680f601e06fa2ec0d4009224408638fd',1,'gdJpegInfo']]],
   ['y_5foffset_4',['y_offset',['../structgdJxlFrameInfo.html#ad059db6bd8ab5125c891d649a96b7782',1,'gdJxlFrameInfo']]],
   ['y_5fpixels_5fper_5funit_5',['y_pixels_per_unit',['../structgdPngInfo.html#a5e68a4283f3a390dae3d8739992fc76b',1,'gdPngInfo']]],
-  ['your_20program_3a_6',['gd basics: using gd in your program:',['../index.html#autotoc_md2',1,'']]],
-  ['yresolution_7',['yresolution',['../structgdTiffInfo.html#aef97b21dddf0cfa436295a525f142ee0',1,'gdTiffInfo::yResolution'],['../structgdTiffPageInfo.html#a988ed09f035ce9a1e361be48fd2f4a6d',1,'gdTiffPageInfo::yResolution'],['../structgdTiffWriteOptions.html#ae1025d1b6377ce51b0e8c712d7a5f1f7',1,'gdTiffWriteOptions::yResolution']]]
+  ['yresolution_6',['yresolution',['../structgdTiffInfo.html#aef97b21dddf0cfa436295a525f142ee0',1,'gdTiffInfo::yResolution'],['../structgdTiffPageInfo.html#a988ed09f035ce9a1e361be48fd2f4a6d',1,'gdTiffPageInfo::yResolution'],['../structgdTiffWriteOptions.html#ae1025d1b6377ce51b0e8c712d7a5f1f7',1,'gdTiffWriteOptions::yResolution']]]
 ];
