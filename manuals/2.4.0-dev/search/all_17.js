@@ -1,5 +1,10 @@
 var searchData=
 [
-  ['ultrahdr_0',['UltraHDR',['../group__gdCodecUhdr.html',1,'']]],
-  ['using_20gd_20in_20your_20program_3a_1',['gd basics: using gd in your program:',['../index.html#autotoc_md2',1,'']]]
+  ['text_20rendering_20bitmap_20fonts_0',['Text Rendering, Bitmap Fonts',['../group__Font.html',1,'']]],
+  ['text_20rendering_20freetype_202_1',['Font Text Rendering, FreeType 2',['../group__freetypefont.html',1,'']]],
+  ['threshold_2',['threshold',['../structgdAutoCropOptions.html#a9d5217bd2c45a66bdb91154688069cb4',1,'gdAutoCropOptions']]],
+  ['tiff_3',['TIFF',['../group__gdCodecTiff.html',1,'']]],
+  ['timestamp_4',['timestamp',['../structgdWebpFrameInfo.html#ab08d7db5e89f86957b54dad2155aa86e',1,'gdWebpFrameInfo']]],
+  ['transform_20scale_20and_20rotate_5',['Transform, scale and rotate',['../group__TransformScaleRotate.html',1,'']]],
+  ['transparentindex_6',['transparentIndex',['../structgdGifFrameInfo.html#a15a56b02b630699920197fdb0599d0d3',1,'gdGifFrameInfo']]]
 ];

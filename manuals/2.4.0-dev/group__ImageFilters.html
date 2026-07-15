@@ -71,17 +71,25 @@ $(function() {
 
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Data Structures</a> &#124;
 <a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">Image Filters and convolutions</div></div>
 </div><!--header-->
 <div class="contents">
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Data Structures</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgdScatter.html">gdScatter</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Options to Scatter an image.  <a href="structgdScatter.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
 <tr class="memitem:ga5394f6ea01c6cc959943d51ab2d33ce1" id="r_ga5394f6ea01c6cc959943d51ab2d33ce1"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ImageFilters.html#ga5394f6ea01c6cc959943d51ab2d33ce1">gdPixelateMode</a> { <a class="el" href="group__ImageFilters.html#gga5394f6ea01c6cc959943d51ab2d33ce1a1c14d2db26948a7ad26f0f96be52eaaf">GD_PIXELATE_UPPERLEFT</a>
 , <a class="el" href="group__ImageFilters.html#gga5394f6ea01c6cc959943d51ab2d33ce1a9daa3e4bf5bed1e06b86b8009e33a831">GD_PIXELATE_AVERAGE</a>
  }</td></tr>
+<tr class="memdesc:ga5394f6ea01c6cc959943d51ab2d33ce1"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="group__ImageFilters.html#ga9f0206376a52148db6ea7c652fdf4511">gdImagePixelate</a> options  <a href="group__ImageFilters.html#ga5394f6ea01c6cc959943d51ab2d33ce1">More...</a><br /></td></tr>
 <tr class="separator:ga5394f6ea01c6cc959943d51ab2d33ce1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
@@ -89,6 +97,15 @@ Functions</h2></td></tr>
 <tr class="memitem:ga9f0206376a52148db6ea7c652fdf4511" id="r_ga9f0206376a52148db6ea7c652fdf4511"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ImageFilters.html#ga9f0206376a52148db6ea7c652fdf4511">gdImagePixelate</a> (gdImagePtr im, int block_size, const unsigned int mode)</td></tr>
 <tr class="memdesc:ga9f0206376a52148db6ea7c652fdf4511"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pixelates an image.  <br /></td></tr>
 <tr class="separator:ga9f0206376a52148db6ea7c652fdf4511"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafab58c8b4d87fe9ea50e075edf656f88" id="r_gafab58c8b4d87fe9ea50e075edf656f88"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ImageFilters.html#gafab58c8b4d87fe9ea50e075edf656f88">gdImageScatter</a> (gdImagePtr im, int sub, int plus)</td></tr>
+<tr class="memdesc:gafab58c8b4d87fe9ea50e075edf656f88"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scatter an image.  <br /></td></tr>
+<tr class="separator:gafab58c8b4d87fe9ea50e075edf656f88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0cb5c72dc2bd96ae0e9236fb8b7bae0c" id="r_ga0cb5c72dc2bd96ae0e9236fb8b7bae0c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ImageFilters.html#ga0cb5c72dc2bd96ae0e9236fb8b7bae0c">gdImageScatterColor</a> (gdImagePtr im, int sub, int plus, int colors[], unsigned int num_colors)</td></tr>
+<tr class="memdesc:ga0cb5c72dc2bd96ae0e9236fb8b7bae0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scatter an image with specified colors.  <br /></td></tr>
+<tr class="separator:ga0cb5c72dc2bd96ae0e9236fb8b7bae0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0eed47e3d884c5ddd1ce3a0f60df2fb6" id="r_ga0eed47e3d884c5ddd1ce3a0f60df2fb6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ImageFilters.html#ga0eed47e3d884c5ddd1ce3a0f60df2fb6">gdImageScatterEx</a> (gdImagePtr im, <a class="el" href="structgdScatter.html">gdScatterPtr</a> s)</td></tr>
+<tr class="memdesc:ga0eed47e3d884c5ddd1ce3a0f60df2fb6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scatter an image with extended options.  <br /></td></tr>
+<tr class="separator:ga0eed47e3d884c5ddd1ce3a0f60df2fb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad46227c0d449e8c57ec461670d94ec26" id="r_gad46227c0d449e8c57ec461670d94ec26"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ImageFilters.html#gad46227c0d449e8c57ec461670d94ec26">gdImageSmooth</a> (gdImagePtr im, float weight)</td></tr>
 <tr class="memdesc:gad46227c0d449e8c57ec461670d94ec26"><td class="mdescLeft">&#160;</td><td class="mdescRight">Smooth an image.  <br /></td></tr>
 <tr class="separator:gad46227c0d449e8c57ec461670d94ec26"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -142,6 +159,9 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p><a class="el" href="group__ImageFilters.html#ga9f0206376a52148db6ea7c652fdf4511">gdImagePixelate</a> options </p>
+<p>Negate the imag src, white becomes black, The red, green, and blue intensities of an image are negated. White becomes black, yellow becomes blue, etc. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga5394f6ea01c6cc959943d51ab2d33ce1a1c14d2db26948a7ad26f0f96be52eaaf" name="gga5394f6ea01c6cc959943d51ab2d33ce1a1c14d2db26948a7ad26f0f96be52eaaf"></a>GD_PIXELATE_UPPERLEFT&#160;</td><td class="fielddoc"><p>Use the upper-left pixel of each block </p>
 </td></tr>
@@ -649,6 +669,151 @@ in = fopen("foo.png", "rb"); src = gdImageCreateFromPng(in);</p>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Non-zero on success, zero on failure. Failure: Returns zero if im is NULL or block_size is less than or equal to 0. </dd></dl>
+
+</div>
+</div>
+<a id="gafab58c8b4d87fe9ea50e075edf656f88" name="gafab58c8b4d87fe9ea50e075edf656f88"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gafab58c8b4d87fe9ea50e075edf656f88">&#9670;&#160;</a></span>gdImageScatter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int gdImageScatter </td>
+          <td>(</td>
+          <td class="paramtype">gdImagePtr&#160;</td>
+          <td class="paramname"><em>im</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>sub</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>plus</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Scatter an image. </p>
+<p>Scatters the pixels of an image by randomly adjusting their color values based on the specified subtraction and addition values.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">im</td><td>The image to scatter. </td></tr>
+    <tr><td class="paramname">sub</td><td>The subtraction value for scattering. Must be greater than or equal to 0. </td></tr>
+    <tr><td class="paramname">plus</td><td>The addition value for scattering. Must be greater than or equal to 0</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Non-zero on success, zero on failure. Failure: Returns zero if im is NULL, sub or plus is less than 0. </dd></dl>
+
+</div>
+</div>
+<a id="ga0cb5c72dc2bd96ae0e9236fb8b7bae0c" name="ga0cb5c72dc2bd96ae0e9236fb8b7bae0c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0cb5c72dc2bd96ae0e9236fb8b7bae0c">&#9670;&#160;</a></span>gdImageScatterColor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int gdImageScatterColor </td>
+          <td>(</td>
+          <td class="paramtype">gdImagePtr&#160;</td>
+          <td class="paramname"><em>im</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>sub</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>plus</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>colors</em>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>num_colors</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Scatter an image with specified colors. </p>
+<p>Scatters the pixels of an image by randomly adjusting their color values based on the specified subtraction and addition values, using a specified set of colors.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">im</td><td>The image to scatter. </td></tr>
+    <tr><td class="paramname">sub</td><td>The subtraction value for scattering. Must be greater than or equal to 0. </td></tr>
+    <tr><td class="paramname">plus</td><td>The addition value for scattering. Must be greater than or equal to 0. </td></tr>
+    <tr><td class="paramname">colors</td><td>An array of colors to use for scattering. Must not be NULL. </td></tr>
+    <tr><td class="paramname">num_colors</td><td>The number of colors in the colors array. Must be greater than</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Non-zero on success, zero on failure. Failure: Returns zero if im is NULL, sub or plus is less than 0, colors is NULL, or num_colors is 0. </dd></dl>
+
+</div>
+</div>
+<a id="ga0eed47e3d884c5ddd1ce3a0f60df2fb6" name="ga0eed47e3d884c5ddd1ce3a0f60df2fb6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0eed47e3d884c5ddd1ce3a0f60df2fb6">&#9670;&#160;</a></span>gdImageScatterEx()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int gdImageScatterEx </td>
+          <td>(</td>
+          <td class="paramtype">gdImagePtr&#160;</td>
+          <td class="paramname"><em>im</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structgdScatter.html">gdScatterPtr</a>&#160;</td>
+          <td class="paramname"><em>s</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Scatter an image with extended options. </p>
+<p>Scatters the pixels of an image using the specified scattering options.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">im</td><td>The image to scatter. </td></tr>
+    <tr><td class="paramname">s</td><td>A pointer to a <a class="el" href="structgdScatter.html" title="Options to Scatter an image.">gdScatter</a> structure containing the scattering options. Must not be NULL.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
 
 </div>
 </div>

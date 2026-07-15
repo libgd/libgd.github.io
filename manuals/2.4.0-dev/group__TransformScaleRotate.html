@@ -287,6 +287,9 @@ Functions</h2></td></tr>
 <p>matrix[0] == xx matrix[1] == yx matrix[2] == xy matrix[3] == yy matrix[4] == x0 matrix[5] == y0</p>
 <p>A point (x, y) is transformed as:</p>
 <p>x_new = xx * x + xy * y + x0 y_new = yx * x + yy * y + y0</p>
+<p>Function: getPixelRgbInterpolated get the index of the image's colors</p>
+<p>Parameters: im - Image to draw the transformed image tcolor - TrueColor</p>
+<p>Return: index of colors</p>
 <p>Matrix functions to initialize, transform and combine affine matrices used by transform, scale and rotate APIs.</p>
 <p>They can be used with gdTransformAffineCopy and are also used in various transformation functions in GD.</p>
 <p>Matrices use a six-element double array:</p>
