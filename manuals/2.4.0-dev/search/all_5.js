@@ -10,5 +10,6 @@ var searchData=
   ['bits_5fper_5fsample_7',['bits_per_sample',['../structgdJpegInfo.html#a0994d2e31904b4d51ad35951efb7adf4',1,'gdJpegInfo']]],
   ['bitspersample_8',['bitspersample',['../structgdTiffInfo.html#a1e60592b5008a8e59184109b65c9adbd',1,'gdTiffInfo::bitsPerSample'],['../structgdTiffPageInfo.html#afdec5f860aebd1b6281058aad7ac90dc',1,'gdTiffPageInfo::bitsPerSample']]],
   ['blend_9',['blend',['../structgdWebpFrameInfo.html#afe84d6223b9a3543eb949fd97d355ed4',1,'gdWebpFrameInfo']]],
-  ['blend_5fmode_10',['blend_mode',['../structgdJxlFrameInfo.html#a558c35f03fd1c40f87f80b319936913f',1,'gdJxlFrameInfo']]]
+  ['blend_5fmode_10',['blend_mode',['../structgdJxlFrameInfo.html#a558c35f03fd1c40f87f80b319936913f',1,'gdJxlFrameInfo']]],
+  ['bmp_11',['BMP',['../group__gdCodecBmp.html',1,'']]]
 ];
