@@ -7,5 +7,6 @@ var searchData=
   ['density_5funit_4',['density_unit',['../structgdJpegInfo.html#a6c530e1caf3133d310bcf60f95f5cdac',1,'gdJpegInfo']]],
   ['disposal_5',['disposal',['../structgdGifFrameInfo.html#af41accb2525380d28ba5c1822b1a7b6a',1,'gdGifFrameInfo']]],
   ['dispose_6',['dispose',['../structgdWebpFrameInfo.html#a7bfaf404537b4e5d970bb2e9bc51cfcd',1,'gdWebpFrameInfo']]],
-  ['duration_7',['duration',['../structgdWebpFrameInfo.html#aaf95b3ab0f0f1ed48ff81d769915f3d0',1,'gdWebpFrameInfo']]]
+  ['distance_7',['distance',['../structgdJxlWriteOptions.html#a10b576a239f3639816dc95a1c118e00f',1,'gdJxlWriteOptions']]],
+  ['duration_8',['duration',['../structgdWebpFrameInfo.html#aaf95b3ab0f0f1ed48ff81d769915f3d0',1,'gdWebpFrameInfo']]]
 ];

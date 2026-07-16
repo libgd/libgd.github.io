@@ -1,9 +1,9 @@
 var searchData=
 [
-  ['message_0',['message',['../structgdUhdrError.html#a6b02fafb2fcc28da0db02da1c0a0398a',1,'gdUhdrError::message'],['../structgdTextError.html#a69b02f333d6d9809a2dc4ca45d4671f2',1,'gdTextError::message']]],
-  ['metadata_1',['metadata',['../structgdPngWriteOptions.html#a6204af257d5aa4e5a4f21144fc2deeed',1,'gdPngWriteOptions::metadata'],['../structgdPngInfo.html#a74a7016a09fc0b28b6ef9b438ab11838',1,'gdPngInfo::metadata'],['../structgdJpegWriteOptions.html#a7aad1e0e243742b25017c70e25aa1652',1,'gdJpegWriteOptions::metadata']]],
-  ['method_2',['method',['../structgdWebpWriteOptions.html#a590cad17759b353846b74cf5952ea6ce',1,'gdWebpWriteOptions']]],
-  ['minimizesize_3',['minimizeSize',['../structgdWebpWriteOptions.html#a29a137e63f88d6a14828aacb55251133',1,'gdWebpWriteOptions']]],
-  ['miniswhite_4',['minIsWhite',['../structgdTiffWriteOptions.html#a09a67fd6ab074576dbde1bd98ac69dd1',1,'gdTiffWriteOptions']]],
-  ['mode_5',['mode',['../structgdAutoCropOptions.html#aebf305dce867d6ac2e40b5b6e1ba5c79',1,'gdAutoCropOptions']]]
+  ['line_5fspacing_0',['line_spacing',['../structgdTextOptions.html#a99e664acd547716e3f7910b6f1183074',1,'gdTextOptions']]],
+  ['linespacing_1',['linespacing',['../structgdFTStringExtra.html#aced11f2ba0af633f9c162f6b89f309d0',1,'gdFTStringExtra']]],
+  ['localcolortable_2',['localColorTable',['../structgdGifFrameInfo.html#a1b81cf2f041237c74db3c0131179583e',1,'gdGifFrameInfo']]],
+  ['loop_5fcount_3',['loop_count',['../structgdJxlInfo.html#ae4706044b54ce3c9100adfba88bbaa44',1,'gdJxlInfo']]],
+  ['loopcount_4',['loopcount',['../structgdGifInfo.html#a2ef5fa658a38d706b3e400c00f173add',1,'gdGifInfo::loopCount'],['../structgdWebpInfo.html#a07cb34288394d29abf1752d6bfa66fb0',1,'gdWebpInfo::loopCount'],['../structgdWebpWriteOptions.html#ad09db93ce259903c9326b5e87d1ae046',1,'gdWebpWriteOptions::loopCount'],['../structgdJxlWriteOptions.html#a574e8d254968d08908a91780228cd661',1,'gdJxlWriteOptions::loopCount']]],
+  ['lossless_5',['lossless',['../structgdWebpWriteOptions.html#a48ff0c531b2224020618df2229817c5a',1,'gdWebpWriteOptions::lossless'],['../structgdJxlWriteOptions.html#a96a22216ae5eac91035c95ff0d520ea6',1,'gdJxlWriteOptions::lossless'],['../structgdHeifWriteOptions.html#a8b8618738be98cf7800995ce9c3e7850',1,'gdHeifWriteOptions::lossless'],['../structgdAvifWriteOptions.html#a5b3bf6e7892be4038777bc205f935eaa',1,'gdAvifWriteOptions::lossless']]]
 ];
