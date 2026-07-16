@@ -95,11 +95,11 @@ Data Structures</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">AVIF Write Options</h2></td></tr>
-<tr class="memitem:gab04a0655cd1e3bcac5e8f48c18df1a57" id="r_gab04a0655cd1e3bcac5e8f48c18df1a57"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="group__gdCodecAvif.html#ggab04a0655cd1e3bcac5e8f48c18df1a57a0d14fe76880e3a1eb43a3b2c040b33cd">GD_AVIF_CHROMA_SUBSAMPLING_AUTO</a> = 0
-, <a class="el" href="group__gdCodecAvif.html#ggab04a0655cd1e3bcac5e8f48c18df1a57a0659b1969ffa56b597c8c3b667882cc7">GD_AVIF_CHROMA_SUBSAMPLING_YUV420</a> = 1
-, <a class="el" href="group__gdCodecAvif.html#ggab04a0655cd1e3bcac5e8f48c18df1a57a8b1b56bca02c87eb039827507e359aa0">GD_AVIF_CHROMA_SUBSAMPLING_YUV444</a> = 2
+<tr class="memitem:ga385c44f6fb256e5716a2302a5b940388" id="r_ga385c44f6fb256e5716a2302a5b940388"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="group__gdCodecAvif.html#gga385c44f6fb256e5716a2302a5b940388a0d14fe76880e3a1eb43a3b2c040b33cd">GD_AVIF_CHROMA_SUBSAMPLING_AUTO</a> = 0
+, <a class="el" href="group__gdCodecAvif.html#gga385c44f6fb256e5716a2302a5b940388a0659b1969ffa56b597c8c3b667882cc7">GD_AVIF_CHROMA_SUBSAMPLING_YUV420</a> = 1
+, <a class="el" href="group__gdCodecAvif.html#gga385c44f6fb256e5716a2302a5b940388a8b1b56bca02c87eb039827507e359aa0">GD_AVIF_CHROMA_SUBSAMPLING_YUV444</a> = 2
  }</td></tr>
-<tr class="separator:gab04a0655cd1e3bcac5e8f48c18df1a57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:ga385c44f6fb256e5716a2302a5b940388"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga30ae69fd483c58aa93b0ff29293d9de4" id="r_ga30ae69fd483c58aa93b0ff29293d9de4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gdCodecAvif.html#ga30ae69fd483c58aa93b0ff29293d9de4">gdAvifWriteOptionsInit</a> (<a class="el" href="structgdAvifWriteOptions.html">gdAvifWriteOptions</a> *options)</td></tr>
 <tr class="memdesc:ga30ae69fd483c58aa93b0ff29293d9de4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize AVIF write options with gd defaults.  <br /></td></tr>
 <tr class="separator:ga30ae69fd483c58aa93b0ff29293d9de4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -158,7 +158,7 @@ Data Structures</h2></td></tr>
 <div class="line"><a class="code hl_function" href="group__gdCodecAvif.html#ga30ae69fd483c58aa93b0ff29293d9de4">gdAvifWriteOptionsInit</a>(&amp;options);</div>
 <div class="line">options.<a class="code hl_variable" href="structgdAvifWriteOptions.html#afa097ab011b9ccdf8ef46981a021bcd1">quality</a> = 90;</div>
 <div class="line">options.<a class="code hl_variable" href="structgdAvifWriteOptions.html#a6864d3432f1559e5fe83676148cd44f9">speed</a> = 6;</div>
-<div class="line">options.<a class="code hl_variable" href="structgdAvifWriteOptions.html#ae8c507c94b7341d08216d5ea5ae00e6f">chroma_subsampling</a> = <a class="code hl_enumvalue" href="group__gdCodecAvif.html#ggab04a0655cd1e3bcac5e8f48c18df1a57a8b1b56bca02c87eb039827507e359aa0">GD_AVIF_CHROMA_SUBSAMPLING_YUV444</a>;</div>
+<div class="line">options.<a class="code hl_variable" href="structgdAvifWriteOptions.html#ae8c507c94b7341d08216d5ea5ae00e6f">chroma_subsampling</a> = <a class="code hl_enumvalue" href="group__gdCodecAvif.html#gga385c44f6fb256e5716a2302a5b940388a8b1b56bca02c87eb039827507e359aa0">GD_AVIF_CHROMA_SUBSAMPLING_YUV444</a>;</div>
 <div class="line"> </div>
 <div class="line">data = <a class="code hl_function" href="group__gdCodecAvif.html#gabf6a1533a13de4c85d368998b2862017">gdImageAvifPtrWithOptions</a>(<a class="code hl_namespace" href="namespaceim.html">im</a>, &amp;size, &amp;options);</div>
 <div class="line"><span class="keywordflow">if</span> (data != NULL) {</div>
@@ -169,15 +169,15 @@ Data Structures</h2></td></tr>
 <div class="ttc" id="agroup__gdCodecAvif_html_ga30ae69fd483c58aa93b0ff29293d9de4"><div class="ttname"><a href="group__gdCodecAvif.html#ga30ae69fd483c58aa93b0ff29293d9de4">gdAvifWriteOptionsInit</a></div><div class="ttdeci">void gdAvifWriteOptionsInit(gdAvifWriteOptions *options)</div><div class="ttdoc">Initialize AVIF write options with gd defaults.</div><div class="ttdef"><b>Definition</b> gd_avif.c:641</div></div>
 <div class="ttc" id="agroup__gdCodecAvif_html_gabf6a1533a13de4c85d368998b2862017"><div class="ttname"><a href="group__gdCodecAvif.html#gabf6a1533a13de4c85d368998b2862017">gdImageAvifPtrWithOptions</a></div><div class="ttdeci">void * gdImageAvifPtrWithOptions(gdImagePtr im, int *size, const gdAvifWriteOptions *options)</div><div class="ttdoc">Encode a truecolor image as AVIF data in memory using write options.</div><div class="ttdef"><b>Definition</b> gd_avif.c:716</div></div>
 <div class="ttc" id="agroup__gdCodecAvif_html_gaf5a04843db993453fe59614af65c7041"><div class="ttname"><a href="group__gdCodecAvif.html#gaf5a04843db993453fe59614af65c7041">gdImageCreateFromAvif</a></div><div class="ttdeci">gdImagePtr gdImageCreateFromAvif(FILE *inFile)</div><div class="ttdoc">Create a truecolor image from AVIF data in a stdio stream.</div><div class="ttdef"><b>Definition</b> gd_avif.c:651</div></div>
-<div class="ttc" id="agroup__gdCodecAvif_html_ggab04a0655cd1e3bcac5e8f48c18df1a57a8b1b56bca02c87eb039827507e359aa0"><div class="ttname"><a href="group__gdCodecAvif.html#ggab04a0655cd1e3bcac5e8f48c18df1a57a8b1b56bca02c87eb039827507e359aa0">GD_AVIF_CHROMA_SUBSAMPLING_YUV444</a></div><div class="ttdeci">@ GD_AVIF_CHROMA_SUBSAMPLING_YUV444</div><div class="ttdef"><b>Definition</b> gd.h:3352</div></div>
+<div class="ttc" id="agroup__gdCodecAvif_html_gga385c44f6fb256e5716a2302a5b940388a8b1b56bca02c87eb039827507e359aa0"><div class="ttname"><a href="group__gdCodecAvif.html#gga385c44f6fb256e5716a2302a5b940388a8b1b56bca02c87eb039827507e359aa0">GD_AVIF_CHROMA_SUBSAMPLING_YUV444</a></div><div class="ttdeci">@ GD_AVIF_CHROMA_SUBSAMPLING_YUV444</div><div class="ttdef"><b>Definition</b> gd.h:3352</div></div>
 <div class="ttc" id="anamespaceim_html"><div class="ttname"><a href="namespaceim.html">im</a></div><div class="ttdoc">Write an image as JPEG data to a gdIOCtx.</div></div>
 <div class="ttc" id="astructgdAvifWriteOptions_html"><div class="ttname"><a href="structgdAvifWriteOptions.html">gdAvifWriteOptions</a></div><div class="ttdoc">AVIF encoder options used by gdImageAvifPtrWithOptions().</div><div class="ttdef"><b>Definition</b> gd.h:3356</div></div>
 <div class="ttc" id="astructgdAvifWriteOptions_html_a6864d3432f1559e5fe83676148cd44f9"><div class="ttname"><a href="structgdAvifWriteOptions.html#a6864d3432f1559e5fe83676148cd44f9">gdAvifWriteOptions::speed</a></div><div class="ttdeci">int speed</div><div class="ttdef"><b>Definition</b> gd.h:3359</div></div>
 <div class="ttc" id="astructgdAvifWriteOptions_html_ae8c507c94b7341d08216d5ea5ae00e6f"><div class="ttname"><a href="structgdAvifWriteOptions.html#ae8c507c94b7341d08216d5ea5ae00e6f">gdAvifWriteOptions::chroma_subsampling</a></div><div class="ttdeci">int chroma_subsampling</div><div class="ttdef"><b>Definition</b> gd.h:3361</div></div>
 <div class="ttc" id="astructgdAvifWriteOptions_html_afa097ab011b9ccdf8ef46981a021bcd1"><div class="ttname"><a href="structgdAvifWriteOptions.html#afa097ab011b9ccdf8ef46981a021bcd1">gdAvifWriteOptions::quality</a></div><div class="ttdeci">int quality</div><div class="ttdef"><b>Definition</b> gd.h:3358</div></div>
 </div><!-- fragment --> <h2 class="groupheader">Enumeration Type Documentation</h2>
-<a id="gab04a0655cd1e3bcac5e8f48c18df1a57" name="gab04a0655cd1e3bcac5e8f48c18df1a57"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gab04a0655cd1e3bcac5e8f48c18df1a57">&#9670;&#160;</a></span>anonymous enum</h2>
+<a id="ga385c44f6fb256e5716a2302a5b940388" name="ga385c44f6fb256e5716a2302a5b940388"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga385c44f6fb256e5716a2302a5b940388">&#9670;&#160;</a></span>anonymous enum</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -189,11 +189,11 @@ Data Structures</h2></td></tr>
 </div><div class="memdoc">
 <p>AVIF chroma subsampling modes for <a class="el" href="structgdAvifWriteOptions.html#ae8c507c94b7341d08216d5ea5ae00e6f">gdAvifWriteOptions::chroma_subsampling</a>. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggab04a0655cd1e3bcac5e8f48c18df1a57a0d14fe76880e3a1eb43a3b2c040b33cd" name="ggab04a0655cd1e3bcac5e8f48c18df1a57a0d14fe76880e3a1eb43a3b2c040b33cd"></a>GD_AVIF_CHROMA_SUBSAMPLING_AUTO&#160;</td><td class="fielddoc"><p>Choose subsampling automatically from the quality settings. </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga385c44f6fb256e5716a2302a5b940388a0d14fe76880e3a1eb43a3b2c040b33cd" name="gga385c44f6fb256e5716a2302a5b940388a0d14fe76880e3a1eb43a3b2c040b33cd"></a>GD_AVIF_CHROMA_SUBSAMPLING_AUTO&#160;</td><td class="fielddoc"><p>Choose subsampling automatically from the quality settings. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ggab04a0655cd1e3bcac5e8f48c18df1a57a0659b1969ffa56b597c8c3b667882cc7" name="ggab04a0655cd1e3bcac5e8f48c18df1a57a0659b1969ffa56b597c8c3b667882cc7"></a>GD_AVIF_CHROMA_SUBSAMPLING_YUV420&#160;</td><td class="fielddoc"><p>Use 4:2:0 chroma subsampling. </p>
+<tr><td class="fieldname"><a id="gga385c44f6fb256e5716a2302a5b940388a0659b1969ffa56b597c8c3b667882cc7" name="gga385c44f6fb256e5716a2302a5b940388a0659b1969ffa56b597c8c3b667882cc7"></a>GD_AVIF_CHROMA_SUBSAMPLING_YUV420&#160;</td><td class="fielddoc"><p>Use 4:2:0 chroma subsampling. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ggab04a0655cd1e3bcac5e8f48c18df1a57a8b1b56bca02c87eb039827507e359aa0" name="ggab04a0655cd1e3bcac5e8f48c18df1a57a8b1b56bca02c87eb039827507e359aa0"></a>GD_AVIF_CHROMA_SUBSAMPLING_YUV444&#160;</td><td class="fielddoc"><p>Use 4:4:4 chroma subsampling. </p>
+<tr><td class="fieldname"><a id="gga385c44f6fb256e5716a2302a5b940388a8b1b56bca02c87eb039827507e359aa0" name="gga385c44f6fb256e5716a2302a5b940388a8b1b56bca02c87eb039827507e359aa0"></a>GD_AVIF_CHROMA_SUBSAMPLING_YUV444&#160;</td><td class="fielddoc"><p>Use 4:4:4 chroma subsampling. </p>
 </td></tr>
 </table>
 

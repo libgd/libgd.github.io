@@ -99,7 +99,7 @@ Data Structures</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">WebP animation frame information.  <a href="structgdWebpFrameInfo.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgdWebpReadOptions.html">gdWebpReadOptions</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">WebP multi-image reader options.  <a href="structgdWebpReadOptions.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">WebP multi-image/animation reader options.  <a href="structgdWebpReadOptions.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgdWebpWriteOptions.html">gdWebpWriteOptions</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">WebP animation writer options.  <a href="structgdWebpWriteOptions.html#details">More...</a><br /></td></tr>
@@ -147,10 +147,10 @@ Functions</h2></td></tr>
 <tr class="memdesc:ga0b43fe8b39567e296ad38c57e065d135"><td class="mdescLeft">&#160;</td><td class="mdescRight">Opaque WebP animation writer handle.  <br /></td></tr>
 <tr class="separator:ga0b43fe8b39567e296ad38c57e065d135"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaaf841c04631b06494f8464292c3cb38e" id="r_gaaf841c04631b06494f8464292c3cb38e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gdCodecWebp.html#gaaf841c04631b06494f8464292c3cb38e">gdWebpReadOptionsInit</a> (<a class="el" href="structgdWebpReadOptions.html">gdWebpReadOptions</a> *options)</td></tr>
-<tr class="memdesc:gaaf841c04631b06494f8464292c3cb38e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize WebP multi-image read options with gd defaults.  <br /></td></tr>
+<tr class="memdesc:gaaf841c04631b06494f8464292c3cb38e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize WebP multi-image/animation read options with gd defaults.  <br /></td></tr>
 <tr class="separator:gaaf841c04631b06494f8464292c3cb38e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga69eb8d7c91fc50113691356a3cd7bbdd" id="r_ga69eb8d7c91fc50113691356a3cd7bbdd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gdCodecWebp.html#ga69eb8d7c91fc50113691356a3cd7bbdd">gdWebpWriteOptionsInit</a> (<a class="el" href="structgdWebpWriteOptions.html">gdWebpWriteOptions</a> *options)</td></tr>
-<tr class="memdesc:ga69eb8d7c91fc50113691356a3cd7bbdd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize WebP multi-image write options with gd defaults.  <br /></td></tr>
+<tr class="memdesc:ga69eb8d7c91fc50113691356a3cd7bbdd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize WebP multi-image/animation write options with gd defaults.  <br /></td></tr>
 <tr class="separator:ga69eb8d7c91fc50113691356a3cd7bbdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">Single-Image Reading</h2></td></tr>
@@ -164,7 +164,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:ga5e1eb888cc78e37c8c18d4df1229738e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a truecolor image from WebP data read through a gdIOCtx.  <br /></td></tr>
 <tr class="separator:ga5e1eb888cc78e37c8c18d4df1229738e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader">WebP Multi-Image Reading</h2></td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader">WebP Multi-Image/Animation Reading</h2></td></tr>
 <tr class="memitem:ga1207e36ce62d1ff32c70e399905b8b83" id="r_ga1207e36ce62d1ff32c70e399905b8b83"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gdCodecWebp.html#ga1207e36ce62d1ff32c70e399905b8b83">gdWebpIsAnimated</a> (FILE *fd)</td></tr>
 <tr class="memdesc:ga1207e36ce62d1ff32c70e399905b8b83"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test whether a WebP stdio file contains animation.  <br /></td></tr>
 <tr class="separator:ga1207e36ce62d1ff32c70e399905b8b83"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -196,7 +196,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:ga7cb02cebeb30b7568b3485dffac0a553"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read the next coalesced WebP animation image.  <br /></td></tr>
 <tr class="separator:ga7cb02cebeb30b7568b3485dffac0a553"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader">WebP Multi-Image Writing</h2></td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader">WebP Multi-Image/Animation Writing</h2></td></tr>
 <tr class="memitem:ga2e7312a367719d9e198556f216dc99cb" id="r_ga2e7312a367719d9e198556f216dc99cb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__gdCodecWebp.html#ga0b43fe8b39567e296ad38c57e065d135">gdWebpWritePtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gdCodecWebp.html#ga2e7312a367719d9e198556f216dc99cb">gdWebpWriteOpen</a> (FILE *outFile, const <a class="el" href="structgdWebpWriteOptions.html">gdWebpWriteOptions</a> *options)</td></tr>
 <tr class="memdesc:ga2e7312a367719d9e198556f216dc99cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Open a WebP animation writer for a stdio file.  <br /></td></tr>
 <tr class="separator:ga2e7312a367719d9e198556f216dc99cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -283,7 +283,7 @@ Functions</h2></td></tr>
 <div class="ttc" id="agroup__gdCodecWebp_html_ga5e8b0d4298036cd57f380ec49e7c4207"><div class="ttname"><a href="group__gdCodecWebp.html#ga5e8b0d4298036cd57f380ec49e7c4207">gdWebpReadClose</a></div><div class="ttdeci">void gdWebpReadClose(gdWebpReadPtr webp)</div><div class="ttdoc">Close a WebP animation reader.</div><div class="ttdef"><b>Definition</b> gd_webp.c:1149</div></div>
 <div class="ttc" id="agroup__gdCodecWebp_html_ga608342b3719520be83d82db3b78c06c1"><div class="ttname"><a href="group__gdCodecWebp.html#ga608342b3719520be83d82db3b78c06c1">gdWebpLossless</a></div><div class="ttdeci">#define gdWebpLossless</div><div class="ttdoc">Lossless WebP quality threshold.</div><div class="ttdef"><b>Definition</b> gd.h:5363</div></div>
 <div class="ttc" id="agroup__gdCodecWebp_html_ga6921465c59dd3e7877aaa80005ae95ee"><div class="ttname"><a href="group__gdCodecWebp.html#ga6921465c59dd3e7877aaa80005ae95ee">gdWebpReadPtr</a></div><div class="ttdeci">struct gdWebpRead * gdWebpReadPtr</div><div class="ttdoc">Opaque WebP animation reader handle.</div><div class="ttdef"><b>Definition</b> gd.h:2196</div></div>
-<div class="ttc" id="agroup__gdCodecWebp_html_ga69eb8d7c91fc50113691356a3cd7bbdd"><div class="ttname"><a href="group__gdCodecWebp.html#ga69eb8d7c91fc50113691356a3cd7bbdd">gdWebpWriteOptionsInit</a></div><div class="ttdeci">void gdWebpWriteOptionsInit(gdWebpWriteOptions *options)</div><div class="ttdoc">Initialize WebP multi-image write options with gd defaults.</div><div class="ttdef"><b>Definition</b> gd_webp.c:1027</div></div>
+<div class="ttc" id="agroup__gdCodecWebp_html_ga69eb8d7c91fc50113691356a3cd7bbdd"><div class="ttname"><a href="group__gdCodecWebp.html#ga69eb8d7c91fc50113691356a3cd7bbdd">gdWebpWriteOptionsInit</a></div><div class="ttdeci">void gdWebpWriteOptionsInit(gdWebpWriteOptions *options)</div><div class="ttdoc">Initialize WebP multi-image/animation write options with gd defaults.</div><div class="ttdef"><b>Definition</b> gd_webp.c:1027</div></div>
 <div class="ttc" id="agroup__gdCodecWebp_html_ga7cb02cebeb30b7568b3485dffac0a553"><div class="ttname"><a href="group__gdCodecWebp.html#ga7cb02cebeb30b7568b3485dffac0a553">gdWebpReadNextImage</a></div><div class="ttdeci">int gdWebpReadNextImage(gdWebpReadPtr webp, gdWebpFrameInfo *info, gdImagePtr *image)</div><div class="ttdoc">Read the next coalesced WebP animation image.</div><div class="ttdef"><b>Definition</b> gd_webp.c:1176</div></div>
 <div class="ttc" id="agroup__gdCodecWebp_html_gab2f52e529a037eaaf04f55052e8d23aa"><div class="ttname"><a href="group__gdCodecWebp.html#gab2f52e529a037eaaf04f55052e8d23aa">gdWebpWriteClose</a></div><div class="ttdeci">void gdWebpWriteClose(gdWebpWritePtr webp)</div><div class="ttdoc">Finish, write, and close a WebP animation writer.</div><div class="ttdef"><b>Definition</b> gd_webp.c:1223</div></div>
 <div class="ttc" id="agroup__gdCodecWebp_html_gabe0954414b6a7edb263e81426fb50ddf"><div class="ttname"><a href="group__gdCodecWebp.html#gabe0954414b6a7edb263e81426fb50ddf">gdWebpReadOpen</a></div><div class="ttdeci">gdWebpReadPtr gdWebpReadOpen(FILE *fd, const gdWebpReadOptions *options)</div><div class="ttdoc">Open a WebP animation reader from a stdio file.</div><div class="ttdef"><b>Definition</b> gd_webp.c:1122</div></div>
@@ -1099,7 +1099,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Initialize WebP multi-image read options with gd defaults. </p>
+<p>Initialize WebP multi-image/animation read options with gd defaults. </p>
 <p>The default reader mode is coalesced, so <a class="el" href="group__gdCodecWebp.html#ga7cb02cebeb30b7568b3485dffac0a553" title="Read the next coalesced WebP animation image.">gdWebpReadNextImage()</a> returns full-canvas rendered images. Set <a class="el" href="structgdWebpReadOptions.html#aecef1537433a6b869939c96fce998c3b">gdWebpReadOptions::coalesced</a> to zero before opening the reader to read raw frame rectangles with <a class="el" href="group__gdCodecWebp.html#ga3b3d7a2d2ac85a7c512f5935c900d140" title="Read the next raw WebP animation frame rectangle.">gdWebpReadNextFrame()</a>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -1305,7 +1305,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Initialize WebP multi-image write options with gd defaults. </p>
+<p>Initialize WebP multi-image/animation write options with gd defaults. </p>
 <p>The default writer infers the canvas size from the first frame, writes lossy WebP with libwebp's default animation settings, and uses loopCount 0 for infinite looping.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">

@@ -97,35 +97,36 @@ Data Structures</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">JPEG XL raw frame information.  <a href="structgdJxlFrameInfo.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgdJxlReadOptions.html">gdJxlReadOptions</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">JPEG XL multi-image reader options.  <a href="structgdJxlReadOptions.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">JPEG XL multi-image/animation reader options.  <a href="structgdJxlReadOptions.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgdJxlWriteOptions.html">gdJxlWriteOptions</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">JPEG XL multi-image/animation writer options.  <a href="structgdJxlWriteOptions.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader">JPEG XL Multi-Image Types And Constants</h2></td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader">JPEG XL Multi-Image/Animation Types And Constants</h2></td></tr>
+<tr class="memitem:gab04a0655cd1e3bcac5e8f48c18df1a57" id="r_gab04a0655cd1e3bcac5e8f48c18df1a57"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
+&#160;&#160;<a class="el" href="group__gdCodecJxl.html#ggab04a0655cd1e3bcac5e8f48c18df1a57ab3b5d0aeaacc71fc8177bdbbe7807850">gdJxlBlendReplace</a>
+, <a class="el" href="group__gdCodecJxl.html#ggab04a0655cd1e3bcac5e8f48c18df1a57a2eb86fbd895c63f4dee114732d635729">gdJxlBlendAdd</a>
+, <a class="el" href="group__gdCodecJxl.html#ggab04a0655cd1e3bcac5e8f48c18df1a57ad93a5eaaa3ccc75d22abf739d44ae38a">gdJxlBlendBlend</a>
+, <a class="el" href="group__gdCodecJxl.html#ggab04a0655cd1e3bcac5e8f48c18df1a57ab50de19df616ab73dd147c951d2b2cc2">gdJxlBlendMuladd</a>
+, <br />
+&#160;&#160;<a class="el" href="group__gdCodecJxl.html#ggab04a0655cd1e3bcac5e8f48c18df1a57adfaf80948eb7ad8f03a7702cc420b90d">gdJxlBlendMul</a>
+<br />
+ }</td></tr>
+<tr class="memdesc:gab04a0655cd1e3bcac5e8f48c18df1a57"><td class="mdescLeft">&#160;</td><td class="mdescRight">JPEG XL raw frame blend modes.  <a href="group__gdCodecJxl.html#gab04a0655cd1e3bcac5e8f48c18df1a57">More...</a><br /></td></tr>
+<tr class="separator:gab04a0655cd1e3bcac5e8f48c18df1a57"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga4411f215ab5b5ed4ac815d7bc8437b8e" id="r_ga4411f215ab5b5ed4ac815d7bc8437b8e"><td class="memItemLeft" align="right" valign="top">typedef struct gdJxlRead *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gdCodecJxl.html#ga4411f215ab5b5ed4ac815d7bc8437b8e">gdJxlReadPtr</a></td></tr>
-<tr class="memdesc:ga4411f215ab5b5ed4ac815d7bc8437b8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Opaque JPEG XL multi-image reader handle.  <br /></td></tr>
+<tr class="memdesc:ga4411f215ab5b5ed4ac815d7bc8437b8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Opaque JPEG XL multi-image/animation reader handle.  <br /></td></tr>
 <tr class="separator:ga4411f215ab5b5ed4ac815d7bc8437b8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab96625a29637af8e48e388ad65fbe151" id="r_gab96625a29637af8e48e388ad65fbe151"><td class="memItemLeft" align="right" valign="top">typedef struct gdJxlWrite *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gdCodecJxl.html#gab96625a29637af8e48e388ad65fbe151">gdJxlWritePtr</a></td></tr>
-<tr class="memdesc:gab96625a29637af8e48e388ad65fbe151"><td class="mdescLeft">&#160;</td><td class="mdescRight">Opaque JPEG XL multi-image writer handle.  <br /></td></tr>
+<tr class="memdesc:gab96625a29637af8e48e388ad65fbe151"><td class="mdescLeft">&#160;</td><td class="mdescRight">Opaque JPEG XL multi-image/animation writer handle.  <br /></td></tr>
 <tr class="separator:gab96625a29637af8e48e388ad65fbe151"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga8c55dad365a4ad0c67030a12682f7e08" id="r_ga8c55dad365a4ad0c67030a12682f7e08"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gdCodecJxl.html#ga8c55dad365a4ad0c67030a12682f7e08">gdJxlReadOptionsInit</a> (<a class="el" href="structgdJxlReadOptions.html">gdJxlReadOptions</a> *options)</td></tr>
-<tr class="memdesc:ga8c55dad365a4ad0c67030a12682f7e08"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize JPEG XL multi-image read options with gd defaults.  <br /></td></tr>
+<tr class="memdesc:ga8c55dad365a4ad0c67030a12682f7e08"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize JPEG XL multi-image/animation read options with gd defaults.  <br /></td></tr>
 <tr class="separator:ga8c55dad365a4ad0c67030a12682f7e08"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gae11784904842730f3fbbbadddfa1f9f5" id="r_gae11784904842730f3fbbbadddfa1f9f5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gdCodecJxl.html#gae11784904842730f3fbbbadddfa1f9f5">gdJxlWriteOptionsInit</a> (<a class="el" href="structgdJxlWriteOptions.html">gdJxlWriteOptions</a> *options)</td></tr>
 <tr class="memdesc:gae11784904842730f3fbbbadddfa1f9f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize JPEG XL multi-image/animation write options with gd defaults.  <br /></td></tr>
 <tr class="separator:gae11784904842730f3fbbbadddfa1f9f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5a127db0c453cae04905785fa60d3ab0" id="r_ga5a127db0c453cae04905785fa60d3ab0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gdCodecJxl.html#ga5a127db0c453cae04905785fa60d3ab0">GD_JXL_BLEND_REPLACE</a>&#160;&#160;&#160;0</td></tr>
-<tr class="separator:ga5a127db0c453cae04905785fa60d3ab0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga14637996920458bc9f30450ac6be16d5" id="r_ga14637996920458bc9f30450ac6be16d5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gdCodecJxl.html#ga14637996920458bc9f30450ac6be16d5">GD_JXL_BLEND_ADD</a>&#160;&#160;&#160;1</td></tr>
-<tr class="separator:ga14637996920458bc9f30450ac6be16d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga7c885e7ffc9e8f4b4f31affa45ae3b6f" id="r_ga7c885e7ffc9e8f4b4f31affa45ae3b6f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gdCodecJxl.html#ga7c885e7ffc9e8f4b4f31affa45ae3b6f">GD_JXL_BLEND_BLEND</a>&#160;&#160;&#160;2</td></tr>
-<tr class="separator:ga7c885e7ffc9e8f4b4f31affa45ae3b6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga63e74252d89197fed4fbaa9bed95ccc8" id="r_ga63e74252d89197fed4fbaa9bed95ccc8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gdCodecJxl.html#ga63e74252d89197fed4fbaa9bed95ccc8">GD_JXL_BLEND_MULADD</a>&#160;&#160;&#160;3</td></tr>
-<tr class="separator:ga63e74252d89197fed4fbaa9bed95ccc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga2629d4d2c3b3eaf087ffc52dfb6cec84" id="r_ga2629d4d2c3b3eaf087ffc52dfb6cec84"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gdCodecJxl.html#ga2629d4d2c3b3eaf087ffc52dfb6cec84">GD_JXL_BLEND_MUL</a>&#160;&#160;&#160;4</td></tr>
-<tr class="separator:ga2629d4d2c3b3eaf087ffc52dfb6cec84"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">JPEG XL Single-Image Reading</h2></td></tr>
 <tr class="memitem:gab5cbaa90c9a768a592b48e163a01563a" id="r_gab5cbaa90c9a768a592b48e163a01563a"><td class="memItemLeft" align="right" valign="top">gdImagePtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gdCodecJxl.html#gab5cbaa90c9a768a592b48e163a01563a">gdImageCreateFromJxl</a> (FILE *inFile)</td></tr>
@@ -158,7 +159,7 @@ Data Structures</h2></td></tr>
 <tr class="memdesc:ga2eddca9c7ed2f3c42092e940325d1867"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write an image as JPEG XL data to a gdIOCtx with encoder settings.  <br /></td></tr>
 <tr class="separator:ga2eddca9c7ed2f3c42092e940325d1867"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader">JPEG XL Multi-Image Reading</h2></td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader">JPEG XL Multi-Image/Animation Reading</h2></td></tr>
 <tr class="memitem:gaf52796af63ae3332b9864de8fcd1ae40" id="r_gaf52796af63ae3332b9864de8fcd1ae40"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__gdCodecJxl.html#ga4411f215ab5b5ed4ac815d7bc8437b8e">gdJxlReadPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gdCodecJxl.html#gaf52796af63ae3332b9864de8fcd1ae40">gdJxlReadOpen</a> (FILE *inFile, const <a class="el" href="structgdJxlReadOptions.html">gdJxlReadOptions</a> *options)</td></tr>
 <tr class="memdesc:gaf52796af63ae3332b9864de8fcd1ae40"><td class="mdescLeft">&#160;</td><td class="mdescRight">Open a JPEG XL multi-image/animation reader from a stdio file.  <br /></td></tr>
 <tr class="separator:gaf52796af63ae3332b9864de8fcd1ae40"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -181,7 +182,7 @@ Data Structures</h2></td></tr>
 <tr class="memdesc:ga3520548850945ff1c565069741285c9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Close a JPEG XL multi-image reader.  <br /></td></tr>
 <tr class="separator:ga3520548850945ff1c565069741285c9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader">JPEG XL Multi-Image Writing</h2></td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader">JPEG XL Multi-Image/Animation Writing</h2></td></tr>
 <tr class="memitem:gaabb35582234b9f75a36bbfa7f42f842a" id="r_gaabb35582234b9f75a36bbfa7f42f842a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__gdCodecJxl.html#gab96625a29637af8e48e388ad65fbe151">gdJxlWritePtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gdCodecJxl.html#gaabb35582234b9f75a36bbfa7f42f842a">gdJxlWriteOpen</a> (FILE *outFile, const <a class="el" href="structgdJxlWriteOptions.html">gdJxlWriteOptions</a> *options)</td></tr>
 <tr class="memdesc:gaabb35582234b9f75a36bbfa7f42f842a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Open a JPEG XL multi-image/animation writer for a stdio file.  <br /></td></tr>
 <tr class="separator:gaabb35582234b9f75a36bbfa7f42f842a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -245,92 +246,16 @@ Data Structures</h2></td></tr>
 <div class="ttc" id="agroup__gdCodecJxl_html_ga0c167d0df48c4929c196d9c7304a8e8c"><div class="ttname"><a href="group__gdCodecJxl.html#ga0c167d0df48c4929c196d9c7304a8e8c">gdJxlWriteOpenPtr</a></div><div class="ttdeci">gdJxlWritePtr gdJxlWriteOpenPtr(const gdJxlWriteOptions *options)</div><div class="ttdoc">Open a JPEG XL multi-image/animation writer that returns a memory buffer.</div><div class="ttdef"><b>Definition</b> gd_jxl.c:1569</div></div>
 <div class="ttc" id="agroup__gdCodecJxl_html_ga3520548850945ff1c565069741285c9b"><div class="ttname"><a href="group__gdCodecJxl.html#ga3520548850945ff1c565069741285c9b">gdJxlReadClose</a></div><div class="ttdeci">void gdJxlReadClose(gdJxlReadPtr reader)</div><div class="ttdoc">Close a JPEG XL multi-image reader.</div><div class="ttdef"><b>Definition</b> gd_jxl.c:1547</div></div>
 <div class="ttc" id="agroup__gdCodecJxl_html_ga40c878d1185c2526de4a4e36b2192567"><div class="ttname"><a href="group__gdCodecJxl.html#ga40c878d1185c2526de4a4e36b2192567">gdJxlReadOpenPtr</a></div><div class="ttdeci">gdJxlReadPtr gdJxlReadOpenPtr(int size, void *data, const gdJxlReadOptions *options)</div><div class="ttdoc">Open a JPEG XL multi-image/animation reader from a memory buffer.</div><div class="ttdef"><b>Definition</b> gd_jxl.c:1506</div></div>
-<div class="ttc" id="agroup__gdCodecJxl_html_ga4411f215ab5b5ed4ac815d7bc8437b8e"><div class="ttname"><a href="group__gdCodecJxl.html#ga4411f215ab5b5ed4ac815d7bc8437b8e">gdJxlReadPtr</a></div><div class="ttdeci">struct gdJxlRead * gdJxlReadPtr</div><div class="ttdoc">Opaque JPEG XL multi-image reader handle.</div><div class="ttdef"><b>Definition</b> gd.h:2718</div></div>
+<div class="ttc" id="agroup__gdCodecJxl_html_ga4411f215ab5b5ed4ac815d7bc8437b8e"><div class="ttname"><a href="group__gdCodecJxl.html#ga4411f215ab5b5ed4ac815d7bc8437b8e">gdJxlReadPtr</a></div><div class="ttdeci">struct gdJxlRead * gdJxlReadPtr</div><div class="ttdoc">Opaque JPEG XL multi-image/animation reader handle.</div><div class="ttdef"><b>Definition</b> gd.h:2718</div></div>
 <div class="ttc" id="agroup__gdCodecJxl_html_ga86ecb6e677eb4baafb87f3f14891a32c"><div class="ttname"><a href="group__gdCodecJxl.html#ga86ecb6e677eb4baafb87f3f14891a32c">gdJxlWritePtrFinish</a></div><div class="ttdeci">void * gdJxlWritePtrFinish(gdJxlWritePtr writer, int *size)</div><div class="ttdoc">Finish a JPEG XL multi-image/animation memory writer and return the encoded buffer.</div><div class="ttdef"><b>Definition</b> gd_jxl.c:1591</div></div>
 <div class="ttc" id="agroup__gdCodecJxl_html_gaa589551452ad72ddeab845ffd0ce7004"><div class="ttname"><a href="group__gdCodecJxl.html#gaa589551452ad72ddeab845ffd0ce7004">gdJxlWriteAddImage</a></div><div class="ttdeci">int gdJxlWriteAddImage(gdJxlWritePtr writer, gdImagePtr image, int delay_ms)</div><div class="ttdoc">Add a full-canvas image to a JPEG XL multi-image/animation writer.</div><div class="ttdef"><b>Definition</b> gd_jxl.c:1576</div></div>
-<div class="ttc" id="agroup__gdCodecJxl_html_gab96625a29637af8e48e388ad65fbe151"><div class="ttname"><a href="group__gdCodecJxl.html#gab96625a29637af8e48e388ad65fbe151">gdJxlWritePtr</a></div><div class="ttdeci">struct gdJxlWrite * gdJxlWritePtr</div><div class="ttdoc">Opaque JPEG XL multi-image writer handle.</div><div class="ttdef"><b>Definition</b> gd.h:2727</div></div>
+<div class="ttc" id="agroup__gdCodecJxl_html_gab96625a29637af8e48e388ad65fbe151"><div class="ttname"><a href="group__gdCodecJxl.html#gab96625a29637af8e48e388ad65fbe151">gdJxlWritePtr</a></div><div class="ttdeci">struct gdJxlWrite * gdJxlWritePtr</div><div class="ttdoc">Opaque JPEG XL multi-image/animation writer handle.</div><div class="ttdef"><b>Definition</b> gd.h:2727</div></div>
 <div class="ttc" id="agroup__gdCodecJxl_html_gaba8368b8799497677924101834bea884"><div class="ttname"><a href="group__gdCodecJxl.html#gaba8368b8799497677924101834bea884">gdJxlReadNextImage</a></div><div class="ttdeci">int gdJxlReadNextImage(gdJxlReadPtr reader, int *delay_ms, gdImagePtr *image)</div><div class="ttdoc">Read the next coalesced JPEG XL image.</div><div class="ttdef"><b>Definition</b> gd_jxl.c:1524</div></div>
 <div class="ttc" id="agroup__gdCodecJxl_html_gae11784904842730f3fbbbadddfa1f9f5"><div class="ttname"><a href="group__gdCodecJxl.html#gae11784904842730f3fbbbadddfa1f9f5">gdJxlWriteOptionsInit</a></div><div class="ttdeci">void gdJxlWriteOptionsInit(gdJxlWriteOptions *options)</div><div class="ttdoc">Initialize JPEG XL multi-image/animation write options with gd defaults.</div><div class="ttdef"><b>Definition</b> gd_jxl.c:1399</div></div>
 <div class="ttc" id="astructgdJxlWriteOptions_html"><div class="ttname"><a href="structgdJxlWriteOptions.html">gdJxlWriteOptions</a></div><div class="ttdoc">JPEG XL multi-image/animation writer options.</div><div class="ttdef"><b>Definition</b> gd.h:2774</div></div>
 <div class="ttc" id="astructgdJxlWriteOptions_html_a574e8d254968d08908a91780228cd661"><div class="ttname"><a href="structgdJxlWriteOptions.html#a574e8d254968d08908a91780228cd661">gdJxlWriteOptions::loopCount</a></div><div class="ttdeci">int loopCount</div><div class="ttdef"><b>Definition</b> gd.h:2781</div></div>
 <div class="ttc" id="astructgdJxlWriteOptions_html_a96a22216ae5eac91035c95ff0d520ea6"><div class="ttname"><a href="structgdJxlWriteOptions.html#a96a22216ae5eac91035c95ff0d520ea6">gdJxlWriteOptions::lossless</a></div><div class="ttdeci">int lossless</div><div class="ttdef"><b>Definition</b> gd.h:2778</div></div>
-</div><!-- fragment --> <h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="ga14637996920458bc9f30450ac6be16d5" name="ga14637996920458bc9f30450ac6be16d5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga14637996920458bc9f30450ac6be16d5">&#9670;&#160;</a></span>GD_JXL_BLEND_ADD</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define GD_JXL_BLEND_ADD&#160;&#160;&#160;1</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Add the new frame to the existing canvas. </p>
-
-</div>
-</div>
-<a id="ga7c885e7ffc9e8f4b4f31affa45ae3b6f" name="ga7c885e7ffc9e8f4b4f31affa45ae3b6f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga7c885e7ffc9e8f4b4f31affa45ae3b6f">&#9670;&#160;</a></span>GD_JXL_BLEND_BLEND</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define GD_JXL_BLEND_BLEND&#160;&#160;&#160;2</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Blend the new frame over the existing canvas. </p>
-
-</div>
-</div>
-<a id="ga2629d4d2c3b3eaf087ffc52dfb6cec84" name="ga2629d4d2c3b3eaf087ffc52dfb6cec84"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga2629d4d2c3b3eaf087ffc52dfb6cec84">&#9670;&#160;</a></span>GD_JXL_BLEND_MUL</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define GD_JXL_BLEND_MUL&#160;&#160;&#160;4</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Multiply the new frame with the existing canvas. </p>
-
-</div>
-</div>
-<a id="ga63e74252d89197fed4fbaa9bed95ccc8" name="ga63e74252d89197fed4fbaa9bed95ccc8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga63e74252d89197fed4fbaa9bed95ccc8">&#9670;&#160;</a></span>GD_JXL_BLEND_MULADD</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define GD_JXL_BLEND_MULADD&#160;&#160;&#160;3</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Multiply then add the new frame with the existing canvas. </p>
-
-</div>
-</div>
-<a id="ga5a127db0c453cae04905785fa60d3ab0" name="ga5a127db0c453cae04905785fa60d3ab0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga5a127db0c453cae04905785fa60d3ab0">&#9670;&#160;</a></span>GD_JXL_BLEND_REPLACE</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define GD_JXL_BLEND_REPLACE&#160;&#160;&#160;0</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Replace the frame rectangle with the new frame. </p>
-
-</div>
-</div>
-<h2 class="groupheader">Typedef Documentation</h2>
+</div><!-- fragment --> <h2 class="groupheader">Typedef Documentation</h2>
 <a id="ga4411f215ab5b5ed4ac815d7bc8437b8e" name="ga4411f215ab5b5ed4ac815d7bc8437b8e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga4411f215ab5b5ed4ac815d7bc8437b8e">&#9670;&#160;</a></span>gdJxlReadPtr</h2>
 
@@ -343,8 +268,8 @@ Data Structures</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Opaque JPEG XL multi-image reader handle. </p>
-<p>Handles returned by <a class="el" href="group__gdCodecJxl.html#gaf52796af63ae3332b9864de8fcd1ae40" title="Open a JPEG XL multi-image/animation reader from a stdio file.">gdJxlReadOpen()</a>, <a class="el" href="group__gdCodecJxl.html#gac4aecc1fffd5e1678951cfd055d81338" title="Open a JPEG XL multi-image/animation reader from a gdIOCtx.">gdJxlReadOpenCtx()</a>, or <a class="el" href="group__gdCodecJxl.html#ga40c878d1185c2526de4a4e36b2192567" title="Open a JPEG XL multi-image/animation reader from a memory buffer.">gdJxlReadOpenPtr()</a> must be closed with <a class="el" href="group__gdCodecJxl.html#ga3520548850945ff1c565069741285c9b" title="Close a JPEG XL multi-image reader.">gdJxlReadClose()</a>. </p>
+<p>Opaque JPEG XL multi-image/animation reader handle. </p>
+<p>Handles returned by <a class="el" href="group__gdCodecJxl.html#gaf52796af63ae3332b9864de8fcd1ae40">gdJxlReadOpen</a>, <a class="el" href="group__gdCodecJxl.html#gac4aecc1fffd5e1678951cfd055d81338">gdJxlReadOpenCtx()</a>, or <a class="el" href="group__gdCodecJxl.html#ga40c878d1185c2526de4a4e36b2192567">gdJxlReadOpenPtr</a> must be closed with <a class="el" href="group__gdCodecJxl.html#ga3520548850945ff1c565069741285c9b">gdJxlReadClose</a>. </p>
 
 </div>
 </div>
@@ -360,8 +285,37 @@ Data Structures</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Opaque JPEG XL multi-image writer handle. </p>
-<p>Handles returned by <a class="el" href="group__gdCodecJxl.html#gaabb35582234b9f75a36bbfa7f42f842a" title="Open a JPEG XL multi-image/animation writer for a stdio file.">gdJxlWriteOpen()</a> or <a class="el" href="group__gdCodecJxl.html#ga1584650cb8a6c3eddc3a32dd691ed4a6" title="Open a JPEG XL multi-image/animation writer for a gdIOCtx.">gdJxlWriteOpenCtx()</a> must be closed with <a class="el" href="group__gdCodecJxl.html#ga8f3257ee61e3fffeff88e4cffb1acebf" title="Add a full-canvas image to a JPEG XL multi-image/animation writer.">gdJxlWriteClose()</a>. Handles returned by <a class="el" href="group__gdCodecJxl.html#ga0c167d0df48c4929c196d9c7304a8e8c" title="Open a JPEG XL multi-image/animation writer that returns a memory buffer.">gdJxlWriteOpenPtr()</a> must be finished with <a class="el" href="group__gdCodecJxl.html#ga86ecb6e677eb4baafb87f3f14891a32c" title="Finish a JPEG XL multi-image/animation memory writer and return the encoded buffer.">gdJxlWritePtrFinish()</a>. </p>
+<p>Opaque JPEG XL multi-image/animation writer handle. </p>
+<p>Handles returned by <a class="el" href="group__gdCodecJxl.html#gaabb35582234b9f75a36bbfa7f42f842a">gdJxlWriteOpen</a> or <a class="el" href="group__gdCodecJxl.html#ga1584650cb8a6c3eddc3a32dd691ed4a6">gdJxlWriteOpenCtx</a> must be closed with <a class="el" href="group__gdCodecJxl.html#ga8f3257ee61e3fffeff88e4cffb1acebf">gdJxlWriteClose</a>. Handles returned by <a class="el" href="group__gdCodecJxl.html#ga0c167d0df48c4929c196d9c7304a8e8c">gdJxlWriteOpenPtr</a> must be finished with <a class="el" href="group__gdCodecJxl.html#ga86ecb6e677eb4baafb87f3f14891a32c">gdJxlWritePtrFinish</a>. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="gab04a0655cd1e3bcac5e8f48c18df1a57" name="gab04a0655cd1e3bcac5e8f48c18df1a57"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab04a0655cd1e3bcac5e8f48c18df1a57">&#9670;&#160;</a></span>anonymous enum</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">anonymous enum</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>JPEG XL raw frame blend modes. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggab04a0655cd1e3bcac5e8f48c18df1a57ab3b5d0aeaacc71fc8177bdbbe7807850" name="ggab04a0655cd1e3bcac5e8f48c18df1a57ab3b5d0aeaacc71fc8177bdbbe7807850"></a>gdJxlBlendReplace&#160;</td><td class="fielddoc"><p>Replace the frame rectangle with the new frame. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggab04a0655cd1e3bcac5e8f48c18df1a57a2eb86fbd895c63f4dee114732d635729" name="ggab04a0655cd1e3bcac5e8f48c18df1a57a2eb86fbd895c63f4dee114732d635729"></a>gdJxlBlendAdd&#160;</td><td class="fielddoc"><p>Add the new frame to the existing canvas. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggab04a0655cd1e3bcac5e8f48c18df1a57ad93a5eaaa3ccc75d22abf739d44ae38a" name="ggab04a0655cd1e3bcac5e8f48c18df1a57ad93a5eaaa3ccc75d22abf739d44ae38a"></a>gdJxlBlendBlend&#160;</td><td class="fielddoc"><p>Blend the new frame over the existing canvas. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggab04a0655cd1e3bcac5e8f48c18df1a57ab50de19df616ab73dd147c951d2b2cc2" name="ggab04a0655cd1e3bcac5e8f48c18df1a57ab50de19df616ab73dd147c951d2b2cc2"></a>gdJxlBlendMuladd&#160;</td><td class="fielddoc"><p>Multiply then add the new frame with the existing canvas. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggab04a0655cd1e3bcac5e8f48c18df1a57adfaf80948eb7ad8f03a7702cc420b90d" name="ggab04a0655cd1e3bcac5e8f48c18df1a57adfaf80948eb7ad8f03a7702cc420b90d"></a>gdJxlBlendMul&#160;</td><td class="fielddoc"><p>Multiply the new frame with the existing canvas. </p>
+</td></tr>
+</table>
 
 </div>
 </div>
@@ -852,7 +806,7 @@ Data Structures</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Read the next raw JPEG XL frame rectangle. </p>
-<p>This function is used with non-coalesced readers. When frame is not NULL and the function returns 1, *frame receives a caller-owned truecolor frame rectangle that must be destroyed with gdImageDestroy(). Passing NULL for frame advances the reader without returning the decoded image.</p>
+<p>This function is used with non-coalesced readers. When frame is not NULL and the function returns 1, *frame receives a caller-owned truecolor frame rectangle that must be destroyed with gdImageDestroy. Passing NULL for frame advances the reader without returning the decoded image.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">reader</td><td>JPEG XL reader handle opened with raw-frame mode. </td></tr>
@@ -898,7 +852,7 @@ Data Structures</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Read the next coalesced JPEG XL image. </p>
-<p>This function is used with coalesced readers. When image is not NULL and the function returns 1, *image receives a caller-owned full-canvas truecolor image that must be destroyed with gdImageDestroy(). Passing NULL for image advances the reader without returning the decoded image.</p>
+<p>This function is used with coalesced readers. When image is not NULL and the function returns 1, *image receives a caller-owned full-canvas truecolor image that must be destroyed with gdImageDestroy. Passing NULL for image advances the reader without returning the decoded image.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">reader</td><td>JPEG XL reader handle opened with coalesced mode. </td></tr>
@@ -1022,7 +976,7 @@ Data Structures</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Open a JPEG XL multi-image/animation reader from a memory buffer. </p>
-<p>The data buffer is borrowed for the duration of the call. Pass NULL for options to use gd defaults. The returned handle owns its copy of the JPEG XL data and must be closed with <a class="el" href="group__gdCodecJxl.html#ga3520548850945ff1c565069741285c9b" title="Close a JPEG XL multi-image reader.">gdJxlReadClose()</a>.</p>
+<p>The data buffer is borrowed for the duration of the call. Pass NULL for options to use gd defaults. The returned handle owns its copy of the JPEG XL data and must be closed with <a class="el" href="group__gdCodecJxl.html#ga3520548850945ff1c565069741285c9b">gdJxlReadClose</a>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">size</td><td>Size of the JPEG XL memory buffer in bytes. </td></tr>
@@ -1051,8 +1005,8 @@ Data Structures</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Initialize JPEG XL multi-image read options with gd defaults. </p>
-<p>The default reader mode is coalesced, so <a class="el" href="group__gdCodecJxl.html#gaba8368b8799497677924101834bea884" title="Read the next coalesced JPEG XL image.">gdJxlReadNextImage()</a> returns full-canvas rendered images. Set <a class="el" href="structgdJxlReadOptions.html#a59d822f0f7055f834976737e58a208eb">gdJxlReadOptions::coalesced</a> to zero before opening the reader to read raw frame rectangles with <a class="el" href="group__gdCodecJxl.html#gaadca1ba7cb69b8033651a7a9a9e5a08b" title="Read the next raw JPEG XL frame rectangle.">gdJxlReadNextFrame()</a>.</p>
+<p>Initialize JPEG XL multi-image/animation read options with gd defaults. </p>
+<p>The default reader mode is coalesced, so <a class="el" href="group__gdCodecJxl.html#gaba8368b8799497677924101834bea884">gdJxlReadNextImage</a> returns full-canvas rendered images. Set <a class="el" href="structgdJxlReadOptions.html#a59d822f0f7055f834976737e58a208eb">gdJxlReadOptions::coalesced</a> to zero before opening the reader to read raw frame rectangles with <a class="el" href="group__gdCodecJxl.html#gaadca1ba7cb69b8033651a7a9a9e5a08b">gdJxlReadNextFrame</a>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">options</td><td>Pointer to the read options structure to initialize. </td></tr>
@@ -1125,7 +1079,7 @@ Data Structures</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Add a full-canvas image to a JPEG XL multi-image/animation writer. </p>
-<p>Use this for handles returned by <a class="el" href="group__gdCodecJxl.html#gaabb35582234b9f75a36bbfa7f42f842a" title="Open a JPEG XL multi-image/animation writer for a stdio file.">gdJxlWriteOpen()</a> or <a class="el" href="group__gdCodecJxl.html#ga1584650cb8a6c3eddc3a32dd691ed4a6" title="Open a JPEG XL multi-image/animation writer for a gdIOCtx.">gdJxlWriteOpenCtx()</a>. For memory writers returned by <a class="el" href="group__gdCodecJxl.html#ga0c167d0df48c4929c196d9c7304a8e8c" title="Open a JPEG XL multi-image/animation writer that returns a memory buffer.">gdJxlWriteOpenPtr()</a>, use <a class="el" href="group__gdCodecJxl.html#ga86ecb6e677eb4baafb87f3f14891a32c" title="Finish a JPEG XL multi-image/animation memory writer and return the encoded buffer.">gdJxlWritePtrFinish()</a>.</p>
+<p>Use this for handles returned by <a class="el" href="group__gdCodecJxl.html#gaabb35582234b9f75a36bbfa7f42f842a" title="Open a JPEG XL multi-image/animation writer for a stdio file.">gdJxlWriteOpen()</a> or <a class="el" href="group__gdCodecJxl.html#ga1584650cb8a6c3eddc3a32dd691ed4a6" title="Open a JPEG XL multi-image/animation writer for a gdIOCtx.">gdJxlWriteOpenCtx()</a>. For memory writers returned by <a class="el" href="group__gdCodecJxl.html#ga0c167d0df48c4929c196d9c7304a8e8c">gdJxlWriteOpenPtr</a>, use <a class="el" href="group__gdCodecJxl.html#ga86ecb6e677eb4baafb87f3f14891a32c">gdJxlWritePtrFinish</a>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">writer</td><td>JPEG XL writer handle to finish and close, or NULL. </td></tr>
@@ -1162,7 +1116,7 @@ Data Structures</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Open a JPEG XL multi-image/animation writer for a stdio file. </p>
-<p><a class="el" href="group__gdCodecJxl.html#gaabb35582234b9f75a36bbfa7f42f842a" title="Open a JPEG XL multi-image/animation writer for a stdio file.">gdJxlWriteOpen()</a> does not close outFile. Pass NULL for options to use gd defaults. The returned handle must be closed with <a class="el" href="group__gdCodecJxl.html#ga8f3257ee61e3fffeff88e4cffb1acebf" title="Add a full-canvas image to a JPEG XL multi-image/animation writer.">gdJxlWriteClose()</a>.</p>
+<p><a class="el" href="group__gdCodecJxl.html#gaabb35582234b9f75a36bbfa7f42f842a">gdJxlWriteOpen</a> does not close outFile. Pass NULL for options to use gd defaults. The returned handle must be closed with <a class="el" href="group__gdCodecJxl.html#ga8f3257ee61e3fffeff88e4cffb1acebf">gdJxlWriteClose</a>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">outFile</td><td>Pointer to the output FILE stream. </td></tr>
@@ -1201,7 +1155,7 @@ Data Structures</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Open a JPEG XL multi-image/animation writer for a gdIOCtx. </p>
-<p>The output context is borrowed and is not closed by <a class="el" href="group__gdCodecJxl.html#ga8f3257ee61e3fffeff88e4cffb1acebf" title="Add a full-canvas image to a JPEG XL multi-image/animation writer.">gdJxlWriteClose()</a>. Pass NULL for options to use gd defaults. The returned handle must be closed with <a class="el" href="group__gdCodecJxl.html#ga8f3257ee61e3fffeff88e4cffb1acebf" title="Add a full-canvas image to a JPEG XL multi-image/animation writer.">gdJxlWriteClose()</a>.</p>
+<p>The output context is borrowed and is not closed by <a class="el" href="group__gdCodecJxl.html#ga8f3257ee61e3fffeff88e4cffb1acebf">gdJxlWriteClose</a>. Pass NULL for options to use gd defaults. The returned handle must be closed with <a class="el" href="group__gdCodecJxl.html#ga8f3257ee61e3fffeff88e4cffb1acebf">gdJxlWriteClose</a>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">outCtx</td><td>Pointer to the gdIOCtx output context. </td></tr>
@@ -1230,7 +1184,7 @@ Data Structures</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Open a JPEG XL multi-image/animation writer that returns a memory buffer. </p>
-<p>Pass NULL for options to use gd defaults. The returned handle must be finished with <a class="el" href="group__gdCodecJxl.html#ga86ecb6e677eb4baafb87f3f14891a32c" title="Finish a JPEG XL multi-image/animation memory writer and return the encoded buffer.">gdJxlWritePtrFinish()</a>.</p>
+<p>Pass NULL for options to use gd defaults. The returned handle must be finished with <a class="el" href="group__gdCodecJxl.html#ga86ecb6e677eb4baafb87f3f14891a32c">gdJxlWritePtrFinish</a>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">options</td><td>Pointer to write options, or NULL for defaults.</td></tr>
@@ -1298,7 +1252,7 @@ Data Structures</h2></td></tr>
 <p>This closes writer whether encoding succeeds or fails. The returned buffer is caller-owned and must be freed with gdFree().</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">writer</td><td>JPEG XL memory writer handle returned by <a class="el" href="group__gdCodecJxl.html#ga0c167d0df48c4929c196d9c7304a8e8c" title="Open a JPEG XL multi-image/animation writer that returns a memory buffer.">gdJxlWriteOpenPtr()</a>. </td></tr>
+    <tr><td class="paramname">writer</td><td>JPEG XL memory writer handle returned by <a class="el" href="group__gdCodecJxl.html#ga0c167d0df48c4929c196d9c7304a8e8c">gdJxlWriteOpenPtr</a>. </td></tr>
     <tr><td class="paramname">size</td><td>Pointer to an integer that receives the returned buffer size.</td></tr>
   </table>
   </dd>
