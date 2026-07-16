@@ -32,5 +32,6 @@ var searchData=
   ['gduhdrerror_29',['gdUhdrError',['../structgdUhdrError.html',1,'']]],
   ['gdwebpframeinfo_30',['gdWebpFrameInfo',['../structgdWebpFrameInfo.html',1,'']]],
   ['gdwebpinfo_31',['gdWebpInfo',['../structgdWebpInfo.html',1,'']]],
-  ['gdwebpwriteoptions_32',['gdWebpWriteOptions',['../structgdWebpWriteOptions.html',1,'']]]
+  ['gdwebpreadoptions_32',['gdWebpReadOptions',['../structgdWebpReadOptions.html',1,'']]],
+  ['gdwebpwriteoptions_33',['gdWebpWriteOptions',['../structgdWebpWriteOptions.html',1,'']]]
 ];

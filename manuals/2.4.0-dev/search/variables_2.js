@@ -5,7 +5,7 @@ var searchData=
   ['charmap_2',['charmap',['../structgdFTStringExtra.html#ac53c36eb957b8d532687e0444cb8604a',1,'gdFTStringExtra']]],
   ['chroma_3',['chroma',['../structgdHeifWriteOptions.html#ade2224e8159265bad76b201884347901',1,'gdHeifWriteOptions']]],
   ['chroma_5fsubsampling_4',['chroma_subsampling',['../structgdAvifWriteOptions.html#ae8c507c94b7341d08216d5ea5ae00e6f',1,'gdAvifWriteOptions']]],
-  ['coalesced_5',['coalesced',['../structgdJxlReadOptions.html#a59d822f0f7055f834976737e58a208eb',1,'gdJxlReadOptions']]],
+  ['coalesced_5',['coalesced',['../structgdWebpReadOptions.html#aecef1537433a6b869939c96fce998c3b',1,'gdWebpReadOptions::coalesced'],['../structgdJxlReadOptions.html#a59d822f0f7055f834976737e58a208eb',1,'gdJxlReadOptions::coalesced']]],
   ['code_6',['code',['../structgdUhdrError.html#a49f415ea1fd37263a7de59fe31c0b021',1,'gdUhdrError::code'],['../structgdTextError.html#a3dfe0c6710e7eb7a091cbcfc05c2dc8f',1,'gdTextError::code']]],
   ['codec_7',['codec',['../structgdHeifWriteOptions.html#a8bcd537040be297e6ba26775d61e28dd',1,'gdHeifWriteOptions']]],
   ['color_8',['color',['../structgdAutoCropOptions.html#a92b0b93df656cf96398b85b7442ee237',1,'gdAutoCropOptions']]],
