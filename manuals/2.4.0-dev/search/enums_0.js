@@ -19,5 +19,11 @@ var searchData=
   ['gdscalestrategy_16',['gdScaleStrategy',['../group__TransformScaleRotate.html#ga233a255d45b80f67435783e51b71eefa',1,'gd.h']]],
   ['gdtextshaping_17',['gdTextShaping',['../group__Vector2D.html#ga69d9e25d02133ff7c7f18d2955669f78',1,'gd_vector2d.h']]],
   ['gdtextstatus_18',['gdTextStatus',['../group__Vector2D.html#ga74b45c0b28b7d4ba06c0b6ca0f7ed41c',1,'gd_vector2d.h']]],
-  ['gduhdrformat_19',['gdUhdrFormat',['../group__gdCodecUhdr.html#ga8a542c0972e88dfe11278049e2d7c1c6',1,'gd.h']]]
+  ['gdtiffalphatype_19',['gdTiffAlphaType',['../group__gdCodecTiff.html#gabc2bcd1ee1418ced63d3ead2d024296d',1,'gd.h']]],
+  ['gdtiffcolorspace_20',['gdTiffColorSpace',['../group__gdCodecTiff.html#ga8e29999b9ffdb87539201d29a0328c02',1,'gd.h']]],
+  ['gdtiffcompression_21',['gdTiffCompression',['../group__gdCodecTiff.html#ga4e1773888ddcdb71a36fec0fe98cf7b9',1,'gd.h']]],
+  ['gdtiffphotometric_22',['gdTiffPhotometric',['../group__gdCodecTiff.html#ga2c8decaaf1017c9fce36d8fa04121787',1,'gd.h']]],
+  ['gdtiffplanarconfig_23',['gdTiffPlanarConfig',['../group__gdCodecTiff.html#ga10c2688cdd63b62d9eba3cbb6454f7c3',1,'gd.h']]],
+  ['gdtiffresolutionunit_24',['gdTiffResolutionUnit',['../group__gdCodecTiff.html#ga9abc886d6cac419e18be7bd94e05a638',1,'gd.h']]],
+  ['gduhdrformat_25',['gdUhdrFormat',['../group__gdCodecUhdr.html#ga8a542c0972e88dfe11278049e2d7c1c6',1,'gd.h']]]
 ];

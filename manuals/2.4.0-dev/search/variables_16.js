@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['y_0',['y',['../structgdGifFrameInfo.html#a60cf6cd9672cc8da40f28fd708bef952',1,'gdGifFrameInfo::y'],['../structgdWebpFrameInfo.html#aed432a80e66a02ca8af006b0041b6d8e',1,'gdWebpFrameInfo::y'],['../structgdPoint.html#ade4fb16e8b71fcde2657b0a40450f293',1,'gdPoint::y'],['../structgdRect.html#a91e9c68456c13fbd42bde0bc6227dfdb',1,'gdRect::y']]],
+  ['y_0',['y',['../structgdPointF.html#a30c23f644f6fd68c11fca5d7e3bf01e4',1,'gdPointF::y'],['../structgdGifFrameInfo.html#a60cf6cd9672cc8da40f28fd708bef952',1,'gdGifFrameInfo::y'],['../structgdWebpFrameInfo.html#aed432a80e66a02ca8af006b0041b6d8e',1,'gdWebpFrameInfo::y'],['../structgdPoint.html#ade4fb16e8b71fcde2657b0a40450f293',1,'gdPoint::y'],['../structgdRect.html#a91e9c68456c13fbd42bde0bc6227dfdb',1,'gdRect::y']]],
   ['y_5fadvance_1',['y_advance',['../structgdTextExtents.html#af04322b38b8cda5d754573774b38d728',1,'gdTextExtents']]],
   ['y_5fbearing_2',['y_bearing',['../structgdTextExtents.html#a099bcb922ebb068b25b2fc0af041c745',1,'gdTextExtents']]],
   ['y_5fdensity_3',['y_density',['../structgdJpegInfo.html#a680f601e06fa2ec0d4009224408638fd',1,'gdJpegInfo']]],

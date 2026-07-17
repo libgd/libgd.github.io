@@ -90,6 +90,9 @@ Collaboration diagram for TIFF:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Data Structures</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgdTiffReadOptions.html">gdTiffReadOptions</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Options for reading TIFF data with the gdTiffRead*() API.  <a href="structgdTiffReadOptions.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgdTiffInfo.html">gdTiffInfo</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">TIFF file information from the first page and container.  <a href="structgdTiffInfo.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -99,6 +102,61 @@ Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgdTiffWriteOptions.html">gdTiffWriteOptions</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Options for writing TIFF data with the gdTiffWrite*() API.  <a href="structgdTiffWriteOptions.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader">TIFF Constants</h2></td></tr>
+<tr class="memitem:ga8e29999b9ffdb87539201d29a0328c02" id="r_ga8e29999b9ffdb87539201d29a0328c02"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gdCodecTiff.html#ga8e29999b9ffdb87539201d29a0328c02">gdTiffColorSpace</a> { <a class="el" href="group__gdCodecTiff.html#gga8e29999b9ffdb87539201d29a0328c02ad8721ef053cf6beeb58b1294c56d954f">GD_TIFF_RGB</a> = 1
+, <a class="el" href="group__gdCodecTiff.html#gga8e29999b9ffdb87539201d29a0328c02ae3b17c44041d66e6b1254b0c1713dff8">GD_TIFF_RGBA</a> = 2
+, <a class="el" href="group__gdCodecTiff.html#gga8e29999b9ffdb87539201d29a0328c02a218519eff11b8d67cc57f2ae5915fa42">GD_TIFF_GRAY</a> = 3
+, <a class="el" href="group__gdCodecTiff.html#gga8e29999b9ffdb87539201d29a0328c02ade4df943bbac9f4f5f9d976c8aa7bec7">GD_TIFF_BILEVEL</a> = 4
+ }</td></tr>
+<tr class="memdesc:ga8e29999b9ffdb87539201d29a0328c02"><td class="mdescLeft">&#160;</td><td class="mdescRight">TIFF writer color spaces.  <a href="group__gdCodecTiff.html#ga8e29999b9ffdb87539201d29a0328c02">More...</a><br /></td></tr>
+<tr class="separator:ga8e29999b9ffdb87539201d29a0328c02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4e1773888ddcdb71a36fec0fe98cf7b9" id="r_ga4e1773888ddcdb71a36fec0fe98cf7b9"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gdCodecTiff.html#ga4e1773888ddcdb71a36fec0fe98cf7b9">gdTiffCompression</a> { <br />
+&#160;&#160;<a class="el" href="group__gdCodecTiff.html#gga4e1773888ddcdb71a36fec0fe98cf7b9a7c962aae9d81a820a20d782f983c2820">GD_TIFF_COMPRESSION_NONE</a> = 1
+, <a class="el" href="group__gdCodecTiff.html#gga4e1773888ddcdb71a36fec0fe98cf7b9aabacf1d32a8e7f1bd2c165b618ff793c">GD_TIFF_COMPRESSION_CCITT_RLE</a> = 2
+, <a class="el" href="group__gdCodecTiff.html#gga4e1773888ddcdb71a36fec0fe98cf7b9a87124253e4c9a9d9037a7c54cb324b35">GD_TIFF_COMPRESSION_CCITT_FAX3</a> = 3
+, <a class="el" href="group__gdCodecTiff.html#gga4e1773888ddcdb71a36fec0fe98cf7b9a95a4bc3943c14f28647b23de3147feb9">GD_TIFF_COMPRESSION_CCITT_FAX4</a> = 4
+, <br />
+&#160;&#160;<a class="el" href="group__gdCodecTiff.html#gga4e1773888ddcdb71a36fec0fe98cf7b9a651150d7a111bb17ed4932650be67906">GD_TIFF_COMPRESSION_LZW</a> = 5
+, <a class="el" href="group__gdCodecTiff.html#gga4e1773888ddcdb71a36fec0fe98cf7b9ab6a2f6c7220bda9bdfdd7f820acf7563">GD_TIFF_COMPRESSION_JPEG</a> = 7
+, <a class="el" href="group__gdCodecTiff.html#gga4e1773888ddcdb71a36fec0fe98cf7b9a94b72b82662587dd529bdb8258a8be76">GD_TIFF_COMPRESSION_ADOBE_DEFLATE</a> = 8
+, <a class="el" href="group__gdCodecTiff.html#gga4e1773888ddcdb71a36fec0fe98cf7b9ae4099159d177d03798ced8f19dc60933">GD_TIFF_COMPRESSION_DEFLATE</a> = 32946
+, <br />
+&#160;&#160;<a class="el" href="group__gdCodecTiff.html#gga4e1773888ddcdb71a36fec0fe98cf7b9ad1729320238521048dc4c7f46ef8589a">GD_TIFF_COMPRESSION_PACKBITS</a> = 32773
+<br />
+ }</td></tr>
+<tr class="memdesc:ga4e1773888ddcdb71a36fec0fe98cf7b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">TIFF compression tag values.  <a href="group__gdCodecTiff.html#ga4e1773888ddcdb71a36fec0fe98cf7b9">More...</a><br /></td></tr>
+<tr class="separator:ga4e1773888ddcdb71a36fec0fe98cf7b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2c8decaaf1017c9fce36d8fa04121787" id="r_ga2c8decaaf1017c9fce36d8fa04121787"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gdCodecTiff.html#ga2c8decaaf1017c9fce36d8fa04121787">gdTiffPhotometric</a> { <br />
+&#160;&#160;<a class="el" href="group__gdCodecTiff.html#gga2c8decaaf1017c9fce36d8fa04121787a7c4962bd5294c319d18205c1bccd1000">GD_TIFF_PHOTOMETRIC_MINISWHITE</a> = 0
+, <a class="el" href="group__gdCodecTiff.html#gga2c8decaaf1017c9fce36d8fa04121787aa4e1b33d1133bdcc3c1ef0a62e2da017">GD_TIFF_PHOTOMETRIC_MINISBLACK</a> = 1
+, <a class="el" href="group__gdCodecTiff.html#gga2c8decaaf1017c9fce36d8fa04121787a3b5f4c29e73132b56cbce0a4049fc2ad">GD_TIFF_PHOTOMETRIC_RGB</a> = 2
+, <a class="el" href="group__gdCodecTiff.html#gga2c8decaaf1017c9fce36d8fa04121787acdfe598555e9309857a3f30e12af43ea">GD_TIFF_PHOTOMETRIC_PALETTE</a> = 3
+, <br />
+&#160;&#160;<a class="el" href="group__gdCodecTiff.html#gga2c8decaaf1017c9fce36d8fa04121787ac9a7066526b354474a25e952d1d06551">GD_TIFF_PHOTOMETRIC_TRANSPARENCY_MASK</a> = 4
+, <a class="el" href="group__gdCodecTiff.html#gga2c8decaaf1017c9fce36d8fa04121787a4063d56552c18704d2640a26a6113c4e">GD_TIFF_PHOTOMETRIC_SEPARATED</a> = 5
+, <a class="el" href="group__gdCodecTiff.html#gga2c8decaaf1017c9fce36d8fa04121787a00107b3fe41e73250d05419342319ffd">GD_TIFF_PHOTOMETRIC_YCBCR</a> = 6
+, <a class="el" href="group__gdCodecTiff.html#gga2c8decaaf1017c9fce36d8fa04121787a31f0ba5c14bfe7d00f95ad309efb0f04">GD_TIFF_PHOTOMETRIC_CIELAB</a> = 8
+<br />
+ }</td></tr>
+<tr class="memdesc:ga2c8decaaf1017c9fce36d8fa04121787"><td class="mdescLeft">&#160;</td><td class="mdescRight">TIFF photometric interpretation tag values.  <a href="group__gdCodecTiff.html#ga2c8decaaf1017c9fce36d8fa04121787">More...</a><br /></td></tr>
+<tr class="separator:ga2c8decaaf1017c9fce36d8fa04121787"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga10c2688cdd63b62d9eba3cbb6454f7c3" id="r_ga10c2688cdd63b62d9eba3cbb6454f7c3"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gdCodecTiff.html#ga10c2688cdd63b62d9eba3cbb6454f7c3">gdTiffPlanarConfig</a> { <a class="el" href="group__gdCodecTiff.html#gga10c2688cdd63b62d9eba3cbb6454f7c3a2163278a93e21f13556396b8d5402e38">GD_TIFF_PLANARCONFIG_CONTIG</a> = 1
+, <a class="el" href="group__gdCodecTiff.html#gga10c2688cdd63b62d9eba3cbb6454f7c3ada2b7b96b7220264106c90d0b22156ad">GD_TIFF_PLANARCONFIG_SEPARATE</a> = 2
+ }</td></tr>
+<tr class="memdesc:ga10c2688cdd63b62d9eba3cbb6454f7c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">TIFF planar configuration tag values.  <a href="group__gdCodecTiff.html#ga10c2688cdd63b62d9eba3cbb6454f7c3">More...</a><br /></td></tr>
+<tr class="separator:ga10c2688cdd63b62d9eba3cbb6454f7c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9abc886d6cac419e18be7bd94e05a638" id="r_ga9abc886d6cac419e18be7bd94e05a638"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gdCodecTiff.html#ga9abc886d6cac419e18be7bd94e05a638">gdTiffResolutionUnit</a> { <a class="el" href="group__gdCodecTiff.html#gga9abc886d6cac419e18be7bd94e05a638ab72b9f50932f70d82c0d0186f9424991">GD_TIFF_RESUNIT_NONE</a> = 1
+, <a class="el" href="group__gdCodecTiff.html#gga9abc886d6cac419e18be7bd94e05a638aacb0e08db80b1465ef7d08a3e3992de5">GD_TIFF_RESUNIT_INCH</a> = 2
+, <a class="el" href="group__gdCodecTiff.html#gga9abc886d6cac419e18be7bd94e05a638af42869a775f77083256494d391e67cf1">GD_TIFF_RESUNIT_CENTIMETER</a> = 3
+ }</td></tr>
+<tr class="memdesc:ga9abc886d6cac419e18be7bd94e05a638"><td class="mdescLeft">&#160;</td><td class="mdescRight">TIFF resolution unit tag values.  <a href="group__gdCodecTiff.html#ga9abc886d6cac419e18be7bd94e05a638">More...</a><br /></td></tr>
+<tr class="separator:ga9abc886d6cac419e18be7bd94e05a638"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabc2bcd1ee1418ced63d3ead2d024296d" id="r_gabc2bcd1ee1418ced63d3ead2d024296d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gdCodecTiff.html#gabc2bcd1ee1418ced63d3ead2d024296d">gdTiffAlphaType</a> { <a class="el" href="group__gdCodecTiff.html#ggabc2bcd1ee1418ced63d3ead2d024296da1c33741bec36f01c2c19b4ef0bc6c648">GD_TIFF_ALPHA_UNASSOCIATED</a> = 1
+, <a class="el" href="group__gdCodecTiff.html#ggabc2bcd1ee1418ced63d3ead2d024296da981f95e6ca0cd6463ddc79ea2795ddb7">GD_TIFF_ALPHA_ASSOCIATED</a> = 2
+ }</td></tr>
+<tr class="memdesc:gabc2bcd1ee1418ced63d3ead2d024296d"><td class="mdescLeft">&#160;</td><td class="mdescRight">TIFF alpha sample types.  <a href="group__gdCodecTiff.html#gabc2bcd1ee1418ced63d3ead2d024296d">More...</a><br /></td></tr>
+<tr class="separator:gabc2bcd1ee1418ced63d3ead2d024296d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">TIFF Reading Types</h2></td></tr>
 <tr class="memitem:ga689957796d91d08eea7eb092caee7add" id="r_ga689957796d91d08eea7eb092caee7add"><td class="memItemLeft" align="right" valign="top">typedef struct gdTiffReadStruct *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gdCodecTiff.html#ga689957796d91d08eea7eb092caee7add">gdTiffReadPtr</a></td></tr>
@@ -131,15 +189,18 @@ Data Structures</h2></td></tr>
 <tr class="memitem:ga761d5cc9c4f1fdfd2965809734c44911" id="r_ga761d5cc9c4f1fdfd2965809734c44911"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gdCodecTiff.html#ga761d5cc9c4f1fdfd2965809734c44911">gdTiffIsMultiPagePtr</a> (int size, void *data)</td></tr>
 <tr class="memdesc:ga761d5cc9c4f1fdfd2965809734c44911"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test whether a TIFF memory buffer has more than one page.  <br /></td></tr>
 <tr class="separator:ga761d5cc9c4f1fdfd2965809734c44911"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gace1cc826074b39a7500a8ceaacb92532" id="r_gace1cc826074b39a7500a8ceaacb92532"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__gdCodecTiff.html#ga689957796d91d08eea7eb092caee7add">gdTiffReadPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gdCodecTiff.html#gace1cc826074b39a7500a8ceaacb92532">gdTiffReadOpen</a> (FILE *fd)</td></tr>
-<tr class="memdesc:gace1cc826074b39a7500a8ceaacb92532"><td class="mdescLeft">&#160;</td><td class="mdescRight">Open a TIFF multi-page reader from a stdio file.  <br /></td></tr>
-<tr class="separator:gace1cc826074b39a7500a8ceaacb92532"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac15b86a3a30fcae153e83cee19b5e780" id="r_gac15b86a3a30fcae153e83cee19b5e780"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__gdCodecTiff.html#ga689957796d91d08eea7eb092caee7add">gdTiffReadPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gdCodecTiff.html#gac15b86a3a30fcae153e83cee19b5e780">gdTiffReadOpenCtx</a> (gdIOCtxPtr in)</td></tr>
-<tr class="memdesc:gac15b86a3a30fcae153e83cee19b5e780"><td class="mdescLeft">&#160;</td><td class="mdescRight">Open a TIFF multi-page reader from a gdIOCtx.  <br /></td></tr>
-<tr class="separator:gac15b86a3a30fcae153e83cee19b5e780"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5290b8458ef3d5c806acba20e05ebe6f" id="r_ga5290b8458ef3d5c806acba20e05ebe6f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__gdCodecTiff.html#ga689957796d91d08eea7eb092caee7add">gdTiffReadPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gdCodecTiff.html#ga5290b8458ef3d5c806acba20e05ebe6f">gdTiffReadOpenPtr</a> (int size, void *data)</td></tr>
-<tr class="memdesc:ga5290b8458ef3d5c806acba20e05ebe6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Open a TIFF multi-page reader from a memory buffer.  <br /></td></tr>
-<tr class="separator:ga5290b8458ef3d5c806acba20e05ebe6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga152c8f3923a6befe38577758dec71abf" id="r_ga152c8f3923a6befe38577758dec71abf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gdCodecTiff.html#ga152c8f3923a6befe38577758dec71abf">gdTiffReadOptionsInit</a> (<a class="el" href="structgdTiffReadOptions.html">gdTiffReadOptions</a> *options)</td></tr>
+<tr class="memdesc:ga152c8f3923a6befe38577758dec71abf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize TIFF read options with defaults.  <br /></td></tr>
+<tr class="separator:ga152c8f3923a6befe38577758dec71abf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad824b00c38dffd0d6e3a209987b21779" id="r_gad824b00c38dffd0d6e3a209987b21779"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__gdCodecTiff.html#ga689957796d91d08eea7eb092caee7add">gdTiffReadPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gdCodecTiff.html#gad824b00c38dffd0d6e3a209987b21779">gdTiffReadOpen</a> (FILE *fd, const <a class="el" href="structgdTiffReadOptions.html">gdTiffReadOptions</a> *options)</td></tr>
+<tr class="memdesc:gad824b00c38dffd0d6e3a209987b21779"><td class="mdescLeft">&#160;</td><td class="mdescRight">Open a TIFF multi-page reader from a stdio file.  <br /></td></tr>
+<tr class="separator:gad824b00c38dffd0d6e3a209987b21779"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga904ec83fadc540db0aa805dba1faf7e0" id="r_ga904ec83fadc540db0aa805dba1faf7e0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__gdCodecTiff.html#ga689957796d91d08eea7eb092caee7add">gdTiffReadPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gdCodecTiff.html#ga904ec83fadc540db0aa805dba1faf7e0">gdTiffReadOpenCtx</a> (gdIOCtxPtr in, const <a class="el" href="structgdTiffReadOptions.html">gdTiffReadOptions</a> *options)</td></tr>
+<tr class="memdesc:ga904ec83fadc540db0aa805dba1faf7e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Open a TIFF multi-page reader from a gdIOCtx.  <br /></td></tr>
+<tr class="separator:ga904ec83fadc540db0aa805dba1faf7e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga19bcb478518a4b8f7ffa2ef8b185aee3" id="r_ga19bcb478518a4b8f7ffa2ef8b185aee3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__gdCodecTiff.html#ga689957796d91d08eea7eb092caee7add">gdTiffReadPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gdCodecTiff.html#ga19bcb478518a4b8f7ffa2ef8b185aee3">gdTiffReadOpenPtr</a> (int size, void *data, const <a class="el" href="structgdTiffReadOptions.html">gdTiffReadOptions</a> *options)</td></tr>
+<tr class="memdesc:ga19bcb478518a4b8f7ffa2ef8b185aee3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Open a TIFF multi-page reader from a memory buffer.  <br /></td></tr>
+<tr class="separator:ga19bcb478518a4b8f7ffa2ef8b185aee3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gafc12a9bfcd64c61a2d998aa55b697e42" id="r_gafc12a9bfcd64c61a2d998aa55b697e42"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gdCodecTiff.html#gafc12a9bfcd64c61a2d998aa55b697e42">gdTiffReadClose</a> (<a class="el" href="group__gdCodecTiff.html#ga689957796d91d08eea7eb092caee7add">gdTiffReadPtr</a> tiff)</td></tr>
 <tr class="memdesc:gafc12a9bfcd64c61a2d998aa55b697e42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Close a TIFF multi-page reader.  <br /></td></tr>
 <tr class="separator:gafc12a9bfcd64c61a2d998aa55b697e42"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -151,6 +212,9 @@ Data Structures</h2></td></tr>
 <tr class="separator:ga6f6205329b44f34f6dbd8f0dcac7f0bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">TIFF Multi-Page Writing</h2></td></tr>
+<tr class="memitem:ga03bbc4e3f13e7c77d8cd0594c8872e6f" id="r_ga03bbc4e3f13e7c77d8cd0594c8872e6f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gdCodecTiff.html#ga03bbc4e3f13e7c77d8cd0594c8872e6f">gdTiffWriteOptionsInit</a> (<a class="el" href="structgdTiffWriteOptions.html">gdTiffWriteOptions</a> *options)</td></tr>
+<tr class="memdesc:ga03bbc4e3f13e7c77d8cd0594c8872e6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize TIFF write options with defaults.  <br /></td></tr>
+<tr class="separator:ga03bbc4e3f13e7c77d8cd0594c8872e6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga0eb7a2892ad7c52e939110c48a8ed94e" id="r_ga0eb7a2892ad7c52e939110c48a8ed94e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__gdCodecTiff.html#ga852f6882fe45d3a8fee12540009e57ee">gdTiffWritePtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gdCodecTiff.html#ga0eb7a2892ad7c52e939110c48a8ed94e">gdTiffWriteOpen</a> (FILE *outFile, const <a class="el" href="structgdTiffWriteOptions.html">gdTiffWriteOptions</a> *options)</td></tr>
 <tr class="memdesc:ga0eb7a2892ad7c52e939110c48a8ed94e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Open a TIFF writer for a stdio file.  <br /></td></tr>
 <tr class="separator:ga0eb7a2892ad7c52e939110c48a8ed94e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -180,64 +244,6 @@ Data Structures</h2></td></tr>
 <tr class="memitem:ga2edf1788866001e4638899967b5b882c" id="r_ga2edf1788866001e4638899967b5b882c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gdCodecTiff.html#ga2edf1788866001e4638899967b5b882c">gdImageTiffCtx</a> (gdImagePtr image, gdIOCtxPtr out)</td></tr>
 <tr class="memdesc:ga2edf1788866001e4638899967b5b882c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write an image as TIFF data to a gdIOCtx.  <br /></td></tr>
 <tr class="separator:ga2edf1788866001e4638899967b5b882c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader">TIFF Constants</h2></td></tr>
-<tr class="memitem:gac9c1bebdfc7b12d0e5dee0170e34c3dc" id="r_gac9c1bebdfc7b12d0e5dee0170e34c3dc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gdCodecTiff.html#gac9c1bebdfc7b12d0e5dee0170e34c3dc">GD_TIFF_RGB</a>&#160;&#160;&#160;1</td></tr>
-<tr class="separator:gac9c1bebdfc7b12d0e5dee0170e34c3dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaff632030c3beddc872622814e4f3fb59" id="r_gaff632030c3beddc872622814e4f3fb59"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gdCodecTiff.html#gaff632030c3beddc872622814e4f3fb59">GD_TIFF_RGBA</a>&#160;&#160;&#160;2</td></tr>
-<tr class="separator:gaff632030c3beddc872622814e4f3fb59"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga7388217817b014cc5e8dc3b065498f93" id="r_ga7388217817b014cc5e8dc3b065498f93"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gdCodecTiff.html#ga7388217817b014cc5e8dc3b065498f93">GD_TIFF_GRAY</a>&#160;&#160;&#160;3</td></tr>
-<tr class="separator:ga7388217817b014cc5e8dc3b065498f93"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga471559abd36d34029abf0aa0300b4b43" id="r_ga471559abd36d34029abf0aa0300b4b43"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gdCodecTiff.html#ga471559abd36d34029abf0aa0300b4b43">GD_TIFF_BILEVEL</a>&#160;&#160;&#160;4</td></tr>
-<tr class="separator:ga471559abd36d34029abf0aa0300b4b43"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab39c09255661df98042d06a1a1bc3ac7" id="r_gab39c09255661df98042d06a1a1bc3ac7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gdCodecTiff.html#gab39c09255661df98042d06a1a1bc3ac7">GD_TIFF_COMPRESSION_NONE</a>&#160;&#160;&#160;1</td></tr>
-<tr class="separator:gab39c09255661df98042d06a1a1bc3ac7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5c8f8a64cb49606ef7d60cc35f31870c" id="r_ga5c8f8a64cb49606ef7d60cc35f31870c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gdCodecTiff.html#ga5c8f8a64cb49606ef7d60cc35f31870c">GD_TIFF_COMPRESSION_CCITT_RLE</a>&#160;&#160;&#160;2</td></tr>
-<tr class="separator:ga5c8f8a64cb49606ef7d60cc35f31870c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4584786c8376e0849ff8c83080405ff0" id="r_ga4584786c8376e0849ff8c83080405ff0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gdCodecTiff.html#ga4584786c8376e0849ff8c83080405ff0">GD_TIFF_COMPRESSION_CCITT_FAX3</a>&#160;&#160;&#160;3</td></tr>
-<tr class="separator:ga4584786c8376e0849ff8c83080405ff0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0a55b2c1d90ad774ae067c1a505f74ed" id="r_ga0a55b2c1d90ad774ae067c1a505f74ed"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gdCodecTiff.html#ga0a55b2c1d90ad774ae067c1a505f74ed">GD_TIFF_COMPRESSION_CCITT_FAX4</a>&#160;&#160;&#160;4</td></tr>
-<tr class="separator:ga0a55b2c1d90ad774ae067c1a505f74ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa250d9da74837cae8e633ab12000a373" id="r_gaa250d9da74837cae8e633ab12000a373"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gdCodecTiff.html#gaa250d9da74837cae8e633ab12000a373">GD_TIFF_COMPRESSION_LZW</a>&#160;&#160;&#160;5</td></tr>
-<tr class="separator:gaa250d9da74837cae8e633ab12000a373"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4dea9fa29a694359acedbdbd67d1cc7f" id="r_ga4dea9fa29a694359acedbdbd67d1cc7f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gdCodecTiff.html#ga4dea9fa29a694359acedbdbd67d1cc7f">GD_TIFF_COMPRESSION_JPEG</a>&#160;&#160;&#160;7</td></tr>
-<tr class="separator:ga4dea9fa29a694359acedbdbd67d1cc7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac624948e6e4fb6ad7bcdd081cf479db2" id="r_gac624948e6e4fb6ad7bcdd081cf479db2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gdCodecTiff.html#gac624948e6e4fb6ad7bcdd081cf479db2">GD_TIFF_COMPRESSION_ADOBE_DEFLATE</a>&#160;&#160;&#160;8</td></tr>
-<tr class="separator:gac624948e6e4fb6ad7bcdd081cf479db2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga23a0bed67787c3bb6c3b1e5d0d12b36f" id="r_ga23a0bed67787c3bb6c3b1e5d0d12b36f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gdCodecTiff.html#ga23a0bed67787c3bb6c3b1e5d0d12b36f">GD_TIFF_COMPRESSION_DEFLATE</a>&#160;&#160;&#160;32946</td></tr>
-<tr class="separator:ga23a0bed67787c3bb6c3b1e5d0d12b36f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa4467c4b3a24dcc284f9bd0e56c73dc8" id="r_gaa4467c4b3a24dcc284f9bd0e56c73dc8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gdCodecTiff.html#gaa4467c4b3a24dcc284f9bd0e56c73dc8">GD_TIFF_COMPRESSION_PACKBITS</a>&#160;&#160;&#160;32773</td></tr>
-<tr class="separator:gaa4467c4b3a24dcc284f9bd0e56c73dc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf845b728e49030da0ba5191e9f7f59ba" id="r_gaf845b728e49030da0ba5191e9f7f59ba"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gdCodecTiff.html#gaf845b728e49030da0ba5191e9f7f59ba">GD_TIFF_PHOTOMETRIC_MINISWHITE</a>&#160;&#160;&#160;0</td></tr>
-<tr class="separator:gaf845b728e49030da0ba5191e9f7f59ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gafbadf545ec64d5b8bcca14c486c5c518" id="r_gafbadf545ec64d5b8bcca14c486c5c518"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gdCodecTiff.html#gafbadf545ec64d5b8bcca14c486c5c518">GD_TIFF_PHOTOMETRIC_MINISBLACK</a>&#160;&#160;&#160;1</td></tr>
-<tr class="separator:gafbadf545ec64d5b8bcca14c486c5c518"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac54ec81bbc86145e9275c9fda4bbf722" id="r_gac54ec81bbc86145e9275c9fda4bbf722"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gdCodecTiff.html#gac54ec81bbc86145e9275c9fda4bbf722">GD_TIFF_PHOTOMETRIC_RGB</a>&#160;&#160;&#160;2</td></tr>
-<tr class="separator:gac54ec81bbc86145e9275c9fda4bbf722"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1c328181e1294584299ad2badc83d050" id="r_ga1c328181e1294584299ad2badc83d050"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gdCodecTiff.html#ga1c328181e1294584299ad2badc83d050">GD_TIFF_PHOTOMETRIC_PALETTE</a>&#160;&#160;&#160;3</td></tr>
-<tr class="separator:ga1c328181e1294584299ad2badc83d050"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga80886deeeb829027dba3d439ec3e9155" id="r_ga80886deeeb829027dba3d439ec3e9155"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gdCodecTiff.html#ga80886deeeb829027dba3d439ec3e9155">GD_TIFF_PHOTOMETRIC_TRANSPARENCY_MASK</a>&#160;&#160;&#160;4</td></tr>
-<tr class="separator:ga80886deeeb829027dba3d439ec3e9155"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gada3a8db6a9125b16be228ad5389b5e53" id="r_gada3a8db6a9125b16be228ad5389b5e53"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gdCodecTiff.html#gada3a8db6a9125b16be228ad5389b5e53">GD_TIFF_PHOTOMETRIC_SEPARATED</a>&#160;&#160;&#160;5</td></tr>
-<tr class="separator:gada3a8db6a9125b16be228ad5389b5e53"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga196bd6a9141b976742f491481142066f" id="r_ga196bd6a9141b976742f491481142066f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gdCodecTiff.html#ga196bd6a9141b976742f491481142066f">GD_TIFF_PHOTOMETRIC_YCBCR</a>&#160;&#160;&#160;6</td></tr>
-<tr class="separator:ga196bd6a9141b976742f491481142066f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga492473140983c21b38510748b5246468" id="r_ga492473140983c21b38510748b5246468"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gdCodecTiff.html#ga492473140983c21b38510748b5246468">GD_TIFF_PHOTOMETRIC_CIELAB</a>&#160;&#160;&#160;8</td></tr>
-<tr class="separator:ga492473140983c21b38510748b5246468"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gafbe30990ac8340311d78949a7db1519f" id="r_gafbe30990ac8340311d78949a7db1519f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gdCodecTiff.html#gafbe30990ac8340311d78949a7db1519f">GD_TIFF_PLANARCONFIG_CONTIG</a>&#160;&#160;&#160;1</td></tr>
-<tr class="separator:gafbe30990ac8340311d78949a7db1519f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gace7e0bf3e3aeaf3f472dd2e77200dda9" id="r_gace7e0bf3e3aeaf3f472dd2e77200dda9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gdCodecTiff.html#gace7e0bf3e3aeaf3f472dd2e77200dda9">GD_TIFF_PLANARCONFIG_SEPARATE</a>&#160;&#160;&#160;2</td></tr>
-<tr class="separator:gace7e0bf3e3aeaf3f472dd2e77200dda9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa7d58cdad980adc5828bee97afbc3c3d" id="r_gaa7d58cdad980adc5828bee97afbc3c3d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gdCodecTiff.html#gaa7d58cdad980adc5828bee97afbc3c3d">GD_TIFF_RESUNIT_NONE</a>&#160;&#160;&#160;1</td></tr>
-<tr class="separator:gaa7d58cdad980adc5828bee97afbc3c3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8ff2a0b249b64b18f6a1a85a27f91b82" id="r_ga8ff2a0b249b64b18f6a1a85a27f91b82"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gdCodecTiff.html#ga8ff2a0b249b64b18f6a1a85a27f91b82">GD_TIFF_RESUNIT_INCH</a>&#160;&#160;&#160;2</td></tr>
-<tr class="separator:ga8ff2a0b249b64b18f6a1a85a27f91b82"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga2be9f5d5182f059c2126c19c96e42444" id="r_ga2be9f5d5182f059c2126c19c96e42444"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gdCodecTiff.html#ga2be9f5d5182f059c2126c19c96e42444">GD_TIFF_RESUNIT_CENTIMETER</a>&#160;&#160;&#160;3</td></tr>
-<tr class="separator:ga2be9f5d5182f059c2126c19c96e42444"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4dc78b32479f94dd8146300513629c79" id="r_ga4dc78b32479f94dd8146300513629c79"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gdCodecTiff.html#ga4dc78b32479f94dd8146300513629c79">GD_TIFF_ALPHA_UNASSOCIATED</a>&#160;&#160;&#160;1</td></tr>
-<tr class="separator:ga4dc78b32479f94dd8146300513629c79"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga65487aa792abf8a9bd984d666786e44b" id="r_ga65487aa792abf8a9bd984d666786e44b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gdCodecTiff.html#ga65487aa792abf8a9bd984d666786e44b">GD_TIFF_ALPHA_ASSOCIATED</a>&#160;&#160;&#160;2</td></tr>
-<tr class="separator:ga65487aa792abf8a9bd984d666786e44b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>TIFF image reading, writing, and multi-page support. </p>
@@ -254,7 +260,7 @@ Data Structures</h2></td></tr>
 <div class="line">  exit(1);</div>
 <div class="line">}</div>
 <div class="line"> </div>
-<div class="line">reader = <a class="code hl_function" href="group__gdCodecTiff.html#gace1cc826074b39a7500a8ceaacb92532">gdTiffReadOpen</a>(in);</div>
+<div class="line">reader = <a class="code hl_function" href="group__gdCodecTiff.html#gad824b00c38dffd0d6e3a209987b21779">gdTiffReadOpen</a>(in, NULL);</div>
 <div class="line">fclose(in);</div>
 <div class="line"><span class="keywordflow">if</span> (reader == NULL) {</div>
 <div class="line">  fprintf(stderr, <span class="stringliteral">&quot;cannot read TIFF\n&quot;</span>);</div>
@@ -272,441 +278,20 @@ Data Structures</h2></td></tr>
 <div class="line">}</div>
 <div class="line"> </div>
 <div class="line"><a class="code hl_function" href="group__gdCodecTiff.html#gafc12a9bfcd64c61a2d998aa55b697e42">gdTiffReadClose</a>(reader);</div>
-<div class="ttc" id="agroup__gdCodecTiff_html_ga13711a136fea91da21e85e85e290e18c"><div class="ttname"><a href="group__gdCodecTiff.html#ga13711a136fea91da21e85e85e290e18c">gdTiffReadGetInfo</a></div><div class="ttdeci">int gdTiffReadGetInfo(gdTiffReadPtr tiff, gdTiffInfo *info)</div><div class="ttdoc">Get TIFF file information from a reader.</div><div class="ttdef"><b>Definition</b> gd_tiff.c:2315</div></div>
-<div class="ttc" id="agroup__gdCodecTiff_html_ga689957796d91d08eea7eb092caee7add"><div class="ttname"><a href="group__gdCodecTiff.html#ga689957796d91d08eea7eb092caee7add">gdTiffReadPtr</a></div><div class="ttdeci">struct gdTiffReadStruct * gdTiffReadPtr</div><div class="ttdoc">Opaque TIFF multi-page reader handle.</div><div class="ttdef"><b>Definition</b> gd.h:3573</div></div>
-<div class="ttc" id="agroup__gdCodecTiff_html_ga6f6205329b44f34f6dbd8f0dcac7f0bc"><div class="ttname"><a href="group__gdCodecTiff.html#ga6f6205329b44f34f6dbd8f0dcac7f0bc">gdTiffReadNextImage</a></div><div class="ttdeci">int gdTiffReadNextImage(gdTiffReadPtr tiff, gdTiffPageInfo *info, gdImagePtr *image)</div><div class="ttdoc">Read the next TIFF page image.</div><div class="ttdef"><b>Definition</b> gd_tiff.c:2324</div></div>
-<div class="ttc" id="agroup__gdCodecTiff_html_gace1cc826074b39a7500a8ceaacb92532"><div class="ttname"><a href="group__gdCodecTiff.html#gace1cc826074b39a7500a8ceaacb92532">gdTiffReadOpen</a></div><div class="ttdeci">gdTiffReadPtr gdTiffReadOpen(FILE *fd)</div><div class="ttdoc">Open a TIFF multi-page reader from a stdio file.</div><div class="ttdef"><b>Definition</b> gd_tiff.c:2287</div></div>
-<div class="ttc" id="agroup__gdCodecTiff_html_gafc12a9bfcd64c61a2d998aa55b697e42"><div class="ttname"><a href="group__gdCodecTiff.html#gafc12a9bfcd64c61a2d998aa55b697e42">gdTiffReadClose</a></div><div class="ttdeci">void gdTiffReadClose(gdTiffReadPtr tiff)</div><div class="ttdoc">Close a TIFF multi-page reader.</div><div class="ttdef"><b>Definition</b> gd_tiff.c:2309</div></div>
-<div class="ttc" id="astructgdTiffInfo_html"><div class="ttname"><a href="structgdTiffInfo.html">gdTiffInfo</a></div><div class="ttdoc">TIFF file information from the first page and container.</div><div class="ttdef"><b>Definition</b> gd.h:3578</div></div>
-<div class="ttc" id="astructgdTiffInfo_html_a29dab1b546fccac9fd1d3a9044cdad3f"><div class="ttname"><a href="structgdTiffInfo.html#a29dab1b546fccac9fd1d3a9044cdad3f">gdTiffInfo::pageCount</a></div><div class="ttdeci">int pageCount</div><div class="ttdef"><b>Definition</b> gd.h:3581</div></div>
-<div class="ttc" id="astructgdTiffInfo_html_a43341597ce4600665b54ccbec433841d"><div class="ttname"><a href="structgdTiffInfo.html#a43341597ce4600665b54ccbec433841d">gdTiffInfo::height</a></div><div class="ttdeci">int height</div><div class="ttdef"><b>Definition</b> gd.h:3580</div></div>
-<div class="ttc" id="astructgdTiffInfo_html_aa949519195f0fd932489270419eefe34"><div class="ttname"><a href="structgdTiffInfo.html#aa949519195f0fd932489270419eefe34">gdTiffInfo::width</a></div><div class="ttdeci">int width</div><div class="ttdef"><b>Definition</b> gd.h:3579</div></div>
-<div class="ttc" id="astructgdTiffPageInfo_html"><div class="ttname"><a href="structgdTiffPageInfo.html">gdTiffPageInfo</a></div><div class="ttdoc">TIFF page information returned while reading pages.</div><div class="ttdef"><b>Definition</b> gd.h:3594</div></div>
-<div class="ttc" id="astructgdTiffPageInfo_html_a1744611d17368cf387a43e38b3e144e5"><div class="ttname"><a href="structgdTiffPageInfo.html#a1744611d17368cf387a43e38b3e144e5">gdTiffPageInfo::pageIndex</a></div><div class="ttdeci">int pageIndex</div><div class="ttdef"><b>Definition</b> gd.h:3595</div></div>
-<div class="ttc" id="astructgdTiffPageInfo_html_a23f1903a0e21ec0e53b7818a9b9a99cd"><div class="ttname"><a href="structgdTiffPageInfo.html#a23f1903a0e21ec0e53b7818a9b9a99cd">gdTiffPageInfo::width</a></div><div class="ttdeci">int width</div><div class="ttdef"><b>Definition</b> gd.h:3596</div></div>
-<div class="ttc" id="astructgdTiffPageInfo_html_aa0d8f028fb5e4775cde64d8d84787c37"><div class="ttname"><a href="structgdTiffPageInfo.html#aa0d8f028fb5e4775cde64d8d84787c37">gdTiffPageInfo::height</a></div><div class="ttdeci">int height</div><div class="ttdef"><b>Definition</b> gd.h:3597</div></div>
-</div><!-- fragment --> <h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="ga65487aa792abf8a9bd984d666786e44b" name="ga65487aa792abf8a9bd984d666786e44b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga65487aa792abf8a9bd984d666786e44b">&#9670;&#160;</a></span>GD_TIFF_ALPHA_ASSOCIATED</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define GD_TIFF_ALPHA_ASSOCIATED&#160;&#160;&#160;2</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>TIFF alpha samples are premultiplied into color samples. </p>
-
-</div>
-</div>
-<a id="ga4dc78b32479f94dd8146300513629c79" name="ga4dc78b32479f94dd8146300513629c79"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga4dc78b32479f94dd8146300513629c79">&#9670;&#160;</a></span>GD_TIFF_ALPHA_UNASSOCIATED</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define GD_TIFF_ALPHA_UNASSOCIATED&#160;&#160;&#160;1</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>TIFF alpha samples are unassociated with color samples. </p>
-
-</div>
-</div>
-<a id="ga471559abd36d34029abf0aa0300b4b43" name="ga471559abd36d34029abf0aa0300b4b43"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga471559abd36d34029abf0aa0300b4b43">&#9670;&#160;</a></span>GD_TIFF_BILEVEL</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define GD_TIFF_BILEVEL&#160;&#160;&#160;4</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Write 1-bit bilevel TIFF data. </p>
-
-</div>
-</div>
-<a id="gac624948e6e4fb6ad7bcdd081cf479db2" name="gac624948e6e4fb6ad7bcdd081cf479db2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gac624948e6e4fb6ad7bcdd081cf479db2">&#9670;&#160;</a></span>GD_TIFF_COMPRESSION_ADOBE_DEFLATE</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define GD_TIFF_COMPRESSION_ADOBE_DEFLATE&#160;&#160;&#160;8</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Adobe-style Deflate compression. </p>
-
-</div>
-</div>
-<a id="ga4584786c8376e0849ff8c83080405ff0" name="ga4584786c8376e0849ff8c83080405ff0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga4584786c8376e0849ff8c83080405ff0">&#9670;&#160;</a></span>GD_TIFF_COMPRESSION_CCITT_FAX3</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define GD_TIFF_COMPRESSION_CCITT_FAX3&#160;&#160;&#160;3</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>CCITT Group 3 fax compression. </p>
-
-</div>
-</div>
-<a id="ga0a55b2c1d90ad774ae067c1a505f74ed" name="ga0a55b2c1d90ad774ae067c1a505f74ed"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga0a55b2c1d90ad774ae067c1a505f74ed">&#9670;&#160;</a></span>GD_TIFF_COMPRESSION_CCITT_FAX4</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define GD_TIFF_COMPRESSION_CCITT_FAX4&#160;&#160;&#160;4</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>CCITT Group 4 fax compression. </p>
-
-</div>
-</div>
-<a id="ga5c8f8a64cb49606ef7d60cc35f31870c" name="ga5c8f8a64cb49606ef7d60cc35f31870c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga5c8f8a64cb49606ef7d60cc35f31870c">&#9670;&#160;</a></span>GD_TIFF_COMPRESSION_CCITT_RLE</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define GD_TIFF_COMPRESSION_CCITT_RLE&#160;&#160;&#160;2</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>CCITT modified Huffman run-length encoding compression. </p>
-
-</div>
-</div>
-<a id="ga23a0bed67787c3bb6c3b1e5d0d12b36f" name="ga23a0bed67787c3bb6c3b1e5d0d12b36f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga23a0bed67787c3bb6c3b1e5d0d12b36f">&#9670;&#160;</a></span>GD_TIFF_COMPRESSION_DEFLATE</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define GD_TIFF_COMPRESSION_DEFLATE&#160;&#160;&#160;32946</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Deflate compression. </p>
-
-</div>
-</div>
-<a id="ga4dea9fa29a694359acedbdbd67d1cc7f" name="ga4dea9fa29a694359acedbdbd67d1cc7f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga4dea9fa29a694359acedbdbd67d1cc7f">&#9670;&#160;</a></span>GD_TIFF_COMPRESSION_JPEG</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define GD_TIFF_COMPRESSION_JPEG&#160;&#160;&#160;7</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>JPEG compression. </p>
-
-</div>
-</div>
-<a id="gaa250d9da74837cae8e633ab12000a373" name="gaa250d9da74837cae8e633ab12000a373"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaa250d9da74837cae8e633ab12000a373">&#9670;&#160;</a></span>GD_TIFF_COMPRESSION_LZW</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define GD_TIFF_COMPRESSION_LZW&#160;&#160;&#160;5</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>LZW compression. </p>
-
-</div>
-</div>
-<a id="gab39c09255661df98042d06a1a1bc3ac7" name="gab39c09255661df98042d06a1a1bc3ac7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gab39c09255661df98042d06a1a1bc3ac7">&#9670;&#160;</a></span>GD_TIFF_COMPRESSION_NONE</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define GD_TIFF_COMPRESSION_NONE&#160;&#160;&#160;1</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>No TIFF compression. </p>
-
-</div>
-</div>
-<a id="gaa4467c4b3a24dcc284f9bd0e56c73dc8" name="gaa4467c4b3a24dcc284f9bd0e56c73dc8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaa4467c4b3a24dcc284f9bd0e56c73dc8">&#9670;&#160;</a></span>GD_TIFF_COMPRESSION_PACKBITS</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define GD_TIFF_COMPRESSION_PACKBITS&#160;&#160;&#160;32773</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>PackBits compression. </p>
-
-</div>
-</div>
-<a id="ga7388217817b014cc5e8dc3b065498f93" name="ga7388217817b014cc5e8dc3b065498f93"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga7388217817b014cc5e8dc3b065498f93">&#9670;&#160;</a></span>GD_TIFF_GRAY</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define GD_TIFF_GRAY&#160;&#160;&#160;3</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Write grayscale TIFF data. </p>
-
-</div>
-</div>
-<a id="ga492473140983c21b38510748b5246468" name="ga492473140983c21b38510748b5246468"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga492473140983c21b38510748b5246468">&#9670;&#160;</a></span>GD_TIFF_PHOTOMETRIC_CIELAB</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define GD_TIFF_PHOTOMETRIC_CIELAB&#160;&#160;&#160;8</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>CIE L*a*b* photometric interpretation. </p>
-
-</div>
-</div>
-<a id="gafbadf545ec64d5b8bcca14c486c5c518" name="gafbadf545ec64d5b8bcca14c486c5c518"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gafbadf545ec64d5b8bcca14c486c5c518">&#9670;&#160;</a></span>GD_TIFF_PHOTOMETRIC_MINISBLACK</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define GD_TIFF_PHOTOMETRIC_MINISBLACK&#160;&#160;&#160;1</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Black is the minimum sample value. </p>
-
-</div>
-</div>
-<a id="gaf845b728e49030da0ba5191e9f7f59ba" name="gaf845b728e49030da0ba5191e9f7f59ba"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaf845b728e49030da0ba5191e9f7f59ba">&#9670;&#160;</a></span>GD_TIFF_PHOTOMETRIC_MINISWHITE</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define GD_TIFF_PHOTOMETRIC_MINISWHITE&#160;&#160;&#160;0</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>White is the minimum sample value. </p>
-
-</div>
-</div>
-<a id="ga1c328181e1294584299ad2badc83d050" name="ga1c328181e1294584299ad2badc83d050"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga1c328181e1294584299ad2badc83d050">&#9670;&#160;</a></span>GD_TIFF_PHOTOMETRIC_PALETTE</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define GD_TIFF_PHOTOMETRIC_PALETTE&#160;&#160;&#160;3</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Palette color photometric interpretation. </p>
-
-</div>
-</div>
-<a id="gac54ec81bbc86145e9275c9fda4bbf722" name="gac54ec81bbc86145e9275c9fda4bbf722"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gac54ec81bbc86145e9275c9fda4bbf722">&#9670;&#160;</a></span>GD_TIFF_PHOTOMETRIC_RGB</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define GD_TIFF_PHOTOMETRIC_RGB&#160;&#160;&#160;2</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>RGB photometric interpretation. </p>
-
-</div>
-</div>
-<a id="gada3a8db6a9125b16be228ad5389b5e53" name="gada3a8db6a9125b16be228ad5389b5e53"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gada3a8db6a9125b16be228ad5389b5e53">&#9670;&#160;</a></span>GD_TIFF_PHOTOMETRIC_SEPARATED</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define GD_TIFF_PHOTOMETRIC_SEPARATED&#160;&#160;&#160;5</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Separated photometric interpretation. </p>
-
-</div>
-</div>
-<a id="ga80886deeeb829027dba3d439ec3e9155" name="ga80886deeeb829027dba3d439ec3e9155"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga80886deeeb829027dba3d439ec3e9155">&#9670;&#160;</a></span>GD_TIFF_PHOTOMETRIC_TRANSPARENCY_MASK</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define GD_TIFF_PHOTOMETRIC_TRANSPARENCY_MASK&#160;&#160;&#160;4</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Transparency mask photometric interpretation. </p>
-
-</div>
-</div>
-<a id="ga196bd6a9141b976742f491481142066f" name="ga196bd6a9141b976742f491481142066f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga196bd6a9141b976742f491481142066f">&#9670;&#160;</a></span>GD_TIFF_PHOTOMETRIC_YCBCR</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define GD_TIFF_PHOTOMETRIC_YCBCR&#160;&#160;&#160;6</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>YCbCr photometric interpretation. </p>
-
-</div>
-</div>
-<a id="gafbe30990ac8340311d78949a7db1519f" name="gafbe30990ac8340311d78949a7db1519f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gafbe30990ac8340311d78949a7db1519f">&#9670;&#160;</a></span>GD_TIFF_PLANARCONFIG_CONTIG</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define GD_TIFF_PLANARCONFIG_CONTIG&#160;&#160;&#160;1</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Store samples for each pixel contiguously. </p>
-
-</div>
-</div>
-<a id="gace7e0bf3e3aeaf3f472dd2e77200dda9" name="gace7e0bf3e3aeaf3f472dd2e77200dda9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gace7e0bf3e3aeaf3f472dd2e77200dda9">&#9670;&#160;</a></span>GD_TIFF_PLANARCONFIG_SEPARATE</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define GD_TIFF_PLANARCONFIG_SEPARATE&#160;&#160;&#160;2</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Store samples in separate planes. </p>
-
-</div>
-</div>
-<a id="ga2be9f5d5182f059c2126c19c96e42444" name="ga2be9f5d5182f059c2126c19c96e42444"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga2be9f5d5182f059c2126c19c96e42444">&#9670;&#160;</a></span>GD_TIFF_RESUNIT_CENTIMETER</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define GD_TIFF_RESUNIT_CENTIMETER&#160;&#160;&#160;3</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Resolution values are pixels per centimeter. </p>
-
-</div>
-</div>
-<a id="ga8ff2a0b249b64b18f6a1a85a27f91b82" name="ga8ff2a0b249b64b18f6a1a85a27f91b82"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga8ff2a0b249b64b18f6a1a85a27f91b82">&#9670;&#160;</a></span>GD_TIFF_RESUNIT_INCH</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define GD_TIFF_RESUNIT_INCH&#160;&#160;&#160;2</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Resolution values are pixels per inch. </p>
-
-</div>
-</div>
-<a id="gaa7d58cdad980adc5828bee97afbc3c3d" name="gaa7d58cdad980adc5828bee97afbc3c3d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaa7d58cdad980adc5828bee97afbc3c3d">&#9670;&#160;</a></span>GD_TIFF_RESUNIT_NONE</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define GD_TIFF_RESUNIT_NONE&#160;&#160;&#160;1</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Resolution values have no absolute unit. </p>
-
-</div>
-</div>
-<a id="gac9c1bebdfc7b12d0e5dee0170e34c3dc" name="gac9c1bebdfc7b12d0e5dee0170e34c3dc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gac9c1bebdfc7b12d0e5dee0170e34c3dc">&#9670;&#160;</a></span>GD_TIFF_RGB</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define GD_TIFF_RGB&#160;&#160;&#160;1</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Write RGB TIFF data. </p>
-
-</div>
-</div>
-<a id="gaff632030c3beddc872622814e4f3fb59" name="gaff632030c3beddc872622814e4f3fb59"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaff632030c3beddc872622814e4f3fb59">&#9670;&#160;</a></span>GD_TIFF_RGBA</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define GD_TIFF_RGBA&#160;&#160;&#160;2</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Write RGBA TIFF data with an alpha extra sample. </p>
-
-</div>
-</div>
-<h2 class="groupheader">Typedef Documentation</h2>
+<div class="ttc" id="agroup__gdCodecTiff_html_ga13711a136fea91da21e85e85e290e18c"><div class="ttname"><a href="group__gdCodecTiff.html#ga13711a136fea91da21e85e85e290e18c">gdTiffReadGetInfo</a></div><div class="ttdeci">int gdTiffReadGetInfo(gdTiffReadPtr tiff, gdTiffInfo *info)</div><div class="ttdoc">Get TIFF file information from a reader.</div><div class="ttdef"><b>Definition</b> gd_tiff.c:2353</div></div>
+<div class="ttc" id="agroup__gdCodecTiff_html_ga689957796d91d08eea7eb092caee7add"><div class="ttname"><a href="group__gdCodecTiff.html#ga689957796d91d08eea7eb092caee7add">gdTiffReadPtr</a></div><div class="ttdeci">struct gdTiffReadStruct * gdTiffReadPtr</div><div class="ttdoc">Opaque TIFF multi-page reader handle.</div><div class="ttdef"><b>Definition</b> gd.h:3548</div></div>
+<div class="ttc" id="agroup__gdCodecTiff_html_ga6f6205329b44f34f6dbd8f0dcac7f0bc"><div class="ttname"><a href="group__gdCodecTiff.html#ga6f6205329b44f34f6dbd8f0dcac7f0bc">gdTiffReadNextImage</a></div><div class="ttdeci">int gdTiffReadNextImage(gdTiffReadPtr tiff, gdTiffPageInfo *info, gdImagePtr *image)</div><div class="ttdoc">Read the next TIFF page image.</div><div class="ttdef"><b>Definition</b> gd_tiff.c:2362</div></div>
+<div class="ttc" id="agroup__gdCodecTiff_html_gad824b00c38dffd0d6e3a209987b21779"><div class="ttname"><a href="group__gdCodecTiff.html#gad824b00c38dffd0d6e3a209987b21779">gdTiffReadOpen</a></div><div class="ttdeci">gdTiffReadPtr gdTiffReadOpen(FILE *fd, const gdTiffReadOptions *options)</div><div class="ttdoc">Open a TIFF multi-page reader from a stdio file.</div><div class="ttdef"><b>Definition</b> gd_tiff.c:2322</div></div>
+<div class="ttc" id="agroup__gdCodecTiff_html_gafc12a9bfcd64c61a2d998aa55b697e42"><div class="ttname"><a href="group__gdCodecTiff.html#gafc12a9bfcd64c61a2d998aa55b697e42">gdTiffReadClose</a></div><div class="ttdeci">void gdTiffReadClose(gdTiffReadPtr tiff)</div><div class="ttdoc">Close a TIFF multi-page reader.</div><div class="ttdef"><b>Definition</b> gd_tiff.c:2347</div></div>
+<div class="ttc" id="astructgdTiffInfo_html"><div class="ttname"><a href="structgdTiffInfo.html">gdTiffInfo</a></div><div class="ttdoc">TIFF file information from the first page and container.</div><div class="ttdef"><b>Definition</b> gd.h:3562</div></div>
+<div class="ttc" id="astructgdTiffInfo_html_a29dab1b546fccac9fd1d3a9044cdad3f"><div class="ttname"><a href="structgdTiffInfo.html#a29dab1b546fccac9fd1d3a9044cdad3f">gdTiffInfo::pageCount</a></div><div class="ttdeci">int pageCount</div><div class="ttdef"><b>Definition</b> gd.h:3565</div></div>
+<div class="ttc" id="astructgdTiffInfo_html_a43341597ce4600665b54ccbec433841d"><div class="ttname"><a href="structgdTiffInfo.html#a43341597ce4600665b54ccbec433841d">gdTiffInfo::height</a></div><div class="ttdeci">int height</div><div class="ttdef"><b>Definition</b> gd.h:3564</div></div>
+<div class="ttc" id="astructgdTiffInfo_html_aa949519195f0fd932489270419eefe34"><div class="ttname"><a href="structgdTiffInfo.html#aa949519195f0fd932489270419eefe34">gdTiffInfo::width</a></div><div class="ttdeci">int width</div><div class="ttdef"><b>Definition</b> gd.h:3563</div></div>
+<div class="ttc" id="astructgdTiffPageInfo_html"><div class="ttname"><a href="structgdTiffPageInfo.html">gdTiffPageInfo</a></div><div class="ttdoc">TIFF page information returned while reading pages.</div><div class="ttdef"><b>Definition</b> gd.h:3578</div></div>
+<div class="ttc" id="astructgdTiffPageInfo_html_a1744611d17368cf387a43e38b3e144e5"><div class="ttname"><a href="structgdTiffPageInfo.html#a1744611d17368cf387a43e38b3e144e5">gdTiffPageInfo::pageIndex</a></div><div class="ttdeci">int pageIndex</div><div class="ttdef"><b>Definition</b> gd.h:3579</div></div>
+<div class="ttc" id="astructgdTiffPageInfo_html_a23f1903a0e21ec0e53b7818a9b9a99cd"><div class="ttname"><a href="structgdTiffPageInfo.html#a23f1903a0e21ec0e53b7818a9b9a99cd">gdTiffPageInfo::width</a></div><div class="ttdeci">int width</div><div class="ttdef"><b>Definition</b> gd.h:3580</div></div>
+<div class="ttc" id="astructgdTiffPageInfo_html_aa0d8f028fb5e4775cde64d8d84787c37"><div class="ttname"><a href="structgdTiffPageInfo.html#aa0d8f028fb5e4775cde64d8d84787c37">gdTiffPageInfo::height</a></div><div class="ttdeci">int height</div><div class="ttdef"><b>Definition</b> gd.h:3581</div></div>
+</div><!-- fragment --> <h2 class="groupheader">Typedef Documentation</h2>
 <a id="ga689957796d91d08eea7eb092caee7add" name="ga689957796d91d08eea7eb092caee7add"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga689957796d91d08eea7eb092caee7add">&#9670;&#160;</a></span>gdTiffReadPtr</h2>
 
@@ -720,7 +305,7 @@ Data Structures</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Opaque TIFF multi-page reader handle. </p>
-<p>Handles returned by <a class="el" href="group__gdCodecTiff.html#gace1cc826074b39a7500a8ceaacb92532" title="Open a TIFF multi-page reader from a stdio file.">gdTiffReadOpen()</a>, <a class="el" href="group__gdCodecTiff.html#gac15b86a3a30fcae153e83cee19b5e780" title="Open a TIFF multi-page reader from a gdIOCtx.">gdTiffReadOpenCtx()</a>, or <a class="el" href="group__gdCodecTiff.html#ga5290b8458ef3d5c806acba20e05ebe6f" title="Open a TIFF multi-page reader from a memory buffer.">gdTiffReadOpenPtr()</a> must be closed with <a class="el" href="group__gdCodecTiff.html#gafc12a9bfcd64c61a2d998aa55b697e42" title="Close a TIFF multi-page reader.">gdTiffReadClose()</a>. </p>
+<p>Handles returned by <a class="el" href="group__gdCodecTiff.html#gad824b00c38dffd0d6e3a209987b21779" title="Open a TIFF multi-page reader from a stdio file.">gdTiffReadOpen()</a>, <a class="el" href="group__gdCodecTiff.html#ga904ec83fadc540db0aa805dba1faf7e0" title="Open a TIFF multi-page reader from a gdIOCtx.">gdTiffReadOpenCtx()</a>, or <a class="el" href="group__gdCodecTiff.html#ga19bcb478518a4b8f7ffa2ef8b185aee3" title="Open a TIFF multi-page reader from a memory buffer.">gdTiffReadOpenPtr()</a> must be closed with <a class="el" href="group__gdCodecTiff.html#gafc12a9bfcd64c61a2d998aa55b697e42" title="Close a TIFF multi-page reader.">gdTiffReadClose()</a>. </p>
 
 </div>
 </div>
@@ -738,6 +323,171 @@ Data Structures</h2></td></tr>
 
 <p>Opaque TIFF writer handle. </p>
 <p>Handles returned by <a class="el" href="group__gdCodecTiff.html#ga0eb7a2892ad7c52e939110c48a8ed94e" title="Open a TIFF writer for a stdio file.">gdTiffWriteOpen()</a> or <a class="el" href="group__gdCodecTiff.html#ga3066444eb514a86300fbe550c117ff67" title="Open a TIFF writer for a gdIOCtx.">gdTiffWriteOpenCtx()</a> must be closed with <a class="el" href="group__gdCodecTiff.html#ga2626300e0fbb92ef08ef5ace5290713d" title="Close a file or gdIOCtx TIFF writer.">gdTiffWriteClose()</a>. Handles returned by <a class="el" href="group__gdCodecTiff.html#ga5bd8e965e109e742d3dcfe418cbba617" title="Open a TIFF writer that returns a memory buffer.">gdTiffWriteOpenPtr()</a> must be finished with <a class="el" href="group__gdCodecTiff.html#gaa3bf29d04e0b33546e717849c0d69934" title="Finish a TIFF memory writer and return the encoded buffer.">gdTiffWritePtrFinish()</a>. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="gabc2bcd1ee1418ced63d3ead2d024296d" name="gabc2bcd1ee1418ced63d3ead2d024296d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gabc2bcd1ee1418ced63d3ead2d024296d">&#9670;&#160;</a></span>gdTiffAlphaType</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group__gdCodecTiff.html#gabc2bcd1ee1418ced63d3ead2d024296d">gdTiffAlphaType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>TIFF alpha sample types. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggabc2bcd1ee1418ced63d3ead2d024296da1c33741bec36f01c2c19b4ef0bc6c648" name="ggabc2bcd1ee1418ced63d3ead2d024296da1c33741bec36f01c2c19b4ef0bc6c648"></a>GD_TIFF_ALPHA_UNASSOCIATED&#160;</td><td class="fielddoc"><p>TIFF alpha samples are unassociated with color samples. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggabc2bcd1ee1418ced63d3ead2d024296da981f95e6ca0cd6463ddc79ea2795ddb7" name="ggabc2bcd1ee1418ced63d3ead2d024296da981f95e6ca0cd6463ddc79ea2795ddb7"></a>GD_TIFF_ALPHA_ASSOCIATED&#160;</td><td class="fielddoc"><p>TIFF alpha samples are premultiplied into color samples. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="ga8e29999b9ffdb87539201d29a0328c02" name="ga8e29999b9ffdb87539201d29a0328c02"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8e29999b9ffdb87539201d29a0328c02">&#9670;&#160;</a></span>gdTiffColorSpace</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group__gdCodecTiff.html#ga8e29999b9ffdb87539201d29a0328c02">gdTiffColorSpace</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>TIFF writer color spaces. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga8e29999b9ffdb87539201d29a0328c02ad8721ef053cf6beeb58b1294c56d954f" name="gga8e29999b9ffdb87539201d29a0328c02ad8721ef053cf6beeb58b1294c56d954f"></a>GD_TIFF_RGB&#160;</td><td class="fielddoc"><p>Write RGB TIFF data. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga8e29999b9ffdb87539201d29a0328c02ae3b17c44041d66e6b1254b0c1713dff8" name="gga8e29999b9ffdb87539201d29a0328c02ae3b17c44041d66e6b1254b0c1713dff8"></a>GD_TIFF_RGBA&#160;</td><td class="fielddoc"><p>Write RGBA TIFF data with an alpha extra sample. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga8e29999b9ffdb87539201d29a0328c02a218519eff11b8d67cc57f2ae5915fa42" name="gga8e29999b9ffdb87539201d29a0328c02a218519eff11b8d67cc57f2ae5915fa42"></a>GD_TIFF_GRAY&#160;</td><td class="fielddoc"><p>Write grayscale TIFF data. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga8e29999b9ffdb87539201d29a0328c02ade4df943bbac9f4f5f9d976c8aa7bec7" name="gga8e29999b9ffdb87539201d29a0328c02ade4df943bbac9f4f5f9d976c8aa7bec7"></a>GD_TIFF_BILEVEL&#160;</td><td class="fielddoc"><p>Write 1-bit bilevel TIFF data. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="ga4e1773888ddcdb71a36fec0fe98cf7b9" name="ga4e1773888ddcdb71a36fec0fe98cf7b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4e1773888ddcdb71a36fec0fe98cf7b9">&#9670;&#160;</a></span>gdTiffCompression</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group__gdCodecTiff.html#ga4e1773888ddcdb71a36fec0fe98cf7b9">gdTiffCompression</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>TIFF compression tag values. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga4e1773888ddcdb71a36fec0fe98cf7b9a7c962aae9d81a820a20d782f983c2820" name="gga4e1773888ddcdb71a36fec0fe98cf7b9a7c962aae9d81a820a20d782f983c2820"></a>GD_TIFF_COMPRESSION_NONE&#160;</td><td class="fielddoc"><p>No TIFF compression. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e1773888ddcdb71a36fec0fe98cf7b9aabacf1d32a8e7f1bd2c165b618ff793c" name="gga4e1773888ddcdb71a36fec0fe98cf7b9aabacf1d32a8e7f1bd2c165b618ff793c"></a>GD_TIFF_COMPRESSION_CCITT_RLE&#160;</td><td class="fielddoc"><p>CCITT modified Huffman run-length encoding compression. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e1773888ddcdb71a36fec0fe98cf7b9a87124253e4c9a9d9037a7c54cb324b35" name="gga4e1773888ddcdb71a36fec0fe98cf7b9a87124253e4c9a9d9037a7c54cb324b35"></a>GD_TIFF_COMPRESSION_CCITT_FAX3&#160;</td><td class="fielddoc"><p>CCITT Group 3 fax compression. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e1773888ddcdb71a36fec0fe98cf7b9a95a4bc3943c14f28647b23de3147feb9" name="gga4e1773888ddcdb71a36fec0fe98cf7b9a95a4bc3943c14f28647b23de3147feb9"></a>GD_TIFF_COMPRESSION_CCITT_FAX4&#160;</td><td class="fielddoc"><p>CCITT Group 4 fax compression. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e1773888ddcdb71a36fec0fe98cf7b9a651150d7a111bb17ed4932650be67906" name="gga4e1773888ddcdb71a36fec0fe98cf7b9a651150d7a111bb17ed4932650be67906"></a>GD_TIFF_COMPRESSION_LZW&#160;</td><td class="fielddoc"><p>LZW compression. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e1773888ddcdb71a36fec0fe98cf7b9ab6a2f6c7220bda9bdfdd7f820acf7563" name="gga4e1773888ddcdb71a36fec0fe98cf7b9ab6a2f6c7220bda9bdfdd7f820acf7563"></a>GD_TIFF_COMPRESSION_JPEG&#160;</td><td class="fielddoc"><p>JPEG compression. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e1773888ddcdb71a36fec0fe98cf7b9a94b72b82662587dd529bdb8258a8be76" name="gga4e1773888ddcdb71a36fec0fe98cf7b9a94b72b82662587dd529bdb8258a8be76"></a>GD_TIFF_COMPRESSION_ADOBE_DEFLATE&#160;</td><td class="fielddoc"><p>Adobe-style Deflate compression. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e1773888ddcdb71a36fec0fe98cf7b9ae4099159d177d03798ced8f19dc60933" name="gga4e1773888ddcdb71a36fec0fe98cf7b9ae4099159d177d03798ced8f19dc60933"></a>GD_TIFF_COMPRESSION_DEFLATE&#160;</td><td class="fielddoc"><p>Deflate compression. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e1773888ddcdb71a36fec0fe98cf7b9ad1729320238521048dc4c7f46ef8589a" name="gga4e1773888ddcdb71a36fec0fe98cf7b9ad1729320238521048dc4c7f46ef8589a"></a>GD_TIFF_COMPRESSION_PACKBITS&#160;</td><td class="fielddoc"><p>PackBits compression. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="ga2c8decaaf1017c9fce36d8fa04121787" name="ga2c8decaaf1017c9fce36d8fa04121787"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2c8decaaf1017c9fce36d8fa04121787">&#9670;&#160;</a></span>gdTiffPhotometric</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group__gdCodecTiff.html#ga2c8decaaf1017c9fce36d8fa04121787">gdTiffPhotometric</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>TIFF photometric interpretation tag values. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga2c8decaaf1017c9fce36d8fa04121787a7c4962bd5294c319d18205c1bccd1000" name="gga2c8decaaf1017c9fce36d8fa04121787a7c4962bd5294c319d18205c1bccd1000"></a>GD_TIFF_PHOTOMETRIC_MINISWHITE&#160;</td><td class="fielddoc"><p>White is the minimum sample value. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga2c8decaaf1017c9fce36d8fa04121787aa4e1b33d1133bdcc3c1ef0a62e2da017" name="gga2c8decaaf1017c9fce36d8fa04121787aa4e1b33d1133bdcc3c1ef0a62e2da017"></a>GD_TIFF_PHOTOMETRIC_MINISBLACK&#160;</td><td class="fielddoc"><p>Black is the minimum sample value. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga2c8decaaf1017c9fce36d8fa04121787a3b5f4c29e73132b56cbce0a4049fc2ad" name="gga2c8decaaf1017c9fce36d8fa04121787a3b5f4c29e73132b56cbce0a4049fc2ad"></a>GD_TIFF_PHOTOMETRIC_RGB&#160;</td><td class="fielddoc"><p>RGB photometric interpretation. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga2c8decaaf1017c9fce36d8fa04121787acdfe598555e9309857a3f30e12af43ea" name="gga2c8decaaf1017c9fce36d8fa04121787acdfe598555e9309857a3f30e12af43ea"></a>GD_TIFF_PHOTOMETRIC_PALETTE&#160;</td><td class="fielddoc"><p>Palette color photometric interpretation. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga2c8decaaf1017c9fce36d8fa04121787ac9a7066526b354474a25e952d1d06551" name="gga2c8decaaf1017c9fce36d8fa04121787ac9a7066526b354474a25e952d1d06551"></a>GD_TIFF_PHOTOMETRIC_TRANSPARENCY_MASK&#160;</td><td class="fielddoc"><p>Transparency mask photometric interpretation. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga2c8decaaf1017c9fce36d8fa04121787a4063d56552c18704d2640a26a6113c4e" name="gga2c8decaaf1017c9fce36d8fa04121787a4063d56552c18704d2640a26a6113c4e"></a>GD_TIFF_PHOTOMETRIC_SEPARATED&#160;</td><td class="fielddoc"><p>Separated photometric interpretation. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga2c8decaaf1017c9fce36d8fa04121787a00107b3fe41e73250d05419342319ffd" name="gga2c8decaaf1017c9fce36d8fa04121787a00107b3fe41e73250d05419342319ffd"></a>GD_TIFF_PHOTOMETRIC_YCBCR&#160;</td><td class="fielddoc"><p>YCbCr photometric interpretation. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga2c8decaaf1017c9fce36d8fa04121787a31f0ba5c14bfe7d00f95ad309efb0f04" name="gga2c8decaaf1017c9fce36d8fa04121787a31f0ba5c14bfe7d00f95ad309efb0f04"></a>GD_TIFF_PHOTOMETRIC_CIELAB&#160;</td><td class="fielddoc"><p>CIE L*a*b* photometric interpretation. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="ga10c2688cdd63b62d9eba3cbb6454f7c3" name="ga10c2688cdd63b62d9eba3cbb6454f7c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga10c2688cdd63b62d9eba3cbb6454f7c3">&#9670;&#160;</a></span>gdTiffPlanarConfig</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group__gdCodecTiff.html#ga10c2688cdd63b62d9eba3cbb6454f7c3">gdTiffPlanarConfig</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>TIFF planar configuration tag values. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga10c2688cdd63b62d9eba3cbb6454f7c3a2163278a93e21f13556396b8d5402e38" name="gga10c2688cdd63b62d9eba3cbb6454f7c3a2163278a93e21f13556396b8d5402e38"></a>GD_TIFF_PLANARCONFIG_CONTIG&#160;</td><td class="fielddoc"><p>Store samples for each pixel contiguously. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga10c2688cdd63b62d9eba3cbb6454f7c3ada2b7b96b7220264106c90d0b22156ad" name="gga10c2688cdd63b62d9eba3cbb6454f7c3ada2b7b96b7220264106c90d0b22156ad"></a>GD_TIFF_PLANARCONFIG_SEPARATE&#160;</td><td class="fielddoc"><p>Store samples in separate planes. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="ga9abc886d6cac419e18be7bd94e05a638" name="ga9abc886d6cac419e18be7bd94e05a638"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9abc886d6cac419e18be7bd94e05a638">&#9670;&#160;</a></span>gdTiffResolutionUnit</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group__gdCodecTiff.html#ga9abc886d6cac419e18be7bd94e05a638">gdTiffResolutionUnit</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>TIFF resolution unit tag values. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga9abc886d6cac419e18be7bd94e05a638ab72b9f50932f70d82c0d0186f9424991" name="gga9abc886d6cac419e18be7bd94e05a638ab72b9f50932f70d82c0d0186f9424991"></a>GD_TIFF_RESUNIT_NONE&#160;</td><td class="fielddoc"><p>Resolution values have no absolute unit. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga9abc886d6cac419e18be7bd94e05a638aacb0e08db80b1465ef7d08a3e3992de5" name="gga9abc886d6cac419e18be7bd94e05a638aacb0e08db80b1465ef7d08a3e3992de5"></a>GD_TIFF_RESUNIT_INCH&#160;</td><td class="fielddoc"><p>Resolution values are pixels per inch. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga9abc886d6cac419e18be7bd94e05a638af42869a775f77083256494d391e67cf1" name="gga9abc886d6cac419e18be7bd94e05a638af42869a775f77083256494d391e67cf1"></a>GD_TIFF_RESUNIT_CENTIMETER&#160;</td><td class="fielddoc"><p>Resolution values are pixels per centimeter. </p>
+</td></tr>
+</table>
 
 </div>
 </div>
@@ -1157,8 +907,8 @@ Data Structures</h2></td></tr>
 
 </div>
 </div>
-<a id="gace1cc826074b39a7500a8ceaacb92532" name="gace1cc826074b39a7500a8ceaacb92532"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gace1cc826074b39a7500a8ceaacb92532">&#9670;&#160;</a></span>gdTiffReadOpen()</h2>
+<a id="gad824b00c38dffd0d6e3a209987b21779" name="gad824b00c38dffd0d6e3a209987b21779"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad824b00c38dffd0d6e3a209987b21779">&#9670;&#160;</a></span>gdTiffReadOpen()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1167,17 +917,28 @@ Data Structures</h2></td></tr>
           <td class="memname"><a class="el" href="group__gdCodecTiff.html#ga689957796d91d08eea7eb092caee7add">gdTiffReadPtr</a> gdTiffReadOpen </td>
           <td>(</td>
           <td class="paramtype">FILE *&#160;</td>
-          <td class="paramname"><em>fd</em></td><td>)</td>
+          <td class="paramname"><em>fd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">const <a class="el" href="structgdTiffReadOptions.html">gdTiffReadOptions</a> *&#160;</td>
+          <td class="paramname"><em>options</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Open a TIFF multi-page reader from a stdio file. </p>
-<p><a class="el" href="group__gdCodecTiff.html#gace1cc826074b39a7500a8ceaacb92532" title="Open a TIFF multi-page reader from a stdio file.">gdTiffReadOpen()</a> reads the TIFF data into the reader and does not close fd. The returned handle must be closed with <a class="el" href="group__gdCodecTiff.html#gafc12a9bfcd64c61a2d998aa55b697e42" title="Close a TIFF multi-page reader.">gdTiffReadClose()</a>.</p>
+<p><a class="el" href="group__gdCodecTiff.html#gad824b00c38dffd0d6e3a209987b21779" title="Open a TIFF multi-page reader from a stdio file.">gdTiffReadOpen()</a> reads the TIFF data into the reader and does not close fd. The returned handle must be closed with <a class="el" href="group__gdCodecTiff.html#gafc12a9bfcd64c61a2d998aa55b697e42" title="Close a TIFF multi-page reader.">gdTiffReadClose()</a>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">fd</td><td>Pointer to the input FILE stream.</td></tr>
+    <tr><td class="paramname">fd</td><td>Pointer to the input FILE stream. </td></tr>
+    <tr><td class="paramname">options</td><td>Pointer to read options, or NULL for defaults.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1185,8 +946,8 @@ Data Structures</h2></td></tr>
 
 </div>
 </div>
-<a id="gac15b86a3a30fcae153e83cee19b5e780" name="gac15b86a3a30fcae153e83cee19b5e780"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gac15b86a3a30fcae153e83cee19b5e780">&#9670;&#160;</a></span>gdTiffReadOpenCtx()</h2>
+<a id="ga904ec83fadc540db0aa805dba1faf7e0" name="ga904ec83fadc540db0aa805dba1faf7e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga904ec83fadc540db0aa805dba1faf7e0">&#9670;&#160;</a></span>gdTiffReadOpenCtx()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1195,17 +956,28 @@ Data Structures</h2></td></tr>
           <td class="memname"><a class="el" href="group__gdCodecTiff.html#ga689957796d91d08eea7eb092caee7add">gdTiffReadPtr</a> gdTiffReadOpenCtx </td>
           <td>(</td>
           <td class="paramtype">gdIOCtxPtr&#160;</td>
-          <td class="paramname"><em>in</em></td><td>)</td>
+          <td class="paramname"><em>in</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">const <a class="el" href="structgdTiffReadOptions.html">gdTiffReadOptions</a> *&#160;</td>
+          <td class="paramname"><em>options</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Open a TIFF multi-page reader from a gdIOCtx. </p>
-<p><a class="el" href="group__gdCodecTiff.html#gac15b86a3a30fcae153e83cee19b5e780" title="Open a TIFF multi-page reader from a gdIOCtx.">gdTiffReadOpenCtx()</a> reads the TIFF data into the reader and does not close in. The returned handle must be closed with <a class="el" href="group__gdCodecTiff.html#gafc12a9bfcd64c61a2d998aa55b697e42" title="Close a TIFF multi-page reader.">gdTiffReadClose()</a>.</p>
+<p><a class="el" href="group__gdCodecTiff.html#ga904ec83fadc540db0aa805dba1faf7e0" title="Open a TIFF multi-page reader from a gdIOCtx.">gdTiffReadOpenCtx()</a> reads the TIFF data into the reader and does not close in. The returned handle must be closed with <a class="el" href="group__gdCodecTiff.html#gafc12a9bfcd64c61a2d998aa55b697e42" title="Close a TIFF multi-page reader.">gdTiffReadClose()</a>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">in</td><td>Pointer to the gdIOCtx input context.</td></tr>
+    <tr><td class="paramname">in</td><td>Pointer to the gdIOCtx input context. </td></tr>
+    <tr><td class="paramname">options</td><td>Pointer to read options, or NULL for defaults.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1213,8 +985,8 @@ Data Structures</h2></td></tr>
 
 </div>
 </div>
-<a id="ga5290b8458ef3d5c806acba20e05ebe6f" name="ga5290b8458ef3d5c806acba20e05ebe6f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga5290b8458ef3d5c806acba20e05ebe6f">&#9670;&#160;</a></span>gdTiffReadOpenPtr()</h2>
+<a id="ga19bcb478518a4b8f7ffa2ef8b185aee3" name="ga19bcb478518a4b8f7ffa2ef8b185aee3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga19bcb478518a4b8f7ffa2ef8b185aee3">&#9670;&#160;</a></span>gdTiffReadOpenPtr()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1229,7 +1001,13 @@ Data Structures</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>data</em>&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structgdTiffReadOptions.html">gdTiffReadOptions</a> *&#160;</td>
+          <td class="paramname"><em>options</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1244,11 +1022,38 @@ Data Structures</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">size</td><td>Size of the TIFF memory buffer in bytes. </td></tr>
-    <tr><td class="paramname">data</td><td>Pointer to the TIFF memory buffer.</td></tr>
+    <tr><td class="paramname">data</td><td>Pointer to the TIFF memory buffer. </td></tr>
+    <tr><td class="paramname">options</td><td>Pointer to read options, or NULL for defaults.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Returns a TIFF reader handle on success, or NULL on failure. </dd></dl>
+
+</div>
+</div>
+<a id="ga152c8f3923a6befe38577758dec71abf" name="ga152c8f3923a6befe38577758dec71abf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga152c8f3923a6befe38577758dec71abf">&#9670;&#160;</a></span>gdTiffReadOptionsInit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gdTiffReadOptionsInit </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structgdTiffReadOptions.html">gdTiffReadOptions</a> *&#160;</td>
+          <td class="paramname"><em>options</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initialize TIFF read options with defaults. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">options</td><td>Pointer to the options structure to initialize. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -1421,6 +1226,32 @@ Data Structures</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Returns a TIFF memory writer handle on success, or NULL on failure. </dd></dl>
+
+</div>
+</div>
+<a id="ga03bbc4e3f13e7c77d8cd0594c8872e6f" name="ga03bbc4e3f13e7c77d8cd0594c8872e6f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga03bbc4e3f13e7c77d8cd0594c8872e6f">&#9670;&#160;</a></span>gdTiffWriteOptionsInit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gdTiffWriteOptionsInit </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structgdTiffWriteOptions.html">gdTiffWriteOptions</a> *&#160;</td>
+          <td class="paramname"><em>options</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initialize TIFF write options with defaults. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">options</td><td>Pointer to the options structure to initialize. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

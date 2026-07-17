@@ -223,6 +223,9 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:gaf63d48adfb55682dafa96b59bd345644" id="r_gaf63d48adfb55682dafa96b59bd345644"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Vector2D.html#gaf63d48adfb55682dafa96b59bd345644">gdImageComposite</a> (gdImagePtr dst, const gdImagePtr src, int dst_x, int dst_y, <a class="el" href="group__Vector2D.html#ga49c2a316e7d1edbe58197294fc4d0f57">gdCompositeOperator</a> op, double opacity, <a class="el" href="group__PixelDraw.html#ga28f3fe82b4806fe16159bb3fd34cf655">gdRectPtr</a> src_region, <a class="el" href="group__PixelDraw.html#ga28f3fe82b4806fe16159bb3fd34cf655">gdRectPtr</a> clip)</td></tr>
+<tr class="memdesc:gaf63d48adfb55682dafa96b59bd345644"><td class="mdescLeft">&#160;</td><td class="mdescRight">Composite a source image into a truecolor destination image.  <br /></td></tr>
+<tr class="separator:gaf63d48adfb55682dafa96b59bd345644"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga9ce8fbed0bf6185294d918efd43de7f9" id="r_ga9ce8fbed0bf6185294d918efd43de7f9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Vector2D.html#ga9ce8fbed0bf6185294d918efd43de7f9">gdTextOptionsInit</a> (<a class="el" href="structgdTextOptions.html">gdTextOptions</a> *options)</td></tr>
 <tr class="memdesc:ga9ce8fbed0bf6185294d918efd43de7f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize text options to defaults.  <br /></td></tr>
 <tr class="separator:ga9ce8fbed0bf6185294d918efd43de7f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2334,6 +2337,86 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>gdPathPatternDestroy<
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A new font face, or NULL on failure. </dd></dl>
+
+</div>
+</div>
+<a id="gaf63d48adfb55682dafa96b59bd345644" name="gaf63d48adfb55682dafa96b59bd345644"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf63d48adfb55682dafa96b59bd345644">&#9670;&#160;</a></span>gdImageComposite()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int gdImageComposite </td>
+          <td>(</td>
+          <td class="paramtype">gdImagePtr&#160;</td>
+          <td class="paramname"><em>dst</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const gdImagePtr&#160;</td>
+          <td class="paramname"><em>src</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>dst_x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>dst_y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__Vector2D.html#ga49c2a316e7d1edbe58197294fc4d0f57">gdCompositeOperator</a>&#160;</td>
+          <td class="paramname"><em>op</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>opacity</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__PixelDraw.html#ga28f3fe82b4806fe16159bb3fd34cf655">gdRectPtr</a>&#160;</td>
+          <td class="paramname"><em>src_region</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__PixelDraw.html#ga28f3fe82b4806fe16159bb3fd34cf655">gdRectPtr</a>&#160;</td>
+          <td class="paramname"><em>clip</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Composite a source image into a truecolor destination image. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dst</td><td>Destination image. </td></tr>
+    <tr><td class="paramname">src</td><td>Source image. </td></tr>
+    <tr><td class="paramname">dst_x</td><td>Destination x offset. </td></tr>
+    <tr><td class="paramname">dst_y</td><td>Destination y offset. </td></tr>
+    <tr><td class="paramname">op</td><td>Composite operator. </td></tr>
+    <tr><td class="paramname">opacity</td><td>Global source opacity, from 0.0 to 1.0. </td></tr>
+    <tr><td class="paramname">src_region</td><td>Optional source rectangle. </td></tr>
+    <tr><td class="paramname">clip</td><td>Optional destination clip rectangle. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>GD_TRUE on success, or GD_FALSE for invalid arguments. </dd></dl>
 
 </div>
 </div>
