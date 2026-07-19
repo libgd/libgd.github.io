@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['kmax_0',['kmax',['../structgdWebpWriteOptions.html#abcb13c8268d8052b643dd0a3dd43a6b3',1,'gdWebpWriteOptions']]],
-  ['kmin_1',['kmin',['../structgdWebpWriteOptions.html#adf4b702a5bc2ab5c69fadcbdf9001fb9',1,'gdWebpWriteOptions']]]
+  ['kmax_0',['kmax',['../structgdWebpAnimWriteOptions.html#ad2abd4bfa689f162b31db95701ea10a0',1,'gdWebpAnimWriteOptions']]],
+  ['kmin_1',['kmin',['../structgdWebpAnimWriteOptions.html#ac95bae061e95521274a324d6ec248e50',1,'gdWebpAnimWriteOptions']]]
 ];

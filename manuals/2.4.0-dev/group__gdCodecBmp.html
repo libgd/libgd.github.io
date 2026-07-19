@@ -70,6 +70,8 @@ $(function() {
 </div>
 
 <div class="header">
+  <div class="summary">
+<a href="#nested-classes">Data Structures</a>  </div>
   <div class="headertitle"><div class="title">BMP<div class="ingroups"><a class="el" href="group__gdCodecs.html">Codecs</a></div></div></div>
 </div><!--header-->
 <div class="contents">
@@ -86,6 +88,11 @@ Collaboration diagram for BMP:</div>
 </map>
 </div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Data Structures</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgdBmpInfo.html">gdBmpInfo</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">BMP Reading</h2></td></tr>
 <tr class="memitem:gaa5c6780e14d55b1c874eadab296198e0" id="r_gaa5c6780e14d55b1c874eadab296198e0"><td class="memItemLeft" align="right" valign="top">gdImagePtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gdCodecBmp.html#gaa5c6780e14d55b1c874eadab296198e0">gdImageCreateFromBmp</a> (FILE *inFile)</td></tr>
 <tr class="memdesc:gaa5c6780e14d55b1c874eadab296198e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an image from a BMP stdio file.  <br /></td></tr>
@@ -108,17 +115,6 @@ Collaboration diagram for BMP:</div>
 <tr class="memdesc:gae13388507f8cfa099743c770ab804581"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write an image as BMP data to a gdIOCtx.  <br /></td></tr>
 <tr class="separator:gae13388507f8cfa099743c770ab804581"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader">BMP Extended Writing</h2></td></tr>
-<tr class="memitem:ga4de3470afa90b026f05b889336fb5f5a" id="r_ga4de3470afa90b026f05b889336fb5f5a"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gdCodecBmp.html#ga4de3470afa90b026f05b889336fb5f5a">gdImageBmpPtrEx</a> (gdImagePtr im, int *size, int bpp, int compression, int flags)</td></tr>
-<tr class="memdesc:ga4de3470afa90b026f05b889336fb5f5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write an image as BMP data to a newly allocated memory buffer.  <br /></td></tr>
-<tr class="separator:ga4de3470afa90b026f05b889336fb5f5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gafa39fbc817a13246265865ddd1acaafe" id="r_gafa39fbc817a13246265865ddd1acaafe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gdCodecBmp.html#gafa39fbc817a13246265865ddd1acaafe">gdImageBmpEx</a> (gdImagePtr im, FILE *outFile, int bpp, int compression, int flags)</td></tr>
-<tr class="memdesc:gafa39fbc817a13246265865ddd1acaafe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write an image as BMP data to a stdio file.  <br /></td></tr>
-<tr class="separator:gafa39fbc817a13246265865ddd1acaafe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga9ad753331e43499eed8b471159c40d7c" id="r_ga9ad753331e43499eed8b471159c40d7c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gdCodecBmp.html#ga9ad753331e43499eed8b471159c40d7c">gdImageBmpCtxEx</a> (gdImagePtr im, gdIOCtxPtr out, int bpp, int compression, int flags)</td></tr>
-<tr class="memdesc:ga9ad753331e43499eed8b471159c40d7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write an image as BMP data to a gdIOCtx.  <br /></td></tr>
-<tr class="separator:ga9ad753331e43499eed8b471159c40d7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">BMP Constants</h2></td></tr>
 <tr class="memitem:gad2827f3d53d54c83f28540a25529b1b4" id="r_gad2827f3d53d54c83f28540a25529b1b4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gdCodecBmp.html#gad2827f3d53d54c83f28540a25529b1b4">GD_BMP_COMPRESS_NONE</a>&#160;&#160;&#160;0</td></tr>
 <tr class="separator:gad2827f3d53d54c83f28540a25529b1b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -134,6 +130,17 @@ Collaboration diagram for BMP:</div>
 <tr class="separator:gac71716bded8fc42de48f8441172901fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga64d26344313e7c4ba7b7341d0d3ac5cb" id="r_ga64d26344313e7c4ba7b7341d0d3ac5cb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gdCodecBmp.html#ga64d26344313e7c4ba7b7341d0d3ac5cb">GD_BMP_FLAG_RGB555</a>&#160;&#160;&#160;(1 &lt;&lt; 2)</td></tr>
 <tr class="separator:ga64d26344313e7c4ba7b7341d0d3ac5cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader">BMP Extended Writing</h2></td></tr>
+<tr class="memitem:ga4de3470afa90b026f05b889336fb5f5a" id="r_ga4de3470afa90b026f05b889336fb5f5a"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gdCodecBmp.html#ga4de3470afa90b026f05b889336fb5f5a">gdImageBmpPtrEx</a> (gdImagePtr im, int *size, int bpp, int compression, int flags)</td></tr>
+<tr class="memdesc:ga4de3470afa90b026f05b889336fb5f5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write an image as BMP data to a newly allocated memory buffer.  <br /></td></tr>
+<tr class="separator:ga4de3470afa90b026f05b889336fb5f5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafa39fbc817a13246265865ddd1acaafe" id="r_gafa39fbc817a13246265865ddd1acaafe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gdCodecBmp.html#gafa39fbc817a13246265865ddd1acaafe">gdImageBmpEx</a> (gdImagePtr im, FILE *outFile, int bpp, int compression, int flags)</td></tr>
+<tr class="memdesc:gafa39fbc817a13246265865ddd1acaafe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write an image as BMP data to a stdio file.  <br /></td></tr>
+<tr class="separator:gafa39fbc817a13246265865ddd1acaafe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9ad753331e43499eed8b471159c40d7c" id="r_ga9ad753331e43499eed8b471159c40d7c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gdCodecBmp.html#ga9ad753331e43499eed8b471159c40d7c">gdImageBmpCtxEx</a> (gdImagePtr im, gdIOCtxPtr out, int bpp, int compression, int flags)</td></tr>
+<tr class="memdesc:ga9ad753331e43499eed8b471159c40d7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write an image as BMP data to a gdIOCtx.  <br /></td></tr>
+<tr class="separator:ga9ad753331e43499eed8b471159c40d7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Read and write Microsoft Windows bitmap images. </p>
@@ -158,10 +165,10 @@ Collaboration diagram for BMP:</div>
 <div class="line"> </div>
 <div class="line">gdImageDestroy(<a class="code hl_namespace" href="namespaceim.html">im</a>);</div>
 <div class="ttc" id="agroup__PixelDraw_html_ga1e534e750e1b336b8961a62ebec88511"><div class="ttname"><a href="group__PixelDraw.html#ga1e534e750e1b336b8961a62ebec88511">gdImageFilledRectangle</a></div><div class="ttdeci">void gdImageFilledRectangle(gdImagePtr im, int x1, int y1, int x2, int y2, int color)</div><div class="ttdoc">Draws a filled rectangle.</div><div class="ttdef"><b>Definition</b> gd.c:2403</div></div>
-<div class="ttc" id="agroup__gdCodecBmp_html_ga4de3470afa90b026f05b889336fb5f5a"><div class="ttname"><a href="group__gdCodecBmp.html#ga4de3470afa90b026f05b889336fb5f5a">gdImageBmpPtrEx</a></div><div class="ttdeci">void * gdImageBmpPtrEx(gdImagePtr im, int *size, int bpp, int compression, int flags)</div><div class="ttdoc">Write an image as BMP data to a newly allocated memory buffer.</div><div class="ttdef"><b>Definition</b> gd_bmp.c:137</div></div>
-<div class="ttc" id="agroup__gdCodecBmp_html_ga72036ac7db6ca0e5ce4bf3381df4452b"><div class="ttname"><a href="group__gdCodecBmp.html#ga72036ac7db6ca0e5ce4bf3381df4452b">gdImageCreateFromBmpPtr</a></div><div class="ttdeci">gdImagePtr gdImageCreateFromBmpPtr(int size, void *data)</div><div class="ttdoc">Create an image from a BMP memory buffer.</div><div class="ttdef"><b>Definition</b> gd_bmp.c:901</div></div>
-<div class="ttc" id="agroup__gdCodecBmp_html_gac4b7c67e796712389232839c5ae31f8b"><div class="ttname"><a href="group__gdCodecBmp.html#gac4b7c67e796712389232839c5ae31f8b">GD_BMP_FLAG_NONE</a></div><div class="ttdeci">#define GD_BMP_FLAG_NONE</div><div class="ttdef"><b>Definition</b> gd.h:4792</div></div>
-<div class="ttc" id="agroup__gdCodecBmp_html_gad2827f3d53d54c83f28540a25529b1b4"><div class="ttname"><a href="group__gdCodecBmp.html#gad2827f3d53d54c83f28540a25529b1b4">GD_BMP_COMPRESS_NONE</a></div><div class="ttdeci">#define GD_BMP_COMPRESS_NONE</div><div class="ttdef"><b>Definition</b> gd.h:4785</div></div>
+<div class="ttc" id="agroup__gdCodecBmp_html_ga4de3470afa90b026f05b889336fb5f5a"><div class="ttname"><a href="group__gdCodecBmp.html#ga4de3470afa90b026f05b889336fb5f5a">gdImageBmpPtrEx</a></div><div class="ttdeci">void * gdImageBmpPtrEx(gdImagePtr im, int *size, int bpp, int compression, int flags)</div><div class="ttdoc">Write an image as BMP data to a newly allocated memory buffer.</div><div class="ttdef"><b>Definition</b> gd_bmp.c:281</div></div>
+<div class="ttc" id="agroup__gdCodecBmp_html_ga72036ac7db6ca0e5ce4bf3381df4452b"><div class="ttname"><a href="group__gdCodecBmp.html#ga72036ac7db6ca0e5ce4bf3381df4452b">gdImageCreateFromBmpPtr</a></div><div class="ttdeci">gdImagePtr gdImageCreateFromBmpPtr(int size, void *data)</div><div class="ttdoc">Create an image from a BMP memory buffer.</div><div class="ttdef"><b>Definition</b> gd_bmp.c:1053</div></div>
+<div class="ttc" id="agroup__gdCodecBmp_html_gac4b7c67e796712389232839c5ae31f8b"><div class="ttname"><a href="group__gdCodecBmp.html#gac4b7c67e796712389232839c5ae31f8b">GD_BMP_FLAG_NONE</a></div><div class="ttdeci">#define GD_BMP_FLAG_NONE</div><div class="ttdef"><b>Definition</b> gd.h:4892</div></div>
+<div class="ttc" id="agroup__gdCodecBmp_html_gad2827f3d53d54c83f28540a25529b1b4"><div class="ttname"><a href="group__gdCodecBmp.html#gad2827f3d53d54c83f28540a25529b1b4">GD_BMP_COMPRESS_NONE</a></div><div class="ttdeci">#define GD_BMP_COMPRESS_NONE</div><div class="ttdef"><b>Definition</b> gd.h:4885</div></div>
 <div class="ttc" id="anamespaceim_html"><div class="ttname"><a href="namespaceim.html">im</a></div><div class="ttdoc">Write an image as JPEG data to a gdIOCtx.</div></div>
 </div><!-- fragment --> <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="gad2827f3d53d54c83f28540a25529b1b4" name="gad2827f3d53d54c83f28540a25529b1b4"></a>

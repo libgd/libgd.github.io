@@ -1,7 +1,7 @@
 var searchData=
 [
   ['about_20libgd_202_204_200_20dev_0',['About LibGD 2.4.0-dev',['../index.html',1,'']]],
-  ['allowmixed_1',['allowMixed',['../structgdWebpWriteOptions.html#a4575d6b1b52f2f0bd942bdf20c17a948',1,'gdWebpWriteOptions']]],
+  ['allowmixed_1',['allowMixed',['../structgdWebpAnimWriteOptions.html#ac2e1f92811b1204b9006551ea6b38056',1,'gdWebpAnimWriteOptions']]],
   ['alphatype_2',['alphaType',['../structgdTiffWriteOptions.html#abdb26d7fceafd3cc697155fa0605e8b1',1,'gdTiffWriteOptions']]],
   ['and_20arc_20drawing_20pixel_20operations_3',['lines, ellipses, polygons and Arc Drawing pixel operations',['../group__PixelDraw.html',1,'']]],
   ['and_20convolutions_4',['Image Filters and convolutions',['../group__ImageFilters.html',1,'']]],

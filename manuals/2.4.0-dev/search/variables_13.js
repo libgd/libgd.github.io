@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['vdpi_0',['vdpi',['../structgdFTStringExtra.html#a0cbef63a4c6bf337f027d35cc5151aa5',1,'gdFTStringExtra']]]
+  ['vdpi_0',['vdpi',['../structgdFTStringExtra.html#a0cbef63a4c6bf337f027d35cc5151aa5',1,'gdFTStringExtra']]],
+  ['version_1',['version',['../structgdGifInfo.html#a7a572d12b959b8c7a0666bec639b497b',1,'gdGifInfo']]]
 ];

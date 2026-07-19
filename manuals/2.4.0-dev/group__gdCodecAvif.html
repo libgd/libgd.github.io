@@ -93,6 +93,9 @@ Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgdAvifWriteOptions.html">gdAvifWriteOptions</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">AVIF encoder options used by <a class="el" href="group__gdCodecAvif.html#gabf6a1533a13de4c85d368998b2862017" title="Encode a truecolor image as AVIF data in memory using write options.">gdImageAvifPtrWithOptions()</a>.  <a href="structgdAvifWriteOptions.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgdAvifInfo.html">gdAvifInfo</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Information extracted from the AVIF image and container.  <a href="structgdAvifInfo.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">AVIF Write Options</h2></td></tr>
 <tr class="memitem:ga385c44f6fb256e5716a2302a5b940388" id="r_ga385c44f6fb256e5716a2302a5b940388"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="group__gdCodecAvif.html#gga385c44f6fb256e5716a2302a5b940388a0d14fe76880e3a1eb43a3b2c040b33cd">GD_AVIF_CHROMA_SUBSAMPLING_AUTO</a> = 0
@@ -100,6 +103,24 @@ Data Structures</h2></td></tr>
 , <a class="el" href="group__gdCodecAvif.html#gga385c44f6fb256e5716a2302a5b940388a8b1b56bca02c87eb039827507e359aa0">GD_AVIF_CHROMA_SUBSAMPLING_YUV444</a> = 2
  }</td></tr>
 <tr class="separator:ga385c44f6fb256e5716a2302a5b940388"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabc5c98fcc1211af2b80116dd6e0a035d" id="r_gabc5c98fcc1211af2b80116dd6e0a035d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:gabc5c98fcc1211af2b80116dd6e0a035d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadefda462ea4e57b9a01d1487fd77eeda" id="r_gadefda462ea4e57b9a01d1487fd77eeda"><td class="memItemLeft" align="right" valign="top"><a id="gadefda462ea4e57b9a01d1487fd77eeda" name="gadefda462ea4e57b9a01d1487fd77eeda"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>gdAvifInfoInit</b> (<a class="el" href="structgdAvifInfo.html">gdAvifInfo</a> *info)</td></tr>
+<tr class="memdesc:gadefda462ea4e57b9a01d1487fd77eeda"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize AVIF information and clear the metadata pointer. <br /></td></tr>
+<tr class="separator:gadefda462ea4e57b9a01d1487fd77eeda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6c661405391beeb60b035d734f01adff" id="r_ga6c661405391beeb60b035d734f01adff"><td class="memItemLeft" align="right" valign="top"><a id="ga6c661405391beeb60b035d734f01adff" name="ga6c661405391beeb60b035d734f01adff"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>gdAvifGetInfo</b> (FILE *inFile, <a class="el" href="structgdAvifInfo.html">gdAvifInfo</a> *info)</td></tr>
+<tr class="memdesc:ga6c661405391beeb60b035d734f01adff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read AVIF information from a stdio stream without closing it. <br /></td></tr>
+<tr class="separator:ga6c661405391beeb60b035d734f01adff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacdb0d798686b89ead96232b09469074f" id="r_gacdb0d798686b89ead96232b09469074f"><td class="memItemLeft" align="right" valign="top"><a id="gacdb0d798686b89ead96232b09469074f" name="gacdb0d798686b89ead96232b09469074f"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>gdAvifGetInfoCtx</b> (gdIOCtxPtr in, <a class="el" href="structgdAvifInfo.html">gdAvifInfo</a> *info)</td></tr>
+<tr class="memdesc:gacdb0d798686b89ead96232b09469074f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read AVIF information from a gdIOCtx without closing it. <br /></td></tr>
+<tr class="separator:gacdb0d798686b89ead96232b09469074f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaef2c60e75c2560e2cebf4a34d3883707" id="r_gaef2c60e75c2560e2cebf4a34d3883707"><td class="memItemLeft" align="right" valign="top"><a id="gaef2c60e75c2560e2cebf4a34d3883707" name="gaef2c60e75c2560e2cebf4a34d3883707"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>gdAvifGetInfoPtr</b> (int size, const void *data, <a class="el" href="structgdAvifInfo.html">gdAvifInfo</a> *info)</td></tr>
+<tr class="memdesc:gaef2c60e75c2560e2cebf4a34d3883707"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read AVIF information from memory without taking ownership. <br /></td></tr>
+<tr class="separator:gaef2c60e75c2560e2cebf4a34d3883707"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga30ae69fd483c58aa93b0ff29293d9de4" id="r_ga30ae69fd483c58aa93b0ff29293d9de4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gdCodecAvif.html#ga30ae69fd483c58aa93b0ff29293d9de4">gdAvifWriteOptionsInit</a> (<a class="el" href="structgdAvifWriteOptions.html">gdAvifWriteOptions</a> *options)</td></tr>
 <tr class="memdesc:ga30ae69fd483c58aa93b0ff29293d9de4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize AVIF write options with gd defaults.  <br /></td></tr>
 <tr class="separator:ga30ae69fd483c58aa93b0ff29293d9de4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -131,6 +152,14 @@ Data Structures</h2></td></tr>
 <tr class="memitem:gabf6a1533a13de4c85d368998b2862017" id="r_gabf6a1533a13de4c85d368998b2862017"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gdCodecAvif.html#gabf6a1533a13de4c85d368998b2862017">gdImageAvifPtrWithOptions</a> (gdImagePtr im, int *size, const <a class="el" href="structgdAvifWriteOptions.html">gdAvifWriteOptions</a> *options)</td></tr>
 <tr class="memdesc:gabf6a1533a13de4c85d368998b2862017"><td class="mdescLeft">&#160;</td><td class="mdescRight">Encode a truecolor image as AVIF data in memory using write options.  <br /></td></tr>
 <tr class="separator:gabf6a1533a13de4c85d368998b2862017"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2634abd9bf893969655728eb2d774809" id="r_ga2634abd9bf893969655728eb2d774809"><td class="memItemLeft" align="right" valign="top"><a id="ga2634abd9bf893969655728eb2d774809" name="ga2634abd9bf893969655728eb2d774809"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>gdImageAvifWithOptions</b> (gdImagePtr im, FILE *outFile, const <a class="el" href="structgdAvifWriteOptions.html">gdAvifWriteOptions</a> *options)</td></tr>
+<tr class="memdesc:ga2634abd9bf893969655728eb2d774809"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write AVIF data to a stdio stream using write options. <br /></td></tr>
+<tr class="separator:ga2634abd9bf893969655728eb2d774809"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga939157ed37331c32354ea67f8e173125" id="r_ga939157ed37331c32354ea67f8e173125"><td class="memItemLeft" align="right" valign="top"><a id="ga939157ed37331c32354ea67f8e173125" name="ga939157ed37331c32354ea67f8e173125"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>gdImageAvifCtxWithOptions</b> (gdImagePtr im, gdIOCtxPtr outfile, const <a class="el" href="structgdAvifWriteOptions.html">gdAvifWriteOptions</a> *options)</td></tr>
+<tr class="memdesc:ga939157ed37331c32354ea67f8e173125"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write AVIF data to a gdIOCtx using write options. <br /></td></tr>
+<tr class="separator:ga939157ed37331c32354ea67f8e173125"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga1788d4d0d27a43ee0dd6e891d591eb7a" id="r_ga1788d4d0d27a43ee0dd6e891d591eb7a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gdCodecAvif.html#ga1788d4d0d27a43ee0dd6e891d591eb7a">gdImageAvifCtx</a> (gdImagePtr im, gdIOCtxPtr outfile, int quality, int speed)</td></tr>
 <tr class="memdesc:ga1788d4d0d27a43ee0dd6e891d591eb7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write a truecolor image as AVIF data to an IO context.  <br /></td></tr>
 <tr class="separator:ga1788d4d0d27a43ee0dd6e891d591eb7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -166,15 +195,15 @@ Data Structures</h2></td></tr>
 <div class="line">}</div>
 <div class="line"> </div>
 <div class="line">gdImageDestroy(<a class="code hl_namespace" href="namespaceim.html">im</a>);</div>
-<div class="ttc" id="agroup__gdCodecAvif_html_ga30ae69fd483c58aa93b0ff29293d9de4"><div class="ttname"><a href="group__gdCodecAvif.html#ga30ae69fd483c58aa93b0ff29293d9de4">gdAvifWriteOptionsInit</a></div><div class="ttdeci">void gdAvifWriteOptionsInit(gdAvifWriteOptions *options)</div><div class="ttdoc">Initialize AVIF write options with gd defaults.</div><div class="ttdef"><b>Definition</b> gd_avif.c:640</div></div>
-<div class="ttc" id="agroup__gdCodecAvif_html_gabf6a1533a13de4c85d368998b2862017"><div class="ttname"><a href="group__gdCodecAvif.html#gabf6a1533a13de4c85d368998b2862017">gdImageAvifPtrWithOptions</a></div><div class="ttdeci">void * gdImageAvifPtrWithOptions(gdImagePtr im, int *size, const gdAvifWriteOptions *options)</div><div class="ttdoc">Encode a truecolor image as AVIF data in memory using write options.</div><div class="ttdef"><b>Definition</b> gd_avif.c:714</div></div>
-<div class="ttc" id="agroup__gdCodecAvif_html_gaf5a04843db993453fe59614af65c7041"><div class="ttname"><a href="group__gdCodecAvif.html#gaf5a04843db993453fe59614af65c7041">gdImageCreateFromAvif</a></div><div class="ttdeci">gdImagePtr gdImageCreateFromAvif(FILE *inFile)</div><div class="ttdoc">Create a truecolor image from AVIF data in a stdio stream.</div><div class="ttdef"><b>Definition</b> gd_avif.c:649</div></div>
-<div class="ttc" id="agroup__gdCodecAvif_html_gga385c44f6fb256e5716a2302a5b940388a8b1b56bca02c87eb039827507e359aa0"><div class="ttname"><a href="group__gdCodecAvif.html#gga385c44f6fb256e5716a2302a5b940388a8b1b56bca02c87eb039827507e359aa0">GD_AVIF_CHROMA_SUBSAMPLING_YUV444</a></div><div class="ttdeci">@ GD_AVIF_CHROMA_SUBSAMPLING_YUV444</div><div class="ttdef"><b>Definition</b> gd.h:3328</div></div>
+<div class="ttc" id="agroup__gdCodecAvif_html_ga30ae69fd483c58aa93b0ff29293d9de4"><div class="ttname"><a href="group__gdCodecAvif.html#ga30ae69fd483c58aa93b0ff29293d9de4">gdAvifWriteOptionsInit</a></div><div class="ttdeci">void gdAvifWriteOptionsInit(gdAvifWriteOptions *options)</div><div class="ttdoc">Initialize AVIF write options with gd defaults.</div><div class="ttdef"><b>Definition</b> gd_avif.c:674</div></div>
+<div class="ttc" id="agroup__gdCodecAvif_html_gabf6a1533a13de4c85d368998b2862017"><div class="ttname"><a href="group__gdCodecAvif.html#gabf6a1533a13de4c85d368998b2862017">gdImageAvifPtrWithOptions</a></div><div class="ttdeci">void * gdImageAvifPtrWithOptions(gdImagePtr im, int *size, const gdAvifWriteOptions *options)</div><div class="ttdoc">Encode a truecolor image as AVIF data in memory using write options.</div><div class="ttdef"><b>Definition</b> gd_avif.c:750</div></div>
+<div class="ttc" id="agroup__gdCodecAvif_html_gaf5a04843db993453fe59614af65c7041"><div class="ttname"><a href="group__gdCodecAvif.html#gaf5a04843db993453fe59614af65c7041">gdImageCreateFromAvif</a></div><div class="ttdeci">gdImagePtr gdImageCreateFromAvif(FILE *inFile)</div><div class="ttdoc">Create a truecolor image from AVIF data in a stdio stream.</div><div class="ttdef"><b>Definition</b> gd_avif.c:685</div></div>
+<div class="ttc" id="agroup__gdCodecAvif_html_gga385c44f6fb256e5716a2302a5b940388a8b1b56bca02c87eb039827507e359aa0"><div class="ttname"><a href="group__gdCodecAvif.html#gga385c44f6fb256e5716a2302a5b940388a8b1b56bca02c87eb039827507e359aa0">GD_AVIF_CHROMA_SUBSAMPLING_YUV444</a></div><div class="ttdeci">@ GD_AVIF_CHROMA_SUBSAMPLING_YUV444</div><div class="ttdef"><b>Definition</b> gd.h:3342</div></div>
 <div class="ttc" id="anamespaceim_html"><div class="ttname"><a href="namespaceim.html">im</a></div><div class="ttdoc">Write an image as JPEG data to a gdIOCtx.</div></div>
-<div class="ttc" id="astructgdAvifWriteOptions_html"><div class="ttname"><a href="structgdAvifWriteOptions.html">gdAvifWriteOptions</a></div><div class="ttdoc">AVIF encoder options used by gdImageAvifPtrWithOptions().</div><div class="ttdef"><b>Definition</b> gd.h:3332</div></div>
-<div class="ttc" id="astructgdAvifWriteOptions_html_a6864d3432f1559e5fe83676148cd44f9"><div class="ttname"><a href="structgdAvifWriteOptions.html#a6864d3432f1559e5fe83676148cd44f9">gdAvifWriteOptions::speed</a></div><div class="ttdeci">int speed</div><div class="ttdef"><b>Definition</b> gd.h:3334</div></div>
-<div class="ttc" id="astructgdAvifWriteOptions_html_ae8c507c94b7341d08216d5ea5ae00e6f"><div class="ttname"><a href="structgdAvifWriteOptions.html#ae8c507c94b7341d08216d5ea5ae00e6f">gdAvifWriteOptions::chroma_subsampling</a></div><div class="ttdeci">int chroma_subsampling</div><div class="ttdef"><b>Definition</b> gd.h:3336</div></div>
-<div class="ttc" id="astructgdAvifWriteOptions_html_afa097ab011b9ccdf8ef46981a021bcd1"><div class="ttname"><a href="structgdAvifWriteOptions.html#afa097ab011b9ccdf8ef46981a021bcd1">gdAvifWriteOptions::quality</a></div><div class="ttdeci">int quality</div><div class="ttdef"><b>Definition</b> gd.h:3333</div></div>
+<div class="ttc" id="astructgdAvifWriteOptions_html"><div class="ttname"><a href="structgdAvifWriteOptions.html">gdAvifWriteOptions</a></div><div class="ttdoc">AVIF encoder options used by gdImageAvifPtrWithOptions().</div><div class="ttdef"><b>Definition</b> gd.h:3355</div></div>
+<div class="ttc" id="astructgdAvifWriteOptions_html_a6864d3432f1559e5fe83676148cd44f9"><div class="ttname"><a href="structgdAvifWriteOptions.html#a6864d3432f1559e5fe83676148cd44f9">gdAvifWriteOptions::speed</a></div><div class="ttdeci">int speed</div><div class="ttdef"><b>Definition</b> gd.h:3357</div></div>
+<div class="ttc" id="astructgdAvifWriteOptions_html_ae8c507c94b7341d08216d5ea5ae00e6f"><div class="ttname"><a href="structgdAvifWriteOptions.html#ae8c507c94b7341d08216d5ea5ae00e6f">gdAvifWriteOptions::chroma_subsampling</a></div><div class="ttdeci">int chroma_subsampling</div><div class="ttdef"><b>Definition</b> gd.h:3359</div></div>
+<div class="ttc" id="astructgdAvifWriteOptions_html_afa097ab011b9ccdf8ef46981a021bcd1"><div class="ttname"><a href="structgdAvifWriteOptions.html#afa097ab011b9ccdf8ef46981a021bcd1">gdAvifWriteOptions::quality</a></div><div class="ttdeci">int quality</div><div class="ttdef"><b>Definition</b> gd.h:3356</div></div>
 </div><!-- fragment --> <h2 class="groupheader">Enumeration Type Documentation</h2>
 <a id="ga385c44f6fb256e5716a2302a5b940388" name="ga385c44f6fb256e5716a2302a5b940388"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga385c44f6fb256e5716a2302a5b940388">&#9670;&#160;</a></span>anonymous enum</h2>
@@ -196,6 +225,21 @@ Data Structures</h2></td></tr>
 <tr><td class="fieldname"><a id="gga385c44f6fb256e5716a2302a5b940388a8b1b56bca02c87eb039827507e359aa0" name="gga385c44f6fb256e5716a2302a5b940388a8b1b56bca02c87eb039827507e359aa0"></a>GD_AVIF_CHROMA_SUBSAMPLING_YUV444&#160;</td><td class="fielddoc"><p>Use 4:4:4 chroma subsampling. </p>
 </td></tr>
 </table>
+
+</div>
+</div>
+<a id="gabc5c98fcc1211af2b80116dd6e0a035d" name="gabc5c98fcc1211af2b80116dd6e0a035d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gabc5c98fcc1211af2b80116dd6e0a035d">&#9670;&#160;</a></span>anonymous enum</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">anonymous enum</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>AVIF YUV pixel formats reported by gdAvifInfo::yuv_format. </p>
 
 </div>
 </div>

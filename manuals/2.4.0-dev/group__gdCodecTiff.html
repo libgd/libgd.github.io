@@ -207,6 +207,8 @@ Data Structures</h2></td></tr>
 <tr class="memitem:ga13711a136fea91da21e85e85e290e18c" id="r_ga13711a136fea91da21e85e85e290e18c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gdCodecTiff.html#ga13711a136fea91da21e85e85e290e18c">gdTiffReadGetInfo</a> (<a class="el" href="group__gdCodecTiff.html#ga689957796d91d08eea7eb092caee7add">gdTiffReadPtr</a> tiff, <a class="el" href="structgdTiffInfo.html">gdTiffInfo</a> *info)</td></tr>
 <tr class="memdesc:ga13711a136fea91da21e85e85e290e18c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get TIFF file information from a reader.  <br /></td></tr>
 <tr class="separator:ga13711a136fea91da21e85e85e290e18c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5b725921339cfe4635454148210284e6" id="r_ga5b725921339cfe4635454148210284e6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gdCodecTiff.html#ga5b725921339cfe4635454148210284e6">gdTiffReadGetMetadata</a> (<a class="el" href="group__gdCodecTiff.html#ga689957796d91d08eea7eb092caee7add">gdTiffReadPtr</a> tiff, gdImageMetadata *metadata)</td></tr>
+<tr class="separator:ga5b725921339cfe4635454148210284e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga6f6205329b44f34f6dbd8f0dcac7f0bc" id="r_ga6f6205329b44f34f6dbd8f0dcac7f0bc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gdCodecTiff.html#ga6f6205329b44f34f6dbd8f0dcac7f0bc">gdTiffReadNextImage</a> (<a class="el" href="group__gdCodecTiff.html#ga689957796d91d08eea7eb092caee7add">gdTiffReadPtr</a> tiff, <a class="el" href="structgdTiffPageInfo.html">gdTiffPageInfo</a> *info, gdImagePtr *image)</td></tr>
 <tr class="memdesc:ga6f6205329b44f34f6dbd8f0dcac7f0bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read the next TIFF page image.  <br /></td></tr>
 <tr class="separator:ga6f6205329b44f34f6dbd8f0dcac7f0bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -278,19 +280,19 @@ Data Structures</h2></td></tr>
 <div class="line">}</div>
 <div class="line"> </div>
 <div class="line"><a class="code hl_function" href="group__gdCodecTiff.html#gafc12a9bfcd64c61a2d998aa55b697e42">gdTiffReadClose</a>(reader);</div>
-<div class="ttc" id="agroup__gdCodecTiff_html_ga13711a136fea91da21e85e85e290e18c"><div class="ttname"><a href="group__gdCodecTiff.html#ga13711a136fea91da21e85e85e290e18c">gdTiffReadGetInfo</a></div><div class="ttdeci">int gdTiffReadGetInfo(gdTiffReadPtr tiff, gdTiffInfo *info)</div><div class="ttdoc">Get TIFF file information from a reader.</div><div class="ttdef"><b>Definition</b> gd_tiff.c:2353</div></div>
-<div class="ttc" id="agroup__gdCodecTiff_html_ga689957796d91d08eea7eb092caee7add"><div class="ttname"><a href="group__gdCodecTiff.html#ga689957796d91d08eea7eb092caee7add">gdTiffReadPtr</a></div><div class="ttdeci">struct gdTiffReadStruct * gdTiffReadPtr</div><div class="ttdoc">Opaque TIFF multi-page reader handle.</div><div class="ttdef"><b>Definition</b> gd.h:3548</div></div>
-<div class="ttc" id="agroup__gdCodecTiff_html_ga6f6205329b44f34f6dbd8f0dcac7f0bc"><div class="ttname"><a href="group__gdCodecTiff.html#ga6f6205329b44f34f6dbd8f0dcac7f0bc">gdTiffReadNextImage</a></div><div class="ttdeci">int gdTiffReadNextImage(gdTiffReadPtr tiff, gdTiffPageInfo *info, gdImagePtr *image)</div><div class="ttdoc">Read the next TIFF page image.</div><div class="ttdef"><b>Definition</b> gd_tiff.c:2362</div></div>
-<div class="ttc" id="agroup__gdCodecTiff_html_gad824b00c38dffd0d6e3a209987b21779"><div class="ttname"><a href="group__gdCodecTiff.html#gad824b00c38dffd0d6e3a209987b21779">gdTiffReadOpen</a></div><div class="ttdeci">gdTiffReadPtr gdTiffReadOpen(FILE *fd, const gdTiffReadOptions *options)</div><div class="ttdoc">Open a TIFF multi-page reader from a stdio file.</div><div class="ttdef"><b>Definition</b> gd_tiff.c:2322</div></div>
-<div class="ttc" id="agroup__gdCodecTiff_html_gafc12a9bfcd64c61a2d998aa55b697e42"><div class="ttname"><a href="group__gdCodecTiff.html#gafc12a9bfcd64c61a2d998aa55b697e42">gdTiffReadClose</a></div><div class="ttdeci">void gdTiffReadClose(gdTiffReadPtr tiff)</div><div class="ttdoc">Close a TIFF multi-page reader.</div><div class="ttdef"><b>Definition</b> gd_tiff.c:2347</div></div>
-<div class="ttc" id="astructgdTiffInfo_html"><div class="ttname"><a href="structgdTiffInfo.html">gdTiffInfo</a></div><div class="ttdoc">TIFF file information from the first page and container.</div><div class="ttdef"><b>Definition</b> gd.h:3562</div></div>
-<div class="ttc" id="astructgdTiffInfo_html_a29dab1b546fccac9fd1d3a9044cdad3f"><div class="ttname"><a href="structgdTiffInfo.html#a29dab1b546fccac9fd1d3a9044cdad3f">gdTiffInfo::pageCount</a></div><div class="ttdeci">int pageCount</div><div class="ttdef"><b>Definition</b> gd.h:3565</div></div>
-<div class="ttc" id="astructgdTiffInfo_html_a43341597ce4600665b54ccbec433841d"><div class="ttname"><a href="structgdTiffInfo.html#a43341597ce4600665b54ccbec433841d">gdTiffInfo::height</a></div><div class="ttdeci">int height</div><div class="ttdef"><b>Definition</b> gd.h:3564</div></div>
-<div class="ttc" id="astructgdTiffInfo_html_aa949519195f0fd932489270419eefe34"><div class="ttname"><a href="structgdTiffInfo.html#aa949519195f0fd932489270419eefe34">gdTiffInfo::width</a></div><div class="ttdeci">int width</div><div class="ttdef"><b>Definition</b> gd.h:3563</div></div>
-<div class="ttc" id="astructgdTiffPageInfo_html"><div class="ttname"><a href="structgdTiffPageInfo.html">gdTiffPageInfo</a></div><div class="ttdoc">TIFF page information returned while reading pages.</div><div class="ttdef"><b>Definition</b> gd.h:3578</div></div>
-<div class="ttc" id="astructgdTiffPageInfo_html_a1744611d17368cf387a43e38b3e144e5"><div class="ttname"><a href="structgdTiffPageInfo.html#a1744611d17368cf387a43e38b3e144e5">gdTiffPageInfo::pageIndex</a></div><div class="ttdeci">int pageIndex</div><div class="ttdef"><b>Definition</b> gd.h:3579</div></div>
-<div class="ttc" id="astructgdTiffPageInfo_html_a23f1903a0e21ec0e53b7818a9b9a99cd"><div class="ttname"><a href="structgdTiffPageInfo.html#a23f1903a0e21ec0e53b7818a9b9a99cd">gdTiffPageInfo::width</a></div><div class="ttdeci">int width</div><div class="ttdef"><b>Definition</b> gd.h:3580</div></div>
-<div class="ttc" id="astructgdTiffPageInfo_html_aa0d8f028fb5e4775cde64d8d84787c37"><div class="ttname"><a href="structgdTiffPageInfo.html#aa0d8f028fb5e4775cde64d8d84787c37">gdTiffPageInfo::height</a></div><div class="ttdeci">int height</div><div class="ttdef"><b>Definition</b> gd.h:3581</div></div>
+<div class="ttc" id="agroup__gdCodecTiff_html_ga13711a136fea91da21e85e85e290e18c"><div class="ttname"><a href="group__gdCodecTiff.html#ga13711a136fea91da21e85e85e290e18c">gdTiffReadGetInfo</a></div><div class="ttdeci">int gdTiffReadGetInfo(gdTiffReadPtr tiff, gdTiffInfo *info)</div><div class="ttdoc">Get TIFF file information from a reader.</div><div class="ttdef"><b>Definition</b> gd_tiff.c:2591</div></div>
+<div class="ttc" id="agroup__gdCodecTiff_html_ga689957796d91d08eea7eb092caee7add"><div class="ttname"><a href="group__gdCodecTiff.html#ga689957796d91d08eea7eb092caee7add">gdTiffReadPtr</a></div><div class="ttdeci">struct gdTiffReadStruct * gdTiffReadPtr</div><div class="ttdoc">Opaque TIFF multi-page reader handle.</div><div class="ttdef"><b>Definition</b> gd.h:3614</div></div>
+<div class="ttc" id="agroup__gdCodecTiff_html_ga6f6205329b44f34f6dbd8f0dcac7f0bc"><div class="ttname"><a href="group__gdCodecTiff.html#ga6f6205329b44f34f6dbd8f0dcac7f0bc">gdTiffReadNextImage</a></div><div class="ttdeci">int gdTiffReadNextImage(gdTiffReadPtr tiff, gdTiffPageInfo *info, gdImagePtr *image)</div><div class="ttdoc">Read the next TIFF page image.</div><div class="ttdef"><b>Definition</b> gd_tiff.c:2600</div></div>
+<div class="ttc" id="agroup__gdCodecTiff_html_gad824b00c38dffd0d6e3a209987b21779"><div class="ttname"><a href="group__gdCodecTiff.html#gad824b00c38dffd0d6e3a209987b21779">gdTiffReadOpen</a></div><div class="ttdeci">gdTiffReadPtr gdTiffReadOpen(FILE *fd, const gdTiffReadOptions *options)</div><div class="ttdoc">Open a TIFF multi-page reader from a stdio file.</div><div class="ttdef"><b>Definition</b> gd_tiff.c:2560</div></div>
+<div class="ttc" id="agroup__gdCodecTiff_html_gafc12a9bfcd64c61a2d998aa55b697e42"><div class="ttname"><a href="group__gdCodecTiff.html#gafc12a9bfcd64c61a2d998aa55b697e42">gdTiffReadClose</a></div><div class="ttdeci">void gdTiffReadClose(gdTiffReadPtr tiff)</div><div class="ttdoc">Close a TIFF multi-page reader.</div><div class="ttdef"><b>Definition</b> gd_tiff.c:2585</div></div>
+<div class="ttc" id="astructgdTiffInfo_html"><div class="ttname"><a href="structgdTiffInfo.html">gdTiffInfo</a></div><div class="ttdoc">TIFF file information from the first page and container.</div><div class="ttdef"><b>Definition</b> gd.h:3628</div></div>
+<div class="ttc" id="astructgdTiffInfo_html_a29dab1b546fccac9fd1d3a9044cdad3f"><div class="ttname"><a href="structgdTiffInfo.html#a29dab1b546fccac9fd1d3a9044cdad3f">gdTiffInfo::pageCount</a></div><div class="ttdeci">int pageCount</div><div class="ttdef"><b>Definition</b> gd.h:3631</div></div>
+<div class="ttc" id="astructgdTiffInfo_html_a43341597ce4600665b54ccbec433841d"><div class="ttname"><a href="structgdTiffInfo.html#a43341597ce4600665b54ccbec433841d">gdTiffInfo::height</a></div><div class="ttdeci">int height</div><div class="ttdef"><b>Definition</b> gd.h:3630</div></div>
+<div class="ttc" id="astructgdTiffInfo_html_aa949519195f0fd932489270419eefe34"><div class="ttname"><a href="structgdTiffInfo.html#aa949519195f0fd932489270419eefe34">gdTiffInfo::width</a></div><div class="ttdeci">int width</div><div class="ttdef"><b>Definition</b> gd.h:3629</div></div>
+<div class="ttc" id="astructgdTiffPageInfo_html"><div class="ttname"><a href="structgdTiffPageInfo.html">gdTiffPageInfo</a></div><div class="ttdoc">TIFF page information returned while reading pages.</div><div class="ttdef"><b>Definition</b> gd.h:3644</div></div>
+<div class="ttc" id="astructgdTiffPageInfo_html_a1744611d17368cf387a43e38b3e144e5"><div class="ttname"><a href="structgdTiffPageInfo.html#a1744611d17368cf387a43e38b3e144e5">gdTiffPageInfo::pageIndex</a></div><div class="ttdeci">int pageIndex</div><div class="ttdef"><b>Definition</b> gd.h:3645</div></div>
+<div class="ttc" id="astructgdTiffPageInfo_html_a23f1903a0e21ec0e53b7818a9b9a99cd"><div class="ttname"><a href="structgdTiffPageInfo.html#a23f1903a0e21ec0e53b7818a9b9a99cd">gdTiffPageInfo::width</a></div><div class="ttdeci">int width</div><div class="ttdef"><b>Definition</b> gd.h:3646</div></div>
+<div class="ttc" id="astructgdTiffPageInfo_html_aa0d8f028fb5e4775cde64d8d84787c37"><div class="ttname"><a href="structgdTiffPageInfo.html#aa0d8f028fb5e4775cde64d8d84787c37">gdTiffPageInfo::height</a></div><div class="ttdeci">int height</div><div class="ttdef"><b>Definition</b> gd.h:3647</div></div>
 </div><!-- fragment --> <h2 class="groupheader">Typedef Documentation</h2>
 <a id="ga689957796d91d08eea7eb092caee7add" name="ga689957796d91d08eea7eb092caee7add"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga689957796d91d08eea7eb092caee7add">&#9670;&#160;</a></span>gdTiffReadPtr</h2>
@@ -858,6 +860,35 @@ Data Structures</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Returns 1 on success, or 0 on failure. </dd></dl>
+
+</div>
+</div>
+<a id="ga5b725921339cfe4635454148210284e6" name="ga5b725921339cfe4635454148210284e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5b725921339cfe4635454148210284e6">&#9670;&#160;</a></span>gdTiffReadGetMetadata()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int gdTiffReadGetMetadata </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__gdCodecTiff.html#ga689957796d91d08eea7eb092caee7add">gdTiffReadPtr</a>&#160;</td>
+          <td class="paramname"><em>tiff</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">gdImageMetadata *&#160;</td>
+          <td class="paramname"><em>metadata</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Collect opaque metadata from the first TIFF directory. </p>
 
 </div>
 </div>

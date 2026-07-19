@@ -143,6 +143,16 @@ typedef struct gdGifReadStruct *&#160;</td><td class="memItemRight" valign="bott
 <tr class="memitem:ga4e8ba41c7148d5582a7acdddc7c9ba5e" id="r_ga4e8ba41c7148d5582a7acdddc7c9ba5e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gdCodecGif.html#ga4e8ba41c7148d5582a7acdddc7c9ba5e">gdGifReadGetInfo</a> (<a class="el" href="group__gdCodecGif.html#gaf6ad2fa543bfdb55eaaef9f20f174ff9">gdGifReadPtr</a> gif, <a class="el" href="structgdGifInfo.html">gdGifInfo</a> *info)</td></tr>
 <tr class="memdesc:ga4e8ba41c7148d5582a7acdddc7c9ba5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read logical screen and loop information from a GIF reader.  <br /></td></tr>
 <tr class="separator:ga4e8ba41c7148d5582a7acdddc7c9ba5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1ce41e7d4ac16c693f0b92de3e6b346a" id="r_ga1ce41e7d4ac16c693f0b92de3e6b346a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gdCodecGif.html#ga1ce41e7d4ac16c693f0b92de3e6b346a">gdGifGetInfo</a> (FILE *file, <a class="el" href="structgdGifInfo.html">gdGifInfo</a> *info)</td></tr>
+<tr class="memdesc:ga1ce41e7d4ac16c693f0b92de3e6b346a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read logical screen and loop information from a GIF stdio file.  <br /></td></tr>
+<tr class="separator:ga1ce41e7d4ac16c693f0b92de3e6b346a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gade50f38acad8b25283dde9072f7fdef9" id="r_gade50f38acad8b25283dde9072f7fdef9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gdCodecGif.html#gade50f38acad8b25283dde9072f7fdef9">gdGifGetInfoCtx</a> (gdIOCtxPtr input, <a class="el" href="structgdGifInfo.html">gdGifInfo</a> *info)</td></tr>
+<tr class="memdesc:gade50f38acad8b25283dde9072f7fdef9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read logical screen and loop information from a seekable gdIOCtx.  <br /></td></tr>
+<tr class="separator:gade50f38acad8b25283dde9072f7fdef9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf1d73dd7bc9c08324c133863b156d8cb" id="r_gaf1d73dd7bc9c08324c133863b156d8cb"><td class="memItemLeft" align="right" valign="top"><a id="gaf1d73dd7bc9c08324c133863b156d8cb" name="gaf1d73dd7bc9c08324c133863b156d8cb"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>gdGifGetInfoPtr</b> (int size, const void *data, <a class="el" href="structgdGifInfo.html">gdGifInfo</a> *info)</td></tr>
+<tr class="memdesc:gaf1d73dd7bc9c08324c133863b156d8cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read logical screen and loop information from a GIF memory buffer. <br /></td></tr>
+<tr class="separator:gaf1d73dd7bc9c08324c133863b156d8cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaea67559423593d68cc41ea907325c1cf" id="r_gaea67559423593d68cc41ea907325c1cf"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gdCodecGif.html#gaea67559423593d68cc41ea907325c1cf">gdGifReadNextFrame</a> (<a class="el" href="group__gdCodecGif.html#gaf6ad2fa543bfdb55eaaef9f20f174ff9">gdGifReadPtr</a> gif, <a class="el" href="structgdGifFrameInfo.html">gdGifFrameInfo</a> *info, gdImagePtr *frame)</td></tr>
 <tr class="memdesc:gaea67559423593d68cc41ea907325c1cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read the next raw GIF frame.  <br /></td></tr>
 <tr class="separator:gaea67559423593d68cc41ea907325c1cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -249,7 +259,7 @@ typedef struct gdGifReadStruct *&#160;</td><td class="memItemRight" valign="bott
 <div class="ttc" id="agroup__PixelDraw_html_ga1e534e750e1b336b8961a62ebec88511"><div class="ttname"><a href="group__PixelDraw.html#ga1e534e750e1b336b8961a62ebec88511">gdImageFilledRectangle</a></div><div class="ttdeci">void gdImageFilledRectangle(gdImagePtr im, int x1, int y1, int x2, int y2, int color)</div><div class="ttdoc">Draws a filled rectangle.</div><div class="ttdef"><b>Definition</b> gd.c:2403</div></div>
 <div class="ttc" id="agroup__gdCodecGif_html_ga2e148e2db8436ec36fddbff373c03722"><div class="ttname"><a href="group__gdCodecGif.html#ga2e148e2db8436ec36fddbff373c03722">gdImageGifAnimAdd</a></div><div class="ttdeci">void gdImageGifAnimAdd(gdImagePtr im, FILE *outFile, int LocalCM, int LeftOfs, int TopOfs, int Delay, int Disposal, gdImagePtr previm)</div><div class="ttdoc">Add a frame to a GIF animation written to a stdio file.</div><div class="ttdef"><b>Definition</b> gd_gif_out.c:275</div></div>
 <div class="ttc" id="agroup__gdCodecGif_html_gaa3d518989e8d92ab51000a712dffe296"><div class="ttname"><a href="group__gdCodecGif.html#gaa3d518989e8d92ab51000a712dffe296">gdImageGifAnimBegin</a></div><div class="ttdeci">void gdImageGifAnimBegin(gdImagePtr im, FILE *outFile, int GlobalCM, int Loops)</div><div class="ttdoc">Begin writing a GIF animation to a stdio file.</div><div class="ttdef"><b>Definition</b> gd_gif_out.c:183</div></div>
-<div class="ttc" id="agroup__gdCodecGif_html_gac18746b0418770fe93e3ecee1a897254"><div class="ttname"><a href="group__gdCodecGif.html#gac18746b0418770fe93e3ecee1a897254">GD_GIF_DISPOSAL_NONE</a></div><div class="ttdeci">#define GD_GIF_DISPOSAL_NONE</div><div class="ttdef"><b>Definition</b> gd.h:1520</div></div>
+<div class="ttc" id="agroup__gdCodecGif_html_gac18746b0418770fe93e3ecee1a897254"><div class="ttname"><a href="group__gdCodecGif.html#gac18746b0418770fe93e3ecee1a897254">GD_GIF_DISPOSAL_NONE</a></div><div class="ttdeci">#define GD_GIF_DISPOSAL_NONE</div><div class="ttdef"><b>Definition</b> gd.h:1417</div></div>
 <div class="ttc" id="agroup__gdCodecGif_html_gafca3c519ebe519709e78142141142b9a"><div class="ttname"><a href="group__gdCodecGif.html#gafca3c519ebe519709e78142141142b9a">gdImageGifAnimEnd</a></div><div class="ttdeci">void gdImageGifAnimEnd(FILE *outFile)</div><div class="ttdoc">Finish writing a GIF animation to a stdio file.</div><div class="ttdef"><b>Definition</b> gd_gif_out.c:505</div></div>
 <div class="ttc" id="anamespaceim_html"><div class="ttname"><a href="namespaceim.html">im</a></div><div class="ttdoc">Write an image as JPEG data to a gdIOCtx.</div></div>
 </div><!-- fragment --> <h2 class="groupheader">Macro Definition Documentation</h2>
@@ -341,6 +351,68 @@ typedef struct gdGifReadStruct *&#160;</td><td class="memItemRight" valign="bott
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="ga1ce41e7d4ac16c693f0b92de3e6b346a" name="ga1ce41e7d4ac16c693f0b92de3e6b346a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1ce41e7d4ac16c693f0b92de3e6b346a">&#9670;&#160;</a></span>gdGifGetInfo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int gdGifGetInfo </td>
+          <td>(</td>
+          <td class="paramtype">FILE *&#160;</td>
+          <td class="paramname"><em>file</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structgdGifInfo.html">gdGifInfo</a> *&#160;</td>
+          <td class="paramname"><em>info</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Read logical screen and loop information from a GIF stdio file. </p>
+<p>The input stream position is restored before returning. </p>
+
+</div>
+</div>
+<a id="gade50f38acad8b25283dde9072f7fdef9" name="gade50f38acad8b25283dde9072f7fdef9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gade50f38acad8b25283dde9072f7fdef9">&#9670;&#160;</a></span>gdGifGetInfoCtx()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int gdGifGetInfoCtx </td>
+          <td>(</td>
+          <td class="paramtype">gdIOCtxPtr&#160;</td>
+          <td class="paramname"><em>input</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structgdGifInfo.html">gdGifInfo</a> *&#160;</td>
+          <td class="paramname"><em>info</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Read logical screen and loop information from a seekable gdIOCtx. </p>
+<p>The input context position is restored before returning. </p>
+
+</div>
+</div>
 <a id="ga557eafdd5010fc8fab538ab3856e5fdf" name="ga557eafdd5010fc8fab538ab3856e5fdf"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga557eafdd5010fc8fab538ab3856e5fdf">&#9670;&#160;</a></span>gdGifIsAnimated()</h2>
 

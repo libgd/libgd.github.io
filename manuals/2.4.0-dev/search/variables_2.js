@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['canvasheight_0',['canvasheight',['../structgdJxlWriteOptions.html#a9b66ab9850cbb81d7c65fb6bb64d18ab',1,'gdJxlWriteOptions::canvasHeight'],['../structgdWebpWriteOptions.html#a238ca6c61f63cd3d84ed77b44e1c4314',1,'gdWebpWriteOptions::canvasHeight']]],
-  ['canvaswidth_1',['canvaswidth',['../structgdWebpWriteOptions.html#a4b6023a786dc7ee3a47bbda76625f1f0',1,'gdWebpWriteOptions::canvasWidth'],['../structgdJxlWriteOptions.html#a009d5391b93997b55af68b8344b3e0d7',1,'gdJxlWriteOptions::canvasWidth']]],
+  ['canvasheight_0',['canvasheight',['../structgdJxlAnimWriteOptions.html#acb5557e4982cb7fea223df72d4608895',1,'gdJxlAnimWriteOptions::canvasHeight'],['../structgdWebpAnimWriteOptions.html#ad847fbb0442b9db5d56b94fcfc692d77',1,'gdWebpAnimWriteOptions::canvasHeight']]],
+  ['canvaswidth_1',['canvaswidth',['../structgdWebpAnimWriteOptions.html#a71026e4b5601923cdbd219cb416b1ea7',1,'gdWebpAnimWriteOptions::canvasWidth'],['../structgdJxlAnimWriteOptions.html#a4364f1cba971e6a09e36a1b8b524f011',1,'gdJxlAnimWriteOptions::canvasWidth']]],
   ['charmap_2',['charmap',['../structgdFTStringExtra.html#ac53c36eb957b8d532687e0444cb8604a',1,'gdFTStringExtra']]],
   ['chroma_3',['chroma',['../structgdHeifWriteOptions.html#ade2224e8159265bad76b201884347901',1,'gdHeifWriteOptions']]],
   ['chroma_5fsubsampling_4',['chroma_subsampling',['../structgdAvifWriteOptions.html#ae8c507c94b7341d08216d5ea5ae00e6f',1,'gdAvifWriteOptions']]],
@@ -11,11 +11,12 @@ var searchData=
   ['color_8',['color',['../structgdAutoCropOptions.html#a92b0b93df656cf96398b85b7442ee237',1,'gdAutoCropOptions']]],
   ['color_5fspace_9',['color_space',['../structgdJpegInfo.html#ab40379ccdac8ee58f2f2d91ee896d837',1,'gdJpegInfo']]],
   ['color_5ftype_10',['color_type',['../structgdPngInfo.html#a77347318006fbef9560c9827d1186e45',1,'gdPngInfo']]],
-  ['colors_11',['colors',['../structgdScatter.html#a54af3d3df9325b89daa171647604eedf',1,'gdScatter']]],
-  ['colorspace_12',['colorspace',['../structgdTiffWriteOptions.html#add287d21caf41016b92556622e886b3a',1,'gdTiffWriteOptions']]],
-  ['complete_13',['complete',['../structgdWebpFrameInfo.html#a596873c3ba0cc5de288c8b5b692e45f9',1,'gdWebpFrameInfo']]],
-  ['components_14',['components',['../structgdJpegInfo.html#a2fc4877256abc49368a758f9e8496522',1,'gdJpegInfo']]],
-  ['compression_15',['compression',['../structgdTiffInfo.html#a5c455b6d4ec8fb019ba2de957497279f',1,'gdTiffInfo::compression'],['../structgdTiffPageInfo.html#aafb6e98db506146fe4d89c93b52ff498',1,'gdTiffPageInfo::compression'],['../structgdTiffWriteOptions.html#a5b58e7fc5766493450f7a5960e3441f0',1,'gdTiffWriteOptions::compression']]],
-  ['compression_5flevel_16',['compression_level',['../structgdPngWriteOptions.html#a3ce845ef00d09212a476693f6d6d4abe',1,'gdPngWriteOptions']]],
-  ['compression_5fstrategy_17',['compression_strategy',['../structgdPngWriteOptions.html#a1fbfdf3e3547bad7907a6ff96d1c78a5',1,'gdPngWriteOptions']]]
+  ['colorresolution_11',['colorResolution',['../structgdGifInfo.html#a2185d562ec975cdac0af9eec1f51e0be',1,'gdGifInfo']]],
+  ['colors_12',['colors',['../structgdScatter.html#a54af3d3df9325b89daa171647604eedf',1,'gdScatter']]],
+  ['colorspace_13',['colorspace',['../structgdTiffWriteOptions.html#add287d21caf41016b92556622e886b3a',1,'gdTiffWriteOptions']]],
+  ['complete_14',['complete',['../structgdWebpFrameInfo.html#a596873c3ba0cc5de288c8b5b692e45f9',1,'gdWebpFrameInfo']]],
+  ['components_15',['components',['../structgdJpegInfo.html#a2fc4877256abc49368a758f9e8496522',1,'gdJpegInfo']]],
+  ['compression_16',['compression',['../structgdTiffInfo.html#a5c455b6d4ec8fb019ba2de957497279f',1,'gdTiffInfo::compression'],['../structgdTiffPageInfo.html#aafb6e98db506146fe4d89c93b52ff498',1,'gdTiffPageInfo::compression'],['../structgdTiffWriteOptions.html#a5b58e7fc5766493450f7a5960e3441f0',1,'gdTiffWriteOptions::compression']]],
+  ['compression_5flevel_17',['compression_level',['../structgdPngWriteOptions.html#a3ce845ef00d09212a476693f6d6d4abe',1,'gdPngWriteOptions']]],
+  ['compression_5fstrategy_18',['compression_strategy',['../structgdPngWriteOptions.html#a1fbfdf3e3547bad7907a6ff96d1c78a5',1,'gdPngWriteOptions']]]
 ];

@@ -9,7 +9,7 @@ var searchData=
   ['dev_6',['About LibGD 2.4.0-dev',['../index.html',1,'']]],
   ['disposal_7',['disposal',['../structgdGifFrameInfo.html#af41accb2525380d28ba5c1822b1a7b6a',1,'gdGifFrameInfo']]],
   ['dispose_8',['dispose',['../structgdWebpFrameInfo.html#a7bfaf404537b4e5d970bb2e9bc51cfcd',1,'gdWebpFrameInfo']]],
-  ['distance_9',['distance',['../structgdJxlWriteOptions.html#a10b576a239f3639816dc95a1c118e00f',1,'gdJxlWriteOptions']]],
+  ['distance_9',['distance',['../structgdJxlWriteOptions.html#a10b576a239f3639816dc95a1c118e00f',1,'gdJxlWriteOptions::distance'],['../structgdJxlAnimWriteOptions.html#a67e70281aecd2766c8930a8240dbb7fe',1,'gdJxlAnimWriteOptions::distance']]],
   ['drawing_20pixel_20operations_10',['lines, ellipses, polygons and Arc Drawing pixel operations',['../group__PixelDraw.html',1,'']]],
   ['duration_11',['duration',['../structgdWebpFrameInfo.html#aaf95b3ab0f0f1ed48ff81d769915f3d0',1,'gdWebpFrameInfo']]]
 ];

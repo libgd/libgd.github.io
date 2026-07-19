@@ -1,7 +1,7 @@
 var searchData=
 [
   ['background_5fcolor_0',['background_color',['../structgdScaleOptions.html#ac697b78f3d996e784ec565cc4b2d1278',1,'gdScaleOptions']]],
-  ['backgroundcolor_1',['backgroundcolor',['../structgdWebpInfo.html#ac29513e9443a09128a535055ea15e8fe',1,'gdWebpInfo::backgroundColor'],['../structgdWebpWriteOptions.html#af4838aede64969b1761cf8cec62f3492',1,'gdWebpWriteOptions::backgroundColor']]],
+  ['backgroundcolor_1',['backgroundcolor',['../structgdWebpInfo.html#ac29513e9443a09128a535055ea15e8fe',1,'gdWebpInfo::backgroundColor'],['../structgdWebpAnimWriteOptions.html#aa5069fac547f95d9c78985bb635ce293',1,'gdWebpAnimWriteOptions::backgroundColor']]],
   ['backgroundindex_2',['backgroundIndex',['../structgdGifInfo.html#a6c28e1b96a295d5159c3d58f67ca2372',1,'gdGifInfo']]],
   ['basics_3a_20using_20gd_20in_20your_20program_3a_3',['gd basics: using gd in your program:',['../index.html#autotoc_md2',1,'']]],
   ['bit_5fdepth_4',['bit_depth',['../structgdPngInfo.html#a2001e3b18a37ece4efa850a51370892c',1,'gdPngInfo']]],
