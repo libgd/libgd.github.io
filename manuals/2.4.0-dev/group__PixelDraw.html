@@ -75,9 +75,18 @@ $(function() {
 <a href="#define-members">Macros</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a>  </div>
-  <div class="headertitle"><div class="title">lines, ellipses, polygons and Arc Drawing pixel operations</div></div>
+  <div class="headertitle"><div class="title">lines, ellipses, polygons and Arc Drawing pixel operations<div class="ingroups"><a class="el" href="group__gdCodecs.html">Codecs</a> &raquo; <a class="el" href="group__gdCodecBmp.html">BMP</a></div></div></div>
 </div><!--header-->
 <div class="contents">
+<div class="dynheader">
+Collaboration diagram for lines, ellipses, polygons and Arc Drawing pixel operations:</div>
+<div class="dyncontent">
+<div class="center"><img src="group__PixelDraw.png" border="0" usemap="#agroup____PixelDraw" alt=""/></div>
+<map name="agroup____PixelDraw" id="agroup____PixelDraw">
+<area shape="rect" title=" " alt="" coords="104,5,283,60"/>
+<area shape="rect" href="group__gdCodecBmp.html" title="Read and write Microsoft Windows bitmap images." alt="" coords="5,20,56,45"/>
+</map>
+</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Data Structures</h2></td></tr>
@@ -979,9 +988,10 @@ Functions</h2></td></tr>
 
 <p>Set the color for subsequent anti-aliased drawing. </p>
 <p>If gdAntiAliased is passed as color to drawing operations that support anti-aliased drawing (such as gdImageLine and <a class="el" href="group__PixelDraw.html#gaa7abdc954dc63f6a8160cd7359589604">gdImagePolygon</a>), the actual color to be used can be set with this function.</p>
-<p>Example: draw an anti-aliased blue line: </p><div class="fragment"><div class="line"><a class="code hl_function" href="group__PixelDraw.html#ga4fee24e02734094ffdc2a1b7c6140fd0">gdImageSetAntiAliased</a>(<a class="code hl_namespace" href="namespaceim.html">im</a>, gdTrueColorAlpha(0, 0, gdBlueMax, gdAlphaOpaque));</div>
+<p>Example: draw an anti-aliased blue line: </p><div class="fragment"><div class="line"><a class="code hl_function" href="group__PixelDraw.html#ga4fee24e02734094ffdc2a1b7c6140fd0">gdImageSetAntiAliased</a>(<a class="code hl_namespace" href="namespaceim.html">im</a>, <a class="code hl_define" href="group__gdCodecBmp.html#gaaaec1020ee294fc4c62d4d831f35e6c8">gdTrueColorAlpha</a>(0, 0, gdBlueMax, gdAlphaOpaque));</div>
 <div class="line">gdImageLine(<a class="code hl_namespace" href="namespaceim.html">im</a>, 10,10, 20,20, gdAntiAliased);</div>
 <div class="ttc" id="agroup__PixelDraw_html_ga4fee24e02734094ffdc2a1b7c6140fd0"><div class="ttname"><a href="group__PixelDraw.html#ga4fee24e02734094ffdc2a1b7c6140fd0">gdImageSetAntiAliased</a></div><div class="ttdeci">void gdImageSetAntiAliased(gdImagePtr im, int c)</div><div class="ttdoc">Set the color for subsequent anti-aliased drawing.</div><div class="ttdef"><b>Definition</b> gd.c:3203</div></div>
+<div class="ttc" id="agroup__gdCodecBmp_html_gaaaec1020ee294fc4c62d4d831f35e6c8"><div class="ttname"><a href="group__gdCodecBmp.html#gaaaec1020ee294fc4c62d4d831f35e6c8">gdTrueColorAlpha</a></div><div class="ttdeci">#define gdTrueColorAlpha(r, g, b, a)</div><div class="ttdoc">Compose a truecolor value from its components.</div><div class="ttdef"><b>Definition</b> gd.h:6005</div></div>
 <div class="ttc" id="anamespaceim_html"><div class="ttname"><a href="namespaceim.html">im</a></div><div class="ttdoc">Write an image as JPEG data to a gdIOCtx.</div></div>
 </div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">

@@ -71,6 +71,7 @@ $(function() {
 
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Data Structures</a> &#124;
 <a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">QOI<div class="ingroups"><a class="el" href="group__gdCodecs.html">Codecs</a></div></div></div>
@@ -89,6 +90,15 @@ Collaboration diagram for QOI:</div>
 </map>
 </div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Data Structures</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgdQoiInfo.html">gdQoiInfo</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Information read from a QOI data.  <a href="structgdQoiInfo.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgdQoiWriteOptions.html">gdQoiWriteOptions</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Options for writing QOI data.  <a href="structgdQoiWriteOptions.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
 <tr class="memitem:ga99fb83031ce9923c84392b4e92f956b5" id="r_ga99fb83031ce9923c84392b4e92f956b5"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="group__gdCodecQoi.html#gga99fb83031ce9923c84392b4e92f956b5af74358f8b18516a39861c22651770e74">GD_QOI_SRGB</a> = 0
@@ -108,6 +118,30 @@ Functions</h2></td></tr>
 <tr class="memitem:gab3d4332c3ea09c7611e47b662bc43c5a" id="r_gab3d4332c3ea09c7611e47b662bc43c5a"><td class="memItemLeft" align="right" valign="top">gdImagePtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gdCodecQoi.html#gab3d4332c3ea09c7611e47b662bc43c5a">gdImageCreateFromQoiPtr</a> (int size, void *data)</td></tr>
 <tr class="memdesc:gab3d4332c3ea09c7611e47b662bc43c5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an image from a QOI memory buffer.  <br /></td></tr>
 <tr class="separator:gab3d4332c3ea09c7611e47b662bc43c5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga617f8783f7486a95abd476fcc9a6a456" id="r_ga617f8783f7486a95abd476fcc9a6a456"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gdCodecQoi.html#ga617f8783f7486a95abd476fcc9a6a456">gdQoiInfoInit</a> (<a class="el" href="structgdQoiInfo.html">gdQoiInfo</a> *info)</td></tr>
+<tr class="memdesc:ga617f8783f7486a95abd476fcc9a6a456"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize a <a class="el" href="structgdQoiInfo.html" title="Information read from a QOI data.">gdQoiInfo</a> structure to default values.  <br /></td></tr>
+<tr class="separator:ga617f8783f7486a95abd476fcc9a6a456"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gade0451bacbda9698c7c24f58c54bf410" id="r_gade0451bacbda9698c7c24f58c54bf410"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gdCodecQoi.html#gade0451bacbda9698c7c24f58c54bf410">gdQoiGetInfo</a> (FILE *infile, <a class="el" href="structgdQoiInfo.html">gdQoiInfo</a> *info)</td></tr>
+<tr class="memdesc:gade0451bacbda9698c7c24f58c54bf410"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read QOI header information from a stdio file.  <br /></td></tr>
+<tr class="separator:gade0451bacbda9698c7c24f58c54bf410"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa4dd94c2bf209e000e19c0f946e6c8b0" id="r_gaa4dd94c2bf209e000e19c0f946e6c8b0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gdCodecQoi.html#gaa4dd94c2bf209e000e19c0f946e6c8b0">gdQoiGetInfoCtx</a> (gdIOCtxPtr infile, <a class="el" href="structgdQoiInfo.html">gdQoiInfo</a> *info)</td></tr>
+<tr class="memdesc:gaa4dd94c2bf209e000e19c0f946e6c8b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read QOI header information from a gdIOCtx.  <br /></td></tr>
+<tr class="separator:gaa4dd94c2bf209e000e19c0f946e6c8b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0ef9b4b4a8fee4c2061594494269d58f" id="r_ga0ef9b4b4a8fee4c2061594494269d58f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gdCodecQoi.html#ga0ef9b4b4a8fee4c2061594494269d58f">gdQoiGetInfoPtr</a> (int size, const void *data, <a class="el" href="structgdQoiInfo.html">gdQoiInfo</a> *info)</td></tr>
+<tr class="memdesc:ga0ef9b4b4a8fee4c2061594494269d58f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read QOI header information from a memory buffer.  <br /></td></tr>
+<tr class="separator:ga0ef9b4b4a8fee4c2061594494269d58f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae9e1ed6ef06fef33bb85509b20483c4e" id="r_gae9e1ed6ef06fef33bb85509b20483c4e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gdCodecQoi.html#gae9e1ed6ef06fef33bb85509b20483c4e">gdQoiWriteOptionsInit</a> (<a class="el" href="structgdQoiWriteOptions.html">gdQoiWriteOptions</a> *options)</td></tr>
+<tr class="memdesc:gae9e1ed6ef06fef33bb85509b20483c4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize a <a class="el" href="structgdQoiWriteOptions.html" title="Options for writing QOI data.">gdQoiWriteOptions</a> structure to default values.  <br /></td></tr>
+<tr class="separator:gae9e1ed6ef06fef33bb85509b20483c4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa21c0e862a468ad452d933143e0510e5" id="r_gaa21c0e862a468ad452d933143e0510e5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gdCodecQoi.html#gaa21c0e862a468ad452d933143e0510e5">gdImageQoiWithOptions</a> (gdImagePtr im, FILE *out, const <a class="el" href="structgdQoiWriteOptions.html">gdQoiWriteOptions</a> *options)</td></tr>
+<tr class="memdesc:gaa21c0e862a468ad452d933143e0510e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write an image as QOI data to a stdio file with options.  <br /></td></tr>
+<tr class="separator:gaa21c0e862a468ad452d933143e0510e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7b573c2b06abe842c2d3164dfa5b60c2" id="r_ga7b573c2b06abe842c2d3164dfa5b60c2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gdCodecQoi.html#ga7b573c2b06abe842c2d3164dfa5b60c2">gdImageQoiCtxWithOptions</a> (gdImagePtr im, gdIOCtxPtr out, const <a class="el" href="structgdQoiWriteOptions.html">gdQoiWriteOptions</a> *options)</td></tr>
+<tr class="memdesc:ga7b573c2b06abe842c2d3164dfa5b60c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write an image as QOI data to a gdIOCtx with options.  <br /></td></tr>
+<tr class="separator:ga7b573c2b06abe842c2d3164dfa5b60c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac348da96ed3f6a7cf723046a9172dbe5" id="r_gac348da96ed3f6a7cf723046a9172dbe5"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gdCodecQoi.html#gac348da96ed3f6a7cf723046a9172dbe5">gdImageQoiPtrWithOptions</a> (gdImagePtr im, int *size, const <a class="el" href="structgdQoiWriteOptions.html">gdQoiWriteOptions</a> *options)</td></tr>
+<tr class="memdesc:gac348da96ed3f6a7cf723046a9172dbe5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write an image as QOI data to a newly allocated memory buffer with options.  <br /></td></tr>
+<tr class="separator:gac348da96ed3f6a7cf723046a9172dbe5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga40cfbc352f475e632a2ada641ad25063" id="r_ga40cfbc352f475e632a2ada641ad25063"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gdCodecQoi.html#ga40cfbc352f475e632a2ada641ad25063">gdImageQoiPtr</a> (gdImagePtr im, int *size)</td></tr>
 <tr class="memdesc:ga40cfbc352f475e632a2ada641ad25063"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write an image as QOI data to a newly allocated memory buffer.  <br /></td></tr>
 <tr class="separator:ga40cfbc352f475e632a2ada641ad25063"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -140,23 +174,25 @@ Functions</h2></td></tr>
 <div class="line">  exit(1);</div>
 <div class="line">}</div>
 <div class="line"> </div>
-<div class="line">white = gdTrueColor(255, 255, 255);</div>
-<div class="line">black = gdTrueColor(0, 0, 0);</div>
+<div class="line">white = <a class="code hl_define" href="group__gdCodecBmp.html#gad2a26190a11a6682d9fe2235ff8b6928">gdTrueColor</a>(255, 255, 255);</div>
+<div class="line">black = <a class="code hl_define" href="group__gdCodecBmp.html#gad2a26190a11a6682d9fe2235ff8b6928">gdTrueColor</a>(0, 0, 0);</div>
 <div class="line"><a class="code hl_function" href="group__PixelDraw.html#ga1e534e750e1b336b8961a62ebec88511">gdImageFilledRectangle</a>(<a class="code hl_namespace" href="namespaceim.html">im</a>, 0, 0, 99, 99, white);</div>
 <div class="line"><a class="code hl_function" href="group__PixelDraw.html#ga084f5a75d82c7ae9126fb0846051802e">gdImageRectangle</a>(<a class="code hl_namespace" href="namespaceim.html">im</a>, 0, 0, 99, 99, black);</div>
 <div class="line"> </div>
 <div class="line">out = fopen(<span class="stringliteral">&quot;rect.qoi&quot;</span>, <span class="stringliteral">&quot;wb&quot;</span>);</div>
 <div class="line"><span class="keywordflow">if</span> (out == NULL) {</div>
 <div class="line">   fprintf(stderr, <span class="stringliteral">&quot;Unable to open output file\n&quot;</span>);</div>
-<div class="line">   gdImageDestroy(<a class="code hl_namespace" href="namespaceim.html">im</a>);</div>
+<div class="line">   <a class="code hl_function" href="group__gdCodecBmp.html#ga58cde54a8d38b33074fc0fb853e10233">gdImageDestroy</a>(<a class="code hl_namespace" href="namespaceim.html">im</a>);</div>
 <div class="line">   exit(1);</div>
 <div class="line">}</div>
 <div class="line"> </div>
 <div class="line"><a class="code hl_function" href="group__gdCodecQoi.html#ga2d8cd709cd02dabee4e19d19d8b06e8f">gdImageQoi</a>(<a class="code hl_namespace" href="namespaceim.html">im</a>, out);</div>
 <div class="line">fclose(out);</div>
-<div class="line">gdImageDestroy(<a class="code hl_namespace" href="namespaceim.html">im</a>);</div>
+<div class="line"><a class="code hl_function" href="group__gdCodecBmp.html#ga58cde54a8d38b33074fc0fb853e10233">gdImageDestroy</a>(<a class="code hl_namespace" href="namespaceim.html">im</a>);</div>
 <div class="ttc" id="agroup__PixelDraw_html_ga084f5a75d82c7ae9126fb0846051802e"><div class="ttname"><a href="group__PixelDraw.html#ga084f5a75d82c7ae9126fb0846051802e">gdImageRectangle</a></div><div class="ttdeci">void gdImageRectangle(gdImagePtr im, int x1, int y1, int x2, int y2, int color)</div><div class="ttdoc">Draws a rectangle.</div><div class="ttdef"><b>Definition</b> gd.c:2239</div></div>
 <div class="ttc" id="agroup__PixelDraw_html_ga1e534e750e1b336b8961a62ebec88511"><div class="ttname"><a href="group__PixelDraw.html#ga1e534e750e1b336b8961a62ebec88511">gdImageFilledRectangle</a></div><div class="ttdeci">void gdImageFilledRectangle(gdImagePtr im, int x1, int y1, int x2, int y2, int color)</div><div class="ttdoc">Draws a filled rectangle.</div><div class="ttdef"><b>Definition</b> gd.c:2403</div></div>
+<div class="ttc" id="agroup__gdCodecBmp_html_ga58cde54a8d38b33074fc0fb853e10233"><div class="ttname"><a href="group__gdCodecBmp.html#ga58cde54a8d38b33074fc0fb853e10233">gdImageDestroy</a></div><div class="ttdeci">void gdImageDestroy(gdImagePtr im)</div><div class="ttdoc">Destroys an image and frees its memory.</div><div class="ttdef"><b>Definition</b> gd.c:339</div></div>
+<div class="ttc" id="agroup__gdCodecBmp_html_gad2a26190a11a6682d9fe2235ff8b6928"><div class="ttname"><a href="group__gdCodecBmp.html#gad2a26190a11a6682d9fe2235ff8b6928">gdTrueColor</a></div><div class="ttdeci">#define gdTrueColor(r, g, b)</div><div class="ttdoc">Compose a truecolor value from its components.</div><div class="ttdef"><b>Definition</b> gd.h:5988</div></div>
 <div class="ttc" id="agroup__gdCodecQoi_html_ga2d8cd709cd02dabee4e19d19d8b06e8f"><div class="ttname"><a href="group__gdCodecQoi.html#ga2d8cd709cd02dabee4e19d19d8b06e8f">gdImageQoi</a></div><div class="ttdeci">void gdImageQoi(gdImagePtr im, FILE *out)</div><div class="ttdoc">Write an image as QOI data to a memory buffer.</div><div class="ttdef"><b>Definition</b> gd_qoi.c:358</div></div>
 <div class="ttc" id="anamespaceim_html"><div class="ttname"><a href="namespaceim.html">im</a></div><div class="ttdoc">Write an image as JPEG data to a gdIOCtx.</div></div>
 </div><!-- fragment --> <h2 class="groupheader">Enumeration Type Documentation</h2>
@@ -302,6 +338,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Write an image as QOI data to a memory buffer. </p>
+<p>Write an image as QOI data to a stdio file with an explicit colorspace flag.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">im</td><td>The image to write. </td></tr>
@@ -314,6 +351,8 @@ Functions</h2></td></tr>
 <p>Write an image as QOI data to a stdio file.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
+    <tr><td class="paramname">im</td><td>The image to write. </td></tr>
+    <tr><td class="paramname">out</td><td>The stdio file to write the QOI data to.</td></tr>
     <tr><td class="paramname">im</td><td>The image to write. </td></tr>
     <tr><td class="paramname">out</td><td>The stdio file to write the QOI data to. </td></tr>
   </table>
@@ -349,6 +388,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Write an image as QOI data to a gdIOCtx. </p>
+<p>Write an image as QOI data to a gdIOCtx with an explicit colorspace flag.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">im</td><td>The image to write. </td></tr>
@@ -400,6 +440,51 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="ga7b573c2b06abe842c2d3164dfa5b60c2" name="ga7b573c2b06abe842c2d3164dfa5b60c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7b573c2b06abe842c2d3164dfa5b60c2">&#9670;&#160;</a></span>gdImageQoiCtxWithOptions()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int gdImageQoiCtxWithOptions </td>
+          <td>(</td>
+          <td class="paramtype">gdImagePtr&#160;</td>
+          <td class="paramname"><em>im</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">gdIOCtxPtr&#160;</td>
+          <td class="paramname"><em>out</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structgdQoiWriteOptions.html">gdQoiWriteOptions</a> *&#160;</td>
+          <td class="paramname"><em>options</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Write an image as QOI data to a gdIOCtx with options. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">im</td><td>The image to write. </td></tr>
+    <tr><td class="paramname">out</td><td>The gdIOCtx to write the QOI data to. </td></tr>
+    <tr><td class="paramname">options</td><td>Pointer to the <a class="el" href="structgdQoiWriteOptions.html" title="Options for writing QOI data.">gdQoiWriteOptions</a> structure specifying write options.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns 0 on success, or 1 on failure. </dd></dl>
 
 </div>
 </div>
@@ -527,6 +612,271 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A pointer to the newly allocated QOI data, or NULL on failure. </dd></dl>
+
+</div>
+</div>
+<a id="gac348da96ed3f6a7cf723046a9172dbe5" name="gac348da96ed3f6a7cf723046a9172dbe5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac348da96ed3f6a7cf723046a9172dbe5">&#9670;&#160;</a></span>gdImageQoiPtrWithOptions()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void * gdImageQoiPtrWithOptions </td>
+          <td>(</td>
+          <td class="paramtype">gdImagePtr&#160;</td>
+          <td class="paramname"><em>im</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structgdQoiWriteOptions.html">gdQoiWriteOptions</a> *&#160;</td>
+          <td class="paramname"><em>options</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Write an image as QOI data to a newly allocated memory buffer with options. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">im</td><td>The image to write. </td></tr>
+    <tr><td class="paramname">size</td><td>Pointer to an integer that receives the returned buffer size. </td></tr>
+    <tr><td class="paramname">options</td><td>Pointer to the <a class="el" href="structgdQoiWriteOptions.html" title="Options for writing QOI data.">gdQoiWriteOptions</a> structure specifying write options.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to the newly allocated QOI data, or NULL on failure. </dd></dl>
+
+</div>
+</div>
+<a id="gaa21c0e862a468ad452d933143e0510e5" name="gaa21c0e862a468ad452d933143e0510e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa21c0e862a468ad452d933143e0510e5">&#9670;&#160;</a></span>gdImageQoiWithOptions()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int gdImageQoiWithOptions </td>
+          <td>(</td>
+          <td class="paramtype">gdImagePtr&#160;</td>
+          <td class="paramname"><em>im</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">FILE *&#160;</td>
+          <td class="paramname"><em>out</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structgdQoiWriteOptions.html">gdQoiWriteOptions</a> *&#160;</td>
+          <td class="paramname"><em>options</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Write an image as QOI data to a stdio file with options. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">im</td><td>The image to write. </td></tr>
+    <tr><td class="paramname">out</td><td>The stdio file to write the QOI data to. </td></tr>
+    <tr><td class="paramname">options</td><td>Pointer to the <a class="el" href="structgdQoiWriteOptions.html" title="Options for writing QOI data.">gdQoiWriteOptions</a> structure specifying write options.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns 0 on success, or 1 on failure. </dd></dl>
+
+</div>
+</div>
+<a id="gade0451bacbda9698c7c24f58c54bf410" name="gade0451bacbda9698c7c24f58c54bf410"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gade0451bacbda9698c7c24f58c54bf410">&#9670;&#160;</a></span>gdQoiGetInfo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int gdQoiGetInfo </td>
+          <td>(</td>
+          <td class="paramtype">FILE *&#160;</td>
+          <td class="paramname"><em>infile</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structgdQoiInfo.html">gdQoiInfo</a> *&#160;</td>
+          <td class="paramname"><em>info</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Read QOI header information from a stdio file. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">infile</td><td>Pointer to the input FILE stream. </td></tr>
+    <tr><td class="paramname">info</td><td>Pointer to the <a class="el" href="structgdQoiInfo.html" title="Information read from a QOI data.">gdQoiInfo</a> structure to populate.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns 0 on success, or 1 on failure. </dd></dl>
+
+</div>
+</div>
+<a id="gaa4dd94c2bf209e000e19c0f946e6c8b0" name="gaa4dd94c2bf209e000e19c0f946e6c8b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa4dd94c2bf209e000e19c0f946e6c8b0">&#9670;&#160;</a></span>gdQoiGetInfoCtx()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int gdQoiGetInfoCtx </td>
+          <td>(</td>
+          <td class="paramtype">gdIOCtxPtr&#160;</td>
+          <td class="paramname"><em>infile</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structgdQoiInfo.html">gdQoiInfo</a> *&#160;</td>
+          <td class="paramname"><em>info</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Read QOI header information from a gdIOCtx. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">infile</td><td>Pointer to the gdIOCtx input context. </td></tr>
+    <tr><td class="paramname">info</td><td>Pointer to the <a class="el" href="structgdQoiInfo.html" title="Information read from a QOI data.">gdQoiInfo</a> structure to populate.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns 0 on success, or 1 on failure. </dd></dl>
+
+</div>
+</div>
+<a id="ga0ef9b4b4a8fee4c2061594494269d58f" name="ga0ef9b4b4a8fee4c2061594494269d58f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0ef9b4b4a8fee4c2061594494269d58f">&#9670;&#160;</a></span>gdQoiGetInfoPtr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int gdQoiGetInfoPtr </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structgdQoiInfo.html">gdQoiInfo</a> *&#160;</td>
+          <td class="paramname"><em>info</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Read QOI header information from a memory buffer. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">size</td><td>Size of the QOI memory buffer in bytes. </td></tr>
+    <tr><td class="paramname">data</td><td>Pointer to the QOI memory buffer. </td></tr>
+    <tr><td class="paramname">info</td><td>Pointer to the <a class="el" href="structgdQoiInfo.html" title="Information read from a QOI data.">gdQoiInfo</a> structure to populate.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns 0 on success, or 1 on failure. </dd></dl>
+
+</div>
+</div>
+<a id="ga617f8783f7486a95abd476fcc9a6a456" name="ga617f8783f7486a95abd476fcc9a6a456"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga617f8783f7486a95abd476fcc9a6a456">&#9670;&#160;</a></span>gdQoiInfoInit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gdQoiInfoInit </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structgdQoiInfo.html">gdQoiInfo</a> *&#160;</td>
+          <td class="paramname"><em>info</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initialize a <a class="el" href="structgdQoiInfo.html" title="Information read from a QOI data.">gdQoiInfo</a> structure to default values. </p>
+<p>The default may change in future versions, so it is recommended to call this function before using the structure. Default values update is not considered a breaking change, but it is still recommended to call this function to ensure proper initialization.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">info</td><td>Pointer to the <a class="el" href="structgdQoiInfo.html" title="Information read from a QOI data.">gdQoiInfo</a> structure to initialize. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="gae9e1ed6ef06fef33bb85509b20483c4e" name="gae9e1ed6ef06fef33bb85509b20483c4e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae9e1ed6ef06fef33bb85509b20483c4e">&#9670;&#160;</a></span>gdQoiWriteOptionsInit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gdQoiWriteOptionsInit </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structgdQoiWriteOptions.html">gdQoiWriteOptions</a> *&#160;</td>
+          <td class="paramname"><em>options</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initialize a <a class="el" href="structgdQoiWriteOptions.html" title="Options for writing QOI data.">gdQoiWriteOptions</a> structure to default values. </p>
+<p>The default may change in future versions, so it is recommended to call this function before using the structure. Default values update is not considered a breaking change, but it is still recommended to call this function to ensure proper initialization.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">options</td><td>Pointer to the <a class="el" href="structgdQoiWriteOptions.html" title="Options for writing QOI data.">gdQoiWriteOptions</a> structure to initialize. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

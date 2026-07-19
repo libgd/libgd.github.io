@@ -1,4 +1,5 @@
 <map id="UltraHDR" name="UltraHDR">
-<area shape="rect" id="Node000001" title="Read, transform, and write UltraHDR JPEG images." alt="" coords="123,5,205,31"/>
-<area shape="rect" id="Node000002" href="$group__gdCodecs.html" title="Image codec support for reading and writing various file formats." alt="" coords="5,5,75,31"/>
+<area shape="rect" id="Node000003" href="$group__gdCodecBmp.html" title="Read and write Microsoft Windows bitmap images." alt="" coords="15,5,65,31"/>
+<area shape="rect" id="Node000001" title="Read, transform, and write UltraHDR JPEG images." alt="" coords="123,31,205,56"/>
+<area shape="rect" id="Node000002" href="$group__gdCodecs.html" title="Image codec support for reading and writing various file formats." alt="" coords="5,55,75,80"/>
 </map>

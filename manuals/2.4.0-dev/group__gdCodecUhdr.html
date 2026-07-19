@@ -72,7 +72,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Data Structures</a>  </div>
-  <div class="headertitle"><div class="title">UltraHDR<div class="ingroups"><a class="el" href="group__gdCodecs.html">Codecs</a></div></div></div>
+  <div class="headertitle"><div class="title">UltraHDR<div class="ingroups"><a class="el" href="group__gdCodecs.html">Codecs</a> &#124; <a class="el" href="group__gdCodecs.html">Codecs</a> &raquo; <a class="el" href="group__gdCodecBmp.html">BMP</a></div></div></div>
 </div><!--header-->
 <div class="contents">
 
@@ -83,8 +83,9 @@ Collaboration diagram for UltraHDR:</div>
 <div class="dyncontent">
 <div class="center"><img src="group__gdCodecUhdr.png" border="0" usemap="#agroup____gdCodecUhdr" alt=""/></div>
 <map name="agroup____gdCodecUhdr" id="agroup____gdCodecUhdr">
-<area shape="rect" title="Read, transform, and write UltraHDR JPEG images." alt="" coords="123,5,205,31"/>
-<area shape="rect" href="group__gdCodecs.html" title="Image codec support for reading and writing various file formats." alt="" coords="5,5,75,31"/>
+<area shape="rect" href="group__gdCodecBmp.html" title="Read and write Microsoft Windows bitmap images." alt="" coords="15,5,65,31"/>
+<area shape="rect" title="Read, transform, and write UltraHDR JPEG images." alt="" coords="123,31,205,56"/>
+<area shape="rect" href="group__gdCodecs.html" title="Image codec support for reading and writing various file formats." alt="" coords="5,55,75,80"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -220,20 +221,21 @@ typedef <a class="el" href="structgdUhdrError.html">gdUhdrError</a> *&#160;</td>
 <div class="line"> </div>
 <div class="line">sdr = <a class="code hl_function" href="group__gdCodecUhdr.html#ga5c31a98024065a3b68a4805219f2548b">gdUhdrImageGetSdr</a>(<a class="code hl_namespace" href="namespaceim.html">im</a>, &amp;err);</div>
 <div class="line"><span class="keywordflow">if</span> (sdr != NULL) {</div>
-<div class="line">    gdImageDestroy(sdr);</div>
+<div class="line">    <a class="code hl_function" href="group__gdCodecBmp.html#ga58cde54a8d38b33074fc0fb853e10233">gdImageDestroy</a>(sdr);</div>
 <div class="line">}</div>
 <div class="line"> </div>
 <div class="line"><a class="code hl_function" href="group__gdCodecUhdr.html#ga3042f696f94c6c76c57980ecce119195">gdUhdrImageDestroy</a>(<a class="code hl_namespace" href="namespaceim.html">im</a>);</div>
+<div class="ttc" id="agroup__gdCodecBmp_html_ga58cde54a8d38b33074fc0fb853e10233"><div class="ttname"><a href="group__gdCodecBmp.html#ga58cde54a8d38b33074fc0fb853e10233">gdImageDestroy</a></div><div class="ttdeci">void gdImageDestroy(gdImagePtr im)</div><div class="ttdoc">Destroys an image and frees its memory.</div><div class="ttdef"><b>Definition</b> gd.c:339</div></div>
 <div class="ttc" id="agroup__gdCodecUhdr_html_ga3042f696f94c6c76c57980ecce119195"><div class="ttname"><a href="group__gdCodecUhdr.html#ga3042f696f94c6c76c57980ecce119195">gdUhdrImageDestroy</a></div><div class="ttdeci">void gdUhdrImageDestroy(gdUhdrImagePtr im)</div><div class="ttdoc">Destroy an UltraHDR image handle.</div><div class="ttdef"><b>Definition</b> gd_uhdr.c:684</div></div>
-<div class="ttc" id="agroup__gdCodecUhdr_html_ga56b8379b3c0baf4f60df80b4110d66be"><div class="ttname"><a href="group__gdCodecUhdr.html#ga56b8379b3c0baf4f60df80b4110d66be">gdUhdrImagePtr</a></div><div class="ttdeci">gdUhdrImage * gdUhdrImagePtr</div><div class="ttdoc">Pointer to an opaque UltraHDR image handle.</div><div class="ttdef"><b>Definition</b> gd.h:4316</div></div>
+<div class="ttc" id="agroup__gdCodecUhdr_html_ga56b8379b3c0baf4f60df80b4110d66be"><div class="ttname"><a href="group__gdCodecUhdr.html#ga56b8379b3c0baf4f60df80b4110d66be">gdUhdrImagePtr</a></div><div class="ttdeci">gdUhdrImage * gdUhdrImagePtr</div><div class="ttdoc">Pointer to an opaque UltraHDR image handle.</div><div class="ttdef"><b>Definition</b> gd.h:4406</div></div>
 <div class="ttc" id="agroup__gdCodecUhdr_html_ga5c31a98024065a3b68a4805219f2548b"><div class="ttname"><a href="group__gdCodecUhdr.html#ga5c31a98024065a3b68a4805219f2548b">gdUhdrImageGetSdr</a></div><div class="ttdeci">gdImagePtr gdUhdrImageGetSdr(gdUhdrImagePtr im, gdUhdrErrorPtr err)</div><div class="ttdoc">Decode the SDR view of an UltraHDR image as a gdImage.</div><div class="ttdef"><b>Definition</b> gd_uhdr.c:1117</div></div>
 <div class="ttc" id="agroup__gdCodecUhdr_html_ga8a6b3ba102be406744f55c4d75c6aec2"><div class="ttname"><a href="group__gdCodecUhdr.html#ga8a6b3ba102be406744f55c4d75c6aec2">gdUhdrImageCreateFromFile</a></div><div class="ttdeci">gdUhdrImagePtr gdUhdrImageCreateFromFile(const char *filename, int format, gdUhdrErrorPtr err)</div><div class="ttdoc">Create an UltraHDR image handle from a file path.</div><div class="ttdef"><b>Definition</b> gd_uhdr.c:597</div></div>
 <div class="ttc" id="agroup__gdCodecUhdr_html_gaa6fe62f74d78e27ff42f69df923282e5"><div class="ttname"><a href="group__gdCodecUhdr.html#gaa6fe62f74d78e27ff42f69df923282e5">gdUhdrImageFile</a></div><div class="ttdeci">int gdUhdrImageFile(gdUhdrImagePtr im, const char *filename, int format, int quality, gdUhdrErrorPtr err)</div><div class="ttdoc">Write an UltraHDR image to a file path.</div><div class="ttdef"><b>Definition</b> gd_uhdr.c:839</div></div>
 <div class="ttc" id="agroup__gdCodecUhdr_html_gaadbb33d4e15e7af281e00313479a828f"><div class="ttname"><a href="group__gdCodecUhdr.html#gaadbb33d4e15e7af281e00313479a828f">gdUhdrImageResize</a></div><div class="ttdeci">int gdUhdrImageResize(gdUhdrImagePtr im, int width, int height, gdUhdrErrorPtr err)</div><div class="ttdoc">Queue an UltraHDR-preserving resize operation.</div><div class="ttdef"><b>Definition</b> gd_uhdr.c:720</div></div>
-<div class="ttc" id="agroup__gdCodecUhdr_html_gaca24fb4ef515da930a8957d6c9e9a3ce"><div class="ttname"><a href="group__gdCodecUhdr.html#gaca24fb4ef515da930a8957d6c9e9a3ce">GD_UHDR_SUCCESS</a></div><div class="ttdeci">#define GD_UHDR_SUCCESS</div><div class="ttdef"><b>Definition</b> gd.h:4284</div></div>
-<div class="ttc" id="agroup__gdCodecUhdr_html_gga8a542c0972e88dfe11278049e2d7c1c6a063ed7d55b9e73b0a92c2a36093a67b2"><div class="ttname"><a href="group__gdCodecUhdr.html#gga8a542c0972e88dfe11278049e2d7c1c6a063ed7d55b9e73b0a92c2a36093a67b2">GD_UHDR_FORMAT_JPEG</a></div><div class="ttdeci">@ GD_UHDR_FORMAT_JPEG</div><div class="ttdef"><b>Definition</b> gd.h:4307</div></div>
+<div class="ttc" id="agroup__gdCodecUhdr_html_gaca24fb4ef515da930a8957d6c9e9a3ce"><div class="ttname"><a href="group__gdCodecUhdr.html#gaca24fb4ef515da930a8957d6c9e9a3ce">GD_UHDR_SUCCESS</a></div><div class="ttdeci">#define GD_UHDR_SUCCESS</div><div class="ttdef"><b>Definition</b> gd.h:4374</div></div>
+<div class="ttc" id="agroup__gdCodecUhdr_html_gga8a542c0972e88dfe11278049e2d7c1c6a063ed7d55b9e73b0a92c2a36093a67b2"><div class="ttname"><a href="group__gdCodecUhdr.html#gga8a542c0972e88dfe11278049e2d7c1c6a063ed7d55b9e73b0a92c2a36093a67b2">GD_UHDR_FORMAT_JPEG</a></div><div class="ttdeci">@ GD_UHDR_FORMAT_JPEG</div><div class="ttdef"><b>Definition</b> gd.h:4397</div></div>
 <div class="ttc" id="anamespaceim_html"><div class="ttname"><a href="namespaceim.html">im</a></div><div class="ttdoc">Write an image as JPEG data to a gdIOCtx.</div></div>
-<div class="ttc" id="astructgdUhdrError_html"><div class="ttname"><a href="structgdUhdrError.html">gdUhdrError</a></div><div class="ttdoc">Structured error details for UltraHDR APIs.</div><div class="ttdef"><b>Definition</b> gd.h:4319</div></div>
+<div class="ttc" id="astructgdUhdrError_html"><div class="ttname"><a href="structgdUhdrError.html">gdUhdrError</a></div><div class="ttdoc">Structured error details for UltraHDR APIs.</div><div class="ttdef"><b>Definition</b> gd.h:4409</div></div>
 </div><!-- fragment --> <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="ga15fcdd4d04756f4aaa8c787dce768cbf" name="ga15fcdd4d04756f4aaa8c787dce768cbf"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga15fcdd4d04756f4aaa8c787dce768cbf">&#9670;&#160;</a></span>GD_UHDR_E_DECODE</h2>
@@ -767,7 +769,7 @@ typedef <a class="el" href="structgdUhdrError.html">gdUhdrError</a> *&#160;</td>
 </div><div class="memdoc">
 
 <p>Decode the SDR view of an UltraHDR image as a gdImage. </p>
-<p>The returned gdImagePtr is caller-owned and must be destroyed with gdImageDestroy. It is an SDR image only: it does not contain the UltraHDR gain map and cannot be used to recreate an UltraHDR image. Use the gdUhdrImage* transform and write APIs when the gain map must be preserved.</p>
+<p>The returned gdImagePtr is caller-owned and must be destroyed with <a class="el" href="group__gdCodecBmp.html#ga58cde54a8d38b33074fc0fb853e10233">gdImageDestroy</a>. It is an SDR image only: it does not contain the UltraHDR gain map and cannot be used to recreate an UltraHDR image. Use the gdUhdrImage* transform and write APIs when the gain map must be preserved.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">im</td><td>UltraHDR image handle to decode. </td></tr>

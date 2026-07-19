@@ -72,14 +72,23 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#func-members">Functions</a>  </div>
-  <div class="headertitle"><div class="title">Pixel Operations</div></div>
+  <div class="headertitle"><div class="title">Pixel Operations<div class="ingroups"><a class="el" href="group__gdCodecs.html">Codecs</a> &raquo; <a class="el" href="group__gdCodecBmp.html">BMP</a></div></div></div>
 </div><!--header-->
 <div class="contents">
+<div class="dynheader">
+Collaboration diagram for Pixel Operations:</div>
+<div class="dyncontent">
+<div class="center"><img src="group__Per.png" border="0" usemap="#agroup____Per" alt=""/></div>
+<map name="agroup____Per" id="agroup____Per">
+<area shape="rect" title=" " alt="" coords="104,5,232,31"/>
+<area shape="rect" href="group__gdCodecBmp.html" title="Read and write Microsoft Windows bitmap images." alt="" coords="5,5,56,31"/>
+</map>
+</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:gaf9b74d4e74432be5ac21d1c119eba343" id="r_gaf9b74d4e74432be5ac21d1c119eba343"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Per.html#gaf9b74d4e74432be5ac21d1c119eba343">gdImageSetPixel</a> (gdImagePtr im, int x, int y, int color)</td></tr>
-<tr class="memdesc:gaf9b74d4e74432be5ac21d1c119eba343"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the pixel at the specified coordinates to the given color. Replaces or blends with the background depending on the most recent call to gdImageAlphaBlending and the alpha channel value of 'color'; default is to overwrite. Tiling and line styling are also implemented here. All other gd drawing functions pass through this call, allowing for many useful effects. Overlay and multiply effects are used when gdImageAlphaBlending is passed gdEffectOverlay and gdEffectMultiply.  <br /></td></tr>
+<tr class="memdesc:gaf9b74d4e74432be5ac21d1c119eba343"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the pixel at the specified coordinates to the given color. Replaces or blends with the background depending on the most recent call to <a class="el" href="group__gdCodecBmp.html#ga114527b166ac375ede68fdbeac41d32c">gdImageAlphaBlending</a> and the alpha channel value of 'color'; default is to overwrite. Tiling and line styling are also implemented here. All other gd drawing functions pass through this call, allowing for many useful effects. Overlay and multiply effects are used when <a class="el" href="group__gdCodecBmp.html#ga114527b166ac375ede68fdbeac41d32c">gdImageAlphaBlending</a> is passed gdEffectOverlay and gdEffectMultiply.  <br /></td></tr>
 <tr class="separator:gaf9b74d4e74432be5ac21d1c119eba343"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga4cf1b88c93bfb96112566bc002a6f009" id="r_ga4cf1b88c93bfb96112566bc002a6f009"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Per.html#ga4cf1b88c93bfb96112566bc002a6f009">gdImageGetPixel</a> (gdImagePtr im, int x, int y)</td></tr>
 <tr class="memdesc:ga4cf1b88c93bfb96112566bc002a6f009"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the color of the pixel at the specified coordinates.  <br /></td></tr>
@@ -218,7 +227,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Sets the pixel at the specified coordinates to the given color. Replaces or blends with the background depending on the most recent call to gdImageAlphaBlending and the alpha channel value of 'color'; default is to overwrite. Tiling and line styling are also implemented here. All other gd drawing functions pass through this call, allowing for many useful effects. Overlay and multiply effects are used when gdImageAlphaBlending is passed gdEffectOverlay and gdEffectMultiply. </p>
+<p>Sets the pixel at the specified coordinates to the given color. Replaces or blends with the background depending on the most recent call to <a class="el" href="group__gdCodecBmp.html#ga114527b166ac375ede68fdbeac41d32c">gdImageAlphaBlending</a> and the alpha channel value of 'color'; default is to overwrite. Tiling and line styling are also implemented here. All other gd drawing functions pass through this call, allowing for many useful effects. Overlay and multiply effects are used when <a class="el" href="group__gdCodecBmp.html#ga114527b166ac375ede68fdbeac41d32c">gdImageAlphaBlending</a> is passed gdEffectOverlay and gdEffectMultiply. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">im</td><td>The image. </td></tr>
@@ -228,7 +237,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__Per.html#ga4cf1b88c93bfb96112566bc002a6f009">gdImageGetPixel</a> <a class="el" href="group__Per.html#ga43b4edec973616215e8cf82b6311537d" title="Gets the truecolor value of the pixel at the specified coordinates.">gdImageGetTrueColorPixel</a> gdImageAlphaBlending gdImageCreateTruecolor gdImageCreatePalette </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__Per.html#ga4cf1b88c93bfb96112566bc002a6f009">gdImageGetPixel</a> <a class="el" href="group__Per.html#ga43b4edec973616215e8cf82b6311537d" title="Gets the truecolor value of the pixel at the specified coordinates.">gdImageGetTrueColorPixel</a> <a class="el" href="group__gdCodecBmp.html#ga114527b166ac375ede68fdbeac41d32c" title="Sets the effect for subsequent drawing operations.">gdImageAlphaBlending</a> gdImageCreateTruecolor gdImageCreatePalette </dd></dl>
 
 </div>
 </div>

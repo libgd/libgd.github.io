@@ -72,9 +72,18 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#func-members">Functions</a>  </div>
-  <div class="headertitle"><div class="title">I/O Contexts</div></div>
+  <div class="headertitle"><div class="title">I/O Contexts<div class="ingroups"><a class="el" href="group__gdCodecs.html">Codecs</a> &raquo; <a class="el" href="group__gdCodecBmp.html">BMP</a></div></div></div>
 </div><!--header-->
 <div class="contents">
+<div class="dynheader">
+Collaboration diagram for I/O Contexts:</div>
+<div class="dyncontent">
+<div class="center"><img src="group__gdIOCtx.png" border="0" usemap="#agroup____gdIOCtx" alt=""/></div>
+<map name="agroup____gdIOCtx" id="agroup____gdIOCtx">
+<area shape="rect" href="group__gdCodecBmp.html" title="Read and write Microsoft Windows bitmap images." alt="" coords="5,5,56,31"/>
+<area shape="rect" title=" " alt="" coords="104,5,207,31"/>
+</map>
+</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
@@ -87,7 +96,7 @@ Functions</h2></td></tr>
 <tr class="memitem:ga1a741ee482aa98f69fe86078dc8919cb" id="r_ga1a741ee482aa98f69fe86078dc8919cb"><td class="memItemLeft" align="right" valign="top">gdIOCtxPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gdIOCtx.html#ga1a741ee482aa98f69fe86078dc8919cb">gdNewDynamicCtxEx</a> (int size, void *data, int freeFlag)</td></tr>
 <tr class="memdesc:ga1a741ee482aa98f69fe86078dc8919cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new I/O context for reading/writing to a dynamic memory buffer with control over memory management 2.0.21: if freeFlag is nonzero, gd will free and/or reallocate "data" as needed as described above. If freeFlag is zero, gd will never free or reallocate "data", which means that the context should only be used for <em>reading</em> an image from a memory buffer, or writing an image to a memory buffer which is already large enough. If the memory buffer is not large enough and an image write is attempted, the write operation will fail. Those wishing to write an image to a buffer in memory have a much simpler alternative in the gdImage[something]Ptr functions.  <br /></td></tr>
 <tr class="separator:ga1a741ee482aa98f69fe86078dc8919cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4fe3087a90dccbf97bd26ee74d425082" id="r_ga4fe3087a90dccbf97bd26ee74d425082"><td class="memItemLeft" align="right" valign="top">gdIOCtxPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gdIOCtx.html#ga4fe3087a90dccbf97bd26ee74d425082">gdNewSSCtx</a> (gdSourcePtr in, gdSinkPtr out)</td></tr>
+<tr class="memitem:ga4fe3087a90dccbf97bd26ee74d425082" id="r_ga4fe3087a90dccbf97bd26ee74d425082"><td class="memItemLeft" align="right" valign="top">gdIOCtxPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gdIOCtx.html#ga4fe3087a90dccbf97bd26ee74d425082">gdNewSSCtx</a> (<a class="el" href="structgdSource.html">gdSourcePtr</a> in, <a class="el" href="structgdSink.html">gdSinkPtr</a> out)</td></tr>
 <tr class="separator:ga4fe3087a90dccbf97bd26ee74d425082"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -212,13 +221,13 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">gdIOCtxPtr gdNewSSCtx </td>
           <td>(</td>
-          <td class="paramtype">gdSourcePtr&#160;</td>
+          <td class="paramtype"><a class="el" href="structgdSource.html">gdSourcePtr</a>&#160;</td>
           <td class="paramname"><em>in</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">gdSinkPtr&#160;</td>
+          <td class="paramtype"><a class="el" href="structgdSink.html">gdSinkPtr</a>&#160;</td>
           <td class="paramname"><em>out</em>&#160;</td>
         </tr>
         <tr>
@@ -228,7 +237,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000006">Deprecated:</a></b></dt><dd>will be removed in a future version in favor of gdNewDynamicCtxEx and retated CTX APIs </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000012">Deprecated:</a></b></dt><dd>will be removed in a future version in favor of gdNewDynamicCtxEx and retated CTX APIs </dd></dl>
 
 </div>
 </div>

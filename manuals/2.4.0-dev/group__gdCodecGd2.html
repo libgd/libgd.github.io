@@ -70,7 +70,7 @@ $(function() {
 </div>
 
 <div class="header">
-  <div class="headertitle"><div class="title">GD2<div class="ingroups"><a class="el" href="group__gdCodecs.html">Codecs</a></div></div></div>
+  <div class="headertitle"><div class="title">GD2<div class="ingroups"><a class="el" href="group__gdCodecs.html">Codecs</a> &#124; <a class="el" href="group__gdCodecs.html">Codecs</a> &raquo; <a class="el" href="group__gdCodecBmp.html">BMP</a></div></div></div>
 </div><!--header-->
 <div class="contents">
 
@@ -81,8 +81,9 @@ Collaboration diagram for GD2:</div>
 <div class="dyncontent">
 <div class="center"><img src="group__gdCodecGd2.png" border="0" usemap="#agroup____gdCodecGd2" alt=""/></div>
 <map name="agroup____gdCodecGd2" id="agroup____gdCodecGd2">
-<area shape="rect" title="Read and write libgd&#39;s chunked native .gd2 image format." alt="" coords="123,5,173,31"/>
-<area shape="rect" href="group__gdCodecs.html" title="Image codec support for reading and writing various file formats." alt="" coords="5,5,75,31"/>
+<area shape="rect" href="group__gdCodecBmp.html" title="Read and write Microsoft Windows bitmap images." alt="" coords="15,5,65,31"/>
+<area shape="rect" title="Read and write libgd&#39;s chunked native .gd2 image format." alt="" coords="123,31,173,56"/>
+<area shape="rect" href="group__gdCodecs.html" title="Image codec support for reading and writing various file formats." alt="" coords="5,55,75,80"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -132,16 +133,16 @@ Collaboration diagram for GD2:</div>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Read and write libgd's chunked native .gd2 image format. </p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000003">Deprecated:</a></b></dt><dd>GD and GD2 formats are in favor of more suitable and future proof like QOI or WebP for lossless usage or similar.</dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000004">Deprecated:</a></b></dt><dd>GD and GD2 formats are in favor of more suitable and future proof like QOI or WebP for lossless usage or similar.</dd></dl>
 <p>GD2 is libgd's historical chunked image dump format. It is obsolete for general interchange and should generally be used only for development, testing, or compatibility with existing .gd2 assets. Unlike the simpler <a class="el" href="group__gdCodecGd.html">GD</a> format, GD2 stores image data in chunks and can read a rectangular region without decoding the entire image. Compressed GD2 support requires libz; when GD2 support is not available the functions fail and report an error through gd's error mechanism.</p>
-<p>GD2 readers accept palette and truecolor GD2 files. The whole-image readers return the full image, while the part readers return a newly allocated image containing the requested rectangle. Returned gdImagePtr images are owned by the caller and must be destroyed with gdImageDestroy. The writer emits GD2 data using a public format selector of GD2_FMT_RAW or GD2_FMT_COMPRESSED; truecolor images are written with the corresponding internal truecolor GD2 format automatically.</p>
+<p>GD2 readers accept palette and truecolor GD2 files. The whole-image readers return the full image, while the part readers return a newly allocated image containing the requested rectangle. Returned gdImagePtr images are owned by the caller and must be destroyed with <a class="el" href="group__gdCodecBmp.html#ga58cde54a8d38b33074fc0fb853e10233">gdImageDestroy</a>. The writer emits GD2 data using a public format selector of GD2_FMT_RAW or GD2_FMT_COMPRESSED; truecolor images are written with the corresponding internal truecolor GD2 format automatically.</p>
 <div class="fragment"><div class="line">gdImagePtr <a class="code hl_namespace" href="namespaceim.html">im</a>, roundtrip;</div>
 <div class="line"><span class="keywordtype">void</span> *data;</div>
 <div class="line"><span class="keywordtype">int</span> size;</div>
 <div class="line"> </div>
 <div class="line"><a class="code hl_namespace" href="namespaceim.html">im</a> = gdImageCreate(100, 100);</div>
-<div class="line">gdImageColorAllocate(<a class="code hl_namespace" href="namespaceim.html">im</a>, 255, 255, 255);</div>
-<div class="line">gdImageColorAllocate(<a class="code hl_namespace" href="namespaceim.html">im</a>, 0, 0, 0);</div>
+<div class="line"><a class="code hl_function" href="group__gdCodecBmp.html#gacb787efb2cef0bfd6802540b56c3c8f8">gdImageColorAllocate</a>(<a class="code hl_namespace" href="namespaceim.html">im</a>, 255, 255, 255);</div>
+<div class="line"><a class="code hl_function" href="group__gdCodecBmp.html#gacb787efb2cef0bfd6802540b56c3c8f8">gdImageColorAllocate</a>(<a class="code hl_namespace" href="namespaceim.html">im</a>, 0, 0, 0);</div>
 <div class="line">gdImageLine(<a class="code hl_namespace" href="namespaceim.html">im</a>, 0, 0, 99, 99, 1);</div>
 <div class="line"> </div>
 <div class="line">data = <a class="code hl_function" href="group__gdCodecGd2.html#gae6b1c64a9b28f7ce7f5b973d94d28fba">gdImageGd2Ptr</a>(<a class="code hl_namespace" href="namespaceim.html">im</a>, <a class="code hl_define" href="group__gdCodecGd2.html#ga20e78f3bffb694fa1970741f24309ed6">GD2_CHUNKSIZE</a>, <a class="code hl_define" href="group__gdCodecGd2.html#gad723917d7e5126349d43b20b770f1937">GD2_FMT_COMPRESSED</a>, &amp;size);</div>
@@ -149,14 +150,16 @@ Collaboration diagram for GD2:</div>
 <div class="line">       roundtrip = <a class="code hl_function" href="group__gdCodecGd2.html#gac027afcd35b96bca1e231d58d543d684">gdImageCreateFromGd2PartPtr</a>(size, data, 0, 0, 50, 50);</div>
 <div class="line">       gdFree(data);</div>
 <div class="line">       <span class="keywordflow">if</span> (roundtrip != NULL) {</div>
-<div class="line">               gdImageDestroy(roundtrip);</div>
+<div class="line">               <a class="code hl_function" href="group__gdCodecBmp.html#ga58cde54a8d38b33074fc0fb853e10233">gdImageDestroy</a>(roundtrip);</div>
 <div class="line">       }</div>
 <div class="line">}</div>
 <div class="line"> </div>
-<div class="line">gdImageDestroy(<a class="code hl_namespace" href="namespaceim.html">im</a>);</div>
-<div class="ttc" id="agroup__gdCodecGd2_html_ga20e78f3bffb694fa1970741f24309ed6"><div class="ttname"><a href="group__gdCodecGd2.html#ga20e78f3bffb694fa1970741f24309ed6">GD2_CHUNKSIZE</a></div><div class="ttdeci">#define GD2_CHUNKSIZE</div><div class="ttdef"><b>Definition</b> gd.h:7614</div></div>
+<div class="line"><a class="code hl_function" href="group__gdCodecBmp.html#ga58cde54a8d38b33074fc0fb853e10233">gdImageDestroy</a>(<a class="code hl_namespace" href="namespaceim.html">im</a>);</div>
+<div class="ttc" id="agroup__gdCodecBmp_html_ga58cde54a8d38b33074fc0fb853e10233"><div class="ttname"><a href="group__gdCodecBmp.html#ga58cde54a8d38b33074fc0fb853e10233">gdImageDestroy</a></div><div class="ttdeci">void gdImageDestroy(gdImagePtr im)</div><div class="ttdoc">Destroys an image and frees its memory.</div><div class="ttdef"><b>Definition</b> gd.c:339</div></div>
+<div class="ttc" id="agroup__gdCodecBmp_html_gacb787efb2cef0bfd6802540b56c3c8f8"><div class="ttname"><a href="group__gdCodecBmp.html#gacb787efb2cef0bfd6802540b56c3c8f8">gdImageColorAllocate</a></div><div class="ttdeci">int gdImageColorAllocate(gdImagePtr im, int r, int g, int b)</div><div class="ttdoc">Allocates a color.</div><div class="ttdef"><b>Definition</b> gd.c:543</div></div>
+<div class="ttc" id="agroup__gdCodecGd2_html_ga20e78f3bffb694fa1970741f24309ed6"><div class="ttname"><a href="group__gdCodecGd2.html#ga20e78f3bffb694fa1970741f24309ed6">GD2_CHUNKSIZE</a></div><div class="ttdeci">#define GD2_CHUNKSIZE</div><div class="ttdef"><b>Definition</b> gd.h:7757</div></div>
 <div class="ttc" id="agroup__gdCodecGd2_html_gac027afcd35b96bca1e231d58d543d684"><div class="ttname"><a href="group__gdCodecGd2.html#gac027afcd35b96bca1e231d58d543d684">gdImageCreateFromGd2PartPtr</a></div><div class="ttdeci">gdImagePtr gdImageCreateFromGd2PartPtr(int size, void *data, int srcx, int srcy, int w, int h)</div><div class="ttdoc">Create an image from a rectangular region of a GD2 memory buffer.</div><div class="ttdef"><b>Definition</b> gd_gd2.c:1009</div></div>
-<div class="ttc" id="agroup__gdCodecGd2_html_gad723917d7e5126349d43b20b770f1937"><div class="ttname"><a href="group__gdCodecGd2.html#gad723917d7e5126349d43b20b770f1937">GD2_FMT_COMPRESSED</a></div><div class="ttdeci">#define GD2_FMT_COMPRESSED</div><div class="ttdef"><b>Definition</b> gd.h:7627</div></div>
+<div class="ttc" id="agroup__gdCodecGd2_html_gad723917d7e5126349d43b20b770f1937"><div class="ttname"><a href="group__gdCodecGd2.html#gad723917d7e5126349d43b20b770f1937">GD2_FMT_COMPRESSED</a></div><div class="ttdeci">#define GD2_FMT_COMPRESSED</div><div class="ttdef"><b>Definition</b> gd.h:7770</div></div>
 <div class="ttc" id="agroup__gdCodecGd2_html_gae6b1c64a9b28f7ce7f5b973d94d28fba"><div class="ttname"><a href="group__gdCodecGd2.html#gae6b1c64a9b28f7ce7f5b973d94d28fba">gdImageGd2Ptr</a></div><div class="ttdeci">void * gdImageGd2Ptr(gdImagePtr im, int cs, int fmt, int *size)</div><div class="ttdoc">Write an image as GD2 data to a newly allocated memory buffer.</div><div class="ttdef"><b>Definition</b> gd_gd2.c:1030</div></div>
 <div class="ttc" id="anamespaceim_html"><div class="ttname"><a href="namespaceim.html">im</a></div><div class="ttdoc">Write an image as JPEG data to a gdIOCtx.</div></div>
 </div><!-- fragment --> <h2 class="groupheader">Macro Definition Documentation</h2>
@@ -283,7 +286,7 @@ Collaboration diagram for GD2:</div>
 </div><div class="memdoc">
 
 <p>Create an image from a GD2 stdio file. </p>
-<p><a class="el" href="group__gdCodecGd2.html#gae903f1537c6bfcb45ebccc336f957415" title="Create an image from a GD2 stdio file.">gdImageCreateFromGd2()</a> reads from the current position of in and does not close it. On success, the returned image is owned by the caller and must be destroyed with gdImageDestroy.</p>
+<p><a class="el" href="group__gdCodecGd2.html#gae903f1537c6bfcb45ebccc336f957415" title="Create an image from a GD2 stdio file.">gdImageCreateFromGd2()</a> reads from the current position of in and does not close it. On success, the returned image is owned by the caller and must be destroyed with <a class="el" href="group__gdCodecBmp.html#ga58cde54a8d38b33074fc0fb853e10233">gdImageDestroy</a>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">in</td><td>Pointer to the GD2 FILE stream to read. </td></tr>
@@ -311,7 +314,7 @@ Collaboration diagram for GD2:</div>
 </div><div class="memdoc">
 
 <p>Create an image from GD2 data read through a gdIOCtx. </p>
-<p><a class="el" href="group__gdCodecGd2.html#ga2b0d98db0eca3d66603d432a703693b8" title="Create an image from GD2 data read through a gdIOCtx.">gdImageCreateFromGd2Ctx()</a> reads from in and does not close it. On success, the returned image is owned by the caller and must be destroyed with gdImageDestroy.</p>
+<p><a class="el" href="group__gdCodecGd2.html#ga2b0d98db0eca3d66603d432a703693b8" title="Create an image from GD2 data read through a gdIOCtx.">gdImageCreateFromGd2Ctx()</a> reads from in and does not close it. On success, the returned image is owned by the caller and must be destroyed with <a class="el" href="group__gdCodecBmp.html#ga58cde54a8d38b33074fc0fb853e10233">gdImageDestroy</a>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">in</td><td>Pointer to the gdIOCtx input context. </td></tr>
@@ -367,7 +370,7 @@ Collaboration diagram for GD2:</div>
 </div><div class="memdoc">
 
 <p>Create an image from a rectangular region of a GD2 stdio file. </p>
-<p><a class="el" href="group__gdCodecGd2.html#ga5c1da1f0c9c1e2f4653ddaeb065cf7d1" title="Create an image from a rectangular region of a GD2 stdio file.">gdImageCreateFromGd2Part()</a> reads the region beginning at srcx, srcy with dimensions w by h. The input stream is borrowed and is not closed by gd. On success, the returned image is owned by the caller and must be destroyed with gdImageDestroy.</p>
+<p><a class="el" href="group__gdCodecGd2.html#ga5c1da1f0c9c1e2f4653ddaeb065cf7d1" title="Create an image from a rectangular region of a GD2 stdio file.">gdImageCreateFromGd2Part()</a> reads the region beginning at srcx, srcy with dimensions w by h. The input stream is borrowed and is not closed by gd. On success, the returned image is owned by the caller and must be destroyed with <a class="el" href="group__gdCodecBmp.html#ga58cde54a8d38b33074fc0fb853e10233">gdImageDestroy</a>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">in</td><td>Pointer to the GD2 FILE stream to read. </td></tr>
@@ -427,7 +430,7 @@ Collaboration diagram for GD2:</div>
 </div><div class="memdoc">
 
 <p>Create an image from a rectangular GD2 region read through a gdIOCtx. </p>
-<p><a class="el" href="group__gdCodecGd2.html#ga9034da2d614b219f2432686821a1d4d1" title="Create an image from a rectangular GD2 region read through a gdIOCtx.">gdImageCreateFromGd2PartCtx()</a> reads the region beginning at srcx, srcy with dimensions w by h. The input context is borrowed and is not closed by gd. On success, the returned image is owned by the caller and must be destroyed with gdImageDestroy.</p>
+<p><a class="el" href="group__gdCodecGd2.html#ga9034da2d614b219f2432686821a1d4d1" title="Create an image from a rectangular GD2 region read through a gdIOCtx.">gdImageCreateFromGd2PartCtx()</a> reads the region beginning at srcx, srcy with dimensions w by h. The input context is borrowed and is not closed by gd. On success, the returned image is owned by the caller and must be destroyed with <a class="el" href="group__gdCodecBmp.html#ga58cde54a8d38b33074fc0fb853e10233">gdImageDestroy</a>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">in</td><td>Pointer to the gdIOCtx input context. </td></tr>
@@ -493,7 +496,7 @@ Collaboration diagram for GD2:</div>
 </div><div class="memdoc">
 
 <p>Create an image from a rectangular region of a GD2 memory buffer. </p>
-<p><a class="el" href="group__gdCodecGd2.html#gac027afcd35b96bca1e231d58d543d684" title="Create an image from a rectangular region of a GD2 memory buffer.">gdImageCreateFromGd2PartPtr()</a> borrows data for the duration of the call. The caller retains ownership of the input buffer. On success, the returned image is owned by the caller and must be destroyed with gdImageDestroy.</p>
+<p><a class="el" href="group__gdCodecGd2.html#gac027afcd35b96bca1e231d58d543d684" title="Create an image from a rectangular region of a GD2 memory buffer.">gdImageCreateFromGd2PartPtr()</a> borrows data for the duration of the call. The caller retains ownership of the input buffer. On success, the returned image is owned by the caller and must be destroyed with <a class="el" href="group__gdCodecBmp.html#ga58cde54a8d38b33074fc0fb853e10233">gdImageDestroy</a>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">size</td><td>Size of the GD2 memory buffer in bytes. </td></tr>
@@ -536,7 +539,7 @@ Collaboration diagram for GD2:</div>
 </div><div class="memdoc">
 
 <p>Create an image from a GD2 memory buffer. </p>
-<p><a class="el" href="group__gdCodecGd2.html#ga8b943e7c45f12abec119623d6594c162" title="Create an image from a GD2 memory buffer.">gdImageCreateFromGd2Ptr()</a> borrows data for the duration of the call. The caller retains ownership of the input buffer. On success, the returned image is owned by the caller and must be destroyed with gdImageDestroy.</p>
+<p><a class="el" href="group__gdCodecGd2.html#ga8b943e7c45f12abec119623d6594c162" title="Create an image from a GD2 memory buffer.">gdImageCreateFromGd2Ptr()</a> borrows data for the duration of the call. The caller retains ownership of the input buffer. On success, the returned image is owned by the caller and must be destroyed with <a class="el" href="group__gdCodecBmp.html#ga58cde54a8d38b33074fc0fb853e10233">gdImageDestroy</a>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">size</td><td>Size of the GD2 memory buffer in bytes. </td></tr>
@@ -587,6 +590,7 @@ Collaboration diagram for GD2:</div>
 </div><div class="memdoc">
 
 <p>Write an image as GD2 data to a stdio file. </p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000008">Deprecated:</a></b></dt><dd></dd></dl>
 <p><a class="el" href="group__gdCodecGd2.html#gae220d84d81572c04f7e019cc09359195" title="Write an image as GD2 data to a stdio file.">gdImageGd2()</a> borrows im and out for the duration of the call and does not close out. Pass cs as 0 to use GD2_CHUNKSIZE; otherwise values outside the GD2_CHUNKSIZE_MIN to GD2_CHUNKSIZE_MAX range are clamped. The public fmt values are GD2_FMT_RAW and GD2_FMT_COMPRESSED. For truecolor images, gd writes the corresponding internal truecolor GD2 format automatically.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -639,6 +643,7 @@ Collaboration diagram for GD2:</div>
 </div><div class="memdoc">
 
 <p>Write an image as GD2 data to a newly allocated memory buffer. </p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000009">Deprecated:</a></b></dt><dd></dd></dl>
 <p><a class="el" href="group__gdCodecGd2.html#gae6b1c64a9b28f7ce7f5b973d94d28fba" title="Write an image as GD2 data to a newly allocated memory buffer.">gdImageGd2Ptr()</a> borrows im for the duration of the call. Pass cs as 0 to use GD2_CHUNKSIZE; otherwise values outside the GD2_CHUNKSIZE_MIN to GD2_CHUNKSIZE_MAX range are clamped. The public fmt values are GD2_FMT_RAW and GD2_FMT_COMPRESSED. On success, the returned buffer is owned by the caller and must be freed with gdFree().</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
