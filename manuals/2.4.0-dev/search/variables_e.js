@@ -6,8 +6,9 @@ var searchData=
   ['photometric_3',['photometric',['../structgdTiffInfo.html#a382ac29c41069f3741dbe19b5fff7f67',1,'gdTiffInfo::photometric'],['../structgdTiffPageInfo.html#a1b0f723dae637e22ab3a3f489d447b94',1,'gdTiffPageInfo::photometric']]],
   ['physical_5funit_4',['physical_unit',['../structgdPngInfo.html#ae605ae12dfe97f73ad85614eef4c29a6',1,'gdPngInfo']]],
   ['pixelaspectratio_5',['pixelAspectRatio',['../structgdGifInfo.html#aaec89da870948a35ea0544b441c4ae5a',1,'gdGifInfo']]],
-  ['planar_6',['planar',['../structgdTiffPageInfo.html#a619ee19deb4498243988937569b1d22a',1,'gdTiffPageInfo']]],
-  ['plus_7',['plus',['../structgdScatter.html#ab507078053fd706014a1012a123b2c28',1,'gdScatter']]],
-  ['progressive_8',['progressive',['../structgdJpegInfo.html#a131a9ed4e1dece14eadeb501c8fb26d9',1,'gdJpegInfo::progressive'],['../structgdJpegWriteOptions.html#acbc4630f5ee8f675b99c74904bcb9e3a',1,'gdJpegWriteOptions::progressive']]],
-  ['provider_5fcode_9',['provider_code',['../structgdUhdrError.html#ab8dfbe465b045590e4a2f4c488e796d3',1,'gdUhdrError::provider_code'],['../structgdTextError.html#ab65a08a0bd306247493640490ffe7f75',1,'gdTextError::provider_code']]]
+  ['pixels_5fchanged_6',['pixels_changed',['../structgdImagePerceptualDiffResult.html#a7ebdb0eb3b7c3d83d1944e02f4134017',1,'gdImagePerceptualDiffResult']]],
+  ['planar_7',['planar',['../structgdTiffPageInfo.html#a619ee19deb4498243988937569b1d22a',1,'gdTiffPageInfo']]],
+  ['plus_8',['plus',['../structgdScatter.html#ab507078053fd706014a1012a123b2c28',1,'gdScatter']]],
+  ['progressive_9',['progressive',['../structgdJpegInfo.html#a131a9ed4e1dece14eadeb501c8fb26d9',1,'gdJpegInfo::progressive'],['../structgdJpegWriteOptions.html#acbc4630f5ee8f675b99c74904bcb9e3a',1,'gdJpegWriteOptions::progressive']]],
+  ['provider_5fcode_10',['provider_code',['../structgdUhdrError.html#ab8dfbe465b045590e4a2f4c488e796d3',1,'gdUhdrError::provider_code'],['../structgdTextError.html#ab65a08a0bd306247493640490ffe7f75',1,'gdTextError::provider_code']]]
 ];

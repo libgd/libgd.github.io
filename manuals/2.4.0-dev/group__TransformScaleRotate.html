@@ -139,7 +139,16 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:gaa6fea75835a90293980f2414f04ab870"><td class="mdescLeft">&#160;</td><td class="mdescRight">gdInterpolationMethod  <a href="group__TransformScaleRotate.html#gaa6fea75835a90293980f2414f04ab870">More...</a><br /></td></tr>
 <tr class="separator:gaa6fea75835a90293980f2414f04ab870"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4e756f7717290bcd613a0e7cc63ab701" id="r_ga4e756f7717290bcd613a0e7cc63ab701"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__TransformScaleRotate.html#ga4e756f7717290bcd613a0e7cc63ab701">gdCropMode</a> </td></tr>
+<tr class="memitem:ga4e756f7717290bcd613a0e7cc63ab701" id="r_ga4e756f7717290bcd613a0e7cc63ab701"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__TransformScaleRotate.html#ga4e756f7717290bcd613a0e7cc63ab701">gdCropMode</a> { <br />
+&#160;&#160;<a class="el" href="group__TransformScaleRotate.html#gga4e756f7717290bcd613a0e7cc63ab701abd93b76508bc866d061330ef4c73e873">GD_CROP_DEFAULT</a> = 0
+, <a class="el" href="group__TransformScaleRotate.html#gga4e756f7717290bcd613a0e7cc63ab701a04711d1d3059aff958fc20e6c29567bd">GD_CROP_TRANSPARENT</a>
+, <a class="el" href="group__TransformScaleRotate.html#gga4e756f7717290bcd613a0e7cc63ab701a991c003ad65e5f5094ae07675190b005">GD_CROP_BLACK</a>
+, <a class="el" href="group__TransformScaleRotate.html#gga4e756f7717290bcd613a0e7cc63ab701a880f52f4bcc73c66ce8638a169c94b16">GD_CROP_WHITE</a>
+, <br />
+&#160;&#160;<a class="el" href="group__TransformScaleRotate.html#gga4e756f7717290bcd613a0e7cc63ab701aa694865841063bb32d929db56f476b71">GD_CROP_SIDES</a>
+, <a class="el" href="group__TransformScaleRotate.html#gga4e756f7717290bcd613a0e7cc63ab701a7c324b7c4d36f544bd6fcfefd5892742">GD_CROP_THRESHOLD</a>
+<br />
+ }</td></tr>
 <tr class="separator:ga4e756f7717290bcd613a0e7cc63ab701"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gabd84264cee12c23fb9d8c4620e5ebbb1" id="r_gabd84264cee12c23fb9d8c4620e5ebbb1"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__TransformScaleRotate.html#gabd84264cee12c23fb9d8c4620e5ebbb1">gdScaleFit</a> { <br />
 &#160;&#160;<a class="el" href="group__TransformScaleRotate.html#ggabd84264cee12c23fb9d8c4620e5ebbb1aae3f8f4d611a91c324f2906c2c359962">GD_SCALE_FIT_COVER</a>
@@ -353,6 +362,20 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Group: Crop</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="group__TransformScaleRotate.html#ga81b08c7b99831ec9bcf194118ab6ce3c" title="Crop an image automatically.">gdImageCropAuto</a> <a class="el" href="group__TransformScaleRotate.html#gab5b6c52fdf76debb8fee5d114cabb656" title="Crop an image using a given color.">gdImageCropThreshold</a> gdCrop </dd></dl>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga4e756f7717290bcd613a0e7cc63ab701abd93b76508bc866d061330ef4c73e873" name="gga4e756f7717290bcd613a0e7cc63ab701abd93b76508bc866d061330ef4c73e873"></a>GD_CROP_DEFAULT&#160;</td><td class="fielddoc"><p>Same as GD_CROP_TRANSPARENT </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e756f7717290bcd613a0e7cc63ab701a04711d1d3059aff958fc20e6c29567bd" name="gga4e756f7717290bcd613a0e7cc63ab701a04711d1d3059aff958fc20e6c29567bd"></a>GD_CROP_TRANSPARENT&#160;</td><td class="fielddoc"><p>Crop using the transparent color </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e756f7717290bcd613a0e7cc63ab701a991c003ad65e5f5094ae07675190b005" name="gga4e756f7717290bcd613a0e7cc63ab701a991c003ad65e5f5094ae07675190b005"></a>GD_CROP_BLACK&#160;</td><td class="fielddoc"><p>Crop black borders </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e756f7717290bcd613a0e7cc63ab701a880f52f4bcc73c66ce8638a169c94b16" name="gga4e756f7717290bcd613a0e7cc63ab701a880f52f4bcc73c66ce8638a169c94b16"></a>GD_CROP_WHITE&#160;</td><td class="fielddoc"><p>Crop white borders </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e756f7717290bcd613a0e7cc63ab701aa694865841063bb32d929db56f476b71" name="gga4e756f7717290bcd613a0e7cc63ab701aa694865841063bb32d929db56f476b71"></a>GD_CROP_SIDES&#160;</td><td class="fielddoc"><p>Crop using colors of the 4 corners </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4e756f7717290bcd613a0e7cc63ab701a7c324b7c4d36f544bd6fcfefd5892742" name="gga4e756f7717290bcd613a0e7cc63ab701a7c324b7c4d36f544bd6fcfefd5892742"></a>GD_CROP_THRESHOLD&#160;</td><td class="fielddoc"><p>Crop using a threshold </p>
+</td></tr>
+</table>
 
 </div>
 </div>
