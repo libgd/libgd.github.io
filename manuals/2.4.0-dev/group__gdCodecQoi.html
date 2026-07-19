@@ -174,25 +174,23 @@ Functions</h2></td></tr>
 <div class="line">  exit(1);</div>
 <div class="line">}</div>
 <div class="line"> </div>
-<div class="line">white = <a class="code hl_define" href="group__gdCodecBmp.html#gad2a26190a11a6682d9fe2235ff8b6928">gdTrueColor</a>(255, 255, 255);</div>
-<div class="line">black = <a class="code hl_define" href="group__gdCodecBmp.html#gad2a26190a11a6682d9fe2235ff8b6928">gdTrueColor</a>(0, 0, 0);</div>
+<div class="line">white = gdTrueColor(255, 255, 255);</div>
+<div class="line">black = gdTrueColor(0, 0, 0);</div>
 <div class="line"><a class="code hl_function" href="group__PixelDraw.html#ga1e534e750e1b336b8961a62ebec88511">gdImageFilledRectangle</a>(<a class="code hl_namespace" href="namespaceim.html">im</a>, 0, 0, 99, 99, white);</div>
 <div class="line"><a class="code hl_function" href="group__PixelDraw.html#ga084f5a75d82c7ae9126fb0846051802e">gdImageRectangle</a>(<a class="code hl_namespace" href="namespaceim.html">im</a>, 0, 0, 99, 99, black);</div>
 <div class="line"> </div>
 <div class="line">out = fopen(<span class="stringliteral">&quot;rect.qoi&quot;</span>, <span class="stringliteral">&quot;wb&quot;</span>);</div>
 <div class="line"><span class="keywordflow">if</span> (out == NULL) {</div>
 <div class="line">   fprintf(stderr, <span class="stringliteral">&quot;Unable to open output file\n&quot;</span>);</div>
-<div class="line">   <a class="code hl_function" href="group__gdCodecBmp.html#ga58cde54a8d38b33074fc0fb853e10233">gdImageDestroy</a>(<a class="code hl_namespace" href="namespaceim.html">im</a>);</div>
+<div class="line">   gdImageDestroy(<a class="code hl_namespace" href="namespaceim.html">im</a>);</div>
 <div class="line">   exit(1);</div>
 <div class="line">}</div>
 <div class="line"> </div>
 <div class="line"><a class="code hl_function" href="group__gdCodecQoi.html#ga2d8cd709cd02dabee4e19d19d8b06e8f">gdImageQoi</a>(<a class="code hl_namespace" href="namespaceim.html">im</a>, out);</div>
 <div class="line">fclose(out);</div>
-<div class="line"><a class="code hl_function" href="group__gdCodecBmp.html#ga58cde54a8d38b33074fc0fb853e10233">gdImageDestroy</a>(<a class="code hl_namespace" href="namespaceim.html">im</a>);</div>
+<div class="line">gdImageDestroy(<a class="code hl_namespace" href="namespaceim.html">im</a>);</div>
 <div class="ttc" id="agroup__PixelDraw_html_ga084f5a75d82c7ae9126fb0846051802e"><div class="ttname"><a href="group__PixelDraw.html#ga084f5a75d82c7ae9126fb0846051802e">gdImageRectangle</a></div><div class="ttdeci">void gdImageRectangle(gdImagePtr im, int x1, int y1, int x2, int y2, int color)</div><div class="ttdoc">Draws a rectangle.</div><div class="ttdef"><b>Definition</b> gd.c:2239</div></div>
 <div class="ttc" id="agroup__PixelDraw_html_ga1e534e750e1b336b8961a62ebec88511"><div class="ttname"><a href="group__PixelDraw.html#ga1e534e750e1b336b8961a62ebec88511">gdImageFilledRectangle</a></div><div class="ttdeci">void gdImageFilledRectangle(gdImagePtr im, int x1, int y1, int x2, int y2, int color)</div><div class="ttdoc">Draws a filled rectangle.</div><div class="ttdef"><b>Definition</b> gd.c:2403</div></div>
-<div class="ttc" id="agroup__gdCodecBmp_html_ga58cde54a8d38b33074fc0fb853e10233"><div class="ttname"><a href="group__gdCodecBmp.html#ga58cde54a8d38b33074fc0fb853e10233">gdImageDestroy</a></div><div class="ttdeci">void gdImageDestroy(gdImagePtr im)</div><div class="ttdoc">Destroys an image and frees its memory.</div><div class="ttdef"><b>Definition</b> gd.c:339</div></div>
-<div class="ttc" id="agroup__gdCodecBmp_html_gad2a26190a11a6682d9fe2235ff8b6928"><div class="ttname"><a href="group__gdCodecBmp.html#gad2a26190a11a6682d9fe2235ff8b6928">gdTrueColor</a></div><div class="ttdeci">#define gdTrueColor(r, g, b)</div><div class="ttdoc">Compose a truecolor value from its components.</div><div class="ttdef"><b>Definition</b> gd.h:5988</div></div>
 <div class="ttc" id="agroup__gdCodecQoi_html_ga2d8cd709cd02dabee4e19d19d8b06e8f"><div class="ttname"><a href="group__gdCodecQoi.html#ga2d8cd709cd02dabee4e19d19d8b06e8f">gdImageQoi</a></div><div class="ttdeci">void gdImageQoi(gdImagePtr im, FILE *out)</div><div class="ttdoc">Write an image as QOI data to a memory buffer.</div><div class="ttdef"><b>Definition</b> gd_qoi.c:358</div></div>
 <div class="ttc" id="anamespaceim_html"><div class="ttname"><a href="namespaceim.html">im</a></div><div class="ttdoc">Write an image as JPEG data to a gdIOCtx.</div></div>
 </div><!-- fragment --> <h2 class="groupheader">Enumeration Type Documentation</h2>

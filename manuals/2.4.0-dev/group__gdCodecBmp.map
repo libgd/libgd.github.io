@@ -1,18 +1,4 @@
 <map id="BMP" name="BMP">
-<area shape="rect" id="Node000009" href="$group__Color.html" title=" " alt="" coords="280,5,385,31"/>
-<area shape="rect" id="Node000005" href="$group__Font.html" title=" " alt="" coords="245,55,420,95"/>
-<area shape="rect" id="Node000010" href="$group__ImageFilters.html" title=" " alt="" coords="221,120,444,145"/>
-<area shape="rect" id="Node000004" href="$group__Per.html" title=" " alt="" coords="269,169,397,195"/>
-<area shape="rect" id="Node000007" href="$group__PixelDraw.html" title=" " alt="" coords="243,219,422,273"/>
-<area shape="rect" id="Node000013" href="$group__TransformScaleRotate.html" title=" " alt="" coords="254,298,411,338"/>
-<area shape="rect" id="Node000008" href="$group__cloneandcopy.html" title=" " alt="" coords="247,362,418,402"/>
-<area shape="rect" id="Node000006" href="$group__freetypefont.html" title=" " alt="" coords="255,426,410,466"/>
-<area shape="rect" id="Node000001" title="Read and write Microsoft Windows bitmap images." alt="" coords="123,401,173,427"/>
-<area shape="rect" id="Node000016" href="$group__gdCodecGd2.html" title="Read and write libgd&#39;s chunked native .gd2 image format." alt="" coords="307,491,358,516"/>
-<area shape="rect" id="Node000015" href="$group__gdCodecJpeg.html" title="JPEG image reading and writing support." alt="" coords="307,540,359,565"/>
-<area shape="rect" id="Node000014" href="$group__gdCodecUhdr.html" title="Read, transform, and write UltraHDR JPEG images." alt="" coords="291,589,374,615"/>
-<area shape="rect" id="Node000011" href="$group__gdIOCtx.html" title=" " alt="" coords="281,639,384,664"/>
-<area shape="rect" id="Node000003" href="$group__gdImageFileIO.html" title="Convenience APIs for reading and writing images by filename or signature." alt="" coords="227,688,438,713"/>
-<area shape="rect" id="Node000012" href="$group__imagecomparison.html" title=" " alt="" coords="260,737,405,763"/>
-<area shape="rect" id="Node000002" href="$group__gdCodecs.html" title="Image codec support for reading and writing various file formats." alt="" coords="5,401,75,427"/>
+<area shape="rect" id="Node000001" title="Read and write Microsoft Windows bitmap images." alt="" coords="123,5,173,31"/>
+<area shape="rect" id="Node000002" href="$group__gdCodecs.html" title="Image codec support for reading and writing various file formats." alt="" coords="5,5,75,31"/>
 </map>

@@ -75,18 +75,9 @@ $(function() {
 <a href="#define-members">Macros</a> &#124;
 <a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
-  <div class="headertitle"><div class="title">Transform, scale and rotate<div class="ingroups"><a class="el" href="group__gdCodecs.html">Codecs</a> &raquo; <a class="el" href="group__gdCodecBmp.html">BMP</a></div></div></div>
+  <div class="headertitle"><div class="title">Transform, scale and rotate</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="dynheader">
-Collaboration diagram for Transform, scale and rotate:</div>
-<div class="dyncontent">
-<div class="center"><img src="group__TransformScaleRotate.png" border="0" usemap="#agroup____TransformScaleRotate" alt=""/></div>
-<map name="agroup____TransformScaleRotate" id="agroup____TransformScaleRotate">
-<area shape="rect" title=" " alt="" coords="104,5,261,45"/>
-<area shape="rect" href="group__gdCodecBmp.html" title="Read and write Microsoft Windows bitmap images." alt="" coords="5,13,56,38"/>
-</map>
-</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Data Structures</h2></td></tr>
@@ -1516,7 +1507,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Rotate an image by an arbitrary angle using the source image's current <a class="el" href="group__TransformScaleRotate.html#gaa6fea75835a90293980f2414f04ab870">gdInterpolationMethod</a>. </p>
-<p>The returned image is newly allocated and must be destroyed with <a class="el" href="group__gdCodecBmp.html#ga58cde54a8d38b33074fc0fb853e10233">gdImageDestroy</a>. Palette sources are converted to truecolor internally for arbitrary-angle rotation. Angles that are multiples of 90 degrees use the optimized rotate paths.</p>
+<p>The returned image is newly allocated and must be destroyed with gdImageDestroy. Palette sources are converted to truecolor internally for arbitrary-angle rotation. Angles that are multiples of 90 degrees use the optimized rotate paths.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">src</td><td>- The source image. </td></tr>
@@ -1564,7 +1555,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Scale an image to an exact width and height using the source image's current <a class="el" href="group__TransformScaleRotate.html#gaa6fea75835a90293980f2414f04ab870">gdInterpolationMethod</a>. </p>
-<p>The returned image is newly allocated and must be destroyed with <a class="el" href="group__gdCodecBmp.html#ga58cde54a8d38b33074fc0fb853e10233">gdImageDestroy</a>. If the requested dimensions match the source dimensions, this function returns a clone of the source image. Width and height must be greater than zero.</p>
+<p>The returned image is newly allocated and must be destroyed with gdImageDestroy. If the requested dimensions match the source dimensions, this function returns a clone of the source image. Width and height must be greater than zero.</p>
 <p>Notes: <a class="el" href="group__TransformScaleRotate.html#ggaa6fea75835a90293980f2414f04ab870aa42d8b37580d38435368eb8328bbf7b0">GD_WEIGHTED4</a> is not supported by this function. For downscales and mixed-axis scales, the fixed compatibility methods are sampled with <a class="el" href="group__TransformScaleRotate.html#ggaa6fea75835a90293980f2414f04ab870a19c3fa97ccc0ac4d55a7ffbf04a0db4a">GD_TRIANGLE</a> for better filtering.</p>
 <p>Parameters: src - The source image. new_width - The requested output width. new_height - The requested output height.</p>
 <p>Returns: The scaled image on success, or NULL on failure.</p>
@@ -1621,7 +1612,7 @@ Functions</h2></td></tr>
 
 <p>Scale an image using aspect-ratio, gravity, crop-strategy and interpolation options. </p>
 <p>Scale an image using aspect-ratio, gravity, crop-strategy and interpolation options.</p>
-<p>This is the higher-level scaling API. It can stretch, contain, cover, pad or return an inside/outside size while preserving the source aspect ratio. The returned image is newly allocated and must be destroyed with <a class="el" href="group__gdCodecBmp.html#ga58cde54a8d38b33074fc0fb853e10233">gdImageDestroy</a>.</p>
+<p>This is the higher-level scaling API. It can stretch, contain, cover, pad or return an inside/outside size while preserving the source aspect ratio. The returned image is newly allocated and must be destroyed with gdImageDestroy.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">src</td><td>- The source image. </td></tr>
@@ -1631,7 +1622,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The scaled image on success, or NULL on failure. Caller owns the returned image and must call <a class="el" href="group__gdCodecBmp.html#ga58cde54a8d38b33074fc0fb853e10233">gdImageDestroy</a> when done. Returns NULL if src is NULL, either dimension is zero, interpolation is invalid, or an entropy/attention strategy is used with a fit other than <a class="el" href="group__TransformScaleRotate.html#ggabd84264cee12c23fb9d8c4620e5ebbb1aae3f8f4d611a91c324f2906c2c359962">GD_SCALE_FIT_COVER</a>.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The scaled image on success, or NULL on failure. Caller owns the returned image and must call gdImageDestroy when done. Returns NULL if src is NULL, either dimension is zero, interpolation is invalid, or an entropy/attention strategy is used with a fit other than <a class="el" href="group__TransformScaleRotate.html#ggabd84264cee12c23fb9d8c4620e5ebbb1aae3f8f4d611a91c324f2906c2c359962">GD_SCALE_FIT_COVER</a>.</dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="structgdScaleOptions.html">gdScaleOptions</a> <a class="el" href="group__TransformScaleRotate.html#ga453a204fe79a128e9cdb293f6327b458" title="Scale an image to an exact width and height using the source image&#39;s current gdInterpolationMethod.">gdImageScale</a> <a class="el" href="group__TransformScaleRotate.html#gae23b61d2c01d71f163f58facd226d8e5" title="Find a source crop region with the requested aspect ratio using an interesting-region method.">gdImageInterestingCropRegion</a> </dd></dl>
 
 </div>

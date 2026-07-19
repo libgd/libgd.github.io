@@ -1,5 +1,4 @@
 <map id="JPEG" name="JPEG">
-<area shape="rect" id="Node000003" href="$group__gdCodecBmp.html" title="Read and write Microsoft Windows bitmap images." alt="" coords="15,5,65,31"/>
-<area shape="rect" id="Node000001" title="JPEG image reading and writing support." alt="" coords="123,31,175,56"/>
-<area shape="rect" id="Node000002" href="$group__gdCodecs.html" title="Image codec support for reading and writing various file formats." alt="" coords="5,55,75,80"/>
+<area shape="rect" id="Node000001" title="JPEG image reading and writing support." alt="" coords="123,5,175,31"/>
+<area shape="rect" id="Node000002" href="$group__gdCodecs.html" title="Image codec support for reading and writing various file formats." alt="" coords="5,5,75,31"/>
 </map>

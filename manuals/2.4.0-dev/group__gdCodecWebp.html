@@ -263,11 +263,11 @@ Functions</h2></td></tr>
 <div class="line">}</div>
 <div class="line"> </div>
 <div class="line"><a class="code hl_function" href="group__gdCodecWebp.html#ga0955a53b0df8c7f03f7e589adf10c89b">gdWebpAnimWriteOptionsInit</a>(&amp;options);</div>
-<div class="line">options.<a class="code hl_variable" href="group__gdCodecBmp.html#ga71026e4b5601923cdbd219cb416b1ea7">canvasWidth</a> = info.<a class="code hl_variable" href="group__gdCodecBmp.html#gabdacd3f116b9c9742d2aeb8794169a67">width</a>;</div>
-<div class="line">options.<a class="code hl_variable" href="group__gdCodecBmp.html#gad847fbb0442b9db5d56b94fcfc692d77">canvasHeight</a> = info.<a class="code hl_variable" href="group__gdCodecBmp.html#gab95e4d03ecac6341af96716ba623764a">height</a>;</div>
-<div class="line">options.<a class="code hl_variable" href="group__gdCodecBmp.html#gac8e4f07efef0802b881733e40f8f9d71">loopCount</a> = info.<a class="code hl_variable" href="group__gdCodecBmp.html#ga07cb34288394d29abf1752d6bfa66fb0">loopCount</a>;</div>
-<div class="line">options.<a class="code hl_variable" href="group__gdCodecBmp.html#gaa5069fac547f95d9c78985bb635ce293">backgroundColor</a> = info.<a class="code hl_variable" href="group__gdCodecBmp.html#gac29513e9443a09128a535055ea15e8fe">backgroundColor</a>;</div>
-<div class="line">options.<a class="code hl_variable" href="group__gdCodecBmp.html#ga3dad48e1d4ccb7a79c1d60c71e90ae6a">quality</a> = <a class="code hl_define" href="group__gdCodecWebp.html#ga608342b3719520be83d82db3b78c06c1">gdWebpLossless</a>;</div>
+<div class="line">options.<a class="code hl_variable" href="structgdWebpAnimWriteOptions.html#a71026e4b5601923cdbd219cb416b1ea7">canvasWidth</a> = info.<a class="code hl_variable" href="structgdWebpInfo.html#abdacd3f116b9c9742d2aeb8794169a67">width</a>;</div>
+<div class="line">options.<a class="code hl_variable" href="structgdWebpAnimWriteOptions.html#ad847fbb0442b9db5d56b94fcfc692d77">canvasHeight</a> = info.<a class="code hl_variable" href="structgdWebpInfo.html#ab95e4d03ecac6341af96716ba623764a">height</a>;</div>
+<div class="line">options.<a class="code hl_variable" href="structgdWebpAnimWriteOptions.html#ac8e4f07efef0802b881733e40f8f9d71">loopCount</a> = info.<a class="code hl_variable" href="structgdWebpInfo.html#a07cb34288394d29abf1752d6bfa66fb0">loopCount</a>;</div>
+<div class="line">options.<a class="code hl_variable" href="structgdWebpAnimWriteOptions.html#aa5069fac547f95d9c78985bb635ce293">backgroundColor</a> = info.<a class="code hl_variable" href="structgdWebpInfo.html#ac29513e9443a09128a535055ea15e8fe">backgroundColor</a>;</div>
+<div class="line">options.<a class="code hl_variable" href="structgdWebpAnimWriteOptions.html#a3dad48e1d4ccb7a79c1d60c71e90ae6a">quality</a> = <a class="code hl_define" href="group__gdCodecWebp.html#ga608342b3719520be83d82db3b78c06c1">gdWebpLossless</a>;</div>
 <div class="line"> </div>
 <div class="line">out = fopen(<span class="stringliteral">&quot;output.webp&quot;</span>, <span class="stringliteral">&quot;wb&quot;</span>);</div>
 <div class="line"><span class="keywordflow">if</span> (out == NULL) {</div>
@@ -282,35 +282,24 @@ Functions</h2></td></tr>
 <div class="line">}</div>
 <div class="line"> </div>
 <div class="line"><span class="keywordflow">while</span> ((result = <a class="code hl_function" href="group__gdCodecWebp.html#ga7cb02cebeb30b7568b3485dffac0a553">gdWebpReadNextImage</a>(reader, &amp;frameInfo, &amp;image)) == 1) {</div>
-<div class="line">  <span class="keywordflow">if</span> (!<a class="code hl_function" href="group__gdCodecWebp.html#ga1beb46c39e4a7affd7b092149ce8e246">gdWebpWriteAddImage</a>(writer, image, frameInfo.<a class="code hl_variable" href="group__gdCodecBmp.html#gaaf95b3ab0f0f1ed48ff81d769915f3d0">duration</a>)) {</div>
-<div class="line">    <a class="code hl_function" href="group__gdCodecBmp.html#ga58cde54a8d38b33074fc0fb853e10233">gdImageDestroy</a>(image);</div>
+<div class="line">  <span class="keywordflow">if</span> (!<a class="code hl_function" href="group__gdCodecWebp.html#ga1beb46c39e4a7affd7b092149ce8e246">gdWebpWriteAddImage</a>(writer, image, frameInfo.<a class="code hl_variable" href="structgdWebpFrameInfo.html#aaf95b3ab0f0f1ed48ff81d769915f3d0">duration</a>)) {</div>
+<div class="line">    gdImageDestroy(image);</div>
 <div class="line">    <a class="code hl_function" href="group__gdCodecWebp.html#gab2f52e529a037eaaf04f55052e8d23aa">gdWebpWriteClose</a>(writer);</div>
 <div class="line">    fclose(out);</div>
 <div class="line">    <a class="code hl_function" href="group__gdCodecWebp.html#ga5e8b0d4298036cd57f380ec49e7c4207">gdWebpReadClose</a>(reader);</div>
 <div class="line">    exit(1);</div>
 <div class="line">  }</div>
-<div class="line">  <a class="code hl_function" href="group__gdCodecBmp.html#ga58cde54a8d38b33074fc0fb853e10233">gdImageDestroy</a>(image);</div>
+<div class="line">  gdImageDestroy(image);</div>
 <div class="line">}</div>
 <div class="line"> </div>
 <div class="line"><a class="code hl_function" href="group__gdCodecWebp.html#gab2f52e529a037eaaf04f55052e8d23aa">gdWebpWriteClose</a>(writer);</div>
 <div class="line">fclose(out);</div>
 <div class="line"><a class="code hl_function" href="group__gdCodecWebp.html#ga5e8b0d4298036cd57f380ec49e7c4207">gdWebpReadClose</a>(reader);</div>
-<div class="ttc" id="agroup__gdCodecBmp_html_ga07cb34288394d29abf1752d6bfa66fb0"><div class="ttname"><a href="group__gdCodecBmp.html#ga07cb34288394d29abf1752d6bfa66fb0">gdWebpInfo::loopCount</a></div><div class="ttdeci">int loopCount</div><div class="ttdef"><b>Definition</b> gd.h:2180</div></div>
-<div class="ttc" id="agroup__gdCodecBmp_html_ga3dad48e1d4ccb7a79c1d60c71e90ae6a"><div class="ttname"><a href="group__gdCodecBmp.html#ga3dad48e1d4ccb7a79c1d60c71e90ae6a">gdWebpAnimWriteOptions::quality</a></div><div class="ttdeci">int quality</div><div class="ttdef"><b>Definition</b> gd.h:2225</div></div>
-<div class="ttc" id="agroup__gdCodecBmp_html_ga58cde54a8d38b33074fc0fb853e10233"><div class="ttname"><a href="group__gdCodecBmp.html#ga58cde54a8d38b33074fc0fb853e10233">gdImageDestroy</a></div><div class="ttdeci">void gdImageDestroy(gdImagePtr im)</div><div class="ttdoc">Destroys an image and frees its memory.</div><div class="ttdef"><b>Definition</b> gd.c:339</div></div>
-<div class="ttc" id="agroup__gdCodecBmp_html_ga71026e4b5601923cdbd219cb416b1ea7"><div class="ttname"><a href="group__gdCodecBmp.html#ga71026e4b5601923cdbd219cb416b1ea7">gdWebpAnimWriteOptions::canvasWidth</a></div><div class="ttdeci">int canvasWidth</div><div class="ttdef"><b>Definition</b> gd.h:2221</div></div>
-<div class="ttc" id="agroup__gdCodecBmp_html_gaa5069fac547f95d9c78985bb635ce293"><div class="ttname"><a href="group__gdCodecBmp.html#gaa5069fac547f95d9c78985bb635ce293">gdWebpAnimWriteOptions::backgroundColor</a></div><div class="ttdeci">int backgroundColor</div><div class="ttdef"><b>Definition</b> gd.h:2224</div></div>
-<div class="ttc" id="agroup__gdCodecBmp_html_gaaf95b3ab0f0f1ed48ff81d769915f3d0"><div class="ttname"><a href="group__gdCodecBmp.html#gaaf95b3ab0f0f1ed48ff81d769915f3d0">gdWebpFrameInfo::duration</a></div><div class="ttdeci">int duration</div><div class="ttdef"><b>Definition</b> gd.h:2194</div></div>
-<div class="ttc" id="agroup__gdCodecBmp_html_gab95e4d03ecac6341af96716ba623764a"><div class="ttname"><a href="group__gdCodecBmp.html#gab95e4d03ecac6341af96716ba623764a">gdWebpInfo::height</a></div><div class="ttdeci">int height</div><div class="ttdef"><b>Definition</b> gd.h:2178</div></div>
-<div class="ttc" id="agroup__gdCodecBmp_html_gabdacd3f116b9c9742d2aeb8794169a67"><div class="ttname"><a href="group__gdCodecBmp.html#gabdacd3f116b9c9742d2aeb8794169a67">gdWebpInfo::width</a></div><div class="ttdeci">int width</div><div class="ttdef"><b>Definition</b> gd.h:2177</div></div>
-<div class="ttc" id="agroup__gdCodecBmp_html_gac29513e9443a09128a535055ea15e8fe"><div class="ttname"><a href="group__gdCodecBmp.html#gac29513e9443a09128a535055ea15e8fe">gdWebpInfo::backgroundColor</a></div><div class="ttdeci">int backgroundColor</div><div class="ttdef"><b>Definition</b> gd.h:2181</div></div>
-<div class="ttc" id="agroup__gdCodecBmp_html_gac8e4f07efef0802b881733e40f8f9d71"><div class="ttname"><a href="group__gdCodecBmp.html#gac8e4f07efef0802b881733e40f8f9d71">gdWebpAnimWriteOptions::loopCount</a></div><div class="ttdeci">int loopCount</div><div class="ttdef"><b>Definition</b> gd.h:2223</div></div>
-<div class="ttc" id="agroup__gdCodecBmp_html_gad847fbb0442b9db5d56b94fcfc692d77"><div class="ttname"><a href="group__gdCodecBmp.html#gad847fbb0442b9db5d56b94fcfc692d77">gdWebpAnimWriteOptions::canvasHeight</a></div><div class="ttdeci">int canvasHeight</div><div class="ttdef"><b>Definition</b> gd.h:2222</div></div>
 <div class="ttc" id="agroup__gdCodecWebp_html_ga0955a53b0df8c7f03f7e589adf10c89b"><div class="ttname"><a href="group__gdCodecWebp.html#ga0955a53b0df8c7f03f7e589adf10c89b">gdWebpAnimWriteOptionsInit</a></div><div class="ttdeci">void gdWebpAnimWriteOptionsInit(gdWebpAnimWriteOptions *options)</div><div class="ttdoc">Initialize WebP multi-image/animation write options with gd defaults.</div><div class="ttdef"><b>Definition</b> gd_webp.c:1225</div></div>
 <div class="ttc" id="agroup__gdCodecWebp_html_ga0b43fe8b39567e296ad38c57e065d135"><div class="ttname"><a href="group__gdCodecWebp.html#ga0b43fe8b39567e296ad38c57e065d135">gdWebpWritePtr</a></div><div class="ttdeci">struct gdWebpWrite * gdWebpWritePtr</div><div class="ttdoc">Opaque WebP animation writer handle.</div><div class="ttdef"><b>Definition</b> gd.h:2171</div></div>
 <div class="ttc" id="agroup__gdCodecWebp_html_ga1beb46c39e4a7affd7b092149ce8e246"><div class="ttname"><a href="group__gdCodecWebp.html#ga1beb46c39e4a7affd7b092149ce8e246">gdWebpWriteAddImage</a></div><div class="ttdeci">int gdWebpWriteAddImage(gdWebpWritePtr webp, gdImagePtr image, int durationMs)</div><div class="ttdoc">Add an image to a WebP animation writer.</div><div class="ttdef"><b>Definition</b> gd_webp.c:1449</div></div>
 <div class="ttc" id="agroup__gdCodecWebp_html_ga5e8b0d4298036cd57f380ec49e7c4207"><div class="ttname"><a href="group__gdCodecWebp.html#ga5e8b0d4298036cd57f380ec49e7c4207">gdWebpReadClose</a></div><div class="ttdeci">void gdWebpReadClose(gdWebpReadPtr webp)</div><div class="ttdoc">Close a WebP animation reader.</div><div class="ttdef"><b>Definition</b> gd_webp.c:1376</div></div>
-<div class="ttc" id="agroup__gdCodecWebp_html_ga608342b3719520be83d82db3b78c06c1"><div class="ttname"><a href="group__gdCodecWebp.html#ga608342b3719520be83d82db3b78c06c1">gdWebpLossless</a></div><div class="ttdeci">#define gdWebpLossless</div><div class="ttdoc">Lossless WebP quality threshold.</div><div class="ttdef"><b>Definition</b> gd.h:5610</div></div>
+<div class="ttc" id="agroup__gdCodecWebp_html_ga608342b3719520be83d82db3b78c06c1"><div class="ttname"><a href="group__gdCodecWebp.html#ga608342b3719520be83d82db3b78c06c1">gdWebpLossless</a></div><div class="ttdeci">#define gdWebpLossless</div><div class="ttdoc">Lossless WebP quality threshold.</div><div class="ttdef"><b>Definition</b> gd.h:5580</div></div>
 <div class="ttc" id="agroup__gdCodecWebp_html_ga6921465c59dd3e7877aaa80005ae95ee"><div class="ttname"><a href="group__gdCodecWebp.html#ga6921465c59dd3e7877aaa80005ae95ee">gdWebpReadPtr</a></div><div class="ttdeci">struct gdWebpRead * gdWebpReadPtr</div><div class="ttdoc">Opaque WebP animation reader handle.</div><div class="ttdef"><b>Definition</b> gd.h:2162</div></div>
 <div class="ttc" id="agroup__gdCodecWebp_html_ga7cb02cebeb30b7568b3485dffac0a553"><div class="ttname"><a href="group__gdCodecWebp.html#ga7cb02cebeb30b7568b3485dffac0a553">gdWebpReadNextImage</a></div><div class="ttdeci">int gdWebpReadNextImage(gdWebpReadPtr webp, gdWebpFrameInfo *info, gdImagePtr *image)</div><div class="ttdoc">Read the next coalesced WebP animation image.</div><div class="ttdef"><b>Definition</b> gd_webp.c:1411</div></div>
 <div class="ttc" id="agroup__gdCodecWebp_html_gab2f52e529a037eaaf04f55052e8d23aa"><div class="ttname"><a href="group__gdCodecWebp.html#gab2f52e529a037eaaf04f55052e8d23aa">gdWebpWriteClose</a></div><div class="ttdeci">void gdWebpWriteClose(gdWebpWritePtr webp)</div><div class="ttdoc">Finish, write, and close a WebP animation writer.</div><div class="ttdef"><b>Definition</b> gd_webp.c:1458</div></div>
@@ -318,8 +307,18 @@ Functions</h2></td></tr>
 <div class="ttc" id="agroup__gdCodecWebp_html_gad141be5ee74220f430b3edf9983113e9"><div class="ttname"><a href="group__gdCodecWebp.html#gad141be5ee74220f430b3edf9983113e9">gdWebpReadGetInfo</a></div><div class="ttdeci">int gdWebpReadGetInfo(gdWebpReadPtr webp, gdWebpInfo *info)</div><div class="ttdoc">Get WebP container information from a WebP reader.</div><div class="ttdef"><b>Definition</b> gd_webp.c:1382</div></div>
 <div class="ttc" id="agroup__gdCodecWebp_html_gafd778da1bb2b669f7cf0bf1501a97642"><div class="ttname"><a href="group__gdCodecWebp.html#gafd778da1bb2b669f7cf0bf1501a97642">gdWebpWriteOpen</a></div><div class="ttdeci">gdWebpWritePtr gdWebpWriteOpen(FILE *outFile, const gdWebpAnimWriteOptions *options)</div><div class="ttdoc">Open a WebP animation writer for a stdio file.</div><div class="ttdef"><b>Definition</b> gd_webp.c:1423</div></div>
 <div class="ttc" id="astructgdWebpAnimWriteOptions_html"><div class="ttname"><a href="structgdWebpAnimWriteOptions.html">gdWebpAnimWriteOptions</a></div><div class="ttdoc">WebP animation writer options.</div><div class="ttdef"><b>Definition</b> gd.h:2220</div></div>
+<div class="ttc" id="astructgdWebpAnimWriteOptions_html_a3dad48e1d4ccb7a79c1d60c71e90ae6a"><div class="ttname"><a href="structgdWebpAnimWriteOptions.html#a3dad48e1d4ccb7a79c1d60c71e90ae6a">gdWebpAnimWriteOptions::quality</a></div><div class="ttdeci">int quality</div><div class="ttdef"><b>Definition</b> gd.h:2225</div></div>
+<div class="ttc" id="astructgdWebpAnimWriteOptions_html_a71026e4b5601923cdbd219cb416b1ea7"><div class="ttname"><a href="structgdWebpAnimWriteOptions.html#a71026e4b5601923cdbd219cb416b1ea7">gdWebpAnimWriteOptions::canvasWidth</a></div><div class="ttdeci">int canvasWidth</div><div class="ttdef"><b>Definition</b> gd.h:2221</div></div>
+<div class="ttc" id="astructgdWebpAnimWriteOptions_html_aa5069fac547f95d9c78985bb635ce293"><div class="ttname"><a href="structgdWebpAnimWriteOptions.html#aa5069fac547f95d9c78985bb635ce293">gdWebpAnimWriteOptions::backgroundColor</a></div><div class="ttdeci">int backgroundColor</div><div class="ttdef"><b>Definition</b> gd.h:2224</div></div>
+<div class="ttc" id="astructgdWebpAnimWriteOptions_html_ac8e4f07efef0802b881733e40f8f9d71"><div class="ttname"><a href="structgdWebpAnimWriteOptions.html#ac8e4f07efef0802b881733e40f8f9d71">gdWebpAnimWriteOptions::loopCount</a></div><div class="ttdeci">int loopCount</div><div class="ttdef"><b>Definition</b> gd.h:2223</div></div>
+<div class="ttc" id="astructgdWebpAnimWriteOptions_html_ad847fbb0442b9db5d56b94fcfc692d77"><div class="ttname"><a href="structgdWebpAnimWriteOptions.html#ad847fbb0442b9db5d56b94fcfc692d77">gdWebpAnimWriteOptions::canvasHeight</a></div><div class="ttdeci">int canvasHeight</div><div class="ttdef"><b>Definition</b> gd.h:2222</div></div>
 <div class="ttc" id="astructgdWebpFrameInfo_html"><div class="ttname"><a href="structgdWebpFrameInfo.html">gdWebpFrameInfo</a></div><div class="ttdoc">WebP animation frame information.</div><div class="ttdef"><b>Definition</b> gd.h:2188</div></div>
+<div class="ttc" id="astructgdWebpFrameInfo_html_aaf95b3ab0f0f1ed48ff81d769915f3d0"><div class="ttname"><a href="structgdWebpFrameInfo.html#aaf95b3ab0f0f1ed48ff81d769915f3d0">gdWebpFrameInfo::duration</a></div><div class="ttdeci">int duration</div><div class="ttdef"><b>Definition</b> gd.h:2194</div></div>
 <div class="ttc" id="astructgdWebpInfo_html"><div class="ttname"><a href="structgdWebpInfo.html">gdWebpInfo</a></div><div class="ttdoc">WebP container information.</div><div class="ttdef"><b>Definition</b> gd.h:2176</div></div>
+<div class="ttc" id="astructgdWebpInfo_html_a07cb34288394d29abf1752d6bfa66fb0"><div class="ttname"><a href="structgdWebpInfo.html#a07cb34288394d29abf1752d6bfa66fb0">gdWebpInfo::loopCount</a></div><div class="ttdeci">int loopCount</div><div class="ttdef"><b>Definition</b> gd.h:2180</div></div>
+<div class="ttc" id="astructgdWebpInfo_html_ab95e4d03ecac6341af96716ba623764a"><div class="ttname"><a href="structgdWebpInfo.html#ab95e4d03ecac6341af96716ba623764a">gdWebpInfo::height</a></div><div class="ttdeci">int height</div><div class="ttdef"><b>Definition</b> gd.h:2178</div></div>
+<div class="ttc" id="astructgdWebpInfo_html_abdacd3f116b9c9742d2aeb8794169a67"><div class="ttname"><a href="structgdWebpInfo.html#abdacd3f116b9c9742d2aeb8794169a67">gdWebpInfo::width</a></div><div class="ttdeci">int width</div><div class="ttdef"><b>Definition</b> gd.h:2177</div></div>
+<div class="ttc" id="astructgdWebpInfo_html_ac29513e9443a09128a535055ea15e8fe"><div class="ttname"><a href="structgdWebpInfo.html#ac29513e9443a09128a535055ea15e8fe">gdWebpInfo::backgroundColor</a></div><div class="ttdeci">int backgroundColor</div><div class="ttdef"><b>Definition</b> gd.h:2181</div></div>
 </div><!-- fragment --> <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="ga608342b3719520be83d82db3b78c06c1" name="ga608342b3719520be83d82db3b78c06c1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga608342b3719520be83d82db3b78c06c1">&#9670;&#160;</a></span>gdWebpLossless</h2>
@@ -436,7 +435,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Create a truecolor image from a WebP stdio file. </p>
-<p><a class="el" href="group__gdCodecWebp.html#gaa60c8323b580cc7bfc9f5efdfa23fa02" title="Create a truecolor image from a WebP stdio file.">gdImageCreateFromWebp()</a> does not close inFile. The returned image is caller-owned and must be destroyed with <a class="el" href="group__gdCodecBmp.html#ga58cde54a8d38b33074fc0fb853e10233">gdImageDestroy</a>.</p>
+<p><a class="el" href="group__gdCodecWebp.html#gaa60c8323b580cc7bfc9f5efdfa23fa02" title="Create a truecolor image from a WebP stdio file.">gdImageCreateFromWebp()</a> does not close inFile. The returned image is caller-owned and must be destroyed with gdImageDestroy.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">inFile</td><td>Pointer to the input FILE stream.</td></tr>
@@ -464,7 +463,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Create a truecolor image from WebP data read through a gdIOCtx. </p>
-<p><a class="el" href="group__gdCodecWebp.html#ga5e1eb888cc78e37c8c18d4df1229738e" title="Create a truecolor image from WebP data read through a gdIOCtx.">gdImageCreateFromWebpCtx()</a> does not close infile. The returned image is caller-owned and must be destroyed with <a class="el" href="group__gdCodecBmp.html#ga58cde54a8d38b33074fc0fb853e10233">gdImageDestroy</a>.</p>
+<p><a class="el" href="group__gdCodecWebp.html#ga5e1eb888cc78e37c8c18d4df1229738e" title="Create a truecolor image from WebP data read through a gdIOCtx.">gdImageCreateFromWebpCtx()</a> does not close infile. The returned image is caller-owned and must be destroyed with gdImageDestroy.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">infile</td><td>Pointer to the gdIOCtx input context.</td></tr>
@@ -502,7 +501,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Create a truecolor image from a WebP memory buffer. </p>
-<p>The data buffer is borrowed for the duration of the call. The returned image is caller-owned and must be destroyed with <a class="el" href="group__gdCodecBmp.html#ga58cde54a8d38b33074fc0fb853e10233">gdImageDestroy</a>.</p>
+<p>The data buffer is borrowed for the duration of the call. The returned image is caller-owned and must be destroyed with gdImageDestroy.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">size</td><td>Size of the WebP memory buffer in bytes. </td></tr>
@@ -1122,7 +1121,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Read the next raw WebP animation frame rectangle. </p>
-<p>When frame is not NULL and the function returns 1, *frame receives a caller-owned truecolor image that must be destroyed with <a class="el" href="group__gdCodecBmp.html#ga58cde54a8d38b33074fc0fb853e10233">gdImageDestroy</a>. Passing NULL for frame advances the reader without returning the image.</p>
+<p>When frame is not NULL and the function returns 1, *frame receives a caller-owned truecolor image that must be destroyed with gdImageDestroy. Passing NULL for frame advances the reader without returning the image.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">webp</td><td>WebP reader handle opened with raw-frame mode. </td></tr>
@@ -1168,7 +1167,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Read the next coalesced WebP animation image. </p>
-<p>When image is not NULL and the function returns 1, *image receives a caller-owned truecolor full-canvas image that must be destroyed with <a class="el" href="group__gdCodecBmp.html#ga58cde54a8d38b33074fc0fb853e10233">gdImageDestroy</a>. Passing NULL for image advances the reader without returning the image.</p>
+<p>When image is not NULL and the function returns 1, *image receives a caller-owned truecolor full-canvas image that must be destroyed with gdImageDestroy. Passing NULL for image advances the reader without returning the image.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">webp</td><td>WebP reader handle. </td></tr>
@@ -1322,7 +1321,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Initialize WebP multi-image/animation read options with gd defaults. </p>
-<p>The default reader mode is coalesced, so <a class="el" href="group__gdCodecWebp.html#ga7cb02cebeb30b7568b3485dffac0a553" title="Read the next coalesced WebP animation image.">gdWebpReadNextImage()</a> returns full-canvas rendered images. Set <a class="el" href="group__gdCodecBmp.html#gaecef1537433a6b869939c96fce998c3b">gdWebpReadOptions::coalesced</a> to zero before opening the reader to read raw frame rectangles with <a class="el" href="group__gdCodecWebp.html#ga3b3d7a2d2ac85a7c512f5935c900d140" title="Read the next raw WebP animation frame rectangle.">gdWebpReadNextFrame()</a>.</p>
+<p>The default reader mode is coalesced, so <a class="el" href="group__gdCodecWebp.html#ga7cb02cebeb30b7568b3485dffac0a553" title="Read the next coalesced WebP animation image.">gdWebpReadNextImage()</a> returns full-canvas rendered images. Set <a class="el" href="structgdWebpReadOptions.html#aecef1537433a6b869939c96fce998c3b">gdWebpReadOptions::coalesced</a> to zero before opening the reader to read raw frame rectangles with <a class="el" href="group__gdCodecWebp.html#ga3b3d7a2d2ac85a7c512f5935c900d140" title="Read the next raw WebP animation frame rectangle.">gdWebpReadNextFrame()</a>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">options</td><td>Pointer to the read options structure to initialize. </td></tr>

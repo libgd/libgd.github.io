@@ -99,7 +99,7 @@ Collaboration diagram for TGA:</div>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Read Truevision TGA images. </p>
-<p>TGA support is read-only. The reader accepts stdio streams, gdIOCtx streams, and caller-provided memory buffers, and returns a new truecolor gd image. The returned image is owned by the caller and must be destroyed with <a class="el" href="group__gdCodecBmp.html#ga58cde54a8d38b33074fc0fb853e10233" title="Destroys an image and frees its memory.">gdImageDestroy()</a>.</p>
+<p>TGA support is read-only. The reader accepts stdio streams, gdIOCtx streams, and caller-provided memory buffers, and returns a new truecolor gd image. The returned image is owned by the caller and must be destroyed with gdImageDestroy().</p>
 <p>GD reads uncompressed and RLE-compressed color-mapped, truecolor, and grayscale TGA images. Supported inputs include 8-bit indexed data with 15-, 16-, 24-, or 32-bit color map entries, 16- and 24-bit truecolor data, 32-bit truecolor data with 8 alpha bits, and 8-bit grayscale data. Image origin flags are applied so the returned gd image has the expected orientation. When decoded alpha is present, alpha saving is enabled on the returned image.</p>
 <div class="fragment"><div class="line">FILE *in;</div>
 <div class="line">FILE *out;</div>
@@ -118,14 +118,13 @@ Collaboration diagram for TGA:</div>
 <div class="line"> </div>
 <div class="line">out = fopen(<span class="stringliteral">&quot;output.png&quot;</span>, <span class="stringliteral">&quot;wb&quot;</span>);</div>
 <div class="line"><span class="keywordflow">if</span> (out == NULL) {</div>
-<div class="line">    <a class="code hl_function" href="group__gdCodecBmp.html#ga58cde54a8d38b33074fc0fb853e10233">gdImageDestroy</a>(<a class="code hl_namespace" href="namespaceim.html">im</a>);</div>
+<div class="line">    gdImageDestroy(<a class="code hl_namespace" href="namespaceim.html">im</a>);</div>
 <div class="line">    <span class="keywordflow">return</span> 1;</div>
 <div class="line">}</div>
 <div class="line"> </div>
 <div class="line"><a class="code hl_function" href="group__gdCodecPng.html#ga6c0d7100c26b0ae131fd6546e15b210a">gdImagePng</a>(<a class="code hl_namespace" href="namespaceim.html">im</a>, out);</div>
 <div class="line">fclose(out);</div>
-<div class="line"><a class="code hl_function" href="group__gdCodecBmp.html#ga58cde54a8d38b33074fc0fb853e10233">gdImageDestroy</a>(<a class="code hl_namespace" href="namespaceim.html">im</a>);</div>
-<div class="ttc" id="agroup__gdCodecBmp_html_ga58cde54a8d38b33074fc0fb853e10233"><div class="ttname"><a href="group__gdCodecBmp.html#ga58cde54a8d38b33074fc0fb853e10233">gdImageDestroy</a></div><div class="ttdeci">void gdImageDestroy(gdImagePtr im)</div><div class="ttdoc">Destroys an image and frees its memory.</div><div class="ttdef"><b>Definition</b> gd.c:339</div></div>
+<div class="line">gdImageDestroy(<a class="code hl_namespace" href="namespaceim.html">im</a>);</div>
 <div class="ttc" id="agroup__gdCodecPng_html_ga6c0d7100c26b0ae131fd6546e15b210a"><div class="ttname"><a href="group__gdCodecPng.html#ga6c0d7100c26b0ae131fd6546e15b210a">gdImagePng</a></div><div class="ttdeci">void gdImagePng(gdImagePtr im, FILE *out)</div><div class="ttdoc">Write an image as PNG data to a stdio file.</div><div class="ttdef"><b>Definition</b> gd_png.c:1532</div></div>
 <div class="ttc" id="agroup__gdCodecTga_html_ga6e81d84463740f8457e0c70925904753"><div class="ttname"><a href="group__gdCodecTga.html#ga6e81d84463740f8457e0c70925904753">gdImageCreateFromTga</a></div><div class="ttdeci">gdImagePtr gdImageCreateFromTga(FILE *fp)</div><div class="ttdoc">Create an image from TGA data in a stdio stream.</div><div class="ttdef"><b>Definition</b> gd_tga.c:42</div></div>
 <div class="ttc" id="anamespaceim_html"><div class="ttname"><a href="namespaceim.html">im</a></div><div class="ttdoc">Write an image as JPEG data to a gdIOCtx.</div></div>
@@ -147,7 +146,7 @@ Collaboration diagram for TGA:</div>
 </div><div class="memdoc">
 
 <p>Create an image from TGA data in a stdio stream. </p>
-<p><a class="el" href="group__gdCodecTga.html#ga6e81d84463740f8457e0c70925904753" title="Create an image from TGA data in a stdio stream.">gdImageCreateFromTga()</a> borrows fp for the duration of the call and does not close it. On success, the returned image is owned by the caller and must be destroyed with <a class="el" href="group__gdCodecBmp.html#ga58cde54a8d38b33074fc0fb853e10233" title="Destroys an image and frees its memory.">gdImageDestroy()</a>.</p>
+<p><a class="el" href="group__gdCodecTga.html#ga6e81d84463740f8457e0c70925904753" title="Create an image from TGA data in a stdio stream.">gdImageCreateFromTga()</a> borrows fp for the duration of the call and does not close it. On success, the returned image is owned by the caller and must be destroyed with gdImageDestroy().</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">fp</td><td>Pointer to the input FILE stream. </td></tr>
@@ -175,7 +174,7 @@ Collaboration diagram for TGA:</div>
 </div><div class="memdoc">
 
 <p>Create an image from TGA data in a gdIOCtx. </p>
-<p><a class="el" href="group__gdCodecTga.html#ga788d2034624279737f9ebdd6f8b49dce" title="Create an image from TGA data in a gdIOCtx.">gdImageCreateFromTgaCtx()</a> borrows ctx for the duration of the call and does not close it. On success, the returned image is owned by the caller and must be destroyed with <a class="el" href="group__gdCodecBmp.html#ga58cde54a8d38b33074fc0fb853e10233" title="Destroys an image and frees its memory.">gdImageDestroy()</a>.</p>
+<p><a class="el" href="group__gdCodecTga.html#ga788d2034624279737f9ebdd6f8b49dce" title="Create an image from TGA data in a gdIOCtx.">gdImageCreateFromTgaCtx()</a> borrows ctx for the duration of the call and does not close it. On success, the returned image is owned by the caller and must be destroyed with gdImageDestroy().</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">ctx</td><td>Pointer to the gdIOCtx input context. </td></tr>
@@ -213,7 +212,7 @@ Collaboration diagram for TGA:</div>
 </div><div class="memdoc">
 
 <p>Create an image from a TGA memory buffer. </p>
-<p><a class="el" href="group__gdCodecTga.html#gad8f37913ad069f628f21942d310fa89a" title="Create an image from a TGA memory buffer.">gdImageCreateFromTgaPtr()</a> borrows data for the duration of the call. The caller retains ownership of the input buffer. On success, the returned image is owned by the caller and must be destroyed with <a class="el" href="group__gdCodecBmp.html#ga58cde54a8d38b33074fc0fb853e10233" title="Destroys an image and frees its memory.">gdImageDestroy()</a>.</p>
+<p><a class="el" href="group__gdCodecTga.html#gad8f37913ad069f628f21942d310fa89a" title="Create an image from a TGA memory buffer.">gdImageCreateFromTgaPtr()</a> borrows data for the duration of the call. The caller retains ownership of the input buffer. On success, the returned image is owned by the caller and must be destroyed with gdImageDestroy().</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">size</td><td>Size of the TGA memory buffer in bytes. </td></tr>

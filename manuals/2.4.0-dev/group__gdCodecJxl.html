@@ -224,16 +224,16 @@ Data Structures</h2></td></tr>
 <div class="line">  exit(1);</div>
 <div class="line">}</div>
 <div class="line"> </div>
-<div class="line"><a class="code hl_function" href="group__PixelDraw.html#ga1e534e750e1b336b8961a62ebec88511">gdImageFilledRectangle</a>(first, 0, 0, 31, 23, <a class="code hl_define" href="group__gdCodecBmp.html#gad2a26190a11a6682d9fe2235ff8b6928">gdTrueColor</a>(255, 0, 0));</div>
-<div class="line"><a class="code hl_function" href="group__PixelDraw.html#ga1e534e750e1b336b8961a62ebec88511">gdImageFilledRectangle</a>(second, 0, 0, 31, 23, <a class="code hl_define" href="group__gdCodecBmp.html#gad2a26190a11a6682d9fe2235ff8b6928">gdTrueColor</a>(0, 0, 255));</div>
+<div class="line"><a class="code hl_function" href="group__PixelDraw.html#ga1e534e750e1b336b8961a62ebec88511">gdImageFilledRectangle</a>(first, 0, 0, 31, 23, gdTrueColor(255, 0, 0));</div>
+<div class="line"><a class="code hl_function" href="group__PixelDraw.html#ga1e534e750e1b336b8961a62ebec88511">gdImageFilledRectangle</a>(second, 0, 0, 31, 23, gdTrueColor(0, 0, 255));</div>
 <div class="line"> </div>
 <div class="line"><a class="code hl_function" href="group__gdCodecJxl.html#ga9612923652ea80d6eebbc57dc031c3fd">gdJxlAnimWriteOptionsInit</a>(&amp;write_options);</div>
-<div class="line">write_options.<a class="code hl_variable" href="group__gdCodecBmp.html#ga0e9a08eda54040c0da3b798c557291ca">lossless</a> = 1;</div>
-<div class="line">write_options.<a class="code hl_variable" href="group__gdCodecBmp.html#ga735cde4bffd3c34398483b71f1f8999e">loopCount</a> = 0;</div>
+<div class="line">write_options.<a class="code hl_variable" href="structgdJxlAnimWriteOptions.html#a0e9a08eda54040c0da3b798c557291ca">lossless</a> = 1;</div>
+<div class="line">write_options.<a class="code hl_variable" href="structgdJxlAnimWriteOptions.html#a735cde4bffd3c34398483b71f1f8999e">loopCount</a> = 0;</div>
 <div class="line">writer = <a class="code hl_function" href="group__gdCodecJxl.html#ga99152ded3433cbc7988ae3408181c1a9">gdJxlWriteOpenPtr</a>(&amp;write_options);</div>
 <div class="line"><span class="keywordflow">if</span> (writer == NULL) {</div>
-<div class="line">  <a class="code hl_function" href="group__gdCodecBmp.html#ga58cde54a8d38b33074fc0fb853e10233">gdImageDestroy</a>(first);</div>
-<div class="line">  <a class="code hl_function" href="group__gdCodecBmp.html#ga58cde54a8d38b33074fc0fb853e10233">gdImageDestroy</a>(second);</div>
+<div class="line">  gdImageDestroy(first);</div>
+<div class="line">  gdImageDestroy(second);</div>
 <div class="line">  exit(1);</div>
 <div class="line">}</div>
 <div class="line"><a class="code hl_function" href="group__gdCodecJxl.html#gaa589551452ad72ddeab845ffd0ce7004">gdJxlWriteAddImage</a>(writer, first, 120);</div>
@@ -242,17 +242,13 @@ Data Structures</h2></td></tr>
 <div class="line"> </div>
 <div class="line">reader = <a class="code hl_function" href="group__gdCodecJxl.html#ga40c878d1185c2526de4a4e36b2192567">gdJxlReadOpenPtr</a>(size, data, NULL);</div>
 <div class="line"><span class="keywordflow">while</span> ((result = <a class="code hl_function" href="group__gdCodecJxl.html#gaba8368b8799497677924101834bea884">gdJxlReadNextImage</a>(reader, &amp;delay_ms, &amp;image)) == 1) {</div>
-<div class="line">  <a class="code hl_function" href="group__gdCodecBmp.html#ga58cde54a8d38b33074fc0fb853e10233">gdImageDestroy</a>(image);</div>
+<div class="line">  gdImageDestroy(image);</div>
 <div class="line">}</div>
 <div class="line"><a class="code hl_function" href="group__gdCodecJxl.html#ga3520548850945ff1c565069741285c9b">gdJxlReadClose</a>(reader);</div>
 <div class="line">gdFree(data);</div>
-<div class="line"><a class="code hl_function" href="group__gdCodecBmp.html#ga58cde54a8d38b33074fc0fb853e10233">gdImageDestroy</a>(first);</div>
-<div class="line"><a class="code hl_function" href="group__gdCodecBmp.html#ga58cde54a8d38b33074fc0fb853e10233">gdImageDestroy</a>(second);</div>
+<div class="line">gdImageDestroy(first);</div>
+<div class="line">gdImageDestroy(second);</div>
 <div class="ttc" id="agroup__PixelDraw_html_ga1e534e750e1b336b8961a62ebec88511"><div class="ttname"><a href="group__PixelDraw.html#ga1e534e750e1b336b8961a62ebec88511">gdImageFilledRectangle</a></div><div class="ttdeci">void gdImageFilledRectangle(gdImagePtr im, int x1, int y1, int x2, int y2, int color)</div><div class="ttdoc">Draws a filled rectangle.</div><div class="ttdef"><b>Definition</b> gd.c:2403</div></div>
-<div class="ttc" id="agroup__gdCodecBmp_html_ga0e9a08eda54040c0da3b798c557291ca"><div class="ttname"><a href="group__gdCodecBmp.html#ga0e9a08eda54040c0da3b798c557291ca">gdJxlAnimWriteOptions::lossless</a></div><div class="ttdeci">int lossless</div><div class="ttdef"><b>Definition</b> gd.h:2791</div></div>
-<div class="ttc" id="agroup__gdCodecBmp_html_ga58cde54a8d38b33074fc0fb853e10233"><div class="ttname"><a href="group__gdCodecBmp.html#ga58cde54a8d38b33074fc0fb853e10233">gdImageDestroy</a></div><div class="ttdeci">void gdImageDestroy(gdImagePtr im)</div><div class="ttdoc">Destroys an image and frees its memory.</div><div class="ttdef"><b>Definition</b> gd.c:339</div></div>
-<div class="ttc" id="agroup__gdCodecBmp_html_ga735cde4bffd3c34398483b71f1f8999e"><div class="ttname"><a href="group__gdCodecBmp.html#ga735cde4bffd3c34398483b71f1f8999e">gdJxlAnimWriteOptions::loopCount</a></div><div class="ttdeci">int loopCount</div><div class="ttdef"><b>Definition</b> gd.h:2794</div></div>
-<div class="ttc" id="agroup__gdCodecBmp_html_gad2a26190a11a6682d9fe2235ff8b6928"><div class="ttname"><a href="group__gdCodecBmp.html#gad2a26190a11a6682d9fe2235ff8b6928">gdTrueColor</a></div><div class="ttdeci">#define gdTrueColor(r, g, b)</div><div class="ttdoc">Compose a truecolor value from its components.</div><div class="ttdef"><b>Definition</b> gd.h:5988</div></div>
 <div class="ttc" id="agroup__gdCodecJxl_html_ga3520548850945ff1c565069741285c9b"><div class="ttname"><a href="group__gdCodecJxl.html#ga3520548850945ff1c565069741285c9b">gdJxlReadClose</a></div><div class="ttdeci">void gdJxlReadClose(gdJxlReadPtr reader)</div><div class="ttdoc">Close a JPEG XL multi-image reader.</div><div class="ttdef"><b>Definition</b> gd_jxl.c:1883</div></div>
 <div class="ttc" id="agroup__gdCodecJxl_html_ga40c878d1185c2526de4a4e36b2192567"><div class="ttname"><a href="group__gdCodecJxl.html#ga40c878d1185c2526de4a4e36b2192567">gdJxlReadOpenPtr</a></div><div class="ttdeci">gdJxlReadPtr gdJxlReadOpenPtr(int size, void *data, const gdJxlReadOptions *options)</div><div class="ttdoc">Open a JPEG XL multi-image/animation reader from a memory buffer.</div><div class="ttdef"><b>Definition</b> gd_jxl.c:1842</div></div>
 <div class="ttc" id="agroup__gdCodecJxl_html_ga4411f215ab5b5ed4ac815d7bc8437b8e"><div class="ttname"><a href="group__gdCodecJxl.html#ga4411f215ab5b5ed4ac815d7bc8437b8e">gdJxlReadPtr</a></div><div class="ttdeci">struct gdJxlRead * gdJxlReadPtr</div><div class="ttdoc">Opaque JPEG XL multi-image/animation reader handle.</div><div class="ttdef"><b>Definition</b> gd.h:2730</div></div>
@@ -263,6 +259,8 @@ Data Structures</h2></td></tr>
 <div class="ttc" id="agroup__gdCodecJxl_html_gab96625a29637af8e48e388ad65fbe151"><div class="ttname"><a href="group__gdCodecJxl.html#gab96625a29637af8e48e388ad65fbe151">gdJxlWritePtr</a></div><div class="ttdeci">struct gdJxlWrite * gdJxlWritePtr</div><div class="ttdoc">Opaque JPEG XL multi-image/animation writer handle.</div><div class="ttdef"><b>Definition</b> gd.h:2739</div></div>
 <div class="ttc" id="agroup__gdCodecJxl_html_gaba8368b8799497677924101834bea884"><div class="ttname"><a href="group__gdCodecJxl.html#gaba8368b8799497677924101834bea884">gdJxlReadNextImage</a></div><div class="ttdeci">int gdJxlReadNextImage(gdJxlReadPtr reader, int *delay_ms, gdImagePtr *image)</div><div class="ttdoc">Read the next coalesced JPEG XL image.</div><div class="ttdef"><b>Definition</b> gd_jxl.c:1860</div></div>
 <div class="ttc" id="astructgdJxlAnimWriteOptions_html"><div class="ttname"><a href="structgdJxlAnimWriteOptions.html">gdJxlAnimWriteOptions</a></div><div class="ttdoc">JPEG XL animation writer options.</div><div class="ttdef"><b>Definition</b> gd.h:2788</div></div>
+<div class="ttc" id="astructgdJxlAnimWriteOptions_html_a0e9a08eda54040c0da3b798c557291ca"><div class="ttname"><a href="structgdJxlAnimWriteOptions.html#a0e9a08eda54040c0da3b798c557291ca">gdJxlAnimWriteOptions::lossless</a></div><div class="ttdeci">int lossless</div><div class="ttdef"><b>Definition</b> gd.h:2791</div></div>
+<div class="ttc" id="astructgdJxlAnimWriteOptions_html_a735cde4bffd3c34398483b71f1f8999e"><div class="ttname"><a href="structgdJxlAnimWriteOptions.html#a735cde4bffd3c34398483b71f1f8999e">gdJxlAnimWriteOptions::loopCount</a></div><div class="ttdeci">int loopCount</div><div class="ttdef"><b>Definition</b> gd.h:2794</div></div>
 </div><!-- fragment --> <h2 class="groupheader">Typedef Documentation</h2>
 <a id="ga4411f215ab5b5ed4ac815d7bc8437b8e" name="ga4411f215ab5b5ed4ac815d7bc8437b8e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga4411f215ab5b5ed4ac815d7bc8437b8e">&#9670;&#160;</a></span>gdJxlReadPtr</h2>
@@ -345,7 +343,7 @@ Data Structures</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Create a truecolor image from a JPEG XL stdio file. </p>
-<p><a class="el" href="group__gdCodecJxl.html#gab5cbaa90c9a768a592b48e163a01563a" title="Create a truecolor image from a JPEG XL stdio file.">gdImageCreateFromJxl()</a> does not close inFile. The returned image is caller-owned and must be destroyed with <a class="el" href="group__gdCodecBmp.html#ga58cde54a8d38b33074fc0fb853e10233">gdImageDestroy</a>.</p>
+<p><a class="el" href="group__gdCodecJxl.html#gab5cbaa90c9a768a592b48e163a01563a" title="Create a truecolor image from a JPEG XL stdio file.">gdImageCreateFromJxl()</a> does not close inFile. The returned image is caller-owned and must be destroyed with gdImageDestroy.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">inFile</td><td>Pointer to the input FILE stream.</td></tr>
@@ -373,7 +371,7 @@ Data Structures</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Create a truecolor image from JPEG XL data read through a gdIOCtx. </p>
-<p><a class="el" href="group__gdCodecJxl.html#ga5ec53436947b0da67bb2efe54e561ea7" title="Create a truecolor image from JPEG XL data read through a gdIOCtx.">gdImageCreateFromJxlCtx()</a> does not close infile. The returned image is caller-owned and must be destroyed with <a class="el" href="group__gdCodecBmp.html#ga58cde54a8d38b33074fc0fb853e10233">gdImageDestroy</a>.</p>
+<p><a class="el" href="group__gdCodecJxl.html#ga5ec53436947b0da67bb2efe54e561ea7" title="Create a truecolor image from JPEG XL data read through a gdIOCtx.">gdImageCreateFromJxlCtx()</a> does not close infile. The returned image is caller-owned and must be destroyed with gdImageDestroy.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">infile</td><td>Pointer to the gdIOCtx input context.</td></tr>
@@ -411,7 +409,7 @@ Data Structures</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Create a truecolor image from a JPEG XL memory buffer. </p>
-<p>The data buffer is borrowed for the duration of the call. The returned image is caller-owned and must be destroyed with <a class="el" href="group__gdCodecBmp.html#ga58cde54a8d38b33074fc0fb853e10233">gdImageDestroy</a>.</p>
+<p>The data buffer is borrowed for the duration of the call. The returned image is caller-owned and must be destroyed with gdImageDestroy.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">size</td><td>Size of the JPEG XL memory buffer in bytes. </td></tr>
@@ -872,7 +870,7 @@ Data Structures</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Read the next raw JPEG XL frame rectangle. </p>
-<p>This function is used with non-coalesced readers. When frame is not NULL and the function returns 1, *frame receives a caller-owned truecolor frame rectangle that must be destroyed with <a class="el" href="group__gdCodecBmp.html#ga58cde54a8d38b33074fc0fb853e10233">gdImageDestroy</a>. Passing NULL for frame advances the reader without returning the decoded image.</p>
+<p>This function is used with non-coalesced readers. When frame is not NULL and the function returns 1, *frame receives a caller-owned truecolor frame rectangle that must be destroyed with gdImageDestroy. Passing NULL for frame advances the reader without returning the decoded image.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">reader</td><td>JPEG XL reader handle opened with raw-frame mode. </td></tr>
@@ -918,7 +916,7 @@ Data Structures</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Read the next coalesced JPEG XL image. </p>
-<p>This function is used with coalesced readers. When image is not NULL and the function returns 1, *image receives a caller-owned full-canvas truecolor image that must be destroyed with <a class="el" href="group__gdCodecBmp.html#ga58cde54a8d38b33074fc0fb853e10233">gdImageDestroy</a>. Passing NULL for image advances the reader without returning the decoded image.</p>
+<p>This function is used with coalesced readers. When image is not NULL and the function returns 1, *image receives a caller-owned full-canvas truecolor image that must be destroyed with gdImageDestroy. Passing NULL for image advances the reader without returning the decoded image.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">reader</td><td>JPEG XL reader handle opened with coalesced mode. </td></tr>
@@ -1072,7 +1070,7 @@ Data Structures</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Initialize JPEG XL multi-image/animation read options with gd defaults. </p>
-<p>The default reader mode is coalesced, so <a class="el" href="group__gdCodecJxl.html#gaba8368b8799497677924101834bea884">gdJxlReadNextImage</a> returns full-canvas rendered images. Set <a class="el" href="group__gdCodecBmp.html#ga59d822f0f7055f834976737e58a208eb">gdJxlReadOptions::coalesced</a> to zero before opening the reader to read raw frame rectangles with <a class="el" href="group__gdCodecJxl.html#gaadca1ba7cb69b8033651a7a9a9e5a08b">gdJxlReadNextFrame</a>.</p>
+<p>The default reader mode is coalesced, so <a class="el" href="group__gdCodecJxl.html#gaba8368b8799497677924101834bea884">gdJxlReadNextImage</a> returns full-canvas rendered images. Set <a class="el" href="structgdJxlReadOptions.html#a59d822f0f7055f834976737e58a208eb">gdJxlReadOptions::coalesced</a> to zero before opening the reader to read raw frame rectangles with <a class="el" href="group__gdCodecJxl.html#gaadca1ba7cb69b8033651a7a9a9e5a08b">gdJxlReadNextFrame</a>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">options</td><td>Pointer to the read options structure to initialize. </td></tr>

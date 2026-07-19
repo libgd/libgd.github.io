@@ -108,14 +108,14 @@ Collaboration diagram for GD:</div>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Read and write libgd's native .gd image format. </p>
 <p>The GD format is libgd's own historical image dump format. It is obsolete for interchange and should generally be used only for development, testing, or compatibility with existing .gd assets. For compressed or portable image exchange, prefer formats such as PNG, JPEG, WebP, or AVIF.</p>
-<p>gd can read GD 1.x palette .gd files and GD 2.x palette or truecolor .gd files. The writer always emits the GD 2.x .gd format, not the related GD2 chunked format documented separately by the GD2 APIs. Returned gdImagePtr images are owned by the caller and must be destroyed with <a class="el" href="group__gdCodecBmp.html#ga58cde54a8d38b33074fc0fb853e10233">gdImageDestroy</a>.</p>
+<p>gd can read GD 1.x palette .gd files and GD 2.x palette or truecolor .gd files. The writer always emits the GD 2.x .gd format, not the related GD2 chunked format documented separately by the GD2 APIs. Returned gdImagePtr images are owned by the caller and must be destroyed with gdImageDestroy.</p>
 <div class="fragment"><div class="line">gdImagePtr <a class="code hl_namespace" href="namespaceim.html">im</a>, roundtrip;</div>
 <div class="line"><span class="keywordtype">void</span> *data;</div>
 <div class="line"><span class="keywordtype">int</span> size;</div>
 <div class="line"> </div>
 <div class="line"><a class="code hl_namespace" href="namespaceim.html">im</a> = gdImageCreate(100, 100);</div>
-<div class="line"><a class="code hl_function" href="group__gdCodecBmp.html#gacb787efb2cef0bfd6802540b56c3c8f8">gdImageColorAllocate</a>(<a class="code hl_namespace" href="namespaceim.html">im</a>, 255, 255, 255);</div>
-<div class="line"><a class="code hl_function" href="group__gdCodecBmp.html#gacb787efb2cef0bfd6802540b56c3c8f8">gdImageColorAllocate</a>(<a class="code hl_namespace" href="namespaceim.html">im</a>, 0, 0, 0);</div>
+<div class="line">gdImageColorAllocate(<a class="code hl_namespace" href="namespaceim.html">im</a>, 255, 255, 255);</div>
+<div class="line">gdImageColorAllocate(<a class="code hl_namespace" href="namespaceim.html">im</a>, 0, 0, 0);</div>
 <div class="line">gdImageLine(<a class="code hl_namespace" href="namespaceim.html">im</a>, 0, 0, 99, 99, 1);</div>
 <div class="line"> </div>
 <div class="line">data = <a class="code hl_function" href="group__gdCodecGd.html#ga33880bf36a593182ef036db3ea6ee80b">gdImageGdPtr</a>(<a class="code hl_namespace" href="namespaceim.html">im</a>, &amp;size);</div>
@@ -123,13 +123,11 @@ Collaboration diagram for GD:</div>
 <div class="line">       roundtrip = <a class="code hl_function" href="group__gdCodecGd.html#ga65ffe81901d2b38aa9a91177744e5206">gdImageCreateFromGdPtr</a>(size, data);</div>
 <div class="line">       gdFree(data);</div>
 <div class="line">       <span class="keywordflow">if</span> (roundtrip != NULL) {</div>
-<div class="line">               <a class="code hl_function" href="group__gdCodecBmp.html#ga58cde54a8d38b33074fc0fb853e10233">gdImageDestroy</a>(roundtrip);</div>
+<div class="line">               gdImageDestroy(roundtrip);</div>
 <div class="line">       }</div>
 <div class="line">}</div>
 <div class="line"> </div>
-<div class="line"><a class="code hl_function" href="group__gdCodecBmp.html#ga58cde54a8d38b33074fc0fb853e10233">gdImageDestroy</a>(<a class="code hl_namespace" href="namespaceim.html">im</a>);</div>
-<div class="ttc" id="agroup__gdCodecBmp_html_ga58cde54a8d38b33074fc0fb853e10233"><div class="ttname"><a href="group__gdCodecBmp.html#ga58cde54a8d38b33074fc0fb853e10233">gdImageDestroy</a></div><div class="ttdeci">void gdImageDestroy(gdImagePtr im)</div><div class="ttdoc">Destroys an image and frees its memory.</div><div class="ttdef"><b>Definition</b> gd.c:339</div></div>
-<div class="ttc" id="agroup__gdCodecBmp_html_gacb787efb2cef0bfd6802540b56c3c8f8"><div class="ttname"><a href="group__gdCodecBmp.html#gacb787efb2cef0bfd6802540b56c3c8f8">gdImageColorAllocate</a></div><div class="ttdeci">int gdImageColorAllocate(gdImagePtr im, int r, int g, int b)</div><div class="ttdoc">Allocates a color.</div><div class="ttdef"><b>Definition</b> gd.c:543</div></div>
+<div class="line">gdImageDestroy(<a class="code hl_namespace" href="namespaceim.html">im</a>);</div>
 <div class="ttc" id="agroup__gdCodecGd_html_ga33880bf36a593182ef036db3ea6ee80b"><div class="ttname"><a href="group__gdCodecGd.html#ga33880bf36a593182ef036db3ea6ee80b">gdImageGdPtr</a></div><div class="ttdeci">void * gdImageGdPtr(gdImagePtr im, int *size)</div><div class="ttdoc">Write an image as GD data to a newly allocated memory buffer.</div><div class="ttdef"><b>Definition</b> gd_gd.c:376</div></div>
 <div class="ttc" id="agroup__gdCodecGd_html_ga65ffe81901d2b38aa9a91177744e5206"><div class="ttname"><a href="group__gdCodecGd.html#ga65ffe81901d2b38aa9a91177744e5206">gdImageCreateFromGdPtr</a></div><div class="ttdeci">gdImagePtr gdImageCreateFromGdPtr(int size, void *data)</div><div class="ttdoc">Create an image from a GD memory buffer.</div><div class="ttdef"><b>Definition</b> gd_gd.c:354</div></div>
 <div class="ttc" id="anamespaceim_html"><div class="ttname"><a href="namespaceim.html">im</a></div><div class="ttdoc">Write an image as JPEG data to a gdIOCtx.</div></div>
@@ -151,7 +149,7 @@ Collaboration diagram for GD:</div>
 </div><div class="memdoc">
 
 <p>Create an image from a GD stdio file. </p>
-<p><a class="el" href="group__gdCodecGd.html#gadfc094af829e1835dafe65ed53ca699d" title="Create an image from a GD stdio file.">gdImageCreateFromGd()</a> reads from the current position of in and does not close it. On success, the returned image is owned by the caller and must be destroyed with <a class="el" href="group__gdCodecBmp.html#ga58cde54a8d38b33074fc0fb853e10233">gdImageDestroy</a>.</p>
+<p><a class="el" href="group__gdCodecGd.html#gadfc094af829e1835dafe65ed53ca699d" title="Create an image from a GD stdio file.">gdImageCreateFromGd()</a> reads from the current position of in and does not close it. On success, the returned image is owned by the caller and must be destroyed with gdImageDestroy.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">in</td><td>Pointer to the GD FILE stream to read. </td></tr>
@@ -179,7 +177,7 @@ Collaboration diagram for GD:</div>
 </div><div class="memdoc">
 
 <p>Create an image from GD data read through a gdIOCtx. </p>
-<p><a class="el" href="group__gdCodecGd.html#gacbe635463783e20ab2a9348113838d5a" title="Create an image from GD data read through a gdIOCtx.">gdImageCreateFromGdCtx()</a> reads from in and does not close it. On success, the returned image is owned by the caller and must be destroyed with <a class="el" href="group__gdCodecBmp.html#ga58cde54a8d38b33074fc0fb853e10233">gdImageDestroy</a>.</p>
+<p><a class="el" href="group__gdCodecGd.html#gacbe635463783e20ab2a9348113838d5a" title="Create an image from GD data read through a gdIOCtx.">gdImageCreateFromGdCtx()</a> reads from in and does not close it. On success, the returned image is owned by the caller and must be destroyed with gdImageDestroy.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">in</td><td>Pointer to the gdIOCtx input context. </td></tr>
@@ -217,7 +215,7 @@ Collaboration diagram for GD:</div>
 </div><div class="memdoc">
 
 <p>Create an image from a GD memory buffer. </p>
-<p><a class="el" href="group__gdCodecGd.html#ga65ffe81901d2b38aa9a91177744e5206" title="Create an image from a GD memory buffer.">gdImageCreateFromGdPtr()</a> borrows data for the duration of the call. The caller retains ownership of the input buffer. On success, the returned image is owned by the caller and must be destroyed with <a class="el" href="group__gdCodecBmp.html#ga58cde54a8d38b33074fc0fb853e10233">gdImageDestroy</a>.</p>
+<p><a class="el" href="group__gdCodecGd.html#ga65ffe81901d2b38aa9a91177744e5206" title="Create an image from a GD memory buffer.">gdImageCreateFromGdPtr()</a> borrows data for the duration of the call. The caller retains ownership of the input buffer. On success, the returned image is owned by the caller and must be destroyed with gdImageDestroy.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">size</td><td>Size of the GD memory buffer in bytes. </td></tr>

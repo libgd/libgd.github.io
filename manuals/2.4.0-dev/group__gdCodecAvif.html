@@ -185,26 +185,25 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>gdImageAvifCtxWithOpti
 <div class="line">}</div>
 <div class="line"> </div>
 <div class="line"><a class="code hl_function" href="group__gdCodecAvif.html#ga30ae69fd483c58aa93b0ff29293d9de4">gdAvifWriteOptionsInit</a>(&amp;options);</div>
-<div class="line">options.<a class="code hl_variable" href="group__gdCodecBmp.html#gafa097ab011b9ccdf8ef46981a021bcd1">quality</a> = 90;</div>
-<div class="line">options.<a class="code hl_variable" href="group__gdCodecBmp.html#ga6864d3432f1559e5fe83676148cd44f9">speed</a> = 6;</div>
-<div class="line">options.<a class="code hl_variable" href="group__gdCodecBmp.html#gae8c507c94b7341d08216d5ea5ae00e6f">chroma_subsampling</a> = <a class="code hl_enumvalue" href="group__gdCodecAvif.html#gga385c44f6fb256e5716a2302a5b940388a8b1b56bca02c87eb039827507e359aa0">GD_AVIF_CHROMA_SUBSAMPLING_YUV444</a>;</div>
+<div class="line">options.<a class="code hl_variable" href="structgdAvifWriteOptions.html#afa097ab011b9ccdf8ef46981a021bcd1">quality</a> = 90;</div>
+<div class="line">options.<a class="code hl_variable" href="structgdAvifWriteOptions.html#a6864d3432f1559e5fe83676148cd44f9">speed</a> = 6;</div>
+<div class="line">options.<a class="code hl_variable" href="structgdAvifWriteOptions.html#ae8c507c94b7341d08216d5ea5ae00e6f">chroma_subsampling</a> = <a class="code hl_enumvalue" href="group__gdCodecAvif.html#gga385c44f6fb256e5716a2302a5b940388a8b1b56bca02c87eb039827507e359aa0">GD_AVIF_CHROMA_SUBSAMPLING_YUV444</a>;</div>
 <div class="line"> </div>
 <div class="line">data = <a class="code hl_function" href="group__gdCodecAvif.html#gabf6a1533a13de4c85d368998b2862017">gdImageAvifPtrWithOptions</a>(<a class="code hl_namespace" href="namespaceim.html">im</a>, &amp;size, &amp;options);</div>
 <div class="line"><span class="keywordflow">if</span> (data != NULL) {</div>
 <div class="line">    gdFree(data);</div>
 <div class="line">}</div>
 <div class="line"> </div>
-<div class="line"><a class="code hl_function" href="group__gdCodecBmp.html#ga58cde54a8d38b33074fc0fb853e10233">gdImageDestroy</a>(<a class="code hl_namespace" href="namespaceim.html">im</a>);</div>
+<div class="line">gdImageDestroy(<a class="code hl_namespace" href="namespaceim.html">im</a>);</div>
 <div class="ttc" id="agroup__gdCodecAvif_html_ga30ae69fd483c58aa93b0ff29293d9de4"><div class="ttname"><a href="group__gdCodecAvif.html#ga30ae69fd483c58aa93b0ff29293d9de4">gdAvifWriteOptionsInit</a></div><div class="ttdeci">void gdAvifWriteOptionsInit(gdAvifWriteOptions *options)</div><div class="ttdoc">Initialize AVIF write options with gd defaults.</div><div class="ttdef"><b>Definition</b> gd_avif.c:674</div></div>
 <div class="ttc" id="agroup__gdCodecAvif_html_gabf6a1533a13de4c85d368998b2862017"><div class="ttname"><a href="group__gdCodecAvif.html#gabf6a1533a13de4c85d368998b2862017">gdImageAvifPtrWithOptions</a></div><div class="ttdeci">void * gdImageAvifPtrWithOptions(gdImagePtr im, int *size, const gdAvifWriteOptions *options)</div><div class="ttdoc">Encode a truecolor image as AVIF data in memory using write options.</div><div class="ttdef"><b>Definition</b> gd_avif.c:750</div></div>
 <div class="ttc" id="agroup__gdCodecAvif_html_gaf5a04843db993453fe59614af65c7041"><div class="ttname"><a href="group__gdCodecAvif.html#gaf5a04843db993453fe59614af65c7041">gdImageCreateFromAvif</a></div><div class="ttdeci">gdImagePtr gdImageCreateFromAvif(FILE *inFile)</div><div class="ttdoc">Create a truecolor image from AVIF data in a stdio stream.</div><div class="ttdef"><b>Definition</b> gd_avif.c:685</div></div>
 <div class="ttc" id="agroup__gdCodecAvif_html_gga385c44f6fb256e5716a2302a5b940388a8b1b56bca02c87eb039827507e359aa0"><div class="ttname"><a href="group__gdCodecAvif.html#gga385c44f6fb256e5716a2302a5b940388a8b1b56bca02c87eb039827507e359aa0">GD_AVIF_CHROMA_SUBSAMPLING_YUV444</a></div><div class="ttdeci">@ GD_AVIF_CHROMA_SUBSAMPLING_YUV444</div><div class="ttdef"><b>Definition</b> gd.h:3432</div></div>
-<div class="ttc" id="agroup__gdCodecBmp_html_ga58cde54a8d38b33074fc0fb853e10233"><div class="ttname"><a href="group__gdCodecBmp.html#ga58cde54a8d38b33074fc0fb853e10233">gdImageDestroy</a></div><div class="ttdeci">void gdImageDestroy(gdImagePtr im)</div><div class="ttdoc">Destroys an image and frees its memory.</div><div class="ttdef"><b>Definition</b> gd.c:339</div></div>
-<div class="ttc" id="agroup__gdCodecBmp_html_ga6864d3432f1559e5fe83676148cd44f9"><div class="ttname"><a href="group__gdCodecBmp.html#ga6864d3432f1559e5fe83676148cd44f9">gdAvifWriteOptions::speed</a></div><div class="ttdeci">int speed</div><div class="ttdef"><b>Definition</b> gd.h:3447</div></div>
-<div class="ttc" id="agroup__gdCodecBmp_html_gae8c507c94b7341d08216d5ea5ae00e6f"><div class="ttname"><a href="group__gdCodecBmp.html#gae8c507c94b7341d08216d5ea5ae00e6f">gdAvifWriteOptions::chroma_subsampling</a></div><div class="ttdeci">int chroma_subsampling</div><div class="ttdef"><b>Definition</b> gd.h:3449</div></div>
-<div class="ttc" id="agroup__gdCodecBmp_html_gafa097ab011b9ccdf8ef46981a021bcd1"><div class="ttname"><a href="group__gdCodecBmp.html#gafa097ab011b9ccdf8ef46981a021bcd1">gdAvifWriteOptions::quality</a></div><div class="ttdeci">int quality</div><div class="ttdef"><b>Definition</b> gd.h:3446</div></div>
 <div class="ttc" id="anamespaceim_html"><div class="ttname"><a href="namespaceim.html">im</a></div><div class="ttdoc">Write an image as JPEG data to a gdIOCtx.</div></div>
 <div class="ttc" id="astructgdAvifWriteOptions_html"><div class="ttname"><a href="structgdAvifWriteOptions.html">gdAvifWriteOptions</a></div><div class="ttdoc">AVIF encoder options used by gdImageAvifPtrWithOptions().</div><div class="ttdef"><b>Definition</b> gd.h:3445</div></div>
+<div class="ttc" id="astructgdAvifWriteOptions_html_a6864d3432f1559e5fe83676148cd44f9"><div class="ttname"><a href="structgdAvifWriteOptions.html#a6864d3432f1559e5fe83676148cd44f9">gdAvifWriteOptions::speed</a></div><div class="ttdeci">int speed</div><div class="ttdef"><b>Definition</b> gd.h:3447</div></div>
+<div class="ttc" id="astructgdAvifWriteOptions_html_ae8c507c94b7341d08216d5ea5ae00e6f"><div class="ttname"><a href="structgdAvifWriteOptions.html#ae8c507c94b7341d08216d5ea5ae00e6f">gdAvifWriteOptions::chroma_subsampling</a></div><div class="ttdeci">int chroma_subsampling</div><div class="ttdef"><b>Definition</b> gd.h:3449</div></div>
+<div class="ttc" id="astructgdAvifWriteOptions_html_afa097ab011b9ccdf8ef46981a021bcd1"><div class="ttname"><a href="structgdAvifWriteOptions.html#afa097ab011b9ccdf8ef46981a021bcd1">gdAvifWriteOptions::quality</a></div><div class="ttdeci">int quality</div><div class="ttdef"><b>Definition</b> gd.h:3446</div></div>
 </div><!-- fragment --> <h2 class="groupheader">Enumeration Type Documentation</h2>
 <a id="ga385c44f6fb256e5716a2302a5b940388" name="ga385c44f6fb256e5716a2302a5b940388"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga385c44f6fb256e5716a2302a5b940388">&#9670;&#160;</a></span>anonymous enum</h2>
@@ -217,7 +216,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>gdImageAvifCtxWithOpti
         </tr>
       </table>
 </div><div class="memdoc">
-<p>AVIF chroma subsampling modes for <a class="el" href="group__gdCodecBmp.html#gae8c507c94b7341d08216d5ea5ae00e6f">gdAvifWriteOptions::chroma_subsampling</a>. </p>
+<p>AVIF chroma subsampling modes for <a class="el" href="structgdAvifWriteOptions.html#ae8c507c94b7341d08216d5ea5ae00e6f">gdAvifWriteOptions::chroma_subsampling</a>. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga385c44f6fb256e5716a2302a5b940388a0d14fe76880e3a1eb43a3b2c040b33cd" name="gga385c44f6fb256e5716a2302a5b940388a0d14fe76880e3a1eb43a3b2c040b33cd"></a>GD_AVIF_CHROMA_SUBSAMPLING_AUTO&#160;</td><td class="fielddoc"><p>Choose subsampling automatically from the quality settings. </p>
 </td></tr>
@@ -240,7 +239,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>gdImageAvifCtxWithOpti
         </tr>
       </table>
 </div><div class="memdoc">
-<p>AVIF YUV pixel formats reported by <a class="el" href="group__gdCodecBmp.html#gadf3b1fbe27d4a79166c7a141792b676f">gdAvifInfo::yuv_format</a>. </p>
+<p>AVIF YUV pixel formats reported by <a class="el" href="structgdAvifInfo.html#adf3b1fbe27d4a79166c7a141792b676f">gdAvifInfo::yuv_format</a>. </p>
 
 </div>
 </div>
@@ -569,7 +568,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>gdImageAvifCtxWithOpti
 </div><div class="memdoc">
 
 <p>Create a truecolor image from AVIF data in a stdio stream. </p>
-<p><a class="el" href="group__gdCodecAvif.html#gaf5a04843db993453fe59614af65c7041" title="Create a truecolor image from AVIF data in a stdio stream.">gdImageCreateFromAvif()</a> does not close inFile. If the AVIF contains an image sequence, only the first image is decoded. On success, the returned image is owned by the caller and must be destroyed with <a class="el" href="group__gdCodecBmp.html#ga58cde54a8d38b33074fc0fb853e10233">gdImageDestroy</a>.</p>
+<p><a class="el" href="group__gdCodecAvif.html#gaf5a04843db993453fe59614af65c7041" title="Create a truecolor image from AVIF data in a stdio stream.">gdImageCreateFromAvif()</a> does not close inFile. If the AVIF contains an image sequence, only the first image is decoded. On success, the returned image is owned by the caller and must be destroyed with gdImageDestroy.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">inFile</td><td>Pointer to the input FILE stream. </td></tr>
@@ -597,7 +596,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>gdImageAvifCtxWithOpti
 </div><div class="memdoc">
 
 <p>Create a truecolor image from AVIF data in an IO context. </p>
-<p><a class="el" href="group__gdCodecAvif.html#ga26c083f1f8f101917d576b0476182d8b" title="Create a truecolor image from AVIF data in an IO context.">gdImageCreateFromAvifCtx()</a> reads from infile without closing it. If the AVIF contains an image sequence, only the first image is decoded. On success, the returned image is owned by the caller and must be destroyed with <a class="el" href="group__gdCodecBmp.html#ga58cde54a8d38b33074fc0fb853e10233">gdImageDestroy</a>.</p>
+<p><a class="el" href="group__gdCodecAvif.html#ga26c083f1f8f101917d576b0476182d8b" title="Create a truecolor image from AVIF data in an IO context.">gdImageCreateFromAvifCtx()</a> reads from infile without closing it. If the AVIF contains an image sequence, only the first image is decoded. On success, the returned image is owned by the caller and must be destroyed with gdImageDestroy.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">infile</td><td>The input IO context. </td></tr>
@@ -635,7 +634,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>gdImageAvifCtxWithOpti
 </div><div class="memdoc">
 
 <p>Create a truecolor image from AVIF data in memory. </p>
-<p><a class="el" href="group__gdCodecAvif.html#gab3bc03cb8b95b372be5262a5989ca015" title="Create a truecolor image from AVIF data in memory.">gdImageCreateFromAvifPtr()</a> reads size bytes from data without taking ownership of the buffer. If the AVIF contains an image sequence, only the first image is decoded. On success, the returned image is owned by the caller and must be destroyed with <a class="el" href="group__gdCodecBmp.html#ga58cde54a8d38b33074fc0fb853e10233">gdImageDestroy</a>.</p>
+<p><a class="el" href="group__gdCodecAvif.html#gab3bc03cb8b95b372be5262a5989ca015" title="Create a truecolor image from AVIF data in memory.">gdImageCreateFromAvifPtr()</a> reads size bytes from data without taking ownership of the buffer. If the AVIF contains an image sequence, only the first image is decoded. On success, the returned image is owned by the caller and must be destroyed with gdImageDestroy.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">size</td><td>Size of data in bytes. </td></tr>

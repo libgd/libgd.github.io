@@ -75,7 +75,7 @@ $(function() {
 <a href="#nested-classes">Data Structures</a> &#124;
 <a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
-  <div class="headertitle"><div class="title">JPEG<div class="ingroups"><a class="el" href="group__gdCodecs.html">Codecs</a> &#124; <a class="el" href="group__gdCodecs.html">Codecs</a> &raquo; <a class="el" href="group__gdCodecBmp.html">BMP</a></div></div></div>
+  <div class="headertitle"><div class="title">JPEG<div class="ingroups"><a class="el" href="group__gdCodecs.html">Codecs</a></div></div></div>
 </div><!--header-->
 <div class="contents">
 
@@ -86,9 +86,8 @@ Collaboration diagram for JPEG:</div>
 <div class="dyncontent">
 <div class="center"><img src="group__gdCodecJpeg.png" border="0" usemap="#agroup____gdCodecJpeg" alt=""/></div>
 <map name="agroup____gdCodecJpeg" id="agroup____gdCodecJpeg">
-<area shape="rect" href="group__gdCodecBmp.html" title="Read and write Microsoft Windows bitmap images." alt="" coords="15,5,65,31"/>
-<area shape="rect" title="JPEG image reading and writing support." alt="" coords="123,31,175,56"/>
-<area shape="rect" href="group__gdCodecs.html" title="Image codec support for reading and writing various file formats." alt="" coords="5,55,75,80"/>
+<area shape="rect" title="JPEG image reading and writing support." alt="" coords="123,5,175,31"/>
+<area shape="rect" href="group__gdCodecs.html" title="Image codec support for reading and writing various file formats." alt="" coords="5,5,75,31"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -215,10 +214,10 @@ Functions</h2></td></tr>
 <div class="line">}</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// Allocate background</span></div>
-<div class="line">white = <a class="code hl_function" href="group__gdCodecBmp.html#gacb787efb2cef0bfd6802540b56c3c8f8">gdImageColorAllocate</a>(<a class="code hl_namespace" href="namespaceim.html">im</a>, 255, 255, 255);</div>
+<div class="line">white = gdImageColorAllocate(<a class="code hl_namespace" href="namespaceim.html">im</a>, 255, 255, 255);</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// Allocate drawing color</span></div>
-<div class="line">black = <a class="code hl_function" href="group__gdCodecBmp.html#gacb787efb2cef0bfd6802540b56c3c8f8">gdImageColorAllocate</a>(<a class="code hl_namespace" href="namespaceim.html">im</a>, 0, 0, 0);</div>
+<div class="line">black = gdImageColorAllocate(<a class="code hl_namespace" href="namespaceim.html">im</a>, 0, 0, 0);</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// Draw rectangle</span></div>
 <div class="line"><a class="code hl_function" href="group__PixelDraw.html#ga084f5a75d82c7ae9126fb0846051802e">gdImageRectangle</a>(<a class="code hl_namespace" href="namespaceim.html">im</a>, 0, 0, 99, 99, black);</div>
@@ -234,10 +233,8 @@ Functions</h2></td></tr>
 <div class="line"><span class="comment">// Close file</span></div>
 <div class="line">fclose(out);</div>
 <div class="line"><span class="comment">// Destroy image</span></div>
-<div class="line"><a class="code hl_function" href="group__gdCodecBmp.html#ga58cde54a8d38b33074fc0fb853e10233">gdImageDestroy</a>(<a class="code hl_namespace" href="namespaceim.html">im</a>);</div>
+<div class="line">gdImageDestroy(<a class="code hl_namespace" href="namespaceim.html">im</a>);</div>
 <div class="ttc" id="agroup__PixelDraw_html_ga084f5a75d82c7ae9126fb0846051802e"><div class="ttname"><a href="group__PixelDraw.html#ga084f5a75d82c7ae9126fb0846051802e">gdImageRectangle</a></div><div class="ttdeci">void gdImageRectangle(gdImagePtr im, int x1, int y1, int x2, int y2, int color)</div><div class="ttdoc">Draws a rectangle.</div><div class="ttdef"><b>Definition</b> gd.c:2239</div></div>
-<div class="ttc" id="agroup__gdCodecBmp_html_ga58cde54a8d38b33074fc0fb853e10233"><div class="ttname"><a href="group__gdCodecBmp.html#ga58cde54a8d38b33074fc0fb853e10233">gdImageDestroy</a></div><div class="ttdeci">void gdImageDestroy(gdImagePtr im)</div><div class="ttdoc">Destroys an image and frees its memory.</div><div class="ttdef"><b>Definition</b> gd.c:339</div></div>
-<div class="ttc" id="agroup__gdCodecBmp_html_gacb787efb2cef0bfd6802540b56c3c8f8"><div class="ttname"><a href="group__gdCodecBmp.html#gacb787efb2cef0bfd6802540b56c3c8f8">gdImageColorAllocate</a></div><div class="ttdeci">int gdImageColorAllocate(gdImagePtr im, int r, int g, int b)</div><div class="ttdoc">Allocates a color.</div><div class="ttdef"><b>Definition</b> gd.c:543</div></div>
 <div class="ttc" id="agroup__gdCodecJpeg_html_gab5c46bbf22d6dd69a0b7722b327935aa"><div class="ttname"><a href="group__gdCodecJpeg.html#gab5c46bbf22d6dd69a0b7722b327935aa">gdImageJpeg</a></div><div class="ttdeci">void gdImageJpeg(gdImagePtr im, FILE *out, int quality)</div><div class="ttdoc">Write an image as JPEG data to a stdio file.</div><div class="ttdef"><b>Definition</b> gd_jpeg.c:1720</div></div>
 <div class="ttc" id="anamespaceim_html"><div class="ttname"><a href="namespaceim.html">im</a></div><div class="ttdoc">Write an image as JPEG data to a gdIOCtx.</div></div>
 </div><!-- fragment --> <h2 class="groupheader">Enumeration Type Documentation</h2>
