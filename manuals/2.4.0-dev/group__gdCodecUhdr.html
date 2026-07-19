@@ -114,6 +114,11 @@ typedef <a class="el" href="structgdUhdrError.html">gdUhdrError</a> *&#160;</td>
 <tr class="memdesc:gad0d7cb531fe278ed58b21effe88f34b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to a <a class="el" href="structgdUhdrError.html" title="Structured error details for UltraHDR APIs.">gdUhdrError</a> structure. <br /></td></tr>
 <tr class="separator:gad0d7cb531fe278ed58b21effe88f34b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader">UltraHDR Writing</h2></td></tr>
+<tr class="memitem:ga94935047263f2b497671fb28390b854c" id="r_ga94935047263f2b497671fb28390b854c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gdImageFileIO.html#ga94935047263f2b497671fb28390b854c">BGD_DECLARE</a> (void *) gdUhdrImageWritePtr(<a class="el" href="group__gdCodecUhdr.html#ga56b8379b3c0baf4f60df80b4110d66be">gdUhdrImagePtr</a> im</td></tr>
+<tr class="memdesc:ga94935047263f2b497671fb28390b854c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write an UltraHDR image to a newly allocated memory buffer.  <br /></td></tr>
+<tr class="separator:ga94935047263f2b497671fb28390b854c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">UltraHDR Reading</h2></td></tr>
 <tr class="memitem:ga8a6b3ba102be406744f55c4d75c6aec2" id="r_ga8a6b3ba102be406744f55c4d75c6aec2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__gdCodecUhdr.html#ga56b8379b3c0baf4f60df80b4110d66be">gdUhdrImagePtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gdCodecUhdr.html#ga8a6b3ba102be406744f55c4d75c6aec2">gdUhdrImageCreateFromFile</a> (const char *filename, int format, <a class="el" href="group__gdCodecUhdr.html#gad0d7cb531fe278ed58b21effe88f34b7">gdUhdrErrorPtr</a> err)</td></tr>
 <tr class="memdesc:ga8a6b3ba102be406744f55c4d75c6aec2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an UltraHDR image handle from a file path.  <br /></td></tr>
@@ -129,48 +134,14 @@ typedef <a class="el" href="structgdUhdrError.html">gdUhdrError</a> *&#160;</td>
 <tr class="separator:ga3042f696f94c6c76c57980ecce119195"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">UltraHDR Availability and Inspection</h2></td></tr>
-<tr class="memitem:gabb488481d214b86c4406761e23afb5d2" id="r_gabb488481d214b86c4406761e23afb5d2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gdCodecUhdr.html#gabb488481d214b86c4406761e23afb5d2">gdUhdrIsAvailable</a> (void)</td></tr>
-<tr class="memdesc:gabb488481d214b86c4406761e23afb5d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether UltraHDR support is available in this build.  <br /></td></tr>
-<tr class="separator:gabb488481d214b86c4406761e23afb5d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0ab8dfed421d832e514e46331f5e1503" id="r_ga0ab8dfed421d832e514e46331f5e1503"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gdCodecUhdr.html#ga0ab8dfed421d832e514e46331f5e1503">gdUhdrImageWidth</a> (<a class="el" href="group__gdCodecUhdr.html#ga56b8379b3c0baf4f60df80b4110d66be">gdUhdrImagePtr</a> im)</td></tr>
-<tr class="memdesc:ga0ab8dfed421d832e514e46331f5e1503"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the UltraHDR image width.  <br /></td></tr>
-<tr class="separator:ga0ab8dfed421d832e514e46331f5e1503"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5414beb68978586aa190bbe067964e74" id="r_ga5414beb68978586aa190bbe067964e74"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gdCodecUhdr.html#ga5414beb68978586aa190bbe067964e74">gdUhdrImageHeight</a> (<a class="el" href="group__gdCodecUhdr.html#ga56b8379b3c0baf4f60df80b4110d66be">gdUhdrImagePtr</a> im)</td></tr>
-<tr class="memdesc:ga5414beb68978586aa190bbe067964e74"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the UltraHDR image height.  <br /></td></tr>
-<tr class="separator:ga5414beb68978586aa190bbe067964e74"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga28366e4a757b06a7b8b7f18029272054" id="r_ga28366e4a757b06a7b8b7f18029272054"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gdCodecUhdr.html#ga28366e4a757b06a7b8b7f18029272054">gdUhdrImageHasGainMap</a> (<a class="el" href="group__gdCodecUhdr.html#ga56b8379b3c0baf4f60df80b4110d66be">gdUhdrImagePtr</a> im)</td></tr>
-<tr class="memdesc:ga28366e4a757b06a7b8b7f18029272054"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether the UltraHDR image has a gain map.  <br /></td></tr>
-<tr class="separator:ga28366e4a757b06a7b8b7f18029272054"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga05f66b4099f3858fc511c4c0e62ac86c" id="r_ga05f66b4099f3858fc511c4c0e62ac86c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gdCodecUhdr.html#ga05f66b4099f3858fc511c4c0e62ac86c">BGD_DECLARE</a> (int) gdUhdrIsAvailable(void)</td></tr>
+<tr class="memdesc:ga05f66b4099f3858fc511c4c0e62ac86c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether UltraHDR support is available in this build.  <br /></td></tr>
+<tr class="separator:ga05f66b4099f3858fc511c4c0e62ac86c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader">UltraHDR Transform Queue</h2></td></tr>
-<tr class="memitem:gaadbb33d4e15e7af281e00313479a828f" id="r_gaadbb33d4e15e7af281e00313479a828f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gdCodecUhdr.html#gaadbb33d4e15e7af281e00313479a828f">gdUhdrImageResize</a> (<a class="el" href="group__gdCodecUhdr.html#ga56b8379b3c0baf4f60df80b4110d66be">gdUhdrImagePtr</a> im, int width, int height, <a class="el" href="group__gdCodecUhdr.html#gad0d7cb531fe278ed58b21effe88f34b7">gdUhdrErrorPtr</a> err)</td></tr>
-<tr class="memdesc:gaadbb33d4e15e7af281e00313479a828f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Queue an UltraHDR-preserving resize operation.  <br /></td></tr>
-<tr class="separator:gaadbb33d4e15e7af281e00313479a828f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga874f4cf10da1cbaa560cc057b0bbc1fc" id="r_ga874f4cf10da1cbaa560cc057b0bbc1fc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gdCodecUhdr.html#ga874f4cf10da1cbaa560cc057b0bbc1fc">gdUhdrImageCrop</a> (<a class="el" href="group__gdCodecUhdr.html#ga56b8379b3c0baf4f60df80b4110d66be">gdUhdrImagePtr</a> im, int left, int top, int width, int height, <a class="el" href="group__gdCodecUhdr.html#gad0d7cb531fe278ed58b21effe88f34b7">gdUhdrErrorPtr</a> err)</td></tr>
-<tr class="memdesc:ga874f4cf10da1cbaa560cc057b0bbc1fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Queue an UltraHDR-preserving crop operation.  <br /></td></tr>
-<tr class="separator:ga874f4cf10da1cbaa560cc057b0bbc1fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga81208ff41ffda2d6f823c8a23787e430" id="r_ga81208ff41ffda2d6f823c8a23787e430"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gdCodecUhdr.html#ga81208ff41ffda2d6f823c8a23787e430">gdUhdrImageRotate</a> (<a class="el" href="group__gdCodecUhdr.html#ga56b8379b3c0baf4f60df80b4110d66be">gdUhdrImagePtr</a> im, int degrees, <a class="el" href="group__gdCodecUhdr.html#gad0d7cb531fe278ed58b21effe88f34b7">gdUhdrErrorPtr</a> err)</td></tr>
-<tr class="memdesc:ga81208ff41ffda2d6f823c8a23787e430"><td class="mdescLeft">&#160;</td><td class="mdescRight">Queue an UltraHDR-preserving right-angle rotation.  <br /></td></tr>
-<tr class="separator:ga81208ff41ffda2d6f823c8a23787e430"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5ef00651d1524b589c88f593d90dc3c0" id="r_ga5ef00651d1524b589c88f593d90dc3c0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gdCodecUhdr.html#ga5ef00651d1524b589c88f593d90dc3c0">gdUhdrImageMirror</a> (<a class="el" href="group__gdCodecUhdr.html#ga56b8379b3c0baf4f60df80b4110d66be">gdUhdrImagePtr</a> im, int axis, <a class="el" href="group__gdCodecUhdr.html#gad0d7cb531fe278ed58b21effe88f34b7">gdUhdrErrorPtr</a> err)</td></tr>
-<tr class="memdesc:ga5ef00651d1524b589c88f593d90dc3c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Queue an UltraHDR-preserving mirror operation.  <br /></td></tr>
-<tr class="separator:ga5ef00651d1524b589c88f593d90dc3c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader">UltraHDR Writing</h2></td></tr>
-<tr class="memitem:gaa6fe62f74d78e27ff42f69df923282e5" id="r_gaa6fe62f74d78e27ff42f69df923282e5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gdCodecUhdr.html#gaa6fe62f74d78e27ff42f69df923282e5">gdUhdrImageFile</a> (<a class="el" href="group__gdCodecUhdr.html#ga56b8379b3c0baf4f60df80b4110d66be">gdUhdrImagePtr</a> im, const char *filename, int format, int quality, <a class="el" href="group__gdCodecUhdr.html#gad0d7cb531fe278ed58b21effe88f34b7">gdUhdrErrorPtr</a> err)</td></tr>
-<tr class="memdesc:gaa6fe62f74d78e27ff42f69df923282e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write an UltraHDR image to a file path.  <br /></td></tr>
-<tr class="separator:gaa6fe62f74d78e27ff42f69df923282e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac4dc2e4e974dd24ce815ef7af2a1e11f" id="r_gac4dc2e4e974dd24ce815ef7af2a1e11f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gdCodecUhdr.html#gac4dc2e4e974dd24ce815ef7af2a1e11f">gdUhdrImageCtx</a> (<a class="el" href="group__gdCodecUhdr.html#ga56b8379b3c0baf4f60df80b4110d66be">gdUhdrImagePtr</a> im, gdIOCtxPtr ctx, int format, int quality, <a class="el" href="group__gdCodecUhdr.html#gad0d7cb531fe278ed58b21effe88f34b7">gdUhdrErrorPtr</a> err)</td></tr>
-<tr class="memdesc:gac4dc2e4e974dd24ce815ef7af2a1e11f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write an UltraHDR image to an IO context.  <br /></td></tr>
-<tr class="separator:gac4dc2e4e974dd24ce815ef7af2a1e11f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga40ee549c9bd074b978ea6b5a5b358266" id="r_ga40ee549c9bd074b978ea6b5a5b358266"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gdCodecUhdr.html#ga40ee549c9bd074b978ea6b5a5b358266">gdUhdrImageWritePtr</a> (<a class="el" href="group__gdCodecUhdr.html#ga56b8379b3c0baf4f60df80b4110d66be">gdUhdrImagePtr</a> im, int *size, int format, int quality, <a class="el" href="group__gdCodecUhdr.html#gad0d7cb531fe278ed58b21effe88f34b7">gdUhdrErrorPtr</a> err)</td></tr>
-<tr class="memdesc:ga40ee549c9bd074b978ea6b5a5b358266"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write an UltraHDR image to a newly allocated memory buffer.  <br /></td></tr>
-<tr class="separator:ga40ee549c9bd074b978ea6b5a5b358266"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader">UltraHDR SDR Extraction</h2></td></tr>
-<tr class="memitem:ga5c31a98024065a3b68a4805219f2548b" id="r_ga5c31a98024065a3b68a4805219f2548b"><td class="memItemLeft" align="right" valign="top">gdImagePtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gdCodecUhdr.html#ga5c31a98024065a3b68a4805219f2548b">gdUhdrImageGetSdr</a> (<a class="el" href="group__gdCodecUhdr.html#ga56b8379b3c0baf4f60df80b4110d66be">gdUhdrImagePtr</a> im, <a class="el" href="group__gdCodecUhdr.html#gad0d7cb531fe278ed58b21effe88f34b7">gdUhdrErrorPtr</a> err)</td></tr>
-<tr class="memdesc:ga5c31a98024065a3b68a4805219f2548b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decode the SDR view of an UltraHDR image as a gdImage.  <br /></td></tr>
-<tr class="separator:ga5c31a98024065a3b68a4805219f2548b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader">XPM Reading</h2></td></tr>
+<tr class="memitem:gaa94678e9c5e13feb50736b37a7b4d71a" id="r_gaa94678e9c5e13feb50736b37a7b4d71a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gdCodecUhdr.html#gaa94678e9c5e13feb50736b37a7b4d71a">BGD_DECLARE</a> (gdImagePtr) gdImageCreateFromXpm(char *filename)</td></tr>
+<tr class="memdesc:gaa94678e9c5e13feb50736b37a7b4d71a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a palette image from an XPM file.  <br /></td></tr>
+<tr class="separator:gaa94678e9c5e13feb50736b37a7b4d71a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">UltraHDR Status Codes</h2></td></tr>
 <tr class="memitem:gaca24fb4ef515da930a8957d6c9e9a3ce" id="r_gaca24fb4ef515da930a8957d6c9e9a3ce"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gdCodecUhdr.html#gaca24fb4ef515da930a8957d6c9e9a3ce">GD_UHDR_SUCCESS</a>&#160;&#160;&#160;0</td></tr>
@@ -195,7 +166,7 @@ typedef <a class="el" href="structgdUhdrError.html">gdUhdrError</a> *&#160;</td>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Read, transform, and write UltraHDR JPEG images. </p>
 <p>UltraHDR stores an SDR base image plus a gain map that allows HDR reconstruction. gd's normal gdImage representation cannot safely represent that gain map because it is not an ordinary 8-bit or palette bitmap; it may be a floating-point-style image with metadata that must stay aligned with the SDR base image. For that reason, UltraHDR support uses a separate opaque gdUhdrImage handle and performs UltraHDR-aware operations through libultrahdr.</p>
-<p>Do not convert a gdUhdrImagePtr to gdImagePtr and expect to write it back as UltraHDR. <a class="el" href="group__gdCodecUhdr.html#ga5c31a98024065a3b68a4805219f2548b" title="Decode the SDR view of an UltraHDR image as a gdImage.">gdUhdrImageGetSdr()</a> intentionally returns only a standard SDR gdImagePtr view. That image can be inspected or saved as ordinary JPEG/PNG, but it no longer carries the gain map needed to recreate a valid UltraHDR image. Future GD versions may add internal image formats that can represent the gain map directly; until then, use <a class="el" href="group__gdCodecUhdr.html#gaadbb33d4e15e7af281e00313479a828f" title="Queue an UltraHDR-preserving resize operation.">gdUhdrImageResize()</a>, <a class="el" href="group__gdCodecUhdr.html#ga874f4cf10da1cbaa560cc057b0bbc1fc" title="Queue an UltraHDR-preserving crop operation.">gdUhdrImageCrop()</a>, <a class="el" href="group__gdCodecUhdr.html#ga81208ff41ffda2d6f823c8a23787e430" title="Queue an UltraHDR-preserving right-angle rotation.">gdUhdrImageRotate()</a>, and <a class="el" href="group__gdCodecUhdr.html#ga5ef00651d1524b589c88f593d90dc3c0" title="Queue an UltraHDR-preserving mirror operation.">gdUhdrImageMirror()</a> to queue supported UltraHDR-preserving transformations.</p>
+<p>Do not convert a gdUhdrImagePtr to gdImagePtr and expect to write it back as UltraHDR. gdUhdrImageGetSdr() intentionally returns only a standard SDR gdImagePtr view. That image can be inspected or saved as ordinary JPEG/PNG, but it no longer carries the gain map needed to recreate a valid UltraHDR image. Future GD versions may add internal image formats that can represent the gain map directly; until then, use gdUhdrImageResize(), gdUhdrImageCrop(), gdUhdrImageRotate(), and gdUhdrImageMirror() to queue supported UltraHDR-preserving transformations.</p>
 <div class="fragment"><div class="line"><a class="code hl_typedef" href="group__gdCodecUhdr.html#ga56b8379b3c0baf4f60df80b4110d66be">gdUhdrImagePtr</a> <a class="code hl_namespace" href="namespaceim.html">im</a>;</div>
 <div class="line">gdImagePtr sdr;</div>
 <div class="line"><a class="code hl_struct" href="structgdUhdrError.html">gdUhdrError</a> err;</div>
@@ -206,19 +177,19 @@ typedef <a class="el" href="structgdUhdrError.html">gdUhdrError</a> *&#160;</td>
 <div class="line">    <span class="keywordflow">return</span> 1;</div>
 <div class="line">}</div>
 <div class="line"> </div>
-<div class="line">rc = <a class="code hl_function" href="group__gdCodecUhdr.html#gaadbb33d4e15e7af281e00313479a828f">gdUhdrImageResize</a>(<a class="code hl_namespace" href="namespaceim.html">im</a>, 640, 360, &amp;err);</div>
+<div class="line">rc = gdUhdrImageResize(<a class="code hl_namespace" href="namespaceim.html">im</a>, 640, 360, &amp;err);</div>
 <div class="line"><span class="keywordflow">if</span> (rc != <a class="code hl_define" href="group__gdCodecUhdr.html#gaca24fb4ef515da930a8957d6c9e9a3ce">GD_UHDR_SUCCESS</a>) {</div>
 <div class="line">    <a class="code hl_function" href="group__gdCodecUhdr.html#ga3042f696f94c6c76c57980ecce119195">gdUhdrImageDestroy</a>(<a class="code hl_namespace" href="namespaceim.html">im</a>);</div>
 <div class="line">    <span class="keywordflow">return</span> 1;</div>
 <div class="line">}</div>
 <div class="line"> </div>
-<div class="line">rc = <a class="code hl_function" href="group__gdCodecUhdr.html#gaa6fe62f74d78e27ff42f69df923282e5">gdUhdrImageFile</a>(<a class="code hl_namespace" href="namespaceim.html">im</a>, <span class="stringliteral">&quot;output.jpg&quot;</span>, <a class="code hl_enumvalue" href="group__gdCodecUhdr.html#gga8a542c0972e88dfe11278049e2d7c1c6a063ed7d55b9e73b0a92c2a36093a67b2">GD_UHDR_FORMAT_JPEG</a>, 90, &amp;err);</div>
+<div class="line">rc = gdUhdrImageFile(<a class="code hl_namespace" href="namespaceim.html">im</a>, <span class="stringliteral">&quot;output.jpg&quot;</span>, <a class="code hl_enumvalue" href="group__gdCodecUhdr.html#gga8a542c0972e88dfe11278049e2d7c1c6a063ed7d55b9e73b0a92c2a36093a67b2">GD_UHDR_FORMAT_JPEG</a>, 90, &amp;err);</div>
 <div class="line"><span class="keywordflow">if</span> (rc != <a class="code hl_define" href="group__gdCodecUhdr.html#gaca24fb4ef515da930a8957d6c9e9a3ce">GD_UHDR_SUCCESS</a>) {</div>
 <div class="line">    <a class="code hl_function" href="group__gdCodecUhdr.html#ga3042f696f94c6c76c57980ecce119195">gdUhdrImageDestroy</a>(<a class="code hl_namespace" href="namespaceim.html">im</a>);</div>
 <div class="line">    <span class="keywordflow">return</span> 1;</div>
 <div class="line">}</div>
 <div class="line"> </div>
-<div class="line">sdr = <a class="code hl_function" href="group__gdCodecUhdr.html#ga5c31a98024065a3b68a4805219f2548b">gdUhdrImageGetSdr</a>(<a class="code hl_namespace" href="namespaceim.html">im</a>, &amp;err);</div>
+<div class="line">sdr = gdUhdrImageGetSdr(<a class="code hl_namespace" href="namespaceim.html">im</a>, &amp;err);</div>
 <div class="line"><span class="keywordflow">if</span> (sdr != NULL) {</div>
 <div class="line">    gdImageDestroy(sdr);</div>
 <div class="line">}</div>
@@ -226,10 +197,7 @@ typedef <a class="el" href="structgdUhdrError.html">gdUhdrError</a> *&#160;</td>
 <div class="line"><a class="code hl_function" href="group__gdCodecUhdr.html#ga3042f696f94c6c76c57980ecce119195">gdUhdrImageDestroy</a>(<a class="code hl_namespace" href="namespaceim.html">im</a>);</div>
 <div class="ttc" id="agroup__gdCodecUhdr_html_ga3042f696f94c6c76c57980ecce119195"><div class="ttname"><a href="group__gdCodecUhdr.html#ga3042f696f94c6c76c57980ecce119195">gdUhdrImageDestroy</a></div><div class="ttdeci">void gdUhdrImageDestroy(gdUhdrImagePtr im)</div><div class="ttdoc">Destroy an UltraHDR image handle.</div><div class="ttdef"><b>Definition</b> gd_uhdr.c:684</div></div>
 <div class="ttc" id="agroup__gdCodecUhdr_html_ga56b8379b3c0baf4f60df80b4110d66be"><div class="ttname"><a href="group__gdCodecUhdr.html#ga56b8379b3c0baf4f60df80b4110d66be">gdUhdrImagePtr</a></div><div class="ttdeci">gdUhdrImage * gdUhdrImagePtr</div><div class="ttdoc">Pointer to an opaque UltraHDR image handle.</div><div class="ttdef"><b>Definition</b> gd.h:4582</div></div>
-<div class="ttc" id="agroup__gdCodecUhdr_html_ga5c31a98024065a3b68a4805219f2548b"><div class="ttname"><a href="group__gdCodecUhdr.html#ga5c31a98024065a3b68a4805219f2548b">gdUhdrImageGetSdr</a></div><div class="ttdeci">gdImagePtr gdUhdrImageGetSdr(gdUhdrImagePtr im, gdUhdrErrorPtr err)</div><div class="ttdoc">Decode the SDR view of an UltraHDR image as a gdImage.</div><div class="ttdef"><b>Definition</b> gd_uhdr.c:1117</div></div>
 <div class="ttc" id="agroup__gdCodecUhdr_html_ga8a6b3ba102be406744f55c4d75c6aec2"><div class="ttname"><a href="group__gdCodecUhdr.html#ga8a6b3ba102be406744f55c4d75c6aec2">gdUhdrImageCreateFromFile</a></div><div class="ttdeci">gdUhdrImagePtr gdUhdrImageCreateFromFile(const char *filename, int format, gdUhdrErrorPtr err)</div><div class="ttdoc">Create an UltraHDR image handle from a file path.</div><div class="ttdef"><b>Definition</b> gd_uhdr.c:597</div></div>
-<div class="ttc" id="agroup__gdCodecUhdr_html_gaa6fe62f74d78e27ff42f69df923282e5"><div class="ttname"><a href="group__gdCodecUhdr.html#gaa6fe62f74d78e27ff42f69df923282e5">gdUhdrImageFile</a></div><div class="ttdeci">int gdUhdrImageFile(gdUhdrImagePtr im, const char *filename, int format, int quality, gdUhdrErrorPtr err)</div><div class="ttdoc">Write an UltraHDR image to a file path.</div><div class="ttdef"><b>Definition</b> gd_uhdr.c:839</div></div>
-<div class="ttc" id="agroup__gdCodecUhdr_html_gaadbb33d4e15e7af281e00313479a828f"><div class="ttname"><a href="group__gdCodecUhdr.html#gaadbb33d4e15e7af281e00313479a828f">gdUhdrImageResize</a></div><div class="ttdeci">int gdUhdrImageResize(gdUhdrImagePtr im, int width, int height, gdUhdrErrorPtr err)</div><div class="ttdoc">Queue an UltraHDR-preserving resize operation.</div><div class="ttdef"><b>Definition</b> gd_uhdr.c:720</div></div>
 <div class="ttc" id="agroup__gdCodecUhdr_html_gaca24fb4ef515da930a8957d6c9e9a3ce"><div class="ttname"><a href="group__gdCodecUhdr.html#gaca24fb4ef515da930a8957d6c9e9a3ce">GD_UHDR_SUCCESS</a></div><div class="ttdeci">#define GD_UHDR_SUCCESS</div><div class="ttdef"><b>Definition</b> gd.h:4550</div></div>
 <div class="ttc" id="agroup__gdCodecUhdr_html_gga8a542c0972e88dfe11278049e2d7c1c6a063ed7d55b9e73b0a92c2a36093a67b2"><div class="ttname"><a href="group__gdCodecUhdr.html#gga8a542c0972e88dfe11278049e2d7c1c6a063ed7d55b9e73b0a92c2a36093a67b2">GD_UHDR_FORMAT_JPEG</a></div><div class="ttdeci">@ GD_UHDR_FORMAT_JPEG</div><div class="ttdef"><b>Definition</b> gd.h:4573</div></div>
 <div class="ttc" id="anamespaceim_html"><div class="ttname"><a href="namespaceim.html">im</a></div><div class="ttdoc">Write an image as JPEG data to a gdIOCtx.</div></div>
@@ -381,6 +349,1161 @@ typedef <a class="el" href="structgdUhdrError.html">gdUhdrError</a> *&#160;</td>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="gaa94678e9c5e13feb50736b37a7b4d71a" name="gaa94678e9c5e13feb50736b37a7b4d71a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa94678e9c5e13feb50736b37a7b4d71a">&#9670;&#160;</a></span>BGD_DECLARE() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BGD_DECLARE </td>
+          <td>(</td>
+          <td class="paramtype">gdImagePtr&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Create a palette image from an XPM file. </p>
+<p>Rotate an image by an arbitrary angle using the source image's current <a class="el" href="group__TransformScaleRotate.html#gaa6fea75835a90293980f2414f04ab870">gdInterpolationMethod</a>.</p>
+<p>Scale an image using aspect-ratio, gravity, crop-strategy and interpolation options.</p>
+<p>Scale an image to an exact width and height using the source image's current <a class="el" href="group__TransformScaleRotate.html#gaa6fea75835a90293980f2414f04ab870">gdInterpolationMethod</a>.</p>
+<p>Crop an image automatically with options.</p>
+<p>Crop an image using a given color.</p>
+<p>Crop an image automatically.</p>
+<p>Crop an image to a given rectangle.</p>
+<p>Return a copy of the source image <em>src</em> blurred according to the parameters using the Gaussian Blur algorithm. Return a copy of the source image <em>src</em> blurred according to the parameters using the Gaussian Blur algorithm.</p>
+<p>Converts a truecolor image to a palette-based image.</p>
+<p>Creates a new palette image from a truecolor image.</p>
+<p>Clones an image.</p>
+<p>Read an image from a gdIOCtx with extended status information.</p>
+<p>Read an image from a gdIOCtx by probing its binary signature.</p>
+<p>Read an image file by probing its binary signature.</p>
+<p>Create an image from a file using the filename extension.</p>
+<p>Decode the SDR view of an UltraHDR image as a gdImage.</p>
+<p>gdImageCreateFromXpm() reads filename directly through libXpm. The input is a filename, not an open FILE stream. On success, the returned image is owned by the caller and must be destroyed with gdImageDestroy.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filename</td><td>Path to the XPM file to read. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A newly allocated palette image, or NULL on error.</dd></dl>
+<p>The returned gdImagePtr is caller-owned and must be destroyed with gdImageDestroy. It is an SDR image only: it does not contain the UltraHDR gain map and cannot be used to recreate an UltraHDR image. Use the gdUhdrImage* transform and write APIs when the gain map must be preserved.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">im</td><td>UltraHDR image handle to decode. </td></tr>
+    <tr><td class="paramname">err</td><td>Optional pointer to receive detailed error information. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A newly allocated truecolor SDR image, or NULL on error.</dd></dl>
+<p>gdImageCreateFromFile() chooses the reader from the filename extension using the same extension table as gdSupportsFileType. The returned image is caller-owned and must be destroyed with gdImageDestroy().</p>
+<dl class="section note"><dt>Note</dt><dd>For new code, prefer gdImageReadFile when reading existing files. gdImageReadFile() checks binary signatures instead of trusting the filename extension, which is safer and more reliable when files are mislabeled or supplied by users.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filename</td><td>Path to the input image file. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A newly allocated image, or NULL on error or unsupported extension.</dd></dl>
+<p>gdImageReadFile() opens filename, reads the first bytes of the file, detects the image format by known binary signatures, and dispatches to the matching codec reader. It falls back to the filename-based XPM reader and FILE-based XBM reader for those formats because they do not have gdIOCtx readers.</p>
+<p>Supported detected formats depend on the codecs compiled into gd and include PNG, JPEG, GIF, BMP, TIFF, WebP, AVIF, HEIC, JXL, GD, GD2, QOI, XPM, and XBM. The returned image is caller-owned and must be destroyed with gdImageDestroy().</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filename</td><td>Path to the input image file. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A newly allocated image, or NULL on error, unknown format, disabled codec, or decode failure.</dd></dl>
+<p>gdImageReadCtx() borrows ctx for the duration of the call and does not close it. The input context must support seeking because gd reads a probe buffer and then seeks back to the start before dispatching to the codec reader. Formats without gdIOCtx readers, currently XPM and XBM, are not supported by this function; use gdImageReadFile for those file formats.</p>
+<p>The returned image is caller-owned and must be destroyed with gdImageDestroy().</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ctx</td><td>Pointer to the input gdIOCtx. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A newly allocated image, or NULL on error, unknown format, disabled codec, unsupported context reader, or decode failure.</dd></dl>
+<p>gdImageReadCtxEx() is the extended form of gdImageReadCtx. It accepts option flags and can report a gdImageReadStatus value and detected format name to the caller. The input context is borrowed for the duration of the call and is not closed.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ctx</td><td>Pointer to the input gdIOCtx. </td></tr>
+    <tr><td class="paramname">flags</td><td>Bitmask of GD_IMAGE_READ_* flags. </td></tr>
+    <tr><td class="paramname">status</td><td>Optional pointer that receives the read status. </td></tr>
+    <tr><td class="paramname">format_name</td><td>Optional pointer that receives the detected format name. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A newly allocated image, or NULL on error.</dd></dl>
+<p>Creates an exact duplicate of the given image.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">src</td><td>The source image.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The cloned image on success, NULL on failure.</dd></dl>
+<p>This is the same as calling gdImageCreatePaletteFromTrueColor with the quantization method <a class="el" href="group__Color.html#ggadaf2f61f5e718575e1963b946bab621aa61e30fa58a01ef7d6839731fad7b1a7d">GD_QUANT_NEUQUANT</a>.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">im</td><td>- The image. </td></tr>
+    <tr><td class="paramname">max_color</td><td>- The number of desired palette entries. </td></tr>
+    <tr><td class="paramname">sample_factor</td><td>- The quantization precision between 1 (highest quality) and 10 (fastest).</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A newly create palette image; NULL on failure.</dd></dl>
+<p>This function converts a truecolor image to a palette-based image using a high-quality two-pass quantization routine which attempts to preserve alpha channel information as well as R/G/B color information when creating a palette. If ditherFlag is set, the image will be dithered to approximate colors better, at the expense of some obvious "speckling." colorsWanted can be anything up to 256. If the original source image includes photographic information or anything that came out of a JPEG, 256 is strongly recommended.</p>
+<p>Better yet, don't use these function &ndash; write real truecolor PNGs and JPEGs. The disk space gain of conversion to palette is not great (for small images it can be negative) and the quality loss is ugly.</p>
+<p>DIFFERENCES: gdImageCreatePaletteFromTrueColor creates and returns a new image. gdImageTrueColorToPalette modifies an existing image, and the truecolor pixels are discarded.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">im</td><td>The image. </td></tr>
+    <tr><td class="paramname">dither</td><td>Whether dithering should be applied. </td></tr>
+    <tr><td class="paramname">colorsWanted</td><td>The number of desired palette entries.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a newly created palette image on success, NULL on failure.</dd></dl>
+<p><em>radius</em> is a radius, not a diameter so a radius of 2 (for example) will blur across a region 5 pixels across (2 to the center, 1 for the center itself and another 2 to the other edge).</p>
+<p><em>sigma</em> represents the "fatness of the curve (lower == fatter).
+If &lt;em&gt;sigma&lt;/em&gt; is less than or equal to 0,
+&lt;gdImageCopyGaussianBlurred&gt; ignores it and instead computes an
+"optimal" value.  Be warned that future versions of this function
+may compute sigma differently.
+
+The resulting image is always truecolor.
+
+More Details:
+
+A Gaussian Blur is generated by replacing each pixel's color
+values with the average of the surrounding pixels' colors.  This
+region is a circle whose radius is given by argument &lt;em&gt;radius&lt;/em&gt;.
+Thus, a larger radius will yield a blurrier image.
+
+This average is not a simple mean of the values.  Instead, values
+are weighted using the Gaussian function (roughly a bell curve
+centered around the destination pixel) giving it much more
+influence on the result than its neighbours.  Thus, a fatter curve
+will give the center pixel more weight and make the image less
+blurry; lower &lt;em&gt;sigma&lt;/em&gt; values will yield flatter curves.
+
+Currently, &lt;gdImageCopyGaussianBlurred&gt; computes the default sigma
+as
+
+(2/3)*radius
+
+Note, however that we reserve the right to change this if we find
+a better ratio.  If you absolutely need the current sigma value,
+you should set it yourself.
+
+@param src  the source image
+@param radius  the blur radius (&lt;em&gt;not&lt;/em&gt; diameter&amp;ndash;range is 2*radius + 1)
+@param sigma   the sigma value or a value &lt;= 0.0 to use the computed default
+
+@return The new image or NULL if an error occurred.  The result is always truecolor.
+
+Example:
+@code 
+
+FILE *in;
+gdImagePtr result, src;
+
+in = fopen("foo.png", "rb"); src = gdImageCreateFromPng(in);</p>
+<p>result = gdImageCopyGaussianBlurred(im, src-&gt;sx / 10, -1.0);</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">src</td><td>The image. </td></tr>
+    <tr><td class="paramname">crop</td><td>The cropping rectangle, <a class="el" href="structgdRect.html">gdRect</a>.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The newly created cropped image, or NULL on failure.</dd></dl>
+<dl class="section see"><dt>See also</dt><dd>gdImageCrop gdImageCropThreshold gdImageAutoCropWithOptions</dd></dl>
+<p>This function detects the cropping area according to the given <em>mode</em>.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">im</td><td>The image. </td></tr>
+    <tr><td class="paramname">mode</td><td>The cropping mode, <a class="el" href="group__TransformScaleRotate.html#ga4e756f7717290bcd613a0e7cc63ab701">gdCropMode</a>.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The newly created cropped image, or NULL on failure.</dd></dl>
+<dl class="section see"><dt>See also</dt><dd>gdImageCrop gdImageCropThreshold gdImageAutoCropWithOptions</dd></dl>
+<p>The <em>threshold</em> defines the tolerance to be used while comparing the image color and the color to crop. The method used to calculate the color difference is based on the color distance in the RGB(A) cube.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">im</td><td>The image. </td></tr>
+    <tr><td class="paramname">color</td><td>The crop color. </td></tr>
+    <tr><td class="paramname">threshold</td><td>The crop threshold.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The newly created cropped image, or NULL on failure.</dd></dl>
+<dl class="section see"><dt>See also</dt><dd>gdImageCrop gdImageCropThreshold gdImageAutoCropWithOptions</dd></dl>
+<p>This function detects the cropping area according to the given options.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">src</td><td>The image. </td></tr>
+    <tr><td class="paramname">options</td><td>The cropping options, <a class="el" href="structgdAutoCropOptions.html">gdAutoCropOptions</a>.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The newly created cropped image, or NULL on failure.</dd></dl>
+<p>The returned image is newly allocated and must be destroyed with gdImageDestroy. If the requested dimensions match the source dimensions, this function returns a clone of the source image. Width and height must be greater than zero.</p>
+<p>Notes: <a class="el" href="group__TransformScaleRotate.html#ggaa6fea75835a90293980f2414f04ab870aa42d8b37580d38435368eb8328bbf7b0">GD_WEIGHTED4</a> is not supported by this function. For downscales and mixed-axis scales, the fixed compatibility methods are sampled with <a class="el" href="group__TransformScaleRotate.html#ggaa6fea75835a90293980f2414f04ab870a19c3fa97ccc0ac4d55a7ffbf04a0db4a">GD_TRIANGLE</a> for better filtering.</p>
+<p>Parameters: src - The source image. new_width - The requested output width. new_height - The requested output height.</p>
+<p>Returns: The scaled image on success, or NULL on failure.</p>
+<p>See also:</p><ul>
+<li><dl class="section see"><dt>See also</dt><dd>gdImageSetInterpolationMethod</dd></dl>
+</li>
+<li><dl class="section see"><dt>See also</dt><dd>gdImageScaleWithOptions</dd></dl>
+</li>
+<li><dl class="section see"><dt>See also</dt><dd>gdImageCopyResampled</dd></dl>
+</li>
+<li><dl class="section see"><dt>See also</dt><dd>gdImageCopyResized</dd></dl>
+Scale an image using aspect-ratio, gravity, crop-strategy and interpolation options.</li>
+</ul>
+<p>This is the higher-level scaling API. It can stretch, contain, cover, pad or return an inside/outside size while preserving the source aspect ratio. The returned image is newly allocated and must be destroyed with gdImageDestroy.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">src</td><td>- The source image. </td></tr>
+    <tr><td class="paramname">new_width</td><td>- The requested width. </td></tr>
+    <tr><td class="paramname">new_height</td><td>- The requested height. </td></tr>
+    <tr><td class="paramname">options</td><td>- Scaling options, or NULL for the default options.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The scaled image on success, or NULL on failure. Caller owns the returned image and must call gdImageDestroy when done. Returns NULL if src is NULL, either dimension is zero, interpolation is invalid, or an entropy/attention strategy is used with a fit other than <a class="el" href="group__TransformScaleRotate.html#ggabd84264cee12c23fb9d8c4620e5ebbb1aae3f8f4d611a91c324f2906c2c359962">GD_SCALE_FIT_COVER</a>.</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="structgdScaleOptions.html">gdScaleOptions</a> gdImageScale gdImageInterestingCropRegion</dd></dl>
+<p>The returned image is newly allocated and must be destroyed with gdImageDestroy. Palette sources are converted to truecolor internally for arbitrary-angle rotation. Angles that are multiples of 90 degrees use the optimized rotate paths.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">src</td><td>- The source image. </td></tr>
+    <tr><td class="paramname">angle</td><td>- Rotation angle in degrees. </td></tr>
+    <tr><td class="paramname">bgcolor</td><td>- Background color for uncovered pixels. For palette sources, this may be a palette index.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The rotated image on success, or NULL on failure.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>bgcolor must be non-negative. The source interpolation method must be a valid concrete method; <a class="el" href="group__TransformScaleRotate.html#ggaa6fea75835a90293980f2414f04ab870a5c2898d4e86e29ccdbc191e666f491fe">GD_DEFAULT</a> is not accepted by this function.</dd></dl>
+<dl class="section see"><dt>See also</dt><dd>gdImageSetInterpolationMethod gdImageRotate90 gdImageRotate180 gdImageRotate270 </dd></dl>
+
+</div>
+</div>
+<a id="ga05f66b4099f3858fc511c4c0e62ac86c" name="ga05f66b4099f3858fc511c4c0e62ac86c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga05f66b4099f3858fc511c4c0e62ac86c">&#9670;&#160;</a></span>BGD_DECLARE() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BGD_DECLARE </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return whether UltraHDR support is available in this build. </p>
+<p>Compute the bounding box of a source rectangle after applying an affine transform.</p>
+<p>Apply an affine transform to a source region and copy the transformed pixels into an existing destination image.</p>
+<p>Apply an affine transform to a source region and create an image containing the complete transformed result.</p>
+<p>Compare two affine matrices.</p>
+<p>Test whether an affine matrix preserves axis-aligned rectangles.</p>
+<p>Store a translation affine matrix.</p>
+<p>Store a vertical shear affine matrix.</p>
+<p>Store a horizontal shear affine matrix.</p>
+<p>Store a rotation affine matrix.</p>
+<p>Store a scale affine matrix.</p>
+<p>Store an identity affine matrix.</p>
+<p>Concatenate two affine matrices.</p>
+<p>Build a horizontal and/or vertical flip from an affine matrix.</p>
+<p>Invert an affine matrix.</p>
+<p>Apply an affine matrix to a floating-point point.</p>
+<p>Find a high-entropy source crop region with the requested aspect ratio.</p>
+<p>Find a source crop region with the requested aspect ratio using an interesting-region method.</p>
+<p>Set the interpolation method stored on an image.</p>
+<p>Compare two images.</p>
+<p>Invert an image.</p>
+<p>Convert an image to grayscale.</p>
+<p>Change the brightness of an image.</p>
+<p>Change the contrast of an image.</p>
+<p>Change channel values of an image.</p>
+<p>Apply a convolution matrix to an image.</p>
+<p>Selective blur of an image.</p>
+<p>Edge detection of an image.</p>
+<p>Gaussian blur of an image Performs a Gaussian blur of radius 1 on the image. The image is modified in place.</p>
+<p>Emboss an image.</p>
+<p>Mean removal of an image.</p>
+<p>Smooth an image.</p>
+<p>Scatter an image with extended options.</p>
+<p>Scatter an image with specified colors.</p>
+<p>Scatter an image.</p>
+<p>Pixelates an image.</p>
+<p>Converts a palette-based image to a truecolor image.</p>
+<p>Converts a truecolor image to a palette image.</p>
+<p>Selects quantization method used for subsequent gdImageTrueColorToPalette calls.</p>
+<p>Enable or disable fontconfig by default.</p>
+<p>Set up the font cache.</p>
+<p>Gets the truecolor value of the pixel at the specified coordinates.</p>
+<p>Gets the color of the pixel at the specified coordinates.</p>
+<p>Replaces colors in an image using a callback function to determine the replacement color.</p>
+<p>Replaces multiple colors in an image with corresponding destination colors.</p>
+<p>Replaces colors in an image with a threshold for perceptual color distance.</p>
+<p>Replaces a color in the image with another color.</p>
+<p>Bring the palette colors in im2 to be closer to im1.</p>
+<p>Same as gdImageColorResovle but with alpha.</p>
+<p>Resolves a color in the image.</p>
+<p>Gets the exact color of the image.</p>
+<p>Gets the closest color of the image using HWB color space.</p>
+<p>Gets the closest color of the image with alpha channel.</p>
+<p>Gets the closest color of the image.</p>
+<p>Allocates a color.</p>
+<p>Write an image as WebP data to a gdIOCtx using write options.</p>
+<p>Write an image as WebP data to a stdio file using write options.</p>
+<p>Write an image as JPEG data to a gdIOCtx using write options.</p>
+<p>Write an image as JPEG data to a gdIOCtx with metadata.</p>
+<p>Test if a given file type is supported by GD.</p>
+<p>Write an image to a file in the format indicated by the filename.</p>
+<p>Write an UltraHDR image to an IO context.</p>
+<p>Write an UltraHDR image to a file path.</p>
+<p>Queue an UltraHDR-preserving mirror operation.</p>
+<p>Queue an UltraHDR-preserving right-angle rotation.</p>
+<p>Queue an UltraHDR-preserving crop operation.</p>
+<p>Queue an UltraHDR-preserving resize operation.</p>
+<p>Return whether the UltraHDR image has a gain map.</p>
+<p>Return the UltraHDR image height.</p>
+<p>Return the UltraHDR image width.</p>
+<p>This reports whether libgd was built with libultrahdr support.</p>
+<dl class="section return"><dt>Returns</dt><dd>1 when UltraHDR support is available, or 0 otherwise.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">im</td><td>UltraHDR image handle. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Image width in pixels, or 0 for NULL.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">im</td><td>UltraHDR image handle. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Image height in pixels, or 0 for NULL.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">im</td><td>UltraHDR image handle. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>1 if im has a gain map, or 0 otherwise.</dd></dl>
+<p>The operation is recorded on im and applied when the image is written. The SDR base image and gain map are transformed together so the output can remain a valid UltraHDR image.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">im</td><td>UltraHDR image handle. </td></tr>
+    <tr><td class="paramname">width</td><td>Output width in pixels. </td></tr>
+    <tr><td class="paramname">height</td><td>Output height in pixels. </td></tr>
+    <tr><td class="paramname">err</td><td>Optional pointer to receive detailed error information. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>GD_UHDR_SUCCESS on success, or another GD_UHDR_* status code on error.</dd></dl>
+<p>The operation is recorded on im and applied when the image is written. The SDR base image and gain map are cropped together so the output can remain a valid UltraHDR image.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">im</td><td>UltraHDR image handle. </td></tr>
+    <tr><td class="paramname">left</td><td>Left edge of the crop rectangle in pixels. </td></tr>
+    <tr><td class="paramname">top</td><td>Top edge of the crop rectangle in pixels. </td></tr>
+    <tr><td class="paramname">width</td><td>Crop width in pixels. </td></tr>
+    <tr><td class="paramname">height</td><td>Crop height in pixels. </td></tr>
+    <tr><td class="paramname">err</td><td>Optional pointer to receive detailed error information. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>GD_UHDR_SUCCESS on success, or another GD_UHDR_* status code on error.</dd></dl>
+<p>The operation is recorded on im and applied when the image is written. The SDR base image and gain map are rotated together so the output can remain a valid UltraHDR image. Supported angles are 0, 90, 180, and 270 degrees.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">im</td><td>UltraHDR image handle. </td></tr>
+    <tr><td class="paramname">degrees</td><td>Rotation angle in degrees. </td></tr>
+    <tr><td class="paramname">err</td><td>Optional pointer to receive detailed error information. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>GD_UHDR_SUCCESS on success, or another GD_UHDR_* status code on error.</dd></dl>
+<p>The operation is recorded on im and applied when the image is written. The SDR base image and gain map are mirrored together so the output can remain a valid UltraHDR image.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">im</td><td>UltraHDR image handle. </td></tr>
+    <tr><td class="paramname">axis</td><td>Mirror axis, GD_UHDR_MIRROR_HORIZONTAL or GD_UHDR_MIRROR_VERTICAL. </td></tr>
+    <tr><td class="paramname">err</td><td>Optional pointer to receive detailed error information. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>GD_UHDR_SUCCESS on success, or another GD_UHDR_* status code on error.</dd></dl>
+<p>Currently only GD_UHDR_FORMAT_JPEG is supported. If no transform operations were queued, gd writes the original compressed UltraHDR data through. If transforms were queued, gd uses libultrahdr to decode the base image and gain map, applies the queued operations to both, and re-encodes an UltraHDR JPEG.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">im</td><td>UltraHDR image handle to write. </td></tr>
+    <tr><td class="paramname">filename</td><td>Output file path. </td></tr>
+    <tr><td class="paramname">format</td><td>Output format, currently GD_UHDR_FORMAT_JPEG. </td></tr>
+    <tr><td class="paramname">quality</td><td>JPEG quality from 1 to 95. </td></tr>
+    <tr><td class="paramname">err</td><td>Optional pointer to receive detailed error information. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>GD_UHDR_SUCCESS on success, or another GD_UHDR_* status code on error.</dd></dl>
+<p>gdUhdrImageCtx() does not close ctx. Currently only GD_UHDR_FORMAT_JPEG is supported. If no transform operations were queued, gd writes the original compressed UltraHDR data through. If transforms were queued, gd uses libultrahdr to produce a new UltraHDR JPEG with the gain map preserved.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">im</td><td>UltraHDR image handle to write. </td></tr>
+    <tr><td class="paramname">ctx</td><td>Output IO context. </td></tr>
+    <tr><td class="paramname">format</td><td>Output format, currently GD_UHDR_FORMAT_JPEG. </td></tr>
+    <tr><td class="paramname">quality</td><td>JPEG quality from 1 to 95. </td></tr>
+    <tr><td class="paramname">err</td><td>Optional pointer to receive detailed error information. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>GD_UHDR_SUCCESS on success, or another GD_UHDR_* status code on error.</dd></dl>
+<p>File type is determined by the extension of the file name. See gdSupportsFileType for an overview of the parsing. This is appropriate for writing, where the filename normally chooses the intended output format.</p>
+<p>For file types that require extra arguments, gdImageFile() attempts to use sane defaults:</p><ul>
+<li>gdImageGd2 - chunk size = 0, compression is enabled.</li>
+<li>gdImageJpeg - quality = -1 (i.e. the reasonable default)</li>
+<li>gdImageWBMP - foreground is the darkest available color</li>
+</ul>
+<p>Everything else is called with the two-argument function and so will use the default values. gdImageFile has some rudimentary error detection and will return GD_FALSE (0) if a detectable error occurred. However, the image loaders do not normally return their error status so a result of GD_TRUE (1) does <b>not</b> mean the file was saved successfully.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">im</td><td>The image to save. </td></tr>
+    <tr><td class="paramname">filename</td><td>The path to the file to which the image is saved. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>GD_TRUE on apparent success, or GD_FALSE if the filename extension is unsupported or the output file could not be opened.</dd></dl>
+<p>gdSupportsFileType() tests the filename extension using the same extension table as gdImageCreateFromFile and gdImageFile. The file does not need to exist. If writing is nonzero, the function returns true only when gdImageFile() can write that extension; otherwise it returns true when gdImageCreateFromFile() can read that extension.</p>
+<p>Extension parsing has the same limitations as the extension-based helpers. Use gdImageReadFile when reading an actual file and reliable format detection matters.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filename</td><td>Filename whose extension should be tested. </td></tr>
+    <tr><td class="paramname">writing</td><td>Nonzero to test write support; zero to test read support. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>GD_TRUE (1) if the file type is supported, GD_FALSE (0) if not.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">im</td><td>The image to write. </td></tr>
+    <tr><td class="paramname">out</td><td>The gdIOCtx to write the JPEG data to. </td></tr>
+    <tr><td class="paramname">quality</td><td>The JPEG quality (0-100). </td></tr>
+    <tr><td class="paramname">metadata</td><td>Pointer to a gdImageMetadata structure containing the metadata to include in the JPEG file.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Write an image as JPEG data to a stdio file using write options.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">im</td><td>The image to write. </td></tr>
+    <tr><td class="paramname">out</td><td>The stdio file to write the JPEG data to. </td></tr>
+    <tr><td class="paramname">options</td><td>Pointer to a <a class="el" href="structgdJpegWriteOptions.html" title="Options for writing JPEG data.">gdJpegWriteOptions</a> struct containing the desired write options.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns 0 on success, or a negative value on error.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">im</td><td>The image to write. </td></tr>
+    <tr><td class="paramname">out</td><td>The gdIOCtx to write the JPEG data to. </td></tr>
+    <tr><td class="paramname">options</td><td>Pointer to a <a class="el" href="structgdJpegWriteOptions.html" title="Options for writing JPEG data.">gdJpegWriteOptions</a> struct containing the desired write options.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns 0 on success, or a negative value on error.</dd></dl>
+<p>gdImageWebpWithOptions() does not close outFile. The image is borrowed for the duration of the call and must be a truecolor image.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">im</td><td>The image to write. </td></tr>
+    <tr><td class="paramname">outFile</td><td>Pointer to the output FILE stream. </td></tr>
+    <tr><td class="paramname">options</td><td>Pointer to WebP write options, or NULL for defaults.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns 0 on success, or 1 on failure.</dd></dl>
+<p>gdImageWebpCtxWithOptions() does not close outfile. The image is borrowed for the duration of the call and must be a truecolor image.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">im</td><td>The image to write. </td></tr>
+    <tr><td class="paramname">outfile</td><td>Pointer to the gdIOCtx output context. </td></tr>
+    <tr><td class="paramname">options</td><td>Pointer to WebP write options, or NULL for defaults.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns 0 on success, or 1 on failure.</dd></dl>
+<p>This is a simplified variant of &lt;gdImageColorAllocateAlpha&gt; where the alpha channel is always opaque.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">im</td><td>The image. </td></tr>
+    <tr><td class="paramname">r</td><td>The value of the red component. </td></tr>
+    <tr><td class="paramname">g</td><td>The value of the green component. </td></tr>
+    <tr><td class="paramname">b</td><td>The value of the blue component.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The color value.</dd></dl>
+<dl class="section see"><dt>See also</dt><dd>gdImageColorDeallocate</dd></dl>
+<p>This is typically used for palette images, but can be used for truecolor images as well.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">im</td><td>The image. </td></tr>
+    <tr><td class="paramname">r</td><td>The value of the red component. </td></tr>
+    <tr><td class="paramname">g</td><td>The value of the green component. </td></tr>
+    <tr><td class="paramname">b</td><td>The value of the blue component.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The color value.</dd></dl>
+<dl class="section see"><dt>See also</dt><dd>gdImageColorDeallocate</dd></dl>
+<p>This is a simplified variant of &lt;gdImageColorClosestAlpha&gt; where the alpha channel is always opaque.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">im</td><td>The image. </td></tr>
+    <tr><td class="paramname">r</td><td>The value of the red component. </td></tr>
+    <tr><td class="paramname">g</td><td>The value of the green component. </td></tr>
+    <tr><td class="paramname">b</td><td>The value of the blue component.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The closest color already available in the palette for palette images; the color value of the given components for truecolor images.</dd></dl>
+<dl class="section see"><dt>See also</dt><dd>gdImageColorExact</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">im</td><td>The image. </td></tr>
+    <tr><td class="paramname">r</td><td>The value of the red component. </td></tr>
+    <tr><td class="paramname">g</td><td>The value of the green component. </td></tr>
+    <tr><td class="paramname">b</td><td>The value of the blue component. </td></tr>
+    <tr><td class="paramname">a</td><td>The value of the alpha component.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The closest color already available in the palette for palette images; the color value of the given components for truecolor images.</dd></dl>
+<dl class="section see"><dt>See also</dt><dd>gdImageColorExactAlpha</dd></dl>
+<p>This function finds the closest color in the image's palette to the specified RGB color using the HWB (Hue, Whiteness, Blackness) color space. It is a more perceptually accurate method for color matching compared to simple RGB distance calculations.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">im</td><td>The image. </td></tr>
+    <tr><td class="paramname">r</td><td>The value of the red component. </td></tr>
+    <tr><td class="paramname">g</td><td>The value of the green component. </td></tr>
+    <tr><td class="paramname">b</td><td>The value of the blue component.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The closest color already available in the palette for palette images; if there is no exact color, -1 is returned. For truecolor images the color value of the given components is returned.</dd></dl>
+<dl class="section see"><dt>See also</dt><dd>gdImageColorExact</dd></dl>
+<p>This is a simplified variant of &lt;gdImageColorExactAlpha&gt; where the alpha channel is always opaque.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">im</td><td>The image. </td></tr>
+    <tr><td class="paramname">r</td><td>The value of the red component. </td></tr>
+    <tr><td class="paramname">g</td><td>The value of the green component. </td></tr>
+    <tr><td class="paramname">b</td><td>The value of the blue component.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The exact color already available in the palette for palette images; if there is no exact color, -1 is returned. For truecolor images the color value of the given components is returned.</dd></dl>
+<dl class="section see"><dt>See also</dt><dd>gdImageColorClosest</dd></dl>
+<p>This is a simplified variant of &lt;gdImageColorExactAlpha&gt; where the alpha channel is always opaque.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">im</td><td>The image. </td></tr>
+    <tr><td class="paramname">r</td><td>The value of the red component. </td></tr>
+    <tr><td class="paramname">g</td><td>The value of the green component. </td></tr>
+    <tr><td class="paramname">b</td><td>The value of the blue component. </td></tr>
+    <tr><td class="paramname">a</td><td>The value of the alpha component.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The exact color already available in the palette for palette images; if there is no exact color, -1 is returned. For truecolor images the color value of the given components is returned.</dd></dl>
+<dl class="section see"><dt>See also</dt><dd>gdImageColorClosestAlpha gdTrueColorAlpha</dd>
+<dd>
+gdImageColorResolve is an alternative for the code fragment <div class="fragment"><div class="line"><span class="keywordflow">if</span> ((color=gdImageColorExact(<a class="code hl_namespace" href="namespaceim.html">im</a>,R,G,B)) &lt; 0)</div>
+<div class="line">    <span class="keywordflow">if</span> ((color=gdImageColorAllocate(<a class="code hl_namespace" href="namespaceim.html">im</a>,R,G,B)) &lt; 0)</div>
+<div class="line">        color=gdImageColorClosest(<a class="code hl_namespace" href="namespaceim.html">im</a>,R,G,B);</div>
+</div><!-- fragment --> in a single function. Its advantage is that it is guaranteed to </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>a color index in one search over the color table.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">im</td><td>The image. </td></tr>
+    <tr><td class="paramname">r</td><td>The red component. </td></tr>
+    <tr><td class="paramname">g</td><td>The green component. </td></tr>
+    <tr><td class="paramname">b</td><td>The blue component. </td></tr>
+    <tr><td class="paramname">a</td><td>The alpha component.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The color index of the closest color in the palette or the newly allocated color.</dd></dl>
+<dl class="section see"><dt>See also</dt><dd>gdImageColorExactAlpha gdImageColorClosestAlpha gdTrueColorAlpha</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">im1</td><td>The first image. </td></tr>
+    <tr><td class="paramname">im2</td><td>The second image.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, or -1 on failure.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">im</td><td>The image. </td></tr>
+    <tr><td class="paramname">src</td><td>The source color to be replaced. </td></tr>
+    <tr><td class="paramname">dst</td><td>The destination color to replace with.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Note: threshold semantics changed in versions &gt;=2.3.4 — the value now scales linearly with perceptual color distance. Callers using threshold values tuned against the old behavior should apply new_t = sqrt(old_t / 100) * 100 to approximate the previous behavior. This is due to a bug fix in the color distance calculation, which previously did not take the square root of the sum of squares, and thus returned a value that was the square of the actual perceptual color distance. The new behavior is more intuitive and consistent with common color distance metrics</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">im</td><td>The image to operate on. </td></tr>
+    <tr><td class="paramname">src</td><td>The source color to replace. </td></tr>
+    <tr><td class="paramname">dst</td><td>The destination color to replace with. </td></tr>
+    <tr><td class="paramname">threshold</td><td>The threshold for color matching. Colors within this distance from the source color will be replaced with the destination color. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The number of pixels that were replaced.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">im</td><td>The image to operate on. </td></tr>
+    <tr><td class="paramname">len</td><td>The number of colors to replace. </td></tr>
+    <tr><td class="paramname">src</td><td>An array of source colors to be replaced. </td></tr>
+    <tr><td class="paramname">dst</td><td>An array of destination colors to replace with.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The number of pixels that were replaced.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">im</td><td>The image to operate on. </td></tr>
+    <tr><td class="paramname">callback</td><td>A callback function that takes the image and a source color as parameters and returns the destination color to replace with. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd>gdCallbackImageColor</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The number of pixels that were replaced.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">im</td><td>The image. </td></tr>
+    <tr><td class="paramname">x</td><td>The x-coordinate of the pixel. </td></tr>
+    <tr><td class="paramname">y</td><td>The y-coordinate of the pixel.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The color of the pixel. For palette images, this is the palette index. For truecolor images, this is the truecolor value.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">im</td><td>The image. </td></tr>
+    <tr><td class="paramname">x</td><td>The x-coordinate of the pixel. </td></tr>
+    <tr><td class="paramname">y</td><td>The y-coordinate of the pixel.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The truecolor value of the pixel. For palette images, this function will return the truecolor value corresponding to the palette index of the pixel.</dd></dl>
+<p>This is called automatically from the string rendering functions, if it has not already been called. So there's no need to call this function explicitly.</p>
+<p>If flag is nonzero, the fontlist parameter to gdImageStringFT and gdImageStringFTEx shall be assumed to be a fontconfig font pattern if fontconfig was compiled into gd. This function returns zero if fontconfig is not available, nonzero otherwise. If GD is built without libfontconfig support, this function is a NOP.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">flag</td><td>Zero to disable, nonzero to enable.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd>gdImageStringFTEx</dd></dl>
+<p>See <a class="el" href="group__Color.html#gadaf2f61f5e718575e1963b946bab621a">gdPaletteQuantizationMethod</a> enum (e.g. <a class="el" href="group__Color.html#ggadaf2f61f5e718575e1963b946bab621aa61e30fa58a01ef7d6839731fad7b1a7d">GD_QUANT_NEUQUANT</a>, <a class="el" href="group__Color.html#ggadaf2f61f5e718575e1963b946bab621aa1f5895a804dc19f8e330b4f7a6717267">GD_QUANT_LIQ</a>). Speed is from 1 (highest quality) to 10 (fastest). Speed 0 selects method-specific default (recommended).</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">im</td><td>The image to set the quantization method for. </td></tr>
+    <tr><td class="paramname">method</td><td>The quantization method to use. </td></tr>
+    <tr><td class="paramname">speed</td><td>The speed/quality tradeoff for the selected method.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>FALSE if the given method is invalid or not available.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">im</td><td>The image. </td></tr>
+    <tr><td class="paramname">dither</td><td>Whether dithering should be applied. </td></tr>
+    <tr><td class="paramname">colorsWanted</td><td>The number of desired palette entries.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Non-zero if the conversion succeeded, zero otherwise.</dd></dl>
+<dl class="section see"><dt>See also</dt><dd>gdImageCreatePaletteFromTrueColor gdImageTrueColorToPaletteSetMethod gdImagePaletteToTrueColor</dd></dl>
+<p>This function converts a palette-based image to a truecolor image. The palette is discarded, and the image is converted to truecolor. The alpha channel information is preserved. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">src</td><td>The source image. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Non-zero if the conversion succeeded, zero otherwise.</dd></dl>
+<p>Pixelates an image by dividing it into blocks of the specified size and replacing each block with a single color. The color can be determined by either the upper-left pixel of the block or the average color of all pixels in the block, depending on the mode specified.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">im</td><td>The image to pixelate. </td></tr>
+    <tr><td class="paramname">block_size</td><td>The size of the blocks to use for pixelation. Must be greater than 0. </td></tr>
+    <tr><td class="paramname">mode</td><td>The mode to use for determining the color of each block. <a class="el" href="group__ImageFilters.html#ga5394f6ea01c6cc959943d51ab2d33ce1">gdPixelateMode</a></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Non-zero on success, zero on failure. Failure: Returns zero if im is NULL or block_size is less than or equal to 0.</dd></dl>
+<p>Scatters the pixels of an image by randomly adjusting their color values based on the specified subtraction and addition values.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">im</td><td>The image to scatter. </td></tr>
+    <tr><td class="paramname">sub</td><td>The subtraction value for scattering. Must be greater than or equal to 0. </td></tr>
+    <tr><td class="paramname">plus</td><td>The addition value for scattering. Must be greater than or equal to 0</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Non-zero on success, zero on failure. Failure: Returns zero if im is NULL, sub or plus is less than 0.</dd></dl>
+<p>Scatters the pixels of an image by randomly adjusting their color values based on the specified subtraction and addition values, using a specified set of colors.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">im</td><td>The image to scatter. </td></tr>
+    <tr><td class="paramname">sub</td><td>The subtraction value for scattering. Must be greater than or equal to 0. </td></tr>
+    <tr><td class="paramname">plus</td><td>The addition value for scattering. Must be greater than or equal to 0. </td></tr>
+    <tr><td class="paramname">colors</td><td>An array of colors to use for scattering. Must not be NULL. </td></tr>
+    <tr><td class="paramname">num_colors</td><td>The number of colors in the colors array. Must be greater than</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Non-zero on success, zero on failure. Failure: Returns zero if im is NULL, sub or plus is less than 0, colors is NULL, or num_colors is 0.</dd></dl>
+<p>Scatters the pixels of an image using the specified scattering options.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">im</td><td>The image to scatter. </td></tr>
+    <tr><td class="paramname">s</td><td>A pointer to a <a class="el" href="structgdScatter.html" title="Options to Scatter an image.">gdScatter</a> structure containing the scattering options. Must not be NULL.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+<p>(see smooth.jpg)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">im</td><td>The image. </td></tr>
+    <tr><td class="paramname">weight</td><td>The strength of the smoothing.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Non-zero on success, zero on failure.</dd></dl>
+<dl class="section see"><dt>See also</dt><dd>gdImageConvolution</dd></dl>
+<p>Smooth an image</p>
+<p>Smooth an image</p>
+<p>(see smooth.jpg)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">src</td><td>The source image. </td></tr>
+    <tr><td class="paramname">weight</td><td>The strength of the smoothing.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Non-zero on success, zero on failure. Failure: Returns zero if im is NULL or weight is invalid.</dd></dl>
+<dl class="section see"><dt>See also</dt><dd>gdImageConvolution gdImageGaussianBlur gdImageEmboss gdImageMeanRemoval</dd></dl>
+<p>(see mean_removal.jpg)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">im</td><td>The image.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Non-zero on success, zero on failure.</dd></dl>
+<dl class="section see"><dt>See also</dt><dd>gdImageEdgeDetectQuick gdImageConvolution</dd></dl>
+<p>(see emboss.jpg)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">im</td><td>The image.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Non-zero on success, zero on failure.</dd></dl>
+<dl class="section see"><dt>See also</dt><dd>gdImageConvolution</dd></dl>
+<p><em>NOTE:</em> You will almost certain want to use gdImageCopyGaussianBlurred instead, as it allows you to change your kernel size and sigma value. Future versions of this function may fall back to calling it instead of gdImageConvolution, causing subtle changes so be warned.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">im</td><td>The image to blur.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>GD_TRUE (1) on success, GD_FALSE (0) on failure.</dd></dl>
+<dl class="section see"><dt>See also</dt><dd>@gdImageConvolution for more information on how to use convolution matrices to achieve different effects.</dd></dl>
+<p>(see edge_detect_quick.jpg)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">src</td><td>The image.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Non-zero on success, zero on failure.</dd></dl>
+<dl class="section see"><dt>See also</dt><dd>gdImageMeanRemoval gdImageConvolution</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">src</td><td>The image.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Non-zero on success, zero on failure.</dd></dl>
+<p>Depending on the matrix, a wide range of effects can be accomplished, e.g. blurring, sharpening, embossing, and edge detection.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">src</td><td>The image. </td></tr>
+    <tr><td class="paramname">filter</td><td>The 3x3 convolution matrix. </td></tr>
+    <tr><td class="paramname">filter_div</td><td>The value to divide the convoluted channel values by. </td></tr>
+    <tr><td class="paramname">offset</td><td>The value to add to the convoluted channel values.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Non-zero on success, zero on failure.</dd></dl>
+<dl class="section see"><dt>See also</dt><dd>gdImageEdgeDetectQuick </dd>
+<dd>
+gdImageGaussianBlur </dd>
+<dd>
+gdImageEmboss </dd>
+<dd>
+gdImageMeanRemoval </dd>
+<dd>
+gdImageSmooth</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">src</td><td>The image. </td></tr>
+    <tr><td class="paramname">red</td><td>The value to add to the red channel of all pixels. </td></tr>
+    <tr><td class="paramname">green</td><td>The value to add to the green channel of all pixels. </td></tr>
+    <tr><td class="paramname">blue</td><td>The value to add to the blue channel of all pixels. </td></tr>
+    <tr><td class="paramname">alpha</td><td>The value to add to the alpha channel of all pixels.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Non-zero on success, zero on failure.</dd></dl>
+<dl class="section see"><dt>See also</dt><dd>gdImageBrightness</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">src</td><td>The image. </td></tr>
+    <tr><td class="paramname">contrast</td><td>The contrast adjustment value. Negative values increase, postive values decrease the contrast. The larger the absolute value, the stronger the effect.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Non-zero on success, zero on failure.</dd></dl>
+<dl class="section see"><dt>See also</dt><dd>gdImageBrightness</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">src</td><td>The image. </td></tr>
+    <tr><td class="paramname">brightness</td><td>The value to add to the color channels of all pixels.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Non-zero on success, zero on failure.</dd></dl>
+<dl class="section see"><dt>See also</dt><dd>gdImageContrast gdImageColor</dd></dl>
+<p>The red, green and blue components of each pixel are replaced by their weighted sum using the same coefficients as the REC.601 luma (Y') calculation. The alpha components are retained.</p>
+<p>For palette images the result may differ due to palette limitations.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">src</td><td>The image.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Non-zero on success, zero on failure.</dd></dl>
+<p>compare two images and some of its attributes. The images must be of the same size, otherwise the function will return -1. For accurate image content comparison, use gdImagePerceptualDiff instead.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">im1</td><td>An image. </td></tr>
+    <tr><td class="paramname">im2</td><td>Another image.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A bitmask of &lt;Image Comparison&gt; flags where each set flag signals which attributes of the images are different.</dd></dl>
+<p>Scaling, rotation and affine transformation functions use this value when they sample pixels from the image. Newly-created images default to <a class="el" href="group__TransformScaleRotate.html#ggaa6fea75835a90293980f2414f04ab870a603112dc50b886c4fc6b7f4e71a13a87">GD_BILINEAR_FIXED</a>. Passing <a class="el" href="group__TransformScaleRotate.html#ggaa6fea75835a90293980f2414f04ab870a5c2898d4e86e29ccdbc191e666f491fe">GD_DEFAULT</a> is accepted and stores <a class="el" href="group__TransformScaleRotate.html#ggaa6fea75835a90293980f2414f04ab870a75d69a07ccde072af97d6bdeaec2b39c">GD_LINEAR</a>.</p>
+<p>Some transform APIs have optimized paths for specific methods. In particular, gdImageScale uses <a class="el" href="group__TransformScaleRotate.html#ggaa6fea75835a90293980f2414f04ab870a19c3fa97ccc0ac4d55a7ffbf04a0db4a">GD_TRIANGLE</a> when downscaling or doing a mixed-axis scale with the fixed compatibility methods.</p>
+<p>Parameters: im - The image. id - The interpolation method.</p>
+<p>Returns: Non-zero on success, zero on failure.</p>
+<p>See also:</p><ul>
+<li><dl class="section see"><dt>See also</dt><dd><a class="el" href="group__TransformScaleRotate.html#gaa6fea75835a90293980f2414f04ab870" title="gdInterpolationMethod">gdInterpolationMethod</a></dd></dl>
+</li>
+<li><dl class="section see"><dt>See also</dt><dd>gdImageGetInterpolationMethod</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">src</td><td>- The source image. </td></tr>
+    <tr><td class="paramname">target_width</td><td>- The target width used to compute the crop aspect ratio. </td></tr>
+    <tr><td class="paramname">target_height</td><td>- The target height used to compute the crop aspect ratio. </td></tr>
+    <tr><td class="paramname">method</td><td>- The interesting-region method. </td></tr>
+    <tr><td class="paramname">crop</td><td>- Receives the crop rectangle on success.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>GD_TRUE on success, or GD_FALSE on failure.</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__TransformScaleRotate.html#gacc5f11cc9b966a6fdf376d8ac2db87fa" title="Methods used to find an interesting crop region.">gdInterestingMethod</a> gdImageEntropyCropRegion gdImageScaleWithOptions</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">src</td><td>- The source image. </td></tr>
+    <tr><td class="paramname">target_width</td><td>- The target width used to compute the crop aspect ratio. </td></tr>
+    <tr><td class="paramname">target_height</td><td>- The target height used to compute the crop aspect ratio. </td></tr>
+    <tr><td class="paramname">crop</td><td>- Receives the crop rectangle on success.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>GD_TRUE on success, or GD_FALSE on failure.</dd></dl>
+<dl class="section see"><dt>See also</dt><dd>gdImageInterestingCropRegion</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dst</td><td>- Receives the transformed point. </td></tr>
+    <tr><td class="paramname">src</td><td>- Source point. </td></tr>
+    <tr><td class="paramname">affine</td><td>- Matrix in gd's six-value affine form.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>GD_TRUE on success, or GD_FALSE on failure.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dst</td><td>- Receives the inverse matrix. </td></tr>
+    <tr><td class="paramname">src</td><td>- Source matrix.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>GD_TRUE on success, or GD_FALSE if the matrix cannot be inverted.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dst_affine</td><td>- Receives the flipped matrix. </td></tr>
+    <tr><td class="paramname">src_affine</td><td>- Source matrix. </td></tr>
+    <tr><td class="paramname">flip_h</td><td>- Non-zero to flip horizontally. </td></tr>
+    <tr><td class="paramname">flip_v</td><td>- Non-zero to flip vertically.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>GD_TRUE on success, or GD_FALSE on failure.</dd></dl>
+The result is equivalent to applying m1 and then m2. The destination may be the same array as either input.</li>
+</ul>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dst</td><td>- Receives the concatenated matrix. </td></tr>
+    <tr><td class="paramname">m1</td><td>- First matrix. </td></tr>
+    <tr><td class="paramname">m2</td><td>- Second matrix.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>GD_TRUE on success, or GD_FALSE on failure.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dst</td><td>- Receives the identity matrix. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>GD_TRUE on success, or GD_FALSE on failure.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dst</td><td>- Receives the scale matrix. </td></tr>
+    <tr><td class="paramname">scale_x</td><td>- Horizontal scale factor. </td></tr>
+    <tr><td class="paramname">scale_y</td><td>- Vertical scale factor.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>GD_TRUE on success, or GD_FALSE on failure.</dd></dl>
+<p>In gd's image coordinate system, increasing y moves downward; positive angles rotate counterclockwise in that system.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dst</td><td>- Receives the rotation matrix. </td></tr>
+    <tr><td class="paramname">angle</td><td>- Rotation angle in degrees.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>GD_TRUE on success, or GD_FALSE on failure.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dst</td><td>- Receives the shear matrix. </td></tr>
+    <tr><td class="paramname">angle</td><td>- Shear angle in degrees.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>GD_TRUE on success, or GD_FALSE on failure.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dst</td><td>- Receives the translation matrix. </td></tr>
+    <tr><td class="paramname">offset_x</td><td>- Horizontal offset. </td></tr>
+    <tr><td class="paramname">offset_y</td><td>- Vertical offset.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>GD_TRUE on success, or GD_FALSE on failure.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">src</td><td>- Source matrix.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>GD_TRUE if the matrix is rectilinear, otherwise GD_FALSE.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">matrix1</td><td>- First matrix. </td></tr>
+    <tr><td class="paramname">matrix2</td><td>- Second matrix.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>GD_TRUE if the matrices are equal within gd's affine tolerance, otherwise GD_FALSE.</dd></dl>
+<p>The new image is truecolor with alpha saving enabled. Areas not covered by the transformed source are transparent. The source image's current <a class="el" href="group__TransformScaleRotate.html#gaa6fea75835a90293980f2414f04ab870">gdInterpolationMethod</a> controls sampling. Palette sources may be converted to truecolor internally.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dst</td><td>- Receives the newly-created destination image. </td></tr>
+    <tr><td class="paramname">src</td><td>- Source image. </td></tr>
+    <tr><td class="paramname">src_area</td><td>- Source rectangle, or NULL to transform the full image. </td></tr>
+    <tr><td class="paramname">affine</td><td>- Matrix in gd's six-value affine form.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>GD_TRUE on success, or GD_FALSE on failure. On failure, *dst is NULL.</dd></dl>
+<dl class="section see"><dt>See also</dt><dd>gdTransformAffineCopy gdTransformAffineBoundingBox gdImageSetInterpolationMethod</dd></dl>
+<p>The source image's current <a class="el" href="group__TransformScaleRotate.html#gaa6fea75835a90293980f2414f04ab870">gdInterpolationMethod</a> controls sampling. Transparent samples are skipped. Destination bounds and alpha-blending settings are honored.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dst</td><td>- Destination image. </td></tr>
+    <tr><td class="paramname">dst_x</td><td>- Destination x offset. </td></tr>
+    <tr><td class="paramname">dst_y</td><td>- Destination y offset. </td></tr>
+    <tr><td class="paramname">src</td><td>- Source image. </td></tr>
+    <tr><td class="paramname">src_region</td><td>- Source rectangle to transform. </td></tr>
+    <tr><td class="paramname">affine</td><td>- Matrix in gd's six-value affine form.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>GD_TRUE on success, or GD_FALSE on failure.</dd></dl>
+<dl class="section see"><dt>See also</dt><dd>gdTransformAffineGetImage gdTransformAffineBoundingBox gdImageSetInterpolationMethod</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">src</td><td>- Source rectangle. </td></tr>
+    <tr><td class="paramname">affine</td><td>- Matrix in gd's six-value affine form. </td></tr>
+    <tr><td class="paramname">bbox</td><td>- Receives the transformed bounding box.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>GD_TRUE on success, or GD_FALSE on failure. </dd></dl>
+
+</div>
+</div>
+<a id="ga94935047263f2b497671fb28390b854c" name="ga94935047263f2b497671fb28390b854c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga94935047263f2b497671fb28390b854c">&#9670;&#160;</a></span>BGD_DECLARE() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BGD_DECLARE </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Write an UltraHDR image to a newly allocated memory buffer. </p>
+<p>Write an image as GD2 data to a newly allocated memory buffer.</p>
+<p>Write an image as WebP data to a newly allocated memory buffer using write options.</p>
+<p>Write an image as WebP data to a newly allocated memory buffer with a quality setting.</p>
+<p>Write an image as WebP data to a newly allocated memory buffer.</p>
+<p>Write an image as JPEG data to a memory buffer with metadata.</p>
+<p>Write an image as JPEG data to a newly allocated memory buffer.</p>
+<p>Write an image as WBMP data to a newly allocated memory buffer.</p>
+<p>Currently only GD_UHDR_FORMAT_JPEG is supported. On success, the returned buffer is owned by the caller and must be freed with gdFree().</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">im</td><td>UltraHDR image handle to write. </td></tr>
+    <tr><td class="paramname">size</td><td>Pointer that receives the encoded buffer size in bytes. </td></tr>
+    <tr><td class="paramname">format</td><td>Output format, currently GD_UHDR_FORMAT_JPEG. </td></tr>
+    <tr><td class="paramname">quality</td><td>JPEG quality from 1 to 95. </td></tr>
+    <tr><td class="paramname">err</td><td>Optional pointer to receive detailed error information. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A newly allocated UltraHDR data buffer, or NULL on error.</dd></dl>
+<p>The image is borrowed for the duration of the call. Pixels whose color equals fg are written as black; all other pixels are written as white. The returned buffer is caller-owned and must be freed with gdFree().</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">im</td><td>The image to write. </td></tr>
+    <tr><td class="paramname">size</td><td>Pointer to an integer that receives the returned buffer size. </td></tr>
+    <tr><td class="paramname">fg</td><td>Foreground color value to write as black.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns a pointer to the newly allocated WBMP buffer, or NULL on failure.</dd></dl>
+<p>Result must be freed with gdFree(). The image is borrowed for the duration of the call.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">im</td><td>The image to write. </td></tr>
+    <tr><td class="paramname">size</td><td>Pointer to an integer that will receive the size of the returned buffer. </td></tr>
+    <tr><td class="paramname">quality</td><td>The JPEG quality (0-100).</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to the newly allocated buffer containing the JPEG data, or NULL on failure.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">im</td><td>The image to write. </td></tr>
+    <tr><td class="paramname">size</td><td>Pointer to an integer that will receive the size of the returned buffer. </td></tr>
+    <tr><td class="paramname">quality</td><td>The JPEG quality (0-100). </td></tr>
+    <tr><td class="paramname">metadata</td><td>Pointer to a gdImageMetadata structure containing the metadata to include in the JPEG file.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to the newly allocated buffer containing the JPEG data, or NULL on failure.</dd></dl>
+<p>Write an image as JPEG data to a memory buffer using write options.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">im</td><td>The image to write. </td></tr>
+    <tr><td class="paramname">size</td><td>Pointer to an integer that will receive the size of the returned buffer. </td></tr>
+    <tr><td class="paramname">options</td><td>Pointer to a <a class="el" href="structgdJpegWriteOptions.html" title="Options for writing JPEG data.">gdJpegWriteOptions</a> struct containing the desired write options.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to the newly allocated buffer containing the JPEG data, or NULL on failure.</dd></dl>
+<p>The image is borrowed for the duration of the call and must be a truecolor image. The returned buffer is caller-owned and must be freed with gdFree().</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">im</td><td>The image to write. </td></tr>
+    <tr><td class="paramname">size</td><td>Pointer to an integer that receives the returned buffer size.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns a pointer to the newly allocated WebP buffer, or NULL on failure.</dd></dl>
+<p>The image is borrowed for the duration of the call and must be a truecolor image. The returned buffer is caller-owned and must be freed with gdFree().</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">im</td><td>The image to write. </td></tr>
+    <tr><td class="paramname">size</td><td>Pointer to an integer that receives the returned buffer size. </td></tr>
+    <tr><td class="paramname">quantization</td><td>WebP quality: -1 for default, 0-100 for lossy, or gdWebpLossless for lossless.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns a pointer to the newly allocated WebP buffer, or NULL on failure.</dd></dl>
+<p>The image is borrowed for the duration of the call and must be a truecolor image. The returned buffer is caller-owned and must be freed with gdFree().</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">im</td><td>The image to write. </td></tr>
+    <tr><td class="paramname">size</td><td>Pointer to an integer that receives the returned buffer size. </td></tr>
+    <tr><td class="paramname">options</td><td>Pointer to WebP write options, or NULL for defaults.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns a pointer to the newly allocated WebP buffer, or NULL on failure.</dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000009">Deprecated:</a></b></dt><dd></dd></dl>
+<p>gdImageGd2Ptr() borrows im for the duration of the call. Pass cs as 0 to use GD2_CHUNKSIZE; otherwise values outside the GD2_CHUNKSIZE_MIN to GD2_CHUNKSIZE_MAX range are clamped. The public fmt values are GD2_FMT_RAW and GD2_FMT_COMPRESSED. On success, the returned buffer is owned by the caller and must be freed with gdFree().</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">im</td><td>The image to write. </td></tr>
+    <tr><td class="paramname">cs</td><td>Requested chunk size in pixels, or 0 for GD2_CHUNKSIZE. </td></tr>
+    <tr><td class="paramname">fmt</td><td>Output format, GD2_FMT_RAW or GD2_FMT_COMPRESSED. </td></tr>
+    <tr><td class="paramname">size</td><td>Output location for the returned buffer size in bytes. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A newly allocated GD2 buffer, or NULL on error. </dd></dl>
+
+</div>
+</div>
 <a id="ga9526048f8e1b217e36c5ca77154cb9e3" name="ga9526048f8e1b217e36c5ca77154cb9e3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga9526048f8e1b217e36c5ca77154cb9e3">&#9670;&#160;</a></span>gdUhdrImageCreateFromCtx()</h2>
 
@@ -526,133 +1649,6 @@ typedef <a class="el" href="structgdUhdrError.html">gdUhdrError</a> *&#160;</td>
 
 </div>
 </div>
-<a id="ga874f4cf10da1cbaa560cc057b0bbc1fc" name="ga874f4cf10da1cbaa560cc057b0bbc1fc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga874f4cf10da1cbaa560cc057b0bbc1fc">&#9670;&#160;</a></span>gdUhdrImageCrop()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int gdUhdrImageCrop </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__gdCodecUhdr.html#ga56b8379b3c0baf4f60df80b4110d66be">gdUhdrImagePtr</a>&#160;</td>
-          <td class="paramname"><em>im</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>left</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>top</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>width</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>height</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__gdCodecUhdr.html#gad0d7cb531fe278ed58b21effe88f34b7">gdUhdrErrorPtr</a>&#160;</td>
-          <td class="paramname"><em>err</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Queue an UltraHDR-preserving crop operation. </p>
-<p>The operation is recorded on im and applied when the image is written. The SDR base image and gain map are cropped together so the output can remain a valid UltraHDR image.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">im</td><td>UltraHDR image handle. </td></tr>
-    <tr><td class="paramname">left</td><td>Left edge of the crop rectangle in pixels. </td></tr>
-    <tr><td class="paramname">top</td><td>Top edge of the crop rectangle in pixels. </td></tr>
-    <tr><td class="paramname">width</td><td>Crop width in pixels. </td></tr>
-    <tr><td class="paramname">height</td><td>Crop height in pixels. </td></tr>
-    <tr><td class="paramname">err</td><td>Optional pointer to receive detailed error information. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>GD_UHDR_SUCCESS on success, or another GD_UHDR_* status code on error. </dd></dl>
-
-</div>
-</div>
-<a id="gac4dc2e4e974dd24ce815ef7af2a1e11f" name="gac4dc2e4e974dd24ce815ef7af2a1e11f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gac4dc2e4e974dd24ce815ef7af2a1e11f">&#9670;&#160;</a></span>gdUhdrImageCtx()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int gdUhdrImageCtx </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__gdCodecUhdr.html#ga56b8379b3c0baf4f60df80b4110d66be">gdUhdrImagePtr</a>&#160;</td>
-          <td class="paramname"><em>im</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">gdIOCtxPtr&#160;</td>
-          <td class="paramname"><em>ctx</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>format</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>quality</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__gdCodecUhdr.html#gad0d7cb531fe278ed58b21effe88f34b7">gdUhdrErrorPtr</a>&#160;</td>
-          <td class="paramname"><em>err</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Write an UltraHDR image to an IO context. </p>
-<p><a class="el" href="group__gdCodecUhdr.html#gac4dc2e4e974dd24ce815ef7af2a1e11f" title="Write an UltraHDR image to an IO context.">gdUhdrImageCtx()</a> does not close ctx. Currently only GD_UHDR_FORMAT_JPEG is supported. If no transform operations were queued, gd writes the original compressed UltraHDR data through. If transforms were queued, gd uses libultrahdr to produce a new UltraHDR JPEG with the gain map preserved.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">im</td><td>UltraHDR image handle to write. </td></tr>
-    <tr><td class="paramname">ctx</td><td>Output IO context. </td></tr>
-    <tr><td class="paramname">format</td><td>Output format, currently GD_UHDR_FORMAT_JPEG. </td></tr>
-    <tr><td class="paramname">quality</td><td>JPEG quality from 1 to 95. </td></tr>
-    <tr><td class="paramname">err</td><td>Optional pointer to receive detailed error information. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>GD_UHDR_SUCCESS on success, or another GD_UHDR_* status code on error. </dd></dl>
-
-</div>
-</div>
 <a id="ga3042f696f94c6c76c57980ecce119195" name="ga3042f696f94c6c76c57980ecce119195"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga3042f696f94c6c76c57980ecce119195">&#9670;&#160;</a></span>gdUhdrImageDestroy()</h2>
 
@@ -677,413 +1673,6 @@ typedef <a class="el" href="structgdUhdrError.html">gdUhdrError</a> *&#160;</td>
   </table>
   </dd>
 </dl>
-
-</div>
-</div>
-<a id="gaa6fe62f74d78e27ff42f69df923282e5" name="gaa6fe62f74d78e27ff42f69df923282e5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaa6fe62f74d78e27ff42f69df923282e5">&#9670;&#160;</a></span>gdUhdrImageFile()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int gdUhdrImageFile </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__gdCodecUhdr.html#ga56b8379b3c0baf4f60df80b4110d66be">gdUhdrImagePtr</a>&#160;</td>
-          <td class="paramname"><em>im</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>filename</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>format</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>quality</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__gdCodecUhdr.html#gad0d7cb531fe278ed58b21effe88f34b7">gdUhdrErrorPtr</a>&#160;</td>
-          <td class="paramname"><em>err</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Write an UltraHDR image to a file path. </p>
-<p>Currently only GD_UHDR_FORMAT_JPEG is supported. If no transform operations were queued, gd writes the original compressed UltraHDR data through. If transforms were queued, gd uses libultrahdr to decode the base image and gain map, applies the queued operations to both, and re-encodes an UltraHDR JPEG.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">im</td><td>UltraHDR image handle to write. </td></tr>
-    <tr><td class="paramname">filename</td><td>Output file path. </td></tr>
-    <tr><td class="paramname">format</td><td>Output format, currently GD_UHDR_FORMAT_JPEG. </td></tr>
-    <tr><td class="paramname">quality</td><td>JPEG quality from 1 to 95. </td></tr>
-    <tr><td class="paramname">err</td><td>Optional pointer to receive detailed error information. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>GD_UHDR_SUCCESS on success, or another GD_UHDR_* status code on error. </dd></dl>
-
-</div>
-</div>
-<a id="ga5c31a98024065a3b68a4805219f2548b" name="ga5c31a98024065a3b68a4805219f2548b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga5c31a98024065a3b68a4805219f2548b">&#9670;&#160;</a></span>gdUhdrImageGetSdr()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">gdImagePtr gdUhdrImageGetSdr </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__gdCodecUhdr.html#ga56b8379b3c0baf4f60df80b4110d66be">gdUhdrImagePtr</a>&#160;</td>
-          <td class="paramname"><em>im</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__gdCodecUhdr.html#gad0d7cb531fe278ed58b21effe88f34b7">gdUhdrErrorPtr</a>&#160;</td>
-          <td class="paramname"><em>err</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Decode the SDR view of an UltraHDR image as a gdImage. </p>
-<p>The returned gdImagePtr is caller-owned and must be destroyed with gdImageDestroy. It is an SDR image only: it does not contain the UltraHDR gain map and cannot be used to recreate an UltraHDR image. Use the gdUhdrImage* transform and write APIs when the gain map must be preserved.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">im</td><td>UltraHDR image handle to decode. </td></tr>
-    <tr><td class="paramname">err</td><td>Optional pointer to receive detailed error information. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>A newly allocated truecolor SDR image, or NULL on error. </dd></dl>
-
-</div>
-</div>
-<a id="ga28366e4a757b06a7b8b7f18029272054" name="ga28366e4a757b06a7b8b7f18029272054"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga28366e4a757b06a7b8b7f18029272054">&#9670;&#160;</a></span>gdUhdrImageHasGainMap()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int gdUhdrImageHasGainMap </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__gdCodecUhdr.html#ga56b8379b3c0baf4f60df80b4110d66be">gdUhdrImagePtr</a>&#160;</td>
-          <td class="paramname"><em>im</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Return whether the UltraHDR image has a gain map. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">im</td><td>UltraHDR image handle. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>1 if im has a gain map, or 0 otherwise. </dd></dl>
-
-</div>
-</div>
-<a id="ga5414beb68978586aa190bbe067964e74" name="ga5414beb68978586aa190bbe067964e74"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga5414beb68978586aa190bbe067964e74">&#9670;&#160;</a></span>gdUhdrImageHeight()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int gdUhdrImageHeight </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__gdCodecUhdr.html#ga56b8379b3c0baf4f60df80b4110d66be">gdUhdrImagePtr</a>&#160;</td>
-          <td class="paramname"><em>im</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Return the UltraHDR image height. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">im</td><td>UltraHDR image handle. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Image height in pixels, or 0 for NULL. </dd></dl>
-
-</div>
-</div>
-<a id="ga5ef00651d1524b589c88f593d90dc3c0" name="ga5ef00651d1524b589c88f593d90dc3c0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga5ef00651d1524b589c88f593d90dc3c0">&#9670;&#160;</a></span>gdUhdrImageMirror()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int gdUhdrImageMirror </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__gdCodecUhdr.html#ga56b8379b3c0baf4f60df80b4110d66be">gdUhdrImagePtr</a>&#160;</td>
-          <td class="paramname"><em>im</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>axis</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__gdCodecUhdr.html#gad0d7cb531fe278ed58b21effe88f34b7">gdUhdrErrorPtr</a>&#160;</td>
-          <td class="paramname"><em>err</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Queue an UltraHDR-preserving mirror operation. </p>
-<p>The operation is recorded on im and applied when the image is written. The SDR base image and gain map are mirrored together so the output can remain a valid UltraHDR image.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">im</td><td>UltraHDR image handle. </td></tr>
-    <tr><td class="paramname">axis</td><td>Mirror axis, GD_UHDR_MIRROR_HORIZONTAL or GD_UHDR_MIRROR_VERTICAL. </td></tr>
-    <tr><td class="paramname">err</td><td>Optional pointer to receive detailed error information. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>GD_UHDR_SUCCESS on success, or another GD_UHDR_* status code on error. </dd></dl>
-
-</div>
-</div>
-<a id="gaadbb33d4e15e7af281e00313479a828f" name="gaadbb33d4e15e7af281e00313479a828f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaadbb33d4e15e7af281e00313479a828f">&#9670;&#160;</a></span>gdUhdrImageResize()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int gdUhdrImageResize </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__gdCodecUhdr.html#ga56b8379b3c0baf4f60df80b4110d66be">gdUhdrImagePtr</a>&#160;</td>
-          <td class="paramname"><em>im</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>width</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>height</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__gdCodecUhdr.html#gad0d7cb531fe278ed58b21effe88f34b7">gdUhdrErrorPtr</a>&#160;</td>
-          <td class="paramname"><em>err</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Queue an UltraHDR-preserving resize operation. </p>
-<p>The operation is recorded on im and applied when the image is written. The SDR base image and gain map are transformed together so the output can remain a valid UltraHDR image.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">im</td><td>UltraHDR image handle. </td></tr>
-    <tr><td class="paramname">width</td><td>Output width in pixels. </td></tr>
-    <tr><td class="paramname">height</td><td>Output height in pixels. </td></tr>
-    <tr><td class="paramname">err</td><td>Optional pointer to receive detailed error information. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>GD_UHDR_SUCCESS on success, or another GD_UHDR_* status code on error. </dd></dl>
-
-</div>
-</div>
-<a id="ga81208ff41ffda2d6f823c8a23787e430" name="ga81208ff41ffda2d6f823c8a23787e430"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga81208ff41ffda2d6f823c8a23787e430">&#9670;&#160;</a></span>gdUhdrImageRotate()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int gdUhdrImageRotate </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__gdCodecUhdr.html#ga56b8379b3c0baf4f60df80b4110d66be">gdUhdrImagePtr</a>&#160;</td>
-          <td class="paramname"><em>im</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>degrees</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__gdCodecUhdr.html#gad0d7cb531fe278ed58b21effe88f34b7">gdUhdrErrorPtr</a>&#160;</td>
-          <td class="paramname"><em>err</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Queue an UltraHDR-preserving right-angle rotation. </p>
-<p>The operation is recorded on im and applied when the image is written. The SDR base image and gain map are rotated together so the output can remain a valid UltraHDR image. Supported angles are 0, 90, 180, and 270 degrees.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">im</td><td>UltraHDR image handle. </td></tr>
-    <tr><td class="paramname">degrees</td><td>Rotation angle in degrees. </td></tr>
-    <tr><td class="paramname">err</td><td>Optional pointer to receive detailed error information. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>GD_UHDR_SUCCESS on success, or another GD_UHDR_* status code on error. </dd></dl>
-
-</div>
-</div>
-<a id="ga0ab8dfed421d832e514e46331f5e1503" name="ga0ab8dfed421d832e514e46331f5e1503"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga0ab8dfed421d832e514e46331f5e1503">&#9670;&#160;</a></span>gdUhdrImageWidth()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int gdUhdrImageWidth </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__gdCodecUhdr.html#ga56b8379b3c0baf4f60df80b4110d66be">gdUhdrImagePtr</a>&#160;</td>
-          <td class="paramname"><em>im</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Return the UltraHDR image width. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">im</td><td>UltraHDR image handle. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Image width in pixels, or 0 for NULL. </dd></dl>
-
-</div>
-</div>
-<a id="ga40ee549c9bd074b978ea6b5a5b358266" name="ga40ee549c9bd074b978ea6b5a5b358266"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga40ee549c9bd074b978ea6b5a5b358266">&#9670;&#160;</a></span>gdUhdrImageWritePtr()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void * gdUhdrImageWritePtr </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__gdCodecUhdr.html#ga56b8379b3c0baf4f60df80b4110d66be">gdUhdrImagePtr</a>&#160;</td>
-          <td class="paramname"><em>im</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int *&#160;</td>
-          <td class="paramname"><em>size</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>format</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>quality</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__gdCodecUhdr.html#gad0d7cb531fe278ed58b21effe88f34b7">gdUhdrErrorPtr</a>&#160;</td>
-          <td class="paramname"><em>err</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Write an UltraHDR image to a newly allocated memory buffer. </p>
-<p>Currently only GD_UHDR_FORMAT_JPEG is supported. On success, the returned buffer is owned by the caller and must be freed with gdFree().</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">im</td><td>UltraHDR image handle to write. </td></tr>
-    <tr><td class="paramname">size</td><td>Pointer that receives the encoded buffer size in bytes. </td></tr>
-    <tr><td class="paramname">format</td><td>Output format, currently GD_UHDR_FORMAT_JPEG. </td></tr>
-    <tr><td class="paramname">quality</td><td>JPEG quality from 1 to 95. </td></tr>
-    <tr><td class="paramname">err</td><td>Optional pointer to receive detailed error information. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>A newly allocated UltraHDR data buffer, or NULL on error. </dd></dl>
-
-</div>
-</div>
-<a id="gabb488481d214b86c4406761e23afb5d2" name="gabb488481d214b86c4406761e23afb5d2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gabb488481d214b86c4406761e23afb5d2">&#9670;&#160;</a></span>gdUhdrIsAvailable()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int gdUhdrIsAvailable </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Return whether UltraHDR support is available in this build. </p>
-<p>This reports whether libgd was built with libultrahdr support.</p>
-<dl class="section return"><dt>Returns</dt><dd>1 when UltraHDR support is available, or 0 otherwise. </dd></dl>
 
 </div>
 </div>

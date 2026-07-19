@@ -184,21 +184,6 @@ Functions</h2></td></tr>
 <tr class="memitem:ga35e100fbab234ec9c4cdd0b210e78253" id="r_ga35e100fbab234ec9c4cdd0b210e78253"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gdCodecJpeg.html#ga35e100fbab234ec9c4cdd0b210e78253">gdJpegGetVersionString</a> ()</td></tr>
 <tr class="memdesc:ga35e100fbab234ec9c4cdd0b210e78253"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an image from a JPEG memory buffer and collect metadata.  <br /></td></tr>
 <tr class="separator:ga35e100fbab234ec9c4cdd0b210e78253"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab5c46bbf22d6dd69a0b7722b327935aa" id="r_gab5c46bbf22d6dd69a0b7722b327935aa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gdCodecJpeg.html#gab5c46bbf22d6dd69a0b7722b327935aa">gdImageJpeg</a> (gdImagePtr im, FILE *out, int quality)</td></tr>
-<tr class="memdesc:gab5c46bbf22d6dd69a0b7722b327935aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write an image as JPEG data to a stdio file.  <br /></td></tr>
-<tr class="separator:gab5c46bbf22d6dd69a0b7722b327935aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga77f441c76a43674ee62b71a9740541a2" id="r_ga77f441c76a43674ee62b71a9740541a2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gdCodecJpeg.html#ga77f441c76a43674ee62b71a9740541a2">gdImageJpegWithOptions</a> (gdImagePtr im, FILE *out, const <a class="el" href="structgdJpegWriteOptions.html">gdJpegWriteOptions</a> *options)</td></tr>
-<tr class="memdesc:ga77f441c76a43674ee62b71a9740541a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write an image as JPEG data to a gdIOCtx with metadata.  <br /></td></tr>
-<tr class="separator:ga77f441c76a43674ee62b71a9740541a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gabe32744b9430b00f42a9442e62021923" id="r_gabe32744b9430b00f42a9442e62021923"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gdCodecJpeg.html#gabe32744b9430b00f42a9442e62021923">gdImageJpegCtxWithOptions</a> (gdImagePtr im, gdIOCtxPtr out, const <a class="el" href="structgdJpegWriteOptions.html">gdJpegWriteOptions</a> *options)</td></tr>
-<tr class="memdesc:gabe32744b9430b00f42a9442e62021923"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write an image as JPEG data to a gdIOCtx using write options.  <br /></td></tr>
-<tr class="separator:gabe32744b9430b00f42a9442e62021923"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga22ed9855dd48aa9e0614855a705d5570" id="r_ga22ed9855dd48aa9e0614855a705d5570"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gdCodecJpeg.html#ga22ed9855dd48aa9e0614855a705d5570">gdImageJpegPtr</a> (gdImagePtr im, int *size, int quality)</td></tr>
-<tr class="memdesc:ga22ed9855dd48aa9e0614855a705d5570"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write an image as JPEG data to a newly allocated memory buffer.  <br /></td></tr>
-<tr class="separator:ga22ed9855dd48aa9e0614855a705d5570"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga3cf935b26681b31cc9cf629c94e960d3" id="r_ga3cf935b26681b31cc9cf629c94e960d3"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gdCodecJpeg.html#ga3cf935b26681b31cc9cf629c94e960d3">gdImageJpegPtrWithOptions</a> (gdImagePtr im, int *size, const <a class="el" href="structgdJpegWriteOptions.html">gdJpegWriteOptions</a> *options)</td></tr>
-<tr class="memdesc:ga3cf935b26681b31cc9cf629c94e960d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write an image as JPEG data to a memory buffer with metadata.  <br /></td></tr>
-<tr class="separator:ga3cf935b26681b31cc9cf629c94e960d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>JPEG image reading and writing support. </p>
@@ -220,7 +205,7 @@ Functions</h2></td></tr>
 <div class="line">black = gdImageColorAllocate(<a class="code hl_namespace" href="namespaceim.html">im</a>, 0, 0, 0);</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// Draw rectangle</span></div>
-<div class="line"><a class="code hl_function" href="group__PixelDraw.html#ga084f5a75d82c7ae9126fb0846051802e">gdImageRectangle</a>(<a class="code hl_namespace" href="namespaceim.html">im</a>, 0, 0, 99, 99, black);</div>
+<div class="line">gdImageRectangle(<a class="code hl_namespace" href="namespaceim.html">im</a>, 0, 0, 99, 99, black);</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// Open output file in binary mode</span></div>
 <div class="line">out = fopen(<span class="stringliteral">&quot;rect.jpg&quot;</span>, <span class="stringliteral">&quot;wb&quot;</span>);</div>
@@ -229,13 +214,11 @@ Functions</h2></td></tr>
 <div class="line">   exit(1);</div>
 <div class="line">}</div>
 <div class="line"><span class="comment">// Write JPEG using default quality</span></div>
-<div class="line"><a class="code hl_function" href="group__gdCodecJpeg.html#gab5c46bbf22d6dd69a0b7722b327935aa">gdImageJpeg</a>(<a class="code hl_namespace" href="namespaceim.html">im</a>, out, -1);</div>
+<div class="line">gdImageJpeg(<a class="code hl_namespace" href="namespaceim.html">im</a>, out, -1);</div>
 <div class="line"><span class="comment">// Close file</span></div>
 <div class="line">fclose(out);</div>
 <div class="line"><span class="comment">// Destroy image</span></div>
 <div class="line">gdImageDestroy(<a class="code hl_namespace" href="namespaceim.html">im</a>);</div>
-<div class="ttc" id="agroup__PixelDraw_html_ga084f5a75d82c7ae9126fb0846051802e"><div class="ttname"><a href="group__PixelDraw.html#ga084f5a75d82c7ae9126fb0846051802e">gdImageRectangle</a></div><div class="ttdeci">void gdImageRectangle(gdImagePtr im, int x1, int y1, int x2, int y2, int color)</div><div class="ttdoc">Draws a rectangle.</div><div class="ttdef"><b>Definition</b> gd.c:2239</div></div>
-<div class="ttc" id="agroup__gdCodecJpeg_html_gab5c46bbf22d6dd69a0b7722b327935aa"><div class="ttname"><a href="group__gdCodecJpeg.html#gab5c46bbf22d6dd69a0b7722b327935aa">gdImageJpeg</a></div><div class="ttdeci">void gdImageJpeg(gdImagePtr im, FILE *out, int quality)</div><div class="ttdoc">Write an image as JPEG data to a stdio file.</div><div class="ttdef"><b>Definition</b> gd_jpeg.c:1720</div></div>
 <div class="ttc" id="anamespaceim_html"><div class="ttname"><a href="namespaceim.html">im</a></div><div class="ttdoc">Write an image as JPEG data to a gdIOCtx.</div></div>
 </div><!-- fragment --> <h2 class="groupheader">Enumeration Type Documentation</h2>
 <a id="gadc29c2ff13d900c2f185ee95427fb06c" name="gadc29c2ff13d900c2f185ee95427fb06c"></a>
@@ -631,252 +614,6 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Returns a gdImagePtr on success, or NULL on failure. </dd></dl>
-
-</div>
-</div>
-<a id="gab5c46bbf22d6dd69a0b7722b327935aa" name="gab5c46bbf22d6dd69a0b7722b327935aa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gab5c46bbf22d6dd69a0b7722b327935aa">&#9670;&#160;</a></span>gdImageJpeg()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void gdImageJpeg </td>
-          <td>(</td>
-          <td class="paramtype">gdImagePtr&#160;</td>
-          <td class="paramname"><em>im</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">FILE *&#160;</td>
-          <td class="paramname"><em>out</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>quality</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Write an image as JPEG data to a stdio file. </p>
-<p>100 is the highest quality (there is always a little loss with JPEG). 0 is the lowest quality. 10 is about the lowest useful setting. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">im</td><td>The image to write. </td></tr>
-    <tr><td class="paramname">out</td><td>The stdio file to write the JPEG data to. </td></tr>
-    <tr><td class="paramname">quality</td><td>The JPEG quality (0-100). </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="gabe32744b9430b00f42a9442e62021923" name="gabe32744b9430b00f42a9442e62021923"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gabe32744b9430b00f42a9442e62021923">&#9670;&#160;</a></span>gdImageJpegCtxWithOptions()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int gdImageJpegCtxWithOptions </td>
-          <td>(</td>
-          <td class="paramtype">gdImagePtr&#160;</td>
-          <td class="paramname"><em>im</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">gdIOCtxPtr&#160;</td>
-          <td class="paramname"><em>out</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="structgdJpegWriteOptions.html">gdJpegWriteOptions</a> *&#160;</td>
-          <td class="paramname"><em>options</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Write an image as JPEG data to a gdIOCtx using write options. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">im</td><td>The image to write. </td></tr>
-    <tr><td class="paramname">out</td><td>The gdIOCtx to write the JPEG data to. </td></tr>
-    <tr><td class="paramname">options</td><td>Pointer to a <a class="el" href="structgdJpegWriteOptions.html" title="Options for writing JPEG data.">gdJpegWriteOptions</a> struct containing the desired write options.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Returns 0 on success, or a negative value on error. </dd></dl>
-
-</div>
-</div>
-<a id="ga22ed9855dd48aa9e0614855a705d5570" name="ga22ed9855dd48aa9e0614855a705d5570"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga22ed9855dd48aa9e0614855a705d5570">&#9670;&#160;</a></span>gdImageJpegPtr()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void * gdImageJpegPtr </td>
-          <td>(</td>
-          <td class="paramtype">gdImagePtr&#160;</td>
-          <td class="paramname"><em>im</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int *&#160;</td>
-          <td class="paramname"><em>size</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>quality</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Write an image as JPEG data to a newly allocated memory buffer. </p>
-<p>Result must be freed with gdFree(). The image is borrowed for the duration of the call.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">im</td><td>The image to write. </td></tr>
-    <tr><td class="paramname">size</td><td>Pointer to an integer that will receive the size of the returned buffer. </td></tr>
-    <tr><td class="paramname">quality</td><td>The JPEG quality (0-100).</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>A pointer to the newly allocated buffer containing the JPEG data, or NULL on failure. </dd></dl>
-
-</div>
-</div>
-<a id="ga3cf935b26681b31cc9cf629c94e960d3" name="ga3cf935b26681b31cc9cf629c94e960d3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga3cf935b26681b31cc9cf629c94e960d3">&#9670;&#160;</a></span>gdImageJpegPtrWithOptions()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void * gdImageJpegPtrWithOptions </td>
-          <td>(</td>
-          <td class="paramtype">gdImagePtr&#160;</td>
-          <td class="paramname"><em>im</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int *&#160;</td>
-          <td class="paramname"><em>size</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="structgdJpegWriteOptions.html">gdJpegWriteOptions</a> *&#160;</td>
-          <td class="paramname"><em>options</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Write an image as JPEG data to a memory buffer with metadata. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">im</td><td>The image to write. </td></tr>
-    <tr><td class="paramname">size</td><td>Pointer to an integer that will receive the size of the returned buffer. </td></tr>
-    <tr><td class="paramname">quality</td><td>The JPEG quality (0-100). </td></tr>
-    <tr><td class="paramname">metadata</td><td>Pointer to a gdImageMetadata structure containing the metadata to include in the JPEG file.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>A pointer to the newly allocated buffer containing the JPEG data, or NULL on failure.</dd></dl>
-<p>Write an image as JPEG data to a memory buffer using write options.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">im</td><td>The image to write. </td></tr>
-    <tr><td class="paramname">size</td><td>Pointer to an integer that will receive the size of the returned buffer. </td></tr>
-    <tr><td class="paramname">options</td><td>Pointer to a <a class="el" href="structgdJpegWriteOptions.html" title="Options for writing JPEG data.">gdJpegWriteOptions</a> struct containing the desired write options.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>A pointer to the newly allocated buffer containing the JPEG data, or NULL on failure. </dd></dl>
-
-</div>
-</div>
-<a id="ga77f441c76a43674ee62b71a9740541a2" name="ga77f441c76a43674ee62b71a9740541a2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga77f441c76a43674ee62b71a9740541a2">&#9670;&#160;</a></span>gdImageJpegWithOptions()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int gdImageJpegWithOptions </td>
-          <td>(</td>
-          <td class="paramtype">gdImagePtr&#160;</td>
-          <td class="paramname"><em>im</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">FILE *&#160;</td>
-          <td class="paramname"><em>out</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="structgdJpegWriteOptions.html">gdJpegWriteOptions</a> *&#160;</td>
-          <td class="paramname"><em>options</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Write an image as JPEG data to a gdIOCtx with metadata. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">im</td><td>The image to write. </td></tr>
-    <tr><td class="paramname">out</td><td>The gdIOCtx to write the JPEG data to. </td></tr>
-    <tr><td class="paramname">quality</td><td>The JPEG quality (0-100). </td></tr>
-    <tr><td class="paramname">metadata</td><td>Pointer to a gdImageMetadata structure containing the metadata to include in the JPEG file.</td></tr>
-  </table>
-  </dd>
-</dl>
-<p>Write an image as JPEG data to a stdio file using write options.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">im</td><td>The image to write. </td></tr>
-    <tr><td class="paramname">out</td><td>The stdio file to write the JPEG data to. </td></tr>
-    <tr><td class="paramname">options</td><td>Pointer to a <a class="el" href="structgdJpegWriteOptions.html" title="Options for writing JPEG data.">gdJpegWriteOptions</a> struct containing the desired write options.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Returns 0 on success, or a negative value on error. </dd></dl>
 
 </div>
 </div>

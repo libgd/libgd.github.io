@@ -224,8 +224,8 @@ Data Structures</h2></td></tr>
 <div class="line">  exit(1);</div>
 <div class="line">}</div>
 <div class="line"> </div>
-<div class="line"><a class="code hl_function" href="group__PixelDraw.html#ga1e534e750e1b336b8961a62ebec88511">gdImageFilledRectangle</a>(first, 0, 0, 31, 23, gdTrueColor(255, 0, 0));</div>
-<div class="line"><a class="code hl_function" href="group__PixelDraw.html#ga1e534e750e1b336b8961a62ebec88511">gdImageFilledRectangle</a>(second, 0, 0, 31, 23, gdTrueColor(0, 0, 255));</div>
+<div class="line">gdImageFilledRectangle(first, 0, 0, 31, 23, gdTrueColor(255, 0, 0));</div>
+<div class="line">gdImageFilledRectangle(second, 0, 0, 31, 23, gdTrueColor(0, 0, 255));</div>
 <div class="line"> </div>
 <div class="line"><a class="code hl_function" href="group__gdCodecJxl.html#ga9612923652ea80d6eebbc57dc031c3fd">gdJxlAnimWriteOptionsInit</a>(&amp;write_options);</div>
 <div class="line">write_options.<a class="code hl_variable" href="structgdJxlAnimWriteOptions.html#a0e9a08eda54040c0da3b798c557291ca">lossless</a> = 1;</div>
@@ -248,7 +248,6 @@ Data Structures</h2></td></tr>
 <div class="line">gdFree(data);</div>
 <div class="line">gdImageDestroy(first);</div>
 <div class="line">gdImageDestroy(second);</div>
-<div class="ttc" id="agroup__PixelDraw_html_ga1e534e750e1b336b8961a62ebec88511"><div class="ttname"><a href="group__PixelDraw.html#ga1e534e750e1b336b8961a62ebec88511">gdImageFilledRectangle</a></div><div class="ttdeci">void gdImageFilledRectangle(gdImagePtr im, int x1, int y1, int x2, int y2, int color)</div><div class="ttdoc">Draws a filled rectangle.</div><div class="ttdef"><b>Definition</b> gd.c:2403</div></div>
 <div class="ttc" id="agroup__gdCodecJxl_html_ga3520548850945ff1c565069741285c9b"><div class="ttname"><a href="group__gdCodecJxl.html#ga3520548850945ff1c565069741285c9b">gdJxlReadClose</a></div><div class="ttdeci">void gdJxlReadClose(gdJxlReadPtr reader)</div><div class="ttdoc">Close a JPEG XL multi-image reader.</div><div class="ttdef"><b>Definition</b> gd_jxl.c:1883</div></div>
 <div class="ttc" id="agroup__gdCodecJxl_html_ga40c878d1185c2526de4a4e36b2192567"><div class="ttname"><a href="group__gdCodecJxl.html#ga40c878d1185c2526de4a4e36b2192567">gdJxlReadOpenPtr</a></div><div class="ttdeci">gdJxlReadPtr gdJxlReadOpenPtr(int size, void *data, const gdJxlReadOptions *options)</div><div class="ttdoc">Open a JPEG XL multi-image/animation reader from a memory buffer.</div><div class="ttdef"><b>Definition</b> gd_jxl.c:1842</div></div>
 <div class="ttc" id="agroup__gdCodecJxl_html_ga4411f215ab5b5ed4ac815d7bc8437b8e"><div class="ttname"><a href="group__gdCodecJxl.html#ga4411f215ab5b5ed4ac815d7bc8437b8e">gdJxlReadPtr</a></div><div class="ttdeci">struct gdJxlRead * gdJxlReadPtr</div><div class="ttdoc">Opaque JPEG XL multi-image/animation reader handle.</div><div class="ttdef"><b>Definition</b> gd.h:2730</div></div>

@@ -119,13 +119,12 @@ gd basics: using gd in your program:</h1>
 <div class="line">    <span class="comment">/* Output the image to the disk file in PNG format. */</span> <a class="code hl_function" href="group__gdCodecPng.html#ga6c0d7100c26b0ae131fd6546e15b210a">gdImagePng</a>(<a class="code hl_namespace" href="namespaceim.html">im</a>, pngout);</div>
 <div class="line">    <span class="comment">/* Output the same image in JPEG format, using the default JPEG quality</span></div>
 <div class="line"><span class="comment">    setting. */</span> </div>
-<div class="line">    <a class="code hl_function" href="group__gdCodecJpeg.html#gab5c46bbf22d6dd69a0b7722b327935aa">gdImageJpeg</a>(<a class="code hl_namespace" href="namespaceim.html">im</a>, jpegout, -1);</div>
+<div class="line">    gdImageJpeg(<a class="code hl_namespace" href="namespaceim.html">im</a>, jpegout, -1);</div>
 <div class="line">    <span class="comment">/* Close the files. */</span> </div>
 <div class="line">    fclose(pngout); fclose(jpegout);</div>
 <div class="line">    <span class="comment">/* Destroy the image in memory. */</span> </div>
 <div class="line">    gdImageDestroy(<a class="code hl_namespace" href="namespaceim.html">im</a>);</div>
 <div class="line">}</div>
-<div class="ttc" id="agroup__gdCodecJpeg_html_gab5c46bbf22d6dd69a0b7722b327935aa"><div class="ttname"><a href="group__gdCodecJpeg.html#gab5c46bbf22d6dd69a0b7722b327935aa">gdImageJpeg</a></div><div class="ttdeci">void gdImageJpeg(gdImagePtr im, FILE *out, int quality)</div><div class="ttdoc">Write an image as JPEG data to a stdio file.</div><div class="ttdef"><b>Definition</b> gd_jpeg.c:1720</div></div>
 <div class="ttc" id="agroup__gdCodecPng_html_ga6c0d7100c26b0ae131fd6546e15b210a"><div class="ttname"><a href="group__gdCodecPng.html#ga6c0d7100c26b0ae131fd6546e15b210a">gdImagePng</a></div><div class="ttdeci">void gdImagePng(gdImagePtr im, FILE *out)</div><div class="ttdoc">Write an image as PNG data to a stdio file.</div><div class="ttdef"><b>Definition</b> gd_png.c:1532</div></div>
 <div class="ttc" id="anamespaceim_html"><div class="ttname"><a href="namespaceim.html">im</a></div><div class="ttdoc">Write an image as JPEG data to a gdIOCtx.</div></div>
 </div><!-- fragment --> </div></div><!-- PageDoc -->

@@ -15,5 +15,6 @@
 <area shape="rect" id="Node000005" href="$group__gdCodecWbmp.html" title="Wireless Bitmap reading and writing support." alt="" coords="132,647,196,672"/>
 <area shape="rect" id="Node000007" href="$group__gdCodecWebp.html" title="WebP image reading, writing and animations support." alt="" coords="135,696,193,721"/>
 <area shape="rect" id="Node000017" href="$group__gdCodecXbm.html" title="Read and write X11 bitmap images." alt="" coords="138,745,190,771"/>
-<area shape="rect" id="Node000001" title="Image codec support for reading and writing various file formats." alt="" coords="5,376,75,401"/>
+<area shape="rect" id="Node000018" href="$group__gdCodecXpm.html" title="Read and write X PixMap images." alt="" coords="139,795,189,820"/>
+<area shape="rect" id="Node000001" title="Image codec support for reading and writing various file formats." alt="" coords="5,400,75,425"/>
 </map>

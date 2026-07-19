@@ -114,7 +114,7 @@ Collaboration diagram for XBM:</div>
 <div class="line">    <span class="keywordflow">return</span> 1;</div>
 <div class="line">}</div>
 <div class="line"> </div>
-<div class="line">out = <a class="code hl_function" href="group__gdIOCtx.html#gad29c819092a07541f890f40882330edc">gdNewFileCtx</a>(stdout);</div>
+<div class="line">out = gdNewFileCtx(stdout);</div>
 <div class="line"><span class="keywordflow">if</span> (out == NULL) {</div>
 <div class="line">    gdImageDestroy(<a class="code hl_namespace" href="namespaceim.html">im</a>);</div>
 <div class="line">    <span class="keywordflow">return</span> 1;</div>
@@ -125,7 +125,6 @@ Collaboration diagram for XBM:</div>
 <div class="line">gdImageDestroy(<a class="code hl_namespace" href="namespaceim.html">im</a>);</div>
 <div class="ttc" id="agroup__gdCodecXbm_html_ga11e12a462a82029442d81c31b97f4150"><div class="ttname"><a href="group__gdCodecXbm.html#ga11e12a462a82029442d81c31b97f4150">gdImageXbmCtx</a></div><div class="ttdeci">void gdImageXbmCtx(gdImagePtr image, char *file_name, int fg, gdIOCtxPtr out)</div><div class="ttdoc">Write an image to an IO context in X11 bitmap format.</div></div>
 <div class="ttc" id="agroup__gdCodecXbm_html_ga7156052934b5151ec2dfaa9c4a6336be"><div class="ttname"><a href="group__gdCodecXbm.html#ga7156052934b5151ec2dfaa9c4a6336be">gdImageCreateFromXbm</a></div><div class="ttdeci">gdImagePtr gdImageCreateFromXbm(FILE *in)</div><div class="ttdoc">Create an image from XBM data in a stdio stream.</div><div class="ttdef"><b>Definition</b> gd_xbm.c:23</div></div>
-<div class="ttc" id="agroup__gdIOCtx_html_gad29c819092a07541f890f40882330edc"><div class="ttname"><a href="group__gdIOCtx.html#gad29c819092a07541f890f40882330edc">gdNewFileCtx</a></div><div class="ttdeci">gdIOCtxPtr gdNewFileCtx(FILE *)</div><div class="ttdoc">Creates a new I/O context for reading/writing to a file.</div><div class="ttdef"><b>Definition</b> gd_io_file.c:50</div></div>
 <div class="ttc" id="anamespaceim_html"><div class="ttname"><a href="namespaceim.html">im</a></div><div class="ttdoc">Write an image as JPEG data to a gdIOCtx.</div></div>
 </div><!-- fragment --> <h2 class="groupheader">Function Documentation</h2>
 <a id="ga7156052934b5151ec2dfaa9c4a6336be" name="ga7156052934b5151ec2dfaa9c4a6336be"></a>

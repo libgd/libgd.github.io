@@ -203,7 +203,7 @@ Functions</h2></td></tr>
 <div class="line"> </div>
 <div class="line">white = gdImageColorAllocate(<a class="code hl_namespace" href="namespaceim.html">im</a>, 255, 255, 255);</div>
 <div class="line">black = gdImageColorAllocate(<a class="code hl_namespace" href="namespaceim.html">im</a>, 0, 0, 0);</div>
-<div class="line"><a class="code hl_function" href="group__PixelDraw.html#ga084f5a75d82c7ae9126fb0846051802e">gdImageRectangle</a>(<a class="code hl_namespace" href="namespaceim.html">im</a>, 0, 0, 99, 99, black);</div>
+<div class="line">gdImageRectangle(<a class="code hl_namespace" href="namespaceim.html">im</a>, 0, 0, 99, 99, black);</div>
 <div class="line"> </div>
 <div class="line">out = fopen(<span class="stringliteral">&quot;rect.png&quot;</span>, <span class="stringliteral">&quot;wb&quot;</span>);</div>
 <div class="line"><span class="keywordflow">if</span> (out == NULL) {</div>
@@ -215,7 +215,6 @@ Functions</h2></td></tr>
 <div class="line"><a class="code hl_function" href="group__gdCodecPng.html#ga3f565ef0e13a49006d4c1196ff28f674">gdImagePngEx</a>(<a class="code hl_namespace" href="namespaceim.html">im</a>, out, 9);</div>
 <div class="line">fclose(out);</div>
 <div class="line">gdImageDestroy(<a class="code hl_namespace" href="namespaceim.html">im</a>);</div>
-<div class="ttc" id="agroup__PixelDraw_html_ga084f5a75d82c7ae9126fb0846051802e"><div class="ttname"><a href="group__PixelDraw.html#ga084f5a75d82c7ae9126fb0846051802e">gdImageRectangle</a></div><div class="ttdeci">void gdImageRectangle(gdImagePtr im, int x1, int y1, int x2, int y2, int color)</div><div class="ttdoc">Draws a rectangle.</div><div class="ttdef"><b>Definition</b> gd.c:2239</div></div>
 <div class="ttc" id="agroup__gdCodecPng_html_ga3f565ef0e13a49006d4c1196ff28f674"><div class="ttname"><a href="group__gdCodecPng.html#ga3f565ef0e13a49006d4c1196ff28f674">gdImagePngEx</a></div><div class="ttdeci">void gdImagePngEx(gdImagePtr im, FILE *out, int level)</div><div class="ttdoc">Write an image as PNG data to a stdio file with a compression level.</div><div class="ttdef"><b>Definition</b> gd_png.c:1524</div></div>
 <div class="ttc" id="anamespaceim_html"><div class="ttname"><a href="namespaceim.html">im</a></div><div class="ttdoc">Write an image as JPEG data to a gdIOCtx.</div></div>
 </div><!-- fragment --> <h2 class="groupheader">Macro Definition Documentation</h2>
