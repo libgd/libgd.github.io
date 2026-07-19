@@ -22,7 +22,8 @@ var searchData=
   ['compression_19',['compression',['../structgdTiffInfo.html#a5c455b6d4ec8fb019ba2de957497279f',1,'gdTiffInfo::compression'],['../structgdTiffPageInfo.html#aafb6e98db506146fe4d89c93b52ff498',1,'gdTiffPageInfo::compression'],['../structgdTiffWriteOptions.html#a5b58e7fc5766493450f7a5960e3441f0',1,'gdTiffWriteOptions::compression']]],
   ['compression_5flevel_20',['compression_level',['../structgdPngWriteOptions.html#a3ce845ef00d09212a476693f6d6d4abe',1,'gdPngWriteOptions']]],
   ['compression_5fstrategy_21',['compression_strategy',['../structgdPngWriteOptions.html#a1fbfdf3e3547bad7907a6ff96d1c78a5',1,'gdPngWriteOptions']]],
-  ['convenience_20apis_22',['Image File Convenience APIs',['../group__gdImageFileIO.html',1,'']]],
-  ['convolutions_23',['Image Filters and convolutions',['../group__ImageFilters.html',1,'']]],
-  ['copy_20and_20image_20properties_24',['Clone, copy and image properties',['../group__cloneandcopy.html',1,'']]]
+  ['contexts_22',['I/O Contexts',['../group__gdIOCtx.html',1,'']]],
+  ['convenience_20apis_23',['Image File Convenience APIs',['../group__gdImageFileIO.html',1,'']]],
+  ['convolutions_24',['Image Filters and convolutions',['../group__ImageFilters.html',1,'']]],
+  ['copy_20and_20image_20properties_25',['Clone, copy and image properties',['../group__cloneandcopy.html',1,'']]]
 ];

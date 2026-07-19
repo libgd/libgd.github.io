@@ -667,7 +667,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Write an image as JPEG data to a stdio file. </p>
-<dl class="params"><dt>Parameters</dt><dd>
+<p>100 is the highest quality (there is always a little loss with JPEG). 0 is the lowest quality. 10 is about the lowest useful setting. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">im</td><td>The image to write. </td></tr>
     <tr><td class="paramname">out</td><td>The stdio file to write the JPEG data to. </td></tr>
@@ -756,6 +756,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Write an image as JPEG data to a newly allocated memory buffer. </p>
+<p>Result must be freed with gdFree(). The image is borrowed for the duration of the call.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">im</td><td>The image to write. </td></tr>
