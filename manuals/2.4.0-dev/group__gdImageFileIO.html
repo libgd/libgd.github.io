@@ -71,7 +71,9 @@ $(function() {
 
 <div class="header">
   <div class="summary">
-<a href="#enum-members">Enumerations</a>  </div>
+<a href="#define-members">Macros</a> &#124;
+<a href="#enum-members">Enumerations</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">Image File Convenience APIs</div></div>
 </div><!--header-->
 <div class="contents">
@@ -79,6 +81,11 @@ $(function() {
 <p>Convenience APIs for reading and writing images by filename or signature.  
 <a href="#details">More...</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:ga48e533dc24ea13cce63d0de6ceae9c36" id="r_ga48e533dc24ea13cce63d0de6ceae9c36"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gdImageFileIO.html#ga48e533dc24ea13cce63d0de6ceae9c36">GD_IMAGE_READ_RESTRICT_CODEC_API</a>&#160;&#160;&#160;1</td></tr>
+<tr class="separator:ga48e533dc24ea13cce63d0de6ceae9c36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
 <tr class="memitem:ga4e3df139d1186fe4a910bf103b2184f8" id="r_ga4e3df139d1186fe4a910bf103b2184f8"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gdImageFileIO.html#ga4e3df139d1186fe4a910bf103b2184f8">gdImageReadStatus</a> { <br />
@@ -93,14 +100,46 @@ Enumerations</h2></td></tr>
 <tr class="memdesc:ga4e3df139d1186fe4a910bf103b2184f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Status values for extended automatic image readers.  <a href="group__gdImageFileIO.html#ga4e3df139d1186fe4a910bf103b2184f8">More...</a><br /></td></tr>
 <tr class="separator:ga4e3df139d1186fe4a910bf103b2184f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader">UltraHDR Writing</h2></td></tr>
-<tr class="memitem:ga94935047263f2b497671fb28390b854c" id="r_ga94935047263f2b497671fb28390b854c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gdImageFileIO.html#ga94935047263f2b497671fb28390b854c">BGD_DECLARE</a> (void *) gdUhdrImageWritePtr(<a class="el" href="group__gdCodecUhdr.html#ga56b8379b3c0baf4f60df80b4110d66be">gdUhdrImagePtr</a> im</td></tr>
-<tr class="memdesc:ga94935047263f2b497671fb28390b854c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write an UltraHDR image to a newly allocated memory buffer.  <br /></td></tr>
-<tr class="separator:ga94935047263f2b497671fb28390b854c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:ga988c92e5bbabf4129d02d2bf26525431" id="r_ga988c92e5bbabf4129d02d2bf26525431"><td class="memItemLeft" align="right" valign="top">gdImagePtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gdImageFileIO.html#ga988c92e5bbabf4129d02d2bf26525431">gdImageCreateFromFile</a> (const char *filename)</td></tr>
+<tr class="memdesc:ga988c92e5bbabf4129d02d2bf26525431"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an image from a file using the filename extension.  <br /></td></tr>
+<tr class="separator:ga988c92e5bbabf4129d02d2bf26525431"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga68cd6116420d9eb1833e7ff6b0554385" id="r_ga68cd6116420d9eb1833e7ff6b0554385"><td class="memItemLeft" align="right" valign="top">gdImagePtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gdImageFileIO.html#ga68cd6116420d9eb1833e7ff6b0554385">gdImageReadFile</a> (const char *filename)</td></tr>
+<tr class="memdesc:ga68cd6116420d9eb1833e7ff6b0554385"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read an image file by probing its binary signature.  <br /></td></tr>
+<tr class="separator:ga68cd6116420d9eb1833e7ff6b0554385"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaeebf8891705286f46089f276f228471d" id="r_gaeebf8891705286f46089f276f228471d"><td class="memItemLeft" align="right" valign="top">gdImagePtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gdImageFileIO.html#gaeebf8891705286f46089f276f228471d">gdImageReadCtx</a> (gdIOCtxPtr ctx)</td></tr>
+<tr class="memdesc:gaeebf8891705286f46089f276f228471d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read an image from a gdIOCtx by probing its binary signature.  <br /></td></tr>
+<tr class="separator:gaeebf8891705286f46089f276f228471d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5d6f144440000e5c1e1141e5ba1c2346" id="r_ga5d6f144440000e5c1e1141e5ba1c2346"><td class="memItemLeft" align="right" valign="top">gdImagePtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gdImageFileIO.html#ga5d6f144440000e5c1e1141e5ba1c2346">gdImageReadCtxEx</a> (gdIOCtxPtr ctx, int flags, <a class="el" href="group__gdImageFileIO.html#ga4e3df139d1186fe4a910bf103b2184f8">gdImageReadStatus</a> *status, const char **format_name)</td></tr>
+<tr class="memdesc:ga5d6f144440000e5c1e1141e5ba1c2346"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read an image from a gdIOCtx with extended status information.  <br /></td></tr>
+<tr class="separator:ga5d6f144440000e5c1e1141e5ba1c2346"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac5032d6888c5c8f3d8620ef754bc4d3c" id="r_gac5032d6888c5c8f3d8620ef754bc4d3c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gdImageFileIO.html#gac5032d6888c5c8f3d8620ef754bc4d3c">gdImageFile</a> (gdImagePtr im, const char *filename)</td></tr>
+<tr class="memdesc:gac5032d6888c5c8f3d8620ef754bc4d3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write an image to a file in the format indicated by the filename.  <br /></td></tr>
+<tr class="separator:gac5032d6888c5c8f3d8620ef754bc4d3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabc642b09927607e7e1911ef15a53421d" id="r_gabc642b09927607e7e1911ef15a53421d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gdImageFileIO.html#gabc642b09927607e7e1911ef15a53421d">gdSupportsFileType</a> (const char *filename, int writing)</td></tr>
+<tr class="memdesc:gabc642b09927607e7e1911ef15a53421d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test if a given file type is supported by GD.  <br /></td></tr>
+<tr class="separator:gabc642b09927607e7e1911ef15a53421d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Convenience APIs for reading and writing images by filename or signature. </p>
-<p>These APIs are helpers around the format-specific codec functions. For reading existing files, gdImageReadFile is preferred over gdImageCreateFromFile because it detects image type from binary signatures rather than trusting the filename extension. </p>
+<p>These APIs are helpers around the format-specific codec functions. For reading existing files, <a class="el" href="group__gdImageFileIO.html#ga68cd6116420d9eb1833e7ff6b0554385">gdImageReadFile</a> is preferred over <a class="el" href="group__gdImageFileIO.html#ga988c92e5bbabf4129d02d2bf26525431">gdImageCreateFromFile</a> because it detects image type from binary signatures rather than trusting the filename extension. </p>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="ga48e533dc24ea13cce63d0de6ceae9c36" name="ga48e533dc24ea13cce63d0de6ceae9c36"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga48e533dc24ea13cce63d0de6ceae9c36">&#9670;&#160;</a></span>GD_IMAGE_READ_RESTRICT_CODEC_API</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define GD_IMAGE_READ_RESTRICT_CODEC_API&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Restrict extended automatic reading to codec APIs that match the input source. </p>
+
+</div>
+</div>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
 <a id="ga4e3df139d1186fe4a910bf103b2184f8" name="ga4e3df139d1186fe4a910bf103b2184f8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga4e3df139d1186fe4a910bf103b2184f8">&#9670;&#160;</a></span>gdImageReadStatus</h2>
@@ -131,123 +170,228 @@ Enumerations</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ga94935047263f2b497671fb28390b854c" name="ga94935047263f2b497671fb28390b854c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga94935047263f2b497671fb28390b854c">&#9670;&#160;</a></span>BGD_DECLARE()</h2>
+<a id="ga988c92e5bbabf4129d02d2bf26525431" name="ga988c92e5bbabf4129d02d2bf26525431"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga988c92e5bbabf4129d02d2bf26525431">&#9670;&#160;</a></span>gdImageCreateFromFile()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">BGD_DECLARE </td>
+          <td class="memname">gdImagePtr gdImageCreateFromFile </td>
           <td>(</td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>filename</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Write an UltraHDR image to a newly allocated memory buffer. </p>
-<p>Write an image as GD2 data to a newly allocated memory buffer.</p>
-<p>Write an image as WebP data to a newly allocated memory buffer using write options.</p>
-<p>Write an image as WebP data to a newly allocated memory buffer with a quality setting.</p>
-<p>Write an image as WebP data to a newly allocated memory buffer.</p>
-<p>Write an image as JPEG data to a memory buffer with metadata.</p>
-<p>Write an image as JPEG data to a newly allocated memory buffer.</p>
-<p>Write an image as WBMP data to a newly allocated memory buffer.</p>
-<p>Currently only GD_UHDR_FORMAT_JPEG is supported. On success, the returned buffer is owned by the caller and must be freed with gdFree().</p>
+<p>Create an image from a file using the filename extension. </p>
+<p><a class="el" href="group__gdImageFileIO.html#ga988c92e5bbabf4129d02d2bf26525431" title="Create an image from a file using the filename extension.">gdImageCreateFromFile()</a> chooses the reader from the filename extension using the same extension table as <a class="el" href="group__gdImageFileIO.html#gabc642b09927607e7e1911ef15a53421d">gdSupportsFileType</a>. The returned image is caller-owned and must be destroyed with gdImageDestroy().</p>
+<dl class="section note"><dt>Note</dt><dd>For new code, prefer <a class="el" href="group__gdImageFileIO.html#ga68cd6116420d9eb1833e7ff6b0554385">gdImageReadFile</a> when reading existing files. <a class="el" href="group__gdImageFileIO.html#ga68cd6116420d9eb1833e7ff6b0554385" title="Read an image file by probing its binary signature.">gdImageReadFile()</a> checks binary signatures instead of trusting the filename extension, which is safer and more reliable when files are mislabeled or supplied by users.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">im</td><td>UltraHDR image handle to write. </td></tr>
-    <tr><td class="paramname">size</td><td>Pointer that receives the encoded buffer size in bytes. </td></tr>
-    <tr><td class="paramname">format</td><td>Output format, currently GD_UHDR_FORMAT_JPEG. </td></tr>
-    <tr><td class="paramname">quality</td><td>JPEG quality from 1 to 95. </td></tr>
-    <tr><td class="paramname">err</td><td>Optional pointer to receive detailed error information. </td></tr>
+    <tr><td class="paramname">filename</td><td>Path to the input image file. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>A newly allocated UltraHDR data buffer, or NULL on error.</dd></dl>
-<p>The image is borrowed for the duration of the call. Pixels whose color equals fg are written as black; all other pixels are written as white. The returned buffer is caller-owned and must be freed with gdFree().</p>
+<dl class="section return"><dt>Returns</dt><dd>A newly allocated image, or NULL on error or unsupported extension. </dd></dl>
+
+</div>
+</div>
+<a id="gac5032d6888c5c8f3d8620ef754bc4d3c" name="gac5032d6888c5c8f3d8620ef754bc4d3c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac5032d6888c5c8f3d8620ef754bc4d3c">&#9670;&#160;</a></span>gdImageFile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int gdImageFile </td>
+          <td>(</td>
+          <td class="paramtype">gdImagePtr&#160;</td>
+          <td class="paramname"><em>im</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>filename</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Write an image to a file in the format indicated by the filename. </p>
+<p>File type is determined by the extension of the file name. See <a class="el" href="group__gdImageFileIO.html#gabc642b09927607e7e1911ef15a53421d">gdSupportsFileType</a> for an overview of the parsing. This is appropriate for writing, where the filename normally chooses the intended output format.</p>
+<p>For file types that require extra arguments, <a class="el" href="group__gdImageFileIO.html#gac5032d6888c5c8f3d8620ef754bc4d3c" title="Write an image to a file in the format indicated by the filename.">gdImageFile()</a> attempts to use sane defaults:</p><ul>
+<li><a class="el" href="group__gdCodecGd2.html#gae220d84d81572c04f7e019cc09359195">gdImageGd2</a> - chunk size = 0, compression is enabled.</li>
+<li><a class="el" href="group__gdCodecJpeg.html#gab5c46bbf22d6dd69a0b7722b327935aa">gdImageJpeg</a> - quality = -1 (i.e. the reasonable default)</li>
+<li><a class="el" href="group__gdCodecWbmp.html#gabc95e9cca583b316cf5833e7b6b0aeeb">gdImageWBMP</a> - foreground is the darkest available color</li>
+</ul>
+<p>Everything else is called with the two-argument function and so will use the default values. <a class="el" href="group__gdImageFileIO.html#gac5032d6888c5c8f3d8620ef754bc4d3c">gdImageFile</a> has some rudimentary error detection and will return GD_FALSE (0) if a detectable error occurred. However, the image loaders do not normally return their error status so a result of GD_TRUE (1) does <b>not</b> mean the file was saved successfully.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">im</td><td>The image to write. </td></tr>
-    <tr><td class="paramname">size</td><td>Pointer to an integer that receives the returned buffer size. </td></tr>
-    <tr><td class="paramname">fg</td><td>Foreground color value to write as black.</td></tr>
+    <tr><td class="paramname">im</td><td>The image to save. </td></tr>
+    <tr><td class="paramname">filename</td><td>The path to the file to which the image is saved. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Returns a pointer to the newly allocated WBMP buffer, or NULL on failure.</dd></dl>
-<p>Result must be freed with gdFree(). The image is borrowed for the duration of the call.</p>
+<dl class="section return"><dt>Returns</dt><dd>GD_TRUE on apparent success, or GD_FALSE if the filename extension is unsupported or the output file could not be opened. </dd></dl>
+
+</div>
+</div>
+<a id="gaeebf8891705286f46089f276f228471d" name="gaeebf8891705286f46089f276f228471d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaeebf8891705286f46089f276f228471d">&#9670;&#160;</a></span>gdImageReadCtx()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">gdImagePtr gdImageReadCtx </td>
+          <td>(</td>
+          <td class="paramtype">gdIOCtxPtr&#160;</td>
+          <td class="paramname"><em>ctx</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Read an image from a gdIOCtx by probing its binary signature. </p>
+<p><a class="el" href="group__gdImageFileIO.html#gaeebf8891705286f46089f276f228471d" title="Read an image from a gdIOCtx by probing its binary signature.">gdImageReadCtx()</a> borrows ctx for the duration of the call and does not close it. The input context must support seeking because gd reads a probe buffer and then seeks back to the start before dispatching to the codec reader. Formats without gdIOCtx readers, currently XPM and XBM, are not supported by this function; use <a class="el" href="group__gdImageFileIO.html#ga68cd6116420d9eb1833e7ff6b0554385">gdImageReadFile</a> for those file formats.</p>
+<p>The returned image is caller-owned and must be destroyed with gdImageDestroy().</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">im</td><td>The image to write. </td></tr>
-    <tr><td class="paramname">size</td><td>Pointer to an integer that will receive the size of the returned buffer. </td></tr>
-    <tr><td class="paramname">quality</td><td>The JPEG quality (0-100).</td></tr>
+    <tr><td class="paramname">ctx</td><td>Pointer to the input gdIOCtx. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>A pointer to the newly allocated buffer containing the JPEG data, or NULL on failure.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A newly allocated image, or NULL on error, unknown format, disabled codec, unsupported context reader, or decode failure. </dd></dl>
+
+</div>
+</div>
+<a id="ga5d6f144440000e5c1e1141e5ba1c2346" name="ga5d6f144440000e5c1e1141e5ba1c2346"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5d6f144440000e5c1e1141e5ba1c2346">&#9670;&#160;</a></span>gdImageReadCtxEx()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">gdImagePtr gdImageReadCtxEx </td>
+          <td>(</td>
+          <td class="paramtype">gdIOCtxPtr&#160;</td>
+          <td class="paramname"><em>ctx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>flags</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__gdImageFileIO.html#ga4e3df139d1186fe4a910bf103b2184f8">gdImageReadStatus</a> *&#160;</td>
+          <td class="paramname"><em>status</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char **&#160;</td>
+          <td class="paramname"><em>format_name</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Read an image from a gdIOCtx with extended status information. </p>
+<p><a class="el" href="group__gdImageFileIO.html#ga5d6f144440000e5c1e1141e5ba1c2346" title="Read an image from a gdIOCtx with extended status information.">gdImageReadCtxEx()</a> is the extended form of <a class="el" href="group__gdImageFileIO.html#gaeebf8891705286f46089f276f228471d">gdImageReadCtx</a>. It accepts option flags and can report a gdImageReadStatus value and detected format name to the caller. The input context is borrowed for the duration of the call and is not closed.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">im</td><td>The image to write. </td></tr>
-    <tr><td class="paramname">size</td><td>Pointer to an integer that will receive the size of the returned buffer. </td></tr>
-    <tr><td class="paramname">quality</td><td>The JPEG quality (0-100). </td></tr>
-    <tr><td class="paramname">metadata</td><td>Pointer to a gdImageMetadata structure containing the metadata to include in the JPEG file.</td></tr>
+    <tr><td class="paramname">ctx</td><td>Pointer to the input gdIOCtx. </td></tr>
+    <tr><td class="paramname">flags</td><td>Bitmask of GD_IMAGE_READ_* flags. </td></tr>
+    <tr><td class="paramname">status</td><td>Optional pointer that receives the read status. </td></tr>
+    <tr><td class="paramname">format_name</td><td>Optional pointer that receives the detected format name. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>A pointer to the newly allocated buffer containing the JPEG data, or NULL on failure.</dd></dl>
-<p>Write an image as JPEG data to a memory buffer using write options.</p>
+<dl class="section return"><dt>Returns</dt><dd>A newly allocated image, or NULL on error. </dd></dl>
+
+</div>
+</div>
+<a id="ga68cd6116420d9eb1833e7ff6b0554385" name="ga68cd6116420d9eb1833e7ff6b0554385"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga68cd6116420d9eb1833e7ff6b0554385">&#9670;&#160;</a></span>gdImageReadFile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">gdImagePtr gdImageReadFile </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>filename</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Read an image file by probing its binary signature. </p>
+<p><a class="el" href="group__gdImageFileIO.html#ga68cd6116420d9eb1833e7ff6b0554385" title="Read an image file by probing its binary signature.">gdImageReadFile()</a> opens filename, reads the first bytes of the file, detects the image format by known binary signatures, and dispatches to the matching codec reader. It falls back to the filename-based XPM reader and FILE-based XBM reader for those formats because they do not have gdIOCtx readers.</p>
+<p>Supported detected formats depend on the codecs compiled into gd and include PNG, JPEG, GIF, BMP, TIFF, WebP, AVIF, HEIC, JXL, GD, GD2, QOI, XPM, and XBM. The returned image is caller-owned and must be destroyed with gdImageDestroy().</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">im</td><td>The image to write. </td></tr>
-    <tr><td class="paramname">size</td><td>Pointer to an integer that will receive the size of the returned buffer. </td></tr>
-    <tr><td class="paramname">options</td><td>Pointer to a <a class="el" href="structgdJpegWriteOptions.html" title="Options for writing JPEG data.">gdJpegWriteOptions</a> struct containing the desired write options.</td></tr>
+    <tr><td class="paramname">filename</td><td>Path to the input image file. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>A pointer to the newly allocated buffer containing the JPEG data, or NULL on failure.</dd></dl>
-<p>The image is borrowed for the duration of the call and must be a truecolor image. The returned buffer is caller-owned and must be freed with gdFree().</p>
+<dl class="section return"><dt>Returns</dt><dd>A newly allocated image, or NULL on error, unknown format, disabled codec, or decode failure. </dd></dl>
+
+</div>
+</div>
+<a id="gabc642b09927607e7e1911ef15a53421d" name="gabc642b09927607e7e1911ef15a53421d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gabc642b09927607e7e1911ef15a53421d">&#9670;&#160;</a></span>gdSupportsFileType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int gdSupportsFileType </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>filename</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>writing</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Test if a given file type is supported by GD. </p>
+<p><a class="el" href="group__gdImageFileIO.html#gabc642b09927607e7e1911ef15a53421d" title="Test if a given file type is supported by GD.">gdSupportsFileType()</a> tests the filename extension using the same extension table as <a class="el" href="group__gdImageFileIO.html#ga988c92e5bbabf4129d02d2bf26525431">gdImageCreateFromFile</a> and <a class="el" href="group__gdImageFileIO.html#gac5032d6888c5c8f3d8620ef754bc4d3c">gdImageFile</a>. The file does not need to exist. If writing is nonzero, the function returns true only when <a class="el" href="group__gdImageFileIO.html#gac5032d6888c5c8f3d8620ef754bc4d3c" title="Write an image to a file in the format indicated by the filename.">gdImageFile()</a> can write that extension; otherwise it returns true when <a class="el" href="group__gdImageFileIO.html#ga988c92e5bbabf4129d02d2bf26525431" title="Create an image from a file using the filename extension.">gdImageCreateFromFile()</a> can read that extension.</p>
+<p>Extension parsing has the same limitations as the extension-based helpers. Use <a class="el" href="group__gdImageFileIO.html#ga68cd6116420d9eb1833e7ff6b0554385">gdImageReadFile</a> when reading an actual file and reliable format detection matters.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">im</td><td>The image to write. </td></tr>
-    <tr><td class="paramname">size</td><td>Pointer to an integer that receives the returned buffer size.</td></tr>
+    <tr><td class="paramname">filename</td><td>Filename whose extension should be tested. </td></tr>
+    <tr><td class="paramname">writing</td><td>Nonzero to test write support; zero to test read support. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Returns a pointer to the newly allocated WebP buffer, or NULL on failure.</dd></dl>
-<p>The image is borrowed for the duration of the call and must be a truecolor image. The returned buffer is caller-owned and must be freed with gdFree().</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">im</td><td>The image to write. </td></tr>
-    <tr><td class="paramname">size</td><td>Pointer to an integer that receives the returned buffer size. </td></tr>
-    <tr><td class="paramname">quantization</td><td>WebP quality: -1 for default, 0-100 for lossy, or gdWebpLossless for lossless.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Returns a pointer to the newly allocated WebP buffer, or NULL on failure.</dd></dl>
-<p>The image is borrowed for the duration of the call and must be a truecolor image. The returned buffer is caller-owned and must be freed with gdFree().</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">im</td><td>The image to write. </td></tr>
-    <tr><td class="paramname">size</td><td>Pointer to an integer that receives the returned buffer size. </td></tr>
-    <tr><td class="paramname">options</td><td>Pointer to WebP write options, or NULL for defaults.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Returns a pointer to the newly allocated WebP buffer, or NULL on failure.</dd></dl>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000009">Deprecated:</a></b></dt><dd></dd></dl>
-<p>gdImageGd2Ptr() borrows im for the duration of the call. Pass cs as 0 to use GD2_CHUNKSIZE; otherwise values outside the GD2_CHUNKSIZE_MIN to GD2_CHUNKSIZE_MAX range are clamped. The public fmt values are GD2_FMT_RAW and GD2_FMT_COMPRESSED. On success, the returned buffer is owned by the caller and must be freed with gdFree().</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">im</td><td>The image to write. </td></tr>
-    <tr><td class="paramname">cs</td><td>Requested chunk size in pixels, or 0 for GD2_CHUNKSIZE. </td></tr>
-    <tr><td class="paramname">fmt</td><td>Output format, GD2_FMT_RAW or GD2_FMT_COMPRESSED. </td></tr>
-    <tr><td class="paramname">size</td><td>Output location for the returned buffer size in bytes. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>A newly allocated GD2 buffer, or NULL on error. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>GD_TRUE (1) if the file type is supported, GD_FALSE (0) if not. </dd></dl>
 
 </div>
 </div>

@@ -71,7 +71,8 @@ $(function() {
 
 <div class="header">
   <div class="summary">
-<a href="#enum-members">Enumerations</a>  </div>
+<a href="#enum-members">Enumerations</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">Quantization</div></div>
 </div><!--header-->
 <div class="contents">
@@ -84,6 +85,27 @@ Enumerations</h2></td></tr>
 , <a class="el" href="group__Color.html#ggadaf2f61f5e718575e1963b946bab621aa1f5895a804dc19f8e330b4f7a6717267">GD_QUANT_LIQ</a> = 3
  }</td></tr>
 <tr class="separator:gadaf2f61f5e718575e1963b946bab621a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:gad3325493cf739e6b01e87ff4e65fe7d6" id="r_gad3325493cf739e6b01e87ff4e65fe7d6"><td class="memItemLeft" align="right" valign="top">gdImagePtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Color.html#gad3325493cf739e6b01e87ff4e65fe7d6">gdImageNeuQuant</a> (gdImagePtr im, const int max_color, int sample_factor)</td></tr>
+<tr class="memdesc:gad3325493cf739e6b01e87ff4e65fe7d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new palette image from a truecolor image.  <br /></td></tr>
+<tr class="separator:gad3325493cf739e6b01e87ff4e65fe7d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga92b9f3ded472b4bdf334c9e0623a6bfe" id="r_ga92b9f3ded472b4bdf334c9e0623a6bfe"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Color.html#ga92b9f3ded472b4bdf334c9e0623a6bfe">gdImageTrueColorToPaletteSetMethod</a> (gdImagePtr im, int method, int speed)</td></tr>
+<tr class="memdesc:ga92b9f3ded472b4bdf334c9e0623a6bfe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Selects quantization method used for subsequent <a class="el" href="group__Color.html#ga337e1f771042ad480a4f191b8d309a7b">gdImageTrueColorToPalette</a> calls.  <br /></td></tr>
+<tr class="separator:ga92b9f3ded472b4bdf334c9e0623a6bfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadac6bc3743ca6cf2b1763c77c374b1c8" id="r_gadac6bc3743ca6cf2b1763c77c374b1c8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Color.html#gadac6bc3743ca6cf2b1763c77c374b1c8">gdImageTrueColorToPaletteSetQuality</a> (gdImagePtr im, int min_quality, int max_quality)</td></tr>
+<tr class="memdesc:gadac6bc3743ca6cf2b1763c77c374b1c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the quality range for subsequent <a class="el" href="group__Color.html#ga337e1f771042ad480a4f191b8d309a7b">gdImageTrueColorToPalette</a> calls.  <br /></td></tr>
+<tr class="separator:gadac6bc3743ca6cf2b1763c77c374b1c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa5bd6a6c927c417209bce9bfdb8975f9" id="r_gaa5bd6a6c927c417209bce9bfdb8975f9"><td class="memItemLeft" align="right" valign="top">gdImagePtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Color.html#gaa5bd6a6c927c417209bce9bfdb8975f9">gdImageCreatePaletteFromTrueColor</a> (gdImagePtr im, int ditherFlag, int colorsWanted)</td></tr>
+<tr class="memdesc:gaa5bd6a6c927c417209bce9bfdb8975f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a truecolor image to a palette-based image.  <br /></td></tr>
+<tr class="separator:gaa5bd6a6c927c417209bce9bfdb8975f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga337e1f771042ad480a4f191b8d309a7b" id="r_ga337e1f771042ad480a4f191b8d309a7b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Color.html#ga337e1f771042ad480a4f191b8d309a7b">gdImageTrueColorToPalette</a> (gdImagePtr im, int ditherFlag, int colorsWanted)</td></tr>
+<tr class="memdesc:ga337e1f771042ad480a4f191b8d309a7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a truecolor image to a palette image.  <br /></td></tr>
+<tr class="separator:ga337e1f771042ad480a4f191b8d309a7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac858dca59a2a23cb315ef829e64306a3" id="r_gac858dca59a2a23cb315ef829e64306a3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Color.html#gac858dca59a2a23cb315ef829e64306a3">gdImagePaletteToTrueColor</a> (gdImagePtr src)</td></tr>
+<tr class="memdesc:gac858dca59a2a23cb315ef829e64306a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a palette-based image to a truecolor image.  <br /></td></tr>
+<tr class="separator:gac858dca59a2a23cb315ef829e64306a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
@@ -99,7 +121,7 @@ Enumerations</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Note that <a class="el" href="group__Color.html#ggadaf2f61f5e718575e1963b946bab621aa4c48dd526c937e7ea6417d6b2b27a61c">GD_QUANT_JQUANT</a> does not retain the alpha channel, and <a class="el" href="group__Color.html#ggadaf2f61f5e718575e1963b946bab621aa61e30fa58a01ef7d6839731fad7b1a7d">GD_QUANT_NEUQUANT</a> does not support dithering.</p>
-<dl class="section see"><dt>See also</dt><dd>gdImageTrueColorToPaletteSetMethod </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__Color.html#ga92b9f3ded472b4bdf334c9e0623a6bfe" title="Selects quantization method used for subsequent gdImageTrueColorToPalette calls.">gdImageTrueColorToPaletteSetMethod</a> </dd></dl>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggadaf2f61f5e718575e1963b946bab621aa4ecd64387da5ad4f6b39f4e5ec79c799" name="ggadaf2f61f5e718575e1963b946bab621aa4ecd64387da5ad4f6b39f4e5ec79c799"></a>GD_QUANT_DEFAULT&#160;</td><td class="fielddoc"><p>Default quantization method </p>
 </td></tr>
@@ -110,6 +132,265 @@ Enumerations</h2></td></tr>
 <tr><td class="fieldname"><a id="ggadaf2f61f5e718575e1963b946bab621aa1f5895a804dc19f8e330b4f7a6717267" name="ggadaf2f61f5e718575e1963b946bab621aa1f5895a804dc19f8e330b4f7a6717267"></a>GD_QUANT_LIQ&#160;</td><td class="fielddoc"><p>libimagequant combination aiming for highest quality </p>
 </td></tr>
 </table>
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="gaa5bd6a6c927c417209bce9bfdb8975f9" name="gaa5bd6a6c927c417209bce9bfdb8975f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa5bd6a6c927c417209bce9bfdb8975f9">&#9670;&#160;</a></span>gdImageCreatePaletteFromTrueColor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">gdImagePtr gdImageCreatePaletteFromTrueColor </td>
+          <td>(</td>
+          <td class="paramtype">gdImagePtr&#160;</td>
+          <td class="paramname"><em>im</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>ditherFlag</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>colorsWanted</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Converts a truecolor image to a palette-based image. </p>
+<p>This function converts a truecolor image to a palette-based image using a high-quality two-pass quantization routine which attempts to preserve alpha channel information as well as R/G/B color information when creating a palette. If ditherFlag is set, the image will be dithered to approximate colors better, at the expense of some obvious "speckling." colorsWanted can be anything up to 256. If the original source image includes photographic information or anything that came out of a JPEG, 256 is strongly recommended.</p>
+<p>Better yet, don't use these function &ndash; write real truecolor PNGs and JPEGs. The disk space gain of conversion to palette is not great (for small images it can be negative) and the quality loss is ugly.</p>
+<p>DIFFERENCES: <a class="el" href="group__Color.html#gaa5bd6a6c927c417209bce9bfdb8975f9">gdImageCreatePaletteFromTrueColor</a> creates and returns a new image. <a class="el" href="group__Color.html#ga337e1f771042ad480a4f191b8d309a7b">gdImageTrueColorToPalette</a> modifies an existing image, and the truecolor pixels are discarded.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">im</td><td>The image. </td></tr>
+    <tr><td class="paramname">dither</td><td>Whether dithering should be applied. </td></tr>
+    <tr><td class="paramname">colorsWanted</td><td>The number of desired palette entries.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a newly created palette image on success, NULL on failure. </dd></dl>
+
+</div>
+</div>
+<a id="gad3325493cf739e6b01e87ff4e65fe7d6" name="gad3325493cf739e6b01e87ff4e65fe7d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad3325493cf739e6b01e87ff4e65fe7d6">&#9670;&#160;</a></span>gdImageNeuQuant()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">gdImagePtr gdImageNeuQuant </td>
+          <td>(</td>
+          <td class="paramtype">gdImagePtr&#160;</td>
+          <td class="paramname"><em>im</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>max_color</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>sample_factor</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Creates a new palette image from a truecolor image. </p>
+<p>This is the same as calling <a class="el" href="group__Color.html#gaa5bd6a6c927c417209bce9bfdb8975f9">gdImageCreatePaletteFromTrueColor</a> with the quantization method <a class="el" href="group__Color.html#ggadaf2f61f5e718575e1963b946bab621aa61e30fa58a01ef7d6839731fad7b1a7d">GD_QUANT_NEUQUANT</a>.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">im</td><td>- The image. </td></tr>
+    <tr><td class="paramname">max_color</td><td>- The number of desired palette entries. </td></tr>
+    <tr><td class="paramname">sample_factor</td><td>- The quantization precision between 1 (highest quality) and 10 (fastest).</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A newly create palette image; NULL on failure. </dd></dl>
+
+</div>
+</div>
+<a id="gac858dca59a2a23cb315ef829e64306a3" name="gac858dca59a2a23cb315ef829e64306a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac858dca59a2a23cb315ef829e64306a3">&#9670;&#160;</a></span>gdImagePaletteToTrueColor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int gdImagePaletteToTrueColor </td>
+          <td>(</td>
+          <td class="paramtype">gdImagePtr&#160;</td>
+          <td class="paramname"><em>src</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Converts a palette-based image to a truecolor image. </p>
+<p>This function converts a palette-based image to a truecolor image. The palette is discarded, and the image is converted to truecolor. The alpha channel information is preserved. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">src</td><td>The source image. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Non-zero if the conversion succeeded, zero otherwise. </dd></dl>
+
+</div>
+</div>
+<a id="ga337e1f771042ad480a4f191b8d309a7b" name="ga337e1f771042ad480a4f191b8d309a7b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga337e1f771042ad480a4f191b8d309a7b">&#9670;&#160;</a></span>gdImageTrueColorToPalette()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int gdImageTrueColorToPalette </td>
+          <td>(</td>
+          <td class="paramtype">gdImagePtr&#160;</td>
+          <td class="paramname"><em>im</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>ditherFlag</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>colorsWanted</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Converts a truecolor image to a palette image. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">im</td><td>The image. </td></tr>
+    <tr><td class="paramname">dither</td><td>Whether dithering should be applied. </td></tr>
+    <tr><td class="paramname">colorsWanted</td><td>The number of desired palette entries.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Non-zero if the conversion succeeded, zero otherwise.</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__Color.html#gaa5bd6a6c927c417209bce9bfdb8975f9" title="Converts a truecolor image to a palette-based image.">gdImageCreatePaletteFromTrueColor</a> <a class="el" href="group__Color.html#ga92b9f3ded472b4bdf334c9e0623a6bfe" title="Selects quantization method used for subsequent gdImageTrueColorToPalette calls.">gdImageTrueColorToPaletteSetMethod</a> <a class="el" href="group__Color.html#gac858dca59a2a23cb315ef829e64306a3" title="Converts a palette-based image to a truecolor image.">gdImagePaletteToTrueColor</a> </dd></dl>
+
+</div>
+</div>
+<a id="ga92b9f3ded472b4bdf334c9e0623a6bfe" name="ga92b9f3ded472b4bdf334c9e0623a6bfe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga92b9f3ded472b4bdf334c9e0623a6bfe">&#9670;&#160;</a></span>gdImageTrueColorToPaletteSetMethod()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int gdImageTrueColorToPaletteSetMethod </td>
+          <td>(</td>
+          <td class="paramtype">gdImagePtr&#160;</td>
+          <td class="paramname"><em>im</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>method</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>speed</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Selects quantization method used for subsequent <a class="el" href="group__Color.html#ga337e1f771042ad480a4f191b8d309a7b">gdImageTrueColorToPalette</a> calls. </p>
+<p>See <a class="el" href="group__Color.html#gadaf2f61f5e718575e1963b946bab621a">gdPaletteQuantizationMethod</a> enum (e.g. <a class="el" href="group__Color.html#ggadaf2f61f5e718575e1963b946bab621aa61e30fa58a01ef7d6839731fad7b1a7d">GD_QUANT_NEUQUANT</a>, <a class="el" href="group__Color.html#ggadaf2f61f5e718575e1963b946bab621aa1f5895a804dc19f8e330b4f7a6717267">GD_QUANT_LIQ</a>). Speed is from 1 (highest quality) to 10 (fastest). Speed 0 selects method-specific default (recommended).</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">im</td><td>The image to set the quantization method for. </td></tr>
+    <tr><td class="paramname">method</td><td>The quantization method to use. </td></tr>
+    <tr><td class="paramname">speed</td><td>The speed/quality tradeoff for the selected method.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>FALSE if the given method is invalid or not available. </dd></dl>
+
+</div>
+</div>
+<a id="gadac6bc3743ca6cf2b1763c77c374b1c8" name="gadac6bc3743ca6cf2b1763c77c374b1c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gadac6bc3743ca6cf2b1763c77c374b1c8">&#9670;&#160;</a></span>gdImageTrueColorToPaletteSetQuality()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gdImageTrueColorToPaletteSetQuality </td>
+          <td>(</td>
+          <td class="paramtype">gdImagePtr&#160;</td>
+          <td class="paramname"><em>im</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>min_quality</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>max_quality</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the quality range for subsequent <a class="el" href="group__Color.html#ga337e1f771042ad480a4f191b8d309a7b">gdImageTrueColorToPalette</a> calls. </p>
+<p>Chooses quality range that subsequent call to <a class="el" href="group__Color.html#ga337e1f771042ad480a4f191b8d309a7b">gdImageTrueColorToPalette</a> will aim for. Min and max quality is in range 1-100 (1 = ugly, 100 = perfect). Max must be higher than min. If palette cannot represent image with at least min_quality, then image will remain true-color. If palette can represent image with quality better than max_quality, then lower number of colors will be used. This function has effect only when <a class="el" href="group__Color.html#ggadaf2f61f5e718575e1963b946bab621aa1f5895a804dc19f8e330b4f7a6717267">GD_QUANT_LIQ</a> method has been selected and the source image is true-color.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">im</td><td>The image. </td></tr>
+    <tr><td class="paramname">min_quality</td><td>The minimum quality in range 1-100 (1 = ugly, 100 = perfect). If the palette cannot represent the image with at least min_quality, then no conversion is done. </td></tr>
+    <tr><td class="paramname">max_quality</td><td>The maximum quality in range 1-100 (1 = ugly, 100 = perfect), which must be higher than the min_quality. If the palette can represent the image with a quality better than max_quality, then fewer colors than requested will be used. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

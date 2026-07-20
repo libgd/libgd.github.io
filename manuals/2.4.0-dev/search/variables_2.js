@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['canvasheight_0',['canvasheight',['../structgdJxlAnimWriteOptions.html#acb5557e4982cb7fea223df72d4608895',1,'gdJxlAnimWriteOptions::canvasHeight'],['../structgdWebpAnimWriteOptions.html#ad847fbb0442b9db5d56b94fcfc692d77',1,'gdWebpAnimWriteOptions::canvasHeight']]],
-  ['canvaswidth_1',['canvaswidth',['../structgdWebpAnimWriteOptions.html#a71026e4b5601923cdbd219cb416b1ea7',1,'gdWebpAnimWriteOptions::canvasWidth'],['../structgdJxlAnimWriteOptions.html#a4364f1cba971e6a09e36a1b8b524f011',1,'gdJxlAnimWriteOptions::canvasWidth']]],
+  ['canvas_5fheight_0',['canvas_height',['../structgdJxlAnimWriteOptions.html#a0a282056ff1ae6dc1ce45220c9eca02b',1,'gdJxlAnimWriteOptions::canvas_height'],['../structgdWebpAnimWriteOptions.html#ae16cf68e5699bb0d88d1fc3b3c03c017',1,'gdWebpAnimWriteOptions::canvas_height']]],
+  ['canvas_5fwidth_1',['canvas_width',['../structgdWebpAnimWriteOptions.html#a9ff17e88e8bf9ba8a80f61ac9671447a',1,'gdWebpAnimWriteOptions::canvas_width'],['../structgdJxlAnimWriteOptions.html#a380f7cac3e373956d0fd2ac311d33f8c',1,'gdJxlAnimWriteOptions::canvas_width']]],
   ['channels_2',['channels',['../structgdQoiInfo.html#a44f9b53420b5a6e66206523e668563ce',1,'gdQoiInfo']]],
   ['charmap_3',['charmap',['../structgdFTStringExtra.html#ac53c36eb957b8d532687e0444cb8604a',1,'gdFTStringExtra']]],
   ['chroma_4',['chroma',['../structgdHeifWriteOptions.html#ade2224e8159265bad76b201884347901',1,'gdHeifWriteOptions']]],
@@ -10,9 +10,9 @@ var searchData=
   ['code_7',['code',['../structgdUhdrError.html#a49f415ea1fd37263a7de59fe31c0b021',1,'gdUhdrError::code'],['../structgdTextError.html#a3dfe0c6710e7eb7a091cbcfc05c2dc8f',1,'gdTextError::code']]],
   ['codec_8',['codec',['../structgdHeifWriteOptions.html#a8bcd537040be297e6ba26775d61e28dd',1,'gdHeifWriteOptions']]],
   ['color_9',['color',['../structgdAutoCropOptions.html#a92b0b93df656cf96398b85b7442ee237',1,'gdAutoCropOptions']]],
-  ['color_5fspace_10',['color_space',['../structgdJpegInfo.html#ab40379ccdac8ee58f2f2d91ee896d837',1,'gdJpegInfo']]],
-  ['color_5ftype_11',['color_type',['../structgdPngInfo.html#a77347318006fbef9560c9827d1186e45',1,'gdPngInfo']]],
-  ['colorresolution_12',['colorResolution',['../structgdGifInfo.html#a2185d562ec975cdac0af9eec1f51e0be',1,'gdGifInfo']]],
+  ['color_5fresolution_10',['color_resolution',['../structgdGifInfo.html#ad3f85abe92c98cd48cfbe6fc7b4f4770',1,'gdGifInfo']]],
+  ['color_5fspace_11',['color_space',['../structgdJpegInfo.html#ab40379ccdac8ee58f2f2d91ee896d837',1,'gdJpegInfo']]],
+  ['color_5ftype_12',['color_type',['../structgdPngInfo.html#a77347318006fbef9560c9827d1186e45',1,'gdPngInfo']]],
   ['colors_13',['colors',['../structgdScatter.html#a54af3d3df9325b89daa171647604eedf',1,'gdScatter']]],
   ['colors_5fused_14',['colors_used',['../structgdBmpInfo.html#a229aa00fadcb74c8ae3ec218974164de',1,'gdBmpInfo']]],
   ['colorspace_15',['colorspace',['../structgdQoiInfo.html#a3f6f64769e8137ec8a7103cf61ee57ce',1,'gdQoiInfo::colorspace'],['../structgdQoiWriteOptions.html#af73cfe06626a7d43ac29d4b67967dd7d',1,'gdQoiWriteOptions::colorspace'],['../structgdTiffWriteOptions.html#add287d21caf41016b92556622e886b3a',1,'gdTiffWriteOptions::colorspace']]],

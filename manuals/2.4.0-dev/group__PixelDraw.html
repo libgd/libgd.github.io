@@ -72,7 +72,9 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Data Structures</a> &#124;
-<a href="#typedef-members">Typedefs</a>  </div>
+<a href="#define-members">Macros</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">lines, ellipses, polygons and Arc Drawing pixel operations</div></div>
 </div><!--header-->
 <div class="contents">
@@ -86,15 +88,161 @@ Data Structures</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A rectangle in the coordinate space of the image.  <a href="structgdRect.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:ga2febcb42e9e1b298c2f30492c2d0ca11" id="r_ga2febcb42e9e1b298c2f30492c2d0ca11"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__PixelDraw.html#ga2febcb42e9e1b298c2f30492c2d0ca11">gdArc</a>&#160;&#160;&#160;0</td></tr>
+<tr class="memdesc:ga2febcb42e9e1b298c2f30492c2d0ca11"><td class="mdescLeft">&#160;</td><td class="mdescRight">Style flags for drawing arcs and chords Style is a bitwise OR ( | operator ) of these. gdArc and gdChord are mutually exclusive; gdChord just connects the starting and ending angles with a straight line, while gdArc produces a rounded edge. gdPie is a synonym for gdArc. gdNoFill indicates that the arc or chord should be outlined, not filled. gdEdged, used together with gdNoFill, indicates that the beginning and ending angles should be connected to the center; this is a good way to outline (rather than fill) a 'pie slice'.  <br /></td></tr>
+<tr class="separator:ga2febcb42e9e1b298c2f30492c2d0ca11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab5c8cbbb1c42df6129ef14bd66a610a4" id="r_gab5c8cbbb1c42df6129ef14bd66a610a4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__PixelDraw.html#gab5c8cbbb1c42df6129ef14bd66a610a4">gdPie</a>&#160;&#160;&#160;<a class="el" href="group__PixelDraw.html#ga2febcb42e9e1b298c2f30492c2d0ca11">gdArc</a></td></tr>
+<tr class="separator:gab5c8cbbb1c42df6129ef14bd66a610a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacafc2c11cdb414b3a95e0bd477e7f364" id="r_gacafc2c11cdb414b3a95e0bd477e7f364"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__PixelDraw.html#gacafc2c11cdb414b3a95e0bd477e7f364">gdChord</a>&#160;&#160;&#160;1</td></tr>
+<tr class="separator:gacafc2c11cdb414b3a95e0bd477e7f364"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga98618bc4503a620563d9f7a81a7970c1" id="r_ga98618bc4503a620563d9f7a81a7970c1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__PixelDraw.html#ga98618bc4503a620563d9f7a81a7970c1">gdNoFill</a>&#160;&#160;&#160;2</td></tr>
+<tr class="separator:ga98618bc4503a620563d9f7a81a7970c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2b66030064f95a63c86b8d40076bd323" id="r_ga2b66030064f95a63c86b8d40076bd323"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__PixelDraw.html#ga2b66030064f95a63c86b8d40076bd323">gdEdged</a>&#160;&#160;&#160;4</td></tr>
+<tr class="separator:ga2b66030064f95a63c86b8d40076bd323"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr class="memitem:gacb00d41e2f02212c8ae177faae9c15f6" id="r_gacb00d41e2f02212c8ae177faae9c15f6"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structgdPoint.html">gdPoint</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__PixelDraw.html#gacb00d41e2f02212c8ae177faae9c15f6">gdPointPtr</a></td></tr>
 <tr class="separator:gacb00d41e2f02212c8ae177faae9c15f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga28f3fe82b4806fe16159bb3fd34cf655" id="r_ga28f3fe82b4806fe16159bb3fd34cf655"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structgdRect.html">gdRect</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__PixelDraw.html#ga28f3fe82b4806fe16159bb3fd34cf655">gdRectPtr</a></td></tr>
 <tr class="separator:ga28f3fe82b4806fe16159bb3fd34cf655"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:gaa7abdc954dc63f6a8160cd7359589604" id="r_gaa7abdc954dc63f6a8160cd7359589604"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__PixelDraw.html#gaa7abdc954dc63f6a8160cd7359589604">gdImagePolygon</a> (gdImagePtr im, <a class="el" href="group__PixelDraw.html#gacb00d41e2f02212c8ae177faae9c15f6">gdPointPtr</a> p, int n, int c)</td></tr>
+<tr class="memdesc:gaa7abdc954dc63f6a8160cd7359589604"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws a closed polygon.  <br /></td></tr>
+<tr class="separator:gaa7abdc954dc63f6a8160cd7359589604"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4b592f85911a3f09cd1eacd6df2b6b6d" id="r_ga4b592f85911a3f09cd1eacd6df2b6b6d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__PixelDraw.html#ga4b592f85911a3f09cd1eacd6df2b6b6d">gdImageOpenPolygon</a> (gdImagePtr im, <a class="el" href="group__PixelDraw.html#gacb00d41e2f02212c8ae177faae9c15f6">gdPointPtr</a> p, int n, int c)</td></tr>
+<tr class="memdesc:ga4b592f85911a3f09cd1eacd6df2b6b6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws an open polygon.  <br /></td></tr>
+<tr class="separator:ga4b592f85911a3f09cd1eacd6df2b6b6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga07960244fc3522d791b07aff1cafe6fa" id="r_ga07960244fc3522d791b07aff1cafe6fa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__PixelDraw.html#ga07960244fc3522d791b07aff1cafe6fa">gdImageFilledPolygon</a> (gdImagePtr im, <a class="el" href="group__PixelDraw.html#gacb00d41e2f02212c8ae177faae9c15f6">gdPointPtr</a> p, int n, int c)</td></tr>
+<tr class="memdesc:ga07960244fc3522d791b07aff1cafe6fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws a filled polygon.  <br /></td></tr>
+<tr class="separator:ga07960244fc3522d791b07aff1cafe6fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga332a1ef614f917e3788a4681999d33aa" id="r_ga332a1ef614f917e3788a4681999d33aa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__PixelDraw.html#ga332a1ef614f917e3788a4681999d33aa">gdImageFilledArc</a> (gdImagePtr im, int cx, int cy, int w, int h, int s, int e, int color, int style)</td></tr>
+<tr class="memdesc:ga332a1ef614f917e3788a4681999d33aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws a filled arc or a filled chord.  <br /></td></tr>
+<tr class="separator:ga332a1ef614f917e3788a4681999d33aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8c52aba285a20064e4a242ec2b3afcc8" id="r_ga8c52aba285a20064e4a242ec2b3afcc8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__PixelDraw.html#ga8c52aba285a20064e4a242ec2b3afcc8">gdImageArc</a> (gdImagePtr im, int cx, int cy, int w, int h, int s, int e, int color)</td></tr>
+<tr class="memdesc:ga8c52aba285a20064e4a242ec2b3afcc8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws an arc or a chord.  <br /></td></tr>
+<tr class="separator:ga8c52aba285a20064e4a242ec2b3afcc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8fd283b5b21cce5decd2ecff4a936d51" id="r_ga8fd283b5b21cce5decd2ecff4a936d51"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__PixelDraw.html#ga8fd283b5b21cce5decd2ecff4a936d51">gdImageEllipse</a> (gdImagePtr im, int cx, int cy, int w, int h, int color)</td></tr>
+<tr class="memdesc:ga8fd283b5b21cce5decd2ecff4a936d51"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw an ellipse, stroke only.  <br /></td></tr>
+<tr class="separator:ga8fd283b5b21cce5decd2ecff4a936d51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaac2667c4ee93e6bca0df616e8948820e" id="r_gaac2667c4ee93e6bca0df616e8948820e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__PixelDraw.html#gaac2667c4ee93e6bca0df616e8948820e">gdImageFilledEllipse</a> (gdImagePtr im, int cx, int cy, int w, int h, int color)</td></tr>
+<tr class="memdesc:gaac2667c4ee93e6bca0df616e8948820e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw a filled ellipse.  <br /></td></tr>
+<tr class="separator:gaac2667c4ee93e6bca0df616e8948820e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaeb1708ec7474fe28627888100f381530" id="r_gaeb1708ec7474fe28627888100f381530"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__PixelDraw.html#gaeb1708ec7474fe28627888100f381530">gdImageAABlend</a> (gdImagePtr im)</td></tr>
+<tr class="separator:gaeb1708ec7474fe28627888100f381530"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga084f5a75d82c7ae9126fb0846051802e" id="r_ga084f5a75d82c7ae9126fb0846051802e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__PixelDraw.html#ga084f5a75d82c7ae9126fb0846051802e">gdImageRectangle</a> (gdImagePtr im, int x1, int y1, int x2, int y2, int color)</td></tr>
+<tr class="memdesc:ga084f5a75d82c7ae9126fb0846051802e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws a rectangle.  <br /></td></tr>
+<tr class="separator:ga084f5a75d82c7ae9126fb0846051802e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1e534e750e1b336b8961a62ebec88511" id="r_ga1e534e750e1b336b8961a62ebec88511"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__PixelDraw.html#ga1e534e750e1b336b8961a62ebec88511">gdImageFilledRectangle</a> (gdImagePtr im, int x1, int y1, int x2, int y2, int color)</td></tr>
+<tr class="memdesc:ga1e534e750e1b336b8961a62ebec88511"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws a filled rectangle.  <br /></td></tr>
+<tr class="separator:ga1e534e750e1b336b8961a62ebec88511"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5ef97f1e39ad5a87d89ad72d842087c6" id="r_ga5ef97f1e39ad5a87d89ad72d842087c6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__PixelDraw.html#ga5ef97f1e39ad5a87d89ad72d842087c6">gdImageSetClip</a> (gdImagePtr im, int x1, int y1, int x2, int y2)</td></tr>
+<tr class="memdesc:ga5ef97f1e39ad5a87d89ad72d842087c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the clipping rectangle.  <br /></td></tr>
+<tr class="separator:ga5ef97f1e39ad5a87d89ad72d842087c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa585ff9864ff9ba2b05d0ad14ae2163c" id="r_gaa585ff9864ff9ba2b05d0ad14ae2163c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__PixelDraw.html#gaa585ff9864ff9ba2b05d0ad14ae2163c">gdImageGetClip</a> (gdImagePtr im, int *x1P, int *y1P, int *x2P, int *y2P)</td></tr>
+<tr class="memdesc:gaa585ff9864ff9ba2b05d0ad14ae2163c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the current clipping rectangle.  <br /></td></tr>
+<tr class="separator:gaa585ff9864ff9ba2b05d0ad14ae2163c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga27fe561479bdac54fb6bbc4c7a873874" id="r_ga27fe561479bdac54fb6bbc4c7a873874"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__PixelDraw.html#ga27fe561479bdac54fb6bbc4c7a873874">gdImageSetBrush</a> (gdImagePtr im, gdImagePtr brush)</td></tr>
+<tr class="memdesc:ga27fe561479bdac54fb6bbc4c7a873874"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the brush for following drawing operations.  <br /></td></tr>
+<tr class="separator:ga27fe561479bdac54fb6bbc4c7a873874"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga03fb8fa65d899b57876a5b2d891d20f0" id="r_ga03fb8fa65d899b57876a5b2d891d20f0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__PixelDraw.html#ga03fb8fa65d899b57876a5b2d891d20f0">gdImageSetTile</a> (gdImagePtr im, gdImagePtr tile)</td></tr>
+<tr class="memdesc:ga03fb8fa65d899b57876a5b2d891d20f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the tile for following drawing operations.  <br /></td></tr>
+<tr class="separator:ga03fb8fa65d899b57876a5b2d891d20f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4fee24e02734094ffdc2a1b7c6140fd0" id="r_ga4fee24e02734094ffdc2a1b7c6140fd0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__PixelDraw.html#ga4fee24e02734094ffdc2a1b7c6140fd0">gdImageSetAntiAliased</a> (gdImagePtr im, int c)</td></tr>
+<tr class="memdesc:ga4fee24e02734094ffdc2a1b7c6140fd0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the color for subsequent anti-aliased drawing.  <br /></td></tr>
+<tr class="separator:ga4fee24e02734094ffdc2a1b7c6140fd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6c9545e483665aca93863a017fd13bbf" id="r_ga6c9545e483665aca93863a017fd13bbf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__PixelDraw.html#ga6c9545e483665aca93863a017fd13bbf">gdImageSetAntiAliasedDontBlend</a> (gdImagePtr im, int c, int dont_blend)</td></tr>
+<tr class="separator:ga6c9545e483665aca93863a017fd13bbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabba8cd1e1e3587c43b8e24a8d974d26e" id="r_gabba8cd1e1e3587c43b8e24a8d974d26e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__PixelDraw.html#gabba8cd1e1e3587c43b8e24a8d974d26e">gdImageSetStyle</a> (gdImagePtr im, int *style, int noOfPixels)</td></tr>
+<tr class="memdesc:gabba8cd1e1e3587c43b8e24a8d974d26e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the style for following drawing operations.  <br /></td></tr>
+<tr class="separator:gabba8cd1e1e3587c43b8e24a8d974d26e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga938ac6a33239cb304782dc1c19e287bd" id="r_ga938ac6a33239cb304782dc1c19e287bd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__PixelDraw.html#ga938ac6a33239cb304782dc1c19e287bd">gdImageSetThickness</a> (gdImagePtr im, int thickness)</td></tr>
+<tr class="separator:ga938ac6a33239cb304782dc1c19e287bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <dl class="section note"><dt>Note</dt><dd>2.4+ brings a 2D Vector APIs with high quality rendering and options. Similar to Canvas 2D APIs. We recommend it for new usages. </dd></dl>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="ga2febcb42e9e1b298c2f30492c2d0ca11" name="ga2febcb42e9e1b298c2f30492c2d0ca11"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2febcb42e9e1b298c2f30492c2d0ca11">&#9670;&#160;</a></span>gdArc</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define gdArc&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Style flags for drawing arcs and chords Style is a bitwise OR ( | operator ) of these. gdArc and gdChord are mutually exclusive; gdChord just connects the starting and ending angles with a straight line, while gdArc produces a rounded edge. gdPie is a synonym for gdArc. gdNoFill indicates that the arc or chord should be outlined, not filled. gdEdged, used together with gdNoFill, indicates that the beginning and ending angles should be connected to the center; this is a good way to outline (rather than fill) a 'pie slice'. </p>
+<p>mutually exclusive with gdChord </p>
+
+</div>
+</div>
+<a id="gacafc2c11cdb414b3a95e0bd477e7f364" name="gacafc2c11cdb414b3a95e0bd477e7f364"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gacafc2c11cdb414b3a95e0bd477e7f364">&#9670;&#160;</a></span>gdChord</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define gdChord&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>mutually exclusive with gdArc </p>
+
+</div>
+</div>
+<a id="ga2b66030064f95a63c86b8d40076bd323" name="ga2b66030064f95a63c86b8d40076bd323"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2b66030064f95a63c86b8d40076bd323">&#9670;&#160;</a></span>gdEdged</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define gdEdged&#160;&#160;&#160;4</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>used together with gdNoFill, indicates that the beginning and ending angles should be connected to the center </p>
+
+</div>
+</div>
+<a id="ga98618bc4503a620563d9f7a81a7970c1" name="ga98618bc4503a620563d9f7a81a7970c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga98618bc4503a620563d9f7a81a7970c1">&#9670;&#160;</a></span>gdNoFill</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define gdNoFill&#160;&#160;&#160;2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>indicates that the arc or chord should be outlined, not filled </p>
+
+</div>
+</div>
+<a id="gab5c8cbbb1c42df6129ef14bd66a610a4" name="gab5c8cbbb1c42df6129ef14bd66a610a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab5c8cbbb1c42df6129ef14bd66a610a4">&#9670;&#160;</a></span>gdPie</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define gdPie&#160;&#160;&#160;<a class="el" href="group__PixelDraw.html#ga2febcb42e9e1b298c2f30492c2d0ca11">gdArc</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>synonym for gdArc </p>
+
+</div>
+</div>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a id="gacb00d41e2f02212c8ae177faae9c15f6" name="gacb00d41e2f02212c8ae177faae9c15f6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gacb00d41e2f02212c8ae177faae9c15f6">&#9670;&#160;</a></span>gdPointPtr</h2>
@@ -123,6 +271,985 @@ Typedefs</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>A pointer to a <a class="el" href="structgdRect.html">gdRect</a>. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="gaeb1708ec7474fe28627888100f381530" name="gaeb1708ec7474fe28627888100f381530"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaeb1708ec7474fe28627888100f381530">&#9670;&#160;</a></span>gdImageAABlend()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gdImageAABlend </td>
+          <td>(</td>
+          <td class="paramtype">gdImagePtr&#160;</td>
+          <td class="paramname"><em>im</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Group: Primitives </p>
+
+</div>
+</div>
+<a id="ga8c52aba285a20064e4a242ec2b3afcc8" name="ga8c52aba285a20064e4a242ec2b3afcc8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8c52aba285a20064e4a242ec2b3afcc8">&#9670;&#160;</a></span>gdImageArc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gdImageArc </td>
+          <td>(</td>
+          <td class="paramtype">gdImagePtr&#160;</td>
+          <td class="paramname"><em>im</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>cx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>cy</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>w</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>h</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>s</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>e</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>color</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Draws an arc or a chord. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">im</td><td>The image. </td></tr>
+    <tr><td class="paramname">cx</td><td>The x-coordinate of the center. </td></tr>
+    <tr><td class="paramname">cy</td><td>The y-coordinate of the center. </td></tr>
+    <tr><td class="paramname">w</td><td>The width of the arc. </td></tr>
+    <tr><td class="paramname">h</td><td>The height of the arc. </td></tr>
+    <tr><td class="paramname">s</td><td>The starting angle in degrees. </td></tr>
+    <tr><td class="paramname">e</td><td>The ending angle in degrees. </td></tr>
+    <tr><td class="paramname">color</td><td>The color of the arc. A color identifier created with one of the image color allocate functions. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__PixelDraw.html#ga332a1ef614f917e3788a4681999d33aa" title="Draws a filled arc or a filled chord.">gdImageFilledArc</a> </dd></dl>
+<p>&lt; indicates that the arc or chord should be outlined, not filled</p>
+
+</div>
+</div>
+<a id="ga8fd283b5b21cce5decd2ecff4a936d51" name="ga8fd283b5b21cce5decd2ecff4a936d51"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8fd283b5b21cce5decd2ecff4a936d51">&#9670;&#160;</a></span>gdImageEllipse()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gdImageEllipse </td>
+          <td>(</td>
+          <td class="paramtype">gdImagePtr&#160;</td>
+          <td class="paramname"><em>im</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>cx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>cy</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>w</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>h</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>color</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Draw an ellipse, stroke only. </p>
+<dl class="section note"><dt>Note</dt><dd>This function does not support <a class="el" href="group__PixelDraw.html#ga938ac6a33239cb304782dc1c19e287bd">gdImageSetThickness</a>. GD 3.0 supports actual 2D vectors operation, you may rely on it if you need better 2D drawing operations.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">im</td><td>The destination image. </td></tr>
+    <tr><td class="paramname">cx</td><td>x-coordinate of the center. </td></tr>
+    <tr><td class="paramname">cy</td><td>y-coordinate of the center. </td></tr>
+    <tr><td class="paramname">w</td><td>The ellipse width. </td></tr>
+    <tr><td class="paramname">h</td><td>The ellipse height. </td></tr>
+    <tr><td class="paramname">color</td><td>The color of the ellipse. A color identifier created with one of the image color allocate functions.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__PixelDraw.html#gaac2667c4ee93e6bca0df616e8948820e" title="Draw a filled ellipse.">gdImageFilledEllipse</a> </dd></dl>
+
+</div>
+</div>
+<a id="ga332a1ef614f917e3788a4681999d33aa" name="ga332a1ef614f917e3788a4681999d33aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga332a1ef614f917e3788a4681999d33aa">&#9670;&#160;</a></span>gdImageFilledArc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gdImageFilledArc </td>
+          <td>(</td>
+          <td class="paramtype">gdImagePtr&#160;</td>
+          <td class="paramname"><em>im</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>cx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>cy</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>w</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>h</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>s</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>e</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>color</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>style</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Draws a filled arc or a filled chord. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">im</td><td>The image. </td></tr>
+    <tr><td class="paramname">cx</td><td>The x-coordinate of the center. </td></tr>
+    <tr><td class="paramname">cy</td><td>The y-coordinate of the center. </td></tr>
+    <tr><td class="paramname">w</td><td>The width of the arc. </td></tr>
+    <tr><td class="paramname">h</td><td>The height of the arc. </td></tr>
+    <tr><td class="paramname">s</td><td>The starting angle in degrees. </td></tr>
+    <tr><td class="paramname">e</td><td>The ending angle in degrees. </td></tr>
+    <tr><td class="paramname">color</td><td>The color of the arc. A color identifier created with one of the image color allocate functions. </td></tr>
+    <tr><td class="paramname">style</td><td>The style of the arc. A bitwise OR of gdArc,</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__PixelDraw.html#ga8c52aba285a20064e4a242ec2b3afcc8" title="Draws an arc or a chord.">gdImageArc</a> </dd></dl>
+<p>&lt; mutually exclusive with gdArc</p>
+<p>&lt; indicates that the arc or chord should be outlined, not filled</p>
+<p>&lt; mutually exclusive with gdArc</p>
+<p>&lt; indicates that the arc or chord should be outlined, not filled</p>
+<p>&lt; mutually exclusive with gdArc</p>
+<p>&lt; indicates that the arc or chord should be outlined, not filled</p>
+<p>&lt; used together with gdNoFill, indicates that the beginning and ending angles should be connected to the center</p>
+<p>&lt; indicates that the arc or chord should be outlined, not filled</p>
+<p>&lt; used together with gdNoFill, indicates that the beginning and ending angles should be connected to the center</p>
+
+</div>
+</div>
+<a id="gaac2667c4ee93e6bca0df616e8948820e" name="gaac2667c4ee93e6bca0df616e8948820e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaac2667c4ee93e6bca0df616e8948820e">&#9670;&#160;</a></span>gdImageFilledEllipse()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gdImageFilledEllipse </td>
+          <td>(</td>
+          <td class="paramtype">gdImagePtr&#160;</td>
+          <td class="paramname"><em>im</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>cx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>cy</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>w</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>h</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>color</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Draw a filled ellipse. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">im</td><td>The destination image. </td></tr>
+    <tr><td class="paramname">cx</td><td>x-coordinate of the center. </td></tr>
+    <tr><td class="paramname">cy</td><td>y-coordinate of the center. </td></tr>
+    <tr><td class="paramname">w</td><td>The ellipse width. </td></tr>
+    <tr><td class="paramname">h</td><td>The ellipse height. </td></tr>
+    <tr><td class="paramname">color</td><td>The color of the ellipse. A color identifier created with one of the image color allocate functions. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga07960244fc3522d791b07aff1cafe6fa" name="ga07960244fc3522d791b07aff1cafe6fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga07960244fc3522d791b07aff1cafe6fa">&#9670;&#160;</a></span>gdImageFilledPolygon()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gdImageFilledPolygon </td>
+          <td>(</td>
+          <td class="paramtype">gdImagePtr&#160;</td>
+          <td class="paramname"><em>im</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__PixelDraw.html#gacb00d41e2f02212c8ae177faae9c15f6">gdPointPtr</a>&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>c</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Draws a filled polygon. </p>
+<p>The polygon is filled using the even-odd fillrule what can leave unfilled regions inside of self-intersecting polygons. This behavior might change in a future version.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">im</td><td>The image. </td></tr>
+    <tr><td class="paramname">p</td><td>The vertices as array of &lt;gdPoint&gt;s. </td></tr>
+    <tr><td class="paramname">n</td><td>The number of vertices. </td></tr>
+    <tr><td class="paramname">c</td><td>The color.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__PixelDraw.html#gaa7abdc954dc63f6a8160cd7359589604" title="Draws a closed polygon.">gdImagePolygon</a> </dd></dl>
+
+</div>
+</div>
+<a id="ga1e534e750e1b336b8961a62ebec88511" name="ga1e534e750e1b336b8961a62ebec88511"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1e534e750e1b336b8961a62ebec88511">&#9670;&#160;</a></span>gdImageFilledRectangle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gdImageFilledRectangle </td>
+          <td>(</td>
+          <td class="paramtype">gdImagePtr&#160;</td>
+          <td class="paramname"><em>im</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>color</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Draws a filled rectangle. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">im</td><td>The image. </td></tr>
+    <tr><td class="paramname">x1</td><td>The x-coordinate of one of the corners. </td></tr>
+    <tr><td class="paramname">y1</td><td>The y-coordinate of one of the corners. </td></tr>
+    <tr><td class="paramname">x2</td><td>The x-coordinate of another corner. </td></tr>
+    <tr><td class="paramname">y2</td><td>The y-coordinate of another corner. </td></tr>
+    <tr><td class="paramname">color</td><td>The color. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="gaa585ff9864ff9ba2b05d0ad14ae2163c" name="gaa585ff9864ff9ba2b05d0ad14ae2163c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa585ff9864ff9ba2b05d0ad14ae2163c">&#9670;&#160;</a></span>gdImageGetClip()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gdImageGetClip </td>
+          <td>(</td>
+          <td class="paramtype">gdImagePtr&#160;</td>
+          <td class="paramname"><em>im</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>x1P</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>y1P</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>x2P</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>y2P</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets the current clipping rectangle. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">im</td><td>The image. </td></tr>
+    <tr><td class="paramname">x1P</td><td>(out) The x-coordinate of the upper left corner. </td></tr>
+    <tr><td class="paramname">y1P</td><td>(out) The y-coordinate of the upper left corner. </td></tr>
+    <tr><td class="paramname">x2P</td><td>(out) The x-coordinate of the lower right corner. </td></tr>
+    <tr><td class="paramname">y2P</td><td>(out) The y-coordinate of the lower right corner.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__PixelDraw.html#ga5ef97f1e39ad5a87d89ad72d842087c6" title="Sets the clipping rectangle.">gdImageSetClip</a> </dd></dl>
+
+</div>
+</div>
+<a id="ga4b592f85911a3f09cd1eacd6df2b6b6d" name="ga4b592f85911a3f09cd1eacd6df2b6b6d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4b592f85911a3f09cd1eacd6df2b6b6d">&#9670;&#160;</a></span>gdImageOpenPolygon()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gdImageOpenPolygon </td>
+          <td>(</td>
+          <td class="paramtype">gdImagePtr&#160;</td>
+          <td class="paramname"><em>im</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__PixelDraw.html#gacb00d41e2f02212c8ae177faae9c15f6">gdPointPtr</a>&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>c</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Draws an open polygon. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">im</td><td>The image. </td></tr>
+    <tr><td class="paramname">p</td><td>The vertices as array of &lt;gdPoint&gt;s. </td></tr>
+    <tr><td class="paramname">n</td><td>The number of vertices. </td></tr>
+    <tr><td class="paramname">c</td><td>The color.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__PixelDraw.html#gaa7abdc954dc63f6a8160cd7359589604" title="Draws a closed polygon.">gdImagePolygon</a> </dd></dl>
+
+</div>
+</div>
+<a id="gaa7abdc954dc63f6a8160cd7359589604" name="gaa7abdc954dc63f6a8160cd7359589604"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa7abdc954dc63f6a8160cd7359589604">&#9670;&#160;</a></span>gdImagePolygon()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gdImagePolygon </td>
+          <td>(</td>
+          <td class="paramtype">gdImagePtr&#160;</td>
+          <td class="paramname"><em>im</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__PixelDraw.html#gacb00d41e2f02212c8ae177faae9c15f6">gdPointPtr</a>&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>c</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Draws a closed polygon. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">im</td><td>The image. </td></tr>
+    <tr><td class="paramname">p</td><td>The vertices as array of &lt;gdPoint&gt;s. </td></tr>
+    <tr><td class="paramname">n</td><td>The number of vertices. </td></tr>
+    <tr><td class="paramname">c</td><td>The color.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__PixelDraw.html#ga4b592f85911a3f09cd1eacd6df2b6b6d" title="Draws an open polygon.">gdImageOpenPolygon</a> <a class="el" href="group__PixelDraw.html#ga07960244fc3522d791b07aff1cafe6fa" title="Draws a filled polygon.">gdImageFilledPolygon</a> </dd></dl>
+
+</div>
+</div>
+<a id="ga084f5a75d82c7ae9126fb0846051802e" name="ga084f5a75d82c7ae9126fb0846051802e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga084f5a75d82c7ae9126fb0846051802e">&#9670;&#160;</a></span>gdImageRectangle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gdImageRectangle </td>
+          <td>(</td>
+          <td class="paramtype">gdImagePtr&#160;</td>
+          <td class="paramname"><em>im</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>color</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Draws a rectangle. </p>
+<p>Corners are specified by their coordinates. The rectangle is drawn using the current line style and thickness.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">im</td><td>The image. </td></tr>
+    <tr><td class="paramname">x1</td><td>The x-coordinate of one of the corners. </td></tr>
+    <tr><td class="paramname">y1</td><td>The y-coordinate of one of the corners. </td></tr>
+    <tr><td class="paramname">x2</td><td>The x-coordinate of another corner. </td></tr>
+    <tr><td class="paramname">y2</td><td>The y-coordinate of another corner. </td></tr>
+    <tr><td class="paramname">color</td><td>The color.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__PixelDraw.html#ga1e534e750e1b336b8961a62ebec88511" title="Draws a filled rectangle.">gdImageFilledRectangle</a> </dd></dl>
+
+</div>
+</div>
+<a id="ga4fee24e02734094ffdc2a1b7c6140fd0" name="ga4fee24e02734094ffdc2a1b7c6140fd0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4fee24e02734094ffdc2a1b7c6140fd0">&#9670;&#160;</a></span>gdImageSetAntiAliased()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gdImageSetAntiAliased </td>
+          <td>(</td>
+          <td class="paramtype">gdImagePtr&#160;</td>
+          <td class="paramname"><em>im</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>c</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the color for subsequent anti-aliased drawing. </p>
+<p>If gdAntiAliased is passed as color to drawing operations that support anti-aliased drawing (such as gdImageLine and <a class="el" href="group__PixelDraw.html#gaa7abdc954dc63f6a8160cd7359589604">gdImagePolygon</a>), the actual color to be used can be set with this function.</p>
+<p>Example: draw an anti-aliased blue line: </p><div class="fragment"><div class="line"><a class="code hl_function" href="group__PixelDraw.html#ga4fee24e02734094ffdc2a1b7c6140fd0">gdImageSetAntiAliased</a>(<a class="code hl_namespace" href="namespaceim.html">im</a>, gdTrueColorAlpha(0, 0, gdBlueMax, gdAlphaOpaque));</div>
+<div class="line">gdImageLine(<a class="code hl_namespace" href="namespaceim.html">im</a>, 10,10, 20,20, gdAntiAliased);</div>
+<div class="ttc" id="agroup__PixelDraw_html_ga4fee24e02734094ffdc2a1b7c6140fd0"><div class="ttname"><a href="group__PixelDraw.html#ga4fee24e02734094ffdc2a1b7c6140fd0">gdImageSetAntiAliased</a></div><div class="ttdeci">void gdImageSetAntiAliased(gdImagePtr im, int c)</div><div class="ttdoc">Set the color for subsequent anti-aliased drawing.</div><div class="ttdef"><b>Definition</b> gd.c:3203</div></div>
+<div class="ttc" id="anamespaceim_html"><div class="ttname"><a href="namespaceim.html">im</a></div><div class="ttdoc">Write an image as JPEG data to a gdIOCtx.</div></div>
+</div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">im</td><td>- The image. </td></tr>
+    <tr><td class="paramname">c</td><td>- The color.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__PixelDraw.html#ga6c9545e483665aca93863a017fd13bbf">gdImageSetAntiAliasedDontBlend</a> </dd></dl>
+
+</div>
+</div>
+<a id="ga6c9545e483665aca93863a017fd13bbf" name="ga6c9545e483665aca93863a017fd13bbf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6c9545e483665aca93863a017fd13bbf">&#9670;&#160;</a></span>gdImageSetAntiAliasedDontBlend()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gdImageSetAntiAliasedDontBlend </td>
+          <td>(</td>
+          <td class="paramtype">gdImagePtr&#160;</td>
+          <td class="paramname"><em>im</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>c</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>dont_blend</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Set the color and "dont_blend" color for subsequent anti-aliased drawing</p>
+<p>This extended variant of &lt;gdImageSetAntiAliased&gt; allows to also specify a (background) color that will not be blended in anti-aliased drawing operations.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">im</td><td>The image. </td></tr>
+    <tr><td class="paramname">c</td><td>The color. </td></tr>
+    <tr><td class="paramname">dont_blend</td><td>Whether to blend. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga27fe561479bdac54fb6bbc4c7a873874" name="ga27fe561479bdac54fb6bbc4c7a873874"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga27fe561479bdac54fb6bbc4c7a873874">&#9670;&#160;</a></span>gdImageSetBrush()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gdImageSetBrush </td>
+          <td>(</td>
+          <td class="paramtype">gdImagePtr&#160;</td>
+          <td class="paramname"><em>im</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">gdImagePtr&#160;</td>
+          <td class="paramname"><em>brush</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the brush for following drawing operations. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">im</td><td>The image. </td></tr>
+    <tr><td class="paramname">brush</td><td>The brush image. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga5ef97f1e39ad5a87d89ad72d842087c6" name="ga5ef97f1e39ad5a87d89ad72d842087c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5ef97f1e39ad5a87d89ad72d842087c6">&#9670;&#160;</a></span>gdImageSetClip()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gdImageSetClip </td>
+          <td>(</td>
+          <td class="paramtype">gdImagePtr&#160;</td>
+          <td class="paramname"><em>im</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the clipping rectangle. </p>
+<p>The clipping rectangle restricts the drawing area for following drawing operations.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">im</td><td>- The image. </td></tr>
+    <tr><td class="paramname">x1</td><td>- The x-coordinate of the upper left corner. </td></tr>
+    <tr><td class="paramname">y1</td><td>- The y-coordinate of the upper left corner. </td></tr>
+    <tr><td class="paramname">x2</td><td>- The x-coordinate of the lower right corner. </td></tr>
+    <tr><td class="paramname">y2</td><td>- The y-coordinate of the lower right corner.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__PixelDraw.html#gaa585ff9864ff9ba2b05d0ad14ae2163c" title="Gets the current clipping rectangle.">gdImageGetClip</a> </dd></dl>
+
+</div>
+</div>
+<a id="gabba8cd1e1e3587c43b8e24a8d974d26e" name="gabba8cd1e1e3587c43b8e24a8d974d26e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gabba8cd1e1e3587c43b8e24a8d974d26e">&#9670;&#160;</a></span>gdImageSetStyle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gdImageSetStyle </td>
+          <td>(</td>
+          <td class="paramtype">gdImagePtr&#160;</td>
+          <td class="paramname"><em>im</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>style</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>noOfPixels</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the style for following drawing operations. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">im</td><td>The image. </td></tr>
+    <tr><td class="paramname">style</td><td>An array of color values. </td></tr>
+    <tr><td class="paramname">noOfPixel</td><td>The number of color values. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga938ac6a33239cb304782dc1c19e287bd" name="ga938ac6a33239cb304782dc1c19e287bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga938ac6a33239cb304782dc1c19e287bd">&#9670;&#160;</a></span>gdImageSetThickness()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gdImageSetThickness </td>
+          <td>(</td>
+          <td class="paramtype">gdImagePtr&#160;</td>
+          <td class="paramname"><em>im</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>thickness</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Sets the thickness for following drawing operations</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">im</td><td>The image. </td></tr>
+    <tr><td class="paramname">thickness</td><td>The thickness in pixels. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga03fb8fa65d899b57876a5b2d891d20f0" name="ga03fb8fa65d899b57876a5b2d891d20f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga03fb8fa65d899b57876a5b2d891d20f0">&#9670;&#160;</a></span>gdImageSetTile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gdImageSetTile </td>
+          <td>(</td>
+          <td class="paramtype">gdImagePtr&#160;</td>
+          <td class="paramname"><em>im</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">gdImagePtr&#160;</td>
+          <td class="paramname"><em>tile</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the tile for following drawing operations. </p>
+<p>The tile is used for filling areas with a repeating pattern. The tile image is repeated to fill the area being drawn.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">im</td><td>The image. </td></tr>
+    <tr><td class="paramname">tile</td><td>The tile image. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

@@ -4,13 +4,13 @@ var indexSectionsWithContent =
   1: "g",
   2: "i",
   3: "g",
-  4: "bgo",
+  4: "go",
   5: "abcdefghijklmnpqrstvwxy",
   6: "g",
   7: "g",
   8: "g",
   9: "2abcdefghijlopqrstuvwx",
-  10: "024adl"
+  10: "024adhilm"
 };
 
 var indexSectionNames =

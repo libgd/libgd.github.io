@@ -140,6 +140,18 @@ Functions</h2></td></tr>
 <tr class="memitem:ga23100edde5568d0eb76853c47e9d9e01" id="r_ga23100edde5568d0eb76853c47e9d9e01"><td class="memItemLeft" align="right" valign="top">gdImagePtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gdCodecBmp.html#ga23100edde5568d0eb76853c47e9d9e01">gdImageCreateFromBmpCtx</a> (gdIOCtxPtr infile)</td></tr>
 <tr class="memdesc:ga23100edde5568d0eb76853c47e9d9e01"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an image from BMP data read through a gdIOCtx.  <br /></td></tr>
 <tr class="separator:ga23100edde5568d0eb76853c47e9d9e01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8c6db84fc8a1aca231e51eb9b622a889" id="r_ga8c6db84fc8a1aca231e51eb9b622a889"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gdCodecBmp.html#ga8c6db84fc8a1aca231e51eb9b622a889">gdBmpInfoInit</a> (<a class="el" href="structgdBmpInfo.html">gdBmpInfo</a> *info)</td></tr>
+<tr class="memdesc:ga8c6db84fc8a1aca231e51eb9b622a889"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize a <a class="el" href="structgdBmpInfo.html">gdBmpInfo</a> structure to default values.  <br /></td></tr>
+<tr class="separator:ga8c6db84fc8a1aca231e51eb9b622a889"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaca3e6f9afea936453918c422487ac2f8" id="r_gaca3e6f9afea936453918c422487ac2f8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gdCodecBmp.html#gaca3e6f9afea936453918c422487ac2f8">gdBmpGetInfo</a> (FILE *infile, <a class="el" href="structgdBmpInfo.html">gdBmpInfo</a> *info)</td></tr>
+<tr class="memdesc:gaca3e6f9afea936453918c422487ac2f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read BMP file information from a stdio file.  <br /></td></tr>
+<tr class="separator:gaca3e6f9afea936453918c422487ac2f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6dc31b1e250138d3d41dc92e1159ebf1" id="r_ga6dc31b1e250138d3d41dc92e1159ebf1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gdCodecBmp.html#ga6dc31b1e250138d3d41dc92e1159ebf1">gdBmpGetInfoCtx</a> (gdIOCtxPtr infile, <a class="el" href="structgdBmpInfo.html">gdBmpInfo</a> *info)</td></tr>
+<tr class="memdesc:ga6dc31b1e250138d3d41dc92e1159ebf1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read BMP file information from a gdIOCtx.  <br /></td></tr>
+<tr class="separator:ga6dc31b1e250138d3d41dc92e1159ebf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5190eab127d99355f4ac2bc614d1750a" id="r_ga5190eab127d99355f4ac2bc614d1750a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gdCodecBmp.html#ga5190eab127d99355f4ac2bc614d1750a">gdBmpGetInfoPtr</a> (int size, const void *data, <a class="el" href="structgdBmpInfo.html">gdBmpInfo</a> *info)</td></tr>
+<tr class="memdesc:ga5190eab127d99355f4ac2bc614d1750a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read BMP file information from a memory buffer.  <br /></td></tr>
+<tr class="separator:ga5190eab127d99355f4ac2bc614d1750a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga04b8aec7a41642823141503b3a215ebb" id="r_ga04b8aec7a41642823141503b3a215ebb"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gdCodecBmp.html#ga04b8aec7a41642823141503b3a215ebb">gdImageBmpPtr</a> (gdImagePtr im, int *size, int compression)</td></tr>
 <tr class="memdesc:ga04b8aec7a41642823141503b3a215ebb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write an image as BMP data to a newly allocated memory buffer.  <br /></td></tr>
 <tr class="separator:ga04b8aec7a41642823141503b3a215ebb"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -180,7 +192,7 @@ Functions</h2></td></tr>
 <div class="line"><span class="keywordtype">int</span> size;</div>
 <div class="line"> </div>
 <div class="line"><a class="code hl_namespace" href="namespaceim.html">im</a> = gdImageCreateTrueColor(32, 32);</div>
-<div class="line">gdImageFilledRectangle(<a class="code hl_namespace" href="namespaceim.html">im</a>, 0, 0, 31, 31, 0x336699);</div>
+<div class="line"><a class="code hl_function" href="group__PixelDraw.html#ga1e534e750e1b336b8961a62ebec88511">gdImageFilledRectangle</a>(<a class="code hl_namespace" href="namespaceim.html">im</a>, 0, 0, 31, 31, 0x336699);</div>
 <div class="line"> </div>
 <div class="line">data = <a class="code hl_function" href="group__gdCodecBmp.html#ga4de3470afa90b026f05b889336fb5f5a">gdImageBmpPtrEx</a>(<a class="code hl_namespace" href="namespaceim.html">im</a>, &amp;size, 24, <a class="code hl_define" href="group__gdCodecBmp.html#gad2827f3d53d54c83f28540a25529b1b4">GD_BMP_COMPRESS_NONE</a>,</div>
 <div class="line">                       <a class="code hl_define" href="group__gdCodecBmp.html#gac4b7c67e796712389232839c5ae31f8b">GD_BMP_FLAG_NONE</a>);</div>
@@ -193,12 +205,160 @@ Functions</h2></td></tr>
 <div class="line">}</div>
 <div class="line"> </div>
 <div class="line">gdImageDestroy(<a class="code hl_namespace" href="namespaceim.html">im</a>);</div>
-<div class="ttc" id="agroup__gdCodecBmp_html_ga4de3470afa90b026f05b889336fb5f5a"><div class="ttname"><a href="group__gdCodecBmp.html#ga4de3470afa90b026f05b889336fb5f5a">gdImageBmpPtrEx</a></div><div class="ttdeci">void * gdImageBmpPtrEx(gdImagePtr im, int *size, int bpp, int compression, int flags)</div><div class="ttdoc">Write an image as BMP data to a newly allocated memory buffer.</div><div class="ttdef"><b>Definition</b> gd_bmp.c:281</div></div>
-<div class="ttc" id="agroup__gdCodecBmp_html_ga72036ac7db6ca0e5ce4bf3381df4452b"><div class="ttname"><a href="group__gdCodecBmp.html#ga72036ac7db6ca0e5ce4bf3381df4452b">gdImageCreateFromBmpPtr</a></div><div class="ttdeci">gdImagePtr gdImageCreateFromBmpPtr(int size, void *data)</div><div class="ttdoc">Create an image from a BMP memory buffer.</div><div class="ttdef"><b>Definition</b> gd_bmp.c:1053</div></div>
-<div class="ttc" id="agroup__gdCodecBmp_html_gac4b7c67e796712389232839c5ae31f8b"><div class="ttname"><a href="group__gdCodecBmp.html#gac4b7c67e796712389232839c5ae31f8b">GD_BMP_FLAG_NONE</a></div><div class="ttdeci">#define GD_BMP_FLAG_NONE</div><div class="ttdoc">Use default BMP writer behavior.</div><div class="ttdef"><b>Definition</b> gd.h:4366</div></div>
-<div class="ttc" id="agroup__gdCodecBmp_html_gad2827f3d53d54c83f28540a25529b1b4"><div class="ttname"><a href="group__gdCodecBmp.html#gad2827f3d53d54c83f28540a25529b1b4">GD_BMP_COMPRESS_NONE</a></div><div class="ttdeci">#define GD_BMP_COMPRESS_NONE</div><div class="ttdoc">Write uncompressed BMP pixel data.</div><div class="ttdef"><b>Definition</b> gd.h:4359</div></div>
+<div class="ttc" id="agroup__PixelDraw_html_ga1e534e750e1b336b8961a62ebec88511"><div class="ttname"><a href="group__PixelDraw.html#ga1e534e750e1b336b8961a62ebec88511">gdImageFilledRectangle</a></div><div class="ttdeci">void gdImageFilledRectangle(gdImagePtr im, int x1, int y1, int x2, int y2, int color)</div><div class="ttdoc">Draws a filled rectangle.</div><div class="ttdef"><b>Definition</b> gd.c:2403</div></div>
+<div class="ttc" id="agroup__gdCodecBmp_html_ga4de3470afa90b026f05b889336fb5f5a"><div class="ttname"><a href="group__gdCodecBmp.html#ga4de3470afa90b026f05b889336fb5f5a">gdImageBmpPtrEx</a></div><div class="ttdeci">void * gdImageBmpPtrEx(gdImagePtr im, int *size, int bpp, int compression, int flags)</div><div class="ttdoc">Write an image as BMP data to a newly allocated memory buffer.</div><div class="ttdef"><b>Definition</b> gd_bmp.c:278</div></div>
+<div class="ttc" id="agroup__gdCodecBmp_html_ga72036ac7db6ca0e5ce4bf3381df4452b"><div class="ttname"><a href="group__gdCodecBmp.html#ga72036ac7db6ca0e5ce4bf3381df4452b">gdImageCreateFromBmpPtr</a></div><div class="ttdeci">gdImagePtr gdImageCreateFromBmpPtr(int size, void *data)</div><div class="ttdoc">Create an image from a BMP memory buffer.</div><div class="ttdef"><b>Definition</b> gd_bmp.c:1050</div></div>
+<div class="ttc" id="agroup__gdCodecBmp_html_gac4b7c67e796712389232839c5ae31f8b"><div class="ttname"><a href="group__gdCodecBmp.html#gac4b7c67e796712389232839c5ae31f8b">GD_BMP_FLAG_NONE</a></div><div class="ttdeci">#define GD_BMP_FLAG_NONE</div><div class="ttdoc">Use default BMP writer behavior.</div><div class="ttdef"><b>Definition</b> gd.h:4452</div></div>
+<div class="ttc" id="agroup__gdCodecBmp_html_gad2827f3d53d54c83f28540a25529b1b4"><div class="ttname"><a href="group__gdCodecBmp.html#gad2827f3d53d54c83f28540a25529b1b4">GD_BMP_COMPRESS_NONE</a></div><div class="ttdeci">#define GD_BMP_COMPRESS_NONE</div><div class="ttdoc">Write uncompressed BMP pixel data.</div><div class="ttdef"><b>Definition</b> gd.h:4445</div></div>
 <div class="ttc" id="anamespaceim_html"><div class="ttname"><a href="namespaceim.html">im</a></div><div class="ttdoc">Write an image as JPEG data to a gdIOCtx.</div></div>
 </div><!-- fragment --> <h2 class="groupheader">Function Documentation</h2>
+<a id="gaca3e6f9afea936453918c422487ac2f8" name="gaca3e6f9afea936453918c422487ac2f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaca3e6f9afea936453918c422487ac2f8">&#9670;&#160;</a></span>gdBmpGetInfo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int gdBmpGetInfo </td>
+          <td>(</td>
+          <td class="paramtype">FILE *&#160;</td>
+          <td class="paramname"><em>infile</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structgdBmpInfo.html">gdBmpInfo</a> *&#160;</td>
+          <td class="paramname"><em>info</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Read BMP file information from a stdio file. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">infile</td><td>Pointer to the BMP FILE stream to read. </td></tr>
+    <tr><td class="paramname">info</td><td>Pointer to a <a class="el" href="structgdBmpInfo.html">gdBmpInfo</a> structure to receive the BMP information.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns 1 on success, or 0 on failure. </dd></dl>
+
+</div>
+</div>
+<a id="ga6dc31b1e250138d3d41dc92e1159ebf1" name="ga6dc31b1e250138d3d41dc92e1159ebf1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6dc31b1e250138d3d41dc92e1159ebf1">&#9670;&#160;</a></span>gdBmpGetInfoCtx()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int gdBmpGetInfoCtx </td>
+          <td>(</td>
+          <td class="paramtype">gdIOCtxPtr&#160;</td>
+          <td class="paramname"><em>infile</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structgdBmpInfo.html">gdBmpInfo</a> *&#160;</td>
+          <td class="paramname"><em>info</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Read BMP file information from a gdIOCtx. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">infile</td><td>Pointer to the gdIOCtx input context. </td></tr>
+    <tr><td class="paramname">info</td><td>Pointer to a <a class="el" href="structgdBmpInfo.html">gdBmpInfo</a> structure to receive the BMP information.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns 1 on success, or 0 on failure. </dd></dl>
+
+</div>
+</div>
+<a id="ga5190eab127d99355f4ac2bc614d1750a" name="ga5190eab127d99355f4ac2bc614d1750a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5190eab127d99355f4ac2bc614d1750a">&#9670;&#160;</a></span>gdBmpGetInfoPtr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int gdBmpGetInfoPtr </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structgdBmpInfo.html">gdBmpInfo</a> *&#160;</td>
+          <td class="paramname"><em>info</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Read BMP file information from a memory buffer. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">size</td><td>Size of the BMP memory buffer in bytes. </td></tr>
+    <tr><td class="paramname">data</td><td>Pointer to the BMP memory buffer. </td></tr>
+    <tr><td class="paramname">info</td><td>Pointer to a <a class="el" href="structgdBmpInfo.html">gdBmpInfo</a> structure to receive the BMP information.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns 1 on success, or 0 on failure. </dd></dl>
+
+</div>
+</div>
+<a id="ga8c6db84fc8a1aca231e51eb9b622a889" name="ga8c6db84fc8a1aca231e51eb9b622a889"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8c6db84fc8a1aca231e51eb9b622a889">&#9670;&#160;</a></span>gdBmpInfoInit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gdBmpInfoInit </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structgdBmpInfo.html">gdBmpInfo</a> *&#160;</td>
+          <td class="paramname"><em>info</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initialize a <a class="el" href="structgdBmpInfo.html">gdBmpInfo</a> structure to default values. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">info</td><td>Pointer to the <a class="el" href="structgdBmpInfo.html">gdBmpInfo</a> structure to initialize. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="ga0a8824966be6557834ba6a914201e185" name="ga0a8824966be6557834ba6a914201e185"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga0a8824966be6557834ba6a914201e185">&#9670;&#160;</a></span>gdBmpWriteOptionsInit()</h2>
 

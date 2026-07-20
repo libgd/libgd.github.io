@@ -72,7 +72,8 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Data Structures</a> &#124;
-<a href="#enum-members">Enumerations</a>  </div>
+<a href="#enum-members">Enumerations</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">Image Filters and convolutions</div></div>
 </div><!--header-->
 <div class="contents">
@@ -88,8 +89,62 @@ Enumerations</h2></td></tr>
 <tr class="memitem:ga5394f6ea01c6cc959943d51ab2d33ce1" id="r_ga5394f6ea01c6cc959943d51ab2d33ce1"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ImageFilters.html#ga5394f6ea01c6cc959943d51ab2d33ce1">gdPixelateMode</a> { <a class="el" href="group__ImageFilters.html#gga5394f6ea01c6cc959943d51ab2d33ce1a1c14d2db26948a7ad26f0f96be52eaaf">GD_PIXELATE_UPPERLEFT</a>
 , <a class="el" href="group__ImageFilters.html#gga5394f6ea01c6cc959943d51ab2d33ce1a9daa3e4bf5bed1e06b86b8009e33a831">GD_PIXELATE_AVERAGE</a>
  }</td></tr>
-<tr class="memdesc:ga5394f6ea01c6cc959943d51ab2d33ce1"><td class="mdescLeft">&#160;</td><td class="mdescRight">gdImagePixelate options  <a href="group__ImageFilters.html#ga5394f6ea01c6cc959943d51ab2d33ce1">More...</a><br /></td></tr>
+<tr class="memdesc:ga5394f6ea01c6cc959943d51ab2d33ce1"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="group__ImageFilters.html#ga9f0206376a52148db6ea7c652fdf4511">gdImagePixelate</a> options  <a href="group__ImageFilters.html#ga5394f6ea01c6cc959943d51ab2d33ce1">More...</a><br /></td></tr>
 <tr class="separator:ga5394f6ea01c6cc959943d51ab2d33ce1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:ga9f0206376a52148db6ea7c652fdf4511" id="r_ga9f0206376a52148db6ea7c652fdf4511"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ImageFilters.html#ga9f0206376a52148db6ea7c652fdf4511">gdImagePixelate</a> (gdImagePtr im, int block_size, const unsigned int mode)</td></tr>
+<tr class="memdesc:ga9f0206376a52148db6ea7c652fdf4511"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pixelates an image.  <br /></td></tr>
+<tr class="separator:ga9f0206376a52148db6ea7c652fdf4511"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafab58c8b4d87fe9ea50e075edf656f88" id="r_gafab58c8b4d87fe9ea50e075edf656f88"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ImageFilters.html#gafab58c8b4d87fe9ea50e075edf656f88">gdImageScatter</a> (gdImagePtr im, int sub, int plus)</td></tr>
+<tr class="memdesc:gafab58c8b4d87fe9ea50e075edf656f88"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scatter an image.  <br /></td></tr>
+<tr class="separator:gafab58c8b4d87fe9ea50e075edf656f88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0cb5c72dc2bd96ae0e9236fb8b7bae0c" id="r_ga0cb5c72dc2bd96ae0e9236fb8b7bae0c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ImageFilters.html#ga0cb5c72dc2bd96ae0e9236fb8b7bae0c">gdImageScatterColor</a> (gdImagePtr im, int sub, int plus, int colors[], unsigned int num_colors)</td></tr>
+<tr class="memdesc:ga0cb5c72dc2bd96ae0e9236fb8b7bae0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scatter an image with specified colors.  <br /></td></tr>
+<tr class="separator:ga0cb5c72dc2bd96ae0e9236fb8b7bae0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0eed47e3d884c5ddd1ce3a0f60df2fb6" id="r_ga0eed47e3d884c5ddd1ce3a0f60df2fb6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ImageFilters.html#ga0eed47e3d884c5ddd1ce3a0f60df2fb6">gdImageScatterEx</a> (gdImagePtr im, <a class="el" href="structgdScatter.html">gdScatterPtr</a> s)</td></tr>
+<tr class="memdesc:ga0eed47e3d884c5ddd1ce3a0f60df2fb6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scatter an image with extended options.  <br /></td></tr>
+<tr class="separator:ga0eed47e3d884c5ddd1ce3a0f60df2fb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad46227c0d449e8c57ec461670d94ec26" id="r_gad46227c0d449e8c57ec461670d94ec26"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ImageFilters.html#gad46227c0d449e8c57ec461670d94ec26">gdImageSmooth</a> (gdImagePtr im, float weight)</td></tr>
+<tr class="memdesc:gad46227c0d449e8c57ec461670d94ec26"><td class="mdescLeft">&#160;</td><td class="mdescRight">Smooth an image.  <br /></td></tr>
+<tr class="separator:gad46227c0d449e8c57ec461670d94ec26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaade26027080154ffc5760a8f2e8ba73d" id="r_gaade26027080154ffc5760a8f2e8ba73d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ImageFilters.html#gaade26027080154ffc5760a8f2e8ba73d">gdImageMeanRemoval</a> (gdImagePtr im)</td></tr>
+<tr class="memdesc:gaade26027080154ffc5760a8f2e8ba73d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mean removal of an image.  <br /></td></tr>
+<tr class="separator:gaade26027080154ffc5760a8f2e8ba73d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga741722cb977fea35ec12e34e299aa9a6" id="r_ga741722cb977fea35ec12e34e299aa9a6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ImageFilters.html#ga741722cb977fea35ec12e34e299aa9a6">gdImageEmboss</a> (gdImagePtr im)</td></tr>
+<tr class="memdesc:ga741722cb977fea35ec12e34e299aa9a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Emboss an image.  <br /></td></tr>
+<tr class="separator:ga741722cb977fea35ec12e34e299aa9a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga657a95e95afe340c3589cc6c509075bc" id="r_ga657a95e95afe340c3589cc6c509075bc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ImageFilters.html#ga657a95e95afe340c3589cc6c509075bc">gdImageGaussianBlur</a> (gdImagePtr im)</td></tr>
+<tr class="memdesc:ga657a95e95afe340c3589cc6c509075bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gaussian blur of an image Performs a Gaussian blur of radius 1 on the image. The image is modified in place.  <br /></td></tr>
+<tr class="separator:ga657a95e95afe340c3589cc6c509075bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2060f69ff0a6f8edda6f35a784c64821" id="r_ga2060f69ff0a6f8edda6f35a784c64821"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ImageFilters.html#ga2060f69ff0a6f8edda6f35a784c64821">gdImageEdgeDetectQuick</a> (gdImagePtr src)</td></tr>
+<tr class="memdesc:ga2060f69ff0a6f8edda6f35a784c64821"><td class="mdescLeft">&#160;</td><td class="mdescRight">Edge detection of an image.  <br /></td></tr>
+<tr class="separator:ga2060f69ff0a6f8edda6f35a784c64821"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf87ee763a9ab1463d6854d96f0715d98" id="r_gaf87ee763a9ab1463d6854d96f0715d98"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ImageFilters.html#gaf87ee763a9ab1463d6854d96f0715d98">gdImageSelectiveBlur</a> (gdImagePtr src)</td></tr>
+<tr class="memdesc:gaf87ee763a9ab1463d6854d96f0715d98"><td class="mdescLeft">&#160;</td><td class="mdescRight">Selective blur of an image.  <br /></td></tr>
+<tr class="separator:gaf87ee763a9ab1463d6854d96f0715d98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga544c76d06d15d8cc3782fa4c5302881d" id="r_ga544c76d06d15d8cc3782fa4c5302881d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ImageFilters.html#ga544c76d06d15d8cc3782fa4c5302881d">gdImageConvolution</a> (gdImagePtr src, float filter[3][3], float filter_div, float offset)</td></tr>
+<tr class="memdesc:ga544c76d06d15d8cc3782fa4c5302881d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Apply a convolution matrix to an image.  <br /></td></tr>
+<tr class="separator:ga544c76d06d15d8cc3782fa4c5302881d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9fcd00e909f68219450b49a1464e4570" id="r_ga9fcd00e909f68219450b49a1464e4570"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ImageFilters.html#ga9fcd00e909f68219450b49a1464e4570">gdImageColor</a> (gdImagePtr src, const int red, const int green, const int blue, const int alpha)</td></tr>
+<tr class="memdesc:ga9fcd00e909f68219450b49a1464e4570"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change channel values of an image.  <br /></td></tr>
+<tr class="separator:ga9fcd00e909f68219450b49a1464e4570"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacf079887123ddddfc759226c88e7d469" id="r_gacf079887123ddddfc759226c88e7d469"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ImageFilters.html#gacf079887123ddddfc759226c88e7d469">gdImageContrast</a> (gdImagePtr src, double contrast)</td></tr>
+<tr class="memdesc:gacf079887123ddddfc759226c88e7d469"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change the contrast of an image.  <br /></td></tr>
+<tr class="separator:gacf079887123ddddfc759226c88e7d469"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad3718ac474ea8d8ac575db7f0130d3a4" id="r_gad3718ac474ea8d8ac575db7f0130d3a4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ImageFilters.html#gad3718ac474ea8d8ac575db7f0130d3a4">gdImageBrightness</a> (gdImagePtr src, int brightness)</td></tr>
+<tr class="memdesc:gad3718ac474ea8d8ac575db7f0130d3a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change the brightness of an image.  <br /></td></tr>
+<tr class="separator:gad3718ac474ea8d8ac575db7f0130d3a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadad43080326959c903d9062eb1ecd869" id="r_gadad43080326959c903d9062eb1ecd869"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ImageFilters.html#gadad43080326959c903d9062eb1ecd869">gdImageGrayScale</a> (gdImagePtr src)</td></tr>
+<tr class="memdesc:gadad43080326959c903d9062eb1ecd869"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert an image to grayscale.  <br /></td></tr>
+<tr class="separator:gadad43080326959c903d9062eb1ecd869"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga32f882894a7a5539c66c6d0b08ca8997" id="r_ga32f882894a7a5539c66c6d0b08ca8997"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ImageFilters.html#ga32f882894a7a5539c66c6d0b08ca8997">gdImageNegate</a> (gdImagePtr src)</td></tr>
+<tr class="memdesc:ga32f882894a7a5539c66c6d0b08ca8997"><td class="mdescLeft">&#160;</td><td class="mdescRight">Invert an image.  <br /></td></tr>
+<tr class="separator:ga32f882894a7a5539c66c6d0b08ca8997"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad2a31a1143554290b419b5e119c23173" id="r_gad2a31a1143554290b419b5e119c23173"><td class="memItemLeft" align="right" valign="top">gdImagePtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ImageFilters.html#gad2a31a1143554290b419b5e119c23173">gdImageCopyGaussianBlurred</a> (gdImagePtr src, int radius, double sigma)</td></tr>
+<tr class="memdesc:gad2a31a1143554290b419b5e119c23173"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a copy of the source image <em>src</em> blurred according to the parameters using the Gaussian Blur algorithm. Return a copy of the source image <em>src</em> blurred according to the parameters using the Gaussian Blur algorithm.  <br /></td></tr>
+<tr class="separator:gad2a31a1143554290b419b5e119c23173"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
@@ -105,7 +160,7 @@ Enumerations</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>gdImagePixelate options </p>
+<p><a class="el" href="group__ImageFilters.html#ga9f0206376a52148db6ea7c652fdf4511">gdImagePixelate</a> options </p>
 <p>Negate the imag src, white becomes black, The red, green, and blue intensities of an image are negated. White becomes black, yellow becomes blue, etc. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga5394f6ea01c6cc959943d51ab2d33ce1a1c14d2db26948a7ad26f0f96be52eaaf" name="gga5394f6ea01c6cc959943d51ab2d33ce1a1c14d2db26948a7ad26f0f96be52eaaf"></a>GD_PIXELATE_UPPERLEFT&#160;</td><td class="fielddoc"><p>Use the upper-left pixel of each block </p>
@@ -113,6 +168,731 @@ Enumerations</h2></td></tr>
 <tr><td class="fieldname"><a id="gga5394f6ea01c6cc959943d51ab2d33ce1a9daa3e4bf5bed1e06b86b8009e33a831" name="gga5394f6ea01c6cc959943d51ab2d33ce1a9daa3e4bf5bed1e06b86b8009e33a831"></a>GD_PIXELATE_AVERAGE&#160;</td><td class="fielddoc"><p>Use the average color of each block </p>
 </td></tr>
 </table>
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="gad3718ac474ea8d8ac575db7f0130d3a4" name="gad3718ac474ea8d8ac575db7f0130d3a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad3718ac474ea8d8ac575db7f0130d3a4">&#9670;&#160;</a></span>gdImageBrightness()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int gdImageBrightness </td>
+          <td>(</td>
+          <td class="paramtype">gdImagePtr&#160;</td>
+          <td class="paramname"><em>src</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>brightness</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Change the brightness of an image. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">src</td><td>The image. </td></tr>
+    <tr><td class="paramname">brightness</td><td>The value to add to the color channels of all pixels.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Non-zero on success, zero on failure.</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__ImageFilters.html#gacf079887123ddddfc759226c88e7d469" title="Change the contrast of an image.">gdImageContrast</a> <a class="el" href="group__ImageFilters.html#ga9fcd00e909f68219450b49a1464e4570" title="Change channel values of an image.">gdImageColor</a> </dd></dl>
+
+</div>
+</div>
+<a id="ga9fcd00e909f68219450b49a1464e4570" name="ga9fcd00e909f68219450b49a1464e4570"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9fcd00e909f68219450b49a1464e4570">&#9670;&#160;</a></span>gdImageColor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int gdImageColor </td>
+          <td>(</td>
+          <td class="paramtype">gdImagePtr&#160;</td>
+          <td class="paramname"><em>src</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>red</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>green</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>blue</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>alpha</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Change channel values of an image. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">src</td><td>The image. </td></tr>
+    <tr><td class="paramname">red</td><td>The value to add to the red channel of all pixels. </td></tr>
+    <tr><td class="paramname">green</td><td>The value to add to the green channel of all pixels. </td></tr>
+    <tr><td class="paramname">blue</td><td>The value to add to the blue channel of all pixels. </td></tr>
+    <tr><td class="paramname">alpha</td><td>The value to add to the alpha channel of all pixels.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Non-zero on success, zero on failure.</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__ImageFilters.html#gad3718ac474ea8d8ac575db7f0130d3a4" title="Change the brightness of an image.">gdImageBrightness</a> </dd></dl>
+
+</div>
+</div>
+<a id="gacf079887123ddddfc759226c88e7d469" name="gacf079887123ddddfc759226c88e7d469"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gacf079887123ddddfc759226c88e7d469">&#9670;&#160;</a></span>gdImageContrast()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int gdImageContrast </td>
+          <td>(</td>
+          <td class="paramtype">gdImagePtr&#160;</td>
+          <td class="paramname"><em>src</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>contrast</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Change the contrast of an image. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">src</td><td>The image. </td></tr>
+    <tr><td class="paramname">contrast</td><td>The contrast adjustment value. Negative values increase, postive values decrease the contrast. The larger the absolute value, the stronger the effect.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Non-zero on success, zero on failure.</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__ImageFilters.html#gad3718ac474ea8d8ac575db7f0130d3a4" title="Change the brightness of an image.">gdImageBrightness</a> </dd></dl>
+
+</div>
+</div>
+<a id="ga544c76d06d15d8cc3782fa4c5302881d" name="ga544c76d06d15d8cc3782fa4c5302881d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga544c76d06d15d8cc3782fa4c5302881d">&#9670;&#160;</a></span>gdImageConvolution()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int gdImageConvolution </td>
+          <td>(</td>
+          <td class="paramtype">gdImagePtr&#160;</td>
+          <td class="paramname"><em>src</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>filter</em>[3][3], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>filter_div</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>offset</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Apply a convolution matrix to an image. </p>
+<p>Depending on the matrix, a wide range of effects can be accomplished, e.g. blurring, sharpening, embossing, and edge detection.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">src</td><td>The image. </td></tr>
+    <tr><td class="paramname">filter</td><td>The 3x3 convolution matrix. </td></tr>
+    <tr><td class="paramname">filter_div</td><td>The value to divide the convoluted channel values by. </td></tr>
+    <tr><td class="paramname">offset</td><td>The value to add to the convoluted channel values.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Non-zero on success, zero on failure.</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__ImageFilters.html#ga2060f69ff0a6f8edda6f35a784c64821" title="Edge detection of an image.">gdImageEdgeDetectQuick</a> </dd>
+<dd>
+<a class="el" href="group__ImageFilters.html#ga657a95e95afe340c3589cc6c509075bc" title="Gaussian blur of an image Performs a Gaussian blur of radius 1 on the image. The image is modified in...">gdImageGaussianBlur</a> </dd>
+<dd>
+<a class="el" href="group__ImageFilters.html#ga741722cb977fea35ec12e34e299aa9a6" title="Emboss an image.">gdImageEmboss</a> </dd>
+<dd>
+<a class="el" href="group__ImageFilters.html#gaade26027080154ffc5760a8f2e8ba73d" title="Mean removal of an image.">gdImageMeanRemoval</a> </dd>
+<dd>
+<a class="el" href="group__ImageFilters.html#gad46227c0d449e8c57ec461670d94ec26" title="Smooth an image.">gdImageSmooth</a> </dd></dl>
+
+</div>
+</div>
+<a id="gad2a31a1143554290b419b5e119c23173" name="gad2a31a1143554290b419b5e119c23173"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad2a31a1143554290b419b5e119c23173">&#9670;&#160;</a></span>gdImageCopyGaussianBlurred()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">gdImagePtr gdImageCopyGaussianBlurred </td>
+          <td>(</td>
+          <td class="paramtype">gdImagePtr&#160;</td>
+          <td class="paramname"><em>src</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>radius</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>sigma</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return a copy of the source image <em>src</em> blurred according to the parameters using the Gaussian Blur algorithm. Return a copy of the source image <em>src</em> blurred according to the parameters using the Gaussian Blur algorithm. </p>
+<p><em>radius</em> is a radius, not a diameter so a radius of 2 (for example) will blur across a region 5 pixels across (2 to the center, 1 for the center itself and another 2 to the other edge).</p>
+<p><em>sigma</em> represents the "fatness of the curve (lower == fatter).
+If &lt;em&gt;sigma&lt;/em&gt; is less than or equal to 0,
+&lt;gdImageCopyGaussianBlurred&gt; ignores it and instead computes an
+"optimal" value.  Be warned that future versions of this function
+may compute sigma differently.
+
+The resulting image is always truecolor.
+
+More Details:
+
+A Gaussian Blur is generated by replacing each pixel's color
+values with the average of the surrounding pixels' colors.  This
+region is a circle whose radius is given by argument &lt;em&gt;radius&lt;/em&gt;.
+Thus, a larger radius will yield a blurrier image.
+
+This average is not a simple mean of the values.  Instead, values
+are weighted using the Gaussian function (roughly a bell curve
+centered around the destination pixel) giving it much more
+influence on the result than its neighbours.  Thus, a fatter curve
+will give the center pixel more weight and make the image less
+blurry; lower &lt;em&gt;sigma&lt;/em&gt; values will yield flatter curves.
+
+Currently, &lt;gdImageCopyGaussianBlurred&gt; computes the default sigma
+as
+
+(2/3)*radius
+
+Note, however that we reserve the right to change this if we find
+a better ratio.  If you absolutely need the current sigma value,
+you should set it yourself.
+
+@param src  the source image
+@param radius  the blur radius (&lt;em&gt;not&lt;/em&gt; diameter&amp;ndash;range is 2*radius + 1)
+@param sigma   the sigma value or a value &lt;= 0.0 to use the computed default
+
+@return The new image or NULL if an error occurred.  The result is always truecolor.
+
+Example:
+@code 
+
+FILE *in;
+gdImagePtr result, src;
+
+in = fopen("foo.png", "rb"); src = gdImageCreateFromPng(in);</p>
+<p>result = gdImageCopyGaussianBlurred(im, src-&gt;sx / 10, -1.0);</p>
+
+</div>
+</div>
+<a id="ga2060f69ff0a6f8edda6f35a784c64821" name="ga2060f69ff0a6f8edda6f35a784c64821"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2060f69ff0a6f8edda6f35a784c64821">&#9670;&#160;</a></span>gdImageEdgeDetectQuick()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int gdImageEdgeDetectQuick </td>
+          <td>(</td>
+          <td class="paramtype">gdImagePtr&#160;</td>
+          <td class="paramname"><em>src</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Edge detection of an image. </p>
+<p>(see edge_detect_quick.jpg)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">src</td><td>The image.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Non-zero on success, zero on failure.</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__ImageFilters.html#gaade26027080154ffc5760a8f2e8ba73d" title="Mean removal of an image.">gdImageMeanRemoval</a> <a class="el" href="group__ImageFilters.html#ga544c76d06d15d8cc3782fa4c5302881d" title="Apply a convolution matrix to an image.">gdImageConvolution</a> </dd></dl>
+
+</div>
+</div>
+<a id="ga741722cb977fea35ec12e34e299aa9a6" name="ga741722cb977fea35ec12e34e299aa9a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga741722cb977fea35ec12e34e299aa9a6">&#9670;&#160;</a></span>gdImageEmboss()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int gdImageEmboss </td>
+          <td>(</td>
+          <td class="paramtype">gdImagePtr&#160;</td>
+          <td class="paramname"><em>im</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Emboss an image. </p>
+<p>(see emboss.jpg)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">im</td><td>The image.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Non-zero on success, zero on failure.</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__ImageFilters.html#ga544c76d06d15d8cc3782fa4c5302881d" title="Apply a convolution matrix to an image.">gdImageConvolution</a> </dd></dl>
+
+</div>
+</div>
+<a id="ga657a95e95afe340c3589cc6c509075bc" name="ga657a95e95afe340c3589cc6c509075bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga657a95e95afe340c3589cc6c509075bc">&#9670;&#160;</a></span>gdImageGaussianBlur()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int gdImageGaussianBlur </td>
+          <td>(</td>
+          <td class="paramtype">gdImagePtr&#160;</td>
+          <td class="paramname"><em>im</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gaussian blur of an image Performs a Gaussian blur of radius 1 on the image. The image is modified in place. </p>
+<p><em>NOTE:</em> You will almost certain want to use <a class="el" href="group__ImageFilters.html#gad2a31a1143554290b419b5e119c23173">gdImageCopyGaussianBlurred</a> instead, as it allows you to change your kernel size and sigma value. Future versions of this function may fall back to calling it instead of <a class="el" href="group__ImageFilters.html#ga544c76d06d15d8cc3782fa4c5302881d">gdImageConvolution</a>, causing subtle changes so be warned.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">im</td><td>The image to blur.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>GD_TRUE (1) on success, GD_FALSE (0) on failure.</dd></dl>
+<dl class="section see"><dt>See also</dt><dd>@gdImageConvolution for more information on how to use convolution matrices to achieve different effects. </dd></dl>
+
+</div>
+</div>
+<a id="gadad43080326959c903d9062eb1ecd869" name="gadad43080326959c903d9062eb1ecd869"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gadad43080326959c903d9062eb1ecd869">&#9670;&#160;</a></span>gdImageGrayScale()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int gdImageGrayScale </td>
+          <td>(</td>
+          <td class="paramtype">gdImagePtr&#160;</td>
+          <td class="paramname"><em>src</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Convert an image to grayscale. </p>
+<p>The red, green and blue components of each pixel are replaced by their weighted sum using the same coefficients as the REC.601 luma (Y') calculation. The alpha components are retained.</p>
+<p>For palette images the result may differ due to palette limitations.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">src</td><td>The image.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Non-zero on success, zero on failure. </dd></dl>
+
+</div>
+</div>
+<a id="gaade26027080154ffc5760a8f2e8ba73d" name="gaade26027080154ffc5760a8f2e8ba73d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaade26027080154ffc5760a8f2e8ba73d">&#9670;&#160;</a></span>gdImageMeanRemoval()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int gdImageMeanRemoval </td>
+          <td>(</td>
+          <td class="paramtype">gdImagePtr&#160;</td>
+          <td class="paramname"><em>im</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Mean removal of an image. </p>
+<p>(see mean_removal.jpg)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">im</td><td>The image.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Non-zero on success, zero on failure.</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__ImageFilters.html#ga2060f69ff0a6f8edda6f35a784c64821" title="Edge detection of an image.">gdImageEdgeDetectQuick</a> <a class="el" href="group__ImageFilters.html#ga544c76d06d15d8cc3782fa4c5302881d" title="Apply a convolution matrix to an image.">gdImageConvolution</a> </dd></dl>
+
+</div>
+</div>
+<a id="ga32f882894a7a5539c66c6d0b08ca8997" name="ga32f882894a7a5539c66c6d0b08ca8997"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga32f882894a7a5539c66c6d0b08ca8997">&#9670;&#160;</a></span>gdImageNegate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int gdImageNegate </td>
+          <td>(</td>
+          <td class="paramtype">gdImagePtr&#160;</td>
+          <td class="paramname"><em>src</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Invert an image. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">src</td><td>The image.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Non-zero on success, zero on failure. </dd></dl>
+
+</div>
+</div>
+<a id="ga9f0206376a52148db6ea7c652fdf4511" name="ga9f0206376a52148db6ea7c652fdf4511"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9f0206376a52148db6ea7c652fdf4511">&#9670;&#160;</a></span>gdImagePixelate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int gdImagePixelate </td>
+          <td>(</td>
+          <td class="paramtype">gdImagePtr&#160;</td>
+          <td class="paramname"><em>im</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>block_size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const unsigned int&#160;</td>
+          <td class="paramname"><em>mode</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Pixelates an image. </p>
+<p>Pixelates an image by dividing it into blocks of the specified size and replacing each block with a single color. The color can be determined by either the upper-left pixel of the block or the average color of all pixels in the block, depending on the mode specified.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">im</td><td>The image to pixelate. </td></tr>
+    <tr><td class="paramname">block_size</td><td>The size of the blocks to use for pixelation. Must be greater than 0. </td></tr>
+    <tr><td class="paramname">mode</td><td>The mode to use for determining the color of each block. <a class="el" href="group__ImageFilters.html#ga5394f6ea01c6cc959943d51ab2d33ce1">gdPixelateMode</a></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Non-zero on success, zero on failure. Failure: Returns zero if im is NULL or block_size is less than or equal to 0. </dd></dl>
+
+</div>
+</div>
+<a id="gafab58c8b4d87fe9ea50e075edf656f88" name="gafab58c8b4d87fe9ea50e075edf656f88"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gafab58c8b4d87fe9ea50e075edf656f88">&#9670;&#160;</a></span>gdImageScatter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int gdImageScatter </td>
+          <td>(</td>
+          <td class="paramtype">gdImagePtr&#160;</td>
+          <td class="paramname"><em>im</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>sub</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>plus</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Scatter an image. </p>
+<p>Scatters the pixels of an image by randomly adjusting their color values based on the specified subtraction and addition values.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">im</td><td>The image to scatter. </td></tr>
+    <tr><td class="paramname">sub</td><td>The subtraction value for scattering. Must be greater than or equal to 0. </td></tr>
+    <tr><td class="paramname">plus</td><td>The addition value for scattering. Must be greater than or equal to 0</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Non-zero on success, zero on failure. Failure: Returns zero if im is NULL, sub or plus is less than 0. </dd></dl>
+
+</div>
+</div>
+<a id="ga0cb5c72dc2bd96ae0e9236fb8b7bae0c" name="ga0cb5c72dc2bd96ae0e9236fb8b7bae0c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0cb5c72dc2bd96ae0e9236fb8b7bae0c">&#9670;&#160;</a></span>gdImageScatterColor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int gdImageScatterColor </td>
+          <td>(</td>
+          <td class="paramtype">gdImagePtr&#160;</td>
+          <td class="paramname"><em>im</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>sub</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>plus</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>colors</em>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>num_colors</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Scatter an image with specified colors. </p>
+<p>Scatters the pixels of an image by randomly adjusting their color values based on the specified subtraction and addition values, using a specified set of colors.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">im</td><td>The image to scatter. </td></tr>
+    <tr><td class="paramname">sub</td><td>The subtraction value for scattering. Must be greater than or equal to 0. </td></tr>
+    <tr><td class="paramname">plus</td><td>The addition value for scattering. Must be greater than or equal to 0. </td></tr>
+    <tr><td class="paramname">colors</td><td>An array of colors to use for scattering. Must not be NULL. </td></tr>
+    <tr><td class="paramname">num_colors</td><td>The number of colors in the colors array. Must be greater than</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Non-zero on success, zero on failure. Failure: Returns zero if im is NULL, sub or plus is less than 0, colors is NULL, or num_colors is 0. </dd></dl>
+
+</div>
+</div>
+<a id="ga0eed47e3d884c5ddd1ce3a0f60df2fb6" name="ga0eed47e3d884c5ddd1ce3a0f60df2fb6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0eed47e3d884c5ddd1ce3a0f60df2fb6">&#9670;&#160;</a></span>gdImageScatterEx()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int gdImageScatterEx </td>
+          <td>(</td>
+          <td class="paramtype">gdImagePtr&#160;</td>
+          <td class="paramname"><em>im</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structgdScatter.html">gdScatterPtr</a>&#160;</td>
+          <td class="paramname"><em>s</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Scatter an image with extended options. </p>
+<p>Scatters the pixels of an image using the specified scattering options.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">im</td><td>The image to scatter. </td></tr>
+    <tr><td class="paramname">s</td><td>A pointer to a <a class="el" href="structgdScatter.html" title="Options to Scatter an image.">gdScatter</a> structure containing the scattering options. Must not be NULL.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+
+</div>
+</div>
+<a id="gaf87ee763a9ab1463d6854d96f0715d98" name="gaf87ee763a9ab1463d6854d96f0715d98"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf87ee763a9ab1463d6854d96f0715d98">&#9670;&#160;</a></span>gdImageSelectiveBlur()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int gdImageSelectiveBlur </td>
+          <td>(</td>
+          <td class="paramtype">gdImagePtr&#160;</td>
+          <td class="paramname"><em>src</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Selective blur of an image. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">src</td><td>The image.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Non-zero on success, zero on failure. </dd></dl>
+
+</div>
+</div>
+<a id="gad46227c0d449e8c57ec461670d94ec26" name="gad46227c0d449e8c57ec461670d94ec26"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad46227c0d449e8c57ec461670d94ec26">&#9670;&#160;</a></span>gdImageSmooth()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int gdImageSmooth </td>
+          <td>(</td>
+          <td class="paramtype">gdImagePtr&#160;</td>
+          <td class="paramname"><em>im</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>weight</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Smooth an image. </p>
+<p>(see smooth.jpg)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">im</td><td>The image. </td></tr>
+    <tr><td class="paramname">weight</td><td>The strength of the smoothing.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Non-zero on success, zero on failure.</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__ImageFilters.html#ga544c76d06d15d8cc3782fa4c5302881d" title="Apply a convolution matrix to an image.">gdImageConvolution</a></dd></dl>
+<p>Smooth an image</p>
+<p>Smooth an image</p>
+<p>(see smooth.jpg)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">src</td><td>The source image. </td></tr>
+    <tr><td class="paramname">weight</td><td>The strength of the smoothing.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Non-zero on success, zero on failure. Failure: Returns zero if im is NULL or weight is invalid.</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__ImageFilters.html#ga544c76d06d15d8cc3782fa4c5302881d" title="Apply a convolution matrix to an image.">gdImageConvolution</a> <a class="el" href="group__ImageFilters.html#ga657a95e95afe340c3589cc6c509075bc">gdImageGaussianBlur</a> <a class="el" href="group__ImageFilters.html#ga741722cb977fea35ec12e34e299aa9a6" title="Emboss an image.">gdImageEmboss</a> <a class="el" href="group__ImageFilters.html#gaade26027080154ffc5760a8f2e8ba73d" title="Mean removal of an image.">gdImageMeanRemoval</a> </dd></dl>
 
 </div>
 </div>

@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['libgd_202_204_200_20dev_0',['About LibGD 2.4.0-dev',['../index.html',1,'']]],
-  ['list_1',['Deprecated List',['../deprecated.html',1,'']]]
+  ['handling_20in_20libgd_0',['Metadata handling in libgd',['../metadata.html',1,'']]]
 ];

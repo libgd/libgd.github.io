@@ -70,10 +70,645 @@ $(function() {
 </div>
 
 <div class="header">
+  <div class="summary">
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">Clone, copy and image properties</div></div>
 </div><!--header-->
 <div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:gad5f200fdcb9b4806e1fbd37b7d3b6a73" id="r_gad5f200fdcb9b4806e1fbd37b7d3b6a73"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cloneandcopy.html#gad5f200fdcb9b4806e1fbd37b7d3b6a73">gdImageCopy</a> (gdImagePtr dst, gdImagePtr src, int dstX, int dstY, int srcX, int srcY, int w, int h)</td></tr>
+<tr class="memdesc:gad5f200fdcb9b4806e1fbd37b7d3b6a73"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy an area of an image to another image.  <br /></td></tr>
+<tr class="separator:gad5f200fdcb9b4806e1fbd37b7d3b6a73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacd14587be2075e18584cf7d38e25608a" id="r_gacd14587be2075e18584cf7d38e25608a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cloneandcopy.html#gacd14587be2075e18584cf7d38e25608a">gdImageCopyMerge</a> (gdImagePtr dst, gdImagePtr src, int dstX, int dstY, int srcX, int srcY, int w, int h, int pct)</td></tr>
+<tr class="memdesc:gacd14587be2075e18584cf7d38e25608a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy an area of an image to another image ignoring alpha.  <br /></td></tr>
+<tr class="separator:gacd14587be2075e18584cf7d38e25608a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad329f3f40407597eb78e00e41aa68615" id="r_gad329f3f40407597eb78e00e41aa68615"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cloneandcopy.html#gad329f3f40407597eb78e00e41aa68615">gdImageCopyMergeGray</a> (gdImagePtr dst, gdImagePtr src, int dstX, int dstY, int srcX, int srcY, int w, int h, int pct)</td></tr>
+<tr class="memdesc:gad329f3f40407597eb78e00e41aa68615"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy an area of an image to another image ignoring alpha.  <br /></td></tr>
+<tr class="separator:gad329f3f40407597eb78e00e41aa68615"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0a6e4a1a8fd6879a294b1ca29ac05658" id="r_ga0a6e4a1a8fd6879a294b1ca29ac05658"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cloneandcopy.html#ga0a6e4a1a8fd6879a294b1ca29ac05658">gdImageCopyResized</a> (gdImagePtr dst, gdImagePtr src, int dstX, int dstY, int srcX, int srcY, int dstW, int dstH, int srcW, int srcH)</td></tr>
+<tr class="memdesc:ga0a6e4a1a8fd6879a294b1ca29ac05658"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy a resized area from an image to another image.  <br /></td></tr>
+<tr class="separator:ga0a6e4a1a8fd6879a294b1ca29ac05658"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab3971ec3e9bed7c0974bdd2d7c37a51b" id="r_gab3971ec3e9bed7c0974bdd2d7c37a51b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cloneandcopy.html#gab3971ec3e9bed7c0974bdd2d7c37a51b">gdImageCopyResampled</a> (gdImagePtr dst, gdImagePtr src, int dstX, int dstY, int srcX, int srcY, int dstW, int dstH, int srcW, int srcH)</td></tr>
+<tr class="memdesc:gab3971ec3e9bed7c0974bdd2d7c37a51b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy a resampled area from an image to another image.  <br /></td></tr>
+<tr class="separator:gab3971ec3e9bed7c0974bdd2d7c37a51b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad9ee4d9f460458a0b097adfc88206ef9" id="r_gad9ee4d9f460458a0b097adfc88206ef9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cloneandcopy.html#gad9ee4d9f460458a0b097adfc88206ef9">gdImageCopyRotated</a> (gdImagePtr dst, gdImagePtr src, double dstX, double dstY, int srcX, int srcY, int srcWidth, int srcHeight, int angle)</td></tr>
+<tr class="memdesc:gad9ee4d9f460458a0b097adfc88206ef9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy a rotated area from an image to another image.  <br /></td></tr>
+<tr class="separator:gad9ee4d9f460458a0b097adfc88206ef9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga19d9783fc5d55906e80a3dae3b590296" id="r_ga19d9783fc5d55906e80a3dae3b590296"><td class="memItemLeft" align="right" valign="top">gdImagePtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cloneandcopy.html#ga19d9783fc5d55906e80a3dae3b590296">gdImageClone</a> (gdImagePtr src)</td></tr>
+<tr class="memdesc:ga19d9783fc5d55906e80a3dae3b590296"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clones an image.  <br /></td></tr>
+<tr class="separator:ga19d9783fc5d55906e80a3dae3b590296"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadd8614ba5396e04c6afa90f3464a44c9" id="r_gadd8614ba5396e04c6afa90f3464a44c9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cloneandcopy.html#gadd8614ba5396e04c6afa90f3464a44c9">gdImageInterlace</a> (gdImagePtr im, int interlaceArg)</td></tr>
+<tr class="memdesc:gadd8614ba5396e04c6afa90f3464a44c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets whether an image is interlaced.  <br /></td></tr>
+<tr class="separator:gadd8614ba5396e04c6afa90f3464a44c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="ga19d9783fc5d55906e80a3dae3b590296" name="ga19d9783fc5d55906e80a3dae3b590296"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga19d9783fc5d55906e80a3dae3b590296">&#9670;&#160;</a></span>gdImageClone()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">gdImagePtr gdImageClone </td>
+          <td>(</td>
+          <td class="paramtype">gdImagePtr&#160;</td>
+          <td class="paramname"><em>src</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Clones an image. </p>
+<p>Creates an exact duplicate of the given image.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">src</td><td>The source image.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The cloned image on success, NULL on failure.</dd></dl>
+<p>Group: Cloning and Copying </p>
+
+</div>
+</div>
+<a id="gad5f200fdcb9b4806e1fbd37b7d3b6a73" name="gad5f200fdcb9b4806e1fbd37b7d3b6a73"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad5f200fdcb9b4806e1fbd37b7d3b6a73">&#9670;&#160;</a></span>gdImageCopy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gdImageCopy </td>
+          <td>(</td>
+          <td class="paramtype">gdImagePtr&#160;</td>
+          <td class="paramname"><em>dst</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">gdImagePtr&#160;</td>
+          <td class="paramname"><em>src</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>dstX</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>dstY</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>srcX</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>srcY</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>w</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>h</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Copy an area of an image to another image. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dst</td><td>- The destination image. </td></tr>
+    <tr><td class="paramname">src</td><td>- The source image. </td></tr>
+    <tr><td class="paramname">dstX</td><td>- The x-coordinate of the upper left corner to copy to. </td></tr>
+    <tr><td class="paramname">dstY</td><td>- The y-coordinate of the upper left corner to copy to. </td></tr>
+    <tr><td class="paramname">srcX</td><td>- The x-coordinate of the upper left corner to copy from. </td></tr>
+    <tr><td class="paramname">srcY</td><td>- The y-coordinate of the upper left corner to copy from. </td></tr>
+    <tr><td class="paramname">w</td><td>- The width of the area to copy. </td></tr>
+    <tr><td class="paramname">h</td><td>- The height of the area to copy.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__cloneandcopy.html#gacd14587be2075e18584cf7d38e25608a" title="Copy an area of an image to another image ignoring alpha.">gdImageCopyMerge</a> <a class="el" href="group__cloneandcopy.html#gad329f3f40407597eb78e00e41aa68615" title="Copy an area of an image to another image ignoring alpha.">gdImageCopyMergeGray</a> <a class="el" href="group__cloneandcopy.html#ga0a6e4a1a8fd6879a294b1ca29ac05658" title="Copy a resized area from an image to another image.">gdImageCopyResized</a> <a class="el" href="group__cloneandcopy.html#gab3971ec3e9bed7c0974bdd2d7c37a51b" title="Copy a resampled area from an image to another image.">gdImageCopyResampled</a> <a class="el" href="group__cloneandcopy.html#gad9ee4d9f460458a0b097adfc88206ef9" title="Copy a rotated area from an image to another image.">gdImageCopyRotated</a> <a class="el" href="group__TransformScaleRotate.html#ga453a204fe79a128e9cdb293f6327b458" title="Scale an image to an exact width and height using the source image&#39;s current gdInterpolationMethod.">gdImageScale</a> <a class="el" href="group__TransformScaleRotate.html#gae55652a20b9ca573410984d41f2d94c3" title="Scale an image using aspect-ratio, gravity, crop-strategy and interpolation options.">gdImageScaleWithOptions</a> </dd></dl>
+
+</div>
+</div>
+<a id="gacd14587be2075e18584cf7d38e25608a" name="gacd14587be2075e18584cf7d38e25608a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gacd14587be2075e18584cf7d38e25608a">&#9670;&#160;</a></span>gdImageCopyMerge()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gdImageCopyMerge </td>
+          <td>(</td>
+          <td class="paramtype">gdImagePtr&#160;</td>
+          <td class="paramname"><em>dst</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">gdImagePtr&#160;</td>
+          <td class="paramname"><em>src</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>dstX</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>dstY</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>srcX</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>srcY</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>w</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>h</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>pct</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Copy an area of an image to another image ignoring alpha. </p>
+<p>The source area will be copied to the destination are by merging the pixels.</p>
+<dl class="section note"><dt>Note</dt><dd>This function is a substitute for real alpha channel operations, so it doesn't pay attention to the alpha channel.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dst</td><td>The destination image. </td></tr>
+    <tr><td class="paramname">src</td><td>The source image. </td></tr>
+    <tr><td class="paramname">dstX</td><td>The x-coordinate of the upper left corner to copy to. </td></tr>
+    <tr><td class="paramname">dstY</td><td>The y-coordinate of the upper left corner to copy to. </td></tr>
+    <tr><td class="paramname">srcX</td><td>The x-coordinate of the upper left corner to copy from. </td></tr>
+    <tr><td class="paramname">srcY</td><td>The y-coordinate of the upper left corner to copy from. </td></tr>
+    <tr><td class="paramname">w</td><td>The width of the area to copy. </td></tr>
+    <tr><td class="paramname">h</td><td>The height of the area to copy. </td></tr>
+    <tr><td class="paramname">pct</td><td>The percentage in range 0..100.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__cloneandcopy.html#gad5f200fdcb9b4806e1fbd37b7d3b6a73" title="Copy an area of an image to another image.">gdImageCopy</a> <a class="el" href="group__cloneandcopy.html#gad329f3f40407597eb78e00e41aa68615" title="Copy an area of an image to another image ignoring alpha.">gdImageCopyMergeGray</a> </dd></dl>
+
+</div>
+</div>
+<a id="gad329f3f40407597eb78e00e41aa68615" name="gad329f3f40407597eb78e00e41aa68615"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad329f3f40407597eb78e00e41aa68615">&#9670;&#160;</a></span>gdImageCopyMergeGray()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gdImageCopyMergeGray </td>
+          <td>(</td>
+          <td class="paramtype">gdImagePtr&#160;</td>
+          <td class="paramname"><em>dst</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">gdImagePtr&#160;</td>
+          <td class="paramname"><em>src</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>dstX</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>dstY</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>srcX</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>srcY</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>w</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>h</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>pct</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Copy an area of an image to another image ignoring alpha. </p>
+<p>The source area will be copied to the grayscaled destination area by merging the pixels.</p>
+<dl class="section note"><dt>Note</dt><dd>This function is a substitute for real alpha channel operations, so it doesn't pay attention to the alpha channel.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dst</td><td>- The destination image. </td></tr>
+    <tr><td class="paramname">src</td><td>- The source image. </td></tr>
+    <tr><td class="paramname">dstX</td><td>- The x-coordinate of the upper left corner to copy to. </td></tr>
+    <tr><td class="paramname">dstY</td><td>- The y-coordinate of the upper left corner to copy to. </td></tr>
+    <tr><td class="paramname">srcX</td><td>- The x-coordinate of the upper left corner to copy from. </td></tr>
+    <tr><td class="paramname">srcY</td><td>- The y-coordinate of the upper left corner to copy from. </td></tr>
+    <tr><td class="paramname">w</td><td>- The width of the area to copy. </td></tr>
+    <tr><td class="paramname">h</td><td>- The height of the area to copy. </td></tr>
+    <tr><td class="paramname">pct</td><td>- The percentage of the source color intensity in range 0..100.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__cloneandcopy.html#gad5f200fdcb9b4806e1fbd37b7d3b6a73" title="Copy an area of an image to another image.">gdImageCopy</a> <a class="el" href="group__cloneandcopy.html#gacd14587be2075e18584cf7d38e25608a" title="Copy an area of an image to another image ignoring alpha.">gdImageCopyMerge</a> </dd></dl>
+
+</div>
+</div>
+<a id="gab3971ec3e9bed7c0974bdd2d7c37a51b" name="gab3971ec3e9bed7c0974bdd2d7c37a51b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab3971ec3e9bed7c0974bdd2d7c37a51b">&#9670;&#160;</a></span>gdImageCopyResampled()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gdImageCopyResampled </td>
+          <td>(</td>
+          <td class="paramtype">gdImagePtr&#160;</td>
+          <td class="paramname"><em>dst</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">gdImagePtr&#160;</td>
+          <td class="paramname"><em>src</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>dstX</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>dstY</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>srcX</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>srcY</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>dstW</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>dstH</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>srcW</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>srcH</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Copy a resampled area from an image to another image. </p>
+<p>If the source and destination area differ in size, the area will be resized using bilinear interpolation for truecolor images, and nearest-neighbor interpolation for palette images.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dst</td><td>The destination image. </td></tr>
+    <tr><td class="paramname">src</td><td>The source image. </td></tr>
+    <tr><td class="paramname">dstX</td><td>The x-coordinate of the upper left corner to copy to. </td></tr>
+    <tr><td class="paramname">dstY</td><td>The y-coordinate of the upper left corner to copy to. </td></tr>
+    <tr><td class="paramname">srcX</td><td>The x-coordinate of the upper left corner to copy from. </td></tr>
+    <tr><td class="paramname">srcY</td><td>The y-coordinate of the upper left corner to copy from. </td></tr>
+    <tr><td class="paramname">dstW</td><td>The width of the area to copy to. </td></tr>
+    <tr><td class="paramname">dstH</td><td>The height of the area to copy to. </td></tr>
+    <tr><td class="paramname">srcW</td><td>The width of the area to copy from. </td></tr>
+    <tr><td class="paramname">srcH</td><td>The height of the area to copy from.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__cloneandcopy.html#ga0a6e4a1a8fd6879a294b1ca29ac05658" title="Copy a resized area from an image to another image.">gdImageCopyResized</a> <a class="el" href="group__TransformScaleRotate.html#ga453a204fe79a128e9cdb293f6327b458" title="Scale an image to an exact width and height using the source image&#39;s current gdInterpolationMethod.">gdImageScale</a> </dd></dl>
+
+</div>
+</div>
+<a id="ga0a6e4a1a8fd6879a294b1ca29ac05658" name="ga0a6e4a1a8fd6879a294b1ca29ac05658"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0a6e4a1a8fd6879a294b1ca29ac05658">&#9670;&#160;</a></span>gdImageCopyResized()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gdImageCopyResized </td>
+          <td>(</td>
+          <td class="paramtype">gdImagePtr&#160;</td>
+          <td class="paramname"><em>dst</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">gdImagePtr&#160;</td>
+          <td class="paramname"><em>src</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>dstX</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>dstY</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>srcX</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>srcY</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>dstW</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>dstH</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>srcW</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>srcH</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Copy a resized area from an image to another image. </p>
+<p>If the source and destination area differ in size, the area will be resized using nearest-neighbor interpolation.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dst</td><td>The destination image. </td></tr>
+    <tr><td class="paramname">src</td><td>The source image. </td></tr>
+    <tr><td class="paramname">dstX</td><td>The x-coordinate of the upper left corner to copy to. </td></tr>
+    <tr><td class="paramname">dstY</td><td>The y-coordinate of the upper left corner to copy to. </td></tr>
+    <tr><td class="paramname">srcX</td><td>The x-coordinate of the upper left corner to copy from. </td></tr>
+    <tr><td class="paramname">srcY</td><td>The y-coordinate of the upper left corner to copy from. </td></tr>
+    <tr><td class="paramname">dstW</td><td>The width of the area to copy to. </td></tr>
+    <tr><td class="paramname">dstH</td><td>The height of the area to copy to. </td></tr>
+    <tr><td class="paramname">srcW</td><td>The width of the area to copy from. </td></tr>
+    <tr><td class="paramname">srcH</td><td>The height of the area to copy from.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__cloneandcopy.html#gab3971ec3e9bed7c0974bdd2d7c37a51b" title="Copy a resampled area from an image to another image.">gdImageCopyResampled</a> <a class="el" href="group__TransformScaleRotate.html#ga453a204fe79a128e9cdb293f6327b458" title="Scale an image to an exact width and height using the source image&#39;s current gdInterpolationMethod.">gdImageScale</a> </dd></dl>
+
+</div>
+</div>
+<a id="gad9ee4d9f460458a0b097adfc88206ef9" name="gad9ee4d9f460458a0b097adfc88206ef9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad9ee4d9f460458a0b097adfc88206ef9">&#9670;&#160;</a></span>gdImageCopyRotated()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gdImageCopyRotated </td>
+          <td>(</td>
+          <td class="paramtype">gdImagePtr&#160;</td>
+          <td class="paramname"><em>dst</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">gdImagePtr&#160;</td>
+          <td class="paramname"><em>src</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>dstX</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>dstY</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>srcX</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>srcY</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>srcWidth</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>srcHeight</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>angle</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Copy a rotated area from an image to another image. </p>
+<p>The area is counter-clockwise rotated using nearest-neighbor interpolation.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dst</td><td>The destination image. </td></tr>
+    <tr><td class="paramname">src</td><td>The source image. </td></tr>
+    <tr><td class="paramname">dstX</td><td>The x-coordinate of the center of the area to copy to. </td></tr>
+    <tr><td class="paramname">dstY</td><td>The y-coordinate of the center of the area to copy to. </td></tr>
+    <tr><td class="paramname">srcX</td><td>The x-coordinate of the upper left corner to copy from. </td></tr>
+    <tr><td class="paramname">srcY</td><td>The y-coordinate of the upper left corner to copy from. </td></tr>
+    <tr><td class="paramname">srcW</td><td>The width of the area to copy from. </td></tr>
+    <tr><td class="paramname">srcH</td><td>The height of the area to copy from. </td></tr>
+    <tr><td class="paramname">angle</td><td>The angle in degrees.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__TransformScaleRotate.html#ga7b53a10de3a0efa9228b39743b15f1b0" title="Rotate an image by an arbitrary angle using the source image&#39;s current gdInterpolationMethod.">gdImageRotateInterpolated</a> </dd></dl>
+
+</div>
+</div>
+<a id="gadd8614ba5396e04c6afa90f3464a44c9" name="gadd8614ba5396e04c6afa90f3464a44c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gadd8614ba5396e04c6afa90f3464a44c9">&#9670;&#160;</a></span>gdImageInterlace()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gdImageInterlace </td>
+          <td>(</td>
+          <td class="paramtype">gdImagePtr&#160;</td>
+          <td class="paramname"><em>im</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>interlaceArg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets whether an image is interlaced. </p>
+<p>This is relevant only when saving the image in a format that supports interlacing.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">im</td><td>The image. </td></tr>
+    <tr><td class="paramname">interlaceArg</td><td>Whether the image is interlaced.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd>gdImageGetInterlaced </dd></dl>
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

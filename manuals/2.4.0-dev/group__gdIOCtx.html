@@ -78,38 +78,47 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:gae97739f577e3a00909bfab903fc161f5" id="r_gae97739f577e3a00909bfab903fc161f5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gdIOCtx.html#gae97739f577e3a00909bfab903fc161f5">BGD_DECLARE</a> (gdIOCtxPtr) gdNewFileCtx(FILE *)</td></tr>
-<tr class="memdesc:gae97739f577e3a00909bfab903fc161f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new I/O context for reading/writing to a file.  <br /></td></tr>
-<tr class="separator:gae97739f577e3a00909bfab903fc161f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad29c819092a07541f890f40882330edc" id="r_gad29c819092a07541f890f40882330edc"><td class="memItemLeft" align="right" valign="top">gdIOCtxPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gdIOCtx.html#gad29c819092a07541f890f40882330edc">gdNewFileCtx</a> (FILE *)</td></tr>
+<tr class="memdesc:gad29c819092a07541f890f40882330edc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new I/O context for reading/writing to a file.  <br /></td></tr>
+<tr class="separator:gad29c819092a07541f890f40882330edc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac94341397c30d9e1056c48c2f3234828" id="r_gac94341397c30d9e1056c48c2f3234828"><td class="memItemLeft" align="right" valign="top">gdIOCtxPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gdIOCtx.html#gac94341397c30d9e1056c48c2f3234828">gdNewDynamicCtx</a> (int size, void *data)</td></tr>
+<tr class="memdesc:gac94341397c30d9e1056c48c2f3234828"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new I/O context for reading/writing to a dynamic memory buffer.  <br /></td></tr>
+<tr class="separator:gac94341397c30d9e1056c48c2f3234828"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1a741ee482aa98f69fe86078dc8919cb" id="r_ga1a741ee482aa98f69fe86078dc8919cb"><td class="memItemLeft" align="right" valign="top">gdIOCtxPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gdIOCtx.html#ga1a741ee482aa98f69fe86078dc8919cb">gdNewDynamicCtxEx</a> (int size, void *data, int freeFlag)</td></tr>
+<tr class="memdesc:ga1a741ee482aa98f69fe86078dc8919cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new I/O context for reading/writing to a dynamic memory buffer with control over memory management 2.0.21: if freeFlag is nonzero, gd will free and/or reallocate "data" as needed as described above. If freeFlag is zero, gd will never free or reallocate "data", which means that the context should only be used for <em>reading</em> an image from a memory buffer, or writing an image to a memory buffer which is already large enough. If the memory buffer is not large enough and an image write is attempted, the write operation will fail. Those wishing to write an image to a buffer in memory have a much simpler alternative in the gdImage[something]Ptr functions.  <br /></td></tr>
+<tr class="separator:ga1a741ee482aa98f69fe86078dc8919cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4fe3087a90dccbf97bd26ee74d425082" id="r_ga4fe3087a90dccbf97bd26ee74d425082"><td class="memItemLeft" align="right" valign="top">gdIOCtxPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gdIOCtx.html#ga4fe3087a90dccbf97bd26ee74d425082">gdNewSSCtx</a> (<a class="el" href="structgdSource.html">gdSourcePtr</a> in, <a class="el" href="structgdSink.html">gdSinkPtr</a> out)</td></tr>
+<tr class="separator:ga4fe3087a90dccbf97bd26ee74d425082"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="gae97739f577e3a00909bfab903fc161f5" name="gae97739f577e3a00909bfab903fc161f5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gae97739f577e3a00909bfab903fc161f5">&#9670;&#160;</a></span>BGD_DECLARE()</h2>
+<a id="gac94341397c30d9e1056c48c2f3234828" name="gac94341397c30d9e1056c48c2f3234828"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac94341397c30d9e1056c48c2f3234828">&#9670;&#160;</a></span>gdNewDynamicCtx()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">BGD_DECLARE </td>
+          <td class="memname">gdIOCtxPtr gdNewDynamicCtx </td>
           <td>(</td>
-          <td class="paramtype">gdIOCtxPtr&#160;</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Creates a new I/O context for reading/writing to a file. </p>
-<p>Creates a new I/O context for reading/writing to a dynamic memory buffer with control over memory management 2.0.21: if freeFlag is nonzero, gd will free and/or reallocate "data" as needed as described above. If freeFlag is zero, gd will never free or reallocate "data", which means that the context should only be used for <em>reading</em> an image from a memory buffer, or writing an image to a memory buffer which is already large enough. If the memory buffer is not large enough and an image write is attempted, the write operation will fail. Those wishing to write an image to a buffer in memory have a much simpler alternative in the gdImage[something]Ptr functions.</p>
-<p>Creates a new I/O context for reading/writing to a dynamic memory buffer.</p>
-<p>returns a new I/O context for reading/writing to the specified file. The caller is responsible for closing the file when done. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">file</td><td>A pointer to a FILE object that identifies the file to be used for I/O. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>A pointer to a new gdIOCtx structure, or NULL on failure.</dd></dl>
+<p>Creates a new I/O context for reading/writing to a dynamic memory buffer. </p>
 <p>If data is null, size is ignored and an initial data buffer is allocated automatically. This function assumes gd has the right to free or reallocate "data" at will! Also note that gd will free "data" when the IO context is freed. If data is not null, it must point to memory allocated with gdMalloc, or by a call to gdImage[something]Ptr. If not, see gdNewDynamicCtxEx for an alternative.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -118,7 +127,43 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>A pointer to a new gdIOCtx structure, or NULL on failure.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to a new gdIOCtx structure, or NULL on failure. </dd></dl>
+
+</div>
+</div>
+<a id="ga1a741ee482aa98f69fe86078dc8919cb" name="ga1a741ee482aa98f69fe86078dc8919cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1a741ee482aa98f69fe86078dc8919cb">&#9670;&#160;</a></span>gdNewDynamicCtxEx()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">gdIOCtxPtr gdNewDynamicCtxEx </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>freeFlag</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Creates a new I/O context for reading/writing to a dynamic memory buffer with control over memory management 2.0.21: if freeFlag is nonzero, gd will free and/or reallocate "data" as needed as described above. If freeFlag is zero, gd will never free or reallocate "data", which means that the context should only be used for <em>reading</em> an image from a memory buffer, or writing an image to a memory buffer which is already large enough. If the memory buffer is not large enough and an image write is attempted, the write operation will fail. Those wishing to write an image to a buffer in memory have a much simpler alternative in the gdImage[something]Ptr functions. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">size</td><td>The initial size of the dynamic memory buffer. </td></tr>
@@ -127,7 +172,62 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>A pointer to a new gdIOCtx structure, or NULL on failure.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to a new gdIOCtx structure, or NULL on failure. </dd></dl>
+
+</div>
+</div>
+<a id="gad29c819092a07541f890f40882330edc" name="gad29c819092a07541f890f40882330edc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad29c819092a07541f890f40882330edc">&#9670;&#160;</a></span>gdNewFileCtx()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">gdIOCtxPtr gdNewFileCtx </td>
+          <td>(</td>
+          <td class="paramtype">FILE *&#160;</td>
+          <td class="paramname"><em>f</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Creates a new I/O context for reading/writing to a file. </p>
+<p>returns a new I/O context for reading/writing to the specified file. The caller is responsible for closing the file when done. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">file</td><td>A pointer to a FILE object that identifies the file to be used for I/O. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to a new gdIOCtx structure, or NULL on failure. </dd></dl>
+
+</div>
+</div>
+<a id="ga4fe3087a90dccbf97bd26ee74d425082" name="ga4fe3087a90dccbf97bd26ee74d425082"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4fe3087a90dccbf97bd26ee74d425082">&#9670;&#160;</a></span>gdNewSSCtx()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">gdIOCtxPtr gdNewSSCtx </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structgdSource.html">gdSourcePtr</a>&#160;</td>
+          <td class="paramname"><em>in</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structgdSink.html">gdSinkPtr</a>&#160;</td>
+          <td class="paramname"><em>out</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 <dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000012">Deprecated:</a></b></dt><dd>will be removed in a future version in favor of gdNewDynamicCtxEx and retated CTX APIs </dd></dl>
 
 </div>

@@ -6,7 +6,8 @@ var searchData=
   ['y_5fdensity_3',['y_density',['../structgdJpegInfo.html#a680f601e06fa2ec0d4009224408638fd',1,'gdJpegInfo']]],
   ['y_5foffset_4',['y_offset',['../structgdJxlFrameInfo.html#ad059db6bd8ab5125c891d649a96b7782',1,'gdJxlFrameInfo']]],
   ['y_5fpixels_5fper_5funit_5',['y_pixels_per_unit',['../structgdPngInfo.html#a5e68a4283f3a390dae3d8739992fc76b',1,'gdPngInfo']]],
-  ['your_20program_3a_6',['gd basics: using gd in your program:',['../index.html#autotoc_md2',1,'']]],
-  ['yresolution_7',['yresolution',['../structgdTiffInfo.html#aef97b21dddf0cfa436295a525f142ee0',1,'gdTiffInfo::yResolution'],['../structgdTiffPageInfo.html#a988ed09f035ce9a1e361be48fd2f4a6d',1,'gdTiffPageInfo::yResolution'],['../structgdTiffWriteOptions.html#ae1025d1b6377ce51b0e8c712d7a5f1f7',1,'gdTiffWriteOptions::yResolution']]],
-  ['yuv_5fformat_8',['yuv_format',['../structgdAvifInfo.html#adf3b1fbe27d4a79166c7a141792b676f',1,'gdAvifInfo']]]
+  ['y_5fresolution_6',['y_resolution',['../structgdTiffInfo.html#a5d6eedbc22dd6009423e6b5452a35952',1,'gdTiffInfo::y_resolution'],['../structgdTiffPageInfo.html#a8234d3b4684c663a16617a8f1caf88b5',1,'gdTiffPageInfo::y_resolution']]],
+  ['your_20program_3a_7',['gd basics: using gd in your program:',['../index.html#autotoc_md2',1,'']]],
+  ['yresolution_8',['yResolution',['../structgdTiffWriteOptions.html#ae1025d1b6377ce51b0e8c712d7a5f1f7',1,'gdTiffWriteOptions']]],
+  ['yuv_5fformat_9',['yuv_format',['../structgdAvifInfo.html#adf3b1fbe27d4a79166c7a141792b676f',1,'gdAvifInfo']]]
 ];
